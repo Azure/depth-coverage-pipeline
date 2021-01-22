@@ -1,0 +1,1 @@
+{"resources":[{"operations":[{"OperationId":"Marketplaces_List","version":"2019-01-01","jsonFilePath":"/specification/consumption/resource-manager/Microsoft.Consumption/stable/2019-01-01/consumption.json"}],"Resource":"Microsoft.Consumption/marketplaces"}],"RPName":"consumption"}
