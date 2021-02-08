@@ -1,4 +1,6 @@
 steps:
-- script: |
+- bash: |
+    pwd
+    which azdev
     azdev test vm --live --discover
   displayName: 'CLI Test'

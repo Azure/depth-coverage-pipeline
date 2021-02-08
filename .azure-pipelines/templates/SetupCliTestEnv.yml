@@ -5,18 +5,25 @@ steps:
     addToPath: true
     architecture: 'x64'
 - bash: |
-    git clone https://github.com/Azure/azure-cli
-    git clone https://github.com/Azure/azure-rest-api-specs.git
+    ls -l
+    pwd
+    git clone --branch depth-$(TARGET)-$(ResourceProvider) https://github.com/Azure/azure-cli
+    git clone --branch depth-$(TARGET)-$(ResourceProvider) https://github.com/Azure/azure-rest-api-specs.git
+    ls -l
+
     python --version
     python -m venv ./venv
-    cat ./scripts/config/cli-requirements.txt | xargs -n 1 ./venv/bin/pip install  || echo "some installation failed, but still go on..."
+    # cat ./scripts/config/cli-requirements.txt | xargs -n 1 ./venv/bin/pip install  || echo "some installation failed, but still go on..."
     . venv/bin/activate
+    ./venv/bin/pip install azdev
+    which azdev
+    # azdev setup --cli ./azure-cli -r azure-cli-extensions
     azdev setup --cli ./azure-cli
-    cat ./azure-cli/src/azure-cli/requirements.py3.Linux.txt |xargs -n 1 ./venv/bin/pip install
+    # cat ./azure-cli/src/azure-cli/requirements.py3.Linux.txt |xargs -n 1 ./venv/bin/pip install
     az login --service-principal --username $(SERVICE_PRINCIPE_ID) --password $(SERVICE_PRINCIPE_SECRET) --tenant $(SERVICE_PRINCIPE_TENANT)
     first="./azure-rest-api-specs$(README_FILE)"
     second="readme.az.md"
     readme_file_path=${first/readme.md/$second}
     export extension_name=`cat $readme_file_path | grep extensions | awk '{print $NF}' | tr -d '\r'`
-    azdev test $extension_name --live --discover
+    # azdev test $extension_name --live --discover
   displayName: 'cli Test Env Setup'
