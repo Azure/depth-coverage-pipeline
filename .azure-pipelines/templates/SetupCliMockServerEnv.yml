@@ -2,8 +2,18 @@ steps:
 - bash: |
     git clone https://github.com/Azure/avs.git
     cd avs
-    sudo npm install && sudo npm run start
-    set AZURE_CLI_DISABLE_CONNECTION_VERIFICATION=1
+    npm install
+    tsc
+    sudo node dist/main.js &
+    cd $(Pipeline.Workspace)/s
+    ls -l
+    ls -l ./venv/lib/
+    ls -l ./venv/lib/python*/site-packages/certifi/cacert.pem
+    cat scripts/config/localhost_ca.crt >> ./venv/lib/python*/site-packages/certifi/cacert.pem
+    ls -l ./venv/lib/python*/site-packages/certifi/cacert.pem
+    . venv/bin/activate
+    which python
+    export AZURE_CLI_DISABLE_CONNECTION_VERIFICATION=1
     az cloud register -n virtualCloud --endpoint-resource-manager "https://localhost:8443"
-
+    sleep 3m
   displayName: 'setup cli mock env'

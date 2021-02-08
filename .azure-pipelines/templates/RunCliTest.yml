@@ -1,4 +1,7 @@
 steps:
-- script: |
+- bash: |
+    pwd
+    . venv/bin/activate
+    which azdev
     azdev test vm --live --discover
   displayName: 'CLI Test'
