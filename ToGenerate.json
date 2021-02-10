@@ -1,0 +1,1 @@
+{"resources":[{"APIVersion":"2018-09-01-preview","operations":[],"Resource":"Microsoft.Migrate/migrateProjects"},{"APIVersion":"2018-09-01-preview","operations":[],"Resource":"Microsoft.Migrate/migrateProjects/solutions"}],"RPName":"migrateprojects","readmeFile":"/specification/migrateprojects/resource-manager/readme.md","target":"TF"}
