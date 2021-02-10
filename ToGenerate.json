@@ -1,0 +1,1 @@
+{"resources":[{"APIVersion":"2017-06-01","operations":[],"Resource":"Microsoft.Aad/domainServices/ouContainer"}],"RPName":"domainservices","readmeFile":"/specification/domainservices/resource-manager/readme.md","target":"TF"}
