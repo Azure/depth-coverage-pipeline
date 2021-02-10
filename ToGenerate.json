@@ -1,0 +1,1 @@
+{"resources":[{"APIVersion":"2018-04-01","operations":[],"Resource":"Microsoft.Databricks/workspaces/virtualNetworkPeerings"}],"RPName":"databricks","readmeFile":"/specification/databricks/resource-manager/readme.md","target":"TF"}
