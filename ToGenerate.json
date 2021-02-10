@@ -1,0 +1,1 @@
+{"resources":[{"APIVersion":"2017-09-01-preview","operations":[],"Resource":"Microsoft.Network/trafficManagerUserMetricsKeys"}],"RPName":"trafficmanager","readmeFile":"/specification/trafficmanager/resource-manager/readme.md","target":"TF"}
