@@ -1,0 +1,1 @@
+{"resources":[{"APIVersion":"2019-09-01-preview","operations":[],"Resource":"Microsoft.OperationalInsights/queryPacks"},{"APIVersion":"2019-09-01-preview","operations":[],"Resource":"Microsoft.OperationalInsights/queryPacks/queries"}],"RPName":"operationalinsights","readmeFile":"/specification/operationalinsights/resource-manager/readme.md","target":"TF"}
