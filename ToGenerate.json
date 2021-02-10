@@ -1,0 +1,1 @@
+{"resources":[{"APIVersion":"2020-10-05-privatepreview","operations":[],"Resource":"Microsoft.DBForPostgreSql/serverGroupsv2"}],"RPName":"postgresqlhsc","readmeFile":"/specification/postgresqlhsc/resource-manager/readme.md","target":"TF"}
