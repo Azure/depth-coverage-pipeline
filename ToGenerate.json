@@ -1,0 +1,1 @@
+{"resources":[{"APIVersion":"2016-04-01","operations":[],"Resource":"Microsoft.Cache/Redis/patchSchedules/default"},{"APIVersion":"2020-06-01","operations":[],"Resource":"Microsoft.Cache/redis/privateEndpointConnections"}],"RPName":"redis","readmeFile":"/specification/redis/resource-manager/readme.md","target":"TF"}
