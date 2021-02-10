@@ -1,0 +1,1 @@
+{"resources":[{"APIVersion":"2019-03-22-preview","operations":[],"Resource":"Microsoft.Devices/IotHubs/certificates"},{"APIVersion":"2020-07-10-preview","operations":[],"Resource":"Microsoft.Devices/iotHubs/privateEndpointConnections"}],"RPName":"iothub","readmeFile":"/specification/iothub/resource-manager/readme.md","target":"TF"}
