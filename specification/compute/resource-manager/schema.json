@@ -1,1 +1,446 @@
-{"ActionRules":{"schema":{"name":{"id":"ActionRules-name-1619526591"},"resource_group_name":{"id":"ActionRules-resourceGroupName-892534237"},"location":{"id":"ActionRules-location-2130720275"},"condition":{"id":"ActionRules-conditions-922576349","properties":{"alert_context":{"id":"ActionRules-alertContext-1439170971","properties":{"operator":{"id":"ActionRules-operator-624630435"},"values":{"id":"ActionRules-values-608216381"}}},"alert_rule_id":{"id":"ActionRules-alertRuleId-2230807869","properties":{"operator":{"id":"ActionRules-operator-989756147"},"values":{"id":"ActionRules-values-1054292047"}}},"description":{"id":"ActionRules-description-840172675","properties":{"operator":{"id":"ActionRules-operator-605014945"},"values":{"id":"ActionRules-values-1374055009"}}},"monitor_condition":{"id":"ActionRules-monitorCondition-741524025","properties":{"operator":{"id":"ActionRules-operator-421050909"},"values":{"id":"ActionRules-values-591900931"}}},"monitor_service":{"id":"ActionRules-monitorService-1631862037","properties":{"operator":{"id":"ActionRules-operator-521912541"},"values":{"id":"ActionRules-values-480300291"}}},"severity":{"id":"ActionRules-severity-652079251","properties":{"operator":{"id":"ActionRules-operator-945549923"},"values":{"id":"ActionRules-values-1787476605"}}},"target_resource_type":{"id":"ActionRules-targetResourceType-1911499221","properties":{"operator":{"id":"ActionRules-operator-161949469"},"values":{"id":"ActionRules-values-78000701"}}}}},"description":{"id":"ActionRules-description-1130938495"},"scope":{"id":"ActionRules-scope-1196694291","properties":{"scope_type":{"id":"ActionRules-scopeType-783834773"},"values":{"id":"ActionRules-values-1192935357"}}},"type":{"id":"ActionRules-type-1303479460"},"action_group_id":{"id":"ActionRules-actionGroupId-300572895","discriminateValues":"ActionGroup"},"status":{"id":"ActionRules-status-918451976"},"suppression_config":{"id":"ActionRules-suppressionConfig-1967329407","discriminateValues":"Suppression","properties":{"recurrence_type":{"id":"ActionRules-recurrenceType-2324434045","discriminateValues":"Suppression"},"schedule":{"id":"ActionRules-schedule-430311677","discriminateValues":"Suppression","properties":{"end_date":{"id":"ActionRules-endDate-2668180285"},"end_time":{"id":"ActionRules-endTime-891647395"},"recurrence_values":{"id":"ActionRules-recurrenceValues-373663981"},"start_date":{"id":"ActionRules-startDate-830936003"},"start_time":{"id":"ActionRules-startTime-1223206685"}}}}},"tags":{"id":"ActionRules-tags-1166274376"}},"deleted":{}},"definitions":{"ActionRules-name-1619526591":{"schema_path":"/ActionRules/name","ids":["/ActionRules//name#2","/ActionRules/actionRule/name#2","/ActionRules/name#1"]},"ActionRules-resourceGroupName-892534237":{"schema_path":"/ActionRules/resourceGroupName","ids":["/ActionRules/resourceGroupName#0"]},"ActionRules-location-2130720275":{"schema_path":"/ActionRules/location","ids":["/ActionRules//location#3","/ActionRules/actionRule/location#3"]},"ActionRules-conditions-922576349":{"schema_path":"/ActionRules/conditions","ids":["/ActionRules//properties/conditions#1","/ActionRules/actionRule/properties/conditions#1"]},"ActionRules-alertContext-1439170971":{"schema_path":"/ActionRules/conditions/alertContext","ids":["/ActionRules//properties/conditions/alertContext#6","/ActionRules/actionRule/properties/conditions/alertContext#6"]},"ActionRules-operator-624630435":{"schema_path":"/ActionRules/conditions/alertContext/operator","ids":["/ActionRules//properties/conditions/alertContext/operator#0","/ActionRules/actionRule/properties/conditions/alertContext/operator#0"]},"ActionRules-values-608216381":{"schema_path":"/ActionRules/conditions/alertContext/values","ids":["/ActionRules//properties/conditions/alertContext/values#1","/ActionRules/actionRule/properties/conditions/alertContext/values#1"]},"ActionRules-alertRuleId-2230807869":{"schema_path":"/ActionRules/conditions/alertRuleId","ids":["/ActionRules//properties/conditions/alertRuleId#4","/ActionRules/actionRule/properties/conditions/alertRuleId#4"]},"ActionRules-operator-989756147":{"schema_path":"/ActionRules/conditions/alertRuleId/operator","ids":["/ActionRules//properties/conditions/alertRuleId/operator#0","/ActionRules/actionRule/properties/conditions/alertRuleId/operator#0"]},"ActionRules-values-1054292047":{"schema_path":"/ActionRules/conditions/alertRuleId/values","ids":["/ActionRules//properties/conditions/alertRuleId/values#1","/ActionRules/actionRule/properties/conditions/alertRuleId/values#1"]},"ActionRules-description-840172675":{"schema_path":"/ActionRules/conditions/description","ids":["/ActionRules//properties/conditions/description#5","/ActionRules/actionRule/properties/conditions/description#5"]},"ActionRules-operator-605014945":{"schema_path":"/ActionRules/conditions/description/operator","ids":["/ActionRules//properties/conditions/description/operator#0","/ActionRules/actionRule/properties/conditions/description/operator#0"]},"ActionRules-values-1374055009":{"schema_path":"/ActionRules/conditions/description/values","ids":["/ActionRules//properties/conditions/description/values#1","/ActionRules/actionRule/properties/conditions/description/values#1"]},"ActionRules-monitorCondition-741524025":{"schema_path":"/ActionRules/conditions/monitorCondition","ids":["/ActionRules//properties/conditions/monitorCondition#2","/ActionRules/actionRule/properties/conditions/monitorCondition#2"]},"ActionRules-operator-421050909":{"schema_path":"/ActionRules/conditions/monitorCondition/operator","ids":["/ActionRules//properties/conditions/monitorCondition/operator#0","/ActionRules/actionRule/properties/conditions/monitorCondition/operator#0"]},"ActionRules-values-591900931":{"schema_path":"/ActionRules/conditions/monitorCondition/values","ids":["/ActionRules//properties/conditions/monitorCondition/values#1","/ActionRules/actionRule/properties/conditions/monitorCondition/values#1"]},"ActionRules-monitorService-1631862037":{"schema_path":"/ActionRules/conditions/monitorService","ids":["/ActionRules//properties/conditions/monitorService#1","/ActionRules/actionRule/properties/conditions/monitorService#1"]},"ActionRules-operator-521912541":{"schema_path":"/ActionRules/conditions/monitorService/operator","ids":["/ActionRules//properties/conditions/monitorService/operator#0","/ActionRules/actionRule/properties/conditions/monitorService/operator#0"]},"ActionRules-values-480300291":{"schema_path":"/ActionRules/conditions/monitorService/values","ids":["/ActionRules//properties/conditions/monitorService/values#1","/ActionRules/actionRule/properties/conditions/monitorService/values#1"]},"ActionRules-severity-652079251":{"schema_path":"/ActionRules/conditions/severity","ids":["/ActionRules//properties/conditions/severity#0","/ActionRules/actionRule/properties/conditions/severity#0"]},"ActionRules-operator-945549923":{"schema_path":"/ActionRules/conditions/severity/operator","ids":["/ActionRules//properties/conditions/severity/operator#0","/ActionRules/actionRule/properties/conditions/severity/operator#0"]},"ActionRules-values-1787476605":{"schema_path":"/ActionRules/conditions/severity/values","ids":["/ActionRules//properties/conditions/severity/values#1","/ActionRules/actionRule/properties/conditions/severity/values#1"]},"ActionRules-targetResourceType-1911499221":{"schema_path":"/ActionRules/conditions/targetResourceType","ids":["/ActionRules//properties/conditions/targetResourceType#3","/ActionRules/actionRule/properties/conditions/targetResourceType#3"]},"ActionRules-operator-161949469":{"schema_path":"/ActionRules/conditions/targetResourceType/operator","ids":["/ActionRules//properties/conditions/targetResourceType/operator#0","/ActionRules/actionRule/properties/conditions/targetResourceType/operator#0"]},"ActionRules-values-78000701":{"schema_path":"/ActionRules/conditions/targetResourceType/values","ids":["/ActionRules//properties/conditions/targetResourceType/values#1","/ActionRules/actionRule/properties/conditions/targetResourceType/values#1"]},"ActionRules-description-1130938495":{"schema_path":"/ActionRules/description","ids":["/ActionRules//properties/description#2","/ActionRules/actionRule/properties/description#2"]},"ActionRules-scope-1196694291":{"schema_path":"/ActionRules/scope","ids":["/ActionRules//properties/scope#0","/ActionRules/actionRule/properties/scope#0"]},"ActionRules-scopeType-783834773":{"schema_path":"/ActionRules/scope/scopeType","ids":["/ActionRules//properties/scope/scopeType#0","/ActionRules/actionRule/properties/scope/scopeType#0"]},"ActionRules-values-1192935357":{"schema_path":"/ActionRules/scope/values","ids":["/ActionRules//properties/scope/values#1","/ActionRules/actionRule/properties/scope/values#1"]},"ActionRules-type-1303479460":{"schema_path":"/ActionRules/type","ids":["/ActionRules/actionRule/properties/type#8"]},"ActionRules-actionGroupId-300572895":{"schema_path":"/ActionRules/actionGroupId","ids":["/ActionRules//properties/actionGroupId#9","/ActionRules/actionRule/properties/actionGroupId#9"]},"ActionRules-status-918451976":{"schema_path":"/ActionRules/status","ids":["/ActionRules//properties/status#7","/ActionRules/actionRule/properties/status#7","/ActionRules/actionRulePatch/properties/status#0"]},"ActionRules-suppressionConfig-1967329407":{"schema_path":"/ActionRules/suppressionConfig","ids":["/ActionRules//properties/suppressionConfig#9","/ActionRules/actionRule/properties/suppressionConfig#9"]},"ActionRules-recurrenceType-2324434045":{"schema_path":"/ActionRules/suppressionConfig/recurrenceType","ids":["/ActionRules//properties/suppressionConfig/recurrenceType#0","/ActionRules/actionRule/properties/suppressionConfig/recurrenceType#0"]},"ActionRules-schedule-430311677":{"schema_path":"/ActionRules/suppressionConfig/schedule","ids":["/ActionRules//properties/suppressionConfig/schedule#1","/ActionRules/actionRule/properties/suppressionConfig/schedule#1"]},"ActionRules-endDate-2668180285":{"schema_path":"/ActionRules/suppressionConfig/schedule/endDate","ids":["/ActionRules//properties/suppressionConfig/schedule/endDate#1","/ActionRules/actionRule/properties/suppressionConfig/schedule/endDate#1"]},"ActionRules-endTime-891647395":{"schema_path":"/ActionRules/suppressionConfig/schedule/endTime","ids":["/ActionRules//properties/suppressionConfig/schedule/endTime#3","/ActionRules/actionRule/properties/suppressionConfig/schedule/endTime#3"]},"ActionRules-recurrenceValues-373663981":{"schema_path":"/ActionRules/suppressionConfig/schedule/recurrenceValues","ids":["/ActionRules//properties/suppressionConfig/schedule/recurrenceValues#4","/ActionRules/actionRule/properties/suppressionConfig/schedule/recurrenceValues#4"]},"ActionRules-startDate-830936003":{"schema_path":"/ActionRules/suppressionConfig/schedule/startDate","ids":["/ActionRules//properties/suppressionConfig/schedule/startDate#0","/ActionRules/actionRule/properties/suppressionConfig/schedule/startDate#0"]},"ActionRules-startTime-1223206685":{"schema_path":"/ActionRules/suppressionConfig/schedule/startTime","ids":["/ActionRules//properties/suppressionConfig/schedule/startTime#2","/ActionRules/actionRule/properties/suppressionConfig/schedule/startTime#2"]},"ActionRules-tags-1166274376":{"schema_path":"/ActionRules/tags","ids":["/ActionRules//tags#4","/ActionRules/actionRule/tags#4","/ActionRules/actionRulePatch/tags#1"]}}}
+{
+  "ActionRules": {
+    "schema": {
+      "name": {
+        "id": "ActionRules-name-1619526591"
+      },
+      "resource_group_name": {
+        "id": "ActionRules-resourceGroupName-892534237"
+      },
+      "location": {
+        "id": "ActionRules-location-2130720275"
+      },
+      "condition": {
+        "id": "ActionRules-conditions-922576349",
+        "properties": {
+          "alert_context": {
+            "id": "ActionRules-alertContext-1439170971",
+            "properties": {
+              "operator": {
+                "id": "ActionRules-operator-624630435"
+              },
+              "values": {
+                "id": "ActionRules-values-608216381"
+              }
+            }
+          },
+          "alert_rule_id": {
+            "id": "ActionRules-alertRuleId-2230807869",
+            "properties": {
+              "operator": {
+                "id": "ActionRules-operator-989756147"
+              },
+              "values": {
+                "id": "ActionRules-values-1054292047"
+              }
+            }
+          },
+          "description": {
+            "id": "ActionRules-description-840172675",
+            "properties": {
+              "operator": {
+                "id": "ActionRules-operator-605014945"
+              },
+              "values": {
+                "id": "ActionRules-values-1374055009"
+              }
+            }
+          },
+          "monitor_condition": {
+            "id": "ActionRules-monitorCondition-741524025",
+            "properties": {
+              "operator": {
+                "id": "ActionRules-operator-421050909"
+              },
+              "values": {
+                "id": "ActionRules-values-591900931"
+              }
+            }
+          },
+          "monitor_service": {
+            "id": "ActionRules-monitorService-1631862037",
+            "properties": {
+              "operator": {
+                "id": "ActionRules-operator-521912541"
+              },
+              "values": {
+                "id": "ActionRules-values-480300291"
+              }
+            }
+          },
+          "severity": {
+            "id": "ActionRules-severity-652079251",
+            "properties": {
+              "operator": {
+                "id": "ActionRules-operator-945549923"
+              },
+              "values": {
+                "id": "ActionRules-values-1787476605"
+              }
+            }
+          },
+          "target_resource_type": {
+            "id": "ActionRules-targetResourceType-1911499221",
+            "properties": {
+              "operator": {
+                "id": "ActionRules-operator-161949469"
+              },
+              "values": {
+                "id": "ActionRules-values-78000701"
+              }
+            }
+          }
+        }
+      },
+      "description": {
+        "id": "ActionRules-description-1130938495"
+      },
+      "scope": {
+        "id": "ActionRules-scope-1196694291",
+        "properties": {
+          "scope_type": {
+            "id": "ActionRules-scopeType-783834773"
+          },
+          "values": {
+            "id": "ActionRules-values-1192935357"
+          }
+        }
+      },
+      "type": {
+        "id": "ActionRules-type-1303479460"
+      },
+      "action_group_id": {
+        "id": "ActionRules-actionGroupId-300572895",
+        "discriminateValues": "ActionGroup"
+      },
+      "status": {
+        "id": "ActionRules-status-918451976"
+      },
+      "suppression_config": {
+        "id": "ActionRules-suppressionConfig-1967329407",
+        "discriminateValues": "Suppression",
+        "properties": {
+          "recurrence_type": {
+            "id": "ActionRules-recurrenceType-2324434045",
+            "discriminateValues": "Suppression"
+          },
+          "schedule": {
+            "id": "ActionRules-schedule-430311677",
+            "discriminateValues": "Suppression",
+            "properties": {
+              "end_date": {
+                "id": "ActionRules-endDate-2668180285"
+              },
+              "end_time": {
+                "id": "ActionRules-endTime-891647395"
+              },
+              "recurrence_values": {
+                "id": "ActionRules-recurrenceValues-373663981"
+              },
+              "start_date": {
+                "id": "ActionRules-startDate-830936003"
+              },
+              "start_time": {
+                "id": "ActionRules-startTime-1223206685"
+              }
+            }
+          }
+        }
+      },
+      "tags": {
+        "id": "ActionRules-tags-1166274376"
+      }
+    },
+    "deleted": {}
+  },
+  "definitions": {
+    "ActionRules-name-1619526591": {
+      "schema_path": "/ActionRules/name",
+      "ids": [
+        "/ActionRules//name#2",
+        "/ActionRules/actionRule/name#2",
+        "/ActionRules/name#1"
+      ]
+    },
+    "ActionRules-resourceGroupName-892534237": {
+      "schema_path": "/ActionRules/resourceGroupName",
+      "ids": [
+        "/ActionRules/resourceGroupName#0"
+      ]
+    },
+    "ActionRules-location-2130720275": {
+      "schema_path": "/ActionRules/location",
+      "ids": [
+        "/ActionRules//location#3",
+        "/ActionRules/actionRule/location#3"
+      ]
+    },
+    "ActionRules-conditions-922576349": {
+      "schema_path": "/ActionRules/conditions",
+      "ids": [
+        "/ActionRules//properties/conditions#1",
+        "/ActionRules/actionRule/properties/conditions#1"
+      ]
+    },
+    "ActionRules-alertContext-1439170971": {
+      "schema_path": "/ActionRules/conditions/alertContext",
+      "ids": [
+        "/ActionRules//properties/conditions/alertContext#6",
+        "/ActionRules/actionRule/properties/conditions/alertContext#6"
+      ]
+    },
+    "ActionRules-operator-624630435": {
+      "schema_path": "/ActionRules/conditions/alertContext/operator",
+      "ids": [
+        "/ActionRules//properties/conditions/alertContext/operator#0",
+        "/ActionRules/actionRule/properties/conditions/alertContext/operator#0"
+      ]
+    },
+    "ActionRules-values-608216381": {
+      "schema_path": "/ActionRules/conditions/alertContext/values",
+      "ids": [
+        "/ActionRules//properties/conditions/alertContext/values#1",
+        "/ActionRules/actionRule/properties/conditions/alertContext/values#1"
+      ]
+    },
+    "ActionRules-alertRuleId-2230807869": {
+      "schema_path": "/ActionRules/conditions/alertRuleId",
+      "ids": [
+        "/ActionRules//properties/conditions/alertRuleId#4",
+        "/ActionRules/actionRule/properties/conditions/alertRuleId#4"
+      ]
+    },
+    "ActionRules-operator-989756147": {
+      "schema_path": "/ActionRules/conditions/alertRuleId/operator",
+      "ids": [
+        "/ActionRules//properties/conditions/alertRuleId/operator#0",
+        "/ActionRules/actionRule/properties/conditions/alertRuleId/operator#0"
+      ]
+    },
+    "ActionRules-values-1054292047": {
+      "schema_path": "/ActionRules/conditions/alertRuleId/values",
+      "ids": [
+        "/ActionRules//properties/conditions/alertRuleId/values#1",
+        "/ActionRules/actionRule/properties/conditions/alertRuleId/values#1"
+      ]
+    },
+    "ActionRules-description-840172675": {
+      "schema_path": "/ActionRules/conditions/description",
+      "ids": [
+        "/ActionRules//properties/conditions/description#5",
+        "/ActionRules/actionRule/properties/conditions/description#5"
+      ]
+    },
+    "ActionRules-operator-605014945": {
+      "schema_path": "/ActionRules/conditions/description/operator",
+      "ids": [
+        "/ActionRules//properties/conditions/description/operator#0",
+        "/ActionRules/actionRule/properties/conditions/description/operator#0"
+      ]
+    },
+    "ActionRules-values-1374055009": {
+      "schema_path": "/ActionRules/conditions/description/values",
+      "ids": [
+        "/ActionRules//properties/conditions/description/values#1",
+        "/ActionRules/actionRule/properties/conditions/description/values#1"
+      ]
+    },
+    "ActionRules-monitorCondition-741524025": {
+      "schema_path": "/ActionRules/conditions/monitorCondition",
+      "ids": [
+        "/ActionRules//properties/conditions/monitorCondition#2",
+        "/ActionRules/actionRule/properties/conditions/monitorCondition#2"
+      ]
+    },
+    "ActionRules-operator-421050909": {
+      "schema_path": "/ActionRules/conditions/monitorCondition/operator",
+      "ids": [
+        "/ActionRules//properties/conditions/monitorCondition/operator#0",
+        "/ActionRules/actionRule/properties/conditions/monitorCondition/operator#0"
+      ]
+    },
+    "ActionRules-values-591900931": {
+      "schema_path": "/ActionRules/conditions/monitorCondition/values",
+      "ids": [
+        "/ActionRules//properties/conditions/monitorCondition/values#1",
+        "/ActionRules/actionRule/properties/conditions/monitorCondition/values#1"
+      ]
+    },
+    "ActionRules-monitorService-1631862037": {
+      "schema_path": "/ActionRules/conditions/monitorService",
+      "ids": [
+        "/ActionRules//properties/conditions/monitorService#1",
+        "/ActionRules/actionRule/properties/conditions/monitorService#1"
+      ]
+    },
+    "ActionRules-operator-521912541": {
+      "schema_path": "/ActionRules/conditions/monitorService/operator",
+      "ids": [
+        "/ActionRules//properties/conditions/monitorService/operator#0",
+        "/ActionRules/actionRule/properties/conditions/monitorService/operator#0"
+      ]
+    },
+    "ActionRules-values-480300291": {
+      "schema_path": "/ActionRules/conditions/monitorService/values",
+      "ids": [
+        "/ActionRules//properties/conditions/monitorService/values#1",
+        "/ActionRules/actionRule/properties/conditions/monitorService/values#1"
+      ]
+    },
+    "ActionRules-severity-652079251": {
+      "schema_path": "/ActionRules/conditions/severity",
+      "ids": [
+        "/ActionRules//properties/conditions/severity#0",
+        "/ActionRules/actionRule/properties/conditions/severity#0"
+      ]
+    },
+    "ActionRules-operator-945549923": {
+      "schema_path": "/ActionRules/conditions/severity/operator",
+      "ids": [
+        "/ActionRules//properties/conditions/severity/operator#0",
+        "/ActionRules/actionRule/properties/conditions/severity/operator#0"
+      ]
+    },
+    "ActionRules-values-1787476605": {
+      "schema_path": "/ActionRules/conditions/severity/values",
+      "ids": [
+        "/ActionRules//properties/conditions/severity/values#1",
+        "/ActionRules/actionRule/properties/conditions/severity/values#1"
+      ]
+    },
+    "ActionRules-targetResourceType-1911499221": {
+      "schema_path": "/ActionRules/conditions/targetResourceType",
+      "ids": [
+        "/ActionRules//properties/conditions/targetResourceType#3",
+        "/ActionRules/actionRule/properties/conditions/targetResourceType#3"
+      ]
+    },
+    "ActionRules-operator-161949469": {
+      "schema_path": "/ActionRules/conditions/targetResourceType/operator",
+      "ids": [
+        "/ActionRules//properties/conditions/targetResourceType/operator#0",
+        "/ActionRules/actionRule/properties/conditions/targetResourceType/operator#0"
+      ]
+    },
+    "ActionRules-values-78000701": {
+      "schema_path": "/ActionRules/conditions/targetResourceType/values",
+      "ids": [
+        "/ActionRules//properties/conditions/targetResourceType/values#1",
+        "/ActionRules/actionRule/properties/conditions/targetResourceType/values#1"
+      ]
+    },
+    "ActionRules-description-1130938495": {
+      "schema_path": "/ActionRules/description",
+      "ids": [
+        "/ActionRules//properties/description#2",
+        "/ActionRules/actionRule/properties/description#2"
+      ]
+    },
+    "ActionRules-scope-1196694291": {
+      "schema_path": "/ActionRules/scope",
+      "ids": [
+        "/ActionRules//properties/scope#0",
+        "/ActionRules/actionRule/properties/scope#0"
+      ]
+    },
+    "ActionRules-scopeType-783834773": {
+      "schema_path": "/ActionRules/scope/scopeType",
+      "ids": [
+        "/ActionRules//properties/scope/scopeType#0",
+        "/ActionRules/actionRule/properties/scope/scopeType#0"
+      ]
+    },
+    "ActionRules-values-1192935357": {
+      "schema_path": "/ActionRules/scope/values",
+      "ids": [
+        "/ActionRules//properties/scope/values#1",
+        "/ActionRules/actionRule/properties/scope/values#1"
+      ]
+    },
+    "ActionRules-type-1303479460": {
+      "schema_path": "/ActionRules/type",
+      "ids": [
+        "/ActionRules/actionRule/properties/type#8"
+      ]
+    },
+    "ActionRules-actionGroupId-300572895": {
+      "schema_path": "/ActionRules/actionGroupId",
+      "ids": [
+        "/ActionRules//properties/actionGroupId#9",
+        "/ActionRules/actionRule/properties/actionGroupId#9"
+      ]
+    },
+    "ActionRules-status-918451976": {
+      "schema_path": "/ActionRules/status",
+      "ids": [
+        "/ActionRules//properties/status#7",
+        "/ActionRules/actionRule/properties/status#7",
+        "/ActionRules/actionRulePatch/properties/status#0"
+      ]
+    },
+    "ActionRules-suppressionConfig-1967329407": {
+      "schema_path": "/ActionRules/suppressionConfig",
+      "ids": [
+        "/ActionRules//properties/suppressionConfig#9",
+        "/ActionRules/actionRule/properties/suppressionConfig#9"
+      ]
+    },
+    "ActionRules-recurrenceType-2324434045": {
+      "schema_path": "/ActionRules/suppressionConfig/recurrenceType",
+      "ids": [
+        "/ActionRules//properties/suppressionConfig/recurrenceType#0",
+        "/ActionRules/actionRule/properties/suppressionConfig/recurrenceType#0"
+      ]
+    },
+    "ActionRules-schedule-430311677": {
+      "schema_path": "/ActionRules/suppressionConfig/schedule",
+      "ids": [
+        "/ActionRules//properties/suppressionConfig/schedule#1",
+        "/ActionRules/actionRule/properties/suppressionConfig/schedule#1"
+      ]
+    },
+    "ActionRules-endDate-2668180285": {
+      "schema_path": "/ActionRules/suppressionConfig/schedule/endDate",
+      "ids": [
+        "/ActionRules//properties/suppressionConfig/schedule/endDate#1",
+        "/ActionRules/actionRule/properties/suppressionConfig/schedule/endDate#1"
+      ]
+    },
+    "ActionRules-endTime-891647395": {
+      "schema_path": "/ActionRules/suppressionConfig/schedule/endTime",
+      "ids": [
+        "/ActionRules//properties/suppressionConfig/schedule/endTime#3",
+        "/ActionRules/actionRule/properties/suppressionConfig/schedule/endTime#3"
+      ]
+    },
+    "ActionRules-recurrenceValues-373663981": {
+      "schema_path": "/ActionRules/suppressionConfig/schedule/recurrenceValues",
+      "ids": [
+        "/ActionRules//properties/suppressionConfig/schedule/recurrenceValues#4",
+        "/ActionRules/actionRule/properties/suppressionConfig/schedule/recurrenceValues#4"
+      ]
+    },
+    "ActionRules-startDate-830936003": {
+      "schema_path": "/ActionRules/suppressionConfig/schedule/startDate",
+      "ids": [
+        "/ActionRules//properties/suppressionConfig/schedule/startDate#0",
+        "/ActionRules/actionRule/properties/suppressionConfig/schedule/startDate#0"
+      ]
+    },
+    "ActionRules-startTime-1223206685": {
+      "schema_path": "/ActionRules/suppressionConfig/schedule/startTime",
+      "ids": [
+        "/ActionRules//properties/suppressionConfig/schedule/startTime#2",
+        "/ActionRules/actionRule/properties/suppressionConfig/schedule/startTime#2"
+      ]
+    },
+    "ActionRules-tags-1166274376": {
+      "schema_path": "/ActionRules/tags",
+      "ids": [
+        "/ActionRules//tags#4",
+        "/ActionRules/actionRule/tags#4",
+        "/ActionRules/actionRulePatch/tags#1"
+      ]
+    }
+  }
+}
