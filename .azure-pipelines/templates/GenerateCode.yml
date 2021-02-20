@@ -1,5 +1,6 @@
 steps:
 - script: |
+    echo "https://$(PIPELINE_USER):${PIPELINE_TOKEN}@github.com" > ~/.git-credentials
     sdktarget=$(TARGET)
     if [ "$sdktarget" == "TF" ]; then
       cd $(Pipeline.Workspace)/s

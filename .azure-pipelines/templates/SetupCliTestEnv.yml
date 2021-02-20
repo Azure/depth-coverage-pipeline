@@ -7,6 +7,7 @@ steps:
 - bash: |
     ls -l
     pwd
+    echo "https://$(PIPELINE_USER):${PIPELINE_TOKEN}@github.com" > ~/.git-credentials
     git clone --branch depth-$(TARGET)-$(ResourceProvider) https://github.com/Azure/azure-cli
     git clone --branch depth-$(TARGET)-$(ResourceProvider) https://github.com/Azure/azure-rest-api-specs.git
     ls -l
