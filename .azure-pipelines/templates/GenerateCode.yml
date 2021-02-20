@@ -1,9 +1,10 @@
 steps:
 - script: |
+    echo "https://$(PIPELINE_USER):${PIPELINE_TOKEN}@github.com" > ~/.git-credentials
     sdktarget=$(TARGET)
     if [ "$sdktarget" == "TF" ]; then
       cd $(Pipeline.Workspace)/s
-      git clone --branch pipeline https://github.com/microsoft/terraform-provider-azurerm.git
+      git clone --branch pipeline https://${PIPELINE_USER}:${PIPELINE_TOKEN}@github.com/microsoft/terraform-provider-azurerm.git
       cd $(Pipeline.Workspace)/s/terraform-provider-azurerm
       # git checkout -b depth-$(TARGET)-$(ResourceProvider)
       tf_existed_in_remote=$(git ls-remote --heads origin depth-$(TARGET)-$(ResourceProvider))
