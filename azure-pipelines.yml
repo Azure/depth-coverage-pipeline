@@ -119,7 +119,7 @@ stages:
     - template: .azure-pipelines/templates/AfterTask.yml
 - stage: Build
   dependsOn: GenerateCode
-  condition: and(succeeded(), eq(dependencies.GenerateCode.outputs['DetermineResult.tobuild'], 'Yes'))
+  condition: and(succeeded(), eq(dependencies.GenerateJob.outputs['DetermineResult.tobuild'], 'Yes'))
   jobs:
   - job: build
     steps:
@@ -135,7 +135,7 @@ stages:
   dependsOn:
   - GenerateCode
   - Build
-  condition: or(ne(dependencies.GenerateCode.outputs['DetermineResult.tobuild'], 'Yes'), succeeded())
+  condition: or(ne(dependencies.GenerateJob.outputs['DetermineResult.tobuild'], 'Yes'), succeeded())
   jobs:
   - job: DetermineSDKJob
     steps:
@@ -225,6 +225,7 @@ stages:
         echo $(Pipeline.Workspace)
         pwd
 
+        echo "https://$(PIPELINE_USER):${PIPELINE_TOKEN}@github.com" > ~/.git-credentials
         sdktarget=$(TARGET)
         if [ "$sdktarget" == "TF" ]; then
           git clone --branch depth-$(TARGET)-$(ResourceProvider) https://github.com/microsoft/terraform-provider-azurerm.git
