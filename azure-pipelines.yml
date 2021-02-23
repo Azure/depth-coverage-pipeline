@@ -224,7 +224,7 @@ stages:
   dependsOn:
   - setup
   - LiveTest
-  condition: or(succeeded('LiveTest'),  contains(stageDependencies.setup.outputs['config.configResource.ignore'], 'TestFailure')
+  condition: or(succeeded('LiveTest'),  contains(stageDependencies.setup.outputs['config.configResource.ignore'], 'TestFailure'))
   jobs:
   - job: submit
     steps:
