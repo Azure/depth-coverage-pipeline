@@ -1,0 +1,1 @@
+{"resources":[{"APIVersion":"2019-01-01-preview","operations":[],"Resource":"Microsoft.AzureActiveDirectory/b2cDirectories"},{"APIVersion":"2020-05-01-preview","operations":[],"Resource":"Microsoft.AzureActiveDirectory/guestUsages"}],"RPName":"cpim","readmeFile":"/specification/cpim/resource-manager/readme.md","target":"TF"}
