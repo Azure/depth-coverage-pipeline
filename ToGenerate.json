@@ -1,0 +1,1 @@
+{"resources":[{"APIVersion":"2018-06-01-preview","operations":[],"Resource":"Microsoft.Blockchain/blockchainMembers"},{"APIVersion":"2018-06-01-preview","operations":[],"Resource":"Microsoft.Blockchain/blockchainMembers/transactionNodes"}],"RPName":"blockchain","readmeFile":"/specification/blockchain/resource-manager/readme.md","target":"TF"}
