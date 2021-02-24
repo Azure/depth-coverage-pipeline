@@ -1,0 +1,1 @@
+{"resources":[{"APIVersion":"2015-11-01-preview","operations":[],"Resource":"Microsoft.OperationsManagement/ManagementAssociations"},{"APIVersion":"2015-11-01-preview","operations":[],"Resource":"Microsoft.OperationsManagement/ManagementConfigurations"}],"RPName":"operationsmanagement","readmeFile":"/specification/operationsmanagement/resource-manager/readme.md","target":"TF"}
