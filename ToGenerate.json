@@ -1,0 +1,1 @@
+{"resources":[{"APIVersion":"2020-10-01-preview","operations":[],"Resource":"Microsoft.Cache/redisEnterprise/databases"},{"APIVersion":"2020-10-01-preview","operations":[],"Resource":"Microsoft.Cache/redisEnterprise/privateEndpointConnections"}],"RPName":"redisenterprise","readmeFile":"/specification/redisenterprise/resource-manager/readme.md","target":"TF"}
