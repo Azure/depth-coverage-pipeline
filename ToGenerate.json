@@ -1,0 +1,1 @@
+{"resources":[{"APIVersion":"2020-07-01-preview","operations":[],"Resource":"Microsoft.SignalRService/signalR/privateEndpointConnections"}],"RPName":"signalr","readmeFile":"/specification/signalr/resource-manager/readme.md","target":"TF"}
