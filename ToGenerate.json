@@ -1,0 +1,1 @@
+{"resources":[{"APIVersion":"2019-10-01-preview","operations":[],"Resource":"Microsoft.Migrate/moveCollections"},{"APIVersion":"2019-10-01-preview","operations":[],"Resource":"Microsoft.Migrate/moveCollections/moveResources"}],"RPName":"resourcemover","readmeFile":"/specification/resourcemover/resource-manager/readme.md","target":"TF"}
