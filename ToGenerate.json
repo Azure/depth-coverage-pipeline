@@ -1,0 +1,1 @@
+{"resources":[{"APIVersion":"2020-04-01-preview","operations":[],"Resource":"Microsoft.KeyVault/managedHSMs"},{"APIVersion":"2018-02-14","operations":[],"Resource":"Microsoft.KeyVault/vaults/privateEndpointConnections"}],"RPName":"keyvault","readmeFile":"/specification/keyvault/resource-manager/readme.md","target":"TF"}
