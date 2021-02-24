@@ -1,0 +1,1 @@
+{"resources":[{"APIVersion":"2020-08-04-preview","operations":[],"Resource":"Microsoft.AlertsManagement/resourceHealthAlertRules"}],"RPName":"alertsmanagement","readmeFile":"/specification/alertsmanagement/resource-manager/readme.md","target":"TF"}
