@@ -1,0 +1,1 @@
+{"resources":[{"APIVersion":"2017-03-31","operations":[],"Resource":"Microsoft.Advisor/recommendations/suppressions"}],"RPName":"advisor","readmeFile":"/specification/advisor/resource-manager/readme.md","target":"TF"}
