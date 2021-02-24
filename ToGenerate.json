@@ -1,0 +1,1 @@
+{"resources":[{"APIVersion":"2015-11-01-preview","operations":[],"Resource":"Microsoft.OperationalInsights/workspaces/features/serviceMap/machineGroups"}],"RPName":"service-map","readmeFile":"/specification/service-map/resource-manager/readme.md","target":"TF"}
