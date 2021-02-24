@@ -1,0 +1,1 @@
+{"resources":[{"APIVersion":"2015-12-01","operations":[],"Resource":"Microsoft.Batch/batchAccounts/applications/versions"}],"RPName":"batch","readmeFile":"/specification/batch/resource-manager/readme.md","target":"TF"}
