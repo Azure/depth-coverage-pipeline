@@ -1,0 +1,1 @@
+{"resources":[{"APIVersion":"2017-03-01-preview","operations":[],"Resource":"Microsoft.SqlVirtualMachine/sqlVirtualMachineGroups"}],"RPName":"sqlvirtualmachine","readmeFile":"/specification/sqlvirtualmachine/resource-manager/readme.md","target":"TF"}
