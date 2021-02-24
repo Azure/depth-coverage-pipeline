@@ -1,0 +1,1 @@
+{"resources":[{"APIVersion":"2017-12-01","operations":[{"OperationId":"Bots_List","version":"2017-12-01","jsonFilePath":"/specification/botservice/resource-manager/Microsoft.BotService/preview/2017-12-01/botservice.json"}],"Resource":"Microsoft.BotService/botServices"}],"RPName":"botservice","readmeFile":"/specification/botservice/resource-manager/readme.md","target":"CLI-core"}
