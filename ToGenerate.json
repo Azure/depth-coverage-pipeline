@@ -1,0 +1,1 @@
+{"resources":[{"APIVersion":"2020-08-01-preview","operations":[],"Resource":"Microsoft.Search/searchServices/privateEndpointConnections"},{"APIVersion":"2020-08-01-preview","operations":[],"Resource":"Microsoft.Search/searchServices/sharedPrivateLinkResources"}],"RPName":"search","readmeFile":"/specification/search/resource-manager/readme.md","target":"TF"}
