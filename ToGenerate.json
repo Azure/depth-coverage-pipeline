@@ -1,0 +1,1 @@
+{"resources":[{"APIVersion":"2020-03-01","operations":[],"Resource":"Microsoft.StorageSync/storageSyncServices/privateEndpointConnections"},{"APIVersion":"2017-06-05-preview","operations":[],"Resource":"Microsoft.StorageSync/storageSyncServices/syncGroups/serverEndpoints"}],"RPName":"storagesync","readmeFile":"/specification/storagesync/resource-manager/readme.md","target":"TF"}
