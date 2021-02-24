@@ -1,0 +1,1 @@
+{"resources":[{"APIVersion":"2021-01-01","operations":[],"Resource":"Microsoft.PolicyInsights/attestations"}],"RPName":"policyinsights","readmeFile":"/specification/policyinsights/resource-manager/readme.md","target":"TF"}
