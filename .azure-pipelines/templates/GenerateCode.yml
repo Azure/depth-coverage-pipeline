@@ -63,7 +63,11 @@ steps:
       sudo npm install -g autorest-autoconfig
       depthcoverage --token=$(PIPELINE_TOKEN) --org=$(PIPELINE_ORG) --repo=$(PIPELINE_REPO) --operation=readPR --PRNumber=$(System.PullRequest.PullRequestNumber)
       ls -l
-      autorest --use=autorest-autoconfig@latest ./azure-rest-api-specs/$(README_FILE) --resource-file=./$(RESOURCE_MAP_FILE)
+      ls -l ./azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager
+      echo "./azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/readme.md"
+      echo "./azure-rest-api-specs/$(README_FILE)"
+      # autorest --version=3.0.6271 --use=autorest-autoconfig@latest ./azure-rest-api-specs/$(README_FILE) --resource-file=./$(RESOURCE_MAP_FILE)
+      autorest --version=3.0.6271 --use=autorest-autoconfig@latest ./azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/readme.md --resource-file=./$(RESOURCE_MAP_FILE)
       ls -l ./azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager
       cat ./azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/readme.az.md
 
@@ -93,8 +97,8 @@ steps:
     if [ "$sdktarget" == "CLI-core" ] || [ "$sdktarget" == "CLI-extension" ]; then
       cat ./azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/readme.az.md
       echo "end cat" 
-      # autorest --az --use=@autorest/az@latest ./azure-rest-api-specs/$(README_FILE) --azure-cli-folder=./azure-cli  --target-mode=core
-      autorest --az --use=https://trenton.blob.core.windows.net/trenton/autorest-az-1.7.3.tgz ./azure-rest-api-specs/$(README_FILE) --azure-cli-folder=./azure-cli  --target-mode=core
+      # autorest --version=3.0.6271 --az --use=@autorest/az@latest ./azure-rest-api-specs/$(README_FILE) --azure-cli-folder=./azure-cli  --target-mode=core
+      autorest --version=3.0.6271 --az --use=https://trenton.blob.core.windows.net/trenton/autorest-az-1.7.3.tgz ./azure-rest-api-specs/$(README_FILE) --azure-cli-folder=./azure-cli  --target-mode=core
       
       cd ./azure-cli
       echo "https://$(PIPELINE_USER):${PIPELINE_TOKEN}@github.com" > ~/.git-credentials

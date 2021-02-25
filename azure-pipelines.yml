@@ -264,25 +264,28 @@ stages:
         org=""
         repo=""
         base="master"
+        sdk="";
         if [ "$sdktarget" == "TF" ]; then
           org="microsoft"
           repo="terraform-provider-azurerm"
+          sdk="TF"
         else
           org="Azure"
           repo="azure-cli"
           base="dev"
+          sdk="cli-core"
         fi
         echo "$repo"
         echo "$org"
         echo "$base"
         # curl -X POST -H "Content-Type: application/json" http://codegenapp.azurewebsites.net/DepthCoverage/generateCodePR -d '{"token":"$(PIPELINE_TOKEN)", "org":"$org", "repo":"$repo", "title":"[]pull request of $(ResourceProvider)", "branch":"depth-$(TARGET)-$(ResourceProvider)", "base":"$base"}'
-        codePR=`curl -X POST -H "Content-Type: application/json" http://codegenapp.azurewebsites.net/DepthCoverage/generateCodePR -d '{"token":"$(PIPELINE_TOKEN)", "org":"$org", "repo":"$repo", "title":"{depth coverage, not merge}pull request of $(ResourceProvider)", "branch":"depth-$(TARGET)-$(ResourceProvider)", "base":"$base"}'`
+        codePR=`curl -X POST -H "Content-Type: application/json" http://codegenapp.azurewebsites.net/DepthCoverage/generateCodePR -d '{"token":"$(PIPELINE_TOKEN)", "org":"$(org)", "repo":"$(repo)", "title":"{depth coverage, not merge} pull request of $(ResourceProvider)", "branch":"depth-$(TARGET)-$(ResourceProvider)", "base":"$(base)"}'`
         echo $codePR
         # codePRNumber=22
         # codePR="https://github.com/Azure/depth-coverage-pipeline/pull/$codePRNumber"
         triggerPR="https://github.com/Azure/depth-coverage-pipeline/pull/$(System.PullRequest.PullRequestNumber)"
-        submitURL="http://$(CodegenApp_Server)/DepthCoverage/submit"
-        customizeURL="http://$(CodegenApp_Server)/DepthCoverage/customize"
+        submitURL="http://$(CodegenApp_Server)/DepthCoverage/RPs/$(ResourceProvider)/SDKs/$sdk/submit"
+        customizeURL="http://$(CodegenApp_Server)/DepthCoverage/RPs/$(ResourceProvider)/SDKs/$sdk/Customize?triggerPR=$triggerPR&token=$(PIPELINE_TOKEN)"
         # body=&(python scripts/onboard.py "Onboarding" "conboarding" "$codePR" "$triggerPR" "$submitURL" "$customizeURL")
         # echo "$body"
         
