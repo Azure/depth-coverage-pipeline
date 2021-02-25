@@ -63,7 +63,11 @@ steps:
       sudo npm install -g autorest-autoconfig
       depthcoverage --token=$(PIPELINE_TOKEN) --org=$(PIPELINE_ORG) --repo=$(PIPELINE_REPO) --operation=readPR --PRNumber=$(System.PullRequest.PullRequestNumber)
       ls -l
-      autorest --use=autorest-autoconfig@latest ./azure-rest-api-specs/$(README_FILE) --resource-file=./$(RESOURCE_MAP_FILE)
+      ls -l ./azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager
+      echo "./azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/readme.md"
+      echo "./azure-rest-api-specs/$(README_FILE)"
+      # autorest --use=autorest-autoconfig@latest ./azure-rest-api-specs/$(README_FILE) --resource-file=./$(RESOURCE_MAP_FILE)
+      autorest --use=autorest-autoconfig@latest "./azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/readme.md" --resource-file=./$(RESOURCE_MAP_FILE)
       ls -l ./azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager
       cat ./azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/readme.az.md
 
