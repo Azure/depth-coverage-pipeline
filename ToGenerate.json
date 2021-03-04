@@ -1,0 +1,92 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-05-01",
+      "operations": [],
+      "Resource": "Microsoft.Network/applicationGateways/privateEndpointConnections"
+    },
+    {
+      "APIVersion": "2020-06-01",
+      "operations": [],
+      "Resource": "Microsoft.Network/customIpPrefixes"
+    },
+    {
+      "APIVersion": "2018-11-01",
+      "operations": [],
+      "Resource": "Microsoft.Network/expressRouteCircuits/peerings/connections"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [],
+      "Resource": "Microsoft.Network/expressRouteCrossConnections/peerings"
+    },
+    {
+      "APIVersion": "2019-11-01",
+      "operations": [],
+      "Resource": "Microsoft.Network/expressRouteGateways/expressRouteConnections"
+    },
+    {
+      "APIVersion": "2018-12-01",
+      "operations": [],
+      "Resource": "Microsoft.Network/ExpressRoutePorts"
+    },
+    {
+      "APIVersion": "2019-06-01",
+      "operations": [],
+      "Resource": "Microsoft.Network/firewallPolicies/ruleGroups"
+    },
+    {
+      "APIVersion": "2017-08-01",
+      "operations": [],
+      "Resource": "Microsoft.Network/loadBalancers/inboundNatRules"
+    },
+    {
+      "APIVersion": "2018-08-01",
+      "operations": [],
+      "Resource": "Microsoft.Network/networkInterfaces/tapConfigurations"
+    },
+    {
+      "APIVersion": "2019-12-01",
+      "operations": [],
+      "Resource": "Microsoft.Network/networkVirtualAppliances"
+    },
+    {
+      "APIVersion": "2020-05-01",
+      "operations": [],
+      "Resource": "Microsoft.Network/networkVirtualAppliances/virtualApplianceSites"
+    },
+    {
+      "APIVersion": "2019-04-01",
+      "operations": [],
+      "Resource": "Microsoft.Network/privateLinkServices/privateEndpointConnections"
+    },
+    {
+      "APIVersion": "2017-03-01",
+      "operations": [],
+      "Resource": "Microsoft.Network/routeFilters/routeFilterRules"
+    },
+    {
+      "APIVersion": "2018-08-01",
+      "operations": [],
+      "Resource": "Microsoft.Network/virtualNetworkTaps"
+    },
+    {
+      "APIVersion": "2019-09-01",
+      "operations": [],
+      "Resource": "Microsoft.Network/virtualRouters"
+    },
+    {
+      "APIVersion": "2019-11-01",
+      "operations": [],
+      "Resource": "Microsoft.Network/virtualRouters/peerings"
+    },
+    {
+      "APIVersion": "2020-08-01",
+      "operations": [],
+      "Resource": "Microsoft.Network/vpnGateways/natRules"
+    }
+  ],
+  "RPName": "network",
+  "readmeFile": "/specification/network/resource-manager/readme.md",
+  "target": "terraform"
+}
