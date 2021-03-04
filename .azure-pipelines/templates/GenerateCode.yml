@@ -1,5 +1,6 @@
 steps:
 - script: |
+    echo "on dev env"
     echo "https://$(PIPELINE_USER):${PIPELINE_TOKEN}@github.com" > ~/.git-credentials
     sdktarget=$(TARGET)
     if [ "$sdktarget" == "terraform" ]; then
