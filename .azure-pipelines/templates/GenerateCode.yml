@@ -88,10 +88,14 @@ steps:
     if [ "$sdktarget" == "terraform" ]; then
       echo "start tf code"
       mkdir generated
-      autorest --version=3.0.6219 --trenton --use=https://trenton.blob.core.windows.net/trenton/autorest-trenton-mockserver-test.tgz --generate-extra-acctest=true --trenton-output-folder=./generated ./azure-rest-api-specs/$(README_FILE)
+      autorest --version=3.0.6219 --trenton --use=https://trenton.blob.core.windows.net/trenton/autorest-trenton-mockserver-test.tgz --generate-extra-acctest=true --trenton-output-folder=./generated ./azure-rest-api-specs/$(README_FILE) > ../codegen.log
+      ls -l ../codegen.log
       ls -l generated/$(ResourceProvider)
       if [ "$?" != "0" ]; then
         echo -e "\e[31m[$(date -u)] ERROR: [$(ResourceProvider)]: Generate code failed"
+        # upload error log
+        az login --service-principal -u $(SERVICE_PRINCIPE_ID) -p $(SERVICE_PRINCIPE_SECRET) --tenant $(SERVICE_PRINCIPE_TENANT)
+        az storage blob upload -c depthcoverage -f ../codegen.log -n log/$(TARGET)-$(ResourceProvider)-$(Build.BuildId)-codegen.log --subscription $(SERVICE_PRINCIPE_SUBSCRIPTION) --account-name=depthcoverage
         exit 1
       fi
     fi
