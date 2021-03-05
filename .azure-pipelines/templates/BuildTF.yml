@@ -119,9 +119,13 @@ steps:
     export GOPATH=/home/vsts/work/1/s/go
     export PATH=$PATH:$GOPATH/bin
     export RP=$(ResourceProvider)
-    bash ./scripts/bash/compile.sh
+    bash ./scripts/bash/compile.sh > ../build.log
+    ls -l ../build.log
     if [ "$?" != "0" ]; then
       echo -e "\e[31m[$(date -u)] ERROR: [$(ResourceProvider)]: Compile Generated code failed"
+      # upload error log
+      az login --service-principal -u $(SERVICE_PRINCIPE_ID) -p $(SERVICE_PRINCIPE_SECRET) --tenant $(SERVICE_PRINCIPE_TENANT)
+      az storage blob upload -c depthcoverage -f ../build.log -n log/$(TARGET)-$(ResourceProvider)-$(Build.BuildId)-build.log --subscription $(SERVICE_PRINCIPE_SUBSCRIPTION) --account-name=depthcoverage
       exit 1
     fi
 
