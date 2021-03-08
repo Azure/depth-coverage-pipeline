@@ -1,0 +1,37 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-09-30",
+      "operations": [],
+      "Resource": "Microsoft.Compute/diskAccesses/privateEndpointConnections"
+    },
+    {
+      "APIVersion": "2019-03-01",
+      "operations": [],
+      "Resource": "Microsoft.Compute/galleries/applications"
+    },
+    {
+      "APIVersion": "2019-03-01",
+      "operations": [],
+      "Resource": "Microsoft.Compute/galleries/applications/versions"
+    },
+    {
+      "APIVersion": "2020-06-01",
+      "operations": [],
+      "Resource": "Microsoft.Compute/virtualMachines/runCommands"
+    },
+    {
+      "APIVersion": "2019-07-01",
+      "operations": [],
+      "Resource": "Microsoft.Compute/virtualMachineScaleSets/virtualMachines/extensions"
+    },
+    {
+      "APIVersion": "2020-12-01",
+      "operations": [],
+      "Resource": "Microsoft.Compute/virtualMachineScaleSets/virtualMachines/runCommands"
+    }
+  ],
+  "RPName": "compute",
+  "readmeFile": "/specification/compute/resource-manager/readme.md",
+  "target": "terraform"
+}
