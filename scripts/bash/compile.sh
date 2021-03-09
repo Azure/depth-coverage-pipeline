@@ -17,7 +17,7 @@ if [ "$?" != "0" ]; then
 fi
 
 echo -e "\e[32m[$(date -u)] LOG: [$RP]: make build"
-make build
+make build >> $GOPATH/../build.log
 if [ "$?" != "0" ]; then
     echo -e "\e[31m[$(date -u)] ERROR: [$RP]: make build failed"
     exit 1
