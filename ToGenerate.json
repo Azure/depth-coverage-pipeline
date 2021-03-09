@@ -1,0 +1,40 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2018-11-01",
+      "operations": [
+        {
+          "OperationId": "ExpressRouteCircuitConnections_List",
+          "version": "2018-11-01",
+          "jsonFilePath": "/specification/network/resource-manager/Microsoft.Network/stable/2018-11-01/expressRouteCircuit.json"
+        }
+      ],
+      "Resource": "Microsoft.Network/expressRouteCircuits/peerings/connections"
+    },
+    {
+      "APIVersion": "2017-06-01",
+      "operations": [
+        {
+          "OperationId": "ExpressRouteCircuits_ListRoutesTableSummary",
+          "version": "2017-06-01",
+          "jsonFilePath": "/specification/network/resource-manager/Microsoft.Network/stable/2017-06-01/expressRouteCircuit.json"
+        }
+      ],
+      "Resource": "Microsoft.Network/expressRouteCircuits/peerings/routeTablesSummary"
+    },
+    {
+      "APIVersion": "2017-03-01",
+      "operations": [
+        {
+          "OperationId": "ExpressRouteCircuits_GetPeeringStats",
+          "version": "2017-03-01",
+          "jsonFilePath": "/specification/network/resource-manager/Microsoft.Network/stable/2017-03-01/expressRouteCircuit.json"
+        }
+      ],
+      "Resource": "Microsoft.Network/expressRouteCircuits/peerings/stats"
+    }
+  ],
+  "RPName": "network",
+  "readmeFile": "/specification/network/resource-manager/readme.md",
+  "target": "clicore"
+}
