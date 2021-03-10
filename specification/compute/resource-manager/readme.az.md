@@ -32,7 +32,7 @@ cli:
   cli-directive:
     - where:
         group: 'CloudServices'
-        op: ListAll|List|Delete|Get|CreateOrUpdate|GetInstanceView|Restart|Start
+        op: ListAll|List|Delete|Get|CreateOrUpdate|GetInstanceView
         apiVersion: '2020-10-01-preview'
       hidden: false
     - where:
