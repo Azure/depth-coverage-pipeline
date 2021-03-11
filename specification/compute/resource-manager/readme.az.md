@@ -21,25 +21,9 @@ cli:
           hidden: false
 directive: 
   - where: 
-      group: vm ssh-public-key
+      command: vm ssh-public-key
     set:
-      group: sshkey
-  - where:
-      group: vm virtual-machine-scale-set
-    set:
-      group: vmss
-  - where:
-      group: vm virtual-machine-scale-set-vm-extension
-    set:
-      group: vmss vm-extension
-  - where:
-      group: vm virtual-machine-scale-set-v-ms
-    set:
-      group: vmss v-ms
-  - where:
-      group: vm virtual-machine-scale-set-vm-run-command
-    set:
-      group: vmss vm-run
+      command: sshkey
 ```
 
 ### -----start of auto generated cli-directive----- ###
@@ -48,7 +32,7 @@ cli:
   cli-directive:
     - where:
         group: 'CloudServices'
-        op: ListAll|List|Delete|Get|CreateOrUpdate|GetInstanceView|PowerOff|Restart|Start
+        op: ListAll|List|Delete|Get|CreateOrUpdate|GetInstanceView
         apiVersion: '2020-10-01-preview'
       hidden: false
     - where:
