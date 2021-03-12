@@ -39,6 +39,8 @@ stages:
   #   - script: |
   #       curl -X GET http://10.172.15.142:3000
   - job: config
+    variables:
+      TASK_KEY: config
     steps:
     - script: |
         sudo npm install -g depthcoverage --unsafe-perm=true --allow-root
@@ -112,6 +114,8 @@ stages:
   condition: succeeded()
   jobs:
   - job: GenerateJob
+    variables:
+      TASK_KEY: GenerateCode
     steps:
     - template: .azure-pipelines/templates/VariableSetTask.yml
     - template: .azure-pipelines/templates/GenerateCode.yml
@@ -124,16 +128,20 @@ stages:
         fi
       displayName: "set output variable"
       name: DetermineResult
+    - template: .azure-pipelines/templates/UploadCode.yml
     - template: .azure-pipelines/templates/AfterTask.yml
 - stage: Build
   dependsOn: GenerateCode
   condition: and(succeeded(), eq(stageDependencies.GenerateCode.outputs['GenerateJob.DetermineResult.tobuild'], 'Yes'))
   jobs:
   - job: build
+    variables:
+      TASK_KEY: build
     steps:
     - template: .azure-pipelines/templates/BeforeTask.yml
     - script: echo 'build'
     - template: .azure-pipelines/templates/BuildTF.yml
+    - template: .azure-pipelines/templates/AfterTask.yml
   - job: alertIssue
     dependsOn: build
     condition: and(failed(),eq(variables['TARGET'], 'terraform'))
@@ -157,6 +165,8 @@ stages:
         fi
       name: determineSDK
   - job: ClIMockTest
+    variables:
+      TASK_KEY: CLIMockTest
     steps:
     - template: .azure-pipelines/templates/BeforeTask.yml
     - script: echo 'CLI MockTest'
@@ -164,16 +174,20 @@ stages:
     - template: .azure-pipelines/templates/SetupCliMockServerEnv.yml
     # - template: .azure-pipelines/templates/SetupCliTestEnv.yml
     - template: .azure-pipelines/templates/RunCliMockTest.yml
+    - template: .azure-pipelines/templates/AfterTask.yml
     displayName: CLIMockTest
     dependsOn: DetermineSDKJob
     condition: eq(dependencies.DetermineSDKJob.outputs['determineSDK.sdk'], 'cli')
   - job: TFMockTest
+    variables:
+      TASK_KEY: TFMockTest
     steps:
     - template: .azure-pipelines/templates/BeforeTask.yml
     - script: echo 'TF MockTest'
     - template: .azure-pipelines/templates/SetupTFTestEnv.yml
     - template: .azure-pipelines/templates/SetupTFMockServerEnv.yml
     - template: .azure-pipelines/templates/RunTFMockTest.yml
+    - template: .azure-pipelines/templates/AfterTask.yml
     displayName: TFIMockTest
     dependsOn: DetermineSDKJob
     condition: eq(dependencies.DetermineSDKJob.outputs['determineSDK.sdk'], 'terraform')
@@ -201,20 +215,26 @@ stages:
         fi
       name: liveSDK
   - job: CLILiveTest
+    variables:
+      TASK_KEY: CLILiveTest
     steps:
     - script: echo 'CLILiveTest'
     - template: .azure-pipelines/templates/BeforeTask.yml
     - template: .azure-pipelines/templates/SetupCliTestEnv.yml
     - template: .azure-pipelines/templates/RunCliTest.yml
+    - template: .azure-pipelines/templates/AfterTask.yml
     displayName: CLILiveTest
     dependsOn: DetermineSDKForLiveJob
     condition: eq(dependencies.DetermineSDKForLiveJob.outputs['liveSDK.sdk'], 'cli')
   - job : TFLiveTest
+    variables:
+      TASK_KEY: TFLiveTest
     steps:
     - bash: echo 'TF LiveTest'
     - template: .azure-pipelines/templates/BeforeTask.yml
     - template: .azure-pipelines/templates/SetupTFTestEnv.yml
     - template: .azure-pipelines/templates/RunTFLiveTest.yml
+    - template: .azure-pipelines/templates/AfterTask.yml
     displayName: TFLiveTest
     dependsOn: DetermineSDKForLiveJob
     condition: eq(dependencies.DetermineSDKForLiveJob.outputs['liveSDK.sdk'], 'terraform')

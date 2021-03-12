@@ -112,21 +112,23 @@ steps:
     export GOPATH=/home/vsts/work/1/s/go
     export PATH=$PATH:$GOPATH/bin
     export RP=$(ResourceProvider)
-    bash ./scripts/bash/compile.sh
+    bash ./scripts/bash/compile.sh 1>build.log 2>&1
     
     if [ "$?" != "0" ]; then
       echo -e "\e[31m[$(date -u)] ERROR: [$(ResourceProvider)]: Compile Generated code failed"
       # upload error log
       az login --service-principal -u $(SERVICE_PRINCIPE_ID) -p $(SERVICE_PRINCIPE_SECRET) --tenant $(SERVICE_PRINCIPE_TENANT)
-      az storage blob upload -c depthcoverage -f ../build.log -n log/$(TARGET)-$(ResourceProvider)-$(Build.BuildId)-build.log --subscription $(SERVICE_PRINCIPE_SUBSCRIPTION) --account-name=depthcoverage
+      az storage blob upload -c depthcoverage -f build.log -n log/$(TARGET)-$(ResourceProvider)-$(Build.BuildId)-build.log --subscription $(SERVICE_PRINCIPE_SUBSCRIPTION) --account-name=depthcoverage
       exit 1
     fi
 
     #Run linter for generated code
     echo -e "\e[32m[$(date -u)] LOG: [$(ResourceProvider)]: RUN TFLinter"
-    bash ./scripts/bash/tflinter.sh
+    bash ./scripts/bash/tflinter.sh 1>tflinter.log 2>&1
     if [ "$?" != "0" ]; then
         echo -e "\e[31m[$(date -u)] ERROR: [$(ResourceProvider)]: RUN TFLinter failed"
+        az login --service-principal -u $(SERVICE_PRINCIPE_ID) -p $(SERVICE_PRINCIPE_SECRET) --tenant $(SERVICE_PRINCIPE_TENANT)
+        az storage blob upload -c depthcoverage -f tflinter.log -n log/$(TARGET)-$(ResourceProvider)-$(Build.BuildId)-tflinter.log --subscription $(SERVICE_PRINCIPE_SUBSCRIPTION) --account-name=depthcoverage
         exit 1
      fi
 

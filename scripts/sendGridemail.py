@@ -12,7 +12,7 @@ parser.add_argument("api_key", help="sendgrid api key")
 parser.add_argument("cc", help="cc mail list")
 args = parser.parse_args()
 
-from_email = 'sdkowners@azure-devex-tools.com'
+from_email = 'codegen@azure-devex-tools.com'
 to_emails = args.email.split(';')
 subject = args.subject
 

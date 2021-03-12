@@ -6,10 +6,12 @@ steps:
     az login --service-principal -u $(SERVICE_PRINCIPE_ID) -p $(SERVICE_PRINCIPE_SECRET) --tenant $(SERVICE_PRINCIPE_TENANT)
     # az vm show --name MyVm --resource-group MyResourceGroup --debug
     export AZURE_TEST_RUN_LIVE=true
-    pytest -rA ./azure-cli/src/azure-cli/azure/cli/command_modules/$(Package)/tests/cmdlet/test_positive.py
+    pytest -rA ./azure-cli/src/azure-cli/azure/cli/command_modules/$(Package)/tests/cmdlet/test_positive.py 1>climocktest.log 2>&1
 
     if [ "$?" != "0" ]; then
       echo -e "\e[31m[$(date -u)] ERROR: [$(ResourceProvider)]: CLI Test failed"
+      az login --service-principal -u $(SERVICE_PRINCIPE_ID) -p $(SERVICE_PRINCIPE_SECRET) --tenant $(SERVICE_PRINCIPE_TENANT)
+      az storage blob upload -c depthcoverage -f climocktest.log -n log/$(TARGET)-$(ResourceProvider)-$(Build.BuildId)-climocktest.log --subscription $(SERVICE_PRINCIPE_SUBSCRIPTION) --account-name=depthcoverage
       exit 1
     fi
   displayName: 'CLI Test'
