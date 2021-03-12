@@ -1,0 +1,9 @@
+steps:
+- script: |
+    echo $pwd
+    # tar -czvf $(TARGET)-$(ResourceProvider)-generated.tar.gz generated/$(ResourceProvider)
+    tar -czvf $(TARGET)-$(ResourceProvider)-generated.tar.gz $(Artifact)
+    az login --service-principal -u $(SERVICE_PRINCIPE_ID) -p $(SERVICE_PRINCIPE_SECRET) --tenant $(SERVICE_PRINCIPE_TENANT)
+    az storage blob upload -c depthcoverage -f $(TARGET)-$(ResourceProvider)-generated.tar.gz -n $(TARGET)/$(TARGET)-$(ResourceProvider)-generated.tar.gz --subscription $(SERVICE_PRINCIPE_SUBSCRIPTION) --account-name=depthcoverage
+  condition: always()
+  displayName: 'Upload $(ResourceProvider) $(TARGET) code'

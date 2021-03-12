@@ -91,13 +91,13 @@ steps:
     if [ "$sdktarget" == "terraform" ]; then
       echo "start generate tf code"
       mkdir generated
-      autorest --version=3.0.6219 --trenton --use=https://trenton.blob.core.windows.net/trenton/autorest-trenton-mockserver-test.tgz --generate-extra-acctest=true --trenton-output-folder=./generated ./azure-rest-api-specs/$(README_FILE) > ../codegen.log
+      autorest --version=3.0.6219 --trenton --use=https://trenton.blob.core.windows.net/trenton/autorest-trenton-mockserver-test.tgz --generate-extra-acctest=true --trenton-output-folder=./generated ./azure-rest-api-specs/$(README_FILE) 1>codegen.log 2>&1
       
       if [ "$?" != "0" ]; then
         echo -e "\e[31m[$(date -u)] ERROR: [$(ResourceProvider)]: Generate code failed"
         # upload error log
         az login --service-principal -u $(SERVICE_PRINCIPE_ID) -p $(SERVICE_PRINCIPE_SECRET) --tenant $(SERVICE_PRINCIPE_TENANT)
-        az storage blob upload -c depthcoverage -f ../codegen.log -n log/$(TARGET)-$(ResourceProvider)-$(Build.BuildId)-codegen.log --subscription $(SERVICE_PRINCIPE_SUBSCRIPTION) --account-name=depthcoverage
+        az storage blob upload -c depthcoverage -f codegen.log -n log/$(TARGET)-$(ResourceProvider)-$(Build.BuildId)-codegen.log --subscription $(SERVICE_PRINCIPE_SUBSCRIPTION) --account-name=depthcoverage
         exit 1
       fi
     fi
@@ -105,11 +105,11 @@ steps:
     if [ "$sdktarget" == "clicore" ] || [ "$sdktarget" == "cliextension" ]; then
       # cat ./azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/readme.az.md
       # autorest --version=3.0.6271 --az --use=@autorest/az@latest ./azure-rest-api-specs/$(README_FILE) --azure-cli-folder=./azure-cli  --target-mode=core
-      autorest --version=3.0.6271 --az --use=https://trenton.blob.core.windows.net/trenton/autorest-az-1.7.3.tgz ./azure-rest-api-specs/$(README_FILE) --azure-cli-folder=./azure-cli  --target-mode=core --gen-cmdlet-test > ../codegen.log
+      autorest --version=3.0.6271 --az --use=https://trenton.blob.core.windows.net/trenton/autorest-az-1.7.3.tgz ./azure-rest-api-specs/$(README_FILE) --azure-cli-folder=./azure-cli  --target-mode=core --gen-cmdlet-test 1>codegen.log 2>&1
 
       az login --service-principal -u $(SERVICE_PRINCIPE_ID) -p $(SERVICE_PRINCIPE_SECRET) --tenant $(SERVICE_PRINCIPE_TENANT)
       az storage blob upload -c depthcoverage -f ../codegen.log -n log/$(TARGET)-$(ResourceProvider)-$(Build.BuildId)-codegen.log --subscription $(SERVICE_PRINCIPE_SUBSCRIPTION) --account-name=depthcoverage
-      
+
       cd ./azure-cli
       echo "https://$(PIPELINE_USER):${PIPELINE_TOKEN}@github.com" > ~/.git-credentials
       git config credential.helper store ; git config --global user.email "chunyu@microsoft.com";git config --global user.name "chunyu3;"
