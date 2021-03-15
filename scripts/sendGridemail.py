@@ -9,18 +9,18 @@ parser.add_argument("email", help="mail list")
 parser.add_argument("subject", help="mail subject")
 # parser.add_argument("release_version", help="release version")
 parser.add_argument("api_key", help="sendgrid api key")
-parser.add_argument("cc", help="cc mail list")
+# parser.add_argument("cc", help="cc mail list")
 args = parser.parse_args()
 
 from_email = 'codegen@azure-devex-tools.com'
 to_emails = args.email.split(';')
 subject = args.subject
 
-cc = args.cc.split(';')
-cc_emails = []
-for c in cc:
-  if len(c) > 0 :
-    cc_emails.append(Cc(c, c))
+# cc = args.cc.split(';')
+# cc_emails = []
+# for c in cc:
+#   if len(c) > 0 :
+#     cc_emails.append(Cc(c, c))
 
 f = codecs.open(args.contentfile, 'r')
 html_content = f.read()
@@ -36,8 +36,8 @@ message = Mail(
     subject=subject,
     html_content=html_content)
 
-if len(cc_emails) > 0:
-    message.add_cc(cc_emails)
+# if len(cc_emails) > 0:
+#     message.add_cc(cc_emails)
 
 try:
     sg = SendGridAPIClient(api_key=args.api_key)
