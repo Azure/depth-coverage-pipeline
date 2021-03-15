@@ -14,7 +14,7 @@ az:
   test-unique-resource: true
 az-output-folder: $(azure-cli-folder)/src/azure-cli/azure/cli/command_modules/storage
 python-sdk-output-folder: "$(azure-cli-folder)/src/azure-cli/azure/cli/command_modules/storage/vendored_sdks/storage"
- compatible-level: track2
+compatible-level: track2
 ```
 
 ### -----start of auto generated cli-directive----- ###
