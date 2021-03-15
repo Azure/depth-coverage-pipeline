@@ -87,7 +87,7 @@ stages:
         Write-Host "##vso[task.setvariable variable=Artifcact]$af"
         Write-Host "##vso[task.setvariable variable=Package]$packagename"
 
-        Write-Host "##vso[task.setvariable variable=ignore;isOutput=true]$ignore TestFailure"
+        Write-Host "##vso[task.setvariable variable=ignore;isOutput=true]$ignore;TestFailure"
         Write-Host "##vso[task.setvariable variable=excludestages;isOutput=true]$excludedStages"
       name: configResource
       displayName: "Set variable"
@@ -150,9 +150,10 @@ stages:
     - template: .azure-pipelines/templates/IssueAlertTask.yml
 - stage: MockTest
   dependsOn:
+  - setup
   - GenerateCode
   - Build
-  condition: and(in(dependencies.Build.result, 'Succeeded', 'SucceededWithIssues', 'Skipped'), succeeded('GenerateCode'))
+  condition: and (not(contains(stageDependencies.setup.outputs['config.configResource.excludestages'], 'MockTest')), and(in(dependencies.Build.result, 'Succeeded', 'SucceededWithIssues', 'Skipped'), succeeded('GenerateCode')))
   jobs:
   - job: DetermineSDKJob
     steps:
@@ -201,8 +202,10 @@ stages:
     - template: .azure-pipelines/templates/VariableSetTask.yml
     - template: .azure-pipelines/templates/IssueAlertTask.yml
 - stage: LiveTest
-  dependsOn: MockTest
-  condition: succeeded('MockTest')
+  dependsOn:
+  - setup
+  - MockTest
+  condition: and(not(contains(stageDependencies.setup.outputs['config.configResource.excludestages'], 'LiveTest')), succeeded('MockTest'))
   jobs:
   - job: DetermineSDKForLiveJob
     steps:
