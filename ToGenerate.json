@@ -1,0 +1,29 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2019-06-01",
+      "operations": [
+        {
+          "OperationId": "BlobInventoryPolicies_CreateOrUpdate",
+          "version": "2019-06-01",
+          "jsonFilePath": "/specification/storage/resource-manager/Microsoft.Storage/stable/2019-06-01/storage.json"
+        }
+      ],
+      "Resource": "Microsoft.Storage/storageAccounts/inventoryPolicies"
+    },
+    {
+      "APIVersion": "2019-06-01",
+      "operations": [
+        {
+          "OperationId": "Table_Delete",
+          "version": "2019-06-01",
+          "jsonFilePath": "/specification/storage/resource-manager/Microsoft.Storage/stable/2019-06-01/table.json"
+        }
+      ],
+      "Resource": "Microsoft.Storage/storageAccounts/tableServices/default/tables"
+    }
+  ],
+  "RPName": "storage",
+  "readmeFile": "/specification/storage/resource-manager/readme.md",
+  "target": "clicore"
+}
