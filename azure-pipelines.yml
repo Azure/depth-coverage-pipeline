@@ -370,9 +370,12 @@ stages:
         plateform=$(PLATEFORM)
         echo "plateform: $plateform"
         if [ "$plateform" == "dev" ]; then
-          to_mail = "chunyu@microsoft.com"
+          to_mail="chunyu@microsoft.com"
         fi
         
+        echo "to_mail: $to_mail"
+        echo "cc_mail: $cc_mail"
+
         sudo pip install wheel
         sudo pip install sendgrid
         python scripts/sendGridemail.py "scripts/email.html" $to_mail "Depth-coverage Onboarding Confirm" $(API_KEY) cc_mail
