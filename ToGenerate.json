@@ -25,5 +25,6 @@
   ],
   "RPName": "storage",
   "readmeFile": "/specification/storage/resource-manager/readme.md",
-  "target": "clicore"
+  "target": "clicore",
+  "excludeStages": "MockTest;LiveTest"
 }
