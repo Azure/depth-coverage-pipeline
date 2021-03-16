@@ -8,7 +8,7 @@ steps:
         
     python scripts/issueResolve.py "Onboarding" "Please Reolve issues when Onboard '$(ResourceProvider)'" "$logurl" "$codePR" "$triggerPR" "$resolveURL" > scripts/email.html
     # cat scripts/email.html
-    to_mail=$(Contactors)
+    to_mail="$(Contactors)"
         
     sudo pip install wheel
     sudo pip install sendgrid

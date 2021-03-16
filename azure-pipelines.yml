@@ -97,8 +97,9 @@ stages:
           $stagesArray=$stages.Split(";")
           $excludeArray=$excludeStages.Split(";")
           foreach ($element in $excludeArray) {
-            $stages = $stages | Where-Object {$_ -ne $element}
+            $stagesArray = $stagesArray | Where-Object {$_ -ne $element}
           }
+          $stages=$stagesArray -join ";"
         }
         echo "stages:$stages"
         Write-Host "##vso[task.setvariable variable=stages;isOutput=true]$stages"
@@ -129,6 +130,7 @@ stages:
   - job: GenerateJob
     variables:
       TASK_KEY: GenerateCode
+      Contactors: "vsccodegen@microsoft.com"
     steps:
     - template: .azure-pipelines/templates/VariableSetTask.yml
     - template: .azure-pipelines/templates/GenerateCode.yml
@@ -199,6 +201,7 @@ stages:
   - job: TFMockTest
     variables:
       TASK_KEY: TFMockTest
+      Contactors: "vsccodegen@microsoft.com"
     steps:
     - template: .azure-pipelines/templates/BeforeTask.yml
     - script: echo 'TF MockTest'
@@ -210,6 +213,9 @@ stages:
     dependsOn: DetermineSDKJob
     condition: eq(dependencies.DetermineSDKJob.outputs['determineSDK.sdk'], 'terraform')
   - job: alertIssue
+    variables:
+      TASK_KEY: TFMockTest
+      Contactors: "vsccodegen@microsoft.com"
     dependsOn:
     - CLIMockTest
     - TFMockTest
@@ -259,6 +265,9 @@ stages:
     dependsOn: DetermineSDKForLiveJob
     condition: eq(dependencies.DetermineSDKForLiveJob.outputs['liveSDK.sdk'], 'terraform')
   - job: alertIssue
+    variables:
+      TASK_KEY: TFMockTest
+      Contactors: "vsccodegen@microsoft.com"
     dependsOn:
     - CLILiveTest
     - TFLiveTest

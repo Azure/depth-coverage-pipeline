@@ -22,6 +22,7 @@ steps:
     ls -l ./venv/lib/python*/site-packages/certifi/cacert.pem
     # . venv/bin/activate
     which python
+    cd package
     export AZURE_CLI_DISABLE_CONNECTION_VERIFICATION=1
     az --version
     az cloud register -n virtualCloud --endpoint-resource-manager "https://localhost:8443" --endpoint-active-directory https://login.microsoftonline.com --endpoint-active-directory-graph-resource-id https://graph.windows.net/ --endpoint-active-directory-resource-id https://management.core.windows.net/
