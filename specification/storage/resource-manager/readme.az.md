@@ -29,7 +29,7 @@ cli:
         group: 'BlobInventoryPolicies'
         op: CreateOrUpdate
         apiVersion: '2019-06-01'
-      hidden: false
+      hidden: true
     - where:
         group: 'Table'
         op: Delete
