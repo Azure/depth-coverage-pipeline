@@ -35,5 +35,10 @@ cli:
         op: Delete
         apiVersion: '2019-06-01'
       hidden: false
+    - where:
+        group: 'BlobInventoryPolicies'
+        op: CreateOrUpdate
+        apiVersion: '2019-06-01'
+      hidden: false
 ```
 ### -----end of auto generated cli-directive----- ###
