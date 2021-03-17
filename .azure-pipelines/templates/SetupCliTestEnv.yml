@@ -7,9 +7,8 @@ steps:
 - bash: |
     ls -l
     pwd
-    echo "https://$(PIPELINE_USER):${PIPELINE_TOKEN}@github.com" > ~/.git-credentials
-    git clone --branch depth-$(TARGET)-$(ResourceProvider) https://${PIPELINE_USER}:${PIPELINE_TOKEN}@github.com/${CLI_ORG}/azure-cli
-    git clone --branch depth-$(TARGET)-$(ResourceProvider) https://${PIPELINE_USER}:${PIPELINE_TOKEN}@github.com/$(Swagger_ORG)/azure-rest-api-specs.git
+    git clone --branch depth-$(TARGET)-$(ResourceProvider) https://$(PIPELINE_USER):$(PIPELINE_TOKEN)@github.com/$(CLI_ORG)/azure-cli
+    git clone --branch depth-$(TARGET)-$(ResourceProvider) https://$(PIPELINE_USER):$(PIPELINE_TOKEN)@github.com/$(Swagger_ORG)/azure-rest-api-specs.git
     ls -l
 
     python --version
