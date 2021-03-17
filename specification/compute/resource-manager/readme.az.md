@@ -27,7 +27,125 @@ cli:
           alias: name
 directive: 
   - where: 
-      command: vm ssh-public-key
+      group: vm ssh-public-key
+    set: 
+      group: sshkey
+  - where:
+      group: ^vm virtual-machine-scale-set$
     set:
-      command: sshkey
+      group: vmss
+  - where:
+      group: vm virtual-machine-scale-set-vm-extension
+    set:
+      group: vmss vm-extension
+  - where:
+      group: vm virtual-machine-scale-set-v-ms
+    set:
+      group: vmss v-ms
+  - where:
+      group: vm virtual-machine-scale-set-vm-run-command
+    set:
+      group: vmss vm-run
+  - where:
+      group: ^vm virtual-machine$
+    set:
+      group: vm
 ```
+
+
+### -----start of auto generated cli-directive----- ###
+``` yaml $(az)
+cli:
+  cli-directive:
+    - where:
+        group: 'CloudServices'
+        op: ListAll|List|Delete|Get|CreateOrUpdate|GetInstanceView|PowerOff|Restart|Start
+        apiVersion: '2020-10-01-preview'
+      hidden: false
+    - where:
+        group: 'CloudServiceRoleInstances'
+        op: List|Get|GetInstanceView|Reimage|GetRemoteDesktopFile|Restart
+        apiVersion: '2020-10-01-preview'
+      hidden: false
+    - where:
+        group: 'CloudServiceRoles'
+        op: List|Get
+        apiVersion: '2020-10-01-preview'
+      hidden: false
+    - where:
+        group: 'CloudServicesUpdateDomain'
+        op: ListUpdateDomains
+        apiVersion: '2020-10-01-preview'
+      hidden: false
+    - where:
+        group: 'DiskAccesses'
+        op: DeleteAPrivateEndpointConnection
+        apiVersion: '2020-09-30'
+      hidden: false
+    - where:
+        group: 'DiskAccesses'
+        op: GetPrivateLinkResources
+        apiVersion: '2020-05-01'
+      hidden: false
+    - where:
+        group: 'GalleryApplications'
+        op: ListByGallery|Delete|CreateOrUpdate
+        apiVersion: '2019-03-01'
+      hidden: false
+    - where:
+        group: 'GalleryApplications'
+        op: Get
+        apiVersion: '2019-07-01'
+      hidden: false
+    - where:
+        group: 'GalleryApplicationVersions'
+        op: ListByGalleryApplication
+        apiVersion: '2019-03-01'
+      hidden: false
+    - where:
+        group: 'VirtualMachines'
+        op: Reimage
+        apiVersion: '2019-07-01'
+      hidden: false
+    - where:
+        group: 'VirtualMachineScaleSets'
+        op: ForceRecoveryServiceFabricPlatformUpdateDomainWalk|ReimageAll
+        apiVersion: '2018-10-01'
+      hidden: false
+    - where:
+        group: 'VirtualMachineScaleSets'
+        op: Redeploy
+        apiVersion: '2020-06-01'
+      hidden: false
+    - where:
+        group: 'VirtualMachineScaleSetVMExtensions'
+        op: List|Get|CreateOrUpdate
+        apiVersion: '2019-07-01'
+      hidden: false
+    - where:
+        group: 'VirtualMachineScaleSetVMs'
+        op: Redeploy
+        apiVersion: '2019-03-01'
+      hidden: false
+    - where:
+        group: 'VirtualMachineScaleSetVMs'
+        op: ReimageAll
+        apiVersion: '2018-04-01'
+      hidden: false
+    - where:
+        group: 'VirtualMachineScaleSetVMs'
+        op: RetrieveBootDiagnosticsData
+        apiVersion: '2020-06-01'
+      hidden: false
+    - where:
+        group: 'VirtualMachineScaleSetVMRunCommands'
+        op: List
+        apiVersion: '2020-12-01'
+      hidden: false
+    - where:
+        group: 'ContainerServices'
+        op: CreateOrUpdate
+        apiVersion: '2016-09-30'
+      hidden: false
+```
+### -----end of auto generated cli-directive----- ###
