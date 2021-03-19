@@ -68,9 +68,13 @@ stages:
 
         echo "target: $target"
         
+        $tag=$data.tag;
+        echo "tag:$tag"
+
         Write-Host "##vso[task.setvariable variable=ResourceProvider]$name"
         Write-Host "##vso[task.setvariable variable=README_FILE]$readmefile"
         Write-Host "##vso[task.setvariable variable=TARGET]$target"
+        Write-Host "##vso[task.setvariable variable=TAG]$tag"
         $af=""
         $packagename=""
         if($target -eq "terraform") {
@@ -112,6 +116,7 @@ stages:
         echo "$(ResourceProvider)" > $(Pipeline.Workspace)/variables/ResourceProvider
         echo "$(README_FILE)" > $(Pipeline.Workspace)/variables/README_FILE
         echo "$(TARGET)" > $(Pipeline.Workspace)/variables/TARGET
+        echo "$(TAG)" > $(Pipeline.Workspace)/variables/TAG
         echo "$(Artifcact)" > $(Pipeline.Workspace)/variables/Artifact
         echo "$(Package)" > $(Pipeline.Workspace)/variables/Package
         
@@ -154,6 +159,8 @@ stages:
     variables:
       TASK_KEY: build
       Contactors: "chunyu@microsoft.com;vsccodegen@microsoft.com"
+      srcPackage: $(ResourceProvider)
+      prefix: forpipeline
     steps:
     - template: .azure-pipelines/templates/BeforeTask.yml
     - script: echo 'build'
