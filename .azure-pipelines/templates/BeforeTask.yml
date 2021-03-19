@@ -8,3 +8,6 @@ steps:
     tar -xzvf $(TARGET)-$(ResourceProvider)-generated.tar.gz -C generated/
     ls -l generated/
   displayName: 'Before $(TASK_KEY)'
+  # env: { 
+  #   'PIPELINE_TOKEN': "$(PIPELINE_TOKEN)"
+  # }
