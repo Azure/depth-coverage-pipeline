@@ -100,8 +100,13 @@ steps:
     if [ "$sdktarget" == "terraform" ]; then
       echo "start generate tf code"
       mkdir generated
-      autorest --version=3.0.6219 --trenton --use=https://trenton.blob.core.windows.net/trenton/autorest-trenton-mockserver-test.tgz --generate-extra-acctest=true --trenton-output-folder=./generated ./azure-rest-api-specs/$(README_FILE) 1>$(TASK_KEY).log 2>&1
-      
+      tag=$(TAG)
+      if [ "$tag" == ""]; then
+        autorest --version=3.0.6219 --trenton --use=https://trenton.blob.core.windows.net/trenton/autorest-trenton-mockserver-test.tgz --generate-extra-acctest=true --trenton-output-folder=./generated ./azure-rest-api-specs/$(README_FILE) 1>$(TASK_KEY).log 2>&1
+      else
+        autorest --version=3.0.6219 --trenton --use=https://trenton.blob.core.windows.net/trenton/autorest-trenton-mockserver-test.tgz --tag=$(TAG) --generate-extra-acctest=true --trenton-output-folder=./generated ./azure-rest-api-specs/$(README_FILE) 1>$(TASK_KEY).log 2>&1
+      fi
+
       if [ "$?" != "0" ]; then
         echo -e "\e[31m[$(date -u)] ERROR: [$(ResourceProvider)]: Generate code failed"
         # upload error log
