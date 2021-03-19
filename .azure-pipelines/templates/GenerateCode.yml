@@ -13,6 +13,7 @@ steps:
         git checkout -b depth-$(TARGET)-$(ResourceProvider)
       else
         git checkout depth-$(TARGET)-$(ResourceProvider)
+        git reset --hard origin/depth-$(TARGET)-$(ResourceProvider)
       fi
     fi
 
@@ -33,6 +34,8 @@ steps:
     cd $(Pipeline.Workspace)/s
     git clone https://$(PIPELINE_USER):$(PIPELINE_TOKEN)@github.com/$(Swagger_ORG)/azure-rest-api-specs.git
     ls -l
+
+    # upload to azure-rest-api-specs branch
     cd $(Pipeline.Workspace)/s/azure-rest-api-specs
     # ls -l
     spec_existed_in_remote=$(git ls-remote --heads origin depth-$(TARGET)-$(ResourceProvider))
@@ -55,11 +58,12 @@ steps:
     sdktarget=$(TARGET)
     if [ "$sdktarget" == "terraform" ]; then
       echo 'workOnTF'
-      sudo npm install -g metadata-tool@3.0.5
-      FILE=$(Pipeline.Workspace)/s/specification/$(ResourceProvider)/resource-manager/readme.trenton.md
+      # sudo npm install -g metadata-tool@3.0.5
+      sudo npm install -g metadata-tool
+      FILE=$(Pipeline.Workspace)/s/specification/$(ResourceProvider)/resource-manager/readme.terraform.md
       if [ -f "$FILE" ]; then
         echo "$FILE exists."
-        cp "$FILE" $(Pipeline.Workspace)/s/azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/readme.trenton.md
+        cp "$FILE" $(Pipeline.Workspace)/s/azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/readme.terraform.md
       fi
       metadata-tool ./azure-rest-api-specs/$(README_FILE)
       SchemaFILE=$(Pipeline.Workspace)/s/specification/$(ResourceProvider)/resource-manager/schema.json
@@ -100,8 +104,15 @@ steps:
     if [ "$sdktarget" == "terraform" ]; then
       echo "start generate tf code"
       mkdir generated
-      autorest --version=3.0.6219 --trenton --use=https://trenton.blob.core.windows.net/trenton/autorest-trenton-mockserver-test.tgz --generate-extra-acctest=true --trenton-output-folder=./generated ./azure-rest-api-specs/$(README_FILE) 1>$(TASK_KEY).log 2>&1
-      
+      echo "$(TAG)"
+      echo "$(RESOURCES)"
+      tag=$(TAG)
+      if [ "$tag" == "" ]; then
+        autorest --version=3.0.6219 --trenton --use=https://terraformcodegen.blob.core.windows.net/terraformcodegen/autorest-terraform-latest.tgz --resources=$(RESOURCES) --generate-extra-acctest=true --trenton-output-folder=./generated ./azure-rest-api-specs/$(README_FILE) 1>$(TASK_KEY).log 2>&1
+      else
+        autorest --version=3.0.6219 --trenton --use=https://terraformcodegen.blob.core.windows.net/terraformcodegen/autorest-terraform-latest.tgz --resources=$(RESOURCES) --tag=$(TAG) --generate-extra-acctest=true --trenton-output-folder=./generated ./azure-rest-api-specs/$(README_FILE) 1>$(TASK_KEY).log 2>&1
+      fi
+
       if [ "$?" != "0" ]; then
         echo -e "\e[31m[$(date -u)] ERROR: [$(ResourceProvider)]: Generate code failed"
         # upload error log
