@@ -14,6 +14,9 @@ steps:
     target=$(cat $(Pipeline.Workspace)/variables/TARGET)
     echo "##vso[task.setvariable variable=TARGET]$target"
 
+    tag=$(cat $(Pipeline.Workspace)/variables/TAG)
+    echo "##vso[task.setvariable variable=TAG]$tag"
+
     af=$(cat $(Pipeline.Workspace)/variables/Artifact)
     echo "##vso[task.setvariable variable=Artifact]$af"
 
@@ -22,6 +25,7 @@ steps:
 
     echo $ResourceProvider
     echo $target
+    echo $tag
     echo $af
     echo $package
     echo 'end' 
