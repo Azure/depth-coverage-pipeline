@@ -68,13 +68,22 @@ stages:
 
         echo "target: $target"
         
+        $tag=$data.tag;
+        echo "tag:$tag"
+
+        $resources=$data.resourcelist;
+        echo "resources:$resources"
+
         Write-Host "##vso[task.setvariable variable=ResourceProvider]$name"
         Write-Host "##vso[task.setvariable variable=README_FILE]$readmefile"
         Write-Host "##vso[task.setvariable variable=TARGET]$target"
+        Write-Host "##vso[task.setvariable variable=TAG]$tag"
+        Write-Host "##vso[task.setvariable variable=RESOURCES]$resources"
         $af=""
         $packagename=""
         if($target -eq "terraform") {
-          $af="generated/$name ./go/src/github.com/terraform-providers/terraform-provider-azurerm/vendor/github.com/Azure/azure-sdk-for-go/services/$name"
+          # $af="generated/$name ./go/src/github.com/terraform-providers/terraform-provider-azurerm/vendor/github.com/Azure/azure-sdk-for-go/services/$name"
+          $af="generated/$name"
           $packagename=$name
         } else {
           if($name -eq "compute") {
@@ -112,6 +121,8 @@ stages:
         echo "$(ResourceProvider)" > $(Pipeline.Workspace)/variables/ResourceProvider
         echo "$(README_FILE)" > $(Pipeline.Workspace)/variables/README_FILE
         echo "$(TARGET)" > $(Pipeline.Workspace)/variables/TARGET
+        echo "$(TAG)" > $(Pipeline.Workspace)/variables/TAG
+        echo "$(RESOURCES)" > $(Pipeline.Workspace)/variables/RESOURCES
         echo "$(Artifcact)" > $(Pipeline.Workspace)/variables/Artifact
         echo "$(Package)" > $(Pipeline.Workspace)/variables/Package
         
@@ -154,6 +165,8 @@ stages:
     variables:
       TASK_KEY: build
       Contactors: "chunyu@microsoft.com;vsccodegen@microsoft.com"
+      srcPackage: $(ResourceProvider)
+      prefix: forpipeline
     steps:
     - template: .azure-pipelines/templates/BeforeTask.yml
     - script: echo 'build'
@@ -326,7 +339,8 @@ stages:
             git checkout -b depth-code-$(TARGET)-$(ResourceProvider)
           else
             git checkout depth-code-$(TARGET)-$(ResourceProvider)
-            git pull origin depth-$(TARGET)-$(ResourceProvider)
+            # git pull origin depth-$(TARGET)-$(ResourceProvider)
+            git reset --hard origin/depth-$(TARGET)-$(ResourceProvider)
           fi
           cp ../azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/readme.trenton.md ./azurerm/internal/services/$(ResourceProvider)/
         fi
