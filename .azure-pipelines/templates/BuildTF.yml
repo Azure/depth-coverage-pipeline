@@ -9,7 +9,7 @@ steps:
 #   displayName: "setup Go environment"
 - task: GoTool@0
   inputs:
-    version: '1.15.x'
+    version: '1.16.x'
     goPath: '/home/vsts/work/1/s/go'
     goBin: '/home/vsts/work/1/s/go/bin'
 - script: |
@@ -33,12 +33,12 @@ steps:
   displayName: "install autorest"
 - script: |
     pwd
-    # autorest --go --use="@microsoft.azure/autorest.go@2.1.165" --verbose --multiapi --use-onever --version=previous --go-sdk-folder=./go/src/github.com/terraform-providers/terraform-provider-azurerm/vendor/github.com/Azure/azure-sdk-for-go ./azure-rest-api-specs/$(README_FILE) 1>>$(TASK_KEY).log 2>&1
+    # autorest --go --use="@microsoft.azure/autorest.go@2.1.175" --verbose --multiapi --use-onever --version=previous --go-sdk-folder=./go/src/github.com/terraform-providers/terraform-provider-azurerm/vendor/github.com/Azure/azure-sdk-for-go ./azure-rest-api-specs/$(README_FILE) 1>>$(TASK_KEY).log 2>&1
     tag=$(TAG)
     if [ "$tag" == "" ]; then
-      autorest --go --use="@microsoft.azure/autorest.go@2.1.165" --verbose --multiapi --use-onever --version=previous --go-sdk-folder=./go/src/github.com/terraform-providers/terraform-provider-azurerm/vendor/github.com/Azure/azure-sdk-for-go ./azure-rest-api-specs/$(README_FILE) 1>>$(TASK_KEY).log 2>&1
+      autorest --go --use="@microsoft.azure/autorest.go@2.1.175" --verbose --multiapi --use-onever --version=previous --go-sdk-folder=./go/src/github.com/terraform-providers/terraform-provider-azurerm/vendor/github.com/Azure/azure-sdk-for-go ./azure-rest-api-specs/$(README_FILE) 1>>$(TASK_KEY).log 2>&1
     else
-      autorest --go --use="@microsoft.azure/autorest.go@2.1.165" --verbose --use-onever --version=previous --tag=$(TAG) --go-sdk-folder=./go/src/github.com/terraform-providers/terraform-provider-azurerm/vendor/github.com/Azure/azure-sdk-for-go ./azure-rest-api-specs/$(README_FILE)
+      autorest --go --use="@microsoft.azure/autorest.go@2.1.175" --verbose --use-onever --version=previous --tag=$(TAG) --go-sdk-folder=./go/src/github.com/terraform-providers/terraform-provider-azurerm/vendor/github.com/Azure/azure-sdk-for-go ./azure-rest-api-specs/$(README_FILE)
     fi
     if [ "$?" != "0" ]; then
       echo -e "\e[31m[$(date -u)] ERROR: [$OPERATION : $(ResourceProvider)]: Generate go sdk failed"
@@ -72,7 +72,7 @@ steps:
       echo "$DIR exists."
       # echo "##vso[task.setvariable variable=srcPackage]$(ResourceProvider)$(prefix)"
       cp -r ./generated/generated/$(ResourceProvider) ./go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(srcPackage)
-      bash ./scripts/bash/renameGeneratedCode.sh ./go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(srcPackage) $(prefix)
+      bash ./scripts/bash/renameGeneratedCode.sh $(Pipeline.Workspace)/s/go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(srcPackage) $(prefix)
     else
       echo "##vso[task.setvariable variable=srcPackage]$(ResourceProvider)"
       cp -r ./generated/generated/$(ResourceProvider) ./go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/

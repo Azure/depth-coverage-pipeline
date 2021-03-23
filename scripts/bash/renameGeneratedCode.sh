@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 set -e
+set -x
 
 if [ -z $1 ]; then
     echo "Please input rp path"
@@ -8,7 +9,7 @@ fi
 RP_PATH=$1
 
 if [ -z $2 ]; then
-    echo "Please input rp path"
+    echo "Please input suffix"
 fi
 SUFFIX=$2
 # SUFFIX="forpipeline"
