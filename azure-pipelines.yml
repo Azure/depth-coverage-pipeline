@@ -3,7 +3,7 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'Ubuntu 20.04'
 
 variables:
 - name: PIPELINE_ORG
@@ -216,6 +216,8 @@ stages:
     variables:
       TASK_KEY: TFMockTest
       Contactors: "chunyu@microsoft.com;vsccodegen@microsoft.com"
+      srcPackage: $(ResourceProvider)
+      prefix: forpipeline
     steps:
     - template: .azure-pipelines/templates/BeforeTask.yml
     - script: echo 'TF MockTest'
@@ -270,6 +272,8 @@ stages:
   - job : TFLiveTest
     variables:
       TASK_KEY: TFLiveTest
+      srcPackage: $(ResourceProvider)
+      prefix: forpipeline
     steps:
     - bash: echo 'TF LiveTest'
     - template: .azure-pipelines/templates/BeforeTask.yml
