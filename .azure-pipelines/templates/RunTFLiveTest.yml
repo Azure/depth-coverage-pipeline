@@ -1,4 +1,13 @@
 steps:
-- script: |
-    make acctests SERVICE=${ResourceProvider} TESTARGS=-run=TestAcc[a-zA-Z]+_ci[a-zA-Z0-9]+ TESTTIMEOUT='60m' 1>$(TASK_KEY).log 2>&1
+- bash: |
+    set -x
+    cd ./go/src/github.com/terraform-providers/terraform-provider-azurerm
+    pwd
+    make acctests SERVICE=$(ResourceProvider) TESTARGS=-run=TestAcc[a-zA-Z]+_ci[a-zA-Z0-9]+ TESTTIMEOUT='60m' 1>$(TASK_KEY).log 2>&1
+    if [ "$?" != "0" ]; then
+      echo -e "\e[31m[$(date -u)] ERROR: [$(ResourceProvider)]: TF Live Test failed"
+      az login --service-principal -u $(SERVICE_PRINCIPE_ID) -p $(SERVICE_PRINCIPE_SECRET) --tenant $(SERVICE_PRINCIPE_TENANT)
+      az storage blob upload -c depthcoverage -f $(TASK_KEY).log -n log/$(TARGET)-$(ResourceProvider)-$(Build.BuildId)-$(TASK_KEY).log --subscription $(SERVICE_PRINCIPE_SUBSCRIPTION) --account-name=depthcoverage
+      exit 1
+    fi
   displayName: 'Test TF'

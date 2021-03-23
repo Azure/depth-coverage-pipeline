@@ -3,7 +3,7 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'Ubuntu 20.04'
 
 variables:
 - name: PIPELINE_ORG
@@ -200,6 +200,8 @@ stages:
     variables:
       TASK_KEY: CLIMockTest
       Contactors: "chunyu@microsoft.com;vsccodegen@microsoft.com"
+      srcPackage: $(ResourceProvider)
+      prefix: forpipeline
     steps:
     - template: .azure-pipelines/templates/BeforeTask.yml
     - script: echo 'CLI MockTest'
