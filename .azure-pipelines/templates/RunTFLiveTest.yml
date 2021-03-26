@@ -19,7 +19,18 @@ steps:
     set -x
     cd ./go/src/github.com/terraform-providers/terraform-provider-azurerm
     pwd
-    source scripts/TFEnv
+    # source $(Pipeline.Workspace)/s/scripts/TFEnv
+
+    export ARM_CLIENT_ID=$(SERVICE_PRINCIPE_ID)
+    export ARM_CLIENT_SECRET=$(SERVICE_PRINCIPE_SECRET)
+    export ARM_SUBSCRIPTION_ID=$(SERVICE_PRINCIPE_SUBSCRIPTION)
+    export ARM_TENANT_ID=$(SERVICE_PRINCIPE_TENANT)
+    export ARM_TEST_LOCATION=eastus
+    export ARM_TEST_LOCATION_ALT=eastus
+    export ARM_TEST_LOCATION_ALT2=eastus
+    export ARM_ENVIRONMENT=public
+    export TF_ACC=true
+
     make acctests SERVICE=$(srcPackage) TESTARGS=-run=TestAcc[a-zA-Z]+_ci[a-zA-Z0-9]+ TESTTIMEOUT='60m' 1>$(TASK_KEY).log 2>&1
     if [ "$?" != "0" ]; then
       echo -e "\e[31m[$(date -u)] ERROR: [$(ResourceProvider)]: TF Live Test failed"
