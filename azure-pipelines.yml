@@ -32,7 +32,8 @@ variables:
   value: ""
 - name: STAGES
   value: "setup;GenerateCode;Build;MockTest;LiveTest;Submit"
-
+- name: CODE_PULLREQUEST
+  value: ""
 stages:
 - stage: setup
   jobs:
@@ -335,7 +336,7 @@ stages:
         sdktarget=$(TARGET)
         if [ "$sdktarget" == "terraform" ]; then
           git clone --branch depth-$(TARGET)-$(ResourceProvider) https://$(PIPELINE_USER):$(PIPELINE_TOKEN)@github.com/$(TF_ORG)/terraform-provider-azurerm.git
-          # cp ./azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/readme.trenton.md ./terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(ResourceProvider)/
+          # cp ./azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/readme.terraform.md ./terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(ResourceProvider)/
           cd ./terraform-provider-azurerm
           # git checkout -b depth-code-$(TARGET)-$(ResourceProvider)
           tf_existed_in_remote=$(git ls-remote --heads origin depth-code-$(TARGET)-$(ResourceProvider))
@@ -346,7 +347,7 @@ stages:
             # git pull origin depth-$(TARGET)-$(ResourceProvider)
             git reset --hard origin/depth-$(TARGET)-$(ResourceProvider)
           fi
-          cp ../azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/readme.trenton.md ./azurerm/internal/services/$(ResourceProvider)/
+          cp ../azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/readme.terraform.md ./azurerm/internal/services/$(ResourceProvider)/
         fi
 
         if [ "$sdktarget" == "clicore" ] || [ "$sdktarget" == "cliextension" ]; then

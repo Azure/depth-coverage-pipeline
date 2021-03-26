@@ -1,8 +1,8 @@
 steps:
-- script: |
-    codePRNumber=22
+- template: .azure-pipelines/templates/GenerateCodePR.yml
+- bash: |
     logurl="https://depthcoverage.blob.core.windows.net/depthcoverage/log/$(TARGET)-$(ResourceProvider)-$(Build.BuildId)-$(TASK_KEY).log"
-    codePR="https://github.com/${PIPELINE_ORG}/depth-coverage-pipeline/pull/$codePRNumber"
+    codePR=$(CODE_PULLREQUEST)
     triggerPR="https://github.com/${PIPELINE_ORG}/depth-coverage-pipeline/pull/$(System.PullRequest.PullRequestNumber)"
     resolveURL="http://$(CodegenApp_Server):$(CodegenApp_Port)/DepthCoverage/Resolve"
         
