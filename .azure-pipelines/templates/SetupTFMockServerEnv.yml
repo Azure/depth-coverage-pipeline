@@ -12,5 +12,6 @@ steps:
     npm install
     . initiate.sh
     tsc
-    sudo node dist/src/main.js 1>../mockserver.log 2>&1 &
+    # sudo node dist/src/main.js 1>../mockserver.log 2>&1 &
+    sudo node dist/src/main.js &
   displayName: 'setup mock server'
