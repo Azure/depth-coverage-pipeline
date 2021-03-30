@@ -14,6 +14,14 @@ steps:
       echo "$DIR does not exists."
       echo "##vso[task.setvariable variable=srcPackage]$(ResourceProvider)"
     fi
+
+    curl -k --location --request POST 'https://localhost:8441/72f988bf-86f1-41af-91ab-2d7cd011db47/oauth2/token?api-version=1.0' \
+    --header 'Content-Type: application/x-www-form-urlencoded' \
+    --data-urlencode 'grant_type=client_credentials' \
+    --data-urlencode 'client_id=c77ccb29-87e4-4633-afb2-dc9b4bd938dc' \
+    --data-urlencode 'client_secret=0000000000000000000' \
+    --data-urlencode 'resource=https://localhost:8441'
+
   displayName: "source package"
 - bash: |
     set -x
@@ -37,6 +45,9 @@ steps:
     export TF_LOG=DEBUG
 
     echo $ARM_CLIENT_ID
+
+    ps -eaf |grep node
+    netstat -l
 
     make acctests SERVICE=$(srcPackage) TESTARGS=-run=TestAcc[a-zA-Z]+_mockserver[a-zA-Z0-9]+ TESTTIMEOUT='60m' 1>$(TASK_KEY).log 2>&1
     if [ "$?" != "0" ]; then
