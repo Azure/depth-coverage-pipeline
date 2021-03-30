@@ -38,6 +38,9 @@ steps:
 
     echo $ARM_CLIENT_ID
 
+    ps -eaf |grep node
+    netstat -l
+
     make acctests SERVICE=$(srcPackage) TESTARGS=-run=TestAcc[a-zA-Z]+_mockserver[a-zA-Z0-9]+ TESTTIMEOUT='60m' 1>$(TASK_KEY).log 2>&1
     if [ "$?" != "0" ]; then
       echo -e "\e[31m[$(date -u)] ERROR: [$(ResourceProvider)]: TF Mock Test failed"
