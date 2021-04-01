@@ -383,5 +383,6 @@
   "onboardType": "depth",
   "RPName": "compute",
   "readmeFile": "/specification/compute/resource-manager/readme.md",
-  "target": "clicore"
+  "target": "clicore",
+  "excludeStages": "MockTest;LiveTest"
 }
