@@ -384,5 +384,5 @@
   "RPName": "compute",
   "readmeFile": "/specification/compute/resource-manager/readme.md",
   "target": "clicore",
-  "excludeStages": "MockTest;LiveTest"
+  "excludeStages": ""
 }
