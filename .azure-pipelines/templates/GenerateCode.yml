@@ -100,6 +100,21 @@ steps:
     fi
   displayName: 'Generate or update configuration file'
 - bash: |
+    ls -l $(Pipeline.Workspace)/variables
+    sdktarget=$(TARGET)
+    if [ "$sdktarget" == "terraform" ]; then
+      pack=`cat $(Pipeline.Workspace)/s/azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/readme.terraform.md | grep "/cli-name/" | awk -F':' '{print $2}' | | tr -d '[[:space:]]'`
+      af="generated/$pack"
+      echo "$af" > $(Pipeline.Workspace)/variables/Artifact
+      echo "$pack" > $(Pipeline.Workspace)/variables/Package
+    fi
+  displayName: 'update variable'
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: '$(Pipeline.Workspace)'
+    artifact: 'variables'
+    publishLocation: 'pipeline'
+- bash: |
     echo $pwd
     sdktarget=$(TARGET)
     if [ "$sdktarget" == "terraform" ]; then
