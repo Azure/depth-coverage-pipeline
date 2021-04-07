@@ -45,3 +45,4 @@ steps:
     echo $package
     echo 'end' 
   displayName: 'set variable'
+  condition: always()
