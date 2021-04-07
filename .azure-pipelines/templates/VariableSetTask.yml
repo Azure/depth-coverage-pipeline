@@ -1,16 +1,25 @@
 steps:
+# - task: DownloadPipelineArtifact@2
+#   inputs:
+#     buildType: 'current'
+#     artifactName: 'variables'
+#     targetPath: '$(Pipeline.Workspace)'
+# - task: DownloadPipelineArtifact@2
+#   inputs:
+#     buildType: 'current'
+#     artifactName: 'sdkvariables'
+#     targetPath: '$(Pipeline.Workspace)/sdk'
 - task: DownloadPipelineArtifact@2
   inputs:
     buildType: 'current'
-    artifactName: 'variables'
     targetPath: '$(Pipeline.Workspace)'
-- task: DownloadPipelineArtifact@2
-  inputs:
-    buildType: 'current'
-    artifactName: 'sdkvariables'
-    targetPath: '$(Pipeline.Workspace)/sdk'
+# - download: current
+  
+# - download: current
+#   patterns: 'sdkvariables/**'
 - script: |
-    ls -l
+    set -x
+    ls -l $(Pipeline.Workspace)
     ResourceProvider=$(cat $(Pipeline.Workspace)/variables/ResourceProvider)
     echo "##vso[task.setvariable variable=ResourceProvider]$ResourceProvider"
         
@@ -45,3 +54,4 @@ steps:
     echo $package
     echo 'end' 
   displayName: 'set variable'
+  condition: always()
