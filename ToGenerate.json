@@ -1,0 +1,40 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2015-04-08",
+      "operations": [],
+      "Resource": "Microsoft.DocumentDB/databaseAccounts/apis/cassandra/keyspaces/tables",
+      "tag": "package-2021-01"
+    },
+    {
+      "APIVersion": "2020-06-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.DocumentDB/databaseAccounts/notebookWorkspaces",
+      "tag": "package-2021-01"
+    },
+    {
+      "APIVersion": "2019-08-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.DocumentDB/databaseAccounts/privateEndpointConnections",
+      "tag": "package-2021-01"
+    },
+    {
+      "APIVersion": "2020-06-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/triggers",
+      "tag": "package-2021-01"
+    },
+    {
+      "APIVersion": "2020-06-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/userDefinedFunctions",
+      "tag": "package-2021-01"
+    }
+  ],
+  "resourcelist": "Microsoft.DocumentDB/databaseAccounts/apis/cassandra/keyspaces/tables,Microsoft.DocumentDB/databaseAccounts/notebookWorkspaces,Microsoft.DocumentDB/databaseAccounts/privateEndpointConnections,Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/triggers,Microsoft.DocumentDB/databaseAccounts/sqlDatabases/containers/userDefinedFunctions",
+  "onboardType": "depth",
+  "RPName": "cosmos-db",
+  "readmeFile": "/specification/cosmos-db/resource-manager/readme.md",
+  "target": "terraform",
+  "tag": "package-2021-01"
+}
