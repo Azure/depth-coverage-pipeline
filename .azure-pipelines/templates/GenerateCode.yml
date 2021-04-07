@@ -106,7 +106,10 @@ steps:
       PACKAGE_NAME=`cat $(Pipeline.Workspace)/s/azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/readme.terraform.md | grep "cli-name"| awk -F':' '{print $2}' | tr -d '[[:space:]]'`
       af="generated/$PACKAGE_NAME"
       echo "PACKAGE_NAME:$PACKAGE_NAME"
+      echo "##vso[task.setvariable variable=Package]$PACKAGE_NAME"
       echo "$PACKAGE_NAME" > $(Pipeline.Workspace)/sdk/sdkvariables/Package
+
+      echo "##vso[task.setvariable variable=Artifact]$af"
       echo "$af" > $(Pipeline.Workspace)/sdk/sdkvariables/Artifact
     fi
   displayName: 'set sdk variable'
