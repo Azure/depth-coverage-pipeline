@@ -46,19 +46,20 @@ steps:
     fi
   displayName: "build go-sdk"
   condition: eq(variables['TARGET'], 'terraform')
+# - bash: |
+#     DIR=./go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(ResourceProvider)
+#     if [ -d "$DIR" ]; then
+#       echo "$DIR exists."
+#       echo "##vso[task.setvariable variable=srcPackage]$(Package)$(prefix)"
+#       echo "$(srcPackage)"
+#       echo "$(prefix)"
+#     else
+#       echo "##vso[task.setvariable variable=srcPackage]$(Package)"
+#       cp -r ./generated/generated/* ./go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/
+#     fi
+#   displayName: "source package"
 - bash: |
-    DIR=./go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(ResourceProvider)
-    if [ -d "$DIR" ]; then
-      echo "$DIR exists."
-      echo "##vso[task.setvariable variable=srcPackage]$(Package)$(prefix)"
-      echo "$(srcPackage)"
-      echo "$(prefix)"
-    else
-      echo "##vso[task.setvariable variable=srcPackage]$(Package)"
-      cp -r ./generated/generated/* ./go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/
-    fi
-  displayName: "source package"
-- bash: |
+    set -x
     pwd
     ls -l
     ls -l ./generated
@@ -67,18 +68,17 @@ steps:
 
     echo "$(srcPackage)"
     echo "$(prefix)"
-    DIR=./go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(ResourceProvider)
+    DIR=./go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(Package)
     if [ -d "$DIR" ]; then
       echo "$DIR exists."
-      # echo "##vso[task.setvariable variable=srcPackage]$(ResourceProvider)$(prefix)"
-      cp -r ./generated/generated/$(ResourceProvider) ./go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(srcPackage)
-      bash ./scripts/bash/renameGeneratedCode.sh $(Pipeline.Workspace)/s/go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(srcPackage) $(prefix) $(Pipeline.Workspace)/s/go/src/github.com/terraform-providers/terraform-provider-azurerm
+      echo "##vso[task.setvariable variable=srcPackage]$(Package)$(prefix)"
+      cp -r ./generated/generated/$(Package) ./go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(Package)$(prefix)
+      bash ./scripts/bash/renameGeneratedCode.sh $(Pipeline.Workspace)/s/go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(Package)$(prefix) $(prefix) $(Pipeline.Workspace)/s/go/src/github.com/terraform-providers/terraform-provider-azurerm
     else
-      echo "##vso[task.setvariable variable=srcPackage]$(ResourceProvider)"
-      cp -r ./generated/generated/$(ResourceProvider) ./go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/
+      echo "$DIR not exists."
+      echo "##vso[task.setvariable variable=srcPackage]$(Package)"
+      cp -r ./generated/generated/$(Package) ./go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/
       ls -l ./go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(srcPackage)
-      # echo "$(ResourceProvider)"
-      # ls -l ./go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(srcPackage)
 
       cd ./go/src/github.com/terraform-providers/terraform-provider-azurerm
       echo -e "\e[32m[$(date -u)] LOG:]: Change client.go and service.go."
@@ -181,7 +181,8 @@ steps:
     # export env
     export GOPATH=/home/vsts/work/1/s/go
     export PATH=$PATH:$GOPATH/bin
-    export RP=$(ResourceProvider)
+    # export RP=$(ResourceProvider)
+    export RP=$(Package)
     bash ./scripts/bash/compile.sh 1>build.log 2>&1
     
     if [ "$?" != "0" ]; then
