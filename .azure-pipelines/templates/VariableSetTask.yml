@@ -1,40 +1,54 @@
 steps:
+# - task: DownloadPipelineArtifact@2
+#   inputs:
+#     buildType: 'current'
+#     artifactName: 'variables'
+#     targetPath: '$(Pipeline.Workspace)'
+# - task: DownloadPipelineArtifact@2
+#   inputs:
+#     buildType: 'current'
+#     artifactName: 'sdkvariables'
+#     targetPath: '$(Pipeline.Workspace)/sdk'
 - task: DownloadPipelineArtifact@2
   inputs:
     buildType: 'current'
-    artifactName: 'variables'
+    patterns: '*variables/**'
     targetPath: '$(Pipeline.Workspace)'
-- task: DownloadPipelineArtifact@2
-  inputs:
-    buildType: 'current'
-    artifactName: 'sdkvariables'
-    targetPath: '$(Pipeline.Workspace)/sdk'
+# - download: current
+  
+# - download: current
+#   patterns: 'sdkvariables/**'
 - script: |
-    ls -l
-    ResourceProvider=$(cat $(Pipeline.Workspace)/variables/ResourceProvider)
+    set -x
+    ls -l $(Pipeline.Workspace)
+    ls -l $(Pipeline.Workspace)/variables/
+    ls -l $(Pipeline.Workspace)/sdkvariables/
+    ls -l $(Pipeline.Workspace)/variables/variables
+    ls -l $(Pipeline.Workspace)/sdkvariables/sdkvariables
+    ResourceProvider=$(cat $(Pipeline.Workspace)/variables/variables/ResourceProvider)
     echo "##vso[task.setvariable variable=ResourceProvider]$ResourceProvider"
         
-    README_FILE=$(cat $(Pipeline.Workspace)/variables/README_FILE)
+    README_FILE=$(cat $(Pipeline.Workspace)/variables/variables/README_FILE)
     echo "##vso[task.setvariable variable=README_FILE]$README_FILE"
 
-    target=$(cat $(Pipeline.Workspace)/variables/TARGET)
+    target=$(cat $(Pipeline.Workspace)/variables/variables/TARGET)
     echo "##vso[task.setvariable variable=TARGET]$target"
 
-    tag=$(cat $(Pipeline.Workspace)/variables/TAG)
+    tag=$(cat $(Pipeline.Workspace)/variables/variables/TAG)
     echo "##vso[task.setvariable variable=TAG]$tag"
 
-    resources=$(cat $(Pipeline.Workspace)/variables/RESOURCES)
+    resources=$(cat $(Pipeline.Workspace)/variables/variables/RESOURCES)
     echo "##vso[task.setvariable variable=RESOURCES]$resources"
 
-    af=$(cat $(Pipeline.Workspace)/variables/Artifact)
-    if [ -f "$(Pipeline.Workspace)/sdk/sdkvariables/Artifact" ]; then
-      af=$(cat $(Pipeline.Workspace)/sdk/sdkvariables/Artifact)
+    af=$(cat $(Pipeline.Workspace)/variables/variables/Artifact)
+    if [ -f "$(Pipeline.Workspace)/sdkvariables/sdkvariables/Artifact" ]; then
+      af=$(cat $(Pipeline.Workspace)/sdkvariables/sdkvariables/Artifact)
     fi
     echo "##vso[task.setvariable variable=Artifact]$af"
 
-    package=$(cat $(Pipeline.Workspace)/variables/Package)
-    if [ -f "$(Pipeline.Workspace)/sdk/sdkvariables/Package" ]; then
-      package=$(cat $(Pipeline.Workspace)/sdk/sdkvariables/Package)
+    package=$(cat $(Pipeline.Workspace)/variables/variables/Package)
+    if [ -f "$(Pipeline.Workspace)/sdkvariables/sdkvariables/Package" ]; then
+      package=$(cat $(Pipeline.Workspace)/sdkvariables/sdkvariables/Package)
     fi
     echo "##vso[task.setvariable variable=Package]$package"
 
@@ -45,3 +59,4 @@ steps:
     echo $package
     echo 'end' 
   displayName: 'set variable'
+  condition: always()

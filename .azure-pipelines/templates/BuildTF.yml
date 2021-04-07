@@ -181,7 +181,8 @@ steps:
     # export env
     export GOPATH=/home/vsts/work/1/s/go
     export PATH=$PATH:$GOPATH/bin
-    export RP=$(ResourceProvider)
+    # export RP=$(ResourceProvider)
+    export RP=$(Package)
     bash ./scripts/bash/compile.sh 1>build.log 2>&1
     
     if [ "$?" != "0" ]; then
