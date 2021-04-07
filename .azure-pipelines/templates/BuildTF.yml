@@ -67,18 +67,15 @@ steps:
 
     echo "$(srcPackage)"
     echo "$(prefix)"
-    DIR=./go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(ResourceProvider)
+    DIR=./go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(srcPackage)
     if [ -d "$DIR" ]; then
       echo "$DIR exists."
-      # echo "##vso[task.setvariable variable=srcPackage]$(ResourceProvider)$(prefix)"
-      cp -r ./generated/generated/$(ResourceProvider) ./go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(srcPackage)
+      cp -r ./generated/generated/$(srcPackage) ./go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(srcPackage)
       bash ./scripts/bash/renameGeneratedCode.sh $(Pipeline.Workspace)/s/go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(srcPackage) $(prefix) $(Pipeline.Workspace)/s/go/src/github.com/terraform-providers/terraform-provider-azurerm
     else
-      echo "##vso[task.setvariable variable=srcPackage]$(ResourceProvider)"
-      cp -r ./generated/generated/$(ResourceProvider) ./go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/
+      echo "##vso[task.setvariable variable=srcPackage]$(Package)"
+      cp -r ./generated/generated/$(srcPackage) ./go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/
       ls -l ./go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(srcPackage)
-      # echo "$(ResourceProvider)"
-      # ls -l ./go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(srcPackage)
 
       cd ./go/src/github.com/terraform-providers/terraform-provider-azurerm
       echo -e "\e[32m[$(date -u)] LOG:]: Change client.go and service.go."
@@ -181,7 +178,8 @@ steps:
     # export env
     export GOPATH=/home/vsts/work/1/s/go
     export PATH=$PATH:$GOPATH/bin
-    export RP=$(ResourceProvider)
+    # export RP=$(ResourceProvider)
+    export RP=$(Package)
     bash ./scripts/bash/compile.sh 1>build.log 2>&1
     
     if [ "$?" != "0" ]; then
