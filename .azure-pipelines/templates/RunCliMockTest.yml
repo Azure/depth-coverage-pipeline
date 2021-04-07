@@ -17,4 +17,4 @@ steps:
     else
       az cloud set -n AzureCloud
     fi
-  displayName: 'CLI Test'
+  displayName: 'CLI Mock Test'
