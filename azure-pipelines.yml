@@ -158,6 +158,7 @@ stages:
     - template: .azure-pipelines/templates/UploadCode.yml
     - template: .azure-pipelines/templates/IssueAlertTask.yml
     - template: .azure-pipelines/templates/AfterTask.yml
+  - template: .azure-pipelines/templates/IssueAlertJob.yml
 - stage: Build
   dependsOn: GenerateCode
   condition: and(succeeded(), eq(stageDependencies.GenerateCode.outputs['GenerateJob.DetermineResult.tobuild'], 'Yes'))
@@ -174,11 +175,12 @@ stages:
     - template: .azure-pipelines/templates/BuildTF.yml
     - template: .azure-pipelines/templates/IssueAlertTask.yml
     - template: .azure-pipelines/templates/AfterTask.yml
-  - job: alertIssue
-    dependsOn: build
-    condition: and(failed(), eq(stageDependencies.GenerateCode.outputs['GenerateJob.DetermineResult.tobuild'], 'Yes'))
-    steps:
-    - template: .azure-pipelines/templates/IssueAlertTask.yml
+  - template: .azure-pipelines/templates/IssueAlertJob.yml
+  # - job: alertIssue
+  #   dependsOn: build
+  #   condition: and(failed(), eq(stageDependencies.GenerateCode.outputs['GenerateJob.DetermineResult.tobuild'], 'Yes'))
+  #   steps:
+  #   - template: .azure-pipelines/templates/IssueAlertTask.yml
 - stage: MockTest
   dependsOn:
   - setup
@@ -206,7 +208,6 @@ stages:
     - script: echo 'CLI MockTest'
     - template: .azure-pipelines/templates/SetupCliTestEnv.yml
     - template: .azure-pipelines/templates/SetupCliMockServerEnv.yml
-    # - template: .azure-pipelines/templates/SetupCliTestEnv.yml
     - template: .azure-pipelines/templates/RunCliMockTest.yml
     - template: .azure-pipelines/templates/IssueAlertTask.yml
     - template: .azure-pipelines/templates/AfterTask.yml
@@ -230,17 +231,17 @@ stages:
     displayName: TFIMockTest
     dependsOn: DetermineSDKJob
     condition: eq(dependencies.DetermineSDKJob.outputs['determineSDK.sdk'], 'terraform')
-  - job: alertIssue
-    variables:
-      TASK_KEY: TFMockTest
-      Contactors: "chunyu@microsoft.com;vsccodegen@microsoft.com"
-    dependsOn:
-    - CLIMockTest
-    - TFMockTest
-    condition: or(and(eq(dependencies.DetermineSDKJob.outputs['determineSDK.sdk'], 'cli'), failed('ClIMockTest')), and(eq(dependencies.DetermineSDKJob.outputs['determineSDK.sdk'], 'terraform'), failed('TFMockTest')))
-    steps:
-    - template: .azure-pipelines/templates/VariableSetTask.yml
-    - template: .azure-pipelines/templates/IssueAlertTask.yml
+  # - job: alertIssue
+  #   variables:
+  #     TASK_KEY: TFMockTest
+  #     Contactors: "chunyu@microsoft.com;vsccodegen@microsoft.com"
+  #   dependsOn:
+  #   - CLIMockTest
+  #   - TFMockTest
+  #   condition: or(and(eq(dependencies.DetermineSDKJob.outputs['determineSDK.sdk'], 'cli'), failed('ClIMockTest')), and(eq(dependencies.DetermineSDKJob.outputs['determineSDK.sdk'], 'terraform'), failed('TFMockTest')))
+  #   steps:
+  #   - template: .azure-pipelines/templates/VariableSetTask.yml
+  #   - template: .azure-pipelines/templates/IssueAlertTask.yml
 - stage: LiveTest
   dependsOn:
   - setup
