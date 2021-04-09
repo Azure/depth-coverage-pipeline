@@ -1,0 +1,19 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-09-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.MachineLearningServices/workspaces/connections"
+    },
+    {
+      "APIVersion": "2020-09-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.MachineLearningServices/workspaces/privateEndpointConnections"
+    }
+  ],
+  "resourcelist": "Microsoft.MachineLearningServices/workspaces/connections,Microsoft.MachineLearningServices/workspaces/privateEndpointConnections",
+  "onboardType": "depth",
+  "RPName": "machinelearningservices",
+  "readmeFile": "/specification/machinelearningservices/resource-manager/readme.md",
+  "target": "terraform"
+}
