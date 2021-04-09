@@ -1,0 +1,73 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2014-09-01",
+      "operations": [
+        {
+          "OperationId": "Namespaces_ListAuthorizationRules",
+          "version": "2014-09-01",
+          "jsonFilePath": "/specification/notificationhubs/resource-manager/Microsoft.NotificationHubs/stable/2014-09-01/notificationhubs.json"
+        },
+        {
+          "OperationId": "Namespaces_DeleteAuthorizationRule",
+          "version": "2017-04-01",
+          "jsonFilePath": "/specification/notificationhubs/resource-manager/Microsoft.NotificationHubs/stable/2017-04-01/notificationhubs.json"
+        },
+        {
+          "OperationId": "Namespaces_GetAuthorizationRule",
+          "version": "2014-09-01",
+          "jsonFilePath": "/specification/notificationhubs/resource-manager/Microsoft.NotificationHubs/stable/2014-09-01/notificationhubs.json"
+        }
+      ],
+      "Resource": "Microsoft.NotificationHubs/namespaces/AuthorizationRules"
+    },
+    {
+      "APIVersion": "2017-04-01",
+      "operations": [
+        {
+          "OperationId": "Namespaces_RegenerateKeys",
+          "version": "2017-04-01",
+          "jsonFilePath": "/specification/notificationhubs/resource-manager/Microsoft.NotificationHubs/stable/2017-04-01/notificationhubs.json"
+        }
+      ],
+      "Resource": "Microsoft.NotificationHubs/namespaces/AuthorizationRules/regenerateKeys"
+    },
+    {
+      "APIVersion": "2014-09-01",
+      "operations": [
+        {
+          "OperationId": "NotificationHubs_ListAuthorizationRules",
+          "version": "2014-09-01",
+          "jsonFilePath": "/specification/notificationhubs/resource-manager/Microsoft.NotificationHubs/stable/2014-09-01/notificationhubs.json"
+        },
+        {
+          "OperationId": "NotificationHubs_DeleteAuthorizationRule",
+          "version": "2017-04-01",
+          "jsonFilePath": "/specification/notificationhubs/resource-manager/Microsoft.NotificationHubs/stable/2017-04-01/notificationhubs.json"
+        },
+        {
+          "OperationId": "NotificationHubs_GetAuthorizationRule",
+          "version": "2017-04-01",
+          "jsonFilePath": "/specification/notificationhubs/resource-manager/Microsoft.NotificationHubs/stable/2017-04-01/notificationhubs.json"
+        }
+      ],
+      "Resource": "Microsoft.NotificationHubs/namespaces/notificationHubs/AuthorizationRules"
+    },
+    {
+      "APIVersion": "2017-04-01",
+      "operations": [
+        {
+          "OperationId": "NotificationHubs_RegenerateKeys",
+          "version": "2017-04-01",
+          "jsonFilePath": "/specification/notificationhubs/resource-manager/Microsoft.NotificationHubs/stable/2017-04-01/notificationhubs.json"
+        }
+      ],
+      "Resource": "Microsoft.NotificationHubs/namespaces/notificationHubs/AuthorizationRules/regenerateKeys"
+    }
+  ],
+  "resourcelist": "Microsoft.NotificationHubs/namespaces/AuthorizationRules,Microsoft.NotificationHubs/namespaces/AuthorizationRules/regenerateKeys,Microsoft.NotificationHubs/namespaces/notificationHubs/AuthorizationRules,Microsoft.NotificationHubs/namespaces/notificationHubs/AuthorizationRules/regenerateKeys",
+  "onboardType": "depth",
+  "RPName": "notificationhubs",
+  "readmeFile": "/specification/notificationhubs/resource-manager/readme.md",
+  "target": "clicore"
+}
