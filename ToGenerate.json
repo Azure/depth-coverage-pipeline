@@ -1,0 +1,14 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-12-01",
+      "operations": [],
+      "Resource": "Microsoft.DigitalTwins/digitalTwinsInstances/privateEndpointConnections"
+    }
+  ],
+  "resourcelist": "Microsoft.DigitalTwins/digitalTwinsInstances/privateEndpointConnections",
+  "onboardType": "depth",
+  "RPName": "digitaltwins",
+  "readmeFile": "/specification/digitaltwins/resource-manager/readme.md",
+  "target": "terraform"
+}
