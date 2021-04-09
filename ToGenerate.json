@@ -1,0 +1,19 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2018-01-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.ServiceBus/namespaces/disasterRecoveryConfigs"
+    },
+    {
+      "APIVersion": "2017-04-01",
+      "operations": [],
+      "Resource": "Microsoft.ServiceBus/namespaces/migrationConfigurations"
+    }
+  ],
+  "resourcelist": "Microsoft.ServiceBus/namespaces/disasterRecoveryConfigs,Microsoft.ServiceBus/namespaces/migrationConfigurations",
+  "onboardType": "depth",
+  "RPName": "servicebus",
+  "readmeFile": "/specification/servicebus/resource-manager/readme.md",
+  "target": "terraform"
+}
