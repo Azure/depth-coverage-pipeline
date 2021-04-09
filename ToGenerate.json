@@ -1,0 +1,158 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-04-01-preview",
+      "operations": [
+        {
+          "OperationId": "ExtensionTopics_Get",
+          "version": "2020-04-01-preview",
+          "jsonFilePath": "/specification/eventgrid/resource-manager/Microsoft.EventGrid/preview/2020-04-01-preview/EventGrid.json"
+        }
+      ],
+      "Resource": "Microsoft.EventGrid/extensionTopics/default"
+    },
+    {
+      "APIVersion": "2020-04-01-preview",
+      "operations": [
+        {
+          "OperationId": "PrivateEndpointConnections_Delete",
+          "version": "2020-04-01-preview",
+          "jsonFilePath": "/specification/eventgrid/resource-manager/Microsoft.EventGrid/preview/2020-04-01-preview/EventGrid.json"
+        },
+        {
+          "OperationId": "PrivateEndpointConnections_Get",
+          "version": "2020-04-01-preview",
+          "jsonFilePath": "/specification/eventgrid/resource-manager/Microsoft.EventGrid/preview/2020-04-01-preview/EventGrid.json"
+        },
+        {
+          "OperationId": "PrivateEndpointConnections_Update",
+          "version": "2020-04-01-preview",
+          "jsonFilePath": "/specification/eventgrid/resource-manager/Microsoft.EventGrid/preview/2020-04-01-preview/EventGrid.json"
+        }
+      ],
+      "Resource": "Microsoft.EventGrid/privateEndpointConnections"
+    },
+    {
+      "APIVersion": "2019-02-01-preview",
+      "operations": [
+        {
+          "OperationId": "Domains_RegenerateKey",
+          "version": "2019-02-01-preview",
+          "jsonFilePath": "/specification/eventgrid/resource-manager/Microsoft.EventGrid/preview/2019-02-01-preview/EventGrid.json"
+        }
+      ],
+      "Resource": "Microsoft.EventGrid/domains/regenerateKey"
+    },
+    {
+      "APIVersion": "2020-04-01-preview",
+      "operations": [
+        {
+          "OperationId": "PartnerNamespaces_ListByResourceGroup",
+          "version": "2020-04-01-preview",
+          "jsonFilePath": "/specification/eventgrid/resource-manager/Microsoft.EventGrid/preview/2020-04-01-preview/EventGrid.json"
+        },
+        {
+          "OperationId": "PartnerNamespaces_Delete",
+          "version": "2020-04-01-preview",
+          "jsonFilePath": "/specification/eventgrid/resource-manager/Microsoft.EventGrid/preview/2020-04-01-preview/EventGrid.json"
+        },
+        {
+          "OperationId": "PartnerNamespaces_Get",
+          "version": "2020-04-01-preview",
+          "jsonFilePath": "/specification/eventgrid/resource-manager/Microsoft.EventGrid/preview/2020-04-01-preview/EventGrid.json"
+        },
+        {
+          "OperationId": "PartnerNamespaces_CreateOrUpdate",
+          "version": "2020-04-01-preview",
+          "jsonFilePath": "/specification/eventgrid/resource-manager/Microsoft.EventGrid/preview/2020-04-01-preview/EventGrid.json"
+        }
+      ],
+      "Resource": "Microsoft.EventGrid/partnerNamespaces"
+    },
+    {
+      "APIVersion": "2020-04-01-preview",
+      "operations": [
+        {
+          "OperationId": "EventChannels_Delete",
+          "version": "2020-04-01-preview",
+          "jsonFilePath": "/specification/eventgrid/resource-manager/Microsoft.EventGrid/preview/2020-04-01-preview/EventGrid.json"
+        },
+        {
+          "OperationId": "EventChannels_Get",
+          "version": "2020-04-01-preview",
+          "jsonFilePath": "/specification/eventgrid/resource-manager/Microsoft.EventGrid/preview/2020-04-01-preview/EventGrid.json"
+        },
+        {
+          "OperationId": "EventChannels_CreateOrUpdate",
+          "version": "2020-04-01-preview",
+          "jsonFilePath": "/specification/eventgrid/resource-manager/Microsoft.EventGrid/preview/2020-04-01-preview/EventGrid.json"
+        }
+      ],
+      "Resource": "Microsoft.EventGrid/partnerNamespaces/eventChannels"
+    },
+    {
+      "APIVersion": "2020-04-01-preview",
+      "operations": [
+        {
+          "OperationId": "PartnerRegistrations_ListByResourceGroup",
+          "version": "2020-04-01-preview",
+          "jsonFilePath": "/specification/eventgrid/resource-manager/Microsoft.EventGrid/preview/2020-04-01-preview/EventGrid.json"
+        },
+        {
+          "OperationId": "PartnerRegistrations_Delete",
+          "version": "2020-04-01-preview",
+          "jsonFilePath": "/specification/eventgrid/resource-manager/Microsoft.EventGrid/preview/2020-04-01-preview/EventGrid.json"
+        },
+        {
+          "OperationId": "PartnerRegistrations_Get",
+          "version": "2020-04-01-preview",
+          "jsonFilePath": "/specification/eventgrid/resource-manager/Microsoft.EventGrid/preview/2020-04-01-preview/EventGrid.json"
+        },
+        {
+          "OperationId": "PartnerRegistrations_CreateOrUpdate",
+          "version": "2020-04-01-preview",
+          "jsonFilePath": "/specification/eventgrid/resource-manager/Microsoft.EventGrid/preview/2020-04-01-preview/EventGrid.json"
+        }
+      ],
+      "Resource": "Microsoft.EventGrid/partnerRegistrations"
+    },
+    {
+      "APIVersion": "2020-04-01-preview",
+      "operations": [
+        {
+          "OperationId": "PartnerTopics_Delete",
+          "version": "2020-04-01-preview",
+          "jsonFilePath": "/specification/eventgrid/resource-manager/Microsoft.EventGrid/preview/2020-04-01-preview/EventGrid.json"
+        }
+      ],
+      "Resource": "Microsoft.EventGrid/partnerTopics"
+    },
+    {
+      "APIVersion": "2020-04-01-preview",
+      "operations": [
+        {
+          "OperationId": "PartnerTopics_Deactivate",
+          "version": "2020-04-01-preview",
+          "jsonFilePath": "/specification/eventgrid/resource-manager/Microsoft.EventGrid/preview/2020-04-01-preview/EventGrid.json"
+        }
+      ],
+      "Resource": "Microsoft.EventGrid/partnerTopics/deactivate"
+    },
+    {
+      "APIVersion": "2020-04-01-preview",
+      "operations": [
+        {
+          "OperationId": "PartnerTopicEventSubscriptions_GetFullUrl",
+          "version": "2020-04-01-preview",
+          "jsonFilePath": "/specification/eventgrid/resource-manager/Microsoft.EventGrid/preview/2020-04-01-preview/EventGrid.json"
+        }
+      ],
+      "Resource": "Microsoft.EventGrid/partnerTopics/eventSubscriptions/getFullUrl"
+    }
+  ],
+  "resourcelist": "Microsoft.EventGrid/extensionTopics/default,Microsoft.EventGrid/privateEndpointConnections,Microsoft.EventGrid/domains/regenerateKey,Microsoft.EventGrid/partnerNamespaces,Microsoft.EventGrid/partnerNamespaces/eventChannels,Microsoft.EventGrid/partnerRegistrations,Microsoft.EventGrid/partnerTopics,Microsoft.EventGrid/partnerTopics/deactivate,Microsoft.EventGrid/partnerTopics/eventSubscriptions/getFullUrl",
+  "onboardType": "depth",
+  "RPName": "eventgrid",
+  "readmeFile": "/specification/eventgrid/resource-manager/readme.md",
+  "target": "clicore"
+}
