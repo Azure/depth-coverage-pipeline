@@ -1,0 +1,112 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-05-01",
+      "operations": [],
+      "Resource": "Microsoft.Network/applicationGateways/privateEndpointConnections",
+      "tag": "package-2021-02-preview"
+    },
+    {
+      "APIVersion": "2020-06-01",
+      "operations": [],
+      "Resource": "Microsoft.Network/customIpPrefixes",
+      "tag": "package-2021-02-preview"
+    },
+    {
+      "APIVersion": "2020-06-01",
+      "operations": [],
+      "Resource": "Microsoft.Network/dscpConfigurations",
+      "tag": "package-2021-02-preview"
+    },
+    {
+      "APIVersion": "2018-11-01",
+      "operations": [],
+      "Resource": "Microsoft.Network/expressRouteCircuits/peerings/connections",
+      "tag": "package-2021-02-preview"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [],
+      "Resource": "Microsoft.Network/expressRouteCrossConnections/peerings",
+      "tag": "package-2021-02-preview"
+    },
+    {
+      "APIVersion": "2019-11-01",
+      "operations": [],
+      "Resource": "Microsoft.Network/expressRouteGateways/expressRouteConnections",
+      "tag": "package-2021-02-preview"
+    },
+    {
+      "APIVersion": "2019-06-01",
+      "operations": [],
+      "Resource": "Microsoft.Network/firewallPolicies/ruleGroups",
+      "tag": "package-2021-02-preview"
+    },
+    {
+      "APIVersion": "2017-08-01",
+      "operations": [],
+      "Resource": "Microsoft.Network/loadBalancers/inboundNatRules",
+      "tag": "package-2021-02-preview"
+    },
+    {
+      "APIVersion": "2018-08-01",
+      "operations": [],
+      "Resource": "Microsoft.Network/networkInterfaces/tapConfigurations",
+      "tag": "package-2021-02-preview"
+    },
+    {
+      "APIVersion": "2019-12-01",
+      "operations": [],
+      "Resource": "Microsoft.Network/networkVirtualAppliances",
+      "tag": "package-2021-02-preview"
+    },
+    {
+      "APIVersion": "2020-05-01",
+      "operations": [],
+      "Resource": "Microsoft.Network/networkVirtualAppliances/virtualApplianceSites",
+      "tag": "package-2021-02-preview"
+    },
+    {
+      "APIVersion": "2019-04-01",
+      "operations": [],
+      "Resource": "Microsoft.Network/privateLinkServices/privateEndpointConnections",
+      "tag": "package-2021-02-preview"
+    },
+    {
+      "APIVersion": "2017-03-01",
+      "operations": [],
+      "Resource": "Microsoft.Network/routeFilters/routeFilterRules",
+      "tag": "package-2021-02-preview"
+    },
+    {
+      "APIVersion": "2018-08-01",
+      "operations": [],
+      "Resource": "Microsoft.Network/virtualNetworkTaps",
+      "tag": "package-2021-02-preview"
+    },
+    {
+      "APIVersion": "2019-09-01",
+      "operations": [],
+      "Resource": "Microsoft.Network/virtualRouters",
+      "tag": "package-2021-02-preview"
+    },
+    {
+      "APIVersion": "2019-11-01",
+      "operations": [],
+      "Resource": "Microsoft.Network/virtualRouters/peerings",
+      "tag": "package-2021-02-preview"
+    },
+    {
+      "APIVersion": "2020-08-01",
+      "operations": [],
+      "Resource": "Microsoft.Network/vpnGateways/natRules",
+      "tag": "package-2021-02-preview"
+    }
+  ],
+  "resourcelist": "Microsoft.Network/applicationGateways/privateEndpointConnections,Microsoft.Network/customIpPrefixes,Microsoft.Network/dscpConfigurations,Microsoft.Network/expressRouteCircuits/peerings/connections,Microsoft.Network/expressRouteCrossConnections/peerings,Microsoft.Network/expressRouteGateways/expressRouteConnections,Microsoft.Network/firewallPolicies/ruleGroups,Microsoft.Network/loadBalancers/inboundNatRules,Microsoft.Network/networkInterfaces/tapConfigurations,Microsoft.Network/networkVirtualAppliances,Microsoft.Network/networkVirtualAppliances/virtualApplianceSites,Microsoft.Network/privateLinkServices/privateEndpointConnections,Microsoft.Network/routeFilters/routeFilterRules,Microsoft.Network/virtualNetworkTaps,Microsoft.Network/virtualRouters,Microsoft.Network/virtualRouters/peerings,Microsoft.Network/vpnGateways/natRules",
+  "onboardType": "depth",
+  "RPName": "network",
+  "readmeFile": "/specification/network/resource-manager/readme.md",
+  "target": "terraform",
+  "tag": "package-2021-02-preview"
+}
