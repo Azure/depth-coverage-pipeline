@@ -1,0 +1,31 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-11-01",
+      "operations": [
+        {
+          "OperationId": "Containers_Attach",
+          "version": "2020-11-01",
+          "jsonFilePath": "/specification/containerinstance/resource-manager/Microsoft.ContainerInstance/stable/2020-11-01/containerInstance.json"
+        }
+      ],
+      "Resource": "Microsoft.ContainerInstance/containerGroups/containers/attach"
+    },
+    {
+      "APIVersion": "2018-10-01",
+      "operations": [
+        {
+          "OperationId": "ServiceAssociationLink_Delete",
+          "version": "2018-10-01",
+          "jsonFilePath": "/specification/containerinstance/resource-manager/Microsoft.ContainerInstance/stable/2018-10-01/containerInstance.json"
+        }
+      ],
+      "Resource": "Microsoft.ContainerInstance/serviceAssociationLinks/default"
+    }
+  ],
+  "resourcelist": "Microsoft.ContainerInstance/containerGroups/containers/attach,Microsoft.ContainerInstance/serviceAssociationLinks/default",
+  "onboardType": "depth",
+  "RPName": "containerinstance",
+  "readmeFile": "/specification/containerinstance/resource-manager/readme.md",
+  "target": "clicore"
+}
