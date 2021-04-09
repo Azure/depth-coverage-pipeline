@@ -1,0 +1,19 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2016-04-01",
+      "operations": [],
+      "Resource": "Microsoft.Cache/Redis/patchSchedules/default"
+    },
+    {
+      "APIVersion": "2020-06-01",
+      "operations": [],
+      "Resource": "Microsoft.Cache/redis/privateEndpointConnections"
+    }
+  ],
+  "resourcelist": "Microsoft.Cache/Redis/patchSchedules/default,Microsoft.Cache/redis/privateEndpointConnections",
+  "onboardType": "depth",
+  "RPName": "redis",
+  "readmeFile": "/specification/redis/resource-manager/readme.md",
+  "target": "terraform"
+}
