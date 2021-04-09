@@ -1,0 +1,14 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [],
+      "Resource": "Microsoft.Security/deviceSecurityGroups"
+    }
+  ],
+  "resourcelist": "Microsoft.Security/deviceSecurityGroups",
+  "onboardType": "depth",
+  "RPName": "security",
+  "readmeFile": "/specification/security/resource-manager/readme.md",
+  "target": "terraform"
+}
