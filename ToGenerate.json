@@ -1,0 +1,127 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-10-01-preview",
+      "operations": [
+        {
+          "OperationId": "RedisEnterprise_ListByResourceGroup",
+          "version": "2020-10-01-preview",
+          "jsonFilePath": "/specification/redisenterprise/resource-manager/Microsoft.Cache/preview/2020-10-01-preview/redisenterprise.json"
+        },
+        {
+          "OperationId": "RedisEnterprise_Delete",
+          "version": "2020-10-01-preview",
+          "jsonFilePath": "/specification/redisenterprise/resource-manager/Microsoft.Cache/preview/2020-10-01-preview/redisenterprise.json"
+        },
+        {
+          "OperationId": "RedisEnterprise_Create",
+          "version": "2020-10-01-preview",
+          "jsonFilePath": "/specification/redisenterprise/resource-manager/Microsoft.Cache/preview/2020-10-01-preview/redisenterprise.json"
+        }
+      ],
+      "Resource": "Microsoft.Cache/redisEnterprise"
+    },
+    {
+      "APIVersion": "2020-10-01-preview",
+      "operations": [
+        {
+          "OperationId": "Databases_Delete",
+          "version": "2020-10-01-preview",
+          "jsonFilePath": "/specification/redisenterprise/resource-manager/Microsoft.Cache/preview/2020-10-01-preview/redisenterprise.json"
+        },
+        {
+          "OperationId": "Databases_Create",
+          "version": "2020-10-01-preview",
+          "jsonFilePath": "/specification/redisenterprise/resource-manager/Microsoft.Cache/preview/2020-10-01-preview/redisenterprise.json"
+        }
+      ],
+      "Resource": "Microsoft.Cache/redisEnterprise/databases"
+    },
+    {
+      "APIVersion": "2020-10-01-preview",
+      "operations": [
+        {
+          "OperationId": "Databases_Export",
+          "version": "2020-10-01-preview",
+          "jsonFilePath": "/specification/redisenterprise/resource-manager/Microsoft.Cache/preview/2020-10-01-preview/redisenterprise.json"
+        }
+      ],
+      "Resource": "Microsoft.Cache/redisEnterprise/databases/export"
+    },
+    {
+      "APIVersion": "2020-10-01-preview",
+      "operations": [
+        {
+          "OperationId": "Databases_Import",
+          "version": "2020-10-01-preview",
+          "jsonFilePath": "/specification/redisenterprise/resource-manager/Microsoft.Cache/preview/2020-10-01-preview/redisenterprise.json"
+        }
+      ],
+      "Resource": "Microsoft.Cache/redisEnterprise/databases/import"
+    },
+    {
+      "APIVersion": "2020-10-01-preview",
+      "operations": [
+        {
+          "OperationId": "Databases_ListKeys",
+          "version": "2020-10-01-preview",
+          "jsonFilePath": "/specification/redisenterprise/resource-manager/Microsoft.Cache/preview/2020-10-01-preview/redisenterprise.json"
+        }
+      ],
+      "Resource": "Microsoft.Cache/redisEnterprise/databases/listKeys"
+    },
+    {
+      "APIVersion": "2020-10-01-preview",
+      "operations": [
+        {
+          "OperationId": "Databases_RegenerateKey",
+          "version": "2020-10-01-preview",
+          "jsonFilePath": "/specification/redisenterprise/resource-manager/Microsoft.Cache/preview/2020-10-01-preview/redisenterprise.json"
+        }
+      ],
+      "Resource": "Microsoft.Cache/redisEnterprise/databases/regenerateKey"
+    },
+    {
+      "APIVersion": "2020-10-01-preview",
+      "operations": [
+        {
+          "OperationId": "PrivateEndpointConnections_List",
+          "version": "2020-10-01-preview",
+          "jsonFilePath": "/specification/redisenterprise/resource-manager/Microsoft.Cache/preview/2020-10-01-preview/redisenterprise.json"
+        },
+        {
+          "OperationId": "PrivateEndpointConnections_Delete",
+          "version": "2021-02-01-preview",
+          "jsonFilePath": "/specification/redisenterprise/resource-manager/Microsoft.Cache/preview/2021-02-01-preview/redisenterprise.json"
+        },
+        {
+          "OperationId": "PrivateEndpointConnections_Get",
+          "version": "2021-03-01",
+          "jsonFilePath": "/specification/redisenterprise/resource-manager/Microsoft.Cache/stable/2021-03-01/redisenterprise.json"
+        },
+        {
+          "OperationId": "PrivateEndpointConnections_Put",
+          "version": "2020-10-01-preview",
+          "jsonFilePath": "/specification/redisenterprise/resource-manager/Microsoft.Cache/preview/2020-10-01-preview/redisenterprise.json"
+        }
+      ],
+      "Resource": "Microsoft.Cache/redisEnterprise/privateEndpointConnections"
+    },
+    {
+      "APIVersion": "2020-10-01-preview",
+      "operations": [
+        {
+          "OperationId": "PrivateLinkResources_ListByRedisEnterpriseCache",
+          "version": "2020-10-01-preview",
+          "jsonFilePath": "/specification/redisenterprise/resource-manager/Microsoft.Cache/preview/2020-10-01-preview/redisenterprise.json"
+        }
+      ],
+      "Resource": "Microsoft.Cache/redisEnterprise/privateLinkResources"
+    }
+  ],
+  "resourcelist": "Microsoft.Cache/redisEnterprise,Microsoft.Cache/redisEnterprise/databases,Microsoft.Cache/redisEnterprise/databases/export,Microsoft.Cache/redisEnterprise/databases/import,Microsoft.Cache/redisEnterprise/databases/listKeys,Microsoft.Cache/redisEnterprise/databases/regenerateKey,Microsoft.Cache/redisEnterprise/privateEndpointConnections,Microsoft.Cache/redisEnterprise/privateLinkResources",
+  "onboardType": "depth",
+  "RPName": "redisenterprise",
+  "readmeFile": "/specification/redisenterprise/resource-manager/readme.md",
+  "target": "clicore"
+}
