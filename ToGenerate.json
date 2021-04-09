@@ -1,0 +1,57 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-07-01-preview",
+      "operations": [
+        {
+          "OperationId": "PublicMaintenanceConfigurations_Get",
+          "version": "2020-07-01-preview",
+          "jsonFilePath": "/specification/maintenance/resource-manager/Microsoft.Maintenance/preview/2020-07-01-preview/Maintenance.json"
+        }
+      ],
+      "Resource": "Microsoft.Maintenance/publicMaintenanceConfigurations"
+    },
+    {
+      "APIVersion": "2018-06-01-preview",
+      "operations": [
+        {
+          "OperationId": "ConfigurationAssignments_ListParent",
+          "version": "2018-06-01-preview",
+          "jsonFilePath": "/specification/maintenance/resource-manager/Microsoft.Maintenance/preview/2018-06-01-preview/Maintenance.json"
+        },
+        {
+          "OperationId": "ConfigurationAssignments_DeleteParent",
+          "version": "2018-06-01-preview",
+          "jsonFilePath": "/specification/maintenance/resource-manager/Microsoft.Maintenance/preview/2018-06-01-preview/Maintenance.json"
+        },
+        {
+          "OperationId": "ConfigurationAssignments_List",
+          "version": "2018-06-01-preview",
+          "jsonFilePath": "/specification/maintenance/resource-manager/Microsoft.Maintenance/preview/2018-06-01-preview/Maintenance.json"
+        },
+        {
+          "OperationId": "ConfigurationAssignments_Delete",
+          "version": "2018-06-01-preview",
+          "jsonFilePath": "/specification/maintenance/resource-manager/Microsoft.Maintenance/preview/2018-06-01-preview/Maintenance.json"
+        }
+      ],
+      "Resource": "Microsoft.Maintenance/configurationAssignments"
+    },
+    {
+      "APIVersion": "2018-06-01-preview",
+      "operations": [
+        {
+          "OperationId": "MaintenanceConfigurations_Delete",
+          "version": "2018-06-01-preview",
+          "jsonFilePath": "/specification/maintenance/resource-manager/Microsoft.Maintenance/preview/2018-06-01-preview/Maintenance.json"
+        }
+      ],
+      "Resource": "Microsoft.Maintenance/maintenanceConfigurations"
+    }
+  ],
+  "resourcelist": "Microsoft.Maintenance/publicMaintenanceConfigurations,Microsoft.Maintenance/configurationAssignments,Microsoft.Maintenance/maintenanceConfigurations",
+  "onboardType": "depth",
+  "RPName": "maintenance",
+  "readmeFile": "/specification/maintenance/resource-manager/readme.md",
+  "target": "clicore"
+}
