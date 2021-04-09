@@ -1,0 +1,52 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-10-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.Compute/cloudServices",
+      "tag": "package-2020-12-01"
+    },
+    {
+      "APIVersion": "2020-09-30",
+      "operations": [],
+      "Resource": "Microsoft.Compute/diskAccesses/privateEndpointConnections",
+      "tag": "package-2020-12-01"
+    },
+    {
+      "APIVersion": "2020-09-30",
+      "operations": [],
+      "Resource": "Microsoft.Compute/galleries/applications",
+      "tag": "package-2020-12-01"
+    },
+    {
+      "APIVersion": "2019-03-01",
+      "operations": [],
+      "Resource": "Microsoft.Compute/galleries/applications/versions",
+      "tag": "package-2020-12-01"
+    },
+    {
+      "APIVersion": "2020-06-01",
+      "operations": [],
+      "Resource": "Microsoft.Compute/virtualMachines/runCommands",
+      "tag": "package-2020-12-01"
+    },
+    {
+      "APIVersion": "2019-07-01",
+      "operations": [],
+      "Resource": "Microsoft.Compute/virtualMachineScaleSets/virtualMachines/extensions",
+      "tag": "package-2020-12-01"
+    },
+    {
+      "APIVersion": "2020-12-01",
+      "operations": [],
+      "Resource": "Microsoft.Compute/virtualMachineScaleSets/virtualMachines/runCommands",
+      "tag": "package-2020-12-01"
+    }
+  ],
+  "resourcelist": "Microsoft.Compute/cloudServices,Microsoft.Compute/diskAccesses/privateEndpointConnections,Microsoft.Compute/galleries/applications,Microsoft.Compute/galleries/applications/versions,Microsoft.Compute/virtualMachines/runCommands,Microsoft.Compute/virtualMachineScaleSets/virtualMachines/extensions,Microsoft.Compute/virtualMachineScaleSets/virtualMachines/runCommands",
+  "onboardType": "depth",
+  "RPName": "compute",
+  "readmeFile": "/specification/compute/resource-manager/readme.md",
+  "target": "terraform",
+  "tag": "package-2020-12-01"
+}
