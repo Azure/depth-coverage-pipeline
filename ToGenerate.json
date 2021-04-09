@@ -1,0 +1,59 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-05-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.DataBoxEdge/dataBoxEdgeDevices/bandwidthSchedules"
+    },
+    {
+      "APIVersion": "2020-05-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.DataBoxEdge/dataBoxEdgeDevices/roles"
+    },
+    {
+      "APIVersion": "2020-12-01",
+      "operations": [],
+      "Resource": "Microsoft.DataBoxEdge/dataBoxEdgeDevices/roles/addons"
+    },
+    {
+      "APIVersion": "2020-09-01",
+      "operations": [],
+      "Resource": "Microsoft.DataBoxEdge/dataBoxEdgeDevices/roles/monitoringConfig/default"
+    },
+    {
+      "APIVersion": "2020-05-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.DataBoxEdge/dataBoxEdgeDevices/shares"
+    },
+    {
+      "APIVersion": "2020-05-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.DataBoxEdge/dataBoxEdgeDevices/storageAccountCredentials"
+    },
+    {
+      "APIVersion": "2020-05-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.DataBoxEdge/dataBoxEdgeDevices/storageAccounts"
+    },
+    {
+      "APIVersion": "2020-09-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.DataBoxEdge/dataBoxEdgeDevices/storageAccounts/containers"
+    },
+    {
+      "APIVersion": "2020-05-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.DataBoxEdge/dataBoxEdgeDevices/triggers"
+    },
+    {
+      "APIVersion": "2020-05-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.DataBoxEdge/dataBoxEdgeDevices/users"
+    }
+  ],
+  "resourcelist": "Microsoft.DataBoxEdge/dataBoxEdgeDevices/bandwidthSchedules,Microsoft.DataBoxEdge/dataBoxEdgeDevices/roles,Microsoft.DataBoxEdge/dataBoxEdgeDevices/roles/addons,Microsoft.DataBoxEdge/dataBoxEdgeDevices/roles/monitoringConfig/default,Microsoft.DataBoxEdge/dataBoxEdgeDevices/shares,Microsoft.DataBoxEdge/dataBoxEdgeDevices/storageAccountCredentials,Microsoft.DataBoxEdge/dataBoxEdgeDevices/storageAccounts,Microsoft.DataBoxEdge/dataBoxEdgeDevices/storageAccounts/containers,Microsoft.DataBoxEdge/dataBoxEdgeDevices/triggers,Microsoft.DataBoxEdge/dataBoxEdgeDevices/users",
+  "onboardType": "depth",
+  "RPName": "databoxedge",
+  "readmeFile": "/specification/databoxedge/resource-manager/readme.md",
+  "target": "terraform"
+}
