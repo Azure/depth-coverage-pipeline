@@ -1,0 +1,62 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2021-01-01",
+      "operations": [
+        {
+          "OperationId": "AutoScaleVCores_ListBySubscription",
+          "version": "2021-01-01",
+          "jsonFilePath": "/specification/powerbidedicated/resource-manager/Microsoft.PowerBIdedicated/stable/2021-01-01/autoScaleVCores.json"
+        },
+        {
+          "OperationId": "AutoScaleVCores_ListByResourceGroup",
+          "version": "2021-01-01",
+          "jsonFilePath": "/specification/powerbidedicated/resource-manager/Microsoft.PowerBIdedicated/stable/2021-01-01/autoScaleVCores.json"
+        },
+        {
+          "OperationId": "AutoScaleVCores_Delete",
+          "version": "2021-01-01",
+          "jsonFilePath": "/specification/powerbidedicated/resource-manager/Microsoft.PowerBIdedicated/stable/2021-01-01/autoScaleVCores.json"
+        },
+        {
+          "OperationId": "AutoScaleVCores_Get",
+          "version": "2021-01-01",
+          "jsonFilePath": "/specification/powerbidedicated/resource-manager/Microsoft.PowerBIdedicated/stable/2021-01-01/autoScaleVCores.json"
+        },
+        {
+          "OperationId": "AutoScaleVCores_Create",
+          "version": "2021-01-01",
+          "jsonFilePath": "/specification/powerbidedicated/resource-manager/Microsoft.PowerBIdedicated/stable/2021-01-01/autoScaleVCores.json"
+        }
+      ],
+      "Resource": "Microsoft.PowerBIDedicated/autoScaleVCores"
+    },
+    {
+      "APIVersion": "2017-10-01",
+      "operations": [
+        {
+          "OperationId": "Capacities_ListSkus",
+          "version": "2017-10-01",
+          "jsonFilePath": "/specification/powerbidedicated/resource-manager/Microsoft.PowerBIdedicated/stable/2017-10-01/powerbidedicated.json"
+        }
+      ],
+      "Resource": "Microsoft.PowerBIDedicated/skus"
+    },
+    {
+      "APIVersion": "2017-10-01",
+      "operations": [
+        {
+          "OperationId": "Capacities_ListSkusForCapacity",
+          "version": "2017-10-01",
+          "jsonFilePath": "/specification/powerbidedicated/resource-manager/Microsoft.PowerBIdedicated/stable/2017-10-01/powerbidedicated.json"
+        }
+      ],
+      "Resource": "Microsoft.PowerBIDedicated/capacities/skus"
+    }
+  ],
+  "resourcelist": "Microsoft.PowerBIDedicated/autoScaleVCores,Microsoft.PowerBIDedicated/skus,Microsoft.PowerBIDedicated/capacities/skus",
+  "onboardType": "depth",
+  "RPName": "powerbidedicated",
+  "readmeFile": "/specification/powerbidedicated/resource-manager/readme.md",
+  "target": "clicore"
+}
