@@ -1,0 +1,100 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2018-08-01-preview",
+      "operations": [
+        {
+          "OperationId": "CheckFrontDoorNameAvailabilityWithSubscription",
+          "version": "2018-08-01-preview",
+          "jsonFilePath": "/specification/frontdoor/resource-manager/Microsoft.Network/preview/2018-08-01-preview/frontdoor.json"
+        },
+        {
+          "OperationId": "FrontDoorNameAvailabilityWithSubscription_Check",
+          "version": "2020-05-01",
+          "jsonFilePath": "/specification/frontdoor/resource-manager/Microsoft.Network/stable/2020-05-01/frontdoor.json"
+        }
+      ],
+      "Resource": "Microsoft.Network/checkFrontDoorNameAvailability"
+    },
+    {
+      "APIVersion": "2019-11-01",
+      "operations": [
+        {
+          "OperationId": "NetworkExperimentProfiles_List",
+          "version": "2019-11-01",
+          "jsonFilePath": "/specification/frontdoor/resource-manager/Microsoft.Network/stable/2019-11-01/networkexperiment.json"
+        },
+        {
+          "OperationId": "NetworkExperimentProfiles_ListByResourceGroup",
+          "version": "2019-11-01",
+          "jsonFilePath": "/specification/frontdoor/resource-manager/Microsoft.Network/stable/2019-11-01/networkexperiment.json"
+        },
+        {
+          "OperationId": "NetworkExperimentProfiles_Delete",
+          "version": "2019-11-01",
+          "jsonFilePath": "/specification/frontdoor/resource-manager/Microsoft.Network/stable/2019-11-01/networkexperiment.json"
+        }
+      ],
+      "Resource": "Microsoft.Network/NetworkExperimentProfiles"
+    },
+    {
+      "APIVersion": "2019-11-01",
+      "operations": [
+        {
+          "OperationId": "Experiments_Delete",
+          "version": "2019-11-01",
+          "jsonFilePath": "/specification/frontdoor/resource-manager/Microsoft.Network/stable/2019-11-01/networkexperiment.json"
+        },
+        {
+          "OperationId": "Experiments_Get",
+          "version": "2019-11-01",
+          "jsonFilePath": "/specification/frontdoor/resource-manager/Microsoft.Network/stable/2019-11-01/networkexperiment.json"
+        },
+        {
+          "OperationId": "Experiments_CreateOrUpdate",
+          "version": "2019-11-01",
+          "jsonFilePath": "/specification/frontdoor/resource-manager/Microsoft.Network/stable/2019-11-01/networkexperiment.json"
+        }
+      ],
+      "Resource": "Microsoft.Network/NetworkExperimentProfiles/Experiments"
+    },
+    {
+      "APIVersion": "2019-11-01",
+      "operations": [
+        {
+          "OperationId": "Reports_GetLatencyScorecards",
+          "version": "2019-11-01",
+          "jsonFilePath": "/specification/frontdoor/resource-manager/Microsoft.Network/stable/2019-11-01/networkexperiment.json"
+        }
+      ],
+      "Resource": "Microsoft.Network/NetworkExperimentProfiles/Experiments/LatencyScorecard"
+    },
+    {
+      "APIVersion": "2019-11-01",
+      "operations": [
+        {
+          "OperationId": "Reports_GetTimeseries",
+          "version": "2019-11-01",
+          "jsonFilePath": "/specification/frontdoor/resource-manager/Microsoft.Network/stable/2019-11-01/networkexperiment.json"
+        }
+      ],
+      "Resource": "Microsoft.Network/NetworkExperimentProfiles/Experiments/Timeseries"
+    },
+    {
+      "APIVersion": "2019-11-01",
+      "operations": [
+        {
+          "OperationId": "PreconfiguredEndpoints_List",
+          "version": "2019-11-01",
+          "jsonFilePath": "/specification/frontdoor/resource-manager/Microsoft.Network/stable/2019-11-01/networkexperiment.json"
+        }
+      ],
+      "Resource": "Microsoft.Network/NetworkExperimentProfiles/PreconfiguredEndpoints"
+    }
+  ],
+  "resourcelist": "Microsoft.Network/checkFrontDoorNameAvailability,Microsoft.Network/NetworkExperimentProfiles,Microsoft.Network/NetworkExperimentProfiles/Experiments,Microsoft.Network/NetworkExperimentProfiles/Experiments/LatencyScorecard,Microsoft.Network/NetworkExperimentProfiles/Experiments/Timeseries,Microsoft.Network/NetworkExperimentProfiles/PreconfiguredEndpoints",
+  "onboardType": "depth",
+  "RPName": "frontdoor",
+  "readmeFile": "/specification/frontdoor/resource-manager/readme.md",
+  "target": "clicore"
+}
