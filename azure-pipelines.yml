@@ -177,7 +177,6 @@ stages:
       prefix: forpipeline
     steps:
     - template: .azure-pipelines/templates/BeforeTask.yml
-    - script: echo 'build'
     - template: .azure-pipelines/templates/BuildTF.yml
     - template: .azure-pipelines/templates/AfterTask.yml
   - job: BuildFailureAlert
