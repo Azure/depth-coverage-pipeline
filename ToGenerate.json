@@ -1,0 +1,36 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2018-09-01-preview",
+      "operations": [
+        {
+          "OperationId": "AttestationProviders_ListDefault",
+          "version": "2018-09-01-preview",
+          "jsonFilePath": "/specification/attestation/resource-manager/Microsoft.Attestation/stable/2018-09-01-preview/attestation.json"
+        }
+      ],
+      "Resource": "Microsoft.Attestation/defaultProviders"
+    },
+    {
+      "APIVersion": "2020-10-01",
+      "operations": [
+        {
+          "OperationId": "AttestationProviders_ListByResourceGroup",
+          "version": "2020-10-01",
+          "jsonFilePath": "/specification/attestation/resource-manager/Microsoft.Attestation/stable/2020-10-01/attestation.json"
+        },
+        {
+          "OperationId": "AttestationProviders_Delete",
+          "version": "2018-09-01-preview",
+          "jsonFilePath": "/specification/attestation/resource-manager/Microsoft.Attestation/stable/2018-09-01-preview/attestation.json"
+        }
+      ],
+      "Resource": "Microsoft.Attestation/attestationProviders"
+    }
+  ],
+  "resourcelist": "Microsoft.Attestation/defaultProviders,Microsoft.Attestation/attestationProviders",
+  "onboardType": "depth",
+  "RPName": "attestation",
+  "readmeFile": "/specification/attestation/resource-manager/readme.md",
+  "target": "clicore"
+}
