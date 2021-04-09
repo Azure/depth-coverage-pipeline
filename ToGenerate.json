@@ -1,0 +1,41 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2017-02-28-preview",
+      "operations": [
+        {
+          "OperationId": "AccessPolicies_Delete",
+          "version": "2017-02-28-preview",
+          "jsonFilePath": "/specification/timeseriesinsights/resource-manager/Microsoft.TimeSeriesInsights/preview/2017-02-28-preview/timeseriesinsights.json"
+        }
+      ],
+      "Resource": "Microsoft.TimeSeriesInsights/environments/accessPolicies"
+    },
+    {
+      "APIVersion": "2017-11-15",
+      "operations": [
+        {
+          "OperationId": "ReferenceDataSets_Delete",
+          "version": "2017-11-15",
+          "jsonFilePath": "/specification/timeseriesinsights/resource-manager/Microsoft.TimeSeriesInsights/stable/2017-11-15/timeseriesinsights.json"
+        },
+        {
+          "OperationId": "ReferenceDataSets_Get",
+          "version": "2017-11-15",
+          "jsonFilePath": "/specification/timeseriesinsights/resource-manager/Microsoft.TimeSeriesInsights/stable/2017-11-15/timeseriesinsights.json"
+        },
+        {
+          "OperationId": "ReferenceDataSets_CreateOrUpdate",
+          "version": "2017-02-28-preview",
+          "jsonFilePath": "/specification/timeseriesinsights/resource-manager/Microsoft.TimeSeriesInsights/preview/2017-02-28-preview/timeseriesinsights.json"
+        }
+      ],
+      "Resource": "Microsoft.TimeSeriesInsights/environments/referenceDataSets"
+    }
+  ],
+  "resourcelist": "Microsoft.TimeSeriesInsights/environments/accessPolicies,Microsoft.TimeSeriesInsights/environments/referenceDataSets",
+  "onboardType": "depth",
+  "RPName": "timeseriesinsights",
+  "readmeFile": "/specification/timeseriesinsights/resource-manager/readme.md",
+  "target": "clicore"
+}
