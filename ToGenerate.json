@@ -1,0 +1,2694 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2015-04-01",
+      "operations": [
+        {
+          "OperationId": "Domains_List",
+          "version": "2015-04-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.DomainRegistration/stable/2015-04-01/Domains.json"
+        },
+        {
+          "OperationId": "Domains_ListByResourceGroup",
+          "version": "2015-04-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.DomainRegistration/stable/2015-04-01/Domains.json"
+        },
+        {
+          "OperationId": "Domains_Delete",
+          "version": "2015-04-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.DomainRegistration/stable/2015-04-01/Domains.json"
+        },
+        {
+          "OperationId": "Domains_Get",
+          "version": "2015-04-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.DomainRegistration/stable/2015-04-01/Domains.json"
+        },
+        {
+          "OperationId": "Domains_CreateOrUpdate",
+          "version": "2015-04-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.DomainRegistration/stable/2015-04-01/Domains.json"
+        }
+      ],
+      "Resource": "Microsoft.DomainRegistration/domains"
+    },
+    {
+      "APIVersion": "2015-04-01",
+      "operations": [
+        {
+          "OperationId": "Domains_GetControlCenterSsoRequest",
+          "version": "2015-04-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.DomainRegistration/stable/2015-04-01/Domains.json"
+        }
+      ],
+      "Resource": "Microsoft.DomainRegistration/generateSsoRequest"
+    },
+    {
+      "APIVersion": "2015-04-01",
+      "operations": [
+        {
+          "OperationId": "Domains_ListRecommendations",
+          "version": "2015-04-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.DomainRegistration/stable/2015-04-01/Domains.json"
+        }
+      ],
+      "Resource": "Microsoft.DomainRegistration/listDomainRecommendations"
+    },
+    {
+      "APIVersion": "2015-04-01",
+      "operations": [
+        {
+          "OperationId": "TopLevelDomains_List",
+          "version": "2015-04-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.DomainRegistration/stable/2015-04-01/TopLevelDomains.json"
+        },
+        {
+          "OperationId": "TopLevelDomains_Get",
+          "version": "2015-04-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.DomainRegistration/stable/2015-04-01/TopLevelDomains.json"
+        }
+      ],
+      "Resource": "Microsoft.DomainRegistration/topLevelDomains"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "Provider_GetAvailableStacksOnPrem",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/Provider.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/availableStacks"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "ListBillingMeters",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/ResourceProvider.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/billingMeters"
+    },
+    {
+      "APIVersion": "2015-08-01",
+      "operations": [
+        {
+          "OperationId": "Global_GetAllCertificates",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json"
+        },
+        {
+          "OperationId": "Certificates_List",
+          "version": "2016-03-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-03-01/Certificates.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/certificates"
+    },
+    {
+      "APIVersion": "2016-06-01",
+      "operations": [
+        {
+          "OperationId": "ConnectionGateways_List",
+          "version": "2016-06-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-06-01/logicAppsManagementClient.json"
+        },
+        {
+          "OperationId": "ConnectionGateways_ListByResourceGroup",
+          "version": "2016-06-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-06-01/logicAppsManagementClient.json"
+        },
+        {
+          "OperationId": "ConnectionGateways_Delete",
+          "version": "2016-06-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-06-01/logicAppsManagementClient.json"
+        },
+        {
+          "OperationId": "ConnectionGateways_Get",
+          "version": "2016-06-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-06-01/logicAppsManagementClient.json"
+        },
+        {
+          "OperationId": "ConnectionGateways_CreateOrUpdate",
+          "version": "2016-06-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-06-01/logicAppsManagementClient.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/connectionGateways"
+    },
+    {
+      "APIVersion": "2016-06-01",
+      "operations": [
+        {
+          "OperationId": "CustomApis_List",
+          "version": "2016-06-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-06-01/logicAppsManagementClient.json"
+        },
+        {
+          "OperationId": "CustomApis_ListByResourceGroup",
+          "version": "2016-06-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-06-01/logicAppsManagementClient.json"
+        },
+        {
+          "OperationId": "CustomApis_Delete",
+          "version": "2016-06-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-06-01/logicAppsManagementClient.json"
+        },
+        {
+          "OperationId": "CustomApis_Get",
+          "version": "2016-06-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-06-01/logicAppsManagementClient.json"
+        },
+        {
+          "OperationId": "CustomApis_CreateOrUpdate",
+          "version": "2016-06-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-06-01/logicAppsManagementClient.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/customApis"
+    },
+    {
+      "APIVersion": "2016-03-01",
+      "operations": [
+        {
+          "OperationId": "ListSiteIdentifiersAssignedToHostName",
+          "version": "2016-03-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-03-01/ResourceProvider.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/listSitesAssignedToHostName"
+    },
+    {
+      "APIVersion": "2016-03-01",
+      "operations": [
+        {
+          "OperationId": "Recommendations_List",
+          "version": "2016-03-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-03-01/Recommendations.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/recommendations"
+    },
+    {
+      "APIVersion": "2020-06-01",
+      "operations": [
+        {
+          "OperationId": "Recommendations_ResetAllFilters",
+          "version": "2020-06-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2020-06-01/Recommendations.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/recommendations/reset"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "ResourceHealthMetadata_List",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/ResourceHealthMetadata.json"
+        },
+        {
+          "OperationId": "ResourceHealthMetadata_ListByResourceGroup",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/ResourceHealthMetadata.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/resourceHealthMetadata"
+    },
+    {
+      "APIVersion": "2016-03-01",
+      "operations": [
+        {
+          "OperationId": "ListSkus",
+          "version": "2016-03-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-03-01/ResourceProvider.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/skus"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "VerifyHostingEnvironmentVnet",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2019-08-01/ResourceProvider.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/verifyHostingEnvironmentVnet"
+    },
+    {
+      "APIVersion": "2015-08-01",
+      "operations": [
+        {
+          "OperationId": "AppServiceCertificateOrders_ListByResourceGroup",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.CertificateRegistration/stable/2015-08-01/AppServiceCertificateOrders.json"
+        },
+        {
+          "OperationId": "CertificateOrders_GetCertificateOrders",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json"
+        },
+        {
+          "OperationId": "AppServiceCertificateOrders_Delete",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.CertificateRegistration/stable/2015-08-01/AppServiceCertificateOrders.json"
+        },
+        {
+          "OperationId": "AppServiceCertificateOrders_Get",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.CertificateRegistration/stable/2015-08-01/AppServiceCertificateOrders.json"
+        },
+        {
+          "OperationId": "AppServiceCertificateOrders_CreateOrUpdate",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.CertificateRegistration/stable/2015-08-01/AppServiceCertificateOrders.json"
+        },
+        {
+          "OperationId": "CertificateOrders_DeleteCertificateOrder",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json"
+        },
+        {
+          "OperationId": "CertificateOrders_GetCertificateOrder",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json"
+        },
+        {
+          "OperationId": "CertificateOrders_CreateOrUpdateCertificateOrder",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json"
+        }
+      ],
+      "Resource": "Microsoft.CertificateRegistration/certificateOrders"
+    },
+    {
+      "APIVersion": "2015-08-01",
+      "operations": [
+        {
+          "OperationId": "AppServiceCertificateOrders_ListCertificates",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.CertificateRegistration/stable/2015-08-01/AppServiceCertificateOrders.json"
+        },
+        {
+          "OperationId": "CertificateOrders_GetCertificates",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json"
+        },
+        {
+          "OperationId": "AppServiceCertificateOrders_DeleteCertificate",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.CertificateRegistration/stable/2015-08-01/AppServiceCertificateOrders.json"
+        },
+        {
+          "OperationId": "CertificateOrders_DeleteCertificate",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json"
+        },
+        {
+          "OperationId": "AppServiceCertificateOrders_GetCertificate",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.CertificateRegistration/stable/2015-08-01/AppServiceCertificateOrders.json"
+        },
+        {
+          "OperationId": "CertificateOrders_GetCertificate",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json"
+        },
+        {
+          "OperationId": "AppServiceCertificateOrders_CreateOrUpdateCertificate",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.CertificateRegistration/stable/2015-08-01/AppServiceCertificateOrders.json"
+        },
+        {
+          "OperationId": "CertificateOrders_CreateOrUpdateCertificate",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json"
+        }
+      ],
+      "Resource": "Microsoft.CertificateRegistration/certificateOrders/certificates"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "AppServiceCertificateOrders_Reissue",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.CertificateRegistration/stable/2019-08-01/AppServiceCertificateOrders.json"
+        }
+      ],
+      "Resource": "Microsoft.CertificateRegistration/certificateOrders/reissue"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "AppServiceCertificateOrders_Renew",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.CertificateRegistration/stable/2019-08-01/AppServiceCertificateOrders.json"
+        }
+      ],
+      "Resource": "Microsoft.CertificateRegistration/certificateOrders/renew"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "AppServiceCertificateOrders_ResendEmail",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.CertificateRegistration/stable/2019-08-01/AppServiceCertificateOrders.json"
+        }
+      ],
+      "Resource": "Microsoft.CertificateRegistration/certificateOrders/resendEmail"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "AppServiceCertificateOrders_ResendRequestEmails",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.CertificateRegistration/stable/2019-08-01/AppServiceCertificateOrders.json"
+        }
+      ],
+      "Resource": "Microsoft.CertificateRegistration/certificateOrders/resendRequestEmails"
+    },
+    {
+      "APIVersion": "2015-08-01",
+      "operations": [
+        {
+          "OperationId": "AppServiceCertificateOrders_RetrieveSiteSeal",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.CertificateRegistration/stable/2015-08-01/AppServiceCertificateOrders.json"
+        }
+      ],
+      "Resource": "Microsoft.CertificateRegistration/certificateOrders/retrieveSiteSeal"
+    },
+    {
+      "APIVersion": "2015-08-01",
+      "operations": [
+        {
+          "OperationId": "AppServiceCertificateOrders_VerifyDomainOwnership",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.CertificateRegistration/stable/2015-08-01/AppServiceCertificateOrders.json"
+        },
+        {
+          "OperationId": "CertificateOrders_VerifyDomainOwnership",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json"
+        }
+      ],
+      "Resource": "Microsoft.CertificateRegistration/certificateOrders/verifyDomainOwnership"
+    },
+    {
+      "APIVersion": "2015-08-01",
+      "operations": [
+        {
+          "OperationId": "AppServiceCertificateOrders_RetrieveCertificateActions",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.CertificateRegistration/stable/2015-08-01/AppServiceCertificateOrders.json"
+        },
+        {
+          "OperationId": "CertificateOrders_RetrieveCertificateActions",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json"
+        }
+      ],
+      "Resource": "Microsoft.CertificateRegistration/certificateOrders/retrieveCertificateActions"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "AppServiceCertificateOrders_RetrieveCertificateEmailHistory",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.CertificateRegistration/stable/2019-08-01/AppServiceCertificateOrders.json"
+        }
+      ],
+      "Resource": "Microsoft.CertificateRegistration/certificateOrders/retrieveEmailHistory"
+    },
+    {
+      "APIVersion": "2015-04-01",
+      "operations": [
+        {
+          "OperationId": "Domains_ListOwnershipIdentifiers",
+          "version": "2015-04-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.DomainRegistration/stable/2015-04-01/Domains.json"
+        },
+        {
+          "OperationId": "Domains_GetOwnershipIdentifier",
+          "version": "2015-04-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.DomainRegistration/stable/2015-04-01/Domains.json"
+        },
+        {
+          "OperationId": "Domains_CreateOrUpdateOwnershipIdentifier",
+          "version": "2015-04-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.DomainRegistration/stable/2015-04-01/Domains.json"
+        }
+      ],
+      "Resource": "Microsoft.DomainRegistration/domains/domainOwnershipIdentifiers"
+    },
+    {
+      "APIVersion": "2015-04-01",
+      "operations": [
+        {
+          "OperationId": "Domains_Renew",
+          "version": "2015-04-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.DomainRegistration/stable/2015-04-01/Domains.json"
+        }
+      ],
+      "Resource": "Microsoft.DomainRegistration/domains/renew"
+    },
+    {
+      "APIVersion": "2015-08-01-preview",
+      "operations": [
+        {
+          "OperationId": "Connections_List",
+          "version": "2015-08-01-preview",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/preview/2015-08-01-preview/logicAppsManagementClient.json"
+        },
+        {
+          "OperationId": "Connections_Delete",
+          "version": "2015-08-01-preview",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/preview/2015-08-01-preview/logicAppsManagementClient.json"
+        },
+        {
+          "OperationId": "Connections_Get",
+          "version": "2015-08-01-preview",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/preview/2015-08-01-preview/logicAppsManagementClient.json"
+        },
+        {
+          "OperationId": "Connections_CreateOrUpdate",
+          "version": "2015-08-01-preview",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/preview/2015-08-01-preview/logicAppsManagementClient.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/connections"
+    },
+    {
+      "APIVersion": "2020-06-01",
+      "operations": [
+        {
+          "OperationId": "Diagnostics_ListHostingEnvironmentDetectorResponses",
+          "version": "2020-06-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2020-06-01/Diagnostics.json"
+        },
+        {
+          "OperationId": "Diagnostics_GetHostingEnvironmentDetectorResponse",
+          "version": "2016-03-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-03-01/Diagnostics.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/hostingEnvironments/detectors"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "AppServiceEnvironments_ListDiagnostics",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/AppServiceEnvironments.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/hostingEnvironments/diagnostics"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "AppServiceEnvironments_GetInboundNetworkDependenciesEndpoints",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2019-08-01/AppServiceEnvironments.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/hostingEnvironments/inboundNetworkDependenciesEndpoints"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "AppServiceEnvironments_ListMetricDefinitions",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/AppServiceEnvironments.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/hostingEnvironments/metricdefinitions"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "AppServiceEnvironments_ListMultiRolePools",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/AppServiceEnvironments.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/hostingEnvironments/multiRolePools"
+    },
+    {
+      "APIVersion": "2015-08-01",
+      "operations": [
+        {
+          "OperationId": "HostingEnvironments_GetMultiRolePool",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json"
+        },
+        {
+          "OperationId": "AppServiceEnvironments_GetMultiRolePool",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/AppServiceEnvironments.json"
+        },
+        {
+          "OperationId": "AppServiceEnvironments_CreateOrUpdateMultiRolePool",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/AppServiceEnvironments.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/hostingEnvironments/multiRolePools/default"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "AppServiceEnvironments_ListMultiRoleMetricDefinitions",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/AppServiceEnvironments.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/hostingEnvironments/multiRolePools/default/metricdefinitions"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "AppServiceEnvironments_ListMultiRoleMetrics",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/AppServiceEnvironments.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/hostingEnvironments/multiRolePools/default/metrics"
+    },
+    {
+      "APIVersion": "2015-08-01",
+      "operations": [
+        {
+          "OperationId": "HostingEnvironments_GetMultiRolePoolSkus",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json"
+        },
+        {
+          "OperationId": "AppServiceEnvironments_ListMultiRolePoolSkus",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/AppServiceEnvironments.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/hostingEnvironments/multiRolePools/default/skus"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "AppServiceEnvironments_ListMultiRoleUsages",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/AppServiceEnvironments.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/hostingEnvironments/multiRolePools/default/usages"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "AppServiceEnvironments_GetOutboundNetworkDependenciesEndpoints",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2019-08-01/AppServiceEnvironments.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/hostingEnvironments/outboundNetworkDependenciesEndpoints"
+    },
+    {
+      "APIVersion": "2016-09-01",
+      "operations": [
+        {
+          "OperationId": "AppServiceEnvironments_Reboot",
+          "version": "2016-09-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-09-01/AppServiceEnvironments.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/hostingEnvironments/reboot"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "AppServiceEnvironments_Resume",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/AppServiceEnvironments.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/hostingEnvironments/resume"
+    },
+    {
+      "APIVersion": "2016-09-01",
+      "operations": [
+        {
+          "OperationId": "AppServiceEnvironments_ListWebApps",
+          "version": "2016-09-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-09-01/AppServiceEnvironments.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/hostingEnvironments/sites"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "AppServiceEnvironments_ListUsages",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/AppServiceEnvironments.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/hostingEnvironments/usages"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "AppServiceEnvironments_ListWorkerPools",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/AppServiceEnvironments.json"
+        },
+        {
+          "OperationId": "HostingEnvironments_GetWorkerPool",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json"
+        },
+        {
+          "OperationId": "AppServiceEnvironments_GetWorkerPool",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/AppServiceEnvironments.json"
+        },
+        {
+          "OperationId": "AppServiceEnvironments_CreateOrUpdateWorkerPool",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/AppServiceEnvironments.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/hostingEnvironments/workerPools"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "AppServiceEnvironments_ListWebWorkerMetrics",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/AppServiceEnvironments.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/hostingEnvironments/workerPools/metrics"
+    },
+    {
+      "APIVersion": "2015-08-01",
+      "operations": [
+        {
+          "OperationId": "HostingEnvironments_GetWorkerPoolSkus",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/hostingEnvironments/workerPools/skus"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "AppServicePlans_ListCapabilities",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/AppServicePlans.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/serverfarms/capabilities"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "AppServicePlans_DeleteHybridConnection",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2019-08-01/AppServicePlans.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/serverfarms/hybridConnectionNamespaces/relays"
+    },
+    {
+      "APIVersion": "2016-09-01",
+      "operations": [
+        {
+          "OperationId": "AppServicePlans_GetHybridConnectionPlanLimit",
+          "version": "2016-09-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-09-01/AppServicePlans.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/serverfarms/hybridConnectionPlanLimits/limit"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "AppServicePlans_ListHybridConnections",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/AppServicePlans.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/serverfarms/hybridConnectionRelays"
+    },
+    {
+      "APIVersion": "2015-08-01",
+      "operations": [
+        {
+          "OperationId": "ServerFarms_GetServerFarmMetricDefintions",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json"
+        },
+        {
+          "OperationId": "AppServicePlans_ListMetricDefintions",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/AppServicePlans.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/serverfarms/metricdefinitions"
+    },
+    {
+      "APIVersion": "2016-09-01",
+      "operations": [
+        {
+          "OperationId": "AppServicePlans_ListMetrics",
+          "version": "2016-09-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-09-01/AppServicePlans.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/serverfarms/metrics"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "AppServicePlans_RestartWebApps",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2019-08-01/AppServicePlans.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/serverfarms/restartSites"
+    },
+    {
+      "APIVersion": "2016-09-01",
+      "operations": [
+        {
+          "OperationId": "AppServicePlans_GetServerFarmSkus",
+          "version": "2016-09-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-09-01/AppServicePlans.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/serverfarms/skus"
+    },
+    {
+      "APIVersion": "2016-09-01",
+      "operations": [
+        {
+          "OperationId": "AppServicePlans_ListUsages",
+          "version": "2016-09-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-09-01/AppServicePlans.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/serverfarms/usages"
+    },
+    {
+      "APIVersion": "2016-09-01",
+      "operations": [
+        {
+          "OperationId": "AppServicePlans_GetVnetFromServerFarm",
+          "version": "2016-09-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-09-01/AppServicePlans.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/serverfarms/virtualNetworkConnections"
+    },
+    {
+      "APIVersion": "2020-06-01",
+      "operations": [
+        {
+          "OperationId": "AppServicePlans_GetVnetGateway",
+          "version": "2020-06-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2020-06-01/AppServicePlans.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/serverfarms/virtualNetworkConnections/gateways"
+    },
+    {
+      "APIVersion": "2016-09-01",
+      "operations": [
+        {
+          "OperationId": "AppServicePlans_ListRoutesForVnet",
+          "version": "2016-09-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-09-01/AppServicePlans.json"
+        },
+        {
+          "OperationId": "AppServicePlans_DeleteVnetRoute",
+          "version": "2016-09-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-09-01/AppServicePlans.json"
+        },
+        {
+          "OperationId": "AppServicePlans_GetRouteForVnet",
+          "version": "2016-09-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-09-01/AppServicePlans.json"
+        },
+        {
+          "OperationId": "AppServicePlans_CreateOrUpdateVnetRoute",
+          "version": "2016-09-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-09-01/AppServicePlans.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/serverfarms/virtualNetworkConnections/routes"
+    },
+    {
+      "APIVersion": "2016-09-01",
+      "operations": [
+        {
+          "OperationId": "AppServicePlans_RebootWorker",
+          "version": "2016-09-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-09-01/AppServicePlans.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/serverfarms/workers/reboot"
+    },
+    {
+      "APIVersion": "2016-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_AnalyzeCustomHostname",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/analyzeCustomHostname"
+    },
+    {
+      "APIVersion": "2015-08-01",
+      "operations": [
+        {
+          "OperationId": "Sites_DeleteBackup",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json"
+        },
+        {
+          "OperationId": "WebApps_DeleteBackup",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        },
+        {
+          "OperationId": "Sites_GetSiteBackupStatus",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json"
+        },
+        {
+          "OperationId": "WebApps_GetBackupStatus",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/backups"
+    },
+    {
+      "APIVersion": "2015-08-01",
+      "operations": [
+        {
+          "OperationId": "Sites_GetSiteBackupStatusSecrets",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json"
+        },
+        {
+          "OperationId": "WebApps_ListBackupStatusSecrets",
+          "version": "2018-11-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-11-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/backups/list"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_GetBasicPublishingCredentialsPolicies",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2019-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/basicPublishingCredentialsPolicies"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_GetFtpAllowed",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2019-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/basicPublishingCredentialsPolicies/ftp"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_GetScmAllowed",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2019-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/basicPublishingCredentialsPolicies/scm"
+    },
+    {
+      "APIVersion": "2016-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_ListConfigurations",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/config"
+    },
+    {
+      "APIVersion": "2020-06-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_GetAuthSettingsV2",
+          "version": "2020-06-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2020-06-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/config/authsettingsV2/list"
+    },
+    {
+      "APIVersion": "2016-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_DeleteBackupConfiguration",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/config/backup"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_GetAppSettingsKeyVaultReferences",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2019-08-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_GetAppSettingKeyVaultReference",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2019-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/config/configreferences/appsettings"
+    },
+    {
+      "APIVersion": "2016-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_ListConfigurationSnapshotInfo",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_GetConfigurationSnapshot",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/config/web/snapshots"
+    },
+    {
+      "APIVersion": "2016-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_GetWebSiteContainerLogs",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/containerlogs"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_GetContainerLogsZip",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/containerlogs/zip/download"
+    },
+    {
+      "APIVersion": "2015-08-01",
+      "operations": [
+        {
+          "OperationId": "Sites_GetDeployments",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json"
+        },
+        {
+          "OperationId": "WebApps_ListDeployments",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_DeleteDeployment",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        },
+        {
+          "OperationId": "Sites_GetDeployment",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json"
+        },
+        {
+          "OperationId": "WebApps_GetDeployment",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        },
+        {
+          "OperationId": "Sites_CreateDeployment",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json"
+        },
+        {
+          "OperationId": "WebApps_CreateDeployment",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/deployments"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_ListDeploymentLog",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/deployments/log"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_ListDomainOwnershipIdentifiers",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_DeleteDomainOwnershipIdentifier",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_GetDomainOwnershipIdentifier",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_CreateOrUpdateDomainOwnershipIdentifier",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/domainOwnershipIdentifiers"
+    },
+    {
+      "APIVersion": "2016-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_GetMSDeployStatus",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_CreateMSDeployOperation",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/extensions/MSDeploy"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_GetMSDeployLog",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/extensions/MSDeploy/log"
+    },
+    {
+      "APIVersion": "2016-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_ListFunctions",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_CreateFunction",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/functions"
+    },
+    {
+      "APIVersion": "2016-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_ListFunctionSecrets",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/functions/listsecrets"
+    },
+    {
+      "APIVersion": "2016-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_GetFunctionsAdminToken",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/functions/admin/token"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_ListSyncStatus",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2019-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/host/default/listsyncstatus"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_SyncFunctions",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2019-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/host/default/sync"
+    },
+    {
+      "APIVersion": "2015-08-01",
+      "operations": [
+        {
+          "OperationId": "Sites_GetSiteHostNameBinding",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json"
+        },
+        {
+          "OperationId": "WebApps_GetHostNameBinding",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/hostNameBindings"
+    },
+    {
+      "APIVersion": "2016-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_ListRelayServiceConnections",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/hybridconnection"
+    },
+    {
+      "APIVersion": "2016-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_GetHybridConnection",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/hybridConnectionNamespaces/relays"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_GetInstanceInfo",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2019-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/instances"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_GetInstanceMsDeployStatus",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/instances/extensions/MSDeploy"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_GetInstanceMSDeployLog",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/instances/extensions/MSDeploy/log"
+    },
+    {
+      "APIVersion": "2016-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_ListInstanceProcesses",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_DeleteInstanceProcess",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_GetInstanceProcess",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/instances/processes"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_GetInstanceProcessDump",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/instances/processes/dump"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_ListInstanceProcessModules",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_GetInstanceProcessModule",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/instances/processes/modules"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_ListInstanceProcessThreads",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_GetInstanceProcessThread",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/instances/processes/threads"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_ListSiteBackups",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2019-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/listbackups"
+    },
+    {
+      "APIVersion": "2015-08-01",
+      "operations": [
+        {
+          "OperationId": "Sites_GetSiteMetricDefinitions",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json"
+        },
+        {
+          "OperationId": "WebApps_ListMetricDefinitions",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/metricdefinitions"
+    },
+    {
+      "APIVersion": "2016-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_ListMetrics",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/metrics"
+    },
+    {
+      "APIVersion": "2018-11-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_MigrateMySql",
+          "version": "2018-11-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-11-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/migratemysql"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_GetMigrateMySqlStatus",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/migratemysql/status"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_ListNetworkFeatures",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2019-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/networkFeatures"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_StartWebSiteNetworkTrace",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2019-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/networkTrace/start"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_StartWebSiteNetworkTraceOperation",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2019-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/networkTrace/startOperation"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_StopWebSiteNetworkTrace",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2019-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/networkTrace/stop"
+    },
+    {
+      "APIVersion": "2016-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_ListPerfMonCounters",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/perfcounters"
+    },
+    {
+      "APIVersion": "2015-08-01",
+      "operations": [
+        {
+          "OperationId": "Sites_ListSitePremierAddOns",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json"
+        },
+        {
+          "OperationId": "WebApps_ListPremierAddOns",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_GetPremierAddOn",
+          "version": "2020-06-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2020-06-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/premieraddons"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_GetPrivateAccess",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/privateAccess/virtualNetworks"
+    },
+    {
+      "APIVersion": "2020-12-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_GetPrivateEndpointConnectionList",
+          "version": "2020-12-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2020-12-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/privateEndpointConnections"
+    },
+    {
+      "APIVersion": "2016-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_ListProcesses",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_DeleteProcess",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_GetProcess",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/processes"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_GetProcessDump",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/processes/dump"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_ListProcessModules",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_GetProcessModule",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/processes/modules"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_ListProcessThreads",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_GetProcessThread",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/processes/threads"
+    },
+    {
+      "APIVersion": "2016-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_ListPublicCertificates",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_DeletePublicCertificate",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_GetPublicCertificate",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_CreateOrUpdatePublicCertificate",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/publicCertificates"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "ResourceHealthMetadata_ListBySite",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/ResourceHealthMetadata.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/resourceHealthMetadata"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "ResourceHealthMetadata_GetBySite",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/ResourceHealthMetadata.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/resourceHealthMetadata/default"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_RestoreFromBackupBlob",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/restoreFromBackupBlob"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_ListSiteExtensions",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_DeleteSiteExtension",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_GetSiteExtension",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_InstallSiteExtension",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/siteextensions"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_AnalyzeCustomHostnameSlot",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2019-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/analyzeCustomHostname"
+    },
+    {
+      "APIVersion": "2020-06-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_DeleteBackupSlot",
+          "version": "2020-06-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2020-06-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_GetBackupStatusSlot",
+          "version": "2018-11-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-11-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/backups"
+    },
+    {
+      "APIVersion": "2015-08-01",
+      "operations": [
+        {
+          "OperationId": "Sites_GetSiteBackupStatusSecretsSlot",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json"
+        },
+        {
+          "OperationId": "WebApps_ListBackupStatusSecretsSlot",
+          "version": "2018-11-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-11-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/backups/list"
+    },
+    {
+      "APIVersion": "2016-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_ListConfigurationsSlot",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/config"
+    },
+    {
+      "APIVersion": "2020-06-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_GetAuthSettingsV2Slot",
+          "version": "2020-06-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2020-06-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/config/authsettingsV2/list"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_DeleteBackupConfigurationSlot",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/config/backup"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_ListConfigurationSnapshotInfoSlot",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_GetConfigurationSnapshotSlot",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/config/web/snapshots"
+    },
+    {
+      "APIVersion": "2018-11-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_GetWebSiteContainerLogsSlot",
+          "version": "2018-11-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-11-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/containerlogs"
+    },
+    {
+      "APIVersion": "2018-11-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_GetContainerLogsZipSlot",
+          "version": "2018-11-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-11-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/containerlogs/zip/download"
+    },
+    {
+      "APIVersion": "2015-08-01",
+      "operations": [
+        {
+          "OperationId": "Sites_GetDeploymentsSlot",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json"
+        },
+        {
+          "OperationId": "WebApps_ListDeploymentsSlot",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_DeleteDeploymentSlot",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        },
+        {
+          "OperationId": "Sites_GetDeploymentSlot",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json"
+        },
+        {
+          "OperationId": "WebApps_GetDeploymentSlot",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        },
+        {
+          "OperationId": "Sites_CreateDeploymentSlot",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json"
+        },
+        {
+          "OperationId": "WebApps_CreateDeploymentSlot",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/deployments"
+    },
+    {
+      "APIVersion": "2016-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_ListDeploymentLogSlot",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/deployments/log"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_ListDomainOwnershipIdentifiersSlot",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_DeleteDomainOwnershipIdentifierSlot",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_GetDomainOwnershipIdentifierSlot",
+          "version": "2020-06-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2020-06-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_CreateOrUpdateDomainOwnershipIdentifierSlot",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/domainOwnershipIdentifiers"
+    },
+    {
+      "APIVersion": "2016-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_GetMSDeployStatusSlot",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_CreateMSDeployOperationSlot",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/extensions/MSDeploy"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_GetMSDeployLogSlot",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/extensions/MSDeploy/log"
+    },
+    {
+      "APIVersion": "2016-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_ListInstanceFunctionsSlot",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_DeleteInstanceFunctionSlot",
+          "version": "2018-11-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-11-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_GetInstanceFunctionSlot",
+          "version": "2018-11-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-11-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_CreateInstanceFunctionSlot",
+          "version": "2018-11-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-11-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/functions"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_DeleteFunctionSecretSlot",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2019-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/functions/keys"
+    },
+    {
+      "APIVersion": "2016-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_GetFunctionsAdminTokenSlot",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/functions/admin/token"
+    },
+    {
+      "APIVersion": "2015-08-01",
+      "operations": [
+        {
+          "OperationId": "Sites_GetSiteHostNameBindingSlot",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json"
+        },
+        {
+          "OperationId": "WebApps_GetHostNameBindingSlot",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/hostNameBindings"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_ListRelayServiceConnectionsSlot",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/hybridconnection"
+    },
+    {
+      "APIVersion": "2016-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_GetHybridConnectionSlot",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/hybridConnectionNamespaces/relays"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_GetInstanceInfoSlot",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2019-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/instances"
+    },
+    {
+      "APIVersion": "2016-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_ListInstanceProcessesSlot",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_DeleteInstanceProcessSlot",
+          "version": "2018-11-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-11-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_GetInstanceProcessSlot",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/instances/processes"
+    },
+    {
+      "APIVersion": "2018-11-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_GetInstanceProcessModuleSlot",
+          "version": "2018-11-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-11-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/instances/processes/modules"
+    },
+    {
+      "APIVersion": "2018-11-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_GetInstanceProcessThreadSlot",
+          "version": "2018-11-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-11-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/instances/processes/threads"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_ListMetricDefinitionsSlot",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/metricdefinitions"
+    },
+    {
+      "APIVersion": "2018-11-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_GetMigrateMySqlStatusSlot",
+          "version": "2018-11-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-11-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/migratemysql/status"
+    },
+    {
+      "APIVersion": "2015-08-01",
+      "operations": [
+        {
+          "OperationId": "Sites_GenerateNewSitePublishingPasswordSlot",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json"
+        },
+        {
+          "OperationId": "WebApps_GenerateNewSitePublishingPasswordSlot",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/newpassword"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_ListPerfMonCountersSlot",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/perfcounters"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_GetSitePhpErrorLogFlagSlot",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/phplogging"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_ListPremierAddOnsSlot",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/premieraddons"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_GetPrivateAccessSlot",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/privateAccess/virtualNetworks"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_ListProcessesSlot",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_GetProcessSlot",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/processes"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_GetProcessDumpSlot",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/processes/dump"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_ListProcessModulesSlot",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_GetProcessModuleSlot",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/processes/modules"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_ListProcessThreadsSlot",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/processes/threads"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_ListPublicCertificatesSlot",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_DeletePublicCertificateSlot",
+          "version": "2018-11-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-11-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_GetPublicCertificateSlot",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_CreateOrUpdatePublicCertificateSlot",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/publicCertificates"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "ResourceHealthMetadata_ListBySiteSlot",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/ResourceHealthMetadata.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/resourceHealthMetadata"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "ResourceHealthMetadata_GetBySiteSlot",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/ResourceHealthMetadata.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/resourceHealthMetadata/default"
+    },
+    {
+      "APIVersion": "2018-11-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_RestoreFromBackupBlobSlot",
+          "version": "2018-11-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-11-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/restoreFromBackupBlob"
+    },
+    {
+      "APIVersion": "2016-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_ListSiteExtensionsSlot",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_DeleteSiteExtensionSlot",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_GetSiteExtensionSlot",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_InstallSiteExtensionSlot",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/siteextensions"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_CopySlotSlot",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2019-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/slotcopy"
+    },
+    {
+      "APIVersion": "2016-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_ListSlotDifferencesSlot",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/slotsdiffs"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_StartNetworkTraceSlot",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2019-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/startNetworkTrace"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_GetTriggeredWebJobHistorySlot",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/triggeredwebjobs/history"
+    },
+    {
+      "APIVersion": "2015-08-01",
+      "operations": [
+        {
+          "OperationId": "Sites_GetSiteUsagesSlot",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json"
+        },
+        {
+          "OperationId": "WebApps_ListUsagesSlot",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/usages"
+    },
+    {
+      "APIVersion": "2015-08-01",
+      "operations": [
+        {
+          "OperationId": "Sites_DeleteSiteVNETConnectionSlot",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json"
+        },
+        {
+          "OperationId": "WebApps_DeleteVnetConnectionSlot",
+          "version": "2018-11-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-11-01/WebApps.json"
+        },
+        {
+          "OperationId": "WebApps_GetVnetConnectionSlot",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        },
+        {
+          "OperationId": "Sites_CreateOrUpdateSiteVNETConnectionSlot",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json"
+        },
+        {
+          "OperationId": "WebApps_CreateOrUpdateVnetConnectionSlot",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/virtualNetworkConnections"
+    },
+    {
+      "APIVersion": "2020-06-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_GetVnetConnectionGatewaySlot",
+          "version": "2020-06-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2020-06-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/virtualNetworkConnections/gateways"
+    },
+    {
+      "APIVersion": "2016-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_ListWebJobsSlot",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/webjobs"
+    },
+    {
+      "APIVersion": "2018-11-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_ListSlotDifferencesFromProduction",
+          "version": "2018-11-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-11-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slotsdiffs"
+    },
+    {
+      "APIVersion": "2018-11-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_ListSnapshotsFromDRSecondary",
+          "version": "2018-11-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-11-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/snapshotsdr"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_StartNetworkTrace",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2019-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/startNetworkTrace"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_StopNetworkTrace",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2019-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/stopNetworkTrace"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "WebApps_GetTriggeredWebJobHistory",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/triggeredwebjobs/history"
+    },
+    {
+      "APIVersion": "2015-08-01",
+      "operations": [
+        {
+          "OperationId": "Sites_GetSiteUsages",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json"
+        },
+        {
+          "OperationId": "WebApps_ListUsages",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/usages"
+    },
+    {
+      "APIVersion": "2015-08-01",
+      "operations": [
+        {
+          "OperationId": "Sites_DeleteSiteVNETConnection",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json"
+        },
+        {
+          "OperationId": "WebApps_DeleteVnetConnection",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json"
+        },
+        {
+          "OperationId": "Sites_GetSiteVNETConnection",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json"
+        },
+        {
+          "OperationId": "WebApps_GetVnetConnection",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        },
+        {
+          "OperationId": "Sites_CreateOrUpdateSiteVNETConnection",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json"
+        },
+        {
+          "OperationId": "WebApps_CreateOrUpdateVnetConnection",
+          "version": "2016-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-08-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/virtualNetworkConnections"
+    },
+    {
+      "APIVersion": "2015-08-01",
+      "operations": [
+        {
+          "OperationId": "Sites_GetSiteVnetGateway",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json"
+        },
+        {
+          "OperationId": "WebApps_GetVnetConnectionGateway",
+          "version": "2020-06-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2020-06-01/WebApps.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/virtualNetworkConnections/gateways"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "Diagnostics_ListSiteDetectorResponses",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2019-08-01/Diagnostics.json"
+        },
+        {
+          "OperationId": "Diagnostics_GetSiteDetectorResponse",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/Diagnostics.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/detectors"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "Diagnostics_ListSiteDiagnosticCategories",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/Diagnostics.json"
+        },
+        {
+          "OperationId": "Diagnostics_GetSiteDiagnosticCategory",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/Diagnostics.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/diagnostics"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "Diagnostics_ListSiteAnalyses",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/Diagnostics.json"
+        },
+        {
+          "OperationId": "Diagnostics_GetSiteAnalysis",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/Diagnostics.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/diagnostics/analyses"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "Diagnostics_ExecuteSiteAnalysis",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/Diagnostics.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/diagnostics/analyses/execute"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "Diagnostics_ListSiteDetectors",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/Diagnostics.json"
+        },
+        {
+          "OperationId": "Diagnostics_GetSiteDetector",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/Diagnostics.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/diagnostics/detectors"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "Diagnostics_ExecuteSiteDetector",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/Diagnostics.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/diagnostics/detectors/execute"
+    },
+    {
+      "APIVersion": "2016-03-01",
+      "operations": [
+        {
+          "OperationId": "Recommendations_ListHistoryForWebApp",
+          "version": "2016-03-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-03-01/Recommendations.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/recommendationHistory"
+    },
+    {
+      "APIVersion": "2015-08-01",
+      "operations": [
+        {
+          "OperationId": "Recommendations_GetRecommendedRulesForSite",
+          "version": "2015-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json"
+        },
+        {
+          "OperationId": "Recommendations_ListRecommendedRulesForWebApp",
+          "version": "2016-03-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2016-03-01/Recommendations.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/recommendations"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "Diagnostics_ListSiteDiagnosticCategoriesSlot",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/Diagnostics.json"
+        },
+        {
+          "OperationId": "Diagnostics_GetSiteDiagnosticCategorySlot",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/Diagnostics.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/diagnostics"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "Diagnostics_ListSiteAnalysesSlot",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/Diagnostics.json"
+        },
+        {
+          "OperationId": "Diagnostics_GetSiteAnalysisSlot",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/Diagnostics.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/diagnostics/analyses"
+    },
+    {
+      "APIVersion": "2018-02-01",
+      "operations": [
+        {
+          "OperationId": "Diagnostics_ListSiteDetectorsSlot",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/Diagnostics.json"
+        },
+        {
+          "OperationId": "Diagnostics_GetSiteDetectorSlot",
+          "version": "2018-02-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/Diagnostics.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/sites/slots/diagnostics/detectors"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "StaticSites_DeleteStaticSiteBuild",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2019-08-01/StaticSites.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/staticSites/builds"
+    },
+    {
+      "APIVersion": "2020-12-01",
+      "operations": [
+        {
+          "OperationId": "StaticSites_GetStaticSiteCustomDomain",
+          "version": "2020-12-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2020-12-01/StaticSites.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/staticSites/customDomains"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "StaticSites_ListStaticSiteSecrets",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2019-08-01/StaticSites.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/staticSites/listSecrets"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "StaticSites_ResetStaticSiteApiKey",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/web/resource-manager/Microsoft.Web/stable/2019-08-01/StaticSites.json"
+        }
+      ],
+      "Resource": "Microsoft.Web/staticSites/resetapikey"
+    }
+  ],
+  "resourcelist": "Microsoft.DomainRegistration/domains,Microsoft.DomainRegistration/generateSsoRequest,Microsoft.DomainRegistration/listDomainRecommendations,Microsoft.DomainRegistration/topLevelDomains,Microsoft.Web/availableStacks,Microsoft.Web/billingMeters,Microsoft.Web/certificates,Microsoft.Web/connectionGateways,Microsoft.Web/customApis,Microsoft.Web/listSitesAssignedToHostName,Microsoft.Web/recommendations,Microsoft.Web/recommendations/reset,Microsoft.Web/resourceHealthMetadata,Microsoft.Web/skus,Microsoft.Web/verifyHostingEnvironmentVnet,Microsoft.CertificateRegistration/certificateOrders,Microsoft.CertificateRegistration/certificateOrders/certificates,Microsoft.CertificateRegistration/certificateOrders/reissue,Microsoft.CertificateRegistration/certificateOrders/renew,Microsoft.CertificateRegistration/certificateOrders/resendEmail,Microsoft.CertificateRegistration/certificateOrders/resendRequestEmails,Microsoft.CertificateRegistration/certificateOrders/retrieveSiteSeal,Microsoft.CertificateRegistration/certificateOrders/verifyDomainOwnership,Microsoft.CertificateRegistration/certificateOrders/retrieveCertificateActions,Microsoft.CertificateRegistration/certificateOrders/retrieveEmailHistory,Microsoft.DomainRegistration/domains/domainOwnershipIdentifiers,Microsoft.DomainRegistration/domains/renew,Microsoft.Web/connections,Microsoft.Web/hostingEnvironments/detectors,Microsoft.Web/hostingEnvironments/diagnostics,Microsoft.Web/hostingEnvironments/inboundNetworkDependenciesEndpoints,Microsoft.Web/hostingEnvironments/metricdefinitions,Microsoft.Web/hostingEnvironments/multiRolePools,Microsoft.Web/hostingEnvironments/multiRolePools/default,Microsoft.Web/hostingEnvironments/multiRolePools/default/metricdefinitions,Microsoft.Web/hostingEnvironments/multiRolePools/default/metrics,Microsoft.Web/hostingEnvironments/multiRolePools/default/skus,Microsoft.Web/hostingEnvironments/multiRolePools/default/usages,Microsoft.Web/hostingEnvironments/outboundNetworkDependenciesEndpoints,Microsoft.Web/hostingEnvironments/reboot,Microsoft.Web/hostingEnvironments/resume,Microsoft.Web/hostingEnvironments/sites,Microsoft.Web/hostingEnvironments/usages,Microsoft.Web/hostingEnvironments/workerPools,Microsoft.Web/hostingEnvironments/workerPools/metrics,Microsoft.Web/hostingEnvironments/workerPools/skus,Microsoft.Web/serverfarms/capabilities,Microsoft.Web/serverfarms/hybridConnectionNamespaces/relays,Microsoft.Web/serverfarms/hybridConnectionPlanLimits/limit,Microsoft.Web/serverfarms/hybridConnectionRelays,Microsoft.Web/serverfarms/metricdefinitions,Microsoft.Web/serverfarms/metrics,Microsoft.Web/serverfarms/restartSites,Microsoft.Web/serverfarms/skus,Microsoft.Web/serverfarms/usages,Microsoft.Web/serverfarms/virtualNetworkConnections,Microsoft.Web/serverfarms/virtualNetworkConnections/gateways,Microsoft.Web/serverfarms/virtualNetworkConnections/routes,Microsoft.Web/serverfarms/workers/reboot,Microsoft.Web/sites/analyzeCustomHostname,Microsoft.Web/sites/backups,Microsoft.Web/sites/backups/list,Microsoft.Web/sites/basicPublishingCredentialsPolicies,Microsoft.Web/sites/basicPublishingCredentialsPolicies/ftp,Microsoft.Web/sites/basicPublishingCredentialsPolicies/scm,Microsoft.Web/sites/config,Microsoft.Web/sites/config/authsettingsV2/list,Microsoft.Web/sites/config/backup,Microsoft.Web/sites/config/configreferences/appsettings,Microsoft.Web/sites/config/web/snapshots,Microsoft.Web/sites/containerlogs,Microsoft.Web/sites/containerlogs/zip/download,Microsoft.Web/sites/deployments,Microsoft.Web/sites/deployments/log,Microsoft.Web/sites/domainOwnershipIdentifiers,Microsoft.Web/sites/extensions/MSDeploy,Microsoft.Web/sites/extensions/MSDeploy/log,Microsoft.Web/sites/functions,Microsoft.Web/sites/functions/listsecrets,Microsoft.Web/sites/functions/admin/token,Microsoft.Web/sites/host/default/listsyncstatus,Microsoft.Web/sites/host/default/sync,Microsoft.Web/sites/hostNameBindings,Microsoft.Web/sites/hybridconnection,Microsoft.Web/sites/hybridConnectionNamespaces/relays,Microsoft.Web/sites/instances,Microsoft.Web/sites/instances/extensions/MSDeploy,Microsoft.Web/sites/instances/extensions/MSDeploy/log,Microsoft.Web/sites/instances/processes,Microsoft.Web/sites/instances/processes/dump,Microsoft.Web/sites/instances/processes/modules,Microsoft.Web/sites/instances/processes/threads,Microsoft.Web/sites/listbackups,Microsoft.Web/sites/metricdefinitions,Microsoft.Web/sites/metrics,Microsoft.Web/sites/migratemysql,Microsoft.Web/sites/migratemysql/status,Microsoft.Web/sites/networkFeatures,Microsoft.Web/sites/networkTrace/start,Microsoft.Web/sites/networkTrace/startOperation,Microsoft.Web/sites/networkTrace/stop,Microsoft.Web/sites/perfcounters,Microsoft.Web/sites/premieraddons,Microsoft.Web/sites/privateAccess/virtualNetworks,Microsoft.Web/sites/privateEndpointConnections,Microsoft.Web/sites/processes,Microsoft.Web/sites/processes/dump,Microsoft.Web/sites/processes/modules,Microsoft.Web/sites/processes/threads,Microsoft.Web/sites/publicCertificates,Microsoft.Web/sites/resourceHealthMetadata,Microsoft.Web/sites/resourceHealthMetadata/default,Microsoft.Web/sites/restoreFromBackupBlob,Microsoft.Web/sites/siteextensions,Microsoft.Web/sites/slots/analyzeCustomHostname,Microsoft.Web/sites/slots/backups,Microsoft.Web/sites/slots/backups/list,Microsoft.Web/sites/slots/config,Microsoft.Web/sites/slots/config/authsettingsV2/list,Microsoft.Web/sites/slots/config/backup,Microsoft.Web/sites/slots/config/web/snapshots,Microsoft.Web/sites/slots/containerlogs,Microsoft.Web/sites/slots/containerlogs/zip/download,Microsoft.Web/sites/slots/deployments,Microsoft.Web/sites/slots/deployments/log,Microsoft.Web/sites/slots/domainOwnershipIdentifiers,Microsoft.Web/sites/slots/extensions/MSDeploy,Microsoft.Web/sites/slots/extensions/MSDeploy/log,Microsoft.Web/sites/slots/functions,Microsoft.Web/sites/slots/functions/keys,Microsoft.Web/sites/slots/functions/admin/token,Microsoft.Web/sites/slots/hostNameBindings,Microsoft.Web/sites/slots/hybridconnection,Microsoft.Web/sites/slots/hybridConnectionNamespaces/relays,Microsoft.Web/sites/slots/instances,Microsoft.Web/sites/slots/instances/processes,Microsoft.Web/sites/slots/instances/processes/modules,Microsoft.Web/sites/slots/instances/processes/threads,Microsoft.Web/sites/slots/metricdefinitions,Microsoft.Web/sites/slots/migratemysql/status,Microsoft.Web/sites/slots/newpassword,Microsoft.Web/sites/slots/perfcounters,Microsoft.Web/sites/slots/phplogging,Microsoft.Web/sites/slots/premieraddons,Microsoft.Web/sites/slots/privateAccess/virtualNetworks,Microsoft.Web/sites/slots/processes,Microsoft.Web/sites/slots/processes/dump,Microsoft.Web/sites/slots/processes/modules,Microsoft.Web/sites/slots/processes/threads,Microsoft.Web/sites/slots/publicCertificates,Microsoft.Web/sites/slots/resourceHealthMetadata,Microsoft.Web/sites/slots/resourceHealthMetadata/default,Microsoft.Web/sites/slots/restoreFromBackupBlob,Microsoft.Web/sites/slots/siteextensions,Microsoft.Web/sites/slots/slotcopy,Microsoft.Web/sites/slots/slotsdiffs,Microsoft.Web/sites/slots/startNetworkTrace,Microsoft.Web/sites/slots/triggeredwebjobs/history,Microsoft.Web/sites/slots/usages,Microsoft.Web/sites/slots/virtualNetworkConnections,Microsoft.Web/sites/slots/virtualNetworkConnections/gateways,Microsoft.Web/sites/slots/webjobs,Microsoft.Web/sites/slotsdiffs,Microsoft.Web/sites/snapshotsdr,Microsoft.Web/sites/startNetworkTrace,Microsoft.Web/sites/stopNetworkTrace,Microsoft.Web/sites/triggeredwebjobs/history,Microsoft.Web/sites/usages,Microsoft.Web/sites/virtualNetworkConnections,Microsoft.Web/sites/virtualNetworkConnections/gateways,Microsoft.Web/sites/detectors,Microsoft.Web/sites/diagnostics,Microsoft.Web/sites/diagnostics/analyses,Microsoft.Web/sites/diagnostics/analyses/execute,Microsoft.Web/sites/diagnostics/detectors,Microsoft.Web/sites/diagnostics/detectors/execute,Microsoft.Web/sites/recommendationHistory,Microsoft.Web/sites/recommendations,Microsoft.Web/sites/slots/diagnostics,Microsoft.Web/sites/slots/diagnostics/analyses,Microsoft.Web/sites/slots/diagnostics/detectors,Microsoft.Web/staticSites/builds,Microsoft.Web/staticSites/customDomains,Microsoft.Web/staticSites/listSecrets,Microsoft.Web/staticSites/resetapikey",
+  "onboardType": "depth",
+  "RPName": "web",
+  "readmeFile": "/specification/web/resource-manager/readme.md",
+  "target": "clicore"
+}
