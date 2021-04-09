@@ -1,0 +1,54 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2019-06-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.Synapse/workspaces/integrationRuntimes/nodes"
+    },
+    {
+      "APIVersion": "2019-06-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.Synapse/workspaces/keys"
+    },
+    {
+      "APIVersion": "2019-06-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.Synapse/workspaces/privateEndpointConnections"
+    },
+    {
+      "APIVersion": "2019-06-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.Synapse/workspaces/sqlAdministrators/activeDirectory"
+    },
+    {
+      "APIVersion": "2019-06-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.Synapse/workspaces/sqlPools/restorePoints"
+    },
+    {
+      "APIVersion": "2019-06-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.Synapse/workspaces/sqlPools/vulnerabilityAssessments"
+    },
+    {
+      "APIVersion": "2019-06-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.Synapse/workspaces/sqlPools/vulnerabilityAssessments/rules/baselines"
+    },
+    {
+      "APIVersion": "2019-06-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.Synapse/workspaces/sqlPools/workloadGroups"
+    },
+    {
+      "APIVersion": "2019-06-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.Synapse/workspaces/sqlPools/workloadGroups/workloadClassifiers"
+    }
+  ],
+  "resourcelist": "Microsoft.Synapse/workspaces/integrationRuntimes/nodes,Microsoft.Synapse/workspaces/keys,Microsoft.Synapse/workspaces/privateEndpointConnections,Microsoft.Synapse/workspaces/sqlAdministrators/activeDirectory,Microsoft.Synapse/workspaces/sqlPools/restorePoints,Microsoft.Synapse/workspaces/sqlPools/vulnerabilityAssessments,Microsoft.Synapse/workspaces/sqlPools/vulnerabilityAssessments/rules/baselines,Microsoft.Synapse/workspaces/sqlPools/workloadGroups,Microsoft.Synapse/workspaces/sqlPools/workloadGroups/workloadClassifiers",
+  "onboardType": "depth",
+  "RPName": "synapse",
+  "readmeFile": "/specification/synapse/resource-manager/readme.md",
+  "target": "terraform"
+}
