@@ -1,0 +1,29 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2018-06-01",
+      "operations": [],
+      "Resource": "Microsoft.DataFactory/factories/dataflows"
+    },
+    {
+      "APIVersion": "2018-06-01",
+      "operations": [],
+      "Resource": "Microsoft.DataFactory/factories/integrationRuntimes/nodes"
+    },
+    {
+      "APIVersion": "2018-06-01",
+      "operations": [],
+      "Resource": "Microsoft.DataFactory/factories/managedVirtualNetworks/managedPrivateEndpoints"
+    },
+    {
+      "APIVersion": "2018-06-01",
+      "operations": [],
+      "Resource": "Microsoft.DataFactory/factories/privateEndPointConnections"
+    }
+  ],
+  "resourcelist": "Microsoft.DataFactory/factories/dataflows,Microsoft.DataFactory/factories/integrationRuntimes/nodes,Microsoft.DataFactory/factories/managedVirtualNetworks/managedPrivateEndpoints,Microsoft.DataFactory/factories/privateEndPointConnections",
+  "onboardType": "depth",
+  "RPName": "datafactory",
+  "readmeFile": "/specification/datafactory/resource-manager/readme.md",
+  "target": "terraform"
+}
