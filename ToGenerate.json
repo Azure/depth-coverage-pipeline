@@ -1,0 +1,24 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2014-04-01",
+      "operations": [],
+      "Resource": "Microsoft.Sql/servers/communicationLinks"
+    },
+    {
+      "APIVersion": "2017-03-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.Sql/servers/databases/restorePoints"
+    },
+    {
+      "APIVersion": "2014-04-01",
+      "operations": [],
+      "Resource": "Microsoft.Sql/servers/disasterRecoveryConfiguration"
+    }
+  ],
+  "resourcelist": "Microsoft.Sql/servers/communicationLinks,Microsoft.Sql/servers/databases/restorePoints,Microsoft.Sql/servers/disasterRecoveryConfiguration",
+  "onboardType": "depth",
+  "RPName": "sql",
+  "readmeFile": "/specification/sql/resource-manager/readme.md",
+  "target": "terraform"
+}
