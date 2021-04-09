@@ -1,0 +1,158 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2017-04-01",
+      "operations": [
+        {
+          "OperationId": "Regions_ListBySku",
+          "version": "2017-04-01",
+          "jsonFilePath": "/specification/eventhub/resource-manager/Microsoft.EventHub/stable/2017-04-01/sku.json"
+        }
+      ],
+      "Resource": "Microsoft.EventHub/sku/regions"
+    },
+    {
+      "APIVersion": "2014-09-01",
+      "operations": [
+        {
+          "OperationId": "Namespaces_ListPostAuthorizationRules",
+          "version": "2014-09-01",
+          "jsonFilePath": "/specification/eventhub/resource-manager/Microsoft.EventHub/stable/2014-09-01/EventHub.json"
+        }
+      ],
+      "Resource": "Microsoft.EventHub/namespaces/AuthorizationRules"
+    },
+    {
+      "APIVersion": "2017-04-01",
+      "operations": [
+        {
+          "OperationId": "DisasterRecoveryConfigs_ListAuthorizationRules",
+          "version": "2017-04-01",
+          "jsonFilePath": "/specification/eventhub/resource-manager/Microsoft.EventHub/stable/2017-04-01/AuthorizationRules.json"
+        },
+        {
+          "OperationId": "DisasterRecoveryConfigs_GetAuthorizationRule",
+          "version": "2017-04-01",
+          "jsonFilePath": "/specification/eventhub/resource-manager/Microsoft.EventHub/stable/2017-04-01/AuthorizationRules.json"
+        }
+      ],
+      "Resource": "Microsoft.EventHub/namespaces/disasterRecoveryConfigs/authorizationRules"
+    },
+    {
+      "APIVersion": "2018-01-01-preview",
+      "operations": [
+        {
+          "OperationId": "Namespaces_ListIPFilterRules",
+          "version": "2018-01-01-preview",
+          "jsonFilePath": "/specification/eventhub/resource-manager/Microsoft.EventHub/preview/2018-01-01-preview/ipfilterrules-preview.json"
+        },
+        {
+          "OperationId": "Namespaces_DeleteIpFilterRule",
+          "version": "2018-01-01-preview",
+          "jsonFilePath": "/specification/eventhub/resource-manager/Microsoft.EventHub/preview/2018-01-01-preview/ipfilterrules-preview.json"
+        },
+        {
+          "OperationId": "Namespaces_GetIpFilterRule",
+          "version": "2018-01-01-preview",
+          "jsonFilePath": "/specification/eventhub/resource-manager/Microsoft.EventHub/preview/2018-01-01-preview/ipfilterrules-preview.json"
+        },
+        {
+          "OperationId": "Namespaces_CreateOrUpdateIpFilterRule",
+          "version": "2018-01-01-preview",
+          "jsonFilePath": "/specification/eventhub/resource-manager/Microsoft.EventHub/preview/2018-01-01-preview/ipfilterrules-preview.json"
+        }
+      ],
+      "Resource": "Microsoft.EventHub/namespaces/ipfilterrules"
+    },
+    {
+      "APIVersion": "2017-04-01",
+      "operations": [
+        {
+          "OperationId": "Namespaces_GetMessagingPlan",
+          "version": "2017-04-01",
+          "jsonFilePath": "/specification/eventhub/resource-manager/Microsoft.EventHub/stable/2017-04-01/namespaces.json"
+        }
+      ],
+      "Resource": "Microsoft.EventHub/namespaces/messagingplan"
+    },
+    {
+      "APIVersion": "2017-04-01",
+      "operations": [
+        {
+          "OperationId": "Namespaces_ListNetworkRuleSets",
+          "version": "2017-04-01",
+          "jsonFilePath": "/specification/eventhub/resource-manager/Microsoft.EventHub/stable/2017-04-01/networkRuleSets.json"
+        }
+      ],
+      "Resource": "Microsoft.EventHub/namespaces/networkRuleSets"
+    },
+    {
+      "APIVersion": "2018-01-01-preview",
+      "operations": [
+        {
+          "OperationId": "PrivateEndpointConnections_List",
+          "version": "2018-01-01-preview",
+          "jsonFilePath": "/specification/eventhub/resource-manager/Microsoft.EventHub/preview/2018-01-01-preview/namespaces-preview.json"
+        },
+        {
+          "OperationId": "PrivateEndpointConnections_Delete",
+          "version": "2018-01-01-preview",
+          "jsonFilePath": "/specification/eventhub/resource-manager/Microsoft.EventHub/preview/2018-01-01-preview/namespaces-preview.json"
+        },
+        {
+          "OperationId": "PrivateEndpointConnections_Get",
+          "version": "2018-01-01-preview",
+          "jsonFilePath": "/specification/eventhub/resource-manager/Microsoft.EventHub/preview/2018-01-01-preview/namespaces-preview.json"
+        },
+        {
+          "OperationId": "PrivateEndpointConnections_CreateOrUpdate",
+          "version": "2018-01-01-preview",
+          "jsonFilePath": "/specification/eventhub/resource-manager/Microsoft.EventHub/preview/2018-01-01-preview/namespaces-preview.json"
+        }
+      ],
+      "Resource": "Microsoft.EventHub/namespaces/privateEndpointConnections"
+    },
+    {
+      "APIVersion": "2018-01-01-preview",
+      "operations": [
+        {
+          "OperationId": "PrivateLinkResources_Get",
+          "version": "2018-01-01-preview",
+          "jsonFilePath": "/specification/eventhub/resource-manager/Microsoft.EventHub/preview/2018-01-01-preview/namespaces-preview.json"
+        }
+      ],
+      "Resource": "Microsoft.EventHub/namespaces/privateLinkResources"
+    },
+    {
+      "APIVersion": "2018-01-01-preview",
+      "operations": [
+        {
+          "OperationId": "Namespaces_ListVirtualNetworkRules",
+          "version": "2018-01-01-preview",
+          "jsonFilePath": "/specification/eventhub/resource-manager/Microsoft.EventHub/preview/2018-01-01-preview/virtualnetworkrules-preview.json"
+        },
+        {
+          "OperationId": "Namespaces_DeleteVirtualNetworkRule",
+          "version": "2018-01-01-preview",
+          "jsonFilePath": "/specification/eventhub/resource-manager/Microsoft.EventHub/preview/2018-01-01-preview/virtualnetworkrules-preview.json"
+        },
+        {
+          "OperationId": "Namespaces_GetVirtualNetworkRule",
+          "version": "2018-01-01-preview",
+          "jsonFilePath": "/specification/eventhub/resource-manager/Microsoft.EventHub/preview/2018-01-01-preview/virtualnetworkrules-preview.json"
+        },
+        {
+          "OperationId": "Namespaces_CreateOrUpdateVirtualNetworkRule",
+          "version": "2018-01-01-preview",
+          "jsonFilePath": "/specification/eventhub/resource-manager/Microsoft.EventHub/preview/2018-01-01-preview/virtualnetworkrules-preview.json"
+        }
+      ],
+      "Resource": "Microsoft.EventHub/namespaces/virtualnetworkrules"
+    }
+  ],
+  "resourcelist": "Microsoft.EventHub/sku/regions,Microsoft.EventHub/namespaces/AuthorizationRules,Microsoft.EventHub/namespaces/disasterRecoveryConfigs/authorizationRules,Microsoft.EventHub/namespaces/ipfilterrules,Microsoft.EventHub/namespaces/messagingplan,Microsoft.EventHub/namespaces/networkRuleSets,Microsoft.EventHub/namespaces/privateEndpointConnections,Microsoft.EventHub/namespaces/privateLinkResources,Microsoft.EventHub/namespaces/virtualnetworkrules",
+  "onboardType": "depth",
+  "RPName": "eventhub",
+  "readmeFile": "/specification/eventhub/resource-manager/readme.md",
+  "target": "clicore"
+}
