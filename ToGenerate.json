@@ -1,0 +1,34 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2015-05-01",
+      "operations": [],
+      "Resource": "Microsoft.Insights/components/Annotations"
+    },
+    {
+      "APIVersion": "2015-05-01",
+      "operations": [],
+      "Resource": "Microsoft.Insights/components/exportconfiguration"
+    },
+    {
+      "APIVersion": "2015-05-01",
+      "operations": [],
+      "Resource": "Microsoft.Insights/components/favorites"
+    },
+    {
+      "APIVersion": "2015-05-01",
+      "operations": [],
+      "Resource": "Microsoft.Insights/components/WorkItemConfigs"
+    },
+    {
+      "APIVersion": "2020-10-20",
+      "operations": [],
+      "Resource": "Microsoft.Insights/myWorkbooks"
+    }
+  ],
+  "resourcelist": "Microsoft.Insights/components/Annotations,Microsoft.Insights/components/exportconfiguration,Microsoft.Insights/components/favorites,Microsoft.Insights/components/WorkItemConfigs,Microsoft.Insights/myWorkbooks",
+  "onboardType": "depth",
+  "RPName": "applicationinsights",
+  "readmeFile": "/specification/applicationinsights/resource-manager/readme.md",
+  "target": "terraform"
+}
