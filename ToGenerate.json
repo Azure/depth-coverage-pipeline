@@ -1,0 +1,152 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2019-11-01",
+      "operations": [
+        {
+          "OperationId": "Accounts_Delete",
+          "version": "2019-11-01",
+          "jsonFilePath": "/specification/datashare/resource-manager/Microsoft.DataShare/stable/2019-11-01/DataShare.json"
+        }
+      ],
+      "Resource": "Microsoft.DataShare/accounts"
+    },
+    {
+      "APIVersion": "2019-11-01",
+      "operations": [
+        {
+          "OperationId": "Invitations_ListByShare",
+          "version": "2019-11-01",
+          "jsonFilePath": "/specification/datashare/resource-manager/Microsoft.DataShare/stable/2019-11-01/DataShare.json"
+        }
+      ],
+      "Resource": "Microsoft.DataShare/accounts/shares/invitations"
+    },
+    {
+      "APIVersion": "2019-11-01",
+      "operations": [
+        {
+          "OperationId": "Shares_ListSynchronizationDetails",
+          "version": "2019-11-01",
+          "jsonFilePath": "/specification/datashare/resource-manager/Microsoft.DataShare/stable/2019-11-01/DataShare.json"
+        }
+      ],
+      "Resource": "Microsoft.DataShare/accounts/shares/listSynchronizationDetails"
+    },
+    {
+      "APIVersion": "2019-11-01",
+      "operations": [
+        {
+          "OperationId": "ProviderShareSubscriptions_ListByShare",
+          "version": "2019-11-01",
+          "jsonFilePath": "/specification/datashare/resource-manager/Microsoft.DataShare/stable/2019-11-01/DataShare.json"
+        }
+      ],
+      "Resource": "Microsoft.DataShare/accounts/shares/providerShareSubscriptions"
+    },
+    {
+      "APIVersion": "2020-09-01",
+      "operations": [
+        {
+          "OperationId": "ProviderShareSubscriptions_Adjust",
+          "version": "2020-09-01",
+          "jsonFilePath": "/specification/datashare/resource-manager/Microsoft.DataShare/stable/2020-09-01/DataShare.json"
+        }
+      ],
+      "Resource": "Microsoft.DataShare/accounts/shares/providerShareSubscriptions/adjust"
+    },
+    {
+      "APIVersion": "2019-11-01",
+      "operations": [
+        {
+          "OperationId": "ProviderShareSubscriptions_Reinstate",
+          "version": "2019-11-01",
+          "jsonFilePath": "/specification/datashare/resource-manager/Microsoft.DataShare/stable/2019-11-01/DataShare.json"
+        }
+      ],
+      "Resource": "Microsoft.DataShare/accounts/shares/providerShareSubscriptions/reinstate"
+    },
+    {
+      "APIVersion": "2019-11-01",
+      "operations": [
+        {
+          "OperationId": "ProviderShareSubscriptions_Revoke",
+          "version": "2019-11-01",
+          "jsonFilePath": "/specification/datashare/resource-manager/Microsoft.DataShare/stable/2019-11-01/DataShare.json"
+        }
+      ],
+      "Resource": "Microsoft.DataShare/accounts/shares/providerShareSubscriptions/revoke"
+    },
+    {
+      "APIVersion": "2019-11-01",
+      "operations": [
+        {
+          "OperationId": "SynchronizationSettings_Get",
+          "version": "2019-11-01",
+          "jsonFilePath": "/specification/datashare/resource-manager/Microsoft.DataShare/stable/2019-11-01/DataShare.json"
+        }
+      ],
+      "Resource": "Microsoft.DataShare/accounts/shares/synchronizationSettings"
+    },
+    {
+      "APIVersion": "2019-11-01",
+      "operations": [
+        {
+          "OperationId": "ShareSubscriptions_CancelSynchronization",
+          "version": "2019-11-01",
+          "jsonFilePath": "/specification/datashare/resource-manager/Microsoft.DataShare/stable/2019-11-01/DataShare.json"
+        }
+      ],
+      "Resource": "Microsoft.DataShare/accounts/shareSubscriptions/cancelSynchronization"
+    },
+    {
+      "APIVersion": "2019-11-01",
+      "operations": [
+        {
+          "OperationId": "DataSetMappings_Get",
+          "version": "2019-11-01",
+          "jsonFilePath": "/specification/datashare/resource-manager/Microsoft.DataShare/stable/2019-11-01/DataShare.json"
+        }
+      ],
+      "Resource": "Microsoft.DataShare/accounts/shareSubscriptions/dataSetMappings"
+    },
+    {
+      "APIVersion": "2019-11-01",
+      "operations": [
+        {
+          "OperationId": "ShareSubscriptions_ListSourceShareSynchronizationSettings",
+          "version": "2019-11-01",
+          "jsonFilePath": "/specification/datashare/resource-manager/Microsoft.DataShare/stable/2019-11-01/DataShare.json"
+        }
+      ],
+      "Resource": "Microsoft.DataShare/accounts/shareSubscriptions/listSourceShareSynchronizationSettings"
+    },
+    {
+      "APIVersion": "2019-11-01",
+      "operations": [
+        {
+          "OperationId": "ShareSubscriptions_ListSynchronizationDetails",
+          "version": "2019-11-01",
+          "jsonFilePath": "/specification/datashare/resource-manager/Microsoft.DataShare/stable/2019-11-01/DataShare.json"
+        }
+      ],
+      "Resource": "Microsoft.DataShare/accounts/shareSubscriptions/listSynchronizationDetails"
+    },
+    {
+      "APIVersion": "2019-11-01",
+      "operations": [
+        {
+          "OperationId": "Triggers_Get",
+          "version": "2019-11-01",
+          "jsonFilePath": "/specification/datashare/resource-manager/Microsoft.DataShare/stable/2019-11-01/DataShare.json"
+        }
+      ],
+      "Resource": "Microsoft.DataShare/accounts/shareSubscriptions/triggers"
+    }
+  ],
+  "resourcelist": "Microsoft.DataShare/accounts,Microsoft.DataShare/accounts/shares/invitations,Microsoft.DataShare/accounts/shares/listSynchronizationDetails,Microsoft.DataShare/accounts/shares/providerShareSubscriptions,Microsoft.DataShare/accounts/shares/providerShareSubscriptions/adjust,Microsoft.DataShare/accounts/shares/providerShareSubscriptions/reinstate,Microsoft.DataShare/accounts/shares/providerShareSubscriptions/revoke,Microsoft.DataShare/accounts/shares/synchronizationSettings,Microsoft.DataShare/accounts/shareSubscriptions/cancelSynchronization,Microsoft.DataShare/accounts/shareSubscriptions/dataSetMappings,Microsoft.DataShare/accounts/shareSubscriptions/listSourceShareSynchronizationSettings,Microsoft.DataShare/accounts/shareSubscriptions/listSynchronizationDetails,Microsoft.DataShare/accounts/shareSubscriptions/triggers",
+  "onboardType": "depth",
+  "RPName": "datashare",
+  "readmeFile": "/specification/datashare/resource-manager/readme.md",
+  "target": "clicore"
+}
