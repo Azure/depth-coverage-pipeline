@@ -1,0 +1,14 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-01-01",
+      "operations": [],
+      "Resource": "Microsoft.Marketplace/privateStores/offers"
+    }
+  ],
+  "resourcelist": "Microsoft.Marketplace/privateStores/offers",
+  "onboardType": "depth",
+  "RPName": "marketplace",
+  "readmeFile": "/specification/marketplace/resource-manager/readme.md",
+  "target": "terraform"
+}
