@@ -1,0 +1,75 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-02-15",
+      "operations": [
+        {
+          "OperationId": "Clusters_AddLanguageExtensions",
+          "version": "2020-02-15",
+          "jsonFilePath": "/specification/azure-kusto/resource-manager/Microsoft.Kusto/stable/2020-02-15/kusto.json"
+        }
+      ],
+      "Resource": "Microsoft.Kusto/clusters/addLanguageExtensions"
+    },
+    {
+      "APIVersion": "2020-09-18",
+      "operations": [
+        {
+          "OperationId": "DataConnections_dataConnectionValidation",
+          "version": "2020-09-18",
+          "jsonFilePath": "/specification/azure-kusto/resource-manager/Microsoft.Kusto/stable/2020-09-18/kusto.json"
+        }
+      ],
+      "Resource": "Microsoft.Kusto/clusters/databases/dataConnectionValidation"
+    },
+    {
+      "APIVersion": "2020-02-15",
+      "operations": [
+        {
+          "OperationId": "DatabasePrincipalAssignments_Delete",
+          "version": "2020-02-15",
+          "jsonFilePath": "/specification/azure-kusto/resource-manager/Microsoft.Kusto/stable/2020-02-15/kusto.json"
+        }
+      ],
+      "Resource": "Microsoft.Kusto/clusters/databases/principalAssignments"
+    },
+    {
+      "APIVersion": "2019-05-15",
+      "operations": [
+        {
+          "OperationId": "Databases_RemovePrincipals",
+          "version": "2019-05-15",
+          "jsonFilePath": "/specification/azure-kusto/resource-manager/Microsoft.Kusto/stable/2019-05-15/kusto.json"
+        }
+      ],
+      "Resource": "Microsoft.Kusto/clusters/databases/removePrincipals"
+    },
+    {
+      "APIVersion": "2020-02-15",
+      "operations": [
+        {
+          "OperationId": "Clusters_ListLanguageExtensions",
+          "version": "2020-02-15",
+          "jsonFilePath": "/specification/azure-kusto/resource-manager/Microsoft.Kusto/stable/2020-02-15/kusto.json"
+        }
+      ],
+      "Resource": "Microsoft.Kusto/clusters/listLanguageExtensions"
+    },
+    {
+      "APIVersion": "2020-02-15",
+      "operations": [
+        {
+          "OperationId": "Clusters_RemoveLanguageExtensions",
+          "version": "2020-02-15",
+          "jsonFilePath": "/specification/azure-kusto/resource-manager/Microsoft.Kusto/stable/2020-02-15/kusto.json"
+        }
+      ],
+      "Resource": "Microsoft.Kusto/clusters/removeLanguageExtensions"
+    }
+  ],
+  "resourcelist": "Microsoft.Kusto/clusters/addLanguageExtensions,Microsoft.Kusto/clusters/databases/dataConnectionValidation,Microsoft.Kusto/clusters/databases/principalAssignments,Microsoft.Kusto/clusters/databases/removePrincipals,Microsoft.Kusto/clusters/listLanguageExtensions,Microsoft.Kusto/clusters/removeLanguageExtensions",
+  "onboardType": "depth",
+  "RPName": "azure-kusto",
+  "readmeFile": "/specification/azure-kusto/resource-manager/readme.md",
+  "target": "clicore"
+}
