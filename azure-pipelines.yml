@@ -141,7 +141,7 @@ stages:
   jobs:
   - job: GenerateJob
     variables:
-      TASK_KEY: GenerateCode
+      TASK_KEY: GenerateJob
       Contactors: "chunyu@microsoft.com;vsccodegen@microsoft.com"
     steps:
     - template: .azure-pipelines/templates/VariableSetTask.yml
@@ -159,6 +159,9 @@ stages:
     - template: .azure-pipelines/templates/AfterTask.yml
   - job: CodeGenerationFailureAlert
     condition: failed()
+    variables:
+      TASK_KEY: CodeGenerationnFailureAlert
+      Contactors: "chunyu@microsoft.com;vsccodegen@microsoft.com"
     steps:
     - template: .azure-pipelines/templates/VariableSetTask.yml
     - template: .azure-pipelines/templates/IssueAlertTask.yml
@@ -180,6 +183,9 @@ stages:
   - job: BuildFailureAlert
     dependsOn: build
     condition: failed()
+    variables:
+      TASK_KEY: BuildFailureAlert
+      Contactors: "chunyu@microsoft.com;vsccodegen@microsoft.com"
     steps:
     - template: .azure-pipelines/templates/VariableSetTask.yml
     - template: .azure-pipelines/templates/GenerateCodePR.yml
