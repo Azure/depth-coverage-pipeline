@@ -1,0 +1,31 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2017-09-01-preview",
+      "operations": [
+        {
+          "OperationId": "TrafficManagerUserMetricsKeys_Get",
+          "version": "2017-09-01-preview",
+          "jsonFilePath": "/specification/trafficmanager/resource-manager/Microsoft.Network/preview/2017-09-01-preview/trafficmanageranalytics.json"
+        }
+      ],
+      "Resource": "Microsoft.Network/trafficManagerUserMetricsKeys"
+    },
+    {
+      "APIVersion": "2018-08-01",
+      "operations": [
+        {
+          "OperationId": "HeatMap_Get",
+          "version": "2018-08-01",
+          "jsonFilePath": "/specification/trafficmanager/resource-manager/Microsoft.Network/stable/2018-08-01/trafficmanager.json"
+        }
+      ],
+      "Resource": "Microsoft.Network/trafficmanagerprofiles/heatMaps"
+    }
+  ],
+  "resourcelist": "Microsoft.Network/trafficManagerUserMetricsKeys,Microsoft.Network/trafficmanagerprofiles/heatMaps",
+  "onboardType": "depth",
+  "RPName": "trafficmanager",
+  "readmeFile": "/specification/trafficmanager/resource-manager/readme.md",
+  "target": "clicore"
+}
