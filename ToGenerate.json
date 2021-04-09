@@ -1,0 +1,14 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-10-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.Cache/redisEnterprise/privateEndpointConnections"
+    }
+  ],
+  "resourcelist": "Microsoft.Cache/redisEnterprise/privateEndpointConnections",
+  "onboardType": "depth",
+  "RPName": "redisenterprise",
+  "readmeFile": "/specification/redisenterprise/resource-manager/readme.md",
+  "target": "terraform"
+}
