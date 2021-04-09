@@ -1,0 +1,20 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2019-09-01",
+      "operations": [
+        {
+          "OperationId": "Keys_GetVersion",
+          "version": "2019-09-01",
+          "jsonFilePath": "/specification/keyvault/resource-manager/Microsoft.KeyVault/stable/2019-09-01/keys.json"
+        }
+      ],
+      "Resource": "Microsoft.KeyVault/vaults/keys/versions"
+    }
+  ],
+  "resourcelist": "Microsoft.KeyVault/vaults/keys/versions",
+  "onboardType": "depth",
+  "RPName": "keyvault",
+  "readmeFile": "/specification/keyvault/resource-manager/readme.md",
+  "target": "clicore"
+}
