@@ -1,0 +1,83 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-10-05-privatepreview",
+      "operations": [
+        {
+          "OperationId": "ServerGroups_List",
+          "version": "2020-10-05-privatepreview",
+          "jsonFilePath": "/specification/postgresqlhsc/resource-manager/Microsoft.DBforPostgreSQL/preview/2020-10-05-privatepreview/postgresqlhsc.json"
+        },
+        {
+          "OperationId": "ServerGroups_Delete",
+          "version": "2020-10-05-privatepreview",
+          "jsonFilePath": "/specification/postgresqlhsc/resource-manager/Microsoft.DBforPostgreSQL/preview/2020-10-05-privatepreview/postgresqlhsc.json"
+        },
+        {
+          "OperationId": "ServerGroups_Get",
+          "version": "2020-10-05-privatepreview",
+          "jsonFilePath": "/specification/postgresqlhsc/resource-manager/Microsoft.DBforPostgreSQL/preview/2020-10-05-privatepreview/postgresqlhsc.json"
+        },
+        {
+          "OperationId": "ServerGroups_CreateOrUpdate",
+          "version": "2020-10-05-privatepreview",
+          "jsonFilePath": "/specification/postgresqlhsc/resource-manager/Microsoft.DBforPostgreSQL/preview/2020-10-05-privatepreview/postgresqlhsc.json"
+        }
+      ],
+      "Resource": "Microsoft.DBForPostgreSql/serverGroupsv2"
+    },
+    {
+      "APIVersion": "2020-10-05-privatepreview",
+      "operations": [
+        {
+          "OperationId": "FirewallRules_ListByServerGroup",
+          "version": "2020-10-05-privatepreview",
+          "jsonFilePath": "/specification/postgresqlhsc/resource-manager/Microsoft.DBforPostgreSQL/preview/2020-10-05-privatepreview/postgresqlhsc.json"
+        },
+        {
+          "OperationId": "FirewallRules_Get",
+          "version": "2020-10-05-privatepreview",
+          "jsonFilePath": "/specification/postgresqlhsc/resource-manager/Microsoft.DBforPostgreSQL/preview/2020-10-05-privatepreview/postgresqlhsc.json"
+        },
+        {
+          "OperationId": "FirewallRules_CreateOrUpdate",
+          "version": "2020-10-05-privatepreview",
+          "jsonFilePath": "/specification/postgresqlhsc/resource-manager/Microsoft.DBforPostgreSQL/preview/2020-10-05-privatepreview/postgresqlhsc.json"
+        }
+      ],
+      "Resource": "Microsoft.DBForPostgreSql/serverGroupsv2/firewallRules"
+    },
+    {
+      "APIVersion": "2020-10-05-privatepreview",
+      "operations": [
+        {
+          "OperationId": "Roles_ListByServerGroup",
+          "version": "2020-10-05-privatepreview",
+          "jsonFilePath": "/specification/postgresqlhsc/resource-manager/Microsoft.DBforPostgreSQL/preview/2020-10-05-privatepreview/postgresqlhsc.json"
+        },
+        {
+          "OperationId": "Roles_Create",
+          "version": "2020-10-05-privatepreview",
+          "jsonFilePath": "/specification/postgresqlhsc/resource-manager/Microsoft.DBforPostgreSQL/preview/2020-10-05-privatepreview/postgresqlhsc.json"
+        }
+      ],
+      "Resource": "Microsoft.DBForPostgreSql/serverGroupsv2/roles"
+    },
+    {
+      "APIVersion": "2020-10-05-privatepreview",
+      "operations": [
+        {
+          "OperationId": "Servers_ListByServerGroup",
+          "version": "2020-10-05-privatepreview",
+          "jsonFilePath": "/specification/postgresqlhsc/resource-manager/Microsoft.DBforPostgreSQL/preview/2020-10-05-privatepreview/postgresqlhsc.json"
+        }
+      ],
+      "Resource": "Microsoft.DBForPostgreSql/serverGroupsv2/servers"
+    }
+  ],
+  "resourcelist": "Microsoft.DBForPostgreSql/serverGroupsv2,Microsoft.DBForPostgreSql/serverGroupsv2/firewallRules,Microsoft.DBForPostgreSql/serverGroupsv2/roles,Microsoft.DBForPostgreSql/serverGroupsv2/servers",
+  "onboardType": "depth",
+  "RPName": "postgresqlhsc",
+  "readmeFile": "/specification/postgresqlhsc/resource-manager/readme.md",
+  "target": "clicore"
+}
