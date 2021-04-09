@@ -1,0 +1,115 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-03-01-preview",
+      "operations": [
+        {
+          "OperationId": "Clusters_ListBySubscription",
+          "version": "2020-03-01-preview",
+          "jsonFilePath": "/specification/streamanalytics/resource-manager/Microsoft.StreamAnalytics/preview/2020-03-01-preview/clusters.json"
+        },
+        {
+          "OperationId": "Clusters_ListByResourceGroup",
+          "version": "2020-03-01-preview",
+          "jsonFilePath": "/specification/streamanalytics/resource-manager/Microsoft.StreamAnalytics/preview/2020-03-01-preview/clusters.json"
+        },
+        {
+          "OperationId": "Clusters_Delete",
+          "version": "2020-03-01-preview",
+          "jsonFilePath": "/specification/streamanalytics/resource-manager/Microsoft.StreamAnalytics/preview/2020-03-01-preview/clusters.json"
+        },
+        {
+          "OperationId": "Clusters_Get",
+          "version": "2020-03-01-preview",
+          "jsonFilePath": "/specification/streamanalytics/resource-manager/Microsoft.StreamAnalytics/preview/2020-03-01-preview/clusters.json"
+        },
+        {
+          "OperationId": "Clusters_CreateOrUpdate",
+          "version": "2020-03-01-preview",
+          "jsonFilePath": "/specification/streamanalytics/resource-manager/Microsoft.StreamAnalytics/preview/2020-03-01-preview/clusters.json"
+        }
+      ],
+      "Resource": "Microsoft.StreamAnalytics/clusters"
+    },
+    {
+      "APIVersion": "2020-03-01-preview",
+      "operations": [
+        {
+          "OperationId": "Clusters_ListStreamingJobs",
+          "version": "2020-03-01-preview",
+          "jsonFilePath": "/specification/streamanalytics/resource-manager/Microsoft.StreamAnalytics/preview/2020-03-01-preview/clusters.json"
+        }
+      ],
+      "Resource": "Microsoft.StreamAnalytics/clusters/listStreamingJobs"
+    },
+    {
+      "APIVersion": "2020-03-01-preview",
+      "operations": [
+        {
+          "OperationId": "PrivateEndpoints_ListByCluster",
+          "version": "2020-03-01-preview",
+          "jsonFilePath": "/specification/streamanalytics/resource-manager/Microsoft.StreamAnalytics/preview/2020-03-01-preview/privateEndpoints.json"
+        },
+        {
+          "OperationId": "PrivateEndpoints_Delete",
+          "version": "2020-03-01-preview",
+          "jsonFilePath": "/specification/streamanalytics/resource-manager/Microsoft.StreamAnalytics/preview/2020-03-01-preview/privateEndpoints.json"
+        },
+        {
+          "OperationId": "PrivateEndpoints_Get",
+          "version": "2020-03-01-preview",
+          "jsonFilePath": "/specification/streamanalytics/resource-manager/Microsoft.StreamAnalytics/preview/2020-03-01-preview/privateEndpoints.json"
+        },
+        {
+          "OperationId": "PrivateEndpoints_CreateOrUpdate",
+          "version": "2020-03-01-preview",
+          "jsonFilePath": "/specification/streamanalytics/resource-manager/Microsoft.StreamAnalytics/preview/2020-03-01-preview/privateEndpoints.json"
+        }
+      ],
+      "Resource": "Microsoft.StreamAnalytics/clusters/privateEndpoints"
+    },
+    {
+      "APIVersion": "2016-03-01",
+      "operations": [
+        {
+          "OperationId": "Functions_Delete",
+          "version": "2016-03-01",
+          "jsonFilePath": "/specification/streamanalytics/resource-manager/Microsoft.StreamAnalytics/stable/2016-03-01/functions.json"
+        },
+        {
+          "OperationId": "Functions_CreateOrReplace",
+          "version": "2016-03-01",
+          "jsonFilePath": "/specification/streamanalytics/resource-manager/Microsoft.StreamAnalytics/stable/2016-03-01/functions.json"
+        }
+      ],
+      "Resource": "Microsoft.StreamAnalytics/streamingjobs/functions"
+    },
+    {
+      "APIVersion": "2017-04-01-preview",
+      "operations": [
+        {
+          "OperationId": "Functions_RetrieveDefaultDefinition",
+          "version": "2017-04-01-preview",
+          "jsonFilePath": "/specification/streamanalytics/resource-manager/Microsoft.StreamAnalytics/preview/2017-04-01-preview/functions.json"
+        }
+      ],
+      "Resource": "Microsoft.StreamAnalytics/streamingjobs/functions/RetrieveDefaultDefinition"
+    },
+    {
+      "APIVersion": "2017-04-01-preview",
+      "operations": [
+        {
+          "OperationId": "Functions_Test",
+          "version": "2017-04-01-preview",
+          "jsonFilePath": "/specification/streamanalytics/resource-manager/Microsoft.StreamAnalytics/preview/2017-04-01-preview/functions.json"
+        }
+      ],
+      "Resource": "Microsoft.StreamAnalytics/streamingjobs/functions/test"
+    }
+  ],
+  "resourcelist": "Microsoft.StreamAnalytics/clusters,Microsoft.StreamAnalytics/clusters/listStreamingJobs,Microsoft.StreamAnalytics/clusters/privateEndpoints,Microsoft.StreamAnalytics/streamingjobs/functions,Microsoft.StreamAnalytics/streamingjobs/functions/RetrieveDefaultDefinition,Microsoft.StreamAnalytics/streamingjobs/functions/test",
+  "onboardType": "depth",
+  "RPName": "streamanalytics",
+  "readmeFile": "/specification/streamanalytics/resource-manager/readme.md",
+  "target": "clicore"
+}
