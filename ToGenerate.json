@@ -1,0 +1,1023 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2018-07-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationEligibilityResults_List",
+          "version": "2018-07-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-07-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/replicationEligibilityResults"
+    },
+    {
+      "APIVersion": "2018-07-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationEligibilityResults_Get",
+          "version": "2018-07-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-07-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/replicationEligibilityResults/default"
+    },
+    {
+      "APIVersion": "2016-08-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationAlertSettings_List",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        },
+        {
+          "OperationId": "ReplicationAlertSettings_Get",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        },
+        {
+          "OperationId": "ReplicationAlertSettings_Create",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationAlertSettings"
+    },
+    {
+      "APIVersion": "2016-08-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationEvents_List",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationEvents"
+    },
+    {
+      "APIVersion": "2016-08-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationFabrics_List",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        },
+        {
+          "OperationId": "ReplicationFabrics_Purge",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        },
+        {
+          "OperationId": "ReplicationFabrics_Get",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        },
+        {
+          "OperationId": "ReplicationFabrics_Create",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics"
+    },
+    {
+      "APIVersion": "2016-08-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationFabrics_CheckConsistency",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/checkConsistency"
+    },
+    {
+      "APIVersion": "2018-07-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationFabrics_MigrateToAad",
+          "version": "2018-07-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-07-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/migratetoaad"
+    },
+    {
+      "APIVersion": "2018-07-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationFabrics_ReassociateGateway",
+          "version": "2018-07-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-07-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/reassociateGateway"
+    },
+    {
+      "APIVersion": "2018-01-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationFabrics_Delete",
+          "version": "2018-01-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-01-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/remove"
+    },
+    {
+      "APIVersion": "2018-07-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationFabrics_RenewCertificate",
+          "version": "2018-07-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-07-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/renewCertificate"
+    },
+    {
+      "APIVersion": "2016-08-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationLogicalNetworks_ListByReplicationFabrics",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        },
+        {
+          "OperationId": "ReplicationLogicalNetworks_Get",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationLogicalNetworks"
+    },
+    {
+      "APIVersion": "2016-08-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationNetworks_ListByReplicationFabrics",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        },
+        {
+          "OperationId": "ReplicationNetworks_Get",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationNetworks"
+    },
+    {
+      "APIVersion": "2016-08-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationNetworkMappings_ListByReplicationNetworks",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        },
+        {
+          "OperationId": "ReplicationNetworkMappings_Delete",
+          "version": "2018-01-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-01-10/service.json"
+        },
+        {
+          "OperationId": "ReplicationNetworkMappings_Get",
+          "version": "2018-01-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-01-10/service.json"
+        },
+        {
+          "OperationId": "ReplicationNetworkMappings_Create",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationNetworks/replicationNetworkMappings"
+    },
+    {
+      "APIVersion": "2016-08-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationProtectionContainers_ListByReplicationFabrics",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        },
+        {
+          "OperationId": "ReplicationProtectionContainers_Get",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        },
+        {
+          "OperationId": "ReplicationProtectionContainers_Create",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers"
+    },
+    {
+      "APIVersion": "2016-08-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationProtectionContainers_DiscoverProtectableItem",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/discoverProtectableItem"
+    },
+    {
+      "APIVersion": "2018-01-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationProtectionContainers_Delete",
+          "version": "2018-01-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-01-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/remove"
+    },
+    {
+      "APIVersion": "2018-01-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationMigrationItems_ListByReplicationProtectionContainers",
+          "version": "2018-01-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-01-10/service.json"
+        },
+        {
+          "OperationId": "ReplicationMigrationItems_Delete",
+          "version": "2018-01-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-01-10/service.json"
+        },
+        {
+          "OperationId": "ReplicationMigrationItems_Get",
+          "version": "2018-01-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-01-10/service.json"
+        },
+        {
+          "OperationId": "ReplicationMigrationItems_Create",
+          "version": "2018-01-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-01-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationMigrationItems"
+    },
+    {
+      "APIVersion": "2018-01-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationMigrationItems_Migrate",
+          "version": "2018-01-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-01-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationMigrationItems/migrate"
+    },
+    {
+      "APIVersion": "2018-01-10",
+      "operations": [
+        {
+          "OperationId": "MigrationRecoveryPoints_ListByReplicationMigrationItems",
+          "version": "2018-01-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-01-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationMigrationItems/migrationRecoveryPoints"
+    },
+    {
+      "APIVersion": "2018-01-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationMigrationItems_Resync",
+          "version": "2018-01-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-01-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationMigrationItems/resync"
+    },
+    {
+      "APIVersion": "2018-01-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationMigrationItems_TestMigrate",
+          "version": "2018-01-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-01-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationMigrationItems/testMigrate"
+    },
+    {
+      "APIVersion": "2018-01-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationMigrationItems_TestMigrateCleanup",
+          "version": "2018-01-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-01-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationMigrationItems/testMigrateCleanup"
+    },
+    {
+      "APIVersion": "2016-08-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationProtectableItems_ListByReplicationProtectionContainers",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        },
+        {
+          "OperationId": "ReplicationProtectableItems_Get",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectableItems"
+    },
+    {
+      "APIVersion": "2016-08-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationProtectedItems_ListByReplicationProtectionContainers",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        },
+        {
+          "OperationId": "ReplicationProtectedItems_Purge",
+          "version": "2018-01-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-01-10/service.json"
+        },
+        {
+          "OperationId": "ReplicationProtectedItems_Get",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        },
+        {
+          "OperationId": "ReplicationProtectedItems_Create",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems"
+    },
+    {
+      "APIVersion": "2018-07-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationProtectedItems_AddDisks",
+          "version": "2018-07-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-07-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/addDisks"
+    },
+    {
+      "APIVersion": "2018-07-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationProtectedItems_ApplyRecoveryPoint",
+          "version": "2018-07-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-07-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/applyRecoveryPoint"
+    },
+    {
+      "APIVersion": "2018-01-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationProtectedItems_FailoverCommit",
+          "version": "2018-01-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-01-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/failoverCommit"
+    },
+    {
+      "APIVersion": "2018-01-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationProtectedItems_PlannedFailover",
+          "version": "2018-01-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-01-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/plannedFailover"
+    },
+    {
+      "APIVersion": "2016-08-10",
+      "operations": [
+        {
+          "OperationId": "RecoveryPoints_ListByReplicationProtectedItems",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        },
+        {
+          "OperationId": "RecoveryPoints_Get",
+          "version": "2018-07-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-07-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/recoveryPoints"
+    },
+    {
+      "APIVersion": "2018-01-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationProtectedItems_Delete",
+          "version": "2018-01-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-01-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/remove"
+    },
+    {
+      "APIVersion": "2018-07-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationProtectedItems_RemoveDisks",
+          "version": "2018-07-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-07-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/removeDisks"
+    },
+    {
+      "APIVersion": "2018-01-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationProtectedItems_RepairReplication",
+          "version": "2018-01-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-01-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/repairReplication"
+    },
+    {
+      "APIVersion": "2018-07-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationProtectedItems_Reprotect",
+          "version": "2018-07-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-07-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/reProtect"
+    },
+    {
+      "APIVersion": "2018-07-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationProtectedItems_ResolveHealthErrors",
+          "version": "2018-07-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-07-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/ResolveHealthErrors"
+    },
+    {
+      "APIVersion": "2018-07-10",
+      "operations": [
+        {
+          "OperationId": "TargetComputeSizes_ListByReplicationProtectedItems",
+          "version": "2018-07-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-07-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/targetComputeSizes"
+    },
+    {
+      "APIVersion": "2016-08-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationProtectedItems_TestFailover",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/testFailover"
+    },
+    {
+      "APIVersion": "2018-01-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationProtectedItems_TestFailoverCleanup",
+          "version": "2018-01-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-01-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/testFailoverCleanup"
+    },
+    {
+      "APIVersion": "2016-08-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationProtectedItems_UnplannedFailover",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/unplannedFailover"
+    },
+    {
+      "APIVersion": "2018-07-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationProtectedItems_UpdateMobilityService",
+          "version": "2018-07-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-07-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/updateMobilityService"
+    },
+    {
+      "APIVersion": "2016-08-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationProtectionContainerMappings_ListByReplicationProtectionContainers",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        },
+        {
+          "OperationId": "ReplicationProtectionContainerMappings_Purge",
+          "version": "2018-01-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-01-10/service.json"
+        },
+        {
+          "OperationId": "ReplicationProtectionContainerMappings_Get",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        },
+        {
+          "OperationId": "ReplicationProtectionContainerMappings_Create",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectionContainerMappings"
+    },
+    {
+      "APIVersion": "2018-01-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationProtectionContainerMappings_Delete",
+          "version": "2018-01-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-01-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectionContainerMappings/remove"
+    },
+    {
+      "APIVersion": "2018-01-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationProtectionContainers_SwitchProtection",
+          "version": "2018-01-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-01-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/switchprotection"
+    },
+    {
+      "APIVersion": "2016-08-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationRecoveryServicesProviders_ListByReplicationFabrics",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        },
+        {
+          "OperationId": "ReplicationRecoveryServicesProviders_Purge",
+          "version": "2018-07-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-07-10/service.json"
+        },
+        {
+          "OperationId": "ReplicationRecoveryServicesProviders_Get",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        },
+        {
+          "OperationId": "ReplicationRecoveryServicesProviders_Create",
+          "version": "2018-01-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-01-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationRecoveryServicesProviders"
+    },
+    {
+      "APIVersion": "2018-07-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationRecoveryServicesProviders_RefreshProvider",
+          "version": "2018-07-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-07-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationRecoveryServicesProviders/refreshProvider"
+    },
+    {
+      "APIVersion": "2018-07-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationRecoveryServicesProviders_Delete",
+          "version": "2018-07-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-07-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationRecoveryServicesProviders/remove"
+    },
+    {
+      "APIVersion": "2016-08-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationStorageClassifications_ListByReplicationFabrics",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationStorageClassifications"
+    },
+    {
+      "APIVersion": "2016-08-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationvCenters_ListByReplicationFabrics",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        },
+        {
+          "OperationId": "ReplicationvCenters_Delete",
+          "version": "2018-07-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-07-10/service.json"
+        },
+        {
+          "OperationId": "ReplicationvCenters_Get",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        },
+        {
+          "OperationId": "ReplicationvCenters_Create",
+          "version": "2018-07-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-07-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationvCenters"
+    },
+    {
+      "APIVersion": "2016-08-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationJobs_List",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        },
+        {
+          "OperationId": "ReplicationJobs_Get",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationJobs"
+    },
+    {
+      "APIVersion": "2018-07-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationJobs_Cancel",
+          "version": "2018-07-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-07-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationJobs/cancel"
+    },
+    {
+      "APIVersion": "2018-07-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationJobs_Restart",
+          "version": "2018-07-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-07-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationJobs/restart"
+    },
+    {
+      "APIVersion": "2018-07-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationJobs_Resume",
+          "version": "2018-07-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-07-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationJobs/resume"
+    },
+    {
+      "APIVersion": "2018-01-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationJobs_Export",
+          "version": "2018-01-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-01-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationJobs/export"
+    },
+    {
+      "APIVersion": "2018-01-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationMigrationItems_List",
+          "version": "2018-01-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-01-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationMigrationItems"
+    },
+    {
+      "APIVersion": "2016-08-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationNetworkMappings_List",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationNetworkMappings"
+    },
+    {
+      "APIVersion": "2016-08-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationNetworks_List",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationNetworks"
+    },
+    {
+      "APIVersion": "2016-08-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationPolicies_List",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        },
+        {
+          "OperationId": "ReplicationPolicies_Delete",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        },
+        {
+          "OperationId": "ReplicationPolicies_Get",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        },
+        {
+          "OperationId": "ReplicationPolicies_Create",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationPolicies"
+    },
+    {
+      "APIVersion": "2016-08-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationProtectedItems_List",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationProtectedItems"
+    },
+    {
+      "APIVersion": "2016-08-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationProtectionContainerMappings_List",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationProtectionContainerMappings"
+    },
+    {
+      "APIVersion": "2016-08-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationProtectionContainers_List",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationProtectionContainers"
+    },
+    {
+      "APIVersion": "2018-07-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationProtectionIntents_List",
+          "version": "2018-07-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-07-10/service.json"
+        },
+        {
+          "OperationId": "ReplicationProtectionIntents_Get",
+          "version": "2018-07-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-07-10/service.json"
+        },
+        {
+          "OperationId": "ReplicationProtectionIntents_Create",
+          "version": "2018-07-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-07-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationProtectionIntents"
+    },
+    {
+      "APIVersion": "2016-08-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationRecoveryPlans_List",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        },
+        {
+          "OperationId": "ReplicationRecoveryPlans_Delete",
+          "version": "2018-07-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-07-10/service.json"
+        },
+        {
+          "OperationId": "ReplicationRecoveryPlans_Get",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        },
+        {
+          "OperationId": "ReplicationRecoveryPlans_Create",
+          "version": "2018-01-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-01-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationRecoveryPlans"
+    },
+    {
+      "APIVersion": "2018-01-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationRecoveryPlans_FailoverCommit",
+          "version": "2018-01-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-01-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationRecoveryPlans/failoverCommit"
+    },
+    {
+      "APIVersion": "2018-07-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationRecoveryPlans_PlannedFailover",
+          "version": "2018-07-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-07-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationRecoveryPlans/plannedFailover"
+    },
+    {
+      "APIVersion": "2018-07-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationRecoveryPlans_Reprotect",
+          "version": "2018-07-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-07-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationRecoveryPlans/reProtect"
+    },
+    {
+      "APIVersion": "2016-08-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationRecoveryPlans_TestFailover",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationRecoveryPlans/testFailover"
+    },
+    {
+      "APIVersion": "2016-08-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationRecoveryPlans_TestFailoverCleanup",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationRecoveryPlans/testFailoverCleanup"
+    },
+    {
+      "APIVersion": "2018-01-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationRecoveryPlans_UnplannedFailover",
+          "version": "2018-01-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-01-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationRecoveryPlans/unplannedFailover"
+    },
+    {
+      "APIVersion": "2016-08-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationRecoveryServicesProviders_List",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationRecoveryServicesProviders"
+    },
+    {
+      "APIVersion": "2016-08-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationStorageClassificationMappings_List",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationStorageClassificationMappings"
+    },
+    {
+      "APIVersion": "2016-08-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationStorageClassifications_List",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationStorageClassifications"
+    },
+    {
+      "APIVersion": "2016-08-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationVaultHealth_Get",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationVaultHealth"
+    },
+    {
+      "APIVersion": "2018-07-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationVaultHealth_Refresh",
+          "version": "2018-07-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-07-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationVaultHealth/default/refresh"
+    },
+    {
+      "APIVersion": "2018-07-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationVaultSetting_List",
+          "version": "2018-07-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-07-10/service.json"
+        },
+        {
+          "OperationId": "ReplicationVaultSetting_Get",
+          "version": "2018-07-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-07-10/service.json"
+        },
+        {
+          "OperationId": "ReplicationVaultSetting_Create",
+          "version": "2018-07-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2018-07-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationVaultSettings"
+    },
+    {
+      "APIVersion": "2016-08-10",
+      "operations": [
+        {
+          "OperationId": "ReplicationvCenters_List",
+          "version": "2016-08-10",
+          "jsonFilePath": "/specification/recoveryservicessiterecovery/resource-manager/Microsoft.RecoveryServices/stable/2016-08-10/service.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationvCenters"
+    }
+  ],
+  "resourcelist": "Microsoft.RecoveryServices/replicationEligibilityResults,Microsoft.RecoveryServices/replicationEligibilityResults/default,Microsoft.RecoveryServices/vaults/replicationAlertSettings,Microsoft.RecoveryServices/vaults/replicationEvents,Microsoft.RecoveryServices/vaults/replicationFabrics,Microsoft.RecoveryServices/vaults/replicationFabrics/checkConsistency,Microsoft.RecoveryServices/vaults/replicationFabrics/migratetoaad,Microsoft.RecoveryServices/vaults/replicationFabrics/reassociateGateway,Microsoft.RecoveryServices/vaults/replicationFabrics/remove,Microsoft.RecoveryServices/vaults/replicationFabrics/renewCertificate,Microsoft.RecoveryServices/vaults/replicationFabrics/replicationLogicalNetworks,Microsoft.RecoveryServices/vaults/replicationFabrics/replicationNetworks,Microsoft.RecoveryServices/vaults/replicationFabrics/replicationNetworks/replicationNetworkMappings,Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers,Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/discoverProtectableItem,Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/remove,Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationMigrationItems,Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationMigrationItems/migrate,Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationMigrationItems/migrationRecoveryPoints,Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationMigrationItems/resync,Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationMigrationItems/testMigrate,Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationMigrationItems/testMigrateCleanup,Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectableItems,Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems,Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/addDisks,Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/applyRecoveryPoint,Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/failoverCommit,Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/plannedFailover,Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/recoveryPoints,Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/remove,Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/removeDisks,Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/repairReplication,Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/reProtect,Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/ResolveHealthErrors,Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/targetComputeSizes,Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/testFailover,Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/testFailoverCleanup,Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/unplannedFailover,Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems/updateMobilityService,Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectionContainerMappings,Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationProtectionContainerMappings/remove,Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/switchprotection,Microsoft.RecoveryServices/vaults/replicationFabrics/replicationRecoveryServicesProviders,Microsoft.RecoveryServices/vaults/replicationFabrics/replicationRecoveryServicesProviders/refreshProvider,Microsoft.RecoveryServices/vaults/replicationFabrics/replicationRecoveryServicesProviders/remove,Microsoft.RecoveryServices/vaults/replicationFabrics/replicationStorageClassifications,Microsoft.RecoveryServices/vaults/replicationFabrics/replicationvCenters,Microsoft.RecoveryServices/vaults/replicationJobs,Microsoft.RecoveryServices/vaults/replicationJobs/cancel,Microsoft.RecoveryServices/vaults/replicationJobs/restart,Microsoft.RecoveryServices/vaults/replicationJobs/resume,Microsoft.RecoveryServices/vaults/replicationJobs/export,Microsoft.RecoveryServices/vaults/replicationMigrationItems,Microsoft.RecoveryServices/vaults/replicationNetworkMappings,Microsoft.RecoveryServices/vaults/replicationNetworks,Microsoft.RecoveryServices/vaults/replicationPolicies,Microsoft.RecoveryServices/vaults/replicationProtectedItems,Microsoft.RecoveryServices/vaults/replicationProtectionContainerMappings,Microsoft.RecoveryServices/vaults/replicationProtectionContainers,Microsoft.RecoveryServices/vaults/replicationProtectionIntents,Microsoft.RecoveryServices/vaults/replicationRecoveryPlans,Microsoft.RecoveryServices/vaults/replicationRecoveryPlans/failoverCommit,Microsoft.RecoveryServices/vaults/replicationRecoveryPlans/plannedFailover,Microsoft.RecoveryServices/vaults/replicationRecoveryPlans/reProtect,Microsoft.RecoveryServices/vaults/replicationRecoveryPlans/testFailover,Microsoft.RecoveryServices/vaults/replicationRecoveryPlans/testFailoverCleanup,Microsoft.RecoveryServices/vaults/replicationRecoveryPlans/unplannedFailover,Microsoft.RecoveryServices/vaults/replicationRecoveryServicesProviders,Microsoft.RecoveryServices/vaults/replicationStorageClassificationMappings,Microsoft.RecoveryServices/vaults/replicationStorageClassifications,Microsoft.RecoveryServices/vaults/replicationVaultHealth,Microsoft.RecoveryServices/vaults/replicationVaultHealth/default/refresh,Microsoft.RecoveryServices/vaults/replicationVaultSettings,Microsoft.RecoveryServices/vaults/replicationvCenters",
+  "onboardType": "depth",
+  "RPName": "recoveryservicessiterecovery",
+  "readmeFile": "/specification/recoveryservicessiterecovery/resource-manager/readme.md",
+  "target": "clicore"
+}
