@@ -156,9 +156,8 @@ stages:
       displayName: "set output variable"
       name: DetermineResult
     - template: .azure-pipelines/templates/UploadCode.yml
-    # - template: .azure-pipelines/templates/IssueAlertTask.yml
     - template: .azure-pipelines/templates/AfterTask.yml
-  - job: alertCodeGenerationnFailure
+  - job: CodeGenerationFailureAlert
     condition: failed()
     steps:
     - template: .azure-pipelines/templates/VariableSetTask.yml
@@ -177,12 +176,10 @@ stages:
     - template: .azure-pipelines/templates/BeforeTask.yml
     - script: echo 'build'
     - template: .azure-pipelines/templates/BuildTF.yml
-    # - template: .azure-pipelines/templates/IssueAlertTask.yml
     - template: .azure-pipelines/templates/AfterTask.yml
-  # - template: .azure-pipelines/templates/IssueAlertJob.yml
-  - job: alertIssue
+  - job: BuildFailureAlert
     dependsOn: build
-    condition: and(failed(), eq(stageDependencies.GenerateCode.outputs['GenerateJob.DetermineResult.tobuild'], 'Yes'))
+    condition: failed()
     steps:
     - template: .azure-pipelines/templates/VariableSetTask.yml
     - template: .azure-pipelines/templates/GenerateCodePR.yml
@@ -215,7 +212,6 @@ stages:
     - template: .azure-pipelines/templates/SetupCliTestEnv.yml
     - template: .azure-pipelines/templates/SetupCliMockServerEnv.yml
     - template: .azure-pipelines/templates/RunCliMockTest.yml
-    # - template: .azure-pipelines/templates/IssueAlertTask.yml
     - template: .azure-pipelines/templates/AfterTask.yml
     displayName: CLIMockTest
     dependsOn: DetermineSDKJob
@@ -232,12 +228,10 @@ stages:
     - template: .azure-pipelines/templates/SetupTFTestEnv.yml
     - template: .azure-pipelines/templates/SetupTFMockServerEnv.yml
     - template: .azure-pipelines/templates/RunTFMockTest.yml
-    # - template: .azure-pipelines/templates/IssueAlertTask.yml
     - template: .azure-pipelines/templates/AfterTask.yml
     displayName: TFMockTest
     dependsOn: DetermineSDKJob
     condition: eq(dependencies.DetermineSDKJob.outputs['determineSDK.sdk'], 'terraform')
-  # - template: .azure-pipelines/templates/IssueAlertJob.yml
   - job: MockTestFailureAlert
     variables:
       TASK_KEY: TFMockTest
@@ -305,7 +299,6 @@ stages:
     - template: .azure-pipelines/templates/VariableSetTask.yml
     - template: .azure-pipelines/templates/GenerateCodePR.yml
     - template: .azure-pipelines/templates/IssueAlertTask.yml
-  # - template: .azure-pipelines/templates/IssueAlertJob.yml
 - stage: Submit
   dependsOn:
   - setup
@@ -341,82 +334,10 @@ stages:
     displayName: confirm submit or customize
     steps:
     - template: .azure-pipelines/templates/VariableSetTask.yml
+    - template: .azure-pipelines/templates/GenerateCodePR.yml
     - bash: |
-        echo "https://$(PIPELINE_USER):$(PIPELINE_TOKEN)@github.com" > ~/.git-credentials
-        git clone --branch depth-$(TARGET)-$(ResourceProvider) https://$(PIPELINE_USER):$(PIPELINE_TOKEN)@github.com/$(Swagger_ORG)/azure-rest-api-specs.git
-        sdktarget=$(TARGET)
-        if [ "$sdktarget" == "terraform" ]; then
-          git clone --branch depth-$(TARGET)-$(ResourceProvider) https://$(PIPELINE_USER):$(PIPELINE_TOKEN)@github.com/$(TF_ORG)/terraform-provider-azurerm.git
-          # cp ./azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/readme.terraform.md ./terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(ResourceProvider)/
-          cd ./terraform-provider-azurerm
-          # git checkout -b depth-code-$(TARGET)-$(ResourceProvider)
-          tf_existed_in_remote=$(git ls-remote --heads origin depth-code-$(TARGET)-$(ResourceProvider))
-          if [[ -z ${tf_existed_in_remote} ]]; then
-            git checkout -b depth-code-$(TARGET)-$(ResourceProvider)
-          else
-            git checkout depth-code-$(TARGET)-$(ResourceProvider)
-            # git pull origin depth-$(TARGET)-$(ResourceProvider)
-            git reset --hard origin/depth-$(TARGET)-$(ResourceProvider)
-          fi
-          cp ../azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/readme.terraform.md ./azurerm/internal/services/$(ResourceProvider)/
-        fi
-
-        if [ "$sdktarget" == "clicore" ] || [ "$sdktarget" == "cliextension" ]; then
-          git clone --branch depth-$(TARGET)-$(ResourceProvider) https://$(PIPELINE_USER):$(PIPELINE_TOKEN)@github.com/$(CLI_ORG)/azure-cli
-          name=$(ResourceProvider)
-          if [ "$name" == "compute" ]; then 
-            name="vm"
-          fi
-            
-          # cp ./azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/readme.az.md ./azure-cli/src/azure-cli/azure/cli/command_modules/$name/
-          # cp ./azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/readme.az.md ./azure-cli/
-          cd ./azure-cli
-
-          # git checkout -b depth-code-$(TARGET)-$(ResourceProvider)
-          tf_existed_in_remote=$(git ls-remote --heads origin depth-code-$(TARGET)-$(ResourceProvider))
-          if [[ -z ${tf_existed_in_remote} ]]; then
-            git checkout -b depth-code-$(TARGET)-$(ResourceProvider)
-          else
-            git checkout depth-code-$(TARGET)-$(ResourceProvider)
-            #git pull origin depth-$(TARGET)-$(ResourceProvider)
-            git reset --hard origin/depth-$(TARGET)-$(ResourceProvider)
-          fi
-          cp ../azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/readme.az.md ./
-          git branch; git add -A; git commit -m "autogenerated"; git push -f origin depth-code-$(TARGET)-$(ResourceProvider);
-
-        fi
-        
-        git config credential.helper store; git config --global user.email "chunyu@microsoft.com";git config --global user.name "chunyu3;"
-        git branch; git add -A; git commit -m "autogenerated"; git push origin depth-code-$(TARGET)-$(ResourceProvider);
-
         cd $(Pipeline.Workspace)/s
-        
-        sdktarget=$(TARGET)
-        org=""
-        repo=""
-        base="master"
-        sdk="";
-        to_mail="";
-        cc_mail=$(CCEails);
-        if [ "$sdktarget" == "terraform" ]; then
-          org=$(TF_ORG)
-          repo="terraform-provider-azurerm"
-          sdk="terraform"
-          to_mail="tfazengvsc@microsoft.com;chunyu@microsoft.com;vsccodegen@microsoft.com"
-        else
-          org=$(CLI_ORG)
-          repo="azure-cli"
-          base="dev"
-          sdk="clicore"
-          to_mail="AzCLIInternal@microsoft.com;chunyu@microsoft.com;vsccodegen@microsoft.com"
-        fi
-        echo "repo: $repo"
-        echo "org；$org"
-        echo "base brach: $base"
-        # curl -X POST -H "Content-Type: application/json" http://$(CodegenApp_Server)/DepthCoverage/generateCodePR -d '{"token":"$(PIPELINE_TOKEN)", "org":"$org", "repo":"$repo", "title":"[]pull request of $(ResourceProvider)", "branch":"depth-$(TARGET)-$(ResourceProvider)", "base":"$base"}'
-        # codePR=`curl -X POST -H "Content-Type: application/json" http://$(CodegenApp_Server)/DepthCoverage/generateCodePR -d '{"token":"$(PIPELINE_TOKEN)", "org":"$(org)", "repo":"$(repo)", "title":"{depth coverage, not merge} pull request of $(ResourceProvider)", "branch":"depth-$(TARGET)-$(ResourceProvider)", "base":"$(base)"}'`
-        codePR=$(curl -X POST -H "Content-Type: application/json" http://$(CodegenApp_Server)/DepthCoverage/generateCodePR -d '{"token":"$(PIPELINE_TOKEN)", "org":"'"$org"'", "repo":"'"$repo"'", "title":"{depth coverage, not merge} pull request of $(ResourceProvider)", "branch":"depth-code-$(TARGET)-$(ResourceProvider)", "base":"'"$base"'"}')
-        # echo $codePR
+        codePR=$(CODE_PULLREQUEST)
 
         triggerPR="https://github.com/Azure/depth-coverage-pipeline/pull/$(System.PullRequest.PullRequestNumber)"
         submitURL="http://$(CodegenApp_Server)/DepthCoverage/RPs/$(ResourceProvider)/SDKs/$sdk/submit?token=$(PIPELINE_TOKEN)&swaggerorg=$(Swagger_ORG)&org=$org"
@@ -428,6 +349,11 @@ stages:
         cat scripts/email.html
         echo "end of email"
         # to_mail="chunyu@microsoft.com"
+        if [ "$sdktarget" == "terraform" ]; then
+          to_mail="tfazengvsc@microsoft.com;chunyu@microsoft.com;vsccodegen@microsoft.com"
+        else
+          to_mail="AzCLIInternal@microsoft.com;chunyu@microsoft.com;vsccodegen@microsoft.com"
+        fi
         plateform=$(PLATEFORM)
         echo "plateform: $plateform"
         if [ "$plateform" == "dev" ]; then

@@ -1,43 +1,69 @@
 steps:
 - script: |
-    echo "on dev env"
+    # pull sdk repo
     echo "https://$(PIPELINE_USER):$(PIPELINE_TOKEN)@github.com" > ~/.git-credentials
     sdktarget=$(TARGET)
+    repo=""
     if [ "$sdktarget" == "terraform" ]; then
       cd $(Pipeline.Workspace)/s
       git clone --branch pipeline https://$(PIPELINE_USER):$(PIPELINE_TOKEN)@github.com/$(TF_ORG)/terraform-provider-azurerm.git
-      cd $(Pipeline.Workspace)/s/terraform-provider-azurerm
-      # git checkout -b depth-$(TARGET)-$(ResourceProvider)
-      tf_existed_in_remote=$(git ls-remote --heads origin depth-$(TARGET)-$(ResourceProvider))
-      if [[ -z ${tf_existed_in_remote} ]]; then
-        git checkout -b depth-$(TARGET)-$(ResourceProvider)
-      else
-        git checkout depth-$(TARGET)-$(ResourceProvider)
-        git reset --hard origin/depth-$(TARGET)-$(ResourceProvider)
-      fi
+      repo="terraform-provider-azurerm"
+      # cd $(Pipeline.Workspace)/s/terraform-provider-azurerm
+      # tf_existed_in_remote=$(git ls-remote --heads origin depth-$(TARGET)-$(ResourceProvider))
+      # if [[ -z ${tf_existed_in_remote} ]]; then
+      #   git checkout -b depth-$(TARGET)-$(ResourceProvider)
+      # else
+      #   git checkout depth-$(TARGET)-$(ResourceProvider)
+      #   git reset --hard origin/depth-$(TARGET)-$(ResourceProvider)
+      # fi
     fi
 
-    if [ "$sdktarget" == "clicore" ] || [ "$sdktarget" == "cliextension" ]; then
+    if [ "$sdktarget" == "clicore" ]; then
       cd $(Pipeline.Workspace)/s
       git clone https://$(PIPELINE_USER):$(PIPELINE_TOKEN)@github.com/$(CLI_ORG)/azure-cli
-      cd $(Pipeline.Workspace)/s/azure-cli
-      cli_existed_in_remote=$(git ls-remote --heads origin depth-$(TARGET)-$(ResourceProvider))
-      if [[ -z ${cli_existed_in_remote} ]]; then
-        echo "create branch"
-        git checkout -b depth-$(TARGET)-$(ResourceProvider)
-      else
-        echo "checkout branch"
-        git checkout depth-$(TARGET)-$(ResourceProvider)
-      fi
+      repo="azure-cli"
+      # cd $(Pipeline.Workspace)/s/azure-cli
+      # cli_existed_in_remote=$(git ls-remote --heads origin depth-$(TARGET)-$(ResourceProvider))
+      # if [[ -z ${cli_existed_in_remote} ]]; then
+      #   echo "create branch"
+      #   git checkout -b depth-$(TARGET)-$(ResourceProvider)
+      # else
+      #   echo "checkout branch"
+      #   git checkout depth-$(TARGET)-$(ResourceProvider)
+      # fi
     fi
 
+    if [ "$sdktarget" == "cliextension" ]; then
+      cd $(Pipeline.Workspace)/s
+      git clone https://$(PIPELINE_USER):$(PIPELINE_TOKEN)@github.com/$(CLI_ORG)/azure-cli-extensions
+      repo="azure-cli-extensions"
+      # cd $(Pipeline.Workspace)/s/azure-cli
+      # cli_existed_in_remote=$(git ls-remote --heads origin depth-$(TARGET)-$(ResourceProvider))
+      # if [[ -z ${cli_existed_in_remote} ]]; then
+      #   echo "create branch"
+      #   git checkout -b depth-$(TARGET)-$(ResourceProvider)
+      # else
+      #   echo "checkout branch"
+      #   git checkout depth-$(TARGET)-$(ResourceProvider)
+      # fi
+    fi
+
+    cd $(Pipeline.Workspace)/s/$repo
+    tf_existed_in_remote=$(git ls-remote --heads origin depth-$(TARGET)-$(ResourceProvider))
+    if [[ -z ${tf_existed_in_remote} ]]; then
+      git checkout -b depth-$(TARGET)-$(ResourceProvider)
+    else
+      git checkout depth-$(TARGET)-$(ResourceProvider)
+      git reset --hard origin/depth-$(TARGET)-$(ResourceProvider)
+    fi
+
+    #pull swagger repo
     cd $(Pipeline.Workspace)/s
     git clone https://$(PIPELINE_USER):$(PIPELINE_TOKEN)@github.com/$(Swagger_ORG)/azure-rest-api-specs.git
     ls -l
 
     # upload to azure-rest-api-specs branch
     cd $(Pipeline.Workspace)/s/azure-rest-api-specs
-    # ls -l
     spec_existed_in_remote=$(git ls-remote --heads origin depth-$(TARGET)-$(ResourceProvider))
     if [[ -z ${spec_existed_in_remote} ]]; then
       git checkout -b depth-$(TARGET)-$(ResourceProvider)
@@ -86,9 +112,14 @@ steps:
         cp "$FILE" $(Pipeline.Workspace)/s/azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/readme.az.md
       fi
 
-      autorest --version=3.0.6271 --use=autorest-autoconfig@latest --target-mode=core ./azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/readme.md --resource-file=./$(RESOURCE_MAP_FILE)
+      if [ "$sdktarget" == "clicore" ]; then
+       autorest --version=3.0.6271 --use=autorest-autoconfig@latest --target-mode=core ./azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/readme.md --resource-file=./$(RESOURCE_MAP_FILE)
+      else
+        # cli-extension
+        autorest --version=3.0.6271 --use=autorest-autoconfig@latest --target-mode=core ./azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/readme.md --resource-file=./$(RESOURCE_MAP_FILE) --package-$(ResourceProvider)
+      fi
     fi
-
+    
     if [ "$?" != "0" ]; then
       echo "failed to generate readme config file"
     else
@@ -103,7 +134,8 @@ steps:
     mkdir -p $(Pipeline.Workspace)/sdk/sdkvariables
     sdktarget=$(TARGET)
     if [ "$sdktarget" == "terraform" ]; then
-      PACKAGE_NAME=`cat $(Pipeline.Workspace)/s/azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/readme.terraform.md | grep "cli-name"| awk -F':' '{print $2}' | tr -d '[[:space:]]'`
+      # PACKAGE_NAME=`cat $(Pipeline.Workspace)/s/azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/readme.terraform.md | grep "cli-name"| awk -F':' '{print $2}' | tr -d '[[:space:]]'`
+      PACKAGE_NAME=`cat $(Pipeline.Workspace)/s/azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/readme.terraform.md | grep "trenton-output-folder" | sed 's/output-folder: \$(trenton-output-folder)\///g'`
       af="generated/$PACKAGE_NAME"
       echo "PACKAGE_NAME:$PACKAGE_NAME"
       echo "##vso[task.setvariable variable=Package]$PACKAGE_NAME"
@@ -121,11 +153,13 @@ steps:
 - bash: |
     echo $pwd
     sdktarget=$(TARGET)
+    codefolder="";
     if [ "$sdktarget" == "terraform" ]; then
       echo "start generate tf code"
+      codefolder="./terraform-provider-azurerm"
       mkdir generated
-      echo "$(TAG)"
-      echo "$(RESOURCES)"
+      echo "TAG:$(TAG)"
+      echo "resources:$(RESOURCES)"
       tag=$(TAG)
       if [ "$tag" == "" ]; then
         autorest --version=3.0.6219 --terraform --use=https://terraformcodegen.blob.core.windows.net/terraformcodegen/autorest-terraform-latest.tgz --resources=$(RESOURCES) --generate-extra-acctest=true --terraform-output-folder=./generated ./azure-rest-api-specs/$(README_FILE) 1>$(TASK_KEY).log 2>&1
@@ -133,33 +167,42 @@ steps:
         autorest --version=3.0.6219 --terraform --use=https://terraformcodegen.blob.core.windows.net/terraformcodegen/autorest-terraform-latest.tgz --resources=$(RESOURCES) --tag=$(TAG) --generate-extra-acctest=true --terraform-output-folder=./generated ./azure-rest-api-specs/$(README_FILE) 1>$(TASK_KEY).log 2>&1
       fi
 
-      if [ "$?" != "0" ]; then
-        echo -e "\e[31m[$(date -u)] ERROR: [$(ResourceProvider)]: Generate code failed"
-        # upload error log
-        az login --service-principal -u $(SERVICE_PRINCIPE_ID) -p $(SERVICE_PRINCIPE_SECRET) --tenant $(SERVICE_PRINCIPE_TENANT)
-        az storage blob upload -c depthcoverage -f $(TASK_KEY).log -n log/$(TARGET)-$(ResourceProvider)-$(Build.BuildId)-$(TASK_KEY).log --subscription $(SERVICE_PRINCIPE_SUBSCRIPTION) --account-name=depthcoverage
-        exit 1
-      else
-        cd ./terraform-provider-azurerm
-        echo "https://$(PIPELINE_USER):$(PIPELINE_TOKEN)@github.com" > ~/.git-credentials
-        git config credential.helper store ; git config --global user.email "chunyu@microsoft.com";git config --global user.name "chunyu3;"
-        git branch; git pull origin depth-$(TARGET)-$(ResourceProvider); git add -A; git commit -m "autogenerated"; git push origin depth-$(TARGET)-$(ResourceProvider);
-      fi
+      # if [ "$?" != "0" ]; then
+      #   echo -e "\e[31m[$(date -u)] ERROR: [$(ResourceProvider)]: Generate code failed"
+      #   # upload error log
+      #   az login --service-principal -u $(SERVICE_PRINCIPE_ID) -p $(SERVICE_PRINCIPE_SECRET) --tenant $(SERVICE_PRINCIPE_TENANT)
+      #   az storage blob upload -c depthcoverage -f $(TASK_KEY).log -n log/$(TARGET)-$(ResourceProvider)-$(Build.BuildId)-$(TASK_KEY).log --subscription $(SERVICE_PRINCIPE_SUBSCRIPTION) --account-name=depthcoverage
+      #   exit 1
+      # else
+      #   cd ./terraform-provider-azurerm
+      #   echo "https://$(PIPELINE_USER):$(PIPELINE_TOKEN)@github.com" > ~/.git-credentials
+      #   git config credential.helper store ; git config --global user.email "chunyu@microsoft.com";git config --global user.name "chunyu3;"
+      #   git branch; git pull origin depth-$(TARGET)-$(ResourceProvider); git add -A; git commit -m "autogenerated"; git push origin depth-$(TARGET)-$(ResourceProvider);
+      # fi
     fi
 
-    if [ "$sdktarget" == "clicore" ] || [ "$sdktarget" == "cliextension" ]; then
-      # autorest --version=3.0.6271 --az --use=@autorest/az@latest ./azure-rest-api-specs/$(README_FILE) --azure-cli-folder=./azure-cli  --target-mode=core
-      autorest --version=3.0.6271 --az --use=https://trenton.blob.core.windows.net/trenton/autorest-az-1.7.3.tgz ./azure-rest-api-specs/$(README_FILE) --azure-cli-folder=./azure-cli  --target-mode=core --gen-cmdlet-test 1>$(TASK_KEY).log 2>&1
-      if [ "$?" != "0" ]; then
-        echo -e "\e[31m[$(date -u)] ERROR: [$(ResourceProvider)]: Generate code failed"
-        az login --service-principal -u $(SERVICE_PRINCIPE_ID) -p $(SERVICE_PRINCIPE_SECRET) --tenant $(SERVICE_PRINCIPE_TENANT)
-        az storage blob upload -c depthcoverage -f ../$(TASK_KEY).log -n log/$(TARGET)-$(ResourceProvider)-$(Build.BuildId)-$(TASK_KEY).log --subscription $(SERVICE_PRINCIPE_SUBSCRIPTION) --account-name=depthcoverage
-        exit 1
-      else
-        cd ./azure-cli
-        echo "https://$(PIPELINE_USER):$(PIPELINE_TOKEN)@github.com" > ~/.git-credentials
-        git config credential.helper store ; git config --global user.email "chunyu@microsoft.com";git config --global user.name "chunyu3;"
-        git branch; git pull origin depth-$(TARGET)-$(ResourceProvider); git add -A; git commit -m "autogenerated"; git push origin depth-$(TARGET)-$(ResourceProvider);
-      fi
+    if [ "$sdktarget" == "clicore" ]; then
+      echo "start to generate cli core code"
+      codefolder="./azure-cli"
+      autorest --version=3.0.6271 --az --use=https://trenton.blob.core.windows.net/trenton/autorest-az-1.7.3.tgz ./azure-rest-api-specs/$(README_FILE) --azure-cli-folder=./azure-cli --target-mode=core --gen-cmdlet-test 1>$(TASK_KEY).log 2>&1
+    fi
+
+    if [ "$sdktarget" == "cliextension" ]; then
+      echo "start to generate cli extension code"
+      codefolder="./azure-cli-extensions"
+      autorest --version=3.0.6271 --az --use=https://trenton.blob.core.windows.net/trenton/autorest-az-1.7.3.tgz ./azure-rest-api-specs/$(README_FILE) --azure-cli-extension-folder=./azure-cli-extensions --gen-cmdlet-test 1>$(TASK_KEY).log 2>&1
+    fi
+
+    if [ "$?" != "0" ]; then
+      echo -e "\e[31m[$(date -u)] ERROR: [$(ResourceProvider)]: Generate code failed"
+      # upload error log
+      az login --service-principal -u $(SERVICE_PRINCIPE_ID) -p $(SERVICE_PRINCIPE_SECRET) --tenant $(SERVICE_PRINCIPE_TENANT)
+      az storage blob upload -c depthcoverage -f $(TASK_KEY).log -n log/$(TARGET)-$(ResourceProvider)-$(Build.BuildId)-$(TASK_KEY).log --subscription $(SERVICE_PRINCIPE_SUBSCRIPTION) --account-name=depthcoverage
+      exit 1
+    else
+      cd $codefolder
+      echo "https://$(PIPELINE_USER):$(PIPELINE_TOKEN)@github.com" > ~/.git-credentials
+      git config credential.helper store ; git config --global user.email "chunyu@microsoft.com";git config --global user.name "chunyu3;"
+      git branch; git pull origin depth-$(TARGET)-$(ResourceProvider); git add -A; git commit -m "autogenerated"; git push origin depth-$(TARGET)-$(ResourceProvider);
     fi
   displayName: 'Generate code'

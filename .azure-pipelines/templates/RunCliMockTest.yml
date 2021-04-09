@@ -6,7 +6,13 @@ steps:
     az login --service-principal -u $(SERVICE_PRINCIPE_ID) -p $(SERVICE_PRINCIPE_SECRET) --tenant $(SERVICE_PRINCIPE_TENANT)
     # az vm show --name MyVm --resource-group MyResourceGroup --debug
     export AZURE_TEST_RUN_LIVE=true
-    pytest -rA ./azure-cli/src/azure-cli/azure/cli/command_modules/$(Package)/tests/cmdlet/test_positive.py 1>$(TASK_KEY).log 2>&1
+    sdktarget=$(TARGET)
+    if [ "$sdktarget" == "clicore" ]; then
+      pytest -rA ./azure-cli/src/azure-cli/azure/cli/command_modules/$(Package)/tests/cmdlet/test_positive.py 1>$(TASK_KEY).log 2>&1
+    else
+      #cli-extension
+      pytest -rA ./azure-cli-extensions/src/$(Package)/azext_$(Package)/tests/cmdlet/test_positive.py 1>$(TASK_KEY).log 2>&1
+    fi
 
     if [ "$?" != "0" ]; then
       echo -e "\e[31m[$(date -u)] ERROR: [$(ResourceProvider)]: CLI Test failed"

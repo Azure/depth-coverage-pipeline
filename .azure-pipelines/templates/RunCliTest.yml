@@ -6,7 +6,16 @@ steps:
     which azdev
     az login --service-principal -u $(SERVICE_PRINCIPE_ID) -p $(SERVICE_PRINCIPE_SECRET) --tenant $(SERVICE_PRINCIPE_TENANT)
     # az vm show --name MyVm --resource-group MyResourceGroup --debug
-    azdev test $(package) --live --discover --no-exitfirst 1>$(TASK_KEY).log 2>&1
+    
+    sdktarget=$(TARGET)
+    if [ "$sdktarget" == "clicore" ]; then
+      azdev test $(package) --live --discover --no-exitfirst 1>$(TASK_KEY).log 2>&1
+    else
+      #cli-extension
+      extension_name=%(ResourceProvider)
+      azdev test $extension_name --live --discover --no-exitfirst 1>$(TASK_KEY).log 2>&1
+    fi
+    
     if [ "$?" != "0" ]; then
       echo -e "\e[31m[$(date -u)] ERROR: [$(ResourceProvider)]: CLI Test failed"
       az login --service-principal -u $(SERVICE_PRINCIPE_ID) -p $(SERVICE_PRINCIPE_SECRET) --tenant $(SERVICE_PRINCIPE_TENANT)

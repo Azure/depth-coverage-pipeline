@@ -19,6 +19,7 @@ steps:
     ./venv/bin/pip install azdev
     which azdev
     # azdev setup --cli ./azure-cli -r azure-cli-extensions
+    # azdev setup -r ./azure-cli-extensions  //need to modify, for cli-extension
     azdev setup --cli ./azure-cli
     # cat ./azure-cli/src/azure-cli/requirements.py3.Linux.txt |xargs -n 1 ./venv/bin/pip install
     az login --service-principal --username $(SERVICE_PRINCIPE_ID) --password $(SERVICE_PRINCIPE_SECRET) --tenant $(SERVICE_PRINCIPE_TENANT)
@@ -26,5 +27,4 @@ steps:
     second="readme.az.md"
     readme_file_path=${first/readme.md/$second}
     export extension_name=`cat $readme_file_path | grep extensions | awk '{print $NF}' | tr -d '\r'`
-    # azdev test $extension_name --live --discover
   displayName: 'cli Test Env Setup'
