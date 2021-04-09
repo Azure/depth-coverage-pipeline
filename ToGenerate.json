@@ -1,0 +1,58 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2015-03-01-preview",
+      "operations": [
+        {
+          "OperationId": "Configurations_List",
+          "version": "2015-03-01-preview",
+          "jsonFilePath": "/specification/hdinsight/resource-manager/Microsoft.HDInsight/preview/2015-03-01-preview/configurations.json"
+        },
+        {
+          "OperationId": "Configurations_Get",
+          "version": "2015-03-01-preview",
+          "jsonFilePath": "/specification/hdinsight/resource-manager/Microsoft.HDInsight/preview/2015-03-01-preview/configurations.json"
+        }
+      ],
+      "Resource": "Microsoft.HDInsight/clusters/configurations"
+    },
+    {
+      "APIVersion": "2015-03-01-preview",
+      "operations": [
+        {
+          "OperationId": "Clusters_GetGatewaySettings",
+          "version": "2015-03-01-preview",
+          "jsonFilePath": "/specification/hdinsight/resource-manager/Microsoft.HDInsight/preview/2015-03-01-preview/cluster.json"
+        }
+      ],
+      "Resource": "Microsoft.HDInsight/clusters/getGatewaySettings"
+    },
+    {
+      "APIVersion": "2015-03-01-preview",
+      "operations": [
+        {
+          "OperationId": "Clusters_RotateDiskEncryptionKey",
+          "version": "2015-03-01-preview",
+          "jsonFilePath": "/specification/hdinsight/resource-manager/Microsoft.HDInsight/preview/2015-03-01-preview/cluster.json"
+        }
+      ],
+      "Resource": "Microsoft.HDInsight/clusters/rotatediskencryptionkey"
+    },
+    {
+      "APIVersion": "2015-03-01-preview",
+      "operations": [
+        {
+          "OperationId": "Clusters_UpdateGatewaySettings",
+          "version": "2015-03-01-preview",
+          "jsonFilePath": "/specification/hdinsight/resource-manager/Microsoft.HDInsight/preview/2015-03-01-preview/cluster.json"
+        }
+      ],
+      "Resource": "Microsoft.HDInsight/clusters/updateGatewaySettings"
+    }
+  ],
+  "resourcelist": "Microsoft.HDInsight/clusters/configurations,Microsoft.HDInsight/clusters/getGatewaySettings,Microsoft.HDInsight/clusters/rotatediskencryptionkey,Microsoft.HDInsight/clusters/updateGatewaySettings",
+  "onboardType": "depth",
+  "RPName": "hdinsight",
+  "readmeFile": "/specification/hdinsight/resource-manager/readme.md",
+  "target": "clicore"
+}
