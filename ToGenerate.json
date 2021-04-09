@@ -1,0 +1,14 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-08-21-preview",
+      "operations": [],
+      "Resource": "Microsoft.Solutions/jitRequests"
+    }
+  ],
+  "resourcelist": "Microsoft.Solutions/jitRequests",
+  "onboardType": "depth",
+  "RPName": "resources",
+  "readmeFile": "/specification/resources/resource-manager/readme.md",
+  "target": "terraform"
+}
