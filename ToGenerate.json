@@ -1,0 +1,66 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2018-11-01",
+      "operations": [
+        {
+          "OperationId": "ExpressRouteCircuitConnections_List",
+          "version": "2018-11-01",
+          "jsonFilePath": "/specification/network/resource-manager/Microsoft.Network/stable/2018-11-01/expressRouteCircuit.json"
+        }
+      ],
+      "Resource": "Microsoft.Network/expressRouteCircuits/peerings/connections"
+    },
+    {
+      "APIVersion": "2017-06-01",
+      "operations": [
+        {
+          "OperationId": "ExpressRouteCircuits_ListRoutesTableSummary",
+          "version": "2017-06-01",
+          "jsonFilePath": "/specification/network/resource-manager/Microsoft.Network/stable/2017-06-01/expressRouteCircuit.json"
+        }
+      ],
+      "Resource": "Microsoft.Network/expressRouteCircuits/peerings/routeTablesSummary"
+    },
+    {
+      "APIVersion": "2017-03-01",
+      "operations": [
+        {
+          "OperationId": "ExpressRouteCircuits_GetPeeringStats",
+          "version": "2017-03-01",
+          "jsonFilePath": "/specification/network/resource-manager/Microsoft.Network/stable/2017-03-01/expressRouteCircuit.json"
+        }
+      ],
+      "Resource": "Microsoft.Network/expressRouteCircuits/peerings/stats"
+    }
+  ],
+  "resourcelist": "Microsoft.Network/expressRouteCircuits/peerings/connections,Microsoft.Network/expressRouteCircuits/peerings/routeTablesSummary,Microsoft.Network/expressRouteCircuits/peerings/stats",
+  "jsonFilelist": [
+    "/specification/network/resource-manager/Microsoft.Network/stable/2018-11-01/expressRouteCircuit.json",
+    "/specification/network/resource-manager/Microsoft.Network/stable/2020-05-01/expressRouteCircuit.json",
+    "/specification/network/resource-manager/Microsoft.Network/stable/2020-07-01/expressRouteCircuit.json",
+    "/specification/network/resource-manager/Microsoft.Network/stable/2020-08-01/expressRouteCircuit.json",
+    "/specification/network/resource-manager/Microsoft.Network/stable/2020-11-01/expressRouteCircuit.json",
+    "/specification/network/resource-manager/Microsoft.Network/stable/2017-06-01/expressRouteCircuit.json",
+    "/specification/network/resource-manager/Microsoft.Network/stable/2018-08-01/expressRouteCircuit.json",
+    "/specification/network/resource-manager/Microsoft.Network/stable/2019-02-01/expressRouteCircuit.json",
+    "/specification/network/resource-manager/Microsoft.Network/stable/2019-04-01/expressRouteCircuit.json",
+    "/specification/network/resource-manager/Microsoft.Network/stable/2019-06-01/expressRouteCircuit.json",
+    "/specification/network/resource-manager/Microsoft.Network/stable/2019-09-01/expressRouteCircuit.json",
+    "/specification/network/resource-manager/Microsoft.Network/stable/2019-11-01/expressRouteCircuit.json",
+    "/specification/network/resource-manager/Microsoft.Network/stable/2019-12-01/expressRouteCircuit.json",
+    "/specification/network/resource-manager/Microsoft.Network/stable/2020-03-01/expressRouteCircuit.json",
+    "/specification/network/resource-manager/Microsoft.Network/stable/2020-04-01/expressRouteCircuit.json",
+    "/specification/network/resource-manager/Microsoft.Network/stable/2020-06-01/expressRouteCircuit.json",
+    "/specification/network/resource-manager/Microsoft.Network/stable/2017-03-01/expressRouteCircuit.json",
+    "/specification/network/resource-manager/Microsoft.Network/stable/2017-11-01/expressRouteCircuit.json",
+    "/specification/network/resource-manager/Microsoft.Network/stable/2018-01-01/expressRouteCircuit.json",
+    "/specification/network/resource-manager/Microsoft.Network/stable/2018-07-01/expressRouteCircuit.json",
+    "/specification/network/resource-manager/Microsoft.Network/stable/2018-12-01/expressRouteCircuit.json",
+    "/specification/network/resource-manager/Microsoft.Network/stable/2019-07-01/expressRouteCircuit.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "network",
+  "readmeFile": "/specification/network/resource-manager/readme.md",
+  "target": "clicore"
+}
