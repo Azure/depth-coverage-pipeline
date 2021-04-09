@@ -1,0 +1,613 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-01-01",
+      "operations": [
+        {
+          "OperationId": "Assessments_Delete",
+          "version": "2020-01-01",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/stable/2020-01-01/assessments.json"
+        },
+        {
+          "OperationId": "Assessments_CreateOrUpdate",
+          "version": "2019-01-01-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2019-01-01-preview/assessments.json"
+        }
+      ],
+      "Resource": "Microsoft.Security/assessments"
+    },
+    {
+      "APIVersion": "2017-08-01",
+      "operations": [
+        {
+          "OperationId": "ComplianceResults_Get",
+          "version": "2017-08-01",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/stable/2017-08-01/complianceResults.json"
+        },
+        {
+          "OperationId": "ComplianceResults_List",
+          "version": "2017-08-01",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/stable/2017-08-01/complianceResults.json"
+        }
+      ],
+      "Resource": "Microsoft.Security/complianceResults"
+    },
+    {
+      "APIVersion": "2020-08-06-preview",
+      "operations": [
+        {
+          "OperationId": "DevicesForHub_List",
+          "version": "2020-08-06-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2020-08-06-preview/devices.json"
+        },
+        {
+          "OperationId": "DevicesForSubscription_List",
+          "version": "2020-08-06-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2020-08-06-preview/devices.json"
+        }
+      ],
+      "Resource": "Microsoft.Security/devices"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "DeviceSecurityGroups_List",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/stable/2019-08-01/deviceSecurityGroups.json"
+        },
+        {
+          "OperationId": "DeviceSecurityGroups_Delete",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/stable/2019-08-01/deviceSecurityGroups.json"
+        },
+        {
+          "OperationId": "DeviceSecurityGroups_Get",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/stable/2019-08-01/deviceSecurityGroups.json"
+        },
+        {
+          "OperationId": "DeviceSecurityGroups_CreateOrUpdate",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/stable/2019-08-01/deviceSecurityGroups.json"
+        }
+      ],
+      "Resource": "Microsoft.Security/deviceSecurityGroups"
+    },
+    {
+      "APIVersion": "2020-07-01-preview",
+      "operations": [
+        {
+          "OperationId": "SqlVulnerabilityAssessmentBaselineRules_Delete",
+          "version": "2020-07-01-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2020-07-01-preview/sqlVulnerabilityAssessmentsBaselineRuleOperations.json"
+        },
+        {
+          "OperationId": "SqlVulnerabilityAssessmentBaselineRules_CreateOrUpdate",
+          "version": "2020-07-01-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2020-07-01-preview/sqlVulnerabilityAssessmentsBaselineRuleOperations.json"
+        }
+      ],
+      "Resource": "Microsoft.Security/sqlVulnerabilityAssessments/default/baselineRules"
+    },
+    {
+      "APIVersion": "2020-07-01-preview",
+      "operations": [
+        {
+          "OperationId": "SqlVulnerabilityAssessmentScans_Get",
+          "version": "2020-07-01-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2020-07-01-preview/sqlVulnerabilityAssessmentsScanOperations.json"
+        }
+      ],
+      "Resource": "Microsoft.Security/sqlVulnerabilityAssessments/default/scans"
+    },
+    {
+      "APIVersion": "2020-07-01-preview",
+      "operations": [
+        {
+          "OperationId": "SqlVulnerabilityAssessmentScanResults_Get",
+          "version": "2020-07-01-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2020-07-01-preview/sqlVulnerabilityAssessmentsScanResultsOperations.json"
+        }
+      ],
+      "Resource": "Microsoft.Security/sqlVulnerabilityAssessments/default/scans/scanResults"
+    },
+    {
+      "APIVersion": "2019-01-01-preview",
+      "operations": [
+        {
+          "OperationId": "SubAssessments_Get",
+          "version": "2019-01-01-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2019-01-01-preview/subAssessments.json"
+        }
+      ],
+      "Resource": "Microsoft.Security/assessments/subAssessments"
+    },
+    {
+      "APIVersion": "2017-08-01-preview",
+      "operations": [
+        {
+          "OperationId": "Compliances_List",
+          "version": "2017-08-01-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2017-08-01-preview/compliances.json"
+        },
+        {
+          "OperationId": "Compliances_Get",
+          "version": "2017-08-01-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2017-08-01-preview/compliances.json"
+        }
+      ],
+      "Resource": "Microsoft.Security/compliances"
+    },
+    {
+      "APIVersion": "2020-08-06-preview",
+      "operations": [
+        {
+          "OperationId": "IotAlerts_List",
+          "version": "2020-08-06-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2020-08-06-preview/iotAlerts.json"
+        }
+      ],
+      "Resource": "Microsoft.Security/iotAlerts"
+    },
+    {
+      "APIVersion": "2020-08-06-preview",
+      "operations": [
+        {
+          "OperationId": "IotRecommendations_List",
+          "version": "2020-08-06-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2020-08-06-preview/iotRecommendations.json"
+        }
+      ],
+      "Resource": "Microsoft.Security/iotRecommendations"
+    },
+    {
+      "APIVersion": "2020-08-06-preview",
+      "operations": [
+        {
+          "OperationId": "IotSensors_List",
+          "version": "2020-08-06-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2020-08-06-preview/iotSensors.json"
+        },
+        {
+          "OperationId": "IotSensors_Delete",
+          "version": "2020-08-06-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2020-08-06-preview/iotSensors.json"
+        },
+        {
+          "OperationId": "IotSensors_Get",
+          "version": "2020-08-06-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2020-08-06-preview/iotSensors.json"
+        },
+        {
+          "OperationId": "IotSensors_CreateOrUpdate",
+          "version": "2020-08-06-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2020-08-06-preview/iotSensors.json"
+        }
+      ],
+      "Resource": "Microsoft.Security/iotSensors"
+    },
+    {
+      "APIVersion": "2020-08-06-preview",
+      "operations": [
+        {
+          "OperationId": "IotSensors_DownloadActivation",
+          "version": "2020-08-06-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2020-08-06-preview/iotSensors.json"
+        }
+      ],
+      "Resource": "Microsoft.Security/iotSensors/downloadActivation"
+    },
+    {
+      "APIVersion": "2020-08-06-preview",
+      "operations": [
+        {
+          "OperationId": "IotSensors_DownloadResetPassword",
+          "version": "2020-08-06-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2020-08-06-preview/iotSensors.json"
+        }
+      ],
+      "Resource": "Microsoft.Security/iotSensors/downloadResetPassword"
+    },
+    {
+      "APIVersion": "2020-08-06-preview",
+      "operations": [
+        {
+          "OperationId": "IotSensors_TriggerTiPackageUpdate",
+          "version": "2020-08-06-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2020-08-06-preview/iotSensors.json"
+        }
+      ],
+      "Resource": "Microsoft.Security/iotSensors/triggerTiPackageUpdate"
+    },
+    {
+      "APIVersion": "2020-08-06-preview",
+      "operations": [
+        {
+          "OperationId": "IotSites_List",
+          "version": "2020-08-06-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2020-08-06-preview/iotSites.json"
+        }
+      ],
+      "Resource": "Microsoft.Security/iotSites"
+    },
+    {
+      "APIVersion": "2020-08-06-preview",
+      "operations": [
+        {
+          "OperationId": "IotSites_Delete",
+          "version": "2020-08-06-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2020-08-06-preview/iotSites.json"
+        },
+        {
+          "OperationId": "IotSites_Get",
+          "version": "2020-08-06-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2020-08-06-preview/iotSites.json"
+        },
+        {
+          "OperationId": "IotSites_CreateOrUpdate",
+          "version": "2020-08-06-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2020-08-06-preview/iotSites.json"
+        }
+      ],
+      "Resource": "Microsoft.Security/iotSites/default"
+    },
+    {
+      "APIVersion": "2019-01-01-preview",
+      "operations": [
+        {
+          "OperationId": "AlertsSuppressionRules_List",
+          "version": "2019-01-01-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2019-01-01-preview/alertsSuppressionRules.json"
+        },
+        {
+          "OperationId": "AlertsSuppressionRules_Delete",
+          "version": "2019-01-01-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2019-01-01-preview/alertsSuppressionRules.json"
+        },
+        {
+          "OperationId": "AlertsSuppressionRules_Get",
+          "version": "2019-01-01-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2019-01-01-preview/alertsSuppressionRules.json"
+        },
+        {
+          "OperationId": "AlertsSuppressionRules_Update",
+          "version": "2019-01-01-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2019-01-01-preview/alertsSuppressionRules.json"
+        }
+      ],
+      "Resource": "Microsoft.Security/alertsSuppressionRules"
+    },
+    {
+      "APIVersion": "2020-01-01",
+      "operations": [
+        {
+          "OperationId": "AssessmentsMetadata_DeleteInSubscription",
+          "version": "2020-01-01",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/stable/2020-01-01/assessmentMetadata.json"
+        },
+        {
+          "OperationId": "AssessmentsMetadata_GetInSubscription",
+          "version": "2020-01-01",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/stable/2020-01-01/assessmentMetadata.json"
+        },
+        {
+          "OperationId": "AssessmentsMetadataSubscription_Create",
+          "version": "2019-01-01-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2019-01-01-preview/assessmentMetadata.json"
+        },
+        {
+          "OperationId": "AssessmentsMetadata_CreateInSubscription",
+          "version": "2020-01-01",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/stable/2020-01-01/assessmentMetadata.json"
+        }
+      ],
+      "Resource": "Microsoft.Security/assessmentMetadata"
+    },
+    {
+      "APIVersion": "2019-01-01-preview",
+      "operations": [
+        {
+          "OperationId": "Automations_List",
+          "version": "2019-01-01-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2019-01-01-preview/automations.json"
+        },
+        {
+          "OperationId": "Automations_ListByResourceGroup",
+          "version": "2019-01-01-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2019-01-01-preview/automations.json"
+        },
+        {
+          "OperationId": "Automations_Delete",
+          "version": "2019-01-01-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2019-01-01-preview/automations.json"
+        },
+        {
+          "OperationId": "Automations_Get",
+          "version": "2019-01-01-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2019-01-01-preview/automations.json"
+        },
+        {
+          "OperationId": "Automations_CreateOrUpdate",
+          "version": "2019-01-01-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2019-01-01-preview/automations.json"
+        }
+      ],
+      "Resource": "Microsoft.Security/automations"
+    },
+    {
+      "APIVersion": "2020-01-01-preview",
+      "operations": [
+        {
+          "OperationId": "Connectors_List",
+          "version": "2020-01-01-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2020-01-01-preview/connectors.json"
+        },
+        {
+          "OperationId": "Connectors_Delete",
+          "version": "2020-01-01-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2020-01-01-preview/connectors.json"
+        },
+        {
+          "OperationId": "Connectors_Get",
+          "version": "2020-01-01-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2020-01-01-preview/connectors.json"
+        },
+        {
+          "OperationId": "Connectors_CreateOrUpdate",
+          "version": "2020-01-01-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2020-01-01-preview/connectors.json"
+        }
+      ],
+      "Resource": "Microsoft.Security/connectors"
+    },
+    {
+      "APIVersion": "2020-08-06-preview",
+      "operations": [
+        {
+          "OperationId": "IotDefenderSettings_List",
+          "version": "2020-08-06-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2020-08-06-preview/iotDefenderSettings.json"
+        }
+      ],
+      "Resource": "Microsoft.Security/iotDefenderSettings"
+    },
+    {
+      "APIVersion": "2020-08-06-preview",
+      "operations": [
+        {
+          "OperationId": "IotDefenderSettings_Delete",
+          "version": "2020-08-06-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2020-08-06-preview/iotDefenderSettings.json"
+        },
+        {
+          "OperationId": "IotDefenderSettings_Get",
+          "version": "2020-08-06-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2020-08-06-preview/iotDefenderSettings.json"
+        },
+        {
+          "OperationId": "IotDefenderSettings_CreateOrUpdate",
+          "version": "2020-08-06-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2020-08-06-preview/iotDefenderSettings.json"
+        }
+      ],
+      "Resource": "Microsoft.Security/iotDefenderSettings/default"
+    },
+    {
+      "APIVersion": "2020-08-06-preview",
+      "operations": [
+        {
+          "OperationId": "IotDefenderSettings_DownloadManagerActivation",
+          "version": "2020-08-06-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2020-08-06-preview/iotDefenderSettings.json"
+        }
+      ],
+      "Resource": "Microsoft.Security/iotDefenderSettings/default/downloadManagerActivation"
+    },
+    {
+      "APIVersion": "2020-08-06-preview",
+      "operations": [
+        {
+          "OperationId": "IotDefenderSettings_PackageDownloads",
+          "version": "2020-08-06-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2020-08-06-preview/iotDefenderSettings.json"
+        }
+      ],
+      "Resource": "Microsoft.Security/iotDefenderSettings/default/packageDownloads"
+    },
+    {
+      "APIVersion": "2020-08-06-preview",
+      "operations": [
+        {
+          "OperationId": "OnPremiseIotSensors_List",
+          "version": "2020-08-06-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2020-08-06-preview/onPremiseIotSensors.json"
+        },
+        {
+          "OperationId": "OnPremiseIotSensors_Delete",
+          "version": "2020-08-06-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2020-08-06-preview/onPremiseIotSensors.json"
+        },
+        {
+          "OperationId": "OnPremiseIotSensors_Get",
+          "version": "2020-08-06-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2020-08-06-preview/onPremiseIotSensors.json"
+        },
+        {
+          "OperationId": "OnPremiseIotSensors_CreateOrUpdate",
+          "version": "2020-08-06-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2020-08-06-preview/onPremiseIotSensors.json"
+        }
+      ],
+      "Resource": "Microsoft.Security/onPremiseIotSensors"
+    },
+    {
+      "APIVersion": "2020-08-06-preview",
+      "operations": [
+        {
+          "OperationId": "OnPremiseIotSensors_DownloadActivation",
+          "version": "2020-08-06-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2020-08-06-preview/onPremiseIotSensors.json"
+        }
+      ],
+      "Resource": "Microsoft.Security/onPremiseIotSensors/downloadActivation"
+    },
+    {
+      "APIVersion": "2020-08-06-preview",
+      "operations": [
+        {
+          "OperationId": "OnPremiseIotSensors_DownloadResetPassword",
+          "version": "2020-08-06-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2020-08-06-preview/onPremiseIotSensors.json"
+        }
+      ],
+      "Resource": "Microsoft.Security/onPremiseIotSensors/downloadResetPassword"
+    },
+    {
+      "APIVersion": "2017-08-01-preview",
+      "operations": [
+        {
+          "OperationId": "Settings_Update",
+          "version": "2017-08-01-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2017-08-01-preview/settings.json"
+        }
+      ],
+      "Resource": "Microsoft.Security/settings"
+    },
+    {
+      "APIVersion": "2015-06-01-preview",
+      "operations": [
+        {
+          "OperationId": "AdaptiveNetworkHardenings_Get",
+          "version": "2015-06-01-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2015-06-01-preview/adaptiveNetworkHardenings.json"
+        },
+        {
+          "OperationId": "AdaptiveNetworkHardenings_Enforce",
+          "version": "2015-06-01-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2015-06-01-preview/adaptiveNetworkHardenings.json"
+        }
+      ],
+      "Resource": "Microsoft.Security/adaptiveNetworkHardenings"
+    },
+    {
+      "APIVersion": "2020-01-01",
+      "operations": [
+        {
+          "OperationId": "ServerVulnerabilityAssessment_Delete",
+          "version": "2020-01-01",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/stable/2020-01-01/serverVulnerabilityAssessments.json"
+        },
+        {
+          "OperationId": "ServerVulnerabilityAssessment_Get",
+          "version": "2020-01-01",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/stable/2020-01-01/serverVulnerabilityAssessments.json"
+        },
+        {
+          "OperationId": "ServerVulnerabilityAssessment_CreateOrUpdate",
+          "version": "2020-01-01",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/stable/2020-01-01/serverVulnerabilityAssessments.json"
+        }
+      ],
+      "Resource": "Microsoft.Security/serverVulnerabilityAssessments"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "IotSecuritySolutionAnalytics_Get",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/stable/2019-08-01/iotSecuritySolutionAnalytics.json"
+        }
+      ],
+      "Resource": "Microsoft.Security/iotSecuritySolutions/analyticsModels/default"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "IotSecuritySolutionsAnalyticsAggregatedAlert_List",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/stable/2019-08-01/iotSecuritySolutionAnalytics.json"
+        }
+      ],
+      "Resource": "Microsoft.Security/iotSecuritySolutions/analyticsModels/default/aggregatedAlerts"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "IotSecuritySolutionsAnalyticsRecommendation_List",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/stable/2019-08-01/iotSecuritySolutionAnalytics.json"
+        }
+      ],
+      "Resource": "Microsoft.Security/iotSecuritySolutions/analyticsModels/default/aggregatedRecommendations"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "IotAlerts_List",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/stable/2019-08-01/iotAlerts.json"
+        }
+      ],
+      "Resource": "Microsoft.Security/iotSecuritySolutions/iotAlerts"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "IotAlertTypes_Get",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/stable/2019-08-01/iotAlertTypes.json"
+        }
+      ],
+      "Resource": "Microsoft.Security/iotSecuritySolutions/iotAlertTypes"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "IotRecommendations_List",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/stable/2019-08-01/iotRecommendations.json"
+        }
+      ],
+      "Resource": "Microsoft.Security/iotSecuritySolutions/iotRecommendations"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "IotRecommendationTypes_List",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/stable/2019-08-01/iotRecommendationTypes.json"
+        },
+        {
+          "OperationId": "IotRecommendationTypes_Get",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/stable/2019-08-01/iotRecommendationTypes.json"
+        }
+      ],
+      "Resource": "Microsoft.Security/iotSecuritySolutions/iotRecommendationTypes"
+    },
+    {
+      "APIVersion": "2017-08-01-preview",
+      "operations": [
+        {
+          "OperationId": "Pricings_CreateOrUpdateResourceGroupPricing",
+          "version": "2017-08-01-preview",
+          "jsonFilePath": "/specification/security/resource-manager/Microsoft.Security/preview/2017-08-01-preview/pricings.json"
+        }
+      ],
+      "Resource": "Microsoft.Security/pricings"
+    }
+  ],
+  "resourcelist": "Microsoft.Security/assessments,Microsoft.Security/complianceResults,Microsoft.Security/devices,Microsoft.Security/deviceSecurityGroups,Microsoft.Security/sqlVulnerabilityAssessments/default/baselineRules,Microsoft.Security/sqlVulnerabilityAssessments/default/scans,Microsoft.Security/sqlVulnerabilityAssessments/default/scans/scanResults,Microsoft.Security/assessments/subAssessments,Microsoft.Security/compliances,Microsoft.Security/iotAlerts,Microsoft.Security/iotRecommendations,Microsoft.Security/iotSensors,Microsoft.Security/iotSensors/downloadActivation,Microsoft.Security/iotSensors/downloadResetPassword,Microsoft.Security/iotSensors/triggerTiPackageUpdate,Microsoft.Security/iotSites,Microsoft.Security/iotSites/default,Microsoft.Security/alertsSuppressionRules,Microsoft.Security/assessmentMetadata,Microsoft.Security/automations,Microsoft.Security/connectors,Microsoft.Security/iotDefenderSettings,Microsoft.Security/iotDefenderSettings/default,Microsoft.Security/iotDefenderSettings/default/downloadManagerActivation,Microsoft.Security/iotDefenderSettings/default/packageDownloads,Microsoft.Security/onPremiseIotSensors,Microsoft.Security/onPremiseIotSensors/downloadActivation,Microsoft.Security/onPremiseIotSensors/downloadResetPassword,Microsoft.Security/settings,Microsoft.Security/adaptiveNetworkHardenings,Microsoft.Security/serverVulnerabilityAssessments,Microsoft.Security/iotSecuritySolutions/analyticsModels/default,Microsoft.Security/iotSecuritySolutions/analyticsModels/default/aggregatedAlerts,Microsoft.Security/iotSecuritySolutions/analyticsModels/default/aggregatedRecommendations,Microsoft.Security/iotSecuritySolutions/iotAlerts,Microsoft.Security/iotSecuritySolutions/iotAlertTypes,Microsoft.Security/iotSecuritySolutions/iotRecommendations,Microsoft.Security/iotSecuritySolutions/iotRecommendationTypes,Microsoft.Security/pricings",
+  "onboardType": "depth",
+  "RPName": "security",
+  "readmeFile": "/specification/security/resource-manager/readme.md",
+  "target": "clicore"
+}
