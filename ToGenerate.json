@@ -1,0 +1,80 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2016-06-01",
+      "operations": [
+        {
+          "OperationId": "VaultCertificates_Create",
+          "version": "2016-06-01",
+          "jsonFilePath": "/specification/recoveryservices/resource-manager/Microsoft.RecoveryServices/stable/2016-06-01/registeredidentities.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/certificates"
+    },
+    {
+      "APIVersion": "2016-06-01",
+      "operations": [
+        {
+          "OperationId": "VaultExtendedInfo_Get",
+          "version": "2016-06-01",
+          "jsonFilePath": "/specification/recoveryservices/resource-manager/Microsoft.RecoveryServices/stable/2016-06-01/vaults.json"
+        },
+        {
+          "OperationId": "VaultExtendedInfo_CreateOrUpdate",
+          "version": "2016-06-01",
+          "jsonFilePath": "/specification/recoveryservices/resource-manager/Microsoft.RecoveryServices/stable/2016-06-01/vaults.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/extendedInformation/vaultExtendedInfo"
+    },
+    {
+      "APIVersion": "2020-02-02",
+      "operations": [
+        {
+          "OperationId": "GetOperationStatus",
+          "version": "2020-02-02",
+          "jsonFilePath": "/specification/recoveryservices/resource-manager/Microsoft.RecoveryServices/stable/2020-02-02/vaults.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/operationStatus"
+    },
+    {
+      "APIVersion": "2016-06-01",
+      "operations": [
+        {
+          "OperationId": "PrivateLinkResources_List",
+          "version": "2016-06-01",
+          "jsonFilePath": "/specification/recoveryservices/resource-manager/Microsoft.RecoveryServices/stable/2016-06-01/vaults.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/privateLinkResources"
+    },
+    {
+      "APIVersion": "2016-06-01",
+      "operations": [
+        {
+          "OperationId": "ReplicationUsages_List",
+          "version": "2016-06-01",
+          "jsonFilePath": "/specification/recoveryservices/resource-manager/Microsoft.RecoveryServices/stable/2016-06-01/replicationusages.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationUsages"
+    },
+    {
+      "APIVersion": "2016-06-01",
+      "operations": [
+        {
+          "OperationId": "Usages_ListByVaults",
+          "version": "2016-06-01",
+          "jsonFilePath": "/specification/recoveryservices/resource-manager/Microsoft.RecoveryServices/stable/2016-06-01/vaultusages.json"
+        }
+      ],
+      "Resource": "Microsoft.RecoveryServices/vaults/usages"
+    }
+  ],
+  "resourcelist": "Microsoft.RecoveryServices/vaults/certificates,Microsoft.RecoveryServices/vaults/extendedInformation/vaultExtendedInfo,Microsoft.RecoveryServices/vaults/operationStatus,Microsoft.RecoveryServices/vaults/privateLinkResources,Microsoft.RecoveryServices/vaults/replicationUsages,Microsoft.RecoveryServices/vaults/usages",
+  "onboardType": "depth",
+  "RPName": "recoveryservices",
+  "readmeFile": "/specification/recoveryservices/resource-manager/readme.md",
+  "target": "clicore"
+}
