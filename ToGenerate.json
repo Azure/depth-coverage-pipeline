@@ -1,0 +1,14 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2016-11-01",
+      "operations": [],
+      "Resource": "Microsoft.DataLakeStore/accounts/trustedIdProviders"
+    }
+  ],
+  "resourcelist": "Microsoft.DataLakeStore/accounts/trustedIdProviders",
+  "onboardType": "depth",
+  "RPName": "datalake-store",
+  "readmeFile": "/specification/datalake-store/resource-manager/readme.md",
+  "target": "terraform"
+}
