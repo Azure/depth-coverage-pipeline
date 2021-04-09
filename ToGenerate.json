@@ -1,0 +1,19 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2019-05-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.Media/mediaServices/accountFilters"
+    },
+    {
+      "APIVersion": "2020-05-01",
+      "operations": [],
+      "Resource": "Microsoft.Media/mediaservices/privateEndpointConnections"
+    }
+  ],
+  "resourcelist": "Microsoft.Media/mediaServices/accountFilters,Microsoft.Media/mediaservices/privateEndpointConnections",
+  "onboardType": "depth",
+  "RPName": "mediaservices",
+  "readmeFile": "/specification/mediaservices/resource-manager/readme.md",
+  "target": "terraform"
+}
