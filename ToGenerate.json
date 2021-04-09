@@ -1,0 +1,47 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2018-01-01",
+      "operations": [
+        {
+          "OperationId": "Jobs_ListByResourceGroup",
+          "version": "2018-01-01",
+          "jsonFilePath": "/specification/databox/resource-manager/Microsoft.DataBox/stable/2018-01-01/databox.json"
+        },
+        {
+          "OperationId": "Jobs_Delete",
+          "version": "2020-04-01",
+          "jsonFilePath": "/specification/databox/resource-manager/Microsoft.DataBox/stable/2020-04-01/databox.json"
+        }
+      ],
+      "Resource": "Microsoft.DataBox/jobs"
+    },
+    {
+      "APIVersion": "2020-04-01",
+      "operations": [
+        {
+          "OperationId": "Jobs_Cancel",
+          "version": "2020-04-01",
+          "jsonFilePath": "/specification/databox/resource-manager/Microsoft.DataBox/stable/2020-04-01/databox.json"
+        }
+      ],
+      "Resource": "Microsoft.DataBox/jobs/cancel"
+    },
+    {
+      "APIVersion": "2018-01-01",
+      "operations": [
+        {
+          "OperationId": "Jobs_ListCredentials",
+          "version": "2018-01-01",
+          "jsonFilePath": "/specification/databox/resource-manager/Microsoft.DataBox/stable/2018-01-01/databox.json"
+        }
+      ],
+      "Resource": "Microsoft.DataBox/jobs/listCredentials"
+    }
+  ],
+  "resourcelist": "Microsoft.DataBox/jobs,Microsoft.DataBox/jobs/cancel,Microsoft.DataBox/jobs/listCredentials",
+  "onboardType": "depth",
+  "RPName": "databox",
+  "readmeFile": "/specification/databox/resource-manager/readme.md",
+  "target": "clicore"
+}
