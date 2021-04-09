@@ -1,0 +1,14 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-03-01",
+      "operations": [],
+      "Resource": "Microsoft.Devices/provisioningServices/privateEndpointConnections"
+    }
+  ],
+  "resourcelist": "Microsoft.Devices/provisioningServices/privateEndpointConnections",
+  "onboardType": "depth",
+  "RPName": "deviceprovisioningservices",
+  "readmeFile": "/specification/deviceprovisioningservices/resource-manager/readme.md",
+  "target": "terraform"
+}
