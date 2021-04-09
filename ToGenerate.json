@@ -1,0 +1,94 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2021-01-28-preview",
+      "operations": [
+        {
+          "OperationId": "PrivateLinkScopes_List",
+          "version": "2021-01-28-preview",
+          "jsonFilePath": "/specification/hybridcompute/resource-manager/Microsoft.HybridCompute/preview/2021-01-28-preview/privateLinkScopes.json"
+        },
+        {
+          "OperationId": "PrivateLinkScopes_ListByResourceGroup",
+          "version": "2021-01-28-preview",
+          "jsonFilePath": "/specification/hybridcompute/resource-manager/Microsoft.HybridCompute/preview/2021-01-28-preview/privateLinkScopes.json"
+        },
+        {
+          "OperationId": "PrivateLinkScopes_Delete",
+          "version": "2021-01-28-preview",
+          "jsonFilePath": "/specification/hybridcompute/resource-manager/Microsoft.HybridCompute/preview/2021-01-28-preview/privateLinkScopes.json"
+        },
+        {
+          "OperationId": "PrivateLinkScopes_Get",
+          "version": "2021-01-28-preview",
+          "jsonFilePath": "/specification/hybridcompute/resource-manager/Microsoft.HybridCompute/preview/2021-01-28-preview/privateLinkScopes.json"
+        },
+        {
+          "OperationId": "PrivateLinkScopes_CreateOrUpdate",
+          "version": "2021-01-28-preview",
+          "jsonFilePath": "/specification/hybridcompute/resource-manager/Microsoft.HybridCompute/preview/2021-01-28-preview/privateLinkScopes.json"
+        }
+      ],
+      "Resource": "Microsoft.HybridCompute/privateLinkScopes"
+    },
+    {
+      "APIVersion": "2021-01-28-preview",
+      "operations": [
+        {
+          "OperationId": "Machines_Delete",
+          "version": "2021-01-28-preview",
+          "jsonFilePath": "/specification/hybridcompute/resource-manager/Microsoft.HybridCompute/preview/2021-01-28-preview/HybridCompute.json"
+        },
+        {
+          "OperationId": "Machines_CreateOrUpdate",
+          "version": "2021-01-28-preview",
+          "jsonFilePath": "/specification/hybridcompute/resource-manager/Microsoft.HybridCompute/preview/2021-01-28-preview/HybridCompute.json"
+        }
+      ],
+      "Resource": "Microsoft.HybridCompute/machines"
+    },
+    {
+      "APIVersion": "2021-01-28-preview",
+      "operations": [
+        {
+          "OperationId": "PrivateLinkScopes_GetValidationDetailsForMachine",
+          "version": "2021-01-28-preview",
+          "jsonFilePath": "/specification/hybridcompute/resource-manager/Microsoft.HybridCompute/preview/2021-01-28-preview/privateLinkScopes.json"
+        }
+      ],
+      "Resource": "Microsoft.HybridCompute/machines/privateLinkScopes/current"
+    },
+    {
+      "APIVersion": "2021-01-28-preview",
+      "operations": [
+        {
+          "OperationId": "PrivateEndpointConnections_ListByPrivateLinkScope",
+          "version": "2021-01-28-preview",
+          "jsonFilePath": "/specification/hybridcompute/resource-manager/Microsoft.HybridCompute/preview/2021-01-28-preview/privateLinkScopes.json"
+        },
+        {
+          "OperationId": "PrivateEndpointConnections_Delete",
+          "version": "2021-01-28-preview",
+          "jsonFilePath": "/specification/hybridcompute/resource-manager/Microsoft.HybridCompute/preview/2021-01-28-preview/privateLinkScopes.json"
+        }
+      ],
+      "Resource": "Microsoft.HybridCompute/privateLinkScopes/privateEndpointConnections"
+    },
+    {
+      "APIVersion": "2020-08-15-preview",
+      "operations": [
+        {
+          "OperationId": "PrivateLinkResources_ListByPrivateLinkScope",
+          "version": "2020-08-15-preview",
+          "jsonFilePath": "/specification/hybridcompute/resource-manager/Microsoft.HybridCompute/preview/2020-08-15-preview/privateLinkScopes.json"
+        }
+      ],
+      "Resource": "Microsoft.HybridCompute/privateLinkScopes/privateLinkResources"
+    }
+  ],
+  "resourcelist": "Microsoft.HybridCompute/privateLinkScopes,Microsoft.HybridCompute/machines,Microsoft.HybridCompute/machines/privateLinkScopes/current,Microsoft.HybridCompute/privateLinkScopes/privateEndpointConnections,Microsoft.HybridCompute/privateLinkScopes/privateLinkResources",
+  "onboardType": "depth",
+  "RPName": "hybridcompute",
+  "readmeFile": "/specification/hybridcompute/resource-manager/readme.md",
+  "target": "clicore"
+}
