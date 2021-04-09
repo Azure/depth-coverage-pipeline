@@ -1,0 +1,14 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2014-09-01",
+      "operations": [],
+      "Resource": "Microsoft.NotificationHubs/namespaces/AuthorizationRules"
+    }
+  ],
+  "resourcelist": "Microsoft.NotificationHubs/namespaces/AuthorizationRules",
+  "onboardType": "depth",
+  "RPName": "notificationhubs",
+  "readmeFile": "/specification/notificationhubs/resource-manager/readme.md",
+  "target": "terraform"
+}
