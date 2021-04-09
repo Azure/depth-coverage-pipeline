@@ -1,0 +1,226 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-11-10-preview",
+      "operations": [
+        {
+          "OperationId": "ScalingPlans_ListBySubscription",
+          "version": "2020-11-10-preview",
+          "jsonFilePath": "/specification/desktopvirtualization/resource-manager/Microsoft.DesktopVirtualization/preview/2020-11-10-preview/desktopvirtualization.json"
+        },
+        {
+          "OperationId": "ScalingPlans_ListByResourceGroup",
+          "version": "2020-11-10-preview",
+          "jsonFilePath": "/specification/desktopvirtualization/resource-manager/Microsoft.DesktopVirtualization/preview/2020-11-10-preview/desktopvirtualization.json"
+        },
+        {
+          "OperationId": "ScalingPlans_Delete",
+          "version": "2020-11-10-preview",
+          "jsonFilePath": "/specification/desktopvirtualization/resource-manager/Microsoft.DesktopVirtualization/preview/2020-11-10-preview/desktopvirtualization.json"
+        },
+        {
+          "OperationId": "ScalingPlans_Get",
+          "version": "2020-11-10-preview",
+          "jsonFilePath": "/specification/desktopvirtualization/resource-manager/Microsoft.DesktopVirtualization/preview/2020-11-10-preview/desktopvirtualization.json"
+        },
+        {
+          "OperationId": "ScalingPlans_Create",
+          "version": "2020-11-10-preview",
+          "jsonFilePath": "/specification/desktopvirtualization/resource-manager/Microsoft.DesktopVirtualization/preview/2020-11-10-preview/desktopvirtualization.json"
+        }
+      ],
+      "Resource": "Microsoft.DesktopVirtualization/scalingPlans"
+    },
+    {
+      "APIVersion": "2019-09-24-preview",
+      "operations": [
+        {
+          "OperationId": "Applications_List",
+          "version": "2019-09-24-preview",
+          "jsonFilePath": "/specification/desktopvirtualization/resource-manager/Microsoft.DesktopVirtualization/preview/2019-09-24-preview/desktopvirtualization.json"
+        },
+        {
+          "OperationId": "Applications_Delete",
+          "version": "2019-09-24-preview",
+          "jsonFilePath": "/specification/desktopvirtualization/resource-manager/Microsoft.DesktopVirtualization/preview/2019-09-24-preview/desktopvirtualization.json"
+        },
+        {
+          "OperationId": "Applications_Get",
+          "version": "2019-12-10-preview",
+          "jsonFilePath": "/specification/desktopvirtualization/resource-manager/Microsoft.DesktopVirtualization/preview/2019-12-10-preview/desktopvirtualization.json"
+        },
+        {
+          "OperationId": "Applications_CreateOrUpdate",
+          "version": "2019-01-23-preview",
+          "jsonFilePath": "/specification/desktopvirtualization/resource-manager/Microsoft.DesktopVirtualization/preview/2019-01-23-preview/desktopvirtualization.json"
+        }
+      ],
+      "Resource": "Microsoft.DesktopVirtualization/applicationGroups/applications"
+    },
+    {
+      "APIVersion": "2019-01-23-preview",
+      "operations": [
+        {
+          "OperationId": "Desktops_List",
+          "version": "2019-01-23-preview",
+          "jsonFilePath": "/specification/desktopvirtualization/resource-manager/Microsoft.DesktopVirtualization/preview/2019-01-23-preview/desktopvirtualization.json"
+        },
+        {
+          "OperationId": "Desktops_Get",
+          "version": "2019-12-10-preview",
+          "jsonFilePath": "/specification/desktopvirtualization/resource-manager/Microsoft.DesktopVirtualization/preview/2019-12-10-preview/desktopvirtualization.json"
+        },
+        {
+          "OperationId": "Desktops_Update",
+          "version": "2019-09-24-preview",
+          "jsonFilePath": "/specification/desktopvirtualization/resource-manager/Microsoft.DesktopVirtualization/preview/2019-09-24-preview/desktopvirtualization.json"
+        }
+      ],
+      "Resource": "Microsoft.DesktopVirtualization/applicationGroups/desktops"
+    },
+    {
+      "APIVersion": "2019-09-24-preview",
+      "operations": [
+        {
+          "OperationId": "StartMenuItems_List",
+          "version": "2019-09-24-preview",
+          "jsonFilePath": "/specification/desktopvirtualization/resource-manager/Microsoft.DesktopVirtualization/preview/2019-09-24-preview/desktopvirtualization.json"
+        }
+      ],
+      "Resource": "Microsoft.DesktopVirtualization/applicationGroups/startMenuItems"
+    },
+    {
+      "APIVersion": "2020-09-21-preview",
+      "operations": [
+        {
+          "OperationId": "MsixImages_Expand",
+          "version": "2020-09-21-preview",
+          "jsonFilePath": "/specification/desktopvirtualization/resource-manager/Microsoft.DesktopVirtualization/preview/2020-09-21-preview/desktopvirtualization.json"
+        }
+      ],
+      "Resource": "Microsoft.DesktopVirtualization/hostPools/expandMsixImage"
+    },
+    {
+      "APIVersion": "2020-09-21-preview",
+      "operations": [
+        {
+          "OperationId": "MSIXPackages_List",
+          "version": "2020-09-21-preview",
+          "jsonFilePath": "/specification/desktopvirtualization/resource-manager/Microsoft.DesktopVirtualization/preview/2020-09-21-preview/desktopvirtualization.json"
+        },
+        {
+          "OperationId": "MSIXPackages_Delete",
+          "version": "2020-09-21-preview",
+          "jsonFilePath": "/specification/desktopvirtualization/resource-manager/Microsoft.DesktopVirtualization/preview/2020-09-21-preview/desktopvirtualization.json"
+        },
+        {
+          "OperationId": "MSIXPackages_Get",
+          "version": "2020-10-19-preview",
+          "jsonFilePath": "/specification/desktopvirtualization/resource-manager/Microsoft.DesktopVirtualization/preview/2020-10-19-preview/desktopvirtualization.json"
+        },
+        {
+          "OperationId": "MSIXPackages_CreateOrUpdate",
+          "version": "2020-09-21-preview",
+          "jsonFilePath": "/specification/desktopvirtualization/resource-manager/Microsoft.DesktopVirtualization/preview/2020-09-21-preview/desktopvirtualization.json"
+        }
+      ],
+      "Resource": "Microsoft.DesktopVirtualization/hostPools/msixPackages"
+    },
+    {
+      "APIVersion": "2020-11-10-preview",
+      "operations": [
+        {
+          "OperationId": "ScalingPlans_ListByHostPool",
+          "version": "2020-11-10-preview",
+          "jsonFilePath": "/specification/desktopvirtualization/resource-manager/Microsoft.DesktopVirtualization/preview/2020-11-10-preview/desktopvirtualization.json"
+        }
+      ],
+      "Resource": "Microsoft.DesktopVirtualization/hostPools/scalingPlans"
+    },
+    {
+      "APIVersion": "2019-01-23-preview",
+      "operations": [
+        {
+          "OperationId": "SessionHosts_List",
+          "version": "2019-01-23-preview",
+          "jsonFilePath": "/specification/desktopvirtualization/resource-manager/Microsoft.DesktopVirtualization/preview/2019-01-23-preview/desktopvirtualization.json"
+        },
+        {
+          "OperationId": "SessionHosts_Delete",
+          "version": "2019-09-24-preview",
+          "jsonFilePath": "/specification/desktopvirtualization/resource-manager/Microsoft.DesktopVirtualization/preview/2019-09-24-preview/desktopvirtualization.json"
+        },
+        {
+          "OperationId": "SessionHosts_Get",
+          "version": "2019-01-23-preview",
+          "jsonFilePath": "/specification/desktopvirtualization/resource-manager/Microsoft.DesktopVirtualization/preview/2019-01-23-preview/desktopvirtualization.json"
+        },
+        {
+          "OperationId": "SessionHosts_Update",
+          "version": "2019-09-24-preview",
+          "jsonFilePath": "/specification/desktopvirtualization/resource-manager/Microsoft.DesktopVirtualization/preview/2019-09-24-preview/desktopvirtualization.json"
+        }
+      ],
+      "Resource": "Microsoft.DesktopVirtualization/hostPools/sessionHosts"
+    },
+    {
+      "APIVersion": "2019-01-23-preview",
+      "operations": [
+        {
+          "OperationId": "UserSessions_List",
+          "version": "2019-01-23-preview",
+          "jsonFilePath": "/specification/desktopvirtualization/resource-manager/Microsoft.DesktopVirtualization/preview/2019-01-23-preview/desktopvirtualization.json"
+        },
+        {
+          "OperationId": "UserSessions_Delete",
+          "version": "2019-09-24-preview",
+          "jsonFilePath": "/specification/desktopvirtualization/resource-manager/Microsoft.DesktopVirtualization/preview/2019-09-24-preview/desktopvirtualization.json"
+        },
+        {
+          "OperationId": "UserSessions_Get",
+          "version": "2019-12-10-preview",
+          "jsonFilePath": "/specification/desktopvirtualization/resource-manager/Microsoft.DesktopVirtualization/preview/2019-12-10-preview/desktopvirtualization.json"
+        }
+      ],
+      "Resource": "Microsoft.DesktopVirtualization/hostPools/sessionHosts/userSessions"
+    },
+    {
+      "APIVersion": "2019-09-24-preview",
+      "operations": [
+        {
+          "OperationId": "UserSessions_Disconnect",
+          "version": "2019-09-24-preview",
+          "jsonFilePath": "/specification/desktopvirtualization/resource-manager/Microsoft.DesktopVirtualization/preview/2019-09-24-preview/desktopvirtualization.json"
+        }
+      ],
+      "Resource": "Microsoft.DesktopVirtualization/hostPools/sessionHosts/userSessions/disconnect"
+    },
+    {
+      "APIVersion": "2019-09-24-preview",
+      "operations": [
+        {
+          "OperationId": "UserSessions_SendMessage",
+          "version": "2019-09-24-preview",
+          "jsonFilePath": "/specification/desktopvirtualization/resource-manager/Microsoft.DesktopVirtualization/preview/2019-09-24-preview/desktopvirtualization.json"
+        }
+      ],
+      "Resource": "Microsoft.DesktopVirtualization/hostPools/sessionHosts/userSessions/sendMessage"
+    },
+    {
+      "APIVersion": "2019-01-23-preview",
+      "operations": [
+        {
+          "OperationId": "UserSessions_ListByHostPool",
+          "version": "2019-01-23-preview",
+          "jsonFilePath": "/specification/desktopvirtualization/resource-manager/Microsoft.DesktopVirtualization/preview/2019-01-23-preview/desktopvirtualization.json"
+        }
+      ],
+      "Resource": "Microsoft.DesktopVirtualization/hostPools/userSessions"
+    }
+  ],
+  "resourcelist": "Microsoft.DesktopVirtualization/scalingPlans,Microsoft.DesktopVirtualization/applicationGroups/applications,Microsoft.DesktopVirtualization/applicationGroups/desktops,Microsoft.DesktopVirtualization/applicationGroups/startMenuItems,Microsoft.DesktopVirtualization/hostPools/expandMsixImage,Microsoft.DesktopVirtualization/hostPools/msixPackages,Microsoft.DesktopVirtualization/hostPools/scalingPlans,Microsoft.DesktopVirtualization/hostPools/sessionHosts,Microsoft.DesktopVirtualization/hostPools/sessionHosts/userSessions,Microsoft.DesktopVirtualization/hostPools/sessionHosts/userSessions/disconnect,Microsoft.DesktopVirtualization/hostPools/sessionHosts/userSessions/sendMessage,Microsoft.DesktopVirtualization/hostPools/userSessions",
+  "onboardType": "depth",
+  "RPName": "desktopvirtualization",
+  "readmeFile": "/specification/desktopvirtualization/resource-manager/readme.md",
+  "target": "clicore"
+}
