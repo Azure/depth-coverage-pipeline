@@ -1,0 +1,58 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2016-11-01",
+      "operations": [
+        {
+          "OperationId": "Accounts_EnableKeyVault",
+          "version": "2016-11-01",
+          "jsonFilePath": "/specification/datalake-store/resource-manager/Microsoft.DataLakeStore/stable/2016-11-01/account.json"
+        }
+      ],
+      "Resource": "Microsoft.DataLakeStore/accounts/enableKeyVault"
+    },
+    {
+      "APIVersion": "2016-11-01",
+      "operations": [
+        {
+          "OperationId": "FirewallRules_Get",
+          "version": "2016-11-01",
+          "jsonFilePath": "/specification/datalake-store/resource-manager/Microsoft.DataLakeStore/stable/2016-11-01/account.json"
+        }
+      ],
+      "Resource": "Microsoft.DataLakeStore/accounts/firewallRules"
+    },
+    {
+      "APIVersion": "2016-11-01",
+      "operations": [
+        {
+          "OperationId": "TrustedIdProviders_ListByAccount",
+          "version": "2016-11-01",
+          "jsonFilePath": "/specification/datalake-store/resource-manager/Microsoft.DataLakeStore/stable/2016-11-01/account.json"
+        },
+        {
+          "OperationId": "TrustedIdProviders_Get",
+          "version": "2016-11-01",
+          "jsonFilePath": "/specification/datalake-store/resource-manager/Microsoft.DataLakeStore/stable/2016-11-01/account.json"
+        }
+      ],
+      "Resource": "Microsoft.DataLakeStore/accounts/trustedIdProviders"
+    },
+    {
+      "APIVersion": "2016-11-01",
+      "operations": [
+        {
+          "OperationId": "VirtualNetworkRules_Get",
+          "version": "2016-11-01",
+          "jsonFilePath": "/specification/datalake-store/resource-manager/Microsoft.DataLakeStore/stable/2016-11-01/account.json"
+        }
+      ],
+      "Resource": "Microsoft.DataLakeStore/accounts/virtualNetworkRules"
+    }
+  ],
+  "resourcelist": "Microsoft.DataLakeStore/accounts/enableKeyVault,Microsoft.DataLakeStore/accounts/firewallRules,Microsoft.DataLakeStore/accounts/trustedIdProviders,Microsoft.DataLakeStore/accounts/virtualNetworkRules",
+  "onboardType": "depth",
+  "RPName": "datalake-store",
+  "readmeFile": "/specification/datalake-store/resource-manager/readme.md",
+  "target": "clicore"
+}
