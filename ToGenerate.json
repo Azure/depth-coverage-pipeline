@@ -1,0 +1,125 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-07-01-preview",
+      "operations": [
+        {
+          "OperationId": "PolicyExemptions_Delete",
+          "version": "2020-07-01-preview",
+          "jsonFilePath": "/specification/resources/resource-manager/Microsoft.Authorization/preview/2020-07-01-preview/policyExemptions.json"
+        },
+        {
+          "OperationId": "PolicyExemptions_Get",
+          "version": "2020-07-01-preview",
+          "jsonFilePath": "/specification/resources/resource-manager/Microsoft.Authorization/preview/2020-07-01-preview/policyExemptions.json"
+        },
+        {
+          "OperationId": "PolicyExemptions_CreateOrUpdate",
+          "version": "2020-07-01-preview",
+          "jsonFilePath": "/specification/resources/resource-manager/Microsoft.Authorization/preview/2020-07-01-preview/policyExemptions.json"
+        },
+        {
+          "OperationId": "PolicyExemptions_List",
+          "version": "2020-07-01-preview",
+          "jsonFilePath": "/specification/resources/resource-manager/Microsoft.Authorization/preview/2020-07-01-preview/policyExemptions.json"
+        },
+        {
+          "OperationId": "PolicyExemptions_ListForResource",
+          "version": "2020-07-01-preview",
+          "jsonFilePath": "/specification/resources/resource-manager/Microsoft.Authorization/preview/2020-07-01-preview/policyExemptions.json"
+        },
+        {
+          "OperationId": "PolicyExemptions_ListForResourceGroup",
+          "version": "2020-07-01-preview",
+          "jsonFilePath": "/specification/resources/resource-manager/Microsoft.Authorization/preview/2020-07-01-preview/policyExemptions.json"
+        }
+      ],
+      "Resource": "Microsoft.Authorization/policyExemptions"
+    },
+    {
+      "APIVersion": "2019-07-01",
+      "operations": [
+        {
+          "OperationId": "Deployments_CheckExistenceAtScope",
+          "version": "2019-07-01",
+          "jsonFilePath": "/specification/resources/resource-manager/Microsoft.Resources/stable/2019-07-01/resources.json"
+        },
+        {
+          "OperationId": "Deployments_CheckExistenceAtSubscriptionScope",
+          "version": "2018-05-01",
+          "jsonFilePath": "/specification/resources/resource-manager/Microsoft.Resources/stable/2018-05-01/resources.json"
+        },
+        {
+          "OperationId": "Deployments_CheckExistence",
+          "version": "2016-02-01",
+          "jsonFilePath": "/specification/resources/resource-manager/Microsoft.Resources/stable/2016-02-01/resources.json"
+        }
+      ],
+      "Resource": "Microsoft.Resources/deployments"
+    },
+    {
+      "APIVersion": "2019-07-01",
+      "operations": [
+        {
+          "OperationId": "jitRequests_ListBySubscription",
+          "version": "2019-07-01",
+          "jsonFilePath": "/specification/resources/resource-manager/Microsoft.Solutions/stable/2019-07-01/managedapplications.json"
+        },
+        {
+          "OperationId": "jitRequests_ListByResourceGroup",
+          "version": "2019-07-01",
+          "jsonFilePath": "/specification/resources/resource-manager/Microsoft.Solutions/stable/2019-07-01/managedapplications.json"
+        },
+        {
+          "OperationId": "JitRequests_Get",
+          "version": "2019-07-01",
+          "jsonFilePath": "/specification/resources/resource-manager/Microsoft.Solutions/stable/2019-07-01/managedapplications.json"
+        },
+        {
+          "OperationId": "jitRequests_CreateOrUpdate",
+          "version": "2019-07-01",
+          "jsonFilePath": "/specification/resources/resource-manager/Microsoft.Solutions/stable/2019-07-01/managedapplications.json"
+        }
+      ],
+      "Resource": "Microsoft.Solutions/jitRequests"
+    },
+    {
+      "APIVersion": "2019-10-01-preview",
+      "operations": [
+        {
+          "OperationId": "DeploymentScripts_Create",
+          "version": "2019-10-01-preview",
+          "jsonFilePath": "/specification/resources/resource-manager/Microsoft.Resources/preview/2019-10-01-preview/deploymentScripts.json"
+        }
+      ],
+      "Resource": "Microsoft.Resources/deploymentScripts"
+    },
+    {
+      "APIVersion": "2019-10-01-preview",
+      "operations": [
+        {
+          "OperationId": "DeploymentScripts_GetLogsDefault",
+          "version": "2019-10-01-preview",
+          "jsonFilePath": "/specification/resources/resource-manager/Microsoft.Resources/preview/2019-10-01-preview/deploymentScripts.json"
+        }
+      ],
+      "Resource": "Microsoft.Resources/deploymentScripts/logs/default"
+    },
+    {
+      "APIVersion": "2019-07-01",
+      "operations": [
+        {
+          "OperationId": "Applications_RefreshPermissions",
+          "version": "2019-07-01",
+          "jsonFilePath": "/specification/resources/resource-manager/Microsoft.Solutions/stable/2019-07-01/managedapplications.json"
+        }
+      ],
+      "Resource": "Microsoft.Solutions/applications/refreshPermissions"
+    }
+  ],
+  "resourcelist": "Microsoft.Authorization/policyExemptions,Microsoft.Resources/deployments,Microsoft.Solutions/jitRequests,Microsoft.Resources/deploymentScripts,Microsoft.Resources/deploymentScripts/logs/default,Microsoft.Solutions/applications/refreshPermissions",
+  "onboardType": "depth",
+  "RPName": "resources",
+  "readmeFile": "/specification/resources/resource-manager/readme.md",
+  "target": "clicore"
+}
