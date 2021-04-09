@@ -1,0 +1,29 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2018-01-10",
+      "operations": [],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationMigrationItems"
+    },
+    {
+      "APIVersion": "2016-08-10",
+      "operations": [],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationRecoveryServicesProviders"
+    },
+    {
+      "APIVersion": "2016-08-10",
+      "operations": [],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationvCenters"
+    },
+    {
+      "APIVersion": "2016-08-10",
+      "operations": [],
+      "Resource": "Microsoft.RecoveryServices/vaults/replicationRecoveryPlans"
+    }
+  ],
+  "resourcelist": "Microsoft.RecoveryServices/vaults/replicationFabrics/replicationProtectionContainers/replicationMigrationItems,Microsoft.RecoveryServices/vaults/replicationFabrics/replicationRecoveryServicesProviders,Microsoft.RecoveryServices/vaults/replicationFabrics/replicationvCenters,Microsoft.RecoveryServices/vaults/replicationRecoveryPlans",
+  "onboardType": "depth",
+  "RPName": "recoveryservicessiterecovery",
+  "readmeFile": "/specification/recoveryservicessiterecovery/resource-manager/readme.md",
+  "target": "terraform"
+}
