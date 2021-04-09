@@ -1,0 +1,14 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2015-12-01",
+      "operations": [],
+      "Resource": "Microsoft.Batch/batchAccounts/applications/versions"
+    }
+  ],
+  "resourcelist": "Microsoft.Batch/batchAccounts/applications/versions",
+  "onboardType": "depth",
+  "RPName": "batch",
+  "readmeFile": "/specification/batch/resource-manager/readme.md",
+  "target": "terraform"
+}
