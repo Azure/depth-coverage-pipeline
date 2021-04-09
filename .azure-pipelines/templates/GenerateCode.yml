@@ -150,10 +150,17 @@ steps:
     targetPath: '$(Pipeline.Workspace)/sdk'
     artifact: 'sdkvariables'
     publishLocation: 'pipeline'
-- bash: GenerateExmaple
-    npm install oav@2.2.6
+- bash: |
+    sudo npm install -g oav@2.2.6 --unsafe-perm=true --allow-root
+    sudo npm install -g depthcoverage --unsafe-perm=true --allow-root
     depthcoverage --token=$(PIPELINE_TOKEN) --org=$(PIPELINE_ORG) --repo=$(PIPELINE_REPO) --operation=read --PRNumber=$(System.PullRequest.PullRequestNumber)
-    oav generate-examples [PATH]
+    jsonfiles=`jq .jsonFilelist $(RESOURCE_MAP_FILE)`
+    for i in "${jsonfiles[@]}"
+    do
+      echo "$i"
+      oav generate-examples $(Pipeline.Workspace)/s/azure-rest-api-specs/$i
+    done
+    # oav generate-examples [PATH]
   displayName: 'Generate Example'
 - bash: |
     echo $pwd

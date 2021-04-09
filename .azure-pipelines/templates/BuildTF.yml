@@ -174,6 +174,3 @@ steps:
   displayName: "build"
   name: "buildstep"
   condition: eq(variables['TARGET'], 'terraform')
-- bash: |
-    echo "alert issue"
-  displayName: 'Alert issue'
