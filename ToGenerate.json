@@ -1,0 +1,68 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2018-03-01",
+      "operations": [
+        {
+          "OperationId": "PatchSchedules_ListByRedisResource",
+          "version": "2018-03-01",
+          "jsonFilePath": "/specification/redis/resource-manager/Microsoft.Cache/stable/2018-03-01/redis.json"
+        }
+      ],
+      "Resource": "Microsoft.Cache/Redis/patchSchedules"
+    },
+    {
+      "APIVersion": "2020-06-01",
+      "operations": [
+        {
+          "OperationId": "PatchSchedules_ListByRedisResource",
+          "version": "2020-06-01",
+          "jsonFilePath": "/specification/redis/resource-manager/Microsoft.Cache/stable/2020-06-01/redis.json"
+        }
+      ],
+      "Resource": "Microsoft.Cache/redis/patchSchedules"
+    },
+    {
+      "APIVersion": "2020-06-01",
+      "operations": [
+        {
+          "OperationId": "PrivateEndpointConnections_List",
+          "version": "2020-06-01",
+          "jsonFilePath": "/specification/redis/resource-manager/Microsoft.Cache/stable/2020-06-01/redis.json"
+        },
+        {
+          "OperationId": "PrivateEndpointConnections_Delete",
+          "version": "2020-06-01",
+          "jsonFilePath": "/specification/redis/resource-manager/Microsoft.Cache/stable/2020-06-01/redis.json"
+        },
+        {
+          "OperationId": "PrivateEndpointConnections_Get",
+          "version": "2020-06-01",
+          "jsonFilePath": "/specification/redis/resource-manager/Microsoft.Cache/stable/2020-06-01/redis.json"
+        },
+        {
+          "OperationId": "PrivateEndpointConnections_Put",
+          "version": "2020-06-01",
+          "jsonFilePath": "/specification/redis/resource-manager/Microsoft.Cache/stable/2020-06-01/redis.json"
+        }
+      ],
+      "Resource": "Microsoft.Cache/redis/privateEndpointConnections"
+    },
+    {
+      "APIVersion": "2020-06-01",
+      "operations": [
+        {
+          "OperationId": "PrivateLinkResources_ListByRedisCache",
+          "version": "2020-06-01",
+          "jsonFilePath": "/specification/redis/resource-manager/Microsoft.Cache/stable/2020-06-01/redis.json"
+        }
+      ],
+      "Resource": "Microsoft.Cache/redis/privateLinkResources"
+    }
+  ],
+  "resourcelist": "Microsoft.Cache/Redis/patchSchedules,Microsoft.Cache/redis/patchSchedules,Microsoft.Cache/redis/privateEndpointConnections,Microsoft.Cache/redis/privateLinkResources",
+  "onboardType": "depth",
+  "RPName": "redis",
+  "readmeFile": "/specification/redis/resource-manager/readme.md",
+  "target": "clicore"
+}
