@@ -1,0 +1,124 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2018-01-01",
+      "operations": [],
+      "Resource": "Microsoft.ApiManagement/service/apis/diagnostics/loggers"
+    },
+    {
+      "APIVersion": "2020-06-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.ApiManagement/service/apis/issues"
+    },
+    {
+      "APIVersion": "2020-06-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.ApiManagement/service/apis/issues/attachments"
+    },
+    {
+      "APIVersion": "2020-06-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.ApiManagement/service/apis/issues/comments"
+    },
+    {
+      "APIVersion": "2016-10-10",
+      "operations": [],
+      "Resource": "Microsoft.ApiManagement/service/apis/operations/policy"
+    },
+    {
+      "APIVersion": "2018-06-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.ApiManagement/service/apis/operations/tags"
+    },
+    {
+      "APIVersion": "2016-10-10",
+      "operations": [],
+      "Resource": "Microsoft.ApiManagement/service/apis/policy"
+    },
+    {
+      "APIVersion": "2018-06-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.ApiManagement/service/apis/releases"
+    },
+    {
+      "APIVersion": "2019-12-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.ApiManagement/service/apis/tagDescriptions"
+    },
+    {
+      "APIVersion": "2018-06-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.ApiManagement/service/apis/tags"
+    },
+    {
+      "APIVersion": "2020-06-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.ApiManagement/service/contentTypes"
+    },
+    {
+      "APIVersion": "2020-06-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.ApiManagement/service/contentTypes/contentItems"
+    },
+    {
+      "APIVersion": "2018-01-01",
+      "operations": [],
+      "Resource": "Microsoft.ApiManagement/service/diagnostics/loggers"
+    },
+    {
+      "APIVersion": "2020-06-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.ApiManagement/service/gateways"
+    },
+    {
+      "APIVersion": "2020-06-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.ApiManagement/service/gateways/apis"
+    },
+    {
+      "APIVersion": "2020-06-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.ApiManagement/service/gateways/certificateAuthorities"
+    },
+    {
+      "APIVersion": "2020-06-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.ApiManagement/service/gateways/hostnameConfigurations"
+    },
+    {
+      "APIVersion": "2018-06-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.ApiManagement/service/notifications/recipientEmails"
+    },
+    {
+      "APIVersion": "2020-06-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.ApiManagement/service/notifications/recipientUsers"
+    },
+    {
+      "APIVersion": "2016-10-10",
+      "operations": [],
+      "Resource": "Microsoft.ApiManagement/service/products/policy"
+    },
+    {
+      "APIVersion": "2020-06-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.ApiManagement/service/products/tags"
+    },
+    {
+      "APIVersion": "2018-06-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.ApiManagement/service/tags"
+    },
+    {
+      "APIVersion": "2016-10-10",
+      "operations": [],
+      "Resource": "Microsoft.ApiManagement/service/tenant/policy"
+    }
+  ],
+  "resourcelist": "Microsoft.ApiManagement/service/apis/diagnostics/loggers,Microsoft.ApiManagement/service/apis/issues,Microsoft.ApiManagement/service/apis/issues/attachments,Microsoft.ApiManagement/service/apis/issues/comments,Microsoft.ApiManagement/service/apis/operations/policy,Microsoft.ApiManagement/service/apis/operations/tags,Microsoft.ApiManagement/service/apis/policy,Microsoft.ApiManagement/service/apis/releases,Microsoft.ApiManagement/service/apis/tagDescriptions,Microsoft.ApiManagement/service/apis/tags,Microsoft.ApiManagement/service/contentTypes,Microsoft.ApiManagement/service/contentTypes/contentItems,Microsoft.ApiManagement/service/diagnostics/loggers,Microsoft.ApiManagement/service/gateways,Microsoft.ApiManagement/service/gateways/apis,Microsoft.ApiManagement/service/gateways/certificateAuthorities,Microsoft.ApiManagement/service/gateways/hostnameConfigurations,Microsoft.ApiManagement/service/notifications/recipientEmails,Microsoft.ApiManagement/service/notifications/recipientUsers,Microsoft.ApiManagement/service/products/policy,Microsoft.ApiManagement/service/products/tags,Microsoft.ApiManagement/service/tags,Microsoft.ApiManagement/service/tenant/policy",
+  "onboardType": "depth",
+  "RPName": "apimanagement",
+  "readmeFile": "/specification/apimanagement/resource-manager/readme.md",
+  "target": "terraform"
+}
