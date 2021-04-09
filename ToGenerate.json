@@ -1,0 +1,891 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2015-10-31",
+      "operations": [
+        {
+          "OperationId": "AgentRegistrationInformation_Get",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/dscNode.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/agentRegistrationInformation"
+    },
+    {
+      "APIVersion": "2018-01-15",
+      "operations": [
+        {
+          "OperationId": "AgentRegistrationInformation_RegenerateKey",
+          "version": "2018-01-15",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2018-01-15/dscNode.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/agentRegistrationInformation/regenerateKey"
+    },
+    {
+      "APIVersion": "2015-10-31",
+      "operations": [
+        {
+          "OperationId": "Certificate_ListByAutomationAccount",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/certificate.json"
+        },
+        {
+          "OperationId": "Certificate_Delete",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/certificate.json"
+        },
+        {
+          "OperationId": "Certificate_Get",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/certificate.json"
+        },
+        {
+          "OperationId": "Certificate_CreateOrUpdate",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/certificate.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/certificates"
+    },
+    {
+      "APIVersion": "2015-10-31",
+      "operations": [
+        {
+          "OperationId": "DscCompilationJob_ListByAutomationAccount",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/dscCompilationJob.json"
+        },
+        {
+          "OperationId": "DscCompilationJob_Get",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/dscCompilationJob.json"
+        },
+        {
+          "OperationId": "DscCompilationJob_Create",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/dscCompilationJob.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/compilationjobs"
+    },
+    {
+      "APIVersion": "2018-01-15",
+      "operations": [
+        {
+          "OperationId": "DscCompilationJobStream_ListByJob",
+          "version": "2018-01-15",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2018-01-15/dscCompilationJob.json"
+        },
+        {
+          "OperationId": "DscCompilationJob_GetStream",
+          "version": "2018-01-15",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2018-01-15/dscCompilationJob.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/compilationjobs/streams"
+    },
+    {
+      "APIVersion": "2015-10-31",
+      "operations": [
+        {
+          "OperationId": "DscConfiguration_ListByAutomationAccount",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/dscConfiguration.json"
+        },
+        {
+          "OperationId": "DscConfiguration_Delete",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/dscConfiguration.json"
+        },
+        {
+          "OperationId": "DscConfiguration_Get",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/dscConfiguration.json"
+        },
+        {
+          "OperationId": "DscConfiguration_CreateOrUpdate",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/dscConfiguration.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/configurations"
+    },
+    {
+      "APIVersion": "2015-10-31",
+      "operations": [
+        {
+          "OperationId": "DscConfiguration_GetContent",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/dscConfiguration.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/configurations/content"
+    },
+    {
+      "APIVersion": "2015-10-31",
+      "operations": [
+        {
+          "OperationId": "Connection_ListByAutomationAccount",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/connection.json"
+        },
+        {
+          "OperationId": "Connection_Delete",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/connection.json"
+        },
+        {
+          "OperationId": "Connection_Get",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/connection.json"
+        },
+        {
+          "OperationId": "Connection_CreateOrUpdate",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/connection.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/connections"
+    },
+    {
+      "APIVersion": "2015-10-31",
+      "operations": [
+        {
+          "OperationId": "ConnectionType_ListByAutomationAccount",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/connectionType.json"
+        },
+        {
+          "OperationId": "ConnectionType_Delete",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/connectionType.json"
+        },
+        {
+          "OperationId": "ConnectionType_Get",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/connectionType.json"
+        },
+        {
+          "OperationId": "ConnectionType_CreateOrUpdate",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/connectionType.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/connectionTypes"
+    },
+    {
+      "APIVersion": "2015-10-31",
+      "operations": [
+        {
+          "OperationId": "Credential_ListByAutomationAccount",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/credential.json"
+        },
+        {
+          "OperationId": "Credential_Delete",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/credential.json"
+        },
+        {
+          "OperationId": "Credential_Get",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/credential.json"
+        },
+        {
+          "OperationId": "Credential_CreateOrUpdate",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/credential.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/credentials"
+    },
+    {
+      "APIVersion": "2015-10-31",
+      "operations": [
+        {
+          "OperationId": "HybridRunbookWorkerGroup_ListByAutomationAccount",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/hybridRunbookWorkerGroup.json"
+        },
+        {
+          "OperationId": "HybridRunbookWorkerGroup_Delete",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/hybridRunbookWorkerGroup.json"
+        },
+        {
+          "OperationId": "HybridRunbookWorkerGroup_Get",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/hybridRunbookWorkerGroup.json"
+        },
+        {
+          "OperationId": "HybridRunbookWorkerGroup_Update",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/hybridRunbookWorkerGroup.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/hybridRunbookWorkerGroups"
+    },
+    {
+      "APIVersion": "2015-10-31",
+      "operations": [
+        {
+          "OperationId": "Job_GetOutput",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/job.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/jobs/output"
+    },
+    {
+      "APIVersion": "2015-10-31",
+      "operations": [
+        {
+          "OperationId": "Job_Resume",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/job.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/jobs/resume"
+    },
+    {
+      "APIVersion": "2015-10-31",
+      "operations": [
+        {
+          "OperationId": "Job_GetRunbookContent",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/job.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/jobs/runbookContent"
+    },
+    {
+      "APIVersion": "2015-10-31",
+      "operations": [
+        {
+          "OperationId": "JobStream_ListByJob",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/job.json"
+        },
+        {
+          "OperationId": "JobStream_Get",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/job.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/jobs/streams"
+    },
+    {
+      "APIVersion": "2017-05-15-preview",
+      "operations": [
+        {
+          "OperationId": "Job_Suspend",
+          "version": "2017-05-15-preview",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/preview/2017-05-15-preview/job.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/jobs/suspend"
+    },
+    {
+      "APIVersion": "2015-10-31",
+      "operations": [
+        {
+          "OperationId": "JobSchedule_ListByAutomationAccount",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/jobSchedule.json"
+        },
+        {
+          "OperationId": "JobSchedule_Delete",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/jobSchedule.json"
+        },
+        {
+          "OperationId": "JobSchedule_Get",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/jobSchedule.json"
+        },
+        {
+          "OperationId": "JobSchedule_Create",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/jobSchedule.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/jobSchedules"
+    },
+    {
+      "APIVersion": "2015-10-31",
+      "operations": [
+        {
+          "OperationId": "LinkedWorkspace_Get",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/linkedWorkspace.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/linkedWorkspace"
+    },
+    {
+      "APIVersion": "2015-10-31",
+      "operations": [
+        {
+          "OperationId": "Keys_ListByAutomationAccount",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/account.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/listKeys"
+    },
+    {
+      "APIVersion": "2015-10-31",
+      "operations": [
+        {
+          "OperationId": "Module_ListByAutomationAccount",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/module.json"
+        },
+        {
+          "OperationId": "Module_Delete",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/module.json"
+        },
+        {
+          "OperationId": "Module_Get",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/module.json"
+        },
+        {
+          "OperationId": "Module_CreateOrUpdate",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/module.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/modules"
+    },
+    {
+      "APIVersion": "2015-10-31",
+      "operations": [
+        {
+          "OperationId": "Activity_ListByModule",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/module.json"
+        },
+        {
+          "OperationId": "Activity_Get",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/module.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/modules/activities"
+    },
+    {
+      "APIVersion": "2015-10-31",
+      "operations": [
+        {
+          "OperationId": "DscNodeConfiguration_ListByAutomationAccount",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/dscNodeConfiguration.json"
+        },
+        {
+          "OperationId": "DscNodeConfiguration_Delete",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/dscNodeConfiguration.json"
+        },
+        {
+          "OperationId": "DscNodeConfiguration_Get",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/dscNodeConfiguration.json"
+        },
+        {
+          "OperationId": "DscNodeConfiguration_CreateOrUpdate",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/dscNodeConfiguration.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/nodeConfigurations"
+    },
+    {
+      "APIVersion": "2018-01-15",
+      "operations": [
+        {
+          "OperationId": "NodeCountInformation_Get",
+          "version": "2018-01-15",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2018-01-15/dscNodeCounts.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/nodecounts"
+    },
+    {
+      "APIVersion": "2015-10-31",
+      "operations": [
+        {
+          "OperationId": "DscNode_ListByAutomationAccount",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/dscNode.json"
+        },
+        {
+          "OperationId": "DscNode_Delete",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/dscNode.json"
+        },
+        {
+          "OperationId": "DscNode_Get",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/dscNode.json"
+        },
+        {
+          "OperationId": "DscNode_Update",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/dscNode.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/nodes"
+    },
+    {
+      "APIVersion": "2015-10-31",
+      "operations": [
+        {
+          "OperationId": "NodeReports_ListByNode",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/dscNode.json"
+        },
+        {
+          "OperationId": "NodeReports_Get",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/dscNode.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/nodes/reports"
+    },
+    {
+      "APIVersion": "2018-01-15",
+      "operations": [
+        {
+          "OperationId": "NodeReports_GetContent",
+          "version": "2018-01-15",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2018-01-15/dscNode.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/nodes/reports/content"
+    },
+    {
+      "APIVersion": "2020-01-13-preview",
+      "operations": [
+        {
+          "OperationId": "PrivateEndpointConnections_ListByAutomationAccount",
+          "version": "2020-01-13-preview",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/preview/2020-01-13-preview/privateEndpointConnection.json"
+        },
+        {
+          "OperationId": "PrivateEndpointConnections_Get",
+          "version": "2020-01-13-preview",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/preview/2020-01-13-preview/privateEndpointConnection.json"
+        },
+        {
+          "OperationId": "PrivateEndpointConnections_CreateOrUpdate",
+          "version": "2020-01-13-preview",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/preview/2020-01-13-preview/privateEndpointConnection.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/privateEndpointConnections"
+    },
+    {
+      "APIVersion": "2020-01-13-preview",
+      "operations": [
+        {
+          "OperationId": "PrivateLinkResources_Automation",
+          "version": "2020-01-13-preview",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/preview/2020-01-13-preview/privateLinkResources.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/privateLinkResources"
+    },
+    {
+      "APIVersion": "2018-06-30",
+      "operations": [
+        {
+          "OperationId": "Python2Package_ListByAutomationAccount",
+          "version": "2018-06-30",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2018-06-30/python2package.json"
+        },
+        {
+          "OperationId": "Python2Package_Delete",
+          "version": "2018-06-30",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2018-06-30/python2package.json"
+        },
+        {
+          "OperationId": "Python2Package_Get",
+          "version": "2018-06-30",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2018-06-30/python2package.json"
+        },
+        {
+          "OperationId": "Python2Package_CreateOrUpdate",
+          "version": "2018-06-30",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2018-06-30/python2package.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/python2Packages"
+    },
+    {
+      "APIVersion": "2015-10-31",
+      "operations": [
+        {
+          "OperationId": "Runbook_GetContent",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/runbook.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/runbooks/content"
+    },
+    {
+      "APIVersion": "2015-10-31",
+      "operations": [
+        {
+          "OperationId": "RunbookDraft_Get",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/runbook.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/runbooks/draft"
+    },
+    {
+      "APIVersion": "2015-10-31",
+      "operations": [
+        {
+          "OperationId": "RunbookDraft_GetContent",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/runbook.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/runbooks/draft/content"
+    },
+    {
+      "APIVersion": "2015-10-31",
+      "operations": [
+        {
+          "OperationId": "RunbookDraft_Publish",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/runbook.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/runbooks/draft/publish"
+    },
+    {
+      "APIVersion": "2015-10-31",
+      "operations": [
+        {
+          "OperationId": "TestJob_Get",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/runbook.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/runbooks/draft/testJob"
+    },
+    {
+      "APIVersion": "2015-10-31",
+      "operations": [
+        {
+          "OperationId": "TestJob_Stop",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/runbook.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/runbooks/draft/testJob/stop"
+    },
+    {
+      "APIVersion": "2015-10-31",
+      "operations": [
+        {
+          "OperationId": "TestJobStreams_ListByTestJob",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/runbook.json"
+        },
+        {
+          "OperationId": "TestJobStreams_Get",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/runbook.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/runbooks/draft/testJob/streams"
+    },
+    {
+      "APIVersion": "2015-10-31",
+      "operations": [
+        {
+          "OperationId": "RunbookDraft_UndoEdit",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/runbook.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/runbooks/draft/undoEdit"
+    },
+    {
+      "APIVersion": "2015-10-31",
+      "operations": [
+        {
+          "OperationId": "Schedule_ListByAutomationAccount",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/schedule.json"
+        },
+        {
+          "OperationId": "Schedule_Delete",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/schedule.json"
+        },
+        {
+          "OperationId": "Schedule_Get",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/schedule.json"
+        },
+        {
+          "OperationId": "Schedule_CreateOrUpdate",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/schedule.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/schedules"
+    },
+    {
+      "APIVersion": "2017-05-15-preview",
+      "operations": [
+        {
+          "OperationId": "SoftwareUpdateConfigurationMachineRuns_List",
+          "version": "2017-05-15-preview",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/preview/2017-05-15-preview/softwareUpdateConfigurationMachineRun.json"
+        },
+        {
+          "OperationId": "SoftwareUpdateConfigurationMachineRuns_GetById",
+          "version": "2017-05-15-preview",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/preview/2017-05-15-preview/softwareUpdateConfigurationMachineRun.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/softwareUpdateConfigurationMachineRuns"
+    },
+    {
+      "APIVersion": "2017-05-15-preview",
+      "operations": [
+        {
+          "OperationId": "SoftwareUpdateConfigurationRuns_List",
+          "version": "2017-05-15-preview",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/preview/2017-05-15-preview/softwareUpdateConfigurationRun.json"
+        },
+        {
+          "OperationId": "SoftwareUpdateConfigurationRuns_GetById",
+          "version": "2017-05-15-preview",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/preview/2017-05-15-preview/softwareUpdateConfigurationRun.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/softwareUpdateConfigurationRuns"
+    },
+    {
+      "APIVersion": "2017-05-15-preview",
+      "operations": [
+        {
+          "OperationId": "SoftwareUpdateConfigurations_List",
+          "version": "2017-05-15-preview",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/preview/2017-05-15-preview/softwareUpdateConfiguration.json"
+        },
+        {
+          "OperationId": "SoftwareUpdateConfigurations_Delete",
+          "version": "2017-05-15-preview",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/preview/2017-05-15-preview/softwareUpdateConfiguration.json"
+        },
+        {
+          "OperationId": "SoftwareUpdateConfigurations_GetByName",
+          "version": "2017-05-15-preview",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/preview/2017-05-15-preview/softwareUpdateConfiguration.json"
+        },
+        {
+          "OperationId": "SoftwareUpdateConfigurations_Create",
+          "version": "2017-05-15-preview",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/preview/2017-05-15-preview/softwareUpdateConfiguration.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/softwareUpdateConfigurations"
+    },
+    {
+      "APIVersion": "2017-05-15-preview",
+      "operations": [
+        {
+          "OperationId": "SourceControl_ListByAutomationAccount",
+          "version": "2017-05-15-preview",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/preview/2017-05-15-preview/sourceControl.json"
+        },
+        {
+          "OperationId": "SourceControl_Delete",
+          "version": "2017-05-15-preview",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/preview/2017-05-15-preview/sourceControl.json"
+        },
+        {
+          "OperationId": "SourceControl_Get",
+          "version": "2017-05-15-preview",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/preview/2017-05-15-preview/sourceControl.json"
+        },
+        {
+          "OperationId": "SourceControl_CreateOrUpdate",
+          "version": "2017-05-15-preview",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/preview/2017-05-15-preview/sourceControl.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/sourceControls"
+    },
+    {
+      "APIVersion": "2017-05-15-preview",
+      "operations": [
+        {
+          "OperationId": "SourceControlSyncJob_ListByAutomationAccount",
+          "version": "2017-05-15-preview",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/preview/2017-05-15-preview/sourceControlSyncJob.json"
+        },
+        {
+          "OperationId": "SourceControlSyncJob_Get",
+          "version": "2017-05-15-preview",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/preview/2017-05-15-preview/sourceControlSyncJob.json"
+        },
+        {
+          "OperationId": "SourceControlSyncJob_Create",
+          "version": "2017-05-15-preview",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/preview/2017-05-15-preview/sourceControlSyncJob.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/sourceControls/sourceControlSyncJobs"
+    },
+    {
+      "APIVersion": "2017-05-15-preview",
+      "operations": [
+        {
+          "OperationId": "SourceControlSyncJobStreams_ListBySyncJob",
+          "version": "2017-05-15-preview",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/preview/2017-05-15-preview/sourceControlSyncJobStreams.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/sourceControls/sourceControlSyncJobs/streams"
+    },
+    {
+      "APIVersion": "2015-10-31",
+      "operations": [
+        {
+          "OperationId": "Statistics_ListByAutomationAccount",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/account.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/statistics"
+    },
+    {
+      "APIVersion": "2015-10-31",
+      "operations": [
+        {
+          "OperationId": "Usages_ListByAutomationAccount",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/account.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/usages"
+    },
+    {
+      "APIVersion": "2015-10-31",
+      "operations": [
+        {
+          "OperationId": "Variable_ListByAutomationAccount",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/variable.json"
+        },
+        {
+          "OperationId": "Variable_Delete",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/variable.json"
+        },
+        {
+          "OperationId": "Variable_Get",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/variable.json"
+        },
+        {
+          "OperationId": "Variable_CreateOrUpdate",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/variable.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/variables"
+    },
+    {
+      "APIVersion": "2015-10-31",
+      "operations": [
+        {
+          "OperationId": "Watcher_ListByAutomationAccount",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/watcher.json"
+        },
+        {
+          "OperationId": "Watcher_Get",
+          "version": "2020-01-13-preview",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/preview/2020-01-13-preview/watcher.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/watchers"
+    },
+    {
+      "APIVersion": "2015-10-31",
+      "operations": [
+        {
+          "OperationId": "Watcher_Start",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/watcher.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/watchers/start"
+    },
+    {
+      "APIVersion": "2015-10-31",
+      "operations": [
+        {
+          "OperationId": "Watcher_Stop",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/watcher.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/watchers/stop"
+    },
+    {
+      "APIVersion": "2015-10-31",
+      "operations": [
+        {
+          "OperationId": "Webhook_ListByAutomationAccount",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/webhook.json"
+        },
+        {
+          "OperationId": "Webhook_Delete",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/webhook.json"
+        },
+        {
+          "OperationId": "Webhook_Get",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/webhook.json"
+        },
+        {
+          "OperationId": "Webhook_CreateOrUpdate",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/webhook.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/webhooks"
+    },
+    {
+      "APIVersion": "2015-10-31",
+      "operations": [
+        {
+          "OperationId": "Webhook_GenerateUri",
+          "version": "2015-10-31",
+          "jsonFilePath": "/specification/automation/resource-manager/Microsoft.Automation/stable/2015-10-31/webhook.json"
+        }
+      ],
+      "Resource": "Microsoft.Automation/automationAccounts/webhooks/generateUri"
+    }
+  ],
+  "resourcelist": "Microsoft.Automation/automationAccounts/agentRegistrationInformation,Microsoft.Automation/automationAccounts/agentRegistrationInformation/regenerateKey,Microsoft.Automation/automationAccounts/certificates,Microsoft.Automation/automationAccounts/compilationjobs,Microsoft.Automation/automationAccounts/compilationjobs/streams,Microsoft.Automation/automationAccounts/configurations,Microsoft.Automation/automationAccounts/configurations/content,Microsoft.Automation/automationAccounts/connections,Microsoft.Automation/automationAccounts/connectionTypes,Microsoft.Automation/automationAccounts/credentials,Microsoft.Automation/automationAccounts/hybridRunbookWorkerGroups,Microsoft.Automation/automationAccounts/jobs/output,Microsoft.Automation/automationAccounts/jobs/resume,Microsoft.Automation/automationAccounts/jobs/runbookContent,Microsoft.Automation/automationAccounts/jobs/streams,Microsoft.Automation/automationAccounts/jobs/suspend,Microsoft.Automation/automationAccounts/jobSchedules,Microsoft.Automation/automationAccounts/linkedWorkspace,Microsoft.Automation/automationAccounts/listKeys,Microsoft.Automation/automationAccounts/modules,Microsoft.Automation/automationAccounts/modules/activities,Microsoft.Automation/automationAccounts/nodeConfigurations,Microsoft.Automation/automationAccounts/nodecounts,Microsoft.Automation/automationAccounts/nodes,Microsoft.Automation/automationAccounts/nodes/reports,Microsoft.Automation/automationAccounts/nodes/reports/content,Microsoft.Automation/automationAccounts/privateEndpointConnections,Microsoft.Automation/automationAccounts/privateLinkResources,Microsoft.Automation/automationAccounts/python2Packages,Microsoft.Automation/automationAccounts/runbooks/content,Microsoft.Automation/automationAccounts/runbooks/draft,Microsoft.Automation/automationAccounts/runbooks/draft/content,Microsoft.Automation/automationAccounts/runbooks/draft/publish,Microsoft.Automation/automationAccounts/runbooks/draft/testJob,Microsoft.Automation/automationAccounts/runbooks/draft/testJob/stop,Microsoft.Automation/automationAccounts/runbooks/draft/testJob/streams,Microsoft.Automation/automationAccounts/runbooks/draft/undoEdit,Microsoft.Automation/automationAccounts/schedules,Microsoft.Automation/automationAccounts/softwareUpdateConfigurationMachineRuns,Microsoft.Automation/automationAccounts/softwareUpdateConfigurationRuns,Microsoft.Automation/automationAccounts/softwareUpdateConfigurations,Microsoft.Automation/automationAccounts/sourceControls,Microsoft.Automation/automationAccounts/sourceControls/sourceControlSyncJobs,Microsoft.Automation/automationAccounts/sourceControls/sourceControlSyncJobs/streams,Microsoft.Automation/automationAccounts/statistics,Microsoft.Automation/automationAccounts/usages,Microsoft.Automation/automationAccounts/variables,Microsoft.Automation/automationAccounts/watchers,Microsoft.Automation/automationAccounts/watchers/start,Microsoft.Automation/automationAccounts/watchers/stop,Microsoft.Automation/automationAccounts/webhooks,Microsoft.Automation/automationAccounts/webhooks/generateUri",
+  "onboardType": "depth",
+  "RPName": "automation",
+  "readmeFile": "/specification/automation/resource-manager/readme.md",
+  "target": "clicore"
+}
