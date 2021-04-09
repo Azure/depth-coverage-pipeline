@@ -1,0 +1,25 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2019-09-01",
+      "operations": [
+        {
+          "OperationId": "MarketplaceRegistrationDefinitions_List",
+          "version": "2019-09-01",
+          "jsonFilePath": "/specification/managedservices/resource-manager/Microsoft.ManagedServices/stable/2019-09-01/managedservices.json"
+        },
+        {
+          "OperationId": "MarketplaceRegistrationDefinitions_Get",
+          "version": "2020-02-01-preview",
+          "jsonFilePath": "/specification/managedservices/resource-manager/Microsoft.ManagedServices/preview/2020-02-01-preview/managedservices.json"
+        }
+      ],
+      "Resource": "Microsoft.ManagedServices/marketplaceRegistrationDefinitions"
+    }
+  ],
+  "resourcelist": "Microsoft.ManagedServices/marketplaceRegistrationDefinitions",
+  "onboardType": "depth",
+  "RPName": "managedservices",
+  "readmeFile": "/specification/managedservices/resource-manager/readme.md",
+  "target": "clicore"
+}
