@@ -1,0 +1,151 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2018-06-01",
+      "operations": [
+        {
+          "OperationId": "Advisors_Get",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/postgresql/resource-manager/Microsoft.DBforPostgreSQL/stable/2018-06-01/PerformanceRecommendations.json"
+        }
+      ],
+      "Resource": "Microsoft.DBforPostgreSQL/servers/advisors"
+    },
+    {
+      "APIVersion": "2018-06-01",
+      "operations": [
+        {
+          "OperationId": "RecommendedActions_ListByServer",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/postgresql/resource-manager/Microsoft.DBforPostgreSQL/stable/2018-06-01/PerformanceRecommendations.json"
+        }
+      ],
+      "Resource": "Microsoft.DBforPostgreSQL/servers/advisors/recommendedActions"
+    },
+    {
+      "APIVersion": "2018-06-01",
+      "operations": [
+        {
+          "OperationId": "Advisors_StartRecommendedActionSession",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/postgresql/resource-manager/Microsoft.DBforPostgreSQL/stable/2018-06-01/PerformanceRecommendations.json"
+        }
+      ],
+      "Resource": "Microsoft.DBforPostgreSQL/servers/advisors/recommendedActionSessions"
+    },
+    {
+      "APIVersion": "2017-12-01",
+      "operations": [
+        {
+          "OperationId": "ServerBasedPerformanceTier_List",
+          "version": "2017-12-01",
+          "jsonFilePath": "/specification/postgresql/resource-manager/Microsoft.DBforPostgreSQL/stable/2017-12-01/postgresql.json"
+        }
+      ],
+      "Resource": "Microsoft.DBForPostgreSQL/servers/performanceTiers"
+    },
+    {
+      "APIVersion": "2018-06-01",
+      "operations": [
+        {
+          "OperationId": "PrivateEndpointConnections_ListByServer",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/postgresql/resource-manager/Microsoft.DBforPostgreSQL/stable/2018-06-01/PrivateEndpointConnections.json"
+        }
+      ],
+      "Resource": "Microsoft.DBforPostgreSQL/servers/privateEndpointConnections"
+    },
+    {
+      "APIVersion": "2018-06-01",
+      "operations": [
+        {
+          "OperationId": "QueryTexts_ListByServer",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/postgresql/resource-manager/Microsoft.DBforPostgreSQL/stable/2018-06-01/QueryPerformanceInsights.json"
+        }
+      ],
+      "Resource": "Microsoft.DBforPostgreSQL/servers/queryTexts"
+    },
+    {
+      "APIVersion": "2017-12-01",
+      "operations": [
+        {
+          "OperationId": "RecoverableServers_Get",
+          "version": "2017-12-01",
+          "jsonFilePath": "/specification/postgresql/resource-manager/Microsoft.DBforPostgreSQL/stable/2017-12-01/postgresql.json"
+        }
+      ],
+      "Resource": "Microsoft.DBForPostgreSQL/servers/recoverableServers"
+    },
+    {
+      "APIVersion": "2017-12-01",
+      "operations": [
+        {
+          "OperationId": "ServerSecurityAlertPolicies_ListByServer",
+          "version": "2017-12-01",
+          "jsonFilePath": "/specification/postgresql/resource-manager/Microsoft.DBforPostgreSQL/stable/2017-12-01/ServerSecurityAlertPolicies.json"
+        },
+        {
+          "OperationId": "ServerSecurityAlertPolicies_Get",
+          "version": "2017-12-01",
+          "jsonFilePath": "/specification/postgresql/resource-manager/Microsoft.DBforPostgreSQL/stable/2017-12-01/ServerSecurityAlertPolicies.json"
+        },
+        {
+          "OperationId": "ServerSecurityAlertPolicies_CreateOrUpdate",
+          "version": "2017-12-01",
+          "jsonFilePath": "/specification/postgresql/resource-manager/Microsoft.DBforPostgreSQL/stable/2017-12-01/ServerSecurityAlertPolicies.json"
+        }
+      ],
+      "Resource": "Microsoft.DBforPostgreSQL/servers/securityAlertPolicies"
+    },
+    {
+      "APIVersion": "2017-12-01-preview",
+      "operations": [
+        {
+          "OperationId": "ServerSecurityAlertPolicies_Get",
+          "version": "2017-12-01-preview",
+          "jsonFilePath": "/specification/postgresql/resource-manager/Microsoft.DBforPostgreSQL/preview/2017-12-01-preview/postgresql.json"
+        }
+      ],
+      "Resource": "Microsoft.DBForPostgreSQL/servers/securityAlertPolicies"
+    },
+    {
+      "APIVersion": "2018-06-01",
+      "operations": [
+        {
+          "OperationId": "TopQueryStatistics_ListByServer",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/postgresql/resource-manager/Microsoft.DBforPostgreSQL/stable/2018-06-01/QueryPerformanceInsights.json"
+        }
+      ],
+      "Resource": "Microsoft.DBforPostgreSQL/servers/topQueryStatistics"
+    },
+    {
+      "APIVersion": "2017-12-01-preview",
+      "operations": [
+        {
+          "OperationId": "ServerParameters_ListUpdateConfigurations",
+          "version": "2017-12-01-preview",
+          "jsonFilePath": "/specification/postgresql/resource-manager/Microsoft.DBforPostgreSQL/preview/2017-12-01-preview/postgresql.json"
+        }
+      ],
+      "Resource": "Microsoft.DBForPostgreSQL/servers/updateConfigurations"
+    },
+    {
+      "APIVersion": "2018-06-01",
+      "operations": [
+        {
+          "OperationId": "WaitStatistics_ListByServer",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/postgresql/resource-manager/Microsoft.DBforPostgreSQL/stable/2018-06-01/QueryPerformanceInsights.json"
+        }
+      ],
+      "Resource": "Microsoft.DBforPostgreSQL/servers/waitStatistics"
+    }
+  ],
+  "resourcelist": "Microsoft.DBforPostgreSQL/servers/advisors,Microsoft.DBforPostgreSQL/servers/advisors/recommendedActions,Microsoft.DBforPostgreSQL/servers/advisors/recommendedActionSessions,Microsoft.DBForPostgreSQL/servers/performanceTiers,Microsoft.DBforPostgreSQL/servers/privateEndpointConnections,Microsoft.DBforPostgreSQL/servers/queryTexts,Microsoft.DBForPostgreSQL/servers/recoverableServers,Microsoft.DBforPostgreSQL/servers/securityAlertPolicies,Microsoft.DBForPostgreSQL/servers/securityAlertPolicies,Microsoft.DBforPostgreSQL/servers/topQueryStatistics,Microsoft.DBForPostgreSQL/servers/updateConfigurations,Microsoft.DBforPostgreSQL/servers/waitStatistics",
+  "onboardType": "depth",
+  "RPName": "postgresql",
+  "readmeFile": "/specification/postgresql/resource-manager/readme.md",
+  "target": "clicore"
+}
