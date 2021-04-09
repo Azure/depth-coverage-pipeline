@@ -135,7 +135,7 @@ steps:
     sdktarget=$(TARGET)
     if [ "$sdktarget" == "terraform" ]; then
       # PACKAGE_NAME=`cat $(Pipeline.Workspace)/s/azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/readme.terraform.md | grep "cli-name"| awk -F':' '{print $2}' | tr -d '[[:space:]]'`
-      PACKAGE_NAME=`cat $(Pipeline.Workspace)/s/azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/readme.terraform.md | grep "trenton-output-folder" | sed 's/output-folder: \$(trenton-output-folder)\///g'`
+      PACKAGE_NAME=`cat $(Pipeline.Workspace)/s/azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/readme.terraform.md | grep "terraform-output-folder" | sed 's/output-folder: \$(terraform-output-folder)\///g'`
       af="generated/$PACKAGE_NAME"
       echo "PACKAGE_NAME:$PACKAGE_NAME"
       echo "##vso[task.setvariable variable=Package]$PACKAGE_NAME"
@@ -150,6 +150,11 @@ steps:
     targetPath: '$(Pipeline.Workspace)/sdk'
     artifact: 'sdkvariables'
     publishLocation: 'pipeline'
+- bash: GenerateExmaple
+    npm install oav@2.2.6
+    depthcoverage --token=$(PIPELINE_TOKEN) --org=$(PIPELINE_ORG) --repo=$(PIPELINE_REPO) --operation=read --PRNumber=$(System.PullRequest.PullRequestNumber)
+    oav generate-examples [PATH]
+  displayName: 'Generate Example'
 - bash: |
     echo $pwd
     sdktarget=$(TARGET)
