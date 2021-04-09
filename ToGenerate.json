@@ -1,0 +1,49 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2016-07-01",
+      "operations": [],
+      "Resource": "Microsoft.Relay/namespaces/AuthorizationRules"
+    },
+    {
+      "APIVersion": "2017-04-01",
+      "operations": [],
+      "Resource": "Microsoft.Relay/namespaces/authorizationRules"
+    },
+    {
+      "APIVersion": "2016-07-01",
+      "operations": [],
+      "Resource": "Microsoft.Relay/namespaces/HybridConnections/authorizationRules"
+    },
+    {
+      "APIVersion": "2017-04-01",
+      "operations": [],
+      "Resource": "Microsoft.Relay/namespaces/hybridConnections/authorizationRules"
+    },
+    {
+      "APIVersion": "2016-07-01",
+      "operations": [],
+      "Resource": "Microsoft.Relay/namespaces/WcfRelays"
+    },
+    {
+      "APIVersion": "2017-04-01",
+      "operations": [],
+      "Resource": "Microsoft.Relay/namespaces/wcfRelays"
+    },
+    {
+      "APIVersion": "2016-07-01",
+      "operations": [],
+      "Resource": "Microsoft.Relay/namespaces/WcfRelays/authorizationRules"
+    },
+    {
+      "APIVersion": "2017-04-01",
+      "operations": [],
+      "Resource": "Microsoft.Relay/namespaces/wcfRelays/authorizationRules"
+    }
+  ],
+  "resourcelist": "Microsoft.Relay/namespaces/AuthorizationRules,Microsoft.Relay/namespaces/authorizationRules,Microsoft.Relay/namespaces/HybridConnections/authorizationRules,Microsoft.Relay/namespaces/hybridConnections/authorizationRules,Microsoft.Relay/namespaces/WcfRelays,Microsoft.Relay/namespaces/wcfRelays,Microsoft.Relay/namespaces/WcfRelays/authorizationRules,Microsoft.Relay/namespaces/wcfRelays/authorizationRules",
+  "onboardType": "depth",
+  "RPName": "relay",
+  "readmeFile": "/specification/relay/resource-manager/readme.md",
+  "target": "terraform"
+}
