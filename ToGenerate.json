@@ -1,0 +1,74 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2018-09-01",
+      "operations": [
+        {
+          "OperationId": "Baseline_Get",
+          "version": "2018-09-01",
+          "jsonFilePath": "/specification/monitor/resource-manager/Microsoft.Insights/stable/2018-09-01/baseline_API.json"
+        }
+      ],
+      "Resource": "Microsoft.Insights/baseline"
+    },
+    {
+      "APIVersion": "2018-06-01-preview",
+      "operations": [
+        {
+          "OperationId": "GuestDiagnosticsSettingsAssociation_Get",
+          "version": "2018-06-01-preview",
+          "jsonFilePath": "/specification/monitor/resource-manager/Microsoft.Insights/preview/2018-06-01-preview/guestDiagnosticSettingsAssociation_API.json"
+        },
+        {
+          "OperationId": "GuestDiagnosticsSettingsAssociation_CreateOrUpdate",
+          "version": "2018-06-01-preview",
+          "jsonFilePath": "/specification/monitor/resource-manager/Microsoft.Insights/preview/2018-06-01-preview/guestDiagnosticSettingsAssociation_API.json"
+        }
+      ],
+      "Resource": "microsoft.insights/guestDiagnosticSettingsAssociation"
+    },
+    {
+      "APIVersion": "2017-12-01-preview",
+      "operations": [
+        {
+          "OperationId": "MetricNamespaces_List",
+          "version": "2017-12-01-preview",
+          "jsonFilePath": "/specification/monitor/resource-manager/Microsoft.Insights/preview/2017-12-01-preview/metricNamespaces_API.json"
+        }
+      ],
+      "Resource": "microsoft.insights/metricNamespaces"
+    },
+    {
+      "APIVersion": "2018-06-01-preview",
+      "operations": [
+        {
+          "OperationId": "guestDiagnosticsSettings_Get",
+          "version": "2018-06-01-preview",
+          "jsonFilePath": "/specification/monitor/resource-manager/Microsoft.Insights/preview/2018-06-01-preview/guestDiagnosticSettings_API.json"
+        },
+        {
+          "OperationId": "guestDiagnosticsSettings_CreateOrUpdate",
+          "version": "2018-06-01-preview",
+          "jsonFilePath": "/specification/monitor/resource-manager/Microsoft.Insights/preview/2018-06-01-preview/guestDiagnosticSettings_API.json"
+        }
+      ],
+      "Resource": "microsoft.insights/guestDiagnosticSettings"
+    },
+    {
+      "APIVersion": "2019-10-17-preview",
+      "operations": [
+        {
+          "OperationId": "PrivateEndpointConnections_Get",
+          "version": "2019-10-17-preview",
+          "jsonFilePath": "/specification/monitor/resource-manager/Microsoft.Insights/preview/2019-10-17-preview/privateLinkScopes_API.json"
+        }
+      ],
+      "Resource": "Microsoft.Insights/privateLinkScopes/privateEndpointConnections"
+    }
+  ],
+  "resourcelist": "Microsoft.Insights/baseline,microsoft.insights/guestDiagnosticSettingsAssociation,microsoft.insights/metricNamespaces,microsoft.insights/guestDiagnosticSettings,Microsoft.Insights/privateLinkScopes/privateEndpointConnections",
+  "onboardType": "depth",
+  "RPName": "monitor",
+  "readmeFile": "/specification/monitor/resource-manager/readme.md",
+  "target": "clicore"
+}
