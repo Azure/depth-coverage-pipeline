@@ -1,0 +1,34 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-01-13-preview",
+      "operations": [],
+      "Resource": "Microsoft.Automation/automationAccounts/hybridRunbookWorkerGroups"
+    },
+    {
+      "APIVersion": "2020-01-13-preview",
+      "operations": [],
+      "Resource": "Microsoft.Automation/automationAccounts/nodes"
+    },
+    {
+      "APIVersion": "2020-01-13-preview",
+      "operations": [],
+      "Resource": "Microsoft.Automation/automationAccounts/python2Packages"
+    },
+    {
+      "APIVersion": "2020-01-13-preview",
+      "operations": [],
+      "Resource": "Microsoft.Automation/automationAccounts/watchers"
+    },
+    {
+      "APIVersion": "2015-10-31",
+      "operations": [],
+      "Resource": "Microsoft.Automation/automationAccounts/webhooks"
+    }
+  ],
+  "resourcelist": "Microsoft.Automation/automationAccounts/hybridRunbookWorkerGroups,Microsoft.Automation/automationAccounts/nodes,Microsoft.Automation/automationAccounts/python2Packages,Microsoft.Automation/automationAccounts/watchers,Microsoft.Automation/automationAccounts/webhooks",
+  "onboardType": "depth",
+  "RPName": "automation",
+  "readmeFile": "/specification/automation/resource-manager/readme.md",
+  "target": "terraform"
+}
