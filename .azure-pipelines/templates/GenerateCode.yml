@@ -4,17 +4,19 @@ steps:
     echo "https://$(PIPELINE_USER):$(PIPELINE_TOKEN)@github.com" > ~/.git-credentials
     sdktarget=$(TARGET)
     repo=""
+    base=""
     if [ "$sdktarget" == "terraform" ]; then
       cd $(Pipeline.Workspace)/s
       git clone --branch pipeline https://$(PIPELINE_USER):$(PIPELINE_TOKEN)@github.com/$(TF_ORG)/terraform-provider-azurerm.git
       repo="terraform-provider-azurerm"
+      base="pipeline"
       # cd $(Pipeline.Workspace)/s/terraform-provider-azurerm
       # tf_existed_in_remote=$(git ls-remote --heads origin depth-$(TARGET)-$(ResourceProvider))
       # if [[ -z ${tf_existed_in_remote} ]]; then
       #   git checkout -b depth-$(TARGET)-$(ResourceProvider)
       # else
       #   git checkout depth-$(TARGET)-$(ResourceProvider)
-      #   git reset --hard origin/depth-$(TARGET)-$(ResourceProvider)
+      #   git reset --hard origin/pipeline
       # fi
     fi
 
@@ -22,6 +24,7 @@ steps:
       cd $(Pipeline.Workspace)/s
       git clone https://$(PIPELINE_USER):$(PIPELINE_TOKEN)@github.com/$(CLI_ORG)/azure-cli
       repo="azure-cli"
+      base="dev"
       # cd $(Pipeline.Workspace)/s/azure-cli
       # cli_existed_in_remote=$(git ls-remote --heads origin depth-$(TARGET)-$(ResourceProvider))
       # if [[ -z ${cli_existed_in_remote} ]]; then
@@ -37,6 +40,7 @@ steps:
       cd $(Pipeline.Workspace)/s
       git clone https://$(PIPELINE_USER):$(PIPELINE_TOKEN)@github.com/$(CLI_ORG)/azure-cli-extensions
       repo="azure-cli-extensions"
+      base="master"
       # cd $(Pipeline.Workspace)/s/azure-cli
       # cli_existed_in_remote=$(git ls-remote --heads origin depth-$(TARGET)-$(ResourceProvider))
       # if [[ -z ${cli_existed_in_remote} ]]; then
@@ -54,7 +58,8 @@ steps:
       git checkout -b depth-$(TARGET)-$(ResourceProvider)
     else
       git checkout depth-$(TARGET)-$(ResourceProvider)
-      git reset --hard origin/depth-$(TARGET)-$(ResourceProvider)
+      # git reset --hard origin/depth-$(TARGET)-$(ResourceProvider)
+      git reset --hard origin/$base
     fi
 
     #pull swagger repo
@@ -69,6 +74,7 @@ steps:
       git checkout -b depth-$(TARGET)-$(ResourceProvider)
     else
       git checkout depth-$(TARGET)-$(ResourceProvider)
+      git reset --hard origin/master
     fi
     git config credential.helper store ; git config --global user.email "chunyu@microsoft.com";git config --global user.name "chunyu3;"
     git pull origin depth-$(TARGET)-$(ResourceProvider)
@@ -185,10 +191,14 @@ steps:
       echo "TAG:$(TAG)"
       echo "resources:$(RESOURCES)"
       tag=$(TAG)
+      schema-file-path=""
+      if [ -f "$(Pipeline.Workspace)/s/azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/schema.json" ]; then
+        schema-file-path="$(Pipeline.Workspace)/s/azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/schema.json"
+      fi
       if [ "$tag" == "" ]; then
-        autorest --version=3.0.6219 --terraform --use=https://terraformcodegen.blob.core.windows.net/terraformcodegen/autorest-terraform-latest.tgz --resources=$(RESOURCES) --generate-extra-acctest=true --terraform-output-folder=./generated ./azure-rest-api-specs/$(README_FILE) 1>$(TASK_KEY).log 2>&1
+        autorest --version=3.0.6219 --terraform --use=https://terraformcodegen.blob.core.windows.net/terraformcodegen/autorest-terraform-latest.tgz --schema-file-path=$schema-file-path --resources=$(RESOURCES) --generate-extra-acctest=true --terraform-output-folder=./generated ./azure-rest-api-specs/$(README_FILE) 1>$(TASK_KEY).log 2>&1
       else
-        autorest --version=3.0.6219 --terraform --use=https://terraformcodegen.blob.core.windows.net/terraformcodegen/autorest-terraform-latest.tgz --resources=$(RESOURCES) --tag=$(TAG) --generate-extra-acctest=true --terraform-output-folder=./generated ./azure-rest-api-specs/$(README_FILE) 1>$(TASK_KEY).log 2>&1
+        autorest --version=3.0.6219 --terraform --use=https://terraformcodegen.blob.core.windows.net/terraformcodegen/autorest-terraform-latest.tgz --schema-file-path=$schema-file-path --resources=$(RESOURCES) --tag=$(TAG) --generate-extra-acctest=true --terraform-output-folder=./generated ./azure-rest-api-specs/$(README_FILE) 1>$(TASK_KEY).log 2>&1
       fi
 
       # if [ "$?" != "0" ]; then
