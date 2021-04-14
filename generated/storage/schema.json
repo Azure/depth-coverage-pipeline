@@ -1,0 +1,394 @@
+{
+  "BlobInventoryPolicies": {
+    "schema": {
+      "name": {
+        "id": "BlobInventoryPolicies-name-2960616889"
+      },
+      "resource_group_name": {
+        "id": "BlobInventoryPolicies-resourceGroupName-854924779"
+      },
+      "account_name": {
+        "id": "BlobInventoryPolicies-accountName-959528760"
+      },
+      "policy": {
+        "id": "BlobInventoryPolicies-policy-495581052",
+        "properties": {
+          "destination": {
+            "id": "BlobInventoryPolicies-destination-123089436"
+          },
+          "enabled": {
+            "id": "BlobInventoryPolicies-enabled-835178276"
+          },
+          "rules": {
+            "id": "BlobInventoryPolicies-rules-2913588988",
+            "properties": {
+              "name": {
+                "id": "BlobInventoryPolicies-name-2995303198"
+              },
+              "definition": {
+                "id": "BlobInventoryPolicies-definition-2349989132",
+                "properties": {
+                  "filters": {
+                    "id": "BlobInventoryPolicies-filters-1403462328",
+                    "properties": {
+                      "blob_types": {
+                        "id": "BlobInventoryPolicies-blobTypes-821464732"
+                      },
+                      "include_blob_versions": {
+                        "id": "BlobInventoryPolicies-includeBlobVersions-329082414"
+                      },
+                      "include_snapshots": {
+                        "id": "BlobInventoryPolicies-includeSnapshots-1675763324"
+                      },
+                      "prefix_match": {
+                        "id": "BlobInventoryPolicies-prefixMatch-948754224"
+                      }
+                    }
+                  }
+                }
+              },
+              "enabled": {
+                "id": "BlobInventoryPolicies-enabled-2089823836"
+              }
+            }
+          },
+          "type": {
+            "id": "BlobInventoryPolicies-type-1683671726"
+          }
+        }
+      },
+      "last_modified_time": {
+        "id": "BlobInventoryPolicies-lastModifiedTime-2470177628"
+      },
+      "type": {
+        "id": "BlobInventoryPolicies-type-2756470064"
+      }
+    },
+    "deleted": {}
+  },
+  "BlobContainersImmutabilityPolicy": {
+    "schema": {
+      "name": {
+        "id": "BlobContainersImmutabilityPolicy-name-778114671"
+      },
+      "resource_group_name": {
+        "id": "BlobContainersImmutabilityPolicy-resourceGroupName-94335805"
+      },
+      "account_name": {
+        "id": "BlobContainersImmutabilityPolicy-accountName-670038938"
+      },
+      "container_name": {
+        "id": "BlobContainersImmutabilityPolicy-containerName-1097987537"
+      },
+      "allow_protected_append_writes": {
+        "id": "BlobContainersImmutabilityPolicy-allowProtectedAppendWrites-2500270381"
+      },
+      "immutability_period_since_creation_in_days": {
+        "id": "BlobContainersImmutabilityPolicy-immutabilityPeriodSinceCreationInDays-1211805817"
+      },
+      "state": {
+        "id": "BlobContainersImmutabilityPolicy-state-2351570041"
+      },
+      "type": {
+        "id": "BlobContainersImmutabilityPolicy-type-1140998983"
+      }
+    },
+    "deleted": {}
+  },
+  "Queue": {
+    "schema": {
+      "name": {
+        "id": "Queue-name-790269975"
+      },
+      "resource_group_name": {
+        "id": "Queue-resourceGroupName-39289677"
+      },
+      "account_name": {
+        "id": "Queue-accountName-742828118"
+      },
+      "metadata": {
+        "id": "Queue-metadata-120601350"
+      },
+      "approximate_message_count": {
+        "id": "Queue-approximateMessageCount-840405730"
+      },
+      "type": {
+        "id": "Queue-type-282614342"
+      }
+    },
+    "deleted": {}
+  },
+  "Table": {
+    "schema": {
+      "name": {
+        "id": "Table-name-1500636541"
+      },
+      "resource_group_name": {
+        "id": "Table-resourceGroupName-1166075274"
+      },
+      "account_name": {
+        "id": "Table-accountName-20212647"
+      },
+      "table_name": {
+        "id": "Table-tableName-2477895222"
+      },
+      "type": {
+        "id": "Table-type-1831932679"
+      }
+    },
+    "deleted": {}
+  },
+  "definitions": {
+    "BlobInventoryPolicies-name-2960616889": {
+      "schema_path": "/BlobInventoryPolicies/name",
+      "ids": [
+        "/BlobInventoryPolicies//name#1",
+        "/BlobInventoryPolicies/name#2",
+        "/BlobInventoryPolicies/properties/name#1"
+      ]
+    },
+    "BlobInventoryPolicies-resourceGroupName-854924779": {
+      "schema_path": "/BlobInventoryPolicies/resourceGroupName",
+      "ids": [
+        "/BlobInventoryPolicies/resourceGroupName#0"
+      ]
+    },
+    "BlobInventoryPolicies-accountName-959528760": {
+      "schema_path": "/BlobInventoryPolicies/accountName",
+      "ids": [
+        "/BlobInventoryPolicies/accountName#1"
+      ]
+    },
+    "BlobInventoryPolicies-policy-495581052": {
+      "schema_path": "/BlobInventoryPolicies/policy",
+      "ids": [
+        "/BlobInventoryPolicies//properties/policy#1",
+        "/BlobInventoryPolicies/properties/properties/policy#1"
+      ]
+    },
+    "BlobInventoryPolicies-destination-123089436": {
+      "schema_path": "/BlobInventoryPolicies/policy/destination",
+      "ids": [
+        "/BlobInventoryPolicies//properties/policy/destination#1",
+        "/BlobInventoryPolicies/properties/properties/policy/destination#1"
+      ]
+    },
+    "BlobInventoryPolicies-enabled-835178276": {
+      "schema_path": "/BlobInventoryPolicies/policy/enabled",
+      "ids": [
+        "/BlobInventoryPolicies//properties/policy/enabled#0",
+        "/BlobInventoryPolicies/properties/properties/policy/enabled#0"
+      ]
+    },
+    "BlobInventoryPolicies-rules-2913588988": {
+      "schema_path": "/BlobInventoryPolicies/policy/rules",
+      "ids": [
+        "/BlobInventoryPolicies//properties/policy/rules#3",
+        "/BlobInventoryPolicies/properties/properties/policy/rules#3"
+      ]
+    },
+    "BlobInventoryPolicies-name-2995303198": {
+      "schema_path": "/BlobInventoryPolicies/policy/rules/name",
+      "ids": [
+        "/BlobInventoryPolicies//properties/policy/rules/name#1",
+        "/BlobInventoryPolicies/properties/properties/policy/rules/name#1"
+      ]
+    },
+    "BlobInventoryPolicies-definition-2349989132": {
+      "schema_path": "/BlobInventoryPolicies/policy/rules/definition",
+      "ids": [
+        "/BlobInventoryPolicies//properties/policy/rules/definition#2",
+        "/BlobInventoryPolicies/properties/properties/policy/rules/definition#2"
+      ]
+    },
+    "BlobInventoryPolicies-filters-1403462328": {
+      "schema_path": "/BlobInventoryPolicies/policy/rules/definition/filters",
+      "ids": [
+        "/BlobInventoryPolicies//properties/policy/rules/definition/filters#0",
+        "/BlobInventoryPolicies/properties/properties/policy/rules/definition/filters#0"
+      ]
+    },
+    "BlobInventoryPolicies-blobTypes-821464732": {
+      "schema_path": "/BlobInventoryPolicies/policy/rules/definition/filters/blobTypes",
+      "ids": [
+        "/BlobInventoryPolicies//properties/policy/rules/definition/filters/blobTypes#1",
+        "/BlobInventoryPolicies/properties/properties/policy/rules/definition/filters/blobTypes#1"
+      ]
+    },
+    "BlobInventoryPolicies-includeBlobVersions-329082414": {
+      "schema_path": "/BlobInventoryPolicies/policy/rules/definition/filters/includeBlobVersions",
+      "ids": [
+        "/BlobInventoryPolicies//properties/policy/rules/definition/filters/includeBlobVersions#2",
+        "/BlobInventoryPolicies/properties/properties/policy/rules/definition/filters/includeBlobVersions#2"
+      ]
+    },
+    "BlobInventoryPolicies-includeSnapshots-1675763324": {
+      "schema_path": "/BlobInventoryPolicies/policy/rules/definition/filters/includeSnapshots",
+      "ids": [
+        "/BlobInventoryPolicies//properties/policy/rules/definition/filters/includeSnapshots#3",
+        "/BlobInventoryPolicies/properties/properties/policy/rules/definition/filters/includeSnapshots#3"
+      ]
+    },
+    "BlobInventoryPolicies-prefixMatch-948754224": {
+      "schema_path": "/BlobInventoryPolicies/policy/rules/definition/filters/prefixMatch",
+      "ids": [
+        "/BlobInventoryPolicies//properties/policy/rules/definition/filters/prefixMatch#0",
+        "/BlobInventoryPolicies/properties/properties/policy/rules/definition/filters/prefixMatch#0"
+      ]
+    },
+    "BlobInventoryPolicies-enabled-2089823836": {
+      "schema_path": "/BlobInventoryPolicies/policy/rules/enabled",
+      "ids": [
+        "/BlobInventoryPolicies//properties/policy/rules/enabled#0",
+        "/BlobInventoryPolicies/properties/properties/policy/rules/enabled#0"
+      ]
+    },
+    "BlobInventoryPolicies-type-1683671726": {
+      "schema_path": "/BlobInventoryPolicies/policy/type",
+      "ids": [
+        "/BlobInventoryPolicies//properties/policy/type#2",
+        "/BlobInventoryPolicies/properties/properties/policy/type#2"
+      ]
+    },
+    "BlobInventoryPolicies-lastModifiedTime-2470177628": {
+      "schema_path": "/BlobInventoryPolicies/lastModifiedTime",
+      "ids": [
+        "/BlobInventoryPolicies//properties/lastModifiedTime#0",
+        "/BlobInventoryPolicies/properties/properties/lastModifiedTime#0"
+      ]
+    },
+    "BlobInventoryPolicies-type-2756470064": {
+      "schema_path": "/BlobInventoryPolicies/type",
+      "ids": [
+        "/BlobInventoryPolicies//type#2",
+        "/BlobInventoryPolicies/properties/type#2"
+      ]
+    },
+    "BlobContainersImmutabilityPolicy-name-778114671": {
+      "schema_path": "/BlobContainersImmutabilityPolicy/name",
+      "ids": [
+        "/BlobContainersImmutabilityPolicy//name#1",
+        "/BlobContainersImmutabilityPolicy/name#3",
+        "/BlobContainersImmutabilityPolicy/parameters/name#1"
+      ]
+    },
+    "BlobContainersImmutabilityPolicy-resourceGroupName-94335805": {
+      "schema_path": "/BlobContainersImmutabilityPolicy/resourceGroupName",
+      "ids": [
+        "/BlobContainersImmutabilityPolicy/resourceGroupName#0"
+      ]
+    },
+    "BlobContainersImmutabilityPolicy-accountName-670038938": {
+      "schema_path": "/BlobContainersImmutabilityPolicy/accountName",
+      "ids": [
+        "/BlobContainersImmutabilityPolicy/accountName#1"
+      ]
+    },
+    "BlobContainersImmutabilityPolicy-containerName-1097987537": {
+      "schema_path": "/BlobContainersImmutabilityPolicy/containerName",
+      "ids": [
+        "/BlobContainersImmutabilityPolicy/containerName#2"
+      ]
+    },
+    "BlobContainersImmutabilityPolicy-allowProtectedAppendWrites-2500270381": {
+      "schema_path": "/BlobContainersImmutabilityPolicy/allowProtectedAppendWrites",
+      "ids": [
+        "/BlobContainersImmutabilityPolicy//properties/allowProtectedAppendWrites#2",
+        "/BlobContainersImmutabilityPolicy/parameters/properties/allowProtectedAppendWrites#2"
+      ]
+    },
+    "BlobContainersImmutabilityPolicy-immutabilityPeriodSinceCreationInDays-1211805817": {
+      "schema_path": "/BlobContainersImmutabilityPolicy/immutabilityPeriodSinceCreationInDays",
+      "ids": [
+        "/BlobContainersImmutabilityPolicy//properties/immutabilityPeriodSinceCreationInDays#0",
+        "/BlobContainersImmutabilityPolicy/parameters/properties/immutabilityPeriodSinceCreationInDays#0"
+      ]
+    },
+    "BlobContainersImmutabilityPolicy-state-2351570041": {
+      "schema_path": "/BlobContainersImmutabilityPolicy/state",
+      "ids": [
+        "/BlobContainersImmutabilityPolicy//properties/state#1",
+        "/BlobContainersImmutabilityPolicy/parameters/properties/state#1"
+      ]
+    },
+    "BlobContainersImmutabilityPolicy-type-1140998983": {
+      "schema_path": "/BlobContainersImmutabilityPolicy/type",
+      "ids": [
+        "/BlobContainersImmutabilityPolicy//type#2",
+        "/BlobContainersImmutabilityPolicy/parameters/type#2"
+      ]
+    },
+    "Queue-name-790269975": {
+      "schema_path": "/Queue/name",
+      "ids": [
+        "/Queue//name#1",
+        "/Queue/name#2",
+        "/Queue/queue/name#1"
+      ]
+    },
+    "Queue-resourceGroupName-39289677": {
+      "schema_path": "/Queue/resourceGroupName",
+      "ids": [
+        "/Queue/resourceGroupName#0"
+      ]
+    },
+    "Queue-accountName-742828118": {
+      "schema_path": "/Queue/accountName",
+      "ids": [
+        "/Queue/accountName#1"
+      ]
+    },
+    "Queue-metadata-120601350": {
+      "schema_path": "/Queue/metadata",
+      "ids": [
+        "/Queue//QueueProperties/metadata#0",
+        "/Queue/queue/QueueProperties/metadata#0"
+      ]
+    },
+    "Queue-approximateMessageCount-840405730": {
+      "schema_path": "/Queue/approximateMessageCount",
+      "ids": [
+        "/Queue//QueueProperties/approximateMessageCount#1",
+        "/Queue/queue/QueueProperties/approximateMessageCount#1"
+      ]
+    },
+    "Queue-type-282614342": {
+      "schema_path": "/Queue/type",
+      "ids": [
+        "/Queue//type#2",
+        "/Queue/queue/type#2"
+      ]
+    },
+    "Table-name-1500636541": {
+      "schema_path": "/Table/name",
+      "ids": [
+        "/Table//name#1",
+        "/Table/name#2"
+      ]
+    },
+    "Table-resourceGroupName-1166075274": {
+      "schema_path": "/Table/resourceGroupName",
+      "ids": [
+        "/Table/resourceGroupName#0"
+      ]
+    },
+    "Table-accountName-20212647": {
+      "schema_path": "/Table/accountName",
+      "ids": [
+        "/Table/accountName#1"
+      ]
+    },
+    "Table-tableName-2477895222": {
+      "schema_path": "/Table/tableName",
+      "ids": [
+        "/Table//TableProperties/tableName#0"
+      ]
+    },
+    "Table-type-1831932679": {
+      "schema_path": "/Table/type",
+      "ids": [
+        "/Table//type#2"
+      ]
+    }
+  }
+}
