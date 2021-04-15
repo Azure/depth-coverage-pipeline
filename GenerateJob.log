@@ -364,4 +364,4 @@ INFORMATION: generate module:BlobInventoryPolicies.
 INFORMATION: generate module:BlobContainersImmutabilityPolicy.
 INFORMATION: generate module:Queue.
 INFORMATION: generate module:Table.
-[74.19 s] Generation Complete
+[71.67 s] Generation Complete
