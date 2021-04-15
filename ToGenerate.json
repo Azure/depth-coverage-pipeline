@@ -1,0 +1,17 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2019-03-18",
+      "operations": [],
+      "Resource": "Microsoft.HybridCompute/machines"
+    }
+  ],
+  "resourcelist": "Microsoft.HybridCompute/machines",
+  "jsonFilelist": [
+    "/specification/hybridcompute/resource-manager/Microsoft.HybridCompute/preview/2019-03-18/HybridCompute.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "hybridcompute",
+  "readmeFile": "/specification/hybridcompute/resource-manager/readme.md",
+  "target": "terraform"
+}
