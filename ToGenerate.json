@@ -1,0 +1,88 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2016-09-30",
+      "operations": [
+        {
+          "OperationId": "ContainerServices_CreateOrUpdate",
+          "version": "2016-09-30",
+          "jsonFilePath": "/specification/containerservice/resource-manager/Microsoft.ContainerService/stable/2016-09-30/containerService.json"
+        }
+      ],
+      "Resource": "Microsoft.ContainerService/containerServices"
+    },
+    {
+      "APIVersion": "2020-03-01",
+      "operations": [
+        {
+          "OperationId": "AgentPools_GetAvailableAgentPoolVersions",
+          "version": "2020-03-01",
+          "jsonFilePath": "/specification/containerservice/resource-manager/Microsoft.ContainerService/stable/2020-03-01/managedClusters.json"
+        }
+      ],
+      "Resource": "Microsoft.ContainerService/managedClusters/availableAgentPoolVersions"
+    },
+    {
+      "APIVersion": "2019-11-01",
+      "operations": [
+        {
+          "OperationId": "ManagedClusters_ListClusterMonitoringUserCredentials",
+          "version": "2019-11-01",
+          "jsonFilePath": "/specification/containerservice/resource-manager/Microsoft.ContainerService/stable/2019-11-01/managedClusters.json"
+        }
+      ],
+      "Resource": "Microsoft.ContainerService/managedClusters"
+    },
+    {
+      "APIVersion": "2020-06-01",
+      "operations": [
+        {
+          "OperationId": "PrivateEndpointConnections_List",
+          "version": "2020-06-01",
+          "jsonFilePath": "/specification/containerservice/resource-manager/Microsoft.ContainerService/stable/2020-06-01/managedClusters.json"
+        },
+        {
+          "OperationId": "PrivateEndpointConnections_Get",
+          "version": "2020-06-01",
+          "jsonFilePath": "/specification/containerservice/resource-manager/Microsoft.ContainerService/stable/2020-06-01/managedClusters.json"
+        },
+        {
+          "OperationId": "PrivateEndpointConnections_Update",
+          "version": "2020-06-01",
+          "jsonFilePath": "/specification/containerservice/resource-manager/Microsoft.ContainerService/stable/2020-06-01/managedClusters.json"
+        }
+      ],
+      "Resource": "Microsoft.ContainerService/managedClusters/privateEndpointConnections"
+    },
+    {
+      "APIVersion": "2020-11-01",
+      "operations": [
+        {
+          "OperationId": "PrivateLinkResources_List",
+          "version": "2020-11-01",
+          "jsonFilePath": "/specification/containerservice/resource-manager/Microsoft.ContainerService/stable/2020-11-01/managedClusters.json"
+        }
+      ],
+      "Resource": "Microsoft.ContainerService/managedClusters/privateLinkResources"
+    }
+  ],
+  "resourcelist": "Microsoft.ContainerService/containerServices,Microsoft.ContainerService/managedClusters/availableAgentPoolVersions,Microsoft.ContainerService/managedClusters,Microsoft.ContainerService/managedClusters/privateEndpointConnections,Microsoft.ContainerService/managedClusters/privateLinkResources",
+  "jsonFilelist": [
+    "/specification/containerservice/resource-manager/Microsoft.ContainerService/stable/2016-09-30/containerService.json",
+    "/specification/containerservice/resource-manager/Microsoft.ContainerService/stable/2017-01-31/containerService.json",
+    "/specification/containerservice/resource-manager/Microsoft.ContainerService/stable/2017-07-01/containerService.json",
+    "/specification/containerservice/resource-manager/Microsoft.ContainerService/stable/2020-03-01/managedClusters.json",
+    "/specification/containerservice/resource-manager/Microsoft.ContainerService/stable/2020-04-01/managedClusters.json",
+    "/specification/containerservice/resource-manager/Microsoft.ContainerService/stable/2020-09-01/managedClusters.json",
+    "/specification/containerservice/resource-manager/Microsoft.ContainerService/stable/2020-11-01/managedClusters.json",
+    "/specification/containerservice/resource-manager/Microsoft.ContainerService/stable/2020-12-01/managedClusters.json",
+    "/specification/containerservice/resource-manager/Microsoft.ContainerService/stable/2021-02-01/managedClusters.json",
+    "/specification/containerservice/resource-manager/Microsoft.ContainerService/stable/2019-11-01/managedClusters.json",
+    "/specification/containerservice/resource-manager/Microsoft.ContainerService/stable/2020-06-01/managedClusters.json",
+    "/specification/containerservice/resource-manager/Microsoft.ContainerService/stable/2021-03-01/managedClusters.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "containerservice",
+  "readmeFile": "/specification/containerservice/resource-manager/readme.md",
+  "target": "clicore"
+}
