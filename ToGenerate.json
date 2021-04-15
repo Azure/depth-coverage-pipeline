@@ -1,0 +1,32 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2017-07-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.ServiceFabric/clusters/applications"
+    },
+    {
+      "APIVersion": "2017-07-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.ServiceFabric/clusters/applications/services"
+    },
+    {
+      "APIVersion": "2017-07-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.ServiceFabric/clusters/applicationTypes"
+    },
+    {
+      "APIVersion": "2017-07-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.ServiceFabric/clusters/applicationTypes/versions"
+    }
+  ],
+  "resourcelist": "Microsoft.ServiceFabric/clusters/applications,Microsoft.ServiceFabric/clusters/applications/services,Microsoft.ServiceFabric/clusters/applicationTypes,Microsoft.ServiceFabric/clusters/applicationTypes/versions",
+  "jsonFilelist": [
+    "/specification/servicefabric/resource-manager/Microsoft.ServiceFabric/preview/2017-07-01-preview/application.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "servicefabric",
+  "readmeFile": "/specification/servicefabric/resource-manager/readme.md",
+  "target": "terraform"
+}
