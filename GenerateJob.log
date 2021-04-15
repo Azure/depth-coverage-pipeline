@@ -24,4 +24,4 @@ WARNING (PreCheck/SchemaMissingType): The schema 'WebTestProperties' with an und
 WARNING (PreCheck/CheckDuplicateSchemas): Checking for duplicate schemas, this could take a (long) while.  Run with --verbose for more detail.
 
 WARNING (PreCheck/DuplicateSchema): Duplicate Schema named WebTestKind -- enum.2: undefined => "basic",enum.3: undefined => "standard",x-ms-enum.name: undefined => "WebTestKindEnum",x-ms-client-name: undefined => "WebTestKind" 
-[51.9 s] Generation Complete
+[53.4 s] Generation Complete
