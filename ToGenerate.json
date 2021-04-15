@@ -1,0 +1,17 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-07-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.SignalRService/signalR/privateEndpointConnections"
+    }
+  ],
+  "resourcelist": "Microsoft.SignalRService/signalR/privateEndpointConnections",
+  "jsonFilelist": [
+    "/specification/signalr/resource-manager/Microsoft.SignalRService/preview/2020-07-01-preview/signalr.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "signalr",
+  "readmeFile": "/specification/signalr/resource-manager/readme.md",
+  "target": "terraform"
+}
