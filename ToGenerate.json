@@ -1,0 +1,28 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-05-01",
+      "operations": [],
+      "Resource": "Microsoft.NetApp/netAppAccounts/backupPolicies"
+    },
+    {
+      "APIVersion": "2020-05-01",
+      "operations": [],
+      "Resource": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/backups"
+    },
+    {
+      "APIVersion": "2020-06-01",
+      "operations": [],
+      "Resource": "Microsoft.NetApp/netAppAccounts/snapshotPolicies"
+    }
+  ],
+  "resourcelist": "Microsoft.NetApp/netAppAccounts/backupPolicies,Microsoft.NetApp/netAppAccounts/capacityPools/volumes/backups,Microsoft.NetApp/netAppAccounts/snapshotPolicies",
+  "jsonFilelist": [
+    "/specification/netapp/resource-manager/Microsoft.NetApp/stable/2020-05-01/netapp.json",
+    "/specification/netapp/resource-manager/Microsoft.NetApp/stable/2020-06-01/netapp.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "netapp",
+  "readmeFile": "/specification/netapp/resource-manager/readme.md",
+  "target": "terraform"
+}
