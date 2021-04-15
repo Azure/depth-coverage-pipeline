@@ -1,0 +1,35 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-11-01",
+      "operations": [
+        {
+          "OperationId": "Containers_Attach",
+          "version": "2020-11-01",
+          "jsonFilePath": "/specification/containerinstance/resource-manager/Microsoft.ContainerInstance/stable/2020-11-01/containerInstance.json"
+        }
+      ],
+      "Resource": "Microsoft.ContainerInstance/containerGroups/containers"
+    },
+    {
+      "APIVersion": "2018-10-01",
+      "operations": [
+        {
+          "OperationId": "ServiceAssociationLink_Delete",
+          "version": "2018-10-01",
+          "jsonFilePath": "/specification/containerinstance/resource-manager/Microsoft.ContainerInstance/stable/2018-10-01/containerInstance.json"
+        }
+      ],
+      "Resource": "Microsoft.ContainerInstance/serviceAssociationLinks"
+    }
+  ],
+  "resourcelist": "Microsoft.ContainerInstance/containerGroups/containers,Microsoft.ContainerInstance/serviceAssociationLinks",
+  "jsonFilelist": [
+    "/specification/containerinstance/resource-manager/Microsoft.ContainerInstance/stable/2020-11-01/containerInstance.json",
+    "/specification/containerinstance/resource-manager/Microsoft.ContainerInstance/stable/2018-10-01/containerInstance.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "containerinstance",
+  "readmeFile": "/specification/containerinstance/resource-manager/readme.md",
+  "target": "clicore"
+}
