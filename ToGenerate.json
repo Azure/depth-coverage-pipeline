@@ -1,0 +1,34 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-07-01-preview",
+      "operations": [
+        {
+          "OperationId": "SignalRPrivateEndpointConnections_Delete",
+          "version": "2020-07-01-preview",
+          "jsonFilePath": "/specification/signalr/resource-manager/Microsoft.SignalRService/preview/2020-07-01-preview/signalr.json"
+        },
+        {
+          "OperationId": "SignalRPrivateEndpointConnections_Get",
+          "version": "2020-07-01-preview",
+          "jsonFilePath": "/specification/signalr/resource-manager/Microsoft.SignalRService/preview/2020-07-01-preview/signalr.json"
+        },
+        {
+          "OperationId": "SignalRPrivateEndpointConnections_Update",
+          "version": "2020-07-01-preview",
+          "jsonFilePath": "/specification/signalr/resource-manager/Microsoft.SignalRService/preview/2020-07-01-preview/signalr.json"
+        }
+      ],
+      "Resource": "Microsoft.SignalRService/signalR/privateEndpointConnections"
+    }
+  ],
+  "resourcelist": "Microsoft.SignalRService/signalR/privateEndpointConnections",
+  "jsonFilelist": [
+    "/specification/signalr/resource-manager/Microsoft.SignalRService/preview/2020-07-01-preview/signalr.json",
+    "/specification/signalr/resource-manager/Microsoft.SignalRService/preview/2021-04-01-preview/signalr.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "signalr",
+  "readmeFile": "/specification/signalr/resource-manager/readme.md",
+  "target": "clicore"
+}
