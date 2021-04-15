@@ -1,0 +1,46 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2018-01-22",
+      "operations": [
+        {
+          "OperationId": "IotDpsResource_listValidSkus",
+          "version": "2018-01-22",
+          "jsonFilePath": "/specification/deviceprovisioningservices/resource-manager/Microsoft.Devices/stable/2018-01-22/iotdps.json"
+        }
+      ],
+      "Resource": "Microsoft.Devices/provisioningServices/skus"
+    },
+    {
+      "APIVersion": "2020-03-01",
+      "operations": [
+        {
+          "OperationId": "IotDpsResource_DeletePrivateEndpointConnection",
+          "version": "2020-03-01",
+          "jsonFilePath": "/specification/deviceprovisioningservices/resource-manager/Microsoft.Devices/stable/2020-03-01/iotdps.json"
+        }
+      ],
+      "Resource": "Microsoft.Devices/provisioningServices/privateEndpointConnections"
+    },
+    {
+      "APIVersion": "2020-03-01",
+      "operations": [
+        {
+          "OperationId": "IotDpsResource_ListPrivateLinkResources",
+          "version": "2020-03-01",
+          "jsonFilePath": "/specification/deviceprovisioningservices/resource-manager/Microsoft.Devices/stable/2020-03-01/iotdps.json"
+        }
+      ],
+      "Resource": "Microsoft.Devices/provisioningServices/privateLinkResources"
+    }
+  ],
+  "resourcelist": "Microsoft.Devices/provisioningServices/skus,Microsoft.Devices/provisioningServices/privateEndpointConnections,Microsoft.Devices/provisioningServices/privateLinkResources",
+  "jsonFilelist": [
+    "/specification/deviceprovisioningservices/resource-manager/Microsoft.Devices/stable/2018-01-22/iotdps.json",
+    "/specification/deviceprovisioningservices/resource-manager/Microsoft.Devices/stable/2020-03-01/iotdps.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "deviceprovisioningservices",
+  "readmeFile": "/specification/deviceprovisioningservices/resource-manager/readme.md",
+  "target": "clicore"
+}
