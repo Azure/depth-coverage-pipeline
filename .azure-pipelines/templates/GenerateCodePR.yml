@@ -42,6 +42,7 @@ steps:
         org=$(TF_ORG)
         repo="terraform-provider-azurerm"
         sdk="terraform"
+        base="pipeline"
     fi
 
     if [ "$sdktarget" == "clicore" ]; then
