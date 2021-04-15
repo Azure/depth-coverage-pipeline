@@ -1,4 +1,4 @@
-AutoRest code generation utility [cli version: 3.1.5; node: v14.16.0, max-memory: 2048 MB]
+AutoRest code generation utility [cli version: 3.1.5; node: v14.16.1, max-memory: 2048 MB]
 (C) 2018 Microsoft Corporation.
 https://aka.ms/autorest
    Loading AutoRest core      '/home/vsts/.autorest/@autorest_core@3.0.6219/node_modules/@autorest/core/dist' (3.0.6219)
@@ -144,4 +144,4 @@ WARNING: Please add the predefined profile: microsoft.network/frontdoors/loadbal
 WARNING: Please add the predefined profile: microsoft.network/frontdoors/frontendendpoints.
 WARNING: Please add the predefined profile: microsoft.network/frontdoors/backendpools.
 WARNING: Please add the predefined profile: microsoft.network/frontdoors/backendpools.
-[48.86 s] Generation Complete
+[58.07 s] Generation Complete
