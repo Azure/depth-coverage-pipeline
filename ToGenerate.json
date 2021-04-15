@@ -1,0 +1,80 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2019-10-01",
+      "operations": [],
+      "Resource": "Microsoft.Migrate/assessmentProjects"
+    },
+    {
+      "APIVersion": "2019-10-01",
+      "operations": [],
+      "Resource": "Microsoft.Migrate/assessmentProjects/groups"
+    },
+    {
+      "APIVersion": "2019-10-01",
+      "operations": [],
+      "Resource": "Microsoft.Migrate/assessmentProjects/groups/assessments"
+    },
+    {
+      "APIVersion": "2019-10-01",
+      "operations": [],
+      "Resource": "Microsoft.Migrate/assessmentProjects/hypervcollectors"
+    },
+    {
+      "APIVersion": "2019-10-01",
+      "operations": [],
+      "Resource": "Microsoft.Migrate/assessmentProjects/servercollectors"
+    },
+    {
+      "APIVersion": "2019-10-01",
+      "operations": [],
+      "Resource": "Microsoft.Migrate/assessmentProjects/vmwarecollectors"
+    },
+    {
+      "APIVersion": "2018-02-02",
+      "operations": [],
+      "Resource": "Microsoft.Migrate/projects"
+    },
+    {
+      "APIVersion": "2018-02-02",
+      "operations": [],
+      "Resource": "Microsoft.Migrate/projects/groups"
+    },
+    {
+      "APIVersion": "2018-02-02",
+      "operations": [],
+      "Resource": "Microsoft.Migrate/projects/groups/assessments"
+    },
+    {
+      "APIVersion": "2020-01-01",
+      "operations": [],
+      "Resource": "Microsoft.OffAzure/HyperVSites"
+    },
+    {
+      "APIVersion": "2020-07-07",
+      "operations": [],
+      "Resource": "Microsoft.OffAzure/MasterSites"
+    },
+    {
+      "APIVersion": "2020-01-01",
+      "operations": [],
+      "Resource": "Microsoft.OffAzure/VMwareSites"
+    },
+    {
+      "APIVersion": "2020-01-01",
+      "operations": [],
+      "Resource": "Microsoft.OffAzure/VMwareSites/vCenters"
+    }
+  ],
+  "resourcelist": "Microsoft.Migrate/assessmentProjects,Microsoft.Migrate/assessmentProjects/groups,Microsoft.Migrate/assessmentProjects/groups/assessments,Microsoft.Migrate/assessmentProjects/hypervcollectors,Microsoft.Migrate/assessmentProjects/servercollectors,Microsoft.Migrate/assessmentProjects/vmwarecollectors,Microsoft.Migrate/projects,Microsoft.Migrate/projects/groups,Microsoft.Migrate/projects/groups/assessments,Microsoft.OffAzure/HyperVSites,Microsoft.OffAzure/MasterSites,Microsoft.OffAzure/VMwareSites,Microsoft.OffAzure/VMwareSites/vCenters",
+  "jsonFilelist": [
+    "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2019-10-01/migrate.json",
+    "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2018-02-02/migrate.json",
+    "/specification/migrate/resource-manager/Microsoft.OffAzure/stable/2020-01-01/migrate.json",
+    "/specification/migrate/resource-manager/Microsoft.OffAzure/stable/2020-07-07/migrate.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "migrate",
+  "readmeFile": "/specification/migrate/resource-manager/readme.md",
+  "target": "terraform"
+}
