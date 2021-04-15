@@ -275,4 +275,4 @@ WARNING: Please add the predefined profile: microsoft.cdn/profiles/afddomains.
 WARNING: Please add the predefined profile: microsoft.network/frontdoorwebapplicationfirewallpolicies.
 WARNING: Please add the predefined profile: microsoft.keyvault/vault.
 WARNING: Please add the predefined profile: microsoft.keyvault/vault/certificate.
-[69.29 s] Generation Complete
+[70.44 s] Generation Complete
