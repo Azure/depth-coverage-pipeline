@@ -31,4 +31,4 @@ WARNING (PreCheck/PropertyRedeclarationWarning): Schema 'PeriodicTimerEventTrigg
 
 WARNING (PreCheck/PropertyRedeclarationWarning): Schema 'PeriodicTimerEventTrigger' has a property 'type' that is already declared the parent schema 'ARMBaseModel' but isn't significantly different. The property has been removed from PeriodicTimerEventTrigger
 WARNING: Please add the predefined profile: microsoft.databoxedge/databoxedgedevices/orders.
-[48.5 s] Generation Complete
+[65.2 s] Generation Complete
