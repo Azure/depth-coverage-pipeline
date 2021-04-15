@@ -1,0 +1,361 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2017-10-01",
+      "operations": [
+        {
+          "OperationId": "EASubscriptionListMigrationDate_Post",
+          "version": "2017-10-01",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/preview/2017-10-01/eaSubscriptionMigration_API.json"
+        }
+      ],
+      "Resource": "microsoft.insights"
+    },
+    {
+      "APIVersion": "2020-10-20",
+      "operations": [
+        {
+          "OperationId": "MyWorkbooks_ListBySubscription",
+          "version": "2020-10-20",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2020-10-20/myworkbooks_API.json"
+        },
+        {
+          "OperationId": "MyWorkbooks_ListByResourceGroup",
+          "version": "2020-10-20",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2020-10-20/myworkbooks_API.json"
+        },
+        {
+          "OperationId": "MyWorkbooks_Delete",
+          "version": "2020-10-20",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2020-10-20/myworkbooks_API.json"
+        },
+        {
+          "OperationId": "MyWorkbooks_Get",
+          "version": "2020-10-20",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2020-10-20/myworkbooks_API.json"
+        }
+      ],
+      "Resource": "Microsoft.Insights/myWorkbooks"
+    },
+    {
+      "APIVersion": "2015-05-01",
+      "operations": [
+        {
+          "OperationId": "WebTests_List",
+          "version": "2015-05-01",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2015-05-01/webTests_API.json"
+        },
+        {
+          "OperationId": "WebTests_ListByResourceGroup",
+          "version": "2015-05-01",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2015-05-01/webTests_API.json"
+        },
+        {
+          "OperationId": "WebTests_Delete",
+          "version": "2015-05-01",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2015-05-01/webTests_API.json"
+        },
+        {
+          "OperationId": "WebTests_Get",
+          "version": "2015-05-01",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2015-05-01/webTests_API.json"
+        },
+        {
+          "OperationId": "WebTests_CreateOrUpdate",
+          "version": "2015-05-01",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2015-05-01/webTests_API.json"
+        }
+      ],
+      "Resource": "Microsoft.Insights/webtests"
+    },
+    {
+      "APIVersion": "2020-10-20",
+      "operations": [
+        {
+          "OperationId": "Workbooks_ListBySubscription",
+          "version": "2020-10-20",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2020-10-20/workbooks_API.json"
+        },
+        {
+          "OperationId": "Workbooks_ListByResourceGroup",
+          "version": "2020-10-20",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2020-10-20/workbooks_API.json"
+        },
+        {
+          "OperationId": "Workbooks_Delete",
+          "version": "2020-10-20",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2020-10-20/workbooks_API.json"
+        },
+        {
+          "OperationId": "Workbooks_Get",
+          "version": "2020-10-20",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2020-10-20/workbooks_API.json"
+        },
+        {
+          "OperationId": "Workbooks_CreateOrUpdate",
+          "version": "2020-10-20",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2020-10-20/workbooks_API.json"
+        }
+      ],
+      "Resource": "Microsoft.Insights/workbooks"
+    },
+    {
+      "APIVersion": "2015-05-01",
+      "operations": [
+        {
+          "OperationId": "WebTests_ListByComponent",
+          "version": "2015-05-01",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2015-05-01/webTests_API.json"
+        }
+      ],
+      "Resource": "Microsoft.Insights/components/webtests"
+    },
+    {
+      "APIVersion": "2015-05-01",
+      "operations": [
+        {
+          "OperationId": "Annotations_List",
+          "version": "2015-05-01",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2015-05-01/componentAnnotations_API.json"
+        },
+        {
+          "OperationId": "Annotations_Create",
+          "version": "2015-05-01",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2015-05-01/componentAnnotations_API.json"
+        },
+        {
+          "OperationId": "Annotations_Delete",
+          "version": "2015-05-01",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2015-05-01/componentAnnotations_API.json"
+        }
+      ],
+      "Resource": "Microsoft.Insights/components/Annotations"
+    },
+    {
+      "APIVersion": "2015-05-01",
+      "operations": [
+        {
+          "OperationId": "WorkItemConfigurations_GetDefault",
+          "version": "2015-05-01",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2015-05-01/componentWorkItemConfigs_API.json"
+        }
+      ],
+      "Resource": "Microsoft.Insights/components/DefaultWorkItemConfig"
+    },
+    {
+      "APIVersion": "2015-05-01",
+      "operations": [
+        {
+          "OperationId": "Favorites_List",
+          "version": "2015-05-01",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2015-05-01/favorites_API.json"
+        },
+        {
+          "OperationId": "Favorites_Delete",
+          "version": "2015-05-01",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2015-05-01/favorites_API.json"
+        },
+        {
+          "OperationId": "Favorites_Get",
+          "version": "2015-05-01",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2015-05-01/favorites_API.json"
+        },
+        {
+          "OperationId": "Favorites_Add",
+          "version": "2015-05-01",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2015-05-01/favorites_API.json"
+        }
+      ],
+      "Resource": "Microsoft.Insights/components/favorites"
+    },
+    {
+      "APIVersion": "2015-05-01",
+      "operations": [
+        {
+          "OperationId": "ComponentFeatureCapabilities_Get",
+          "version": "2015-05-01",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2015-05-01/componentFeaturesAndPricing_API.json"
+        }
+      ],
+      "Resource": "Microsoft.Insights/components/featurecapabilities"
+    },
+    {
+      "APIVersion": "2015-05-01",
+      "operations": [
+        {
+          "OperationId": "ComponentAvailableFeatures_Get",
+          "version": "2015-05-01",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2015-05-01/componentFeaturesAndPricing_API.json"
+        }
+      ],
+      "Resource": "Microsoft.Insights/components/getavailablebillingfeatures"
+    },
+    {
+      "APIVersion": "2017-10-01",
+      "operations": [
+        {
+          "OperationId": "ComponentCurrentPricingPlan_Get",
+          "version": "2017-10-01",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/preview/2017-10-01/componentFeaturesAndPricing_API.json"
+        },
+        {
+          "OperationId": "ComponentCurrentPricingPlan_CreateAndUpdate",
+          "version": "2017-10-01",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/preview/2017-10-01/componentFeaturesAndPricing_API.json"
+        }
+      ],
+      "Resource": "microsoft.insights/components/pricingPlans"
+    },
+    {
+      "APIVersion": "2015-05-01",
+      "operations": [
+        {
+          "OperationId": "ProactiveDetectionConfigurations_List",
+          "version": "2015-05-01",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2015-05-01/componentProactiveDetection_API.json"
+        },
+        {
+          "OperationId": "ProactiveDetectionConfigurations_Get",
+          "version": "2015-05-01",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2015-05-01/componentProactiveDetection_API.json"
+        },
+        {
+          "OperationId": "ProactiveDetectionConfigurations_Update",
+          "version": "2015-05-01",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2015-05-01/componentProactiveDetection_API.json"
+        }
+      ],
+      "Resource": "Microsoft.Insights/components/ProactiveDetectionConfigs"
+    },
+    {
+      "APIVersion": "2015-05-01",
+      "operations": [
+        {
+          "OperationId": "Components_Purge",
+          "version": "2015-05-01",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2015-05-01/components_API.json"
+        }
+      ],
+      "Resource": "Microsoft.Insights/components"
+    },
+    {
+      "APIVersion": "2015-05-01",
+      "operations": [
+        {
+          "OperationId": "ComponentQuotaStatus_Get",
+          "version": "2015-05-01",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2015-05-01/componentFeaturesAndPricing_API.json"
+        }
+      ],
+      "Resource": "Microsoft.Insights/components/quotastatus"
+    },
+    {
+      "APIVersion": "2015-05-01",
+      "operations": [
+        {
+          "OperationId": "WorkItemConfigurations_List",
+          "version": "2015-05-01",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2015-05-01/componentWorkItemConfigs_API.json"
+        },
+        {
+          "OperationId": "WorkItemConfigurations_Delete",
+          "version": "2015-05-01",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2015-05-01/componentWorkItemConfigs_API.json"
+        },
+        {
+          "OperationId": "WorkItemConfigurations_UpdateItem",
+          "version": "2015-05-01",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2015-05-01/componentWorkItemConfigs_API.json"
+        }
+      ],
+      "Resource": "Microsoft.Insights/components/WorkItemConfigs"
+    },
+    {
+      "APIVersion": "2020-02-10-preview",
+      "operations": [
+        {
+          "OperationId": "getTestResultFile",
+          "version": "2020-02-10-preview",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/preview/2020-02-10-preview/WebTestResults_API.json"
+        }
+      ],
+      "Resource": "microsoft.insights/webtests"
+    },
+    {
+      "APIVersion": "2018-06-17-preview",
+      "operations": [
+        {
+          "OperationId": "Workbooks_ListByResourceGroup",
+          "version": "2018-06-17-preview",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/preview/2018-06-17-preview/workbooks_API.json"
+        },
+        {
+          "OperationId": "Workbooks_Delete",
+          "version": "2018-06-17-preview",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/preview/2018-06-17-preview/workbooks_API.json"
+        },
+        {
+          "OperationId": "Workbooks_Get",
+          "version": "2018-06-17-preview",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/preview/2018-06-17-preview/workbooks_API.json"
+        },
+        {
+          "OperationId": "Workbooks_CreateOrUpdate",
+          "version": "2018-06-17-preview",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/preview/2018-06-17-preview/workbooks_API.json"
+        }
+      ],
+      "Resource": "microsoft.insights/workbooks"
+    },
+    {
+      "APIVersion": "2019-10-17-preview",
+      "operations": [
+        {
+          "OperationId": "WorkbookTemplates_ListByResourceGroup",
+          "version": "2019-10-17-preview",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/preview/2019-10-17-preview/workbookTemplates_API.json"
+        },
+        {
+          "OperationId": "WorkbookTemplates_Delete",
+          "version": "2019-10-17-preview",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/preview/2019-10-17-preview/workbookTemplates_API.json"
+        },
+        {
+          "OperationId": "WorkbookTemplates_Get",
+          "version": "2019-10-17-preview",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/preview/2019-10-17-preview/workbookTemplates_API.json"
+        },
+        {
+          "OperationId": "WorkbookTemplates_CreateOrUpdate",
+          "version": "2019-10-17-preview",
+          "jsonFilePath": "/specification/applicationinsights/resource-manager/Microsoft.Insights/preview/2019-10-17-preview/workbookTemplates_API.json"
+        }
+      ],
+      "Resource": "microsoft.insights/workbooktemplates"
+    }
+  ],
+  "resourcelist": "microsoft.insights,Microsoft.Insights/myWorkbooks,Microsoft.Insights/webtests,Microsoft.Insights/workbooks,Microsoft.Insights/components/webtests,Microsoft.Insights/components/Annotations,Microsoft.Insights/components/DefaultWorkItemConfig,Microsoft.Insights/components/favorites,Microsoft.Insights/components/featurecapabilities,Microsoft.Insights/components/getavailablebillingfeatures,microsoft.insights/components/pricingPlans,Microsoft.Insights/components/ProactiveDetectionConfigs,Microsoft.Insights/components,Microsoft.Insights/components/quotastatus,Microsoft.Insights/components/WorkItemConfigs,microsoft.insights/webtests,microsoft.insights/workbooks,microsoft.insights/workbooktemplates",
+  "jsonFilelist": [
+    "/specification/applicationinsights/resource-manager/Microsoft.Insights/preview/2017-10-01/eaSubscriptionMigration_API.json",
+    "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2020-10-20/myworkbooks_API.json",
+    "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2015-05-01/webTests_API.json",
+    "/specification/applicationinsights/resource-manager/Microsoft.Insights/preview/2020-10-05-preview/webTests_API.json",
+    "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2020-10-20/workbooks_API.json",
+    "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2015-05-01/componentAnnotations_API.json",
+    "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2015-05-01/componentWorkItemConfigs_API.json",
+    "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2015-05-01/favorites_API.json",
+    "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2015-05-01/componentFeaturesAndPricing_API.json",
+    "/specification/applicationinsights/resource-manager/Microsoft.Insights/preview/2017-10-01/componentFeaturesAndPricing_API.json",
+    "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2015-05-01/componentProactiveDetection_API.json",
+    "/specification/applicationinsights/resource-manager/Microsoft.Insights/preview/2018-05-01-preview/componentProactiveDetection_API.json",
+    "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2015-05-01/components_API.json",
+    "/specification/applicationinsights/resource-manager/Microsoft.Insights/preview/2020-02-02-preview/components_API.json",
+    "/specification/applicationinsights/resource-manager/Microsoft.Insights/preview/2020-02-10-preview/WebTestResults_API.json",
+    "/specification/applicationinsights/resource-manager/Microsoft.Insights/preview/2018-06-17-preview/workbooks_API.json",
+    "/specification/applicationinsights/resource-manager/Microsoft.Insights/preview/2019-10-17-preview/workbookTemplates_API.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "applicationinsights",
+  "readmeFile": "/specification/applicationinsights/resource-manager/readme.md",
+  "target": "clicore"
+}
