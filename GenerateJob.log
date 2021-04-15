@@ -92,4 +92,4 @@ WARNING (PreCheck/SchemaMissingType): The schema 'TrackedResource' with an undef
 WARNING (PreCheck/SchemaMissingType): The schema 'ProxyResource' with an undefined type and 'allOf'/'anyOf'/'oneOf' is a bit ambigious. This has been auto-corrected to 'type:object'
 
 WARNING (PreCheck/CheckDuplicateSchemas): Checking for duplicate schemas, this could take a (long) while.  Run with --verbose for more detail.
-[44.3 s] Generation Complete
+[36.43 s] Generation Complete
