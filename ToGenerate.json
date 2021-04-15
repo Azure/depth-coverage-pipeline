@@ -1,0 +1,116 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2021-03-01-preview",
+      "operations": [
+        {
+          "OperationId": "ObjectAnchorsAccounts_ListBySubscription",
+          "version": "2021-03-01-preview",
+          "jsonFilePath": "/specification/mixedreality/resource-manager/Microsoft.MixedReality/preview/2021-03-01-preview/object-anchors.json"
+        },
+        {
+          "OperationId": "ObjectAnchorsAccounts_ListByResourceGroup",
+          "version": "2021-03-01-preview",
+          "jsonFilePath": "/specification/mixedreality/resource-manager/Microsoft.MixedReality/preview/2021-03-01-preview/object-anchors.json"
+        },
+        {
+          "OperationId": "ObjectAnchorsAccounts_Delete",
+          "version": "2021-03-01-preview",
+          "jsonFilePath": "/specification/mixedreality/resource-manager/Microsoft.MixedReality/preview/2021-03-01-preview/object-anchors.json"
+        },
+        {
+          "OperationId": "ObjectAnchorsAccounts_Get",
+          "version": "2021-03-01-preview",
+          "jsonFilePath": "/specification/mixedreality/resource-manager/Microsoft.MixedReality/preview/2021-03-01-preview/object-anchors.json"
+        },
+        {
+          "OperationId": "ObjectAnchorsAccounts_Create",
+          "version": "2021-03-01-preview",
+          "jsonFilePath": "/specification/mixedreality/resource-manager/Microsoft.MixedReality/preview/2021-03-01-preview/object-anchors.json"
+        },
+        {
+          "OperationId": "ObjectAnchorsAccounts_ListKeys",
+          "version": "2021-03-01-preview",
+          "jsonFilePath": "/specification/mixedreality/resource-manager/Microsoft.MixedReality/preview/2021-03-01-preview/object-anchors.json"
+        },
+        {
+          "OperationId": "ObjectAnchorsAccounts_RegenerateKeys",
+          "version": "2021-03-01-preview",
+          "jsonFilePath": "/specification/mixedreality/resource-manager/Microsoft.MixedReality/preview/2021-03-01-preview/object-anchors.json"
+        }
+      ],
+      "Resource": "Microsoft.MixedReality/objectAnchorsAccounts"
+    },
+    {
+      "APIVersion": "2020-04-06-preview",
+      "operations": [
+        {
+          "OperationId": "RemoteRenderingAccounts_ListBySubscription",
+          "version": "2020-04-06-preview",
+          "jsonFilePath": "/specification/mixedreality/resource-manager/Microsoft.MixedReality/preview/2020-04-06-preview/remote-rendering.json"
+        },
+        {
+          "OperationId": "RemoteRenderingAccounts_ListByResourceGroup",
+          "version": "2020-04-06-preview",
+          "jsonFilePath": "/specification/mixedreality/resource-manager/Microsoft.MixedReality/preview/2020-04-06-preview/remote-rendering.json"
+        },
+        {
+          "OperationId": "RemoteRenderingAccounts_Delete",
+          "version": "2020-04-06-preview",
+          "jsonFilePath": "/specification/mixedreality/resource-manager/Microsoft.MixedReality/preview/2020-04-06-preview/remote-rendering.json"
+        },
+        {
+          "OperationId": "RemoteRenderingAccounts_Get",
+          "version": "2019-12-02-preview",
+          "jsonFilePath": "/specification/mixedreality/resource-manager/Microsoft.MixedReality/preview/2019-12-02-preview/remote-rendering.json"
+        },
+        {
+          "OperationId": "RemoteRenderingAccounts_Create",
+          "version": "2020-04-06-preview",
+          "jsonFilePath": "/specification/mixedreality/resource-manager/Microsoft.MixedReality/preview/2020-04-06-preview/remote-rendering.json"
+        },
+        {
+          "OperationId": "RemoteRenderingAccounts_ListKeys",
+          "version": "2020-04-06-preview",
+          "jsonFilePath": "/specification/mixedreality/resource-manager/Microsoft.MixedReality/preview/2020-04-06-preview/remote-rendering.json"
+        },
+        {
+          "OperationId": "RemoteRenderingAccounts_RegenerateKeys",
+          "version": "2020-04-06-preview",
+          "jsonFilePath": "/specification/mixedreality/resource-manager/Microsoft.MixedReality/preview/2020-04-06-preview/remote-rendering.json"
+        }
+      ],
+      "Resource": "Microsoft.MixedReality/remoteRenderingAccounts"
+    },
+    {
+      "APIVersion": "2020-05-01",
+      "operations": [
+        {
+          "OperationId": "SpatialAnchorsAccounts_ListKeys",
+          "version": "2020-05-01",
+          "jsonFilePath": "/specification/mixedreality/resource-manager/Microsoft.MixedReality/stable/2020-05-01/spatial-anchors.json"
+        },
+        {
+          "OperationId": "SpatialAnchorsAccounts_RegenerateKeys",
+          "version": "2020-05-01",
+          "jsonFilePath": "/specification/mixedreality/resource-manager/Microsoft.MixedReality/stable/2020-05-01/spatial-anchors.json"
+        }
+      ],
+      "Resource": "Microsoft.MixedReality/spatialAnchorsAccounts"
+    }
+  ],
+  "resourcelist": "Microsoft.MixedReality/objectAnchorsAccounts,Microsoft.MixedReality/remoteRenderingAccounts,Microsoft.MixedReality/spatialAnchorsAccounts",
+  "jsonFilelist": [
+    "/specification/mixedreality/resource-manager/Microsoft.MixedReality/preview/2021-03-01-preview/object-anchors.json",
+    "/specification/mixedreality/resource-manager/Microsoft.MixedReality/preview/2020-04-06-preview/remote-rendering.json",
+    "/specification/mixedreality/resource-manager/Microsoft.MixedReality/stable/2021-01-01/remote-rendering.json",
+    "/specification/mixedreality/resource-manager/Microsoft.MixedReality/preview/2021-03-01-preview/remote-rendering.json",
+    "/specification/mixedreality/resource-manager/Microsoft.MixedReality/preview/2019-12-02-preview/remote-rendering.json",
+    "/specification/mixedreality/resource-manager/Microsoft.MixedReality/stable/2020-05-01/spatial-anchors.json",
+    "/specification/mixedreality/resource-manager/Microsoft.MixedReality/stable/2021-01-01/spatial-anchors.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "mixedreality",
+  "readmeFile": "/specification/mixedreality/resource-manager/readme.md",
+  "target": "clicore"
+}
