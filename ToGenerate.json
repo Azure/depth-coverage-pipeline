@@ -1,0 +1,335 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2015-04-08",
+      "operations": [
+        {
+          "OperationId": "DatabaseAccounts_ListCassandraKeyspaces",
+          "version": "2015-04-08",
+          "jsonFilePath": "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2015-04-08/cosmos-db.json"
+        },
+        {
+          "OperationId": "DatabaseAccounts_DeleteCassandraKeyspace",
+          "version": "2015-04-08",
+          "jsonFilePath": "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2015-04-08/cosmos-db.json"
+        }
+      ],
+      "Resource": "Microsoft.DocumentDB/databaseAccounts/apis/keyspaces"
+    },
+    {
+      "APIVersion": "2015-04-08",
+      "operations": [
+        {
+          "OperationId": "DatabaseAccounts_GetCassandraKeyspaceThroughput",
+          "version": "2015-04-08",
+          "jsonFilePath": "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2015-04-08/cosmos-db.json"
+        },
+        {
+          "OperationId": "DatabaseAccounts_UpdateCassandraKeyspaceThroughput",
+          "version": "2015-04-08",
+          "jsonFilePath": "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2015-04-08/cosmos-db.json"
+        }
+      ],
+      "Resource": "Microsoft.DocumentDB/databaseAccounts/apis/keyspaces/settings"
+    },
+    {
+      "APIVersion": "2015-04-08",
+      "operations": [
+        {
+          "OperationId": "DatabaseAccounts_ListCassandraTables",
+          "version": "2015-04-08",
+          "jsonFilePath": "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2015-04-08/cosmos-db.json"
+        }
+      ],
+      "Resource": "Microsoft.DocumentDB/databaseAccounts/apis/keyspaces/tables"
+    },
+    {
+      "APIVersion": "2015-04-08",
+      "operations": [
+        {
+          "OperationId": "DatabaseAccounts_GetCassandraTableThroughput",
+          "version": "2015-04-08",
+          "jsonFilePath": "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2015-04-08/cosmos-db.json"
+        },
+        {
+          "OperationId": "DatabaseAccounts_UpdateCassandraTableThroughput",
+          "version": "2015-04-08",
+          "jsonFilePath": "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2015-04-08/cosmos-db.json"
+        }
+      ],
+      "Resource": "Microsoft.DocumentDB/databaseAccounts/apis/keyspaces/tables/settings"
+    },
+    {
+      "APIVersion": "2015-04-08",
+      "operations": [
+        {
+          "OperationId": "DatabaseAccounts_ListGremlinGraphs",
+          "version": "2015-04-08",
+          "jsonFilePath": "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2015-04-08/cosmos-db.json"
+        },
+        {
+          "OperationId": "DatabaseAccounts_DeleteGremlinGraph",
+          "version": "2015-04-08",
+          "jsonFilePath": "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2015-04-08/cosmos-db.json"
+        },
+        {
+          "OperationId": "DatabaseAccounts_GetGremlinGraph",
+          "version": "2015-04-08",
+          "jsonFilePath": "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2015-04-08/cosmos-db.json"
+        },
+        {
+          "OperationId": "DatabaseAccounts_CreateUpdateGremlinGraph",
+          "version": "2015-04-08",
+          "jsonFilePath": "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2015-04-08/cosmos-db.json"
+        }
+      ],
+      "Resource": "Microsoft.DocumentDB/databaseAccounts/apis/databases/graphs"
+    },
+    {
+      "APIVersion": "2015-04-08",
+      "operations": [
+        {
+          "OperationId": "DatabaseAccounts_GetGremlinGraphThroughput",
+          "version": "2015-04-08",
+          "jsonFilePath": "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2015-04-08/cosmos-db.json"
+        },
+        {
+          "OperationId": "DatabaseAccounts_UpdateGremlinGraphThroughput",
+          "version": "2015-04-08",
+          "jsonFilePath": "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2015-04-08/cosmos-db.json"
+        }
+      ],
+      "Resource": "Microsoft.DocumentDB/databaseAccounts/apis/databases/graphs/settings"
+    },
+    {
+      "APIVersion": "2015-04-08",
+      "operations": [
+        {
+          "OperationId": "DatabaseAccounts_GetTableThroughput",
+          "version": "2015-04-08",
+          "jsonFilePath": "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2015-04-08/cosmos-db.json"
+        },
+        {
+          "OperationId": "DatabaseAccounts_UpdateTableThroughput",
+          "version": "2015-04-08",
+          "jsonFilePath": "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2015-04-08/cosmos-db.json"
+        }
+      ],
+      "Resource": "Microsoft.DocumentDB/databaseAccounts/apis/tables/settings"
+    },
+    {
+      "APIVersion": "2020-04-01",
+      "operations": [
+        {
+          "OperationId": "CassandraResources_MigrateCassandraKeyspaceToManualThroughput",
+          "version": "2020-04-01",
+          "jsonFilePath": "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2020-04-01/cosmos-db.json"
+        }
+      ],
+      "Resource": "Microsoft.DocumentDB/databaseAccounts/cassandraKeyspaces/throughputSettings"
+    },
+    {
+      "APIVersion": "2015-04-08",
+      "operations": [
+        {
+          "OperationId": "Collection_ListMetrics",
+          "version": "2015-04-08",
+          "jsonFilePath": "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2015-04-08/cosmos-db.json"
+        }
+      ],
+      "Resource": "Microsoft.DocumentDB/databaseAccounts/databases/collections/metrics"
+    },
+    {
+      "APIVersion": "2015-04-08",
+      "operations": [
+        {
+          "OperationId": "CollectionPartition_ListMetrics",
+          "version": "2015-04-08",
+          "jsonFilePath": "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2015-04-08/cosmos-db.json"
+        },
+        {
+          "OperationId": "CollectionPartition_ListUsages",
+          "version": "2015-04-08",
+          "jsonFilePath": "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2015-04-08/cosmos-db.json"
+        }
+      ],
+      "Resource": "Microsoft.DocumentDB/databaseAccounts/databases/collections/partitions"
+    },
+    {
+      "APIVersion": "2019-08-01",
+      "operations": [
+        {
+          "OperationId": "Collection_ListUsages",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2019-08-01/cosmos-db.json"
+        }
+      ],
+      "Resource": "Microsoft.DocumentDB/databaseAccounts/databases/collections/usages"
+    },
+    {
+      "APIVersion": "2015-04-08",
+      "operations": [
+        {
+          "OperationId": "Database_ListMetrics",
+          "version": "2015-04-08",
+          "jsonFilePath": "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2015-04-08/cosmos-db.json"
+        }
+      ],
+      "Resource": "Microsoft.DocumentDB/databaseAccounts/databases/metrics"
+    },
+    {
+      "APIVersion": "2020-04-01",
+      "operations": [
+        {
+          "OperationId": "Database_ListUsages",
+          "version": "2020-04-01",
+          "jsonFilePath": "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2020-04-01/cosmos-db.json"
+        }
+      ],
+      "Resource": "Microsoft.DocumentDB/databaseAccounts/databases/usages"
+    },
+    {
+      "APIVersion": "2020-04-01",
+      "operations": [
+        {
+          "OperationId": "GremlinResources_MigrateGremlinDatabaseToManualThroughput",
+          "version": "2020-04-01",
+          "jsonFilePath": "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2020-04-01/cosmos-db.json"
+        }
+      ],
+      "Resource": "Microsoft.DocumentDB/databaseAccounts/gremlinDatabases/throughputSettings"
+    },
+    {
+      "APIVersion": "2015-04-08",
+      "operations": [
+        {
+          "OperationId": "DatabaseAccounts_ListMetricDefinitions",
+          "version": "2015-04-08",
+          "jsonFilePath": "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2015-04-08/cosmos-db.json"
+        }
+      ],
+      "Resource": "Microsoft.DocumentDB/databaseAccounts/metricDefinitions"
+    },
+    {
+      "APIVersion": "2015-04-08",
+      "operations": [
+        {
+          "OperationId": "DatabaseAccounts_ListMetrics",
+          "version": "2015-04-08",
+          "jsonFilePath": "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2015-04-08/cosmos-db.json"
+        }
+      ],
+      "Resource": "Microsoft.DocumentDB/databaseAccounts/metrics"
+    },
+    {
+      "APIVersion": "2020-04-01",
+      "operations": [
+        {
+          "OperationId": "NotebookWorkspaces_ListByDatabaseAccount",
+          "version": "2020-04-01",
+          "jsonFilePath": "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2020-04-01/notebook.json"
+        },
+        {
+          "OperationId": "NotebookWorkspaces_Delete",
+          "version": "2021-03-01-preview",
+          "jsonFilePath": "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2021-03-01-preview/notebook.json"
+        },
+        {
+          "OperationId": "NotebookWorkspaces_Get",
+          "version": "2019-08-01",
+          "jsonFilePath": "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2019-08-01/notebook.json"
+        },
+        {
+          "OperationId": "NotebookWorkspaces_CreateOrUpdate",
+          "version": "2019-12-12",
+          "jsonFilePath": "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2019-12-12/notebook.json"
+        }
+      ],
+      "Resource": "Microsoft.DocumentDB/databaseAccounts/notebookWorkspaces"
+    },
+    {
+      "APIVersion": "2019-08-01-preview",
+      "operations": [
+        {
+          "OperationId": "PrivateEndpointConnections_ListByDatabaseAccount",
+          "version": "2019-08-01-preview",
+          "jsonFilePath": "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2019-08-01-preview/privateEndpointConnection.json"
+        }
+      ],
+      "Resource": "Microsoft.DocumentDB/databaseAccounts/privateEndpointConnections"
+    },
+    {
+      "APIVersion": "2015-04-08",
+      "operations": [
+        {
+          "OperationId": "DatabaseAccounts_GetReadOnlyKeys",
+          "version": "2015-04-08",
+          "jsonFilePath": "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2015-04-08/cosmos-db.json"
+        }
+      ],
+      "Resource": "Microsoft.DocumentDB/databaseAccounts/readonlykeys"
+    },
+    {
+      "APIVersion": "2015-04-08",
+      "operations": [
+        {
+          "OperationId": "CollectionRegion_ListMetrics",
+          "version": "2015-04-08",
+          "jsonFilePath": "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2015-04-08/cosmos-db.json"
+        }
+      ],
+      "Resource": "Microsoft.DocumentDB/databaseAccounts/region/databases/collections/metrics"
+    },
+    {
+      "APIVersion": "2015-04-08",
+      "operations": [
+        {
+          "OperationId": "CollectionPartitionRegion_ListMetrics",
+          "version": "2015-04-08",
+          "jsonFilePath": "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2015-04-08/cosmos-db.json"
+        }
+      ],
+      "Resource": "Microsoft.DocumentDB/databaseAccounts/region/databases/collections/partitions"
+    },
+    {
+      "APIVersion": "2015-04-08",
+      "operations": [
+        {
+          "OperationId": "DatabaseAccounts_ListUsages",
+          "version": "2015-04-08",
+          "jsonFilePath": "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2015-04-08/cosmos-db.json"
+        }
+      ],
+      "Resource": "Microsoft.DocumentDB/databaseAccounts/usages"
+    }
+  ],
+  "resourcelist": "Microsoft.DocumentDB/databaseAccounts/apis/keyspaces,Microsoft.DocumentDB/databaseAccounts/apis/keyspaces/settings,Microsoft.DocumentDB/databaseAccounts/apis/keyspaces/tables,Microsoft.DocumentDB/databaseAccounts/apis/keyspaces/tables/settings,Microsoft.DocumentDB/databaseAccounts/apis/databases/graphs,Microsoft.DocumentDB/databaseAccounts/apis/databases/graphs/settings,Microsoft.DocumentDB/databaseAccounts/apis/tables/settings,Microsoft.DocumentDB/databaseAccounts/cassandraKeyspaces/throughputSettings,Microsoft.DocumentDB/databaseAccounts/databases/collections/metrics,Microsoft.DocumentDB/databaseAccounts/databases/collections/partitions,Microsoft.DocumentDB/databaseAccounts/databases/collections/usages,Microsoft.DocumentDB/databaseAccounts/databases/metrics,Microsoft.DocumentDB/databaseAccounts/databases/usages,Microsoft.DocumentDB/databaseAccounts/gremlinDatabases/throughputSettings,Microsoft.DocumentDB/databaseAccounts/metricDefinitions,Microsoft.DocumentDB/databaseAccounts/metrics,Microsoft.DocumentDB/databaseAccounts/notebookWorkspaces,Microsoft.DocumentDB/databaseAccounts/privateEndpointConnections,Microsoft.DocumentDB/databaseAccounts/readonlykeys,Microsoft.DocumentDB/databaseAccounts/region/databases/collections/metrics,Microsoft.DocumentDB/databaseAccounts/region/databases/collections/partitions,Microsoft.DocumentDB/databaseAccounts/usages",
+  "jsonFilelist": [
+    "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2015-04-08/cosmos-db.json",
+    "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2016-03-31/cosmos-db.json",
+    "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2020-04-01/cosmos-db.json",
+    "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2019-12-12/cosmos-db.json",
+    "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2019-08-01/cosmos-db.json",
+    "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2020-06-01-preview/cosmos-db.json",
+    "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2020-03-01/cosmos-db.json",
+    "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2020-09-01/cosmos-db.json",
+    "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2021-03-15/cosmos-db.json",
+    "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2020-04-01/notebook.json",
+    "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2020-06-01-preview/notebook.json",
+    "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2020-09-01/notebook.json",
+    "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2021-01-15/notebook.json",
+    "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2021-03-01-preview/notebook.json",
+    "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2021-03-15/notebook.json",
+    "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2019-08-01/notebook.json",
+    "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2019-12-12/notebook.json",
+    "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2019-08-01-preview/privateEndpointConnection.json",
+    "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2021-01-15/privateEndpointConnection.json",
+    "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/preview/2021-03-01-preview/privateEndpointConnection.json",
+    "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2021-03-15/privateEndpointConnection.json",
+    "/specification/cosmos-db/resource-manager/Microsoft.DocumentDB/stable/2021-01-15/cosmos-db.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "cosmos-db",
+  "readmeFile": "/specification/cosmos-db/resource-manager/readme.md",
+  "target": "clicore"
+}
