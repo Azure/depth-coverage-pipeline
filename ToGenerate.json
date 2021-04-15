@@ -1,0 +1,71 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2018-06-01-preview",
+      "operations": [
+        {
+          "OperationId": "Skus_List",
+          "version": "2018-06-01-preview",
+          "jsonFilePath": "/specification/blockchain/resource-manager/Microsoft.Blockchain/preview/2018-06-01-preview/blockchain.json"
+        }
+      ],
+      "Resource": "Microsoft.Blockchain/skus"
+    },
+    {
+      "APIVersion": "2018-06-01-preview",
+      "operations": [
+        {
+          "OperationId": "BlockchainMembers_ListConsortiumMembers",
+          "version": "2018-06-01-preview",
+          "jsonFilePath": "/specification/blockchain/resource-manager/Microsoft.Blockchain/preview/2018-06-01-preview/blockchain.json"
+        }
+      ],
+      "Resource": "Microsoft.Blockchain/blockchainMembers/consortiumMembers"
+    },
+    {
+      "APIVersion": "2018-06-01-preview",
+      "operations": [
+        {
+          "OperationId": "BlockchainMembers_ListRegenerateApiKeys",
+          "version": "2018-06-01-preview",
+          "jsonFilePath": "/specification/blockchain/resource-manager/Microsoft.Blockchain/preview/2018-06-01-preview/blockchain.json"
+        }
+      ],
+      "Resource": "Microsoft.Blockchain/blockchainMembers"
+    },
+    {
+      "APIVersion": "2018-06-01-preview",
+      "operations": [
+        {
+          "OperationId": "TransactionNodes_Delete",
+          "version": "2018-06-01-preview",
+          "jsonFilePath": "/specification/blockchain/resource-manager/Microsoft.Blockchain/preview/2018-06-01-preview/blockchain.json"
+        },
+        {
+          "OperationId": "TransactionNodes_Get",
+          "version": "2018-06-01-preview",
+          "jsonFilePath": "/specification/blockchain/resource-manager/Microsoft.Blockchain/preview/2018-06-01-preview/blockchain.json"
+        },
+        {
+          "OperationId": "TransactionNodes_Create",
+          "version": "2018-06-01-preview",
+          "jsonFilePath": "/specification/blockchain/resource-manager/Microsoft.Blockchain/preview/2018-06-01-preview/blockchain.json"
+        },
+        {
+          "OperationId": "TransactionNodes_ListApiKeys",
+          "version": "2018-06-01-preview",
+          "jsonFilePath": "/specification/blockchain/resource-manager/Microsoft.Blockchain/preview/2018-06-01-preview/blockchain.json"
+        }
+      ],
+      "Resource": "Microsoft.Blockchain/blockchainMembers/transactionNodes"
+    }
+  ],
+  "resourcelist": "Microsoft.Blockchain/skus,Microsoft.Blockchain/blockchainMembers/consortiumMembers,Microsoft.Blockchain/blockchainMembers,Microsoft.Blockchain/blockchainMembers/transactionNodes",
+  "jsonFilelist": [
+    "/specification/blockchain/resource-manager/Microsoft.Blockchain/preview/2018-06-01-preview/blockchain.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "blockchain",
+  "readmeFile": "/specification/blockchain/resource-manager/readme.md",
+  "target": "clicore"
+}
