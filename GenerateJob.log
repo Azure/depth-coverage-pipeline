@@ -1,4 +1,4 @@
-AutoRest code generation utility [cli version: 3.1.5; node: v14.16.1, max-memory: 2048 MB]
+AutoRest code generation utility [cli version: 3.1.5; node: v14.16.0, max-memory: 2048 MB]
 (C) 2018 Microsoft Corporation.
 https://aka.ms/autorest
    Loading AutoRest core      '/home/vsts/.autorest/@autorest_core@3.0.6219/node_modules/@autorest/core/dist' (3.0.6219)
@@ -89,9 +89,9 @@ WARNING (PreCheck/CheckDuplicateSchemas): Checking for duplicate schemas, this c
 
 <--- Last few GCs --->
 
-[2293:0x465b020]   101592 ms: Mark-sweep 1931.4 (2067.9) -> 1913.4 (2065.7) MB, 949.8 / 0.0 ms  (average mu = 0.200, current mu = 0.167) allocation failure scavenge might not succeed
-[2293:0x465b020]   101676 ms: Scavenge 1929.5 (2065.7) -> 1917.6 (2065.7) MB, 15.5 / 0.0 ms  (average mu = 0.200, current mu = 0.167) allocation failure 
-[2293:0x465b020]   101737 ms: Scavenge 1929.6 (2065.7) -> 1920.5 (2069.7) MB, 26.1 / 0.0 ms  (average mu = 0.200, current mu = 0.167) allocation failure 
+[2514:0x63aa020]    72280 ms: Mark-sweep 1945.5 (2067.4) -> 1914.4 (2063.9) MB, 778.7 / 0.0 ms  (average mu = 0.260, current mu = 0.288) allocation failure scavenge might not succeed
+[2514:0x63aa020]    72312 ms: Scavenge 1930.5 (2063.9) -> 1918.4 (2063.9) MB, 4.6 / 0.0 ms  (average mu = 0.260, current mu = 0.288) allocation failure 
+[2514:0x63aa020]    72348 ms: Scavenge 1930.6 (2063.9) -> 1921.5 (2067.7) MB, 9.6 / 0.0 ms  (average mu = 0.260, current mu = 0.288) allocation failure 
 
 
 <--- JS stacktrace --->
