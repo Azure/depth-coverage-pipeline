@@ -1,0 +1,199 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-07-01-preview",
+      "operations": [
+        {
+          "OperationId": "ServerKeys_ListByServer",
+          "version": "2020-07-01-preview",
+          "jsonFilePath": "/specification/mysql/resource-manager/Microsoft.DBforMySQL/preview/2020-07-01-preview/mysql.json"
+        }
+      ],
+      "Resource": "Microsoft.DBForMySql/flexibleServers/keys"
+    },
+    {
+      "APIVersion": "2020-07-01-privatepreview",
+      "operations": [
+        {
+          "OperationId": "ServerParameters_BatchUpdate",
+          "version": "2020-07-01-privatepreview",
+          "jsonFilePath": "/specification/mysql/resource-manager/Microsoft.DBforMySQL/preview/2020-07-01-privatepreview/mysql.json"
+        }
+      ],
+      "Resource": "Microsoft.DBForMySql/flexibleServers"
+    },
+    {
+      "APIVersion": "2018-06-01",
+      "operations": [
+        {
+          "OperationId": "Advisors_ListByServer",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/mysql/resource-manager/Microsoft.DBforMySQL/stable/2018-06-01/PerformanceRecommendations.json"
+        },
+        {
+          "OperationId": "Advisors_Get",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/mysql/resource-manager/Microsoft.DBforMySQL/stable/2018-06-01/PerformanceRecommendations.json"
+        },
+        {
+          "OperationId": "CreateRecommendedActionSession",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/mysql/resource-manager/Microsoft.DBforMySQL/stable/2018-06-01/PerformanceRecommendations.json"
+        }
+      ],
+      "Resource": "Microsoft.DBforMySQL/servers/advisors"
+    },
+    {
+      "APIVersion": "2018-06-01",
+      "operations": [
+        {
+          "OperationId": "RecommendedActions_ListByServer",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/mysql/resource-manager/Microsoft.DBforMySQL/stable/2018-06-01/PerformanceRecommendations.json"
+        }
+      ],
+      "Resource": "Microsoft.DBforMySQL/servers/advisors/recommendedActions"
+    },
+    {
+      "APIVersion": "2017-12-01",
+      "operations": [
+        {
+          "OperationId": "ServerBasedPerformanceTier_List",
+          "version": "2017-12-01",
+          "jsonFilePath": "/specification/mysql/resource-manager/Microsoft.DBforMySQL/stable/2017-12-01/mysql.json"
+        }
+      ],
+      "Resource": "Microsoft.DBForMySQL/servers/performanceTiers"
+    },
+    {
+      "APIVersion": "2018-06-01",
+      "operations": [
+        {
+          "OperationId": "PrivateEndpointConnections_ListByServer",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/mysql/resource-manager/Microsoft.DBforMySQL/stable/2018-06-01/PrivateEndpointConnections.json"
+        },
+        {
+          "OperationId": "PrivateEndpointConnections_CreateOrUpdate",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/mysql/resource-manager/Microsoft.DBforMySQL/stable/2018-06-01/PrivateEndpointConnections.json"
+        }
+      ],
+      "Resource": "Microsoft.DBforMySQL/servers/privateEndpointConnections"
+    },
+    {
+      "APIVersion": "2018-06-01",
+      "operations": [
+        {
+          "OperationId": "QueryTexts_ListByServer",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/mysql/resource-manager/Microsoft.DBforMySQL/stable/2018-06-01/QueryPerformanceInsights.json"
+        }
+      ],
+      "Resource": "Microsoft.DBforMySQL/servers/queryTexts"
+    },
+    {
+      "APIVersion": "2017-12-01",
+      "operations": [
+        {
+          "OperationId": "RecoverableServers_Get",
+          "version": "2017-12-01",
+          "jsonFilePath": "/specification/mysql/resource-manager/Microsoft.DBforMySQL/stable/2017-12-01/mysql.json"
+        }
+      ],
+      "Resource": "Microsoft.DBForMySQL/servers/recoverableServers"
+    },
+    {
+      "APIVersion": "2017-12-01",
+      "operations": [
+        {
+          "OperationId": "ServerSecurityAlertPolicies_ListByServer",
+          "version": "2017-12-01",
+          "jsonFilePath": "/specification/mysql/resource-manager/Microsoft.DBforMySQL/stable/2017-12-01/ServerSecurityAlertPolicies.json"
+        },
+        {
+          "OperationId": "ServerSecurityAlertPolicies_Get",
+          "version": "2017-12-01",
+          "jsonFilePath": "/specification/mysql/resource-manager/Microsoft.DBforMySQL/stable/2017-12-01/ServerSecurityAlertPolicies.json"
+        },
+        {
+          "OperationId": "ServerSecurityAlertPolicies_CreateOrUpdate",
+          "version": "2017-12-01",
+          "jsonFilePath": "/specification/mysql/resource-manager/Microsoft.DBforMySQL/stable/2017-12-01/ServerSecurityAlertPolicies.json"
+        }
+      ],
+      "Resource": "Microsoft.DBforMySQL/servers/securityAlertPolicies"
+    },
+    {
+      "APIVersion": "2017-12-01-preview",
+      "operations": [
+        {
+          "OperationId": "ServerSecurityAlertPolicies_ListByServer",
+          "version": "2017-12-01-preview",
+          "jsonFilePath": "/specification/mysql/resource-manager/Microsoft.DBforMySQL/preview/2017-12-01-preview/mysql.json"
+        },
+        {
+          "OperationId": "ServerSecurityAlertPolicies_Get",
+          "version": "2018-06-01-privatepreview",
+          "jsonFilePath": "/specification/mysql/resource-manager/Microsoft.DBforMySQL/preview/2018-06-01-privatepreview/mysql.json"
+        },
+        {
+          "OperationId": "ServerSecurityAlertPolicies_CreateOrUpdate",
+          "version": "2018-06-01-privatepreview",
+          "jsonFilePath": "/specification/mysql/resource-manager/Microsoft.DBforMySQL/preview/2018-06-01-privatepreview/mysql.json"
+        }
+      ],
+      "Resource": "Microsoft.DBForMySQL/servers/securityAlertPolicies"
+    },
+    {
+      "APIVersion": "2018-06-01",
+      "operations": [
+        {
+          "OperationId": "TopQueryStatistics_ListByServer",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/mysql/resource-manager/Microsoft.DBforMySQL/stable/2018-06-01/QueryPerformanceInsights.json"
+        }
+      ],
+      "Resource": "Microsoft.DBforMySQL/servers/topQueryStatistics"
+    },
+    {
+      "APIVersion": "2017-12-01",
+      "operations": [
+        {
+          "OperationId": "ServerParameters_ListUpdateConfigurations",
+          "version": "2017-12-01",
+          "jsonFilePath": "/specification/mysql/resource-manager/Microsoft.DBforMySQL/stable/2017-12-01/mysql.json"
+        }
+      ],
+      "Resource": "Microsoft.DBForMySQL/servers"
+    },
+    {
+      "APIVersion": "2018-06-01",
+      "operations": [
+        {
+          "OperationId": "WaitStatistics_ListByServer",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/mysql/resource-manager/Microsoft.DBforMySQL/stable/2018-06-01/QueryPerformanceInsights.json"
+        }
+      ],
+      "Resource": "Microsoft.DBforMySQL/servers/waitStatistics"
+    }
+  ],
+  "resourcelist": "Microsoft.DBForMySql/flexibleServers/keys,Microsoft.DBForMySql/flexibleServers,Microsoft.DBforMySQL/servers/advisors,Microsoft.DBforMySQL/servers/advisors/recommendedActions,Microsoft.DBForMySQL/servers/performanceTiers,Microsoft.DBforMySQL/servers/privateEndpointConnections,Microsoft.DBforMySQL/servers/queryTexts,Microsoft.DBForMySQL/servers/recoverableServers,Microsoft.DBforMySQL/servers/securityAlertPolicies,Microsoft.DBForMySQL/servers/securityAlertPolicies,Microsoft.DBforMySQL/servers/topQueryStatistics,Microsoft.DBForMySQL/servers,Microsoft.DBforMySQL/servers/waitStatistics",
+  "jsonFilelist": [
+    "/specification/mysql/resource-manager/Microsoft.DBforMySQL/preview/2020-07-01-preview/mysql.json",
+    "/specification/mysql/resource-manager/Microsoft.DBforMySQL/preview/2020-07-01-privatepreview/mysql.json",
+    "/specification/mysql/resource-manager/Microsoft.DBforMySQL/stable/2018-06-01/PerformanceRecommendations.json",
+    "/specification/mysql/resource-manager/Microsoft.DBforMySQL/stable/2017-12-01/mysql.json",
+    "/specification/mysql/resource-manager/Microsoft.DBforMySQL/preview/2017-12-01-preview/mysql.json",
+    "/specification/mysql/resource-manager/Microsoft.DBforMySQL/stable/2018-06-01/PrivateEndpointConnections.json",
+    "/specification/mysql/resource-manager/Microsoft.DBforMySQL/preview/2018-06-01-privatepreview/PrivateEndpointConnections.json",
+    "/specification/mysql/resource-manager/Microsoft.DBforMySQL/stable/2018-06-01/QueryPerformanceInsights.json",
+    "/specification/mysql/resource-manager/Microsoft.DBforMySQL/stable/2017-12-01/ServerSecurityAlertPolicies.json",
+    "/specification/mysql/resource-manager/Microsoft.DBforMySQL/preview/2018-06-01-privatepreview/mysql.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "mysql",
+  "readmeFile": "/specification/mysql/resource-manager/readme.md",
+  "target": "clicore"
+}
