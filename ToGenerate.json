@@ -1,0 +1,17 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2017-03-31",
+      "operations": [],
+      "Resource": "Microsoft.Advisor/recommendations/suppressions"
+    }
+  ],
+  "resourcelist": "Microsoft.Advisor/recommendations/suppressions",
+  "jsonFilelist": [
+    "/specification/advisor/resource-manager/Microsoft.Advisor/stable/2017-03-31/advisor.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "advisor",
+  "readmeFile": "/specification/advisor/resource-manager/readme.md",
+  "target": "terraform"
+}
