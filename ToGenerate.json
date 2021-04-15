@@ -1,0 +1,117 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2017-04-01",
+      "operations": [
+        {
+          "OperationId": "Namespaces_DeleteAuthorizationRule",
+          "version": "2017-04-01",
+          "jsonFilePath": "/specification/relay/resource-manager/Microsoft.Relay/stable/2017-04-01/relay.json"
+        }
+      ],
+      "Resource": "Microsoft.Relay/namespaces/authorizationRules"
+    },
+    {
+      "APIVersion": "2018-01-01-preview",
+      "operations": [
+        {
+          "OperationId": "PrivateEndpointConnections_ListByNamespace",
+          "version": "2018-01-01-preview",
+          "jsonFilePath": "/specification/relay/resource-manager/Microsoft.Relay/preview/2018-01-01-preview/PrivateEndpointConnection-preview.json"
+        },
+        {
+          "OperationId": "PrivateEndpointConnections_Delete",
+          "version": "2018-01-01-preview",
+          "jsonFilePath": "/specification/relay/resource-manager/Microsoft.Relay/preview/2018-01-01-preview/PrivateEndpointConnection-preview.json"
+        },
+        {
+          "OperationId": "PrivateEndpointConnections_Get",
+          "version": "2018-01-01-preview",
+          "jsonFilePath": "/specification/relay/resource-manager/Microsoft.Relay/preview/2018-01-01-preview/PrivateEndpointConnection-preview.json"
+        },
+        {
+          "OperationId": "PrivateEndpointConnections_Put",
+          "version": "2018-01-01-preview",
+          "jsonFilePath": "/specification/relay/resource-manager/Microsoft.Relay/preview/2018-01-01-preview/PrivateEndpointConnection-preview.json"
+        }
+      ],
+      "Resource": "Microsoft.Relay/namespaces/privateEndpointConnections"
+    },
+    {
+      "APIVersion": "2018-01-01-preview",
+      "operations": [
+        {
+          "OperationId": "OperationStatusPrivateEndpointConnections_Get",
+          "version": "2018-01-01-preview",
+          "jsonFilePath": "/specification/relay/resource-manager/Microsoft.Relay/preview/2018-01-01-preview/PrivateEndpointConnection-preview.json"
+        }
+      ],
+      "Resource": "Microsoft.Relay/namespaces/privateEndpointConnections/operationStatus"
+    },
+    {
+      "APIVersion": "2018-01-01-preview",
+      "operations": [
+        {
+          "OperationId": "PrivateLinkResourcesGet",
+          "version": "2018-01-01-preview",
+          "jsonFilePath": "/specification/relay/resource-manager/Microsoft.Relay/preview/2018-01-01-preview/PrivateLinkResources-preview.json"
+        }
+      ],
+      "Resource": "Microsoft.Relay/namespaces/privateLinkResources"
+    },
+    {
+      "APIVersion": "2017-04-01",
+      "operations": [
+        {
+          "OperationId": "WCFRelays_Delete",
+          "version": "2017-04-01",
+          "jsonFilePath": "/specification/relay/resource-manager/Microsoft.Relay/stable/2017-04-01/relay.json"
+        }
+      ],
+      "Resource": "Microsoft.Relay/namespaces/wcfRelays"
+    },
+    {
+      "APIVersion": "2016-07-01",
+      "operations": [
+        {
+          "OperationId": "WCFRelays_ListAuthorizationRules",
+          "version": "2016-07-01",
+          "jsonFilePath": "/specification/relay/resource-manager/Microsoft.Relay/stable/2016-07-01/relay.json"
+        }
+      ],
+      "Resource": "Microsoft.Relay/namespaces/WcfRelays/authorizationRules"
+    },
+    {
+      "APIVersion": "2017-04-01",
+      "operations": [
+        {
+          "OperationId": "WCFRelays_ListAuthorizationRules",
+          "version": "2017-04-01",
+          "jsonFilePath": "/specification/relay/resource-manager/Microsoft.Relay/stable/2017-04-01/relay.json"
+        },
+        {
+          "OperationId": "WCFRelays_DeleteAuthorizationRule",
+          "version": "2017-04-01",
+          "jsonFilePath": "/specification/relay/resource-manager/Microsoft.Relay/stable/2017-04-01/relay.json"
+        },
+        {
+          "OperationId": "WCFRelays_RegenerateKeys",
+          "version": "2017-04-01",
+          "jsonFilePath": "/specification/relay/resource-manager/Microsoft.Relay/stable/2017-04-01/relay.json"
+        }
+      ],
+      "Resource": "Microsoft.Relay/namespaces/wcfRelays/authorizationRules"
+    }
+  ],
+  "resourcelist": "Microsoft.Relay/namespaces/authorizationRules,Microsoft.Relay/namespaces/privateEndpointConnections,Microsoft.Relay/namespaces/privateEndpointConnections/operationStatus,Microsoft.Relay/namespaces/privateLinkResources,Microsoft.Relay/namespaces/wcfRelays,Microsoft.Relay/namespaces/WcfRelays/authorizationRules,Microsoft.Relay/namespaces/wcfRelays/authorizationRules",
+  "jsonFilelist": [
+    "/specification/relay/resource-manager/Microsoft.Relay/stable/2017-04-01/relay.json",
+    "/specification/relay/resource-manager/Microsoft.Relay/preview/2018-01-01-preview/PrivateEndpointConnection-preview.json",
+    "/specification/relay/resource-manager/Microsoft.Relay/preview/2018-01-01-preview/PrivateLinkResources-preview.json",
+    "/specification/relay/resource-manager/Microsoft.Relay/stable/2016-07-01/relay.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "relay",
+  "readmeFile": "/specification/relay/resource-manager/readme.md",
+  "target": "clicore"
+}
