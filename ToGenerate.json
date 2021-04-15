@@ -1,0 +1,163 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2018-10-15",
+      "operations": [
+        {
+          "OperationId": "LabAccounts_ListBySubscription",
+          "version": "2018-10-15",
+          "jsonFilePath": "/specification/labservices/resource-manager/Microsoft.LabServices/stable/2018-10-15/ML.json"
+        },
+        {
+          "OperationId": "LabAccounts_ListByResourceGroup",
+          "version": "2018-10-15",
+          "jsonFilePath": "/specification/labservices/resource-manager/Microsoft.LabServices/stable/2018-10-15/ML.json"
+        },
+        {
+          "OperationId": "LabAccounts_Delete",
+          "version": "2018-10-15",
+          "jsonFilePath": "/specification/labservices/resource-manager/Microsoft.LabServices/stable/2018-10-15/ML.json"
+        },
+        {
+          "OperationId": "LabAccounts_Get",
+          "version": "2018-10-15",
+          "jsonFilePath": "/specification/labservices/resource-manager/Microsoft.LabServices/stable/2018-10-15/ML.json"
+        },
+        {
+          "OperationId": "LabAccounts_CreateOrUpdate",
+          "version": "2018-10-15",
+          "jsonFilePath": "/specification/labservices/resource-manager/Microsoft.LabServices/stable/2018-10-15/ML.json"
+        }
+      ],
+      "Resource": "Microsoft.LabServices/labaccounts"
+    },
+    {
+      "APIVersion": "2018-10-15",
+      "operations": [
+        {
+          "OperationId": "GalleryImages_List",
+          "version": "2018-10-15",
+          "jsonFilePath": "/specification/labservices/resource-manager/Microsoft.LabServices/stable/2018-10-15/ML.json"
+        },
+        {
+          "OperationId": "GalleryImages_Get",
+          "version": "2018-10-15",
+          "jsonFilePath": "/specification/labservices/resource-manager/Microsoft.LabServices/stable/2018-10-15/ML.json"
+        },
+        {
+          "OperationId": "GalleryImages_CreateOrUpdate",
+          "version": "2018-10-15",
+          "jsonFilePath": "/specification/labservices/resource-manager/Microsoft.LabServices/stable/2018-10-15/ML.json"
+        }
+      ],
+      "Resource": "Microsoft.LabServices/labaccounts/galleryimages"
+    },
+    {
+      "APIVersion": "2018-10-15",
+      "operations": [
+        {
+          "OperationId": "Labs_List",
+          "version": "2018-10-15",
+          "jsonFilePath": "/specification/labservices/resource-manager/Microsoft.LabServices/stable/2018-10-15/ML.json"
+        },
+        {
+          "OperationId": "Labs_Delete",
+          "version": "2018-10-15",
+          "jsonFilePath": "/specification/labservices/resource-manager/Microsoft.LabServices/stable/2018-10-15/ML.json"
+        },
+        {
+          "OperationId": "Labs_Get",
+          "version": "2018-10-15",
+          "jsonFilePath": "/specification/labservices/resource-manager/Microsoft.LabServices/stable/2018-10-15/ML.json"
+        },
+        {
+          "OperationId": "Labs_CreateOrUpdate",
+          "version": "2018-10-15",
+          "jsonFilePath": "/specification/labservices/resource-manager/Microsoft.LabServices/stable/2018-10-15/ML.json"
+        },
+        {
+          "OperationId": "Labs_AddUsers",
+          "version": "2018-10-15",
+          "jsonFilePath": "/specification/labservices/resource-manager/Microsoft.LabServices/stable/2018-10-15/ML.json"
+        }
+      ],
+      "Resource": "Microsoft.LabServices/labaccounts/labs"
+    },
+    {
+      "APIVersion": "2018-10-15",
+      "operations": [
+        {
+          "OperationId": "EnvironmentSettings_List",
+          "version": "2018-10-15",
+          "jsonFilePath": "/specification/labservices/resource-manager/Microsoft.LabServices/stable/2018-10-15/ML.json"
+        },
+        {
+          "OperationId": "EnvironmentSettings_Get",
+          "version": "2018-10-15",
+          "jsonFilePath": "/specification/labservices/resource-manager/Microsoft.LabServices/stable/2018-10-15/ML.json"
+        },
+        {
+          "OperationId": "EnvironmentSettings_CreateOrUpdate",
+          "version": "2018-10-15",
+          "jsonFilePath": "/specification/labservices/resource-manager/Microsoft.LabServices/stable/2018-10-15/ML.json"
+        }
+      ],
+      "Resource": "Microsoft.LabServices/labaccounts/labs/environmentsettings"
+    },
+    {
+      "APIVersion": "2018-10-15",
+      "operations": [
+        {
+          "OperationId": "Environments_List",
+          "version": "2018-10-15",
+          "jsonFilePath": "/specification/labservices/resource-manager/Microsoft.LabServices/stable/2018-10-15/ML.json"
+        },
+        {
+          "OperationId": "Environments_ResetPassword",
+          "version": "2018-10-15",
+          "jsonFilePath": "/specification/labservices/resource-manager/Microsoft.LabServices/stable/2018-10-15/ML.json"
+        },
+        {
+          "OperationId": "Environments_Start",
+          "version": "2018-10-15",
+          "jsonFilePath": "/specification/labservices/resource-manager/Microsoft.LabServices/stable/2018-10-15/ML.json"
+        },
+        {
+          "OperationId": "Environments_Stop",
+          "version": "2018-10-15",
+          "jsonFilePath": "/specification/labservices/resource-manager/Microsoft.LabServices/stable/2018-10-15/ML.json"
+        }
+      ],
+      "Resource": "Microsoft.LabServices/labaccounts/labs/environmentsettings/environments"
+    },
+    {
+      "APIVersion": "2018-10-15",
+      "operations": [
+        {
+          "OperationId": "Users_List",
+          "version": "2018-10-15",
+          "jsonFilePath": "/specification/labservices/resource-manager/Microsoft.LabServices/stable/2018-10-15/ML.json"
+        },
+        {
+          "OperationId": "Users_Delete",
+          "version": "2018-10-15",
+          "jsonFilePath": "/specification/labservices/resource-manager/Microsoft.LabServices/stable/2018-10-15/ML.json"
+        },
+        {
+          "OperationId": "Users_Get",
+          "version": "2018-10-15",
+          "jsonFilePath": "/specification/labservices/resource-manager/Microsoft.LabServices/stable/2018-10-15/ML.json"
+        }
+      ],
+      "Resource": "Microsoft.LabServices/labaccounts/labs/users"
+    }
+  ],
+  "resourcelist": "Microsoft.LabServices/labaccounts,Microsoft.LabServices/labaccounts/galleryimages,Microsoft.LabServices/labaccounts/labs,Microsoft.LabServices/labaccounts/labs/environmentsettings,Microsoft.LabServices/labaccounts/labs/environmentsettings/environments,Microsoft.LabServices/labaccounts/labs/users",
+  "jsonFilelist": [
+    "/specification/labservices/resource-manager/Microsoft.LabServices/stable/2018-10-15/ML.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "labservices",
+  "readmeFile": "/specification/labservices/resource-manager/readme.md",
+  "target": "clicore"
+}
