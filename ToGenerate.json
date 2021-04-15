@@ -1,0 +1,22 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-03-20",
+      "operations": [],
+      "Resource": "Microsoft.AVS/privateClouds/authorizations"
+    },
+    {
+      "APIVersion": "2020-03-20",
+      "operations": [],
+      "Resource": "Microsoft.AVS/privateClouds/hcxEnterpriseSites"
+    }
+  ],
+  "resourcelist": "Microsoft.AVS/privateClouds/authorizations,Microsoft.AVS/privateClouds/hcxEnterpriseSites",
+  "jsonFilelist": [
+    "/specification/vmware/resource-manager/Microsoft.AVS/stable/2020-03-20/vmware.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "vmware",
+  "readmeFile": "/specification/vmware/resource-manager/readme.md",
+  "target": "terraform"
+}
