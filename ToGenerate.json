@@ -1,0 +1,34 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-01-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.Peering/peerAsns"
+    },
+    {
+      "APIVersion": "2019-09-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.Peering/peerings"
+    },
+    {
+      "APIVersion": "2020-04-01",
+      "operations": [],
+      "Resource": "Microsoft.Peering/peeringServices"
+    },
+    {
+      "APIVersion": "2020-04-01",
+      "operations": [],
+      "Resource": "Microsoft.Peering/peeringServices/prefixes"
+    }
+  ],
+  "resourcelist": "Microsoft.Peering/peerAsns,Microsoft.Peering/peerings,Microsoft.Peering/peeringServices,Microsoft.Peering/peeringServices/prefixes",
+  "jsonFilelist": [
+    "/specification/peering/resource-manager/Microsoft.Peering/preview/2020-01-01-preview/peering.json",
+    "/specification/peering/resource-manager/Microsoft.Peering/preview/2019-09-01-preview/peering.json",
+    "/specification/peering/resource-manager/Microsoft.Peering/stable/2020-04-01/peering.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "peering",
+  "readmeFile": "/specification/peering/resource-manager/readme.md",
+  "target": "terraform"
+}
