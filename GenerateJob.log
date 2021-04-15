@@ -1,0 +1,12 @@
+AutoRest code generation utility [cli version: 3.1.5; node: v14.16.1, max-memory: 2048 MB]
+(C) 2018 Microsoft Corporation.
+https://aka.ms/autorest
+   Loading AutoRest core      '/home/vsts/.autorest/@autorest_core@3.0.6219/node_modules/@autorest/core/dist' (3.0.6219)
+Failed to acquire 'require'd configuration 'file:///home/vsts/work/1/s/azure-rest-api-specs/specification/resources/resource-manager/readme.terraform.md'
+ERROR: Syntax Error Encountered:  Syntax error: end of the stream or a document separator is expected
+    - codeBlock_36:1:1
+ERROR: Syntax Error Encountered:  Syntax error: end of the stream or a document separator is expected
+    - codeBlock_36:1:1
+ERROR: Syntax Error Encountered:  Syntax error: expected a single document in the stream, but found more
+    - codeBlock_36:1:1
+[OperationAbortedException] Error occurred. Exiting.
