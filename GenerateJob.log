@@ -166,4 +166,4 @@ WARNING: Please add the predefined profile: microsoft.documentdb/databaseaccount
 WARNING: Please add the predefined profile: microsoft.compute/galleries/images.
 WARNING: Please add the predefined profile: microsoft.compute/galleries/images/versions.
 WARNING: Please add the predefined profile: microsoft.containerservice/managedclusters.
-[57.01 s] Generation Complete
+[49.37 s] Generation Complete
