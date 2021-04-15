@@ -1,4 +1,4 @@
-AutoRest code generation utility [cli version: 3.1.5; node: v14.16.0, max-memory: 2048 MB]
+AutoRest code generation utility [cli version: 3.1.5; node: v14.16.1, max-memory: 2048 MB]
 (C) 2018 Microsoft Corporation.
 https://aka.ms/autorest
    Loading AutoRest core      '/home/vsts/.autorest/@autorest_core@3.0.6219/node_modules/@autorest/core/dist' (3.0.6219)
@@ -112,12 +112,12 @@ WARNING (PreCheck/CheckDuplicateSchemas): Checking for duplicate schemas, this c
 WARNING (PreCheck/DuplicateSchema): Duplicate Schema named PrivateEndpointConnectionForPrivateLinkHubBasic -- properties.id.description: "identifier" => <none>,properties.id.readOnly: true => <none>,properties.id.$ref: undefined => "#/components/schemas/schemas:1208",properties.properties.description: "Properties of private endpoint connection for private link hub" => <none>,properties.properties.x-ms-client-flatten: true => <none> 
 
 WARNING (PreCheck/PropertyRedeclarationWarning): Schema 'ReplicationLink' has a property 'type' that is already declared the parent schema 'Resource' but isn't significantly different. The property has been removed from ReplicationLink
-(node:2367) UnhandledPromiseRejectionWarning: Error: ENAMETOOLONG: name too long, open '/tmp/autorest-2nkntc/mem-361-file-3A-2F-2F-2Fhome-2Fvsts-2Fwork-2F1-2Fs-2Fazure-rest-api-specs-2Fspecification-2Fsynapse-2Fresource-manager-2FMicrosoft.Synapse-2Fstable-2F2021-03-01-2Fexamples-2FCreateOrUpdateSqlPoolVulnerabilityAssessmentWithContainerSasKeyAndMinParameters.json'
+(node:2320) UnhandledPromiseRejectionWarning: Error: ENAMETOOLONG: name too long, open '/tmp/autorest-u6ROoB/mem-361-file-3A-2F-2F-2Fhome-2Fvsts-2Fwork-2F1-2Fs-2Fazure-rest-api-specs-2Fspecification-2Fsynapse-2Fresource-manager-2FMicrosoft.Synapse-2Fstable-2F2021-03-01-2Fexamples-2FCreateOrUpdateSqlPoolVulnerabilityAssessmentWithContainerSasKeyAndMinParameters.json'
 (Use `node --trace-warnings ...` to show where the warning was created)
-(node:2367) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 237)
-(node:2367) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
-(node:2367) UnhandledPromiseRejectionWarning: Error: ENAMETOOLONG: name too long, open '/tmp/autorest-2nkntc/mem-402-file-3A-2F-2F-2Fhome-2Fvsts-2Fwork-2F1-2Fs-2Fazure-rest-api-specs-2Fspecification-2Fsynapse-2Fresource-manager-2FMicrosoft.Synapse-2Fstable-2F2021-03-01-2Fexamples-2FCreateWorkspaceManagedSqlServerExetendedBlobAuditingSettingsWithMinParameters.json'
-(node:2367) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 238)
+(node:2320) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 237)
+(node:2320) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+(node:2320) UnhandledPromiseRejectionWarning: Error: ENAMETOOLONG: name too long, open '/tmp/autorest-u6ROoB/mem-402-file-3A-2F-2F-2Fhome-2Fvsts-2Fwork-2F1-2Fs-2Fazure-rest-api-specs-2Fspecification-2Fsynapse-2Fresource-manager-2FMicrosoft.Synapse-2Fstable-2F2021-03-01-2Fexamples-2FCreateWorkspaceManagedSqlServerExetendedBlobAuditingSettingsWithMinParameters.json'
+(node:2320) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 238)
 WARNING: Please add the predefined profile: microsoft.synapse/workspaces/sqlpools/metadatasync.
 WARNING: Please add the predefined profile: microsoft.synapse/workspaces/sqlpools/maintenancewindows.
 WARNING: Please add the predefined profile: microsoft.synapse/workspaces/sqlpools/schemas.
@@ -132,4 +132,4 @@ WARNING: Please add the predefined profile: microsoft.synapse/workspaces/managed
 WARNING (PreNamer/DeduplicateName): Deduplicating schema name: 'SecurityAlertPolicyName' -> 'SecurityAlertPolicyNameAutoGenerated'
 
 WARNING (PreNamer/DeduplicateName): Deduplicating schema name: 'PrivateEndpointConnectionForPrivateLinkHubBasic' -> 'PrivateEndpointConnectionForPrivateLinkHubBasicAutoGenerated'
-[73.57 s] Generation Complete
+[64.28 s] Generation Complete
