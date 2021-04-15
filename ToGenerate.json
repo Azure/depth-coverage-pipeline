@@ -1,0 +1,67 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2016-09-01",
+      "operations": [
+        {
+          "OperationId": "Clusters_Delete",
+          "version": "2016-09-01",
+          "jsonFilePath": "/specification/servicefabric/resource-manager/Microsoft.ServiceFabric/stable/2016-09-01/servicefabric.json"
+        },
+        {
+          "OperationId": "Clusters_Create",
+          "version": "2016-09-01",
+          "jsonFilePath": "/specification/servicefabric/resource-manager/Microsoft.ServiceFabric/stable/2016-09-01/servicefabric.json"
+        },
+        {
+          "OperationId": "Clusters_CreateOrUpdate",
+          "version": "2019-03-01",
+          "jsonFilePath": "/specification/servicefabric/resource-manager/Microsoft.ServiceFabric/stable/2019-03-01/cluster.json"
+        }
+      ],
+      "Resource": "Microsoft.ServiceFabric/clusters"
+    },
+    {
+      "APIVersion": "2017-07-01-preview",
+      "operations": [
+        {
+          "OperationId": "Services_Delete",
+          "version": "2017-07-01-preview",
+          "jsonFilePath": "/specification/servicefabric/resource-manager/Microsoft.ServiceFabric/preview/2017-07-01-preview/application.json"
+        },
+        {
+          "OperationId": "Services_Create",
+          "version": "2017-07-01-preview",
+          "jsonFilePath": "/specification/servicefabric/resource-manager/Microsoft.ServiceFabric/preview/2017-07-01-preview/application.json"
+        },
+        {
+          "OperationId": "Services_CreateOrUpdate",
+          "version": "2019-03-01",
+          "jsonFilePath": "/specification/servicefabric/resource-manager/Microsoft.ServiceFabric/stable/2019-03-01/application.json"
+        }
+      ],
+      "Resource": "Microsoft.ServiceFabric/clusters/applications/services"
+    }
+  ],
+  "resourcelist": "Microsoft.ServiceFabric/clusters,Microsoft.ServiceFabric/clusters/applications/services",
+  "jsonFilelist": [
+    "/specification/servicefabric/resource-manager/Microsoft.ServiceFabric/stable/2016-09-01/servicefabric.json",
+    "/specification/servicefabric/resource-manager/Microsoft.ServiceFabric/preview/2017-07-01-preview/servicefabric.json",
+    "/specification/servicefabric/resource-manager/Microsoft.ServiceFabric/stable/2018-02-01/cluster.json",
+    "/specification/servicefabric/resource-manager/Microsoft.ServiceFabric/stable/2019-03-01/cluster.json",
+    "/specification/servicefabric/resource-manager/Microsoft.ServiceFabric/stable/2020-03-01/cluster.json",
+    "/specification/servicefabric/resource-manager/Microsoft.ServiceFabric/preview/2019-03-01-preview/cluster.json",
+    "/specification/servicefabric/resource-manager/Microsoft.ServiceFabric/preview/2019-06-01-preview/cluster.json",
+    "/specification/servicefabric/resource-manager/Microsoft.ServiceFabric/preview/2019-11-01-preview/cluster.json",
+    "/specification/servicefabric/resource-manager/Microsoft.ServiceFabric/preview/2020-12-01-preview/cluster.json",
+    "/specification/servicefabric/resource-manager/Microsoft.ServiceFabric/preview/2017-07-01-preview/application.json",
+    "/specification/servicefabric/resource-manager/Microsoft.ServiceFabric/stable/2019-03-01/application.json",
+    "/specification/servicefabric/resource-manager/Microsoft.ServiceFabric/stable/2020-03-01/application.json",
+    "/specification/servicefabric/resource-manager/Microsoft.ServiceFabric/preview/2019-03-01-preview/application.json",
+    "/specification/servicefabric/resource-manager/Microsoft.ServiceFabric/preview/2019-06-01-preview/application.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "servicefabric",
+  "readmeFile": "/specification/servicefabric/resource-manager/readme.md",
+  "target": "clicore"
+}
