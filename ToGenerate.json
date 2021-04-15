@@ -1,0 +1,43 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2021-04-01-preview",
+      "operations": [
+        {
+          "OperationId": "WebPubSub_ListBySubscription",
+          "version": "2021-04-01-preview",
+          "jsonFilePath": "/specification/webpubsub/resource-manager/Microsoft.SignalRService/preview/2021-04-01-preview/webpubsub.json"
+        },
+        {
+          "OperationId": "WebPubSub_ListByResourceGroup",
+          "version": "2021-04-01-preview",
+          "jsonFilePath": "/specification/webpubsub/resource-manager/Microsoft.SignalRService/preview/2021-04-01-preview/webpubsub.json"
+        },
+        {
+          "OperationId": "WebPubSub_Get",
+          "version": "2021-04-01-preview",
+          "jsonFilePath": "/specification/webpubsub/resource-manager/Microsoft.SignalRService/preview/2021-04-01-preview/webpubsub.json"
+        },
+        {
+          "OperationId": "WebPubSub_CreateOrUpdate",
+          "version": "2021-04-01-preview",
+          "jsonFilePath": "/specification/webpubsub/resource-manager/Microsoft.SignalRService/preview/2021-04-01-preview/webpubsub.json"
+        },
+        {
+          "OperationId": "WebPubSub_ListKeys",
+          "version": "2021-04-01-preview",
+          "jsonFilePath": "/specification/webpubsub/resource-manager/Microsoft.SignalRService/preview/2021-04-01-preview/webpubsub.json"
+        }
+      ],
+      "Resource": "Microsoft.SignalRService/webPubSub"
+    }
+  ],
+  "resourcelist": "Microsoft.SignalRService/webPubSub",
+  "jsonFilelist": [
+    "/specification/webpubsub/resource-manager/Microsoft.SignalRService/preview/2021-04-01-preview/webpubsub.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "webpubsub",
+  "readmeFile": "/specification/webpubsub/resource-manager/readme.md",
+  "target": "clicore"
+}
