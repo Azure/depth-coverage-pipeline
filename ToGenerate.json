@@ -1,0 +1,17 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-03-01",
+      "operations": [],
+      "Resource": "Microsoft.Devices/provisioningServices/privateEndpointConnections"
+    }
+  ],
+  "resourcelist": "Microsoft.Devices/provisioningServices/privateEndpointConnections",
+  "jsonFilelist": [
+    "/specification/deviceprovisioningservices/resource-manager/Microsoft.Devices/stable/2020-03-01/iotdps.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "deviceprovisioningservices",
+  "readmeFile": "/specification/deviceprovisioningservices/resource-manager/readme.md",
+  "target": "terraform"
+}
