@@ -1,0 +1,52 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2015-03-01-preview",
+      "operations": [
+        {
+          "OperationId": "Configurations_List",
+          "version": "2015-03-01-preview",
+          "jsonFilePath": "/specification/hdinsight/resource-manager/Microsoft.HDInsight/preview/2015-03-01-preview/configurations.json"
+        },
+        {
+          "OperationId": "Clusters_GetGatewaySettings",
+          "version": "2015-03-01-preview",
+          "jsonFilePath": "/specification/hdinsight/resource-manager/Microsoft.HDInsight/preview/2015-03-01-preview/cluster.json"
+        },
+        {
+          "OperationId": "Clusters_RotateDiskEncryptionKey",
+          "version": "2015-03-01-preview",
+          "jsonFilePath": "/specification/hdinsight/resource-manager/Microsoft.HDInsight/preview/2015-03-01-preview/cluster.json"
+        },
+        {
+          "OperationId": "Clusters_UpdateGatewaySettings",
+          "version": "2015-03-01-preview",
+          "jsonFilePath": "/specification/hdinsight/resource-manager/Microsoft.HDInsight/preview/2015-03-01-preview/cluster.json"
+        }
+      ],
+      "Resource": "Microsoft.HDInsight/clusters"
+    },
+    {
+      "APIVersion": "2015-03-01-preview",
+      "operations": [
+        {
+          "OperationId": "Configurations_Get",
+          "version": "2015-03-01-preview",
+          "jsonFilePath": "/specification/hdinsight/resource-manager/Microsoft.HDInsight/preview/2015-03-01-preview/configurations.json"
+        }
+      ],
+      "Resource": "Microsoft.HDInsight/clusters/configurations"
+    }
+  ],
+  "resourcelist": "Microsoft.HDInsight/clusters,Microsoft.HDInsight/clusters/configurations",
+  "jsonFilelist": [
+    "/specification/hdinsight/resource-manager/Microsoft.HDInsight/preview/2015-03-01-preview/configurations.json",
+    "/specification/hdinsight/resource-manager/Microsoft.HDInsight/stable/2018-06-01-preview/configurations.json",
+    "/specification/hdinsight/resource-manager/Microsoft.HDInsight/preview/2015-03-01-preview/cluster.json",
+    "/specification/hdinsight/resource-manager/Microsoft.HDInsight/stable/2018-06-01-preview/cluster.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "hdinsight",
+  "readmeFile": "/specification/hdinsight/resource-manager/readme.md",
+  "target": "clicore"
+}
