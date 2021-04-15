@@ -1,0 +1,23 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2017-03-01-preview",
+      "operations": [
+        {
+          "OperationId": "SqlVirtualMachines_ListBySqlVmGroup",
+          "version": "2017-03-01-preview",
+          "jsonFilePath": "/specification/sqlvirtualmachine/resource-manager/Microsoft.SqlVirtualMachine/preview/2017-03-01-preview/sqlvm.json"
+        }
+      ],
+      "Resource": "Microsoft.SqlVirtualMachine/sqlVirtualMachineGroups/sqlVirtualMachines"
+    }
+  ],
+  "resourcelist": "Microsoft.SqlVirtualMachine/sqlVirtualMachineGroups/sqlVirtualMachines",
+  "jsonFilelist": [
+    "/specification/sqlvirtualmachine/resource-manager/Microsoft.SqlVirtualMachine/preview/2017-03-01-preview/sqlvm.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "sqlvirtualmachine",
+  "readmeFile": "/specification/sqlvirtualmachine/resource-manager/readme.md",
+  "target": "clicore"
+}
