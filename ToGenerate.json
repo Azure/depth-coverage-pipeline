@@ -1,0 +1,17 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-03-30",
+      "operations": [],
+      "Resource": "Microsoft.HealthcareApis/services/privateEndpointConnections"
+    }
+  ],
+  "resourcelist": "Microsoft.HealthcareApis/services/privateEndpointConnections",
+  "jsonFilelist": [
+    "/specification/healthcareapis/resource-manager/Microsoft.HealthcareApis/stable/2020-03-30/healthcare-apis.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "healthcareapis",
+  "readmeFile": "/specification/healthcareapis/resource-manager/readme.md",
+  "target": "terraform"
+}
