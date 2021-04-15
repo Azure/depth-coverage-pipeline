@@ -144,4 +144,4 @@ WARNING: Please add the predefined profile: microsoft.network/frontdoors/loadbal
 WARNING: Please add the predefined profile: microsoft.network/frontdoors/frontendendpoints.
 WARNING: Please add the predefined profile: microsoft.network/frontdoors/backendpools.
 WARNING: Please add the predefined profile: microsoft.network/frontdoors/backendpools.
-[58.07 s] Generation Complete
+[42.42 s] Generation Complete
