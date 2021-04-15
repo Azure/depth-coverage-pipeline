@@ -1,0 +1,318 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-03-20",
+      "operations": [
+        {
+          "OperationId": "PrivateClouds_List",
+          "version": "2020-03-20",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/stable/2020-03-20/vmware.json"
+        },
+        {
+          "OperationId": "PrivateClouds_Delete",
+          "version": "2020-03-20",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/stable/2020-03-20/vmware.json"
+        }
+      ],
+      "Resource": "Microsoft.AVS/privateClouds"
+    },
+    {
+      "APIVersion": "2020-07-17-preview",
+      "operations": [
+        {
+          "OperationId": "Addons_List",
+          "version": "2020-07-17-preview",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/preview/2020-07-17-preview/vmware.json"
+        },
+        {
+          "OperationId": "Addons_Delete",
+          "version": "2020-07-17-preview",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/preview/2020-07-17-preview/vmware.json"
+        },
+        {
+          "OperationId": "Addons_Get",
+          "version": "2020-07-17-preview",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/preview/2020-07-17-preview/vmware.json"
+        },
+        {
+          "OperationId": "Addons_CreateOrUpdate",
+          "version": "2020-07-17-preview",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/preview/2020-07-17-preview/vmware.json"
+        }
+      ],
+      "Resource": "Microsoft.AVS/privateClouds/addons"
+    },
+    {
+      "APIVersion": "2020-03-20",
+      "operations": [
+        {
+          "OperationId": "Authorizations_Delete",
+          "version": "2020-03-20",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/stable/2020-03-20/vmware.json"
+        }
+      ],
+      "Resource": "Microsoft.AVS/privateClouds/authorizations"
+    },
+    {
+      "APIVersion": "2020-03-20",
+      "operations": [
+        {
+          "OperationId": "Clusters_List",
+          "version": "2020-03-20",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/stable/2020-03-20/vmware.json"
+        },
+        {
+          "OperationId": "Clusters_Delete",
+          "version": "2020-03-20",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/stable/2020-03-20/vmware.json"
+        },
+        {
+          "OperationId": "Clusters_Get",
+          "version": "2020-03-20",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/stable/2020-03-20/vmware.json"
+        },
+        {
+          "OperationId": "Clusters_CreateOrUpdate",
+          "version": "2020-03-20",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/stable/2020-03-20/vmware.json"
+        }
+      ],
+      "Resource": "Microsoft.AVS/privateClouds/clusters"
+    },
+    {
+      "APIVersion": "2020-07-17-preview",
+      "operations": [
+        {
+          "OperationId": "GlobalReachConnections_List",
+          "version": "2020-07-17-preview",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/preview/2020-07-17-preview/vmware.json"
+        },
+        {
+          "OperationId": "GlobalReachConnections_Delete",
+          "version": "2020-07-17-preview",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/preview/2020-07-17-preview/vmware.json"
+        },
+        {
+          "OperationId": "GlobalReachConnections_Get",
+          "version": "2020-07-17-preview",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/preview/2020-07-17-preview/vmware.json"
+        },
+        {
+          "OperationId": "GlobalReachConnections_CreateOrUpdate",
+          "version": "2020-07-17-preview",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/preview/2020-07-17-preview/vmware.json"
+        }
+      ],
+      "Resource": "Microsoft.AVS/privateClouds/globalReachConnections"
+    },
+    {
+      "APIVersion": "2020-03-20",
+      "operations": [
+        {
+          "OperationId": "HcxEnterpriseSites_Delete",
+          "version": "2020-03-20",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/stable/2020-03-20/vmware.json"
+        },
+        {
+          "OperationId": "HcxEnterpriseSites_Get",
+          "version": "2020-03-20",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/stable/2020-03-20/vmware.json"
+        },
+        {
+          "OperationId": "HcxEnterpriseSites_CreateOrUpdate",
+          "version": "2020-03-20",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/stable/2020-03-20/vmware.json"
+        }
+      ],
+      "Resource": "Microsoft.AVS/privateClouds/hcxEnterpriseSites"
+    },
+    {
+      "APIVersion": "2020-07-17-preview",
+      "operations": [
+        {
+          "OperationId": "WorkloadNetworks_ListDhcp",
+          "version": "2020-07-17-preview",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/preview/2020-07-17-preview/vmware.json"
+        },
+        {
+          "OperationId": "WorkloadNetworks_DeleteDhcp",
+          "version": "2020-07-17-preview",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/preview/2020-07-17-preview/vmware.json"
+        },
+        {
+          "OperationId": "WorkloadNetworks_GetDhcp",
+          "version": "2020-07-17-preview",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/preview/2020-07-17-preview/vmware.json"
+        },
+        {
+          "OperationId": "WorkloadNetworks_CreateDhcp",
+          "version": "2020-07-17-preview",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/preview/2020-07-17-preview/vmware.json"
+        }
+      ],
+      "Resource": "Microsoft.AVS/privateClouds/workloadNetworks/dhcpConfigurations"
+    },
+    {
+      "APIVersion": "2020-07-17-preview",
+      "operations": [
+        {
+          "OperationId": "WorkloadNetworks_ListDnsServices",
+          "version": "2020-07-17-preview",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/preview/2020-07-17-preview/vmware.json"
+        },
+        {
+          "OperationId": "WorkloadNetworks_DeleteDnsService",
+          "version": "2020-07-17-preview",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/preview/2020-07-17-preview/vmware.json"
+        },
+        {
+          "OperationId": "WorkloadNetworks_GetDnsService",
+          "version": "2020-07-17-preview",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/preview/2020-07-17-preview/vmware.json"
+        },
+        {
+          "OperationId": "WorkloadNetworks_CreateDnsService",
+          "version": "2020-07-17-preview",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/preview/2020-07-17-preview/vmware.json"
+        }
+      ],
+      "Resource": "Microsoft.AVS/privateClouds/workloadNetworks/dnsServices"
+    },
+    {
+      "APIVersion": "2020-07-17-preview",
+      "operations": [
+        {
+          "OperationId": "WorkloadNetworks_ListDnsZones",
+          "version": "2020-07-17-preview",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/preview/2020-07-17-preview/vmware.json"
+        },
+        {
+          "OperationId": "WorkloadNetworks_DeleteDnsZone",
+          "version": "2020-07-17-preview",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/preview/2020-07-17-preview/vmware.json"
+        },
+        {
+          "OperationId": "WorkloadNetworks_GetDnsZone",
+          "version": "2020-07-17-preview",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/preview/2020-07-17-preview/vmware.json"
+        },
+        {
+          "OperationId": "WorkloadNetworks_CreateDnsZone",
+          "version": "2020-07-17-preview",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/preview/2020-07-17-preview/vmware.json"
+        }
+      ],
+      "Resource": "Microsoft.AVS/privateClouds/workloadNetworks/dnsZones"
+    },
+    {
+      "APIVersion": "2020-07-17-preview",
+      "operations": [
+        {
+          "OperationId": "WorkloadNetworks_ListGateways",
+          "version": "2020-07-17-preview",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/preview/2020-07-17-preview/vmware.json"
+        }
+      ],
+      "Resource": "Microsoft.AVS/privateClouds/workloadNetworks/gateways"
+    },
+    {
+      "APIVersion": "2020-07-17-preview",
+      "operations": [
+        {
+          "OperationId": "WorkloadNetworks_ListPortMirroring",
+          "version": "2020-07-17-preview",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/preview/2020-07-17-preview/vmware.json"
+        },
+        {
+          "OperationId": "WorkloadNetworks_DeletePortMirroring",
+          "version": "2020-07-17-preview",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/preview/2020-07-17-preview/vmware.json"
+        },
+        {
+          "OperationId": "WorkloadNetworks_GetPortMirroring",
+          "version": "2020-07-17-preview",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/preview/2020-07-17-preview/vmware.json"
+        },
+        {
+          "OperationId": "WorkloadNetworks_CreatePortMirroring",
+          "version": "2020-07-17-preview",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/preview/2020-07-17-preview/vmware.json"
+        }
+      ],
+      "Resource": "Microsoft.AVS/privateClouds/workloadNetworks/portMirroringProfiles"
+    },
+    {
+      "APIVersion": "2020-07-17-preview",
+      "operations": [
+        {
+          "OperationId": "WorkloadNetworks_ListSegments",
+          "version": "2020-07-17-preview",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/preview/2020-07-17-preview/vmware.json"
+        },
+        {
+          "OperationId": "WorkloadNetworks_DeleteSegment",
+          "version": "2020-07-17-preview",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/preview/2020-07-17-preview/vmware.json"
+        },
+        {
+          "OperationId": "WorkloadNetworks_GetSegment",
+          "version": "2020-07-17-preview",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/preview/2020-07-17-preview/vmware.json"
+        },
+        {
+          "OperationId": "WorkloadNetworks_CreateSegments",
+          "version": "2020-07-17-preview",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/preview/2020-07-17-preview/vmware.json"
+        }
+      ],
+      "Resource": "Microsoft.AVS/privateClouds/workloadNetworks/segments"
+    },
+    {
+      "APIVersion": "2020-07-17-preview",
+      "operations": [
+        {
+          "OperationId": "WorkloadNetworks_ListVirtualMachines",
+          "version": "2020-07-17-preview",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/preview/2020-07-17-preview/vmware.json"
+        }
+      ],
+      "Resource": "Microsoft.AVS/privateClouds/workloadNetworks/virtualMachines"
+    },
+    {
+      "APIVersion": "2020-07-17-preview",
+      "operations": [
+        {
+          "OperationId": "WorkloadNetworks_ListVMGroups",
+          "version": "2020-07-17-preview",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/preview/2020-07-17-preview/vmware.json"
+        },
+        {
+          "OperationId": "WorkloadNetworks_DeleteVMGroup",
+          "version": "2020-07-17-preview",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/preview/2020-07-17-preview/vmware.json"
+        },
+        {
+          "OperationId": "WorkloadNetworks_GetVMGroup",
+          "version": "2020-07-17-preview",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/preview/2020-07-17-preview/vmware.json"
+        },
+        {
+          "OperationId": "WorkloadNetworks_CreateVMGroup",
+          "version": "2020-07-17-preview",
+          "jsonFilePath": "/specification/vmware/resource-manager/Microsoft.AVS/preview/2020-07-17-preview/vmware.json"
+        }
+      ],
+      "Resource": "Microsoft.AVS/privateClouds/workloadNetworks/vmGroups"
+    }
+  ],
+  "resourcelist": "Microsoft.AVS/privateClouds,Microsoft.AVS/privateClouds/addons,Microsoft.AVS/privateClouds/authorizations,Microsoft.AVS/privateClouds/clusters,Microsoft.AVS/privateClouds/globalReachConnections,Microsoft.AVS/privateClouds/hcxEnterpriseSites,Microsoft.AVS/privateClouds/workloadNetworks/dhcpConfigurations,Microsoft.AVS/privateClouds/workloadNetworks/dnsServices,Microsoft.AVS/privateClouds/workloadNetworks/dnsZones,Microsoft.AVS/privateClouds/workloadNetworks/gateways,Microsoft.AVS/privateClouds/workloadNetworks/portMirroringProfiles,Microsoft.AVS/privateClouds/workloadNetworks/segments,Microsoft.AVS/privateClouds/workloadNetworks/virtualMachines,Microsoft.AVS/privateClouds/workloadNetworks/vmGroups",
+  "jsonFilelist": [
+    "/specification/vmware/resource-manager/Microsoft.AVS/stable/2020-03-20/vmware.json",
+    "/specification/vmware/resource-manager/Microsoft.AVS/preview/2020-07-17-preview/vmware.json",
+    "/specification/vmware/resource-manager/Microsoft.AVS/preview/2021-01-01-preview/vmware.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "vmware",
+  "readmeFile": "/specification/vmware/resource-manager/readme.md",
+  "target": "clicore"
+}
