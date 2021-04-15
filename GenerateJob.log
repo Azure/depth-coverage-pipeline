@@ -171,4 +171,4 @@ WARNING: Please add the predefined profile: microsoft.avs/privateclouds/workload
 WARNING: Please add the predefined profile: microsoft.avs/privateclouds/workloadnetworks/dnsservices.
 WARNING: Please add the predefined profile: microsoft.avs/privateclouds/workloadnetworks.
 WARNING: Please add the predefined profile: microsoft.avs/privateclouds/workloadnetworks/dnszones.
-[50.15 s] Generation Complete
+[46.94 s] Generation Complete
