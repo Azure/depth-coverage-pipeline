@@ -1,0 +1,61 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2015-08-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.Logic/integrationAccounts/agreements"
+    },
+    {
+      "APIVersion": "2016-06-01",
+      "operations": [],
+      "Resource": "Microsoft.Logic/integrationAccounts/batchConfigurations"
+    },
+    {
+      "APIVersion": "2018-07-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.Logic/integrationAccounts/certificates"
+    },
+    {
+      "APIVersion": "2015-08-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.Logic/integrationAccounts/partners"
+    },
+    {
+      "APIVersion": "2016-06-01",
+      "operations": [],
+      "Resource": "Microsoft.Logic/integrationAccounts/rosettanetprocessconfigurations"
+    },
+    {
+      "APIVersion": "2015-08-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.Logic/integrationAccounts/schemas"
+    },
+    {
+      "APIVersion": "2016-06-01",
+      "operations": [],
+      "Resource": "Microsoft.Logic/integrationAccounts/sessions"
+    },
+    {
+      "APIVersion": "2019-05-01",
+      "operations": [],
+      "Resource": "Microsoft.Logic/integrationServiceEnvironments/managedApis"
+    },
+    {
+      "APIVersion": "2015-02-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.Logic/workflows/runs"
+    }
+  ],
+  "resourcelist": "Microsoft.Logic/integrationAccounts/agreements,Microsoft.Logic/integrationAccounts/batchConfigurations,Microsoft.Logic/integrationAccounts/certificates,Microsoft.Logic/integrationAccounts/partners,Microsoft.Logic/integrationAccounts/rosettanetprocessconfigurations,Microsoft.Logic/integrationAccounts/schemas,Microsoft.Logic/integrationAccounts/sessions,Microsoft.Logic/integrationServiceEnvironments/managedApis,Microsoft.Logic/workflows/runs",
+  "jsonFilelist": [
+    "/specification/logic/resource-manager/Microsoft.Logic/preview/2015-08-01-preview/logic.json",
+    "/specification/logic/resource-manager/Microsoft.Logic/stable/2016-06-01/logic.json",
+    "/specification/logic/resource-manager/Microsoft.Logic/preview/2018-07-01-preview/logic.json",
+    "/specification/logic/resource-manager/Microsoft.Logic/stable/2019-05-01/logic.json",
+    "/specification/logic/resource-manager/Microsoft.Logic/preview/2015-02-01-preview/logic.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "logic",
+  "readmeFile": "/specification/logic/resource-manager/readme.md",
+  "target": "terraform"
+}
