@@ -1,0 +1,105 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-05-01",
+      "operations": [
+        {
+          "OperationId": "AccountBackups_Delete",
+          "version": "2020-05-01",
+          "jsonFilePath": "/specification/netapp/resource-manager/Microsoft.NetApp/stable/2020-05-01/netapp.json"
+        },
+        {
+          "OperationId": "AccountBackups_Get",
+          "version": "2020-06-01",
+          "jsonFilePath": "/specification/netapp/resource-manager/Microsoft.NetApp/stable/2020-06-01/netapp.json"
+        }
+      ],
+      "Resource": "Microsoft.NetApp/netAppAccounts/accountBackups"
+    },
+    {
+      "APIVersion": "2020-05-01",
+      "operations": [
+        {
+          "OperationId": "BackupPolicies_Delete",
+          "version": "2020-05-01",
+          "jsonFilePath": "/specification/netapp/resource-manager/Microsoft.NetApp/stable/2020-05-01/netapp.json"
+        },
+        {
+          "OperationId": "BackupPolicies_Get",
+          "version": "2020-05-01",
+          "jsonFilePath": "/specification/netapp/resource-manager/Microsoft.NetApp/stable/2020-05-01/netapp.json"
+        },
+        {
+          "OperationId": "BackupPolicies_Create",
+          "version": "2020-05-01",
+          "jsonFilePath": "/specification/netapp/resource-manager/Microsoft.NetApp/stable/2020-05-01/netapp.json"
+        }
+      ],
+      "Resource": "Microsoft.NetApp/netAppAccounts/backupPolicies"
+    },
+    {
+      "APIVersion": "2019-10-01",
+      "operations": [
+        {
+          "OperationId": "Volumes_AuthorizeReplication",
+          "version": "2019-10-01",
+          "jsonFilePath": "/specification/netapp/resource-manager/Microsoft.NetApp/stable/2019-10-01/netapp.json"
+        },
+        {
+          "OperationId": "Volumes_PoolChange",
+          "version": "2020-06-01",
+          "jsonFilePath": "/specification/netapp/resource-manager/Microsoft.NetApp/stable/2020-06-01/netapp.json"
+        }
+      ],
+      "Resource": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes"
+    },
+    {
+      "APIVersion": "2020-05-01",
+      "operations": [
+        {
+          "OperationId": "Backups_List",
+          "version": "2020-05-01",
+          "jsonFilePath": "/specification/netapp/resource-manager/Microsoft.NetApp/stable/2020-05-01/netapp.json"
+        },
+        {
+          "OperationId": "Backups_Delete",
+          "version": "2020-05-01",
+          "jsonFilePath": "/specification/netapp/resource-manager/Microsoft.NetApp/stable/2020-05-01/netapp.json"
+        },
+        {
+          "OperationId": "Backups_Get",
+          "version": "2020-06-01",
+          "jsonFilePath": "/specification/netapp/resource-manager/Microsoft.NetApp/stable/2020-06-01/netapp.json"
+        }
+      ],
+      "Resource": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/backups"
+    },
+    {
+      "APIVersion": "2020-12-01",
+      "operations": [
+        {
+          "OperationId": "VolumeBackupStatus_Get",
+          "version": "2020-12-01",
+          "jsonFilePath": "/specification/netapp/resource-manager/Microsoft.NetApp/stable/2020-12-01/netapp.json"
+        }
+      ],
+      "Resource": "Microsoft.NetApp/netAppAccounts/capacityPools/volumes/backupStatus"
+    }
+  ],
+  "resourcelist": "Microsoft.NetApp/netAppAccounts/accountBackups,Microsoft.NetApp/netAppAccounts/backupPolicies,Microsoft.NetApp/netAppAccounts/capacityPools/volumes,Microsoft.NetApp/netAppAccounts/capacityPools/volumes/backups,Microsoft.NetApp/netAppAccounts/capacityPools/volumes/backupStatus",
+  "jsonFilelist": [
+    "/specification/netapp/resource-manager/Microsoft.NetApp/stable/2020-05-01/netapp.json",
+    "/specification/netapp/resource-manager/Microsoft.NetApp/stable/2020-06-01/netapp.json",
+    "/specification/netapp/resource-manager/Microsoft.NetApp/stable/2020-08-01/netapp.json",
+    "/specification/netapp/resource-manager/Microsoft.NetApp/stable/2020-07-01/netapp.json",
+    "/specification/netapp/resource-manager/Microsoft.NetApp/stable/2020-09-01/netapp.json",
+    "/specification/netapp/resource-manager/Microsoft.NetApp/stable/2020-11-01/netapp.json",
+    "/specification/netapp/resource-manager/Microsoft.NetApp/stable/2020-12-01/netapp.json",
+    "/specification/netapp/resource-manager/Microsoft.NetApp/stable/2019-10-01/netapp.json",
+    "/specification/netapp/resource-manager/Microsoft.NetApp/stable/2019-11-01/netapp.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "netapp",
+  "readmeFile": "/specification/netapp/resource-manager/readme.md",
+  "target": "clicore"
+}
