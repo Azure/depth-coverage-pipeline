@@ -1,0 +1,143 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2019-03-01",
+      "operations": [
+        {
+          "OperationId": "Alerts_GetAll",
+          "version": "2019-03-01",
+          "jsonFilePath": "/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/stable/2019-03-01/AlertsManagement.json"
+        },
+        {
+          "OperationId": "Alerts_GetById",
+          "version": "2019-03-01",
+          "jsonFilePath": "/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/stable/2019-03-01/AlertsManagement.json"
+        },
+        {
+          "OperationId": "Alerts_ChangeState",
+          "version": "2019-03-01",
+          "jsonFilePath": "/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/stable/2019-03-01/AlertsManagement.json"
+        }
+      ],
+      "Resource": "Microsoft.AlertsManagement/alerts"
+    },
+    {
+      "APIVersion": "2019-03-01",
+      "operations": [
+        {
+          "OperationId": "Alerts_GetHistory",
+          "version": "2019-03-01",
+          "jsonFilePath": "/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/stable/2019-03-01/AlertsManagement.json"
+        }
+      ],
+      "Resource": "Microsoft.AlertsManagement/alerts/history"
+    },
+    {
+      "APIVersion": "2019-03-01",
+      "operations": [
+        {
+          "OperationId": "Alerts_GetSummary",
+          "version": "2019-03-01",
+          "jsonFilePath": "/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/stable/2019-03-01/AlertsManagement.json"
+        }
+      ],
+      "Resource": "Microsoft.AlertsManagement/alertsSummary"
+    },
+    {
+      "APIVersion": "2020-08-04-preview",
+      "operations": [
+        {
+          "OperationId": "HealthAlerts_ListBySubscription",
+          "version": "2020-08-04-preview",
+          "jsonFilePath": "/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/preview/2020-08-04-preview/ResourceHealthAlertRules.json"
+        },
+        {
+          "OperationId": "HealthAlerts_ListByResourceGroup",
+          "version": "2020-08-04-preview",
+          "jsonFilePath": "/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/preview/2020-08-04-preview/ResourceHealthAlertRules.json"
+        }
+      ],
+      "Resource": "Microsoft.AlertsManagement/resourceHealthAlertRules"
+    },
+    {
+      "APIVersion": "2019-03-01",
+      "operations": [
+        {
+          "OperationId": "SmartDetectorAlertRules_List",
+          "version": "2019-03-01",
+          "jsonFilePath": "/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/stable/2019-03-01/SmartDetectorAlertRulesApi.json"
+        },
+        {
+          "OperationId": "SmartDetectorAlertRules_ListByResourceGroup",
+          "version": "2019-03-01",
+          "jsonFilePath": "/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/stable/2019-03-01/SmartDetectorAlertRulesApi.json"
+        },
+        {
+          "OperationId": "SmartDetectorAlertRules_Delete",
+          "version": "2019-03-01",
+          "jsonFilePath": "/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/stable/2019-03-01/SmartDetectorAlertRulesApi.json"
+        },
+        {
+          "OperationId": "SmartDetectorAlertRules_Get",
+          "version": "2019-03-01",
+          "jsonFilePath": "/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/stable/2019-03-01/SmartDetectorAlertRulesApi.json"
+        },
+        {
+          "OperationId": "SmartDetectorAlertRules_CreateOrUpdate",
+          "version": "2019-03-01",
+          "jsonFilePath": "/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/stable/2019-03-01/SmartDetectorAlertRulesApi.json"
+        }
+      ],
+      "Resource": "microsoft.alertsManagement/smartDetectorAlertRules"
+    },
+    {
+      "APIVersion": "2018-05-05",
+      "operations": [
+        {
+          "OperationId": "SmartGroups_GetAll",
+          "version": "2018-05-05",
+          "jsonFilePath": "/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/stable/2018-05-05/AlertsManagement.json"
+        },
+        {
+          "OperationId": "SmartGroups_GetById",
+          "version": "2018-05-05",
+          "jsonFilePath": "/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/stable/2018-05-05/AlertsManagement.json"
+        },
+        {
+          "OperationId": "SmartGroups_ChangeState",
+          "version": "2018-05-05",
+          "jsonFilePath": "/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/stable/2018-05-05/AlertsManagement.json"
+        }
+      ],
+      "Resource": "Microsoft.AlertsManagement/smartGroups"
+    },
+    {
+      "APIVersion": "2018-05-05",
+      "operations": [
+        {
+          "OperationId": "SmartGroups_GetHistory",
+          "version": "2018-05-05",
+          "jsonFilePath": "/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/stable/2018-05-05/AlertsManagement.json"
+        }
+      ],
+      "Resource": "Microsoft.AlertsManagement/smartGroups/history"
+    }
+  ],
+  "resourcelist": "Microsoft.AlertsManagement/alerts,Microsoft.AlertsManagement/alerts/history,Microsoft.AlertsManagement/alertsSummary,Microsoft.AlertsManagement/resourceHealthAlertRules,microsoft.alertsManagement/smartDetectorAlertRules,Microsoft.AlertsManagement/smartGroups,Microsoft.AlertsManagement/smartGroups/history",
+  "jsonFilelist": [
+    "/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/stable/2019-03-01/AlertsManagement.json",
+    "/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/preview/2019-03-01-preview/AlertsManagement.json",
+    "/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/stable/2018-05-05/AlertsManagement.json",
+    "/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/preview/2018-05-05-preview/AlertsManagement.json",
+    "/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/preview/2018-11-02-privatepreview/AlertsManagement.json",
+    "/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/preview/2019-05-05-preview/AlertsManagement.json",
+    "/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/preview/2020-08-04-preview/ResourceHealthAlertRules.json",
+    "/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/stable/2019-03-01/SmartDetectorAlertRulesApi.json",
+    "/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/stable/2019-06-01/SmartDetectorAlertRulesApi.json",
+    "/specification/alertsmanagement/resource-manager/Microsoft.AlertsManagement/preview/2019-05-05-preview/SmartGroups.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "alertsmanagement",
+  "readmeFile": "/specification/alertsmanagement/resource-manager/readme.md",
+  "target": "clicore"
+}
