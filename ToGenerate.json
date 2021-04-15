@@ -1,0 +1,273 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2018-07-01-preview",
+      "operations": [
+        {
+          "OperationId": "DenyAssignments_ListForScope",
+          "version": "2018-07-01-preview",
+          "jsonFilePath": "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2018-07-01-preview/authorization-DenyAssignmentGetCalls.json"
+        },
+        {
+          "OperationId": "DenyAssignments_Get",
+          "version": "2018-07-01-preview",
+          "jsonFilePath": "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2018-07-01-preview/authorization-DenyAssignmentGetCalls.json"
+        },
+        {
+          "OperationId": "DenyAssignments_List",
+          "version": "2018-07-01-preview",
+          "jsonFilePath": "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2018-07-01-preview/authorization-DenyAssignmentGetCalls.json"
+        },
+        {
+          "OperationId": "DenyAssignments_ListForResource",
+          "version": "2018-07-01-preview",
+          "jsonFilePath": "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2018-07-01-preview/authorization-DenyAssignmentGetCalls.json"
+        },
+        {
+          "OperationId": "DenyAssignments_ListForResourceGroup",
+          "version": "2018-07-01-preview",
+          "jsonFilePath": "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2018-07-01-preview/authorization-DenyAssignmentGetCalls.json"
+        }
+      ],
+      "Resource": "Microsoft.Authorization/denyAssignments"
+    },
+    {
+      "APIVersion": "2020-08-01-preview",
+      "operations": [
+        {
+          "OperationId": "RoleAssignments_Validate",
+          "version": "2020-08-01-preview",
+          "jsonFilePath": "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2020-08-01-preview/authorization-RoleAssignmentsCalls.json"
+        },
+        {
+          "OperationId": "RoleAssignments_ListForResource",
+          "version": "2020-03-01-preview",
+          "jsonFilePath": "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2020-03-01-preview/authorization-RoleAssignmentsCalls.json"
+        }
+      ],
+      "Resource": "Microsoft.Authorization/roleAssignments"
+    },
+    {
+      "APIVersion": "2020-10-01-preview",
+      "operations": [
+        {
+          "OperationId": "RoleAssignmentScheduleInstances_ListForScope",
+          "version": "2020-10-01-preview",
+          "jsonFilePath": "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2020-10-01-preview/RoleAssignmentScheduleInstance.json"
+        }
+      ],
+      "Resource": "Microsoft.Authorization/roleAssignmentScheduleInstances"
+    },
+    {
+      "APIVersion": "2020-10-01-preview",
+      "operations": [
+        {
+          "OperationId": "RoleAssignmentScheduleRequests_ListForScope",
+          "version": "2020-10-01-preview",
+          "jsonFilePath": "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2020-10-01-preview/RoleAssignmentScheduleRequest.json"
+        }
+      ],
+      "Resource": "Microsoft.Authorization/roleAssignmentScheduleRequests"
+    },
+    {
+      "APIVersion": "2020-10-01-preview",
+      "operations": [
+        {
+          "OperationId": "RoleAssignmentSchedules_ListForScope",
+          "version": "2020-10-01-preview",
+          "jsonFilePath": "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2020-10-01-preview/RoleAssignmentSchedule.json"
+        }
+      ],
+      "Resource": "Microsoft.Authorization/roleAssignmentSchedules"
+    },
+    {
+      "APIVersion": "2020-10-01-preview",
+      "operations": [
+        {
+          "OperationId": "RoleEligibilityScheduleInstances_ListForScope",
+          "version": "2020-10-01-preview",
+          "jsonFilePath": "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2020-10-01-preview/RoleEligibilityScheduleInstance.json"
+        }
+      ],
+      "Resource": "Microsoft.Authorization/roleEligibilityScheduleInstances"
+    },
+    {
+      "APIVersion": "2020-10-01-preview",
+      "operations": [
+        {
+          "OperationId": "RoleEligibilityScheduleRequests_ListForScope",
+          "version": "2020-10-01-preview",
+          "jsonFilePath": "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2020-10-01-preview/RoleEligibilityScheduleRequest.json"
+        }
+      ],
+      "Resource": "Microsoft.Authorization/roleEligibilityScheduleRequests"
+    },
+    {
+      "APIVersion": "2020-10-01-preview",
+      "operations": [
+        {
+          "OperationId": "RoleEligibilitySchedules_ListForScope",
+          "version": "2020-10-01-preview",
+          "jsonFilePath": "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2020-10-01-preview/RoleEligibilitySchedule.json"
+        }
+      ],
+      "Resource": "Microsoft.Authorization/roleEligibilitySchedules"
+    },
+    {
+      "APIVersion": "2020-10-01-preview",
+      "operations": [
+        {
+          "OperationId": "RoleManagementPolicies_ListForScope",
+          "version": "2020-10-01-preview",
+          "jsonFilePath": "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2020-10-01-preview/RoleManagementPolicy.json"
+        },
+        {
+          "OperationId": "RoleManagementPolicies_Get",
+          "version": "2020-10-01-preview",
+          "jsonFilePath": "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2020-10-01-preview/RoleManagementPolicy.json"
+        },
+        {
+          "OperationId": "RoleManagementPolicies_Update",
+          "version": "2020-10-01-preview",
+          "jsonFilePath": "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2020-10-01-preview/RoleManagementPolicy.json"
+        }
+      ],
+      "Resource": "Microsoft.Authorization/roleManagementPolicies"
+    },
+    {
+      "APIVersion": "2020-10-01-preview",
+      "operations": [
+        {
+          "OperationId": "RoleManagementPolicyAssignments_ListForScope",
+          "version": "2020-10-01-preview",
+          "jsonFilePath": "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2020-10-01-preview/RoleManagementPolicyAssignment.json"
+        }
+      ],
+      "Resource": "Microsoft.Authorization/roleManagementPolicyAssignments"
+    },
+    {
+      "APIVersion": "2018-05-01-preview",
+      "operations": [
+        {
+          "OperationId": "AccessReviewScheduleDefinitions_List",
+          "version": "2018-05-01-preview",
+          "jsonFilePath": "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2018-05-01-preview/authorization-AccessReviewCalls.json"
+        },
+        {
+          "OperationId": "AccessReviewScheduleDefinitions_GetById",
+          "version": "2018-05-01-preview",
+          "jsonFilePath": "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2018-05-01-preview/authorization-AccessReviewCalls.json"
+        },
+        {
+          "OperationId": "AccessReviewScheduleDefinitions_CreateOrUpdateById",
+          "version": "2018-05-01-preview",
+          "jsonFilePath": "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2018-05-01-preview/authorization-AccessReviewCalls.json"
+        }
+      ],
+      "Resource": "Microsoft.Authorization/accessReviewScheduleDefinitions"
+    },
+    {
+      "APIVersion": "2018-05-01-preview",
+      "operations": [
+        {
+          "OperationId": "AccessReviewInstances_List",
+          "version": "2018-05-01-preview",
+          "jsonFilePath": "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2018-05-01-preview/authorization-AccessReviewCalls.json"
+        },
+        {
+          "OperationId": "AccessReviewInstances_GetById",
+          "version": "2018-05-01-preview",
+          "jsonFilePath": "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2018-05-01-preview/authorization-AccessReviewCalls.json"
+        },
+        {
+          "OperationId": "AccessReviewInstance_ResetDecisions",
+          "version": "2018-05-01-preview",
+          "jsonFilePath": "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2018-05-01-preview/authorization-AccessReviewCalls.json"
+        },
+        {
+          "OperationId": "AccessReviewInstance_Stop",
+          "version": "2018-05-01-preview",
+          "jsonFilePath": "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2018-05-01-preview/authorization-AccessReviewCalls.json"
+        }
+      ],
+      "Resource": "Microsoft.Authorization/accessReviewScheduleDefinitions/instances"
+    },
+    {
+      "APIVersion": "2018-05-01-preview",
+      "operations": [
+        {
+          "OperationId": "AccessReviewInstanceDecisions_List",
+          "version": "2018-05-01-preview",
+          "jsonFilePath": "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2018-05-01-preview/authorization-AccessReviewCalls.json"
+        }
+      ],
+      "Resource": "Microsoft.Authorization/accessReviewScheduleDefinitions/instances/decisions"
+    },
+    {
+      "APIVersion": "2018-05-01-preview",
+      "operations": [
+        {
+          "OperationId": "AccessReviewDefaultSettings_Get",
+          "version": "2018-05-01-preview",
+          "jsonFilePath": "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2018-05-01-preview/authorization-AccessReviewCalls.json"
+        },
+        {
+          "OperationId": "AccessReviewDefaultSettings_Put",
+          "version": "2018-05-01-preview",
+          "jsonFilePath": "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2018-05-01-preview/authorization-AccessReviewCalls.json"
+        }
+      ],
+      "Resource": "Microsoft.Authorization/accessReviewScheduleSettings"
+    },
+    {
+      "APIVersion": "2019-08-01-preview",
+      "operations": [
+        {
+          "OperationId": "RoleAssignmentMetrics_GetMetricsForSubscription",
+          "version": "2019-08-01-preview",
+          "jsonFilePath": "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2019-08-01-preview/authorization-UsageMetricsCalls.json"
+        }
+      ],
+      "Resource": "Microsoft.Authorization/roleAssignmentsUsageMetrics"
+    },
+    {
+      "APIVersion": "2015-07-01",
+      "operations": [
+        {
+          "OperationId": "Permissions_ListForResource",
+          "version": "2015-07-01",
+          "jsonFilePath": "/specification/authorization/resource-manager/Microsoft.Authorization/stable/2015-07-01/authorization-RoleDefinitionsCalls.json"
+        },
+        {
+          "OperationId": "Permissions_ListForResourceGroup",
+          "version": "2015-07-01",
+          "jsonFilePath": "/specification/authorization/resource-manager/Microsoft.Authorization/stable/2015-07-01/authorization-RoleDefinitionsCalls.json"
+        }
+      ],
+      "Resource": "Microsoft.Authorization/permissions"
+    }
+  ],
+  "resourcelist": "Microsoft.Authorization/denyAssignments,Microsoft.Authorization/roleAssignments,Microsoft.Authorization/roleAssignmentScheduleInstances,Microsoft.Authorization/roleAssignmentScheduleRequests,Microsoft.Authorization/roleAssignmentSchedules,Microsoft.Authorization/roleEligibilityScheduleInstances,Microsoft.Authorization/roleEligibilityScheduleRequests,Microsoft.Authorization/roleEligibilitySchedules,Microsoft.Authorization/roleManagementPolicies,Microsoft.Authorization/roleManagementPolicyAssignments,Microsoft.Authorization/accessReviewScheduleDefinitions,Microsoft.Authorization/accessReviewScheduleDefinitions/instances,Microsoft.Authorization/accessReviewScheduleDefinitions/instances/decisions,Microsoft.Authorization/accessReviewScheduleSettings,Microsoft.Authorization/roleAssignmentsUsageMetrics,Microsoft.Authorization/permissions",
+  "jsonFilelist": [
+    "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2018-07-01-preview/authorization-DenyAssignmentGetCalls.json",
+    "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2020-08-01-preview/authorization-RoleAssignmentsCalls.json",
+    "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2020-10-01-preview/RoleAssignmentScheduleInstance.json",
+    "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2020-10-01-preview/RoleAssignmentScheduleRequest.json",
+    "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2020-10-01-preview/RoleAssignmentSchedule.json",
+    "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2020-10-01-preview/RoleEligibilityScheduleInstance.json",
+    "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2020-10-01-preview/RoleEligibilityScheduleRequest.json",
+    "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2020-10-01-preview/RoleEligibilitySchedule.json",
+    "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2020-10-01-preview/RoleManagementPolicy.json",
+    "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2020-10-01-preview/RoleManagementPolicyAssignment.json",
+    "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2018-05-01-preview/authorization-AccessReviewCalls.json",
+    "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2021-03-01-preview/authorization-AccessReviewCalls.json",
+    "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2019-08-01-preview/authorization-UsageMetricsCalls.json",
+    "/specification/authorization/resource-manager/Microsoft.Authorization/stable/2015-07-01/authorization-RoleDefinitionsCalls.json",
+    "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2018-01-01-preview/authorization-RoleDefinitionsCalls.json",
+    "/specification/authorization/resource-manager/Microsoft.Authorization/preview/2020-03-01-preview/authorization-RoleAssignmentsCalls.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "authorization",
+  "readmeFile": "/specification/authorization/resource-manager/readme.md",
+  "target": "clicore"
+}
