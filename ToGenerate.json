@@ -1,0 +1,85 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2021-01-01",
+      "operations": [
+        {
+          "OperationId": "Attestations_ListForResource",
+          "version": "2021-01-01",
+          "jsonFilePath": "/specification/policyinsights/resource-manager/Microsoft.PolicyInsights/stable/2021-01-01/attestations.json"
+        },
+        {
+          "OperationId": "Attestations_ListForSubscription",
+          "version": "2021-01-01",
+          "jsonFilePath": "/specification/policyinsights/resource-manager/Microsoft.PolicyInsights/stable/2021-01-01/attestations.json"
+        },
+        {
+          "OperationId": "Attestations_ListForResourceGroup",
+          "version": "2021-01-01",
+          "jsonFilePath": "/specification/policyinsights/resource-manager/Microsoft.PolicyInsights/stable/2021-01-01/attestations.json"
+        }
+      ],
+      "Resource": "Microsoft.PolicyInsights/attestations"
+    },
+    {
+      "APIVersion": "2018-07-01-preview",
+      "operations": [
+        {
+          "OperationId": "PolicyTrackedResources_ListQueryResultsForResource",
+          "version": "2018-07-01-preview",
+          "jsonFilePath": "/specification/policyinsights/resource-manager/Microsoft.PolicyInsights/preview/2018-07-01-preview/policyTrackedResources.json"
+        },
+        {
+          "OperationId": "PolicyTrackedResources_ListQueryResultsForSubscription",
+          "version": "2018-07-01-preview",
+          "jsonFilePath": "/specification/policyinsights/resource-manager/Microsoft.PolicyInsights/preview/2018-07-01-preview/policyTrackedResources.json"
+        },
+        {
+          "OperationId": "PolicyTrackedResources_ListQueryResultsForResourceGroup",
+          "version": "2018-07-01-preview",
+          "jsonFilePath": "/specification/policyinsights/resource-manager/Microsoft.PolicyInsights/preview/2018-07-01-preview/policyTrackedResources.json"
+        }
+      ],
+      "Resource": "Microsoft.PolicyInsights/policyTrackedResources"
+    },
+    {
+      "APIVersion": "2018-04-04",
+      "operations": [
+        {
+          "OperationId": "PolicyEvents_ListQueryResultsForResourceGroupLevelPolicyAssignment",
+          "version": "2018-04-04",
+          "jsonFilePath": "/specification/policyinsights/resource-manager/Microsoft.PolicyInsights/stable/2018-04-04/policyEvents.json"
+        }
+      ],
+      "Resource": "Microsoft.PolicyInsights/policyEvents"
+    },
+    {
+      "APIVersion": "2019-07-01",
+      "operations": [
+        {
+          "OperationId": "Remediations_CancelAtResourceGroup",
+          "version": "2019-07-01",
+          "jsonFilePath": "/specification/policyinsights/resource-manager/Microsoft.PolicyInsights/stable/2019-07-01/remediations.json"
+        },
+        {
+          "OperationId": "Remediations_ListDeploymentsAtResourceGroup",
+          "version": "2019-07-01",
+          "jsonFilePath": "/specification/policyinsights/resource-manager/Microsoft.PolicyInsights/stable/2019-07-01/remediations.json"
+        }
+      ],
+      "Resource": "Microsoft.PolicyInsights/remediations"
+    }
+  ],
+  "resourcelist": "Microsoft.PolicyInsights/attestations,Microsoft.PolicyInsights/policyTrackedResources,Microsoft.PolicyInsights/policyEvents,Microsoft.PolicyInsights/remediations",
+  "jsonFilelist": [
+    "/specification/policyinsights/resource-manager/Microsoft.PolicyInsights/stable/2021-01-01/attestations.json",
+    "/specification/policyinsights/resource-manager/Microsoft.PolicyInsights/preview/2018-07-01-preview/policyTrackedResources.json",
+    "/specification/policyinsights/resource-manager/Microsoft.PolicyInsights/stable/2018-04-04/policyEvents.json",
+    "/specification/policyinsights/resource-manager/Microsoft.PolicyInsights/stable/2019-10-01/policyEvents.json",
+    "/specification/policyinsights/resource-manager/Microsoft.PolicyInsights/stable/2019-07-01/remediations.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "policyinsights",
+  "readmeFile": "/specification/policyinsights/resource-manager/readme.md",
+  "target": "clicore"
+}
