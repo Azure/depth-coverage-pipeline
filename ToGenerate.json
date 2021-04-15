@@ -1,0 +1,17 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-07-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.AppConfiguration/configurationStores/privateEndpointConnections"
+    }
+  ],
+  "resourcelist": "Microsoft.AppConfiguration/configurationStores/privateEndpointConnections",
+  "jsonFilelist": [
+    "/specification/appconfiguration/resource-manager/Microsoft.AppConfiguration/preview/2020-07-01-preview/appconfiguration.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "appconfiguration",
+  "readmeFile": "/specification/appconfiguration/resource-manager/readme.md",
+  "target": "terraform"
+}
