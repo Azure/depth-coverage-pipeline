@@ -1,0 +1,47 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2019-09-16",
+      "operations": [
+        {
+          "OperationId": "Services_CheckNameAvailability",
+          "version": "2019-09-16",
+          "jsonFilePath": "/specification/healthcareapis/resource-manager/Microsoft.HealthcareApis/stable/2019-09-16/healthcare-apis.json"
+        }
+      ],
+      "Resource": "Microsoft.HealthcareApis"
+    },
+    {
+      "APIVersion": "2020-03-30",
+      "operations": [
+        {
+          "OperationId": "PrivateEndpointConnections_Delete",
+          "version": "2020-03-30",
+          "jsonFilePath": "/specification/healthcareapis/resource-manager/Microsoft.HealthcareApis/stable/2020-03-30/healthcare-apis.json"
+        },
+        {
+          "OperationId": "PrivateEndpointConnections_Get",
+          "version": "2020-03-30",
+          "jsonFilePath": "/specification/healthcareapis/resource-manager/Microsoft.HealthcareApis/stable/2020-03-30/healthcare-apis.json"
+        },
+        {
+          "OperationId": "PrivateEndpointConnections_CreateOrUpdate",
+          "version": "2020-03-30",
+          "jsonFilePath": "/specification/healthcareapis/resource-manager/Microsoft.HealthcareApis/stable/2020-03-30/healthcare-apis.json"
+        }
+      ],
+      "Resource": "Microsoft.HealthcareApis/services/privateEndpointConnections"
+    }
+  ],
+  "resourcelist": "Microsoft.HealthcareApis,Microsoft.HealthcareApis/services/privateEndpointConnections",
+  "jsonFilelist": [
+    "/specification/healthcareapis/resource-manager/Microsoft.HealthcareApis/stable/2019-09-16/healthcare-apis.json",
+    "/specification/healthcareapis/resource-manager/Microsoft.HealthcareApis/stable/2020-03-15/healthcare-apis.json",
+    "/specification/healthcareapis/resource-manager/Microsoft.HealthcareApis/stable/2020-03-30/healthcare-apis.json",
+    "/specification/healthcareapis/resource-manager/Microsoft.HealthcareApis/stable/2021-01-11/healthcare-apis.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "healthcareapis",
+  "readmeFile": "/specification/healthcareapis/resource-manager/readme.md",
+  "target": "clicore"
+}
