@@ -1,0 +1,73 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2016-05-15",
+      "operations": [],
+      "Resource": "Microsoft.DevTestLab/labs/artifactsources"
+    },
+    {
+      "APIVersion": "2016-05-15",
+      "operations": [],
+      "Resource": "Microsoft.DevTestLab/labs/customimages"
+    },
+    {
+      "APIVersion": "2016-05-15",
+      "operations": [],
+      "Resource": "Microsoft.DevTestLab/labs/formulas"
+    },
+    {
+      "APIVersion": "2016-05-15",
+      "operations": [],
+      "Resource": "Microsoft.DevTestLab/labs/notificationchannels"
+    },
+    {
+      "APIVersion": "2016-05-15",
+      "operations": [],
+      "Resource": "Microsoft.DevTestLab/labs/servicerunners"
+    },
+    {
+      "APIVersion": "2016-05-15",
+      "operations": [],
+      "Resource": "Microsoft.DevTestLab/labs/users"
+    },
+    {
+      "APIVersion": "2016-05-15",
+      "operations": [],
+      "Resource": "Microsoft.DevTestLab/labs/users/disks"
+    },
+    {
+      "APIVersion": "2016-05-15",
+      "operations": [],
+      "Resource": "Microsoft.DevTestLab/labs/users/environments"
+    },
+    {
+      "APIVersion": "2016-05-15",
+      "operations": [],
+      "Resource": "Microsoft.DevTestLab/labs/users/secrets"
+    },
+    {
+      "APIVersion": "2018-09-15",
+      "operations": [],
+      "Resource": "Microsoft.DevTestLab/labs/users/servicefabrics"
+    },
+    {
+      "APIVersion": "2018-09-15",
+      "operations": [],
+      "Resource": "Microsoft.DevTestLab/labs/users/servicefabrics/schedules"
+    },
+    {
+      "APIVersion": "2016-05-15",
+      "operations": [],
+      "Resource": "Microsoft.DevTestLab/labs/virtualmachines/schedules"
+    }
+  ],
+  "resourcelist": "Microsoft.DevTestLab/labs/artifactsources,Microsoft.DevTestLab/labs/customimages,Microsoft.DevTestLab/labs/formulas,Microsoft.DevTestLab/labs/notificationchannels,Microsoft.DevTestLab/labs/servicerunners,Microsoft.DevTestLab/labs/users,Microsoft.DevTestLab/labs/users/disks,Microsoft.DevTestLab/labs/users/environments,Microsoft.DevTestLab/labs/users/secrets,Microsoft.DevTestLab/labs/users/servicefabrics,Microsoft.DevTestLab/labs/users/servicefabrics/schedules,Microsoft.DevTestLab/labs/virtualmachines/schedules",
+  "jsonFilelist": [
+    "/specification/devtestlabs/resource-manager/Microsoft.DevTestLab/stable/2016-05-15/DTL.json",
+    "/specification/devtestlabs/resource-manager/Microsoft.DevTestLab/stable/2018-09-15/DTL.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "devtestlabs",
+  "readmeFile": "/specification/devtestlabs/resource-manager/readme.md",
+  "target": "terraform"
+}
