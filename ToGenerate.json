@@ -1,0 +1,29 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-10-01",
+      "operations": [
+        {
+          "OperationId": "Clusters_ListBySubscription",
+          "version": "2020-10-01",
+          "jsonFilePath": "/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/stable/2020-10-01/azurestackhci.json"
+        },
+        {
+          "OperationId": "Clusters_Create",
+          "version": "2020-03-01-preview",
+          "jsonFilePath": "/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/preview/2020-03-01-preview/azurestackhci.json"
+        }
+      ],
+      "Resource": "Microsoft.AzureStackHCI/clusters"
+    }
+  ],
+  "resourcelist": "Microsoft.AzureStackHCI/clusters",
+  "jsonFilelist": [
+    "/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/stable/2020-10-01/azurestackhci.json",
+    "/specification/azurestackhci/resource-manager/Microsoft.AzureStackHCI/preview/2020-03-01-preview/azurestackhci.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "azurestackhci",
+  "readmeFile": "/specification/azurestackhci/resource-manager/readme.md",
+  "target": "clicore"
+}
