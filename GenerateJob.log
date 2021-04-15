@@ -1,4 +1,4 @@
-AutoRest code generation utility [cli version: 3.1.5; node: v14.16.1, max-memory: 2048 MB]
+AutoRest code generation utility [cli version: 3.1.5; node: v14.16.0, max-memory: 2048 MB]
 (C) 2018 Microsoft Corporation.
 https://aka.ms/autorest
    Loading AutoRest core      '/home/vsts/.autorest/@autorest_core@3.0.6219/node_modules/@autorest/core/dist' (3.0.6219)
@@ -208,4 +208,4 @@ WARNING (PreCheck/EmptyParentSchemaWarning): Schema 'NamedPartitionSchemeDescrip
 WARNING (PreCheck/EmptyParentSchemaWarning): Schema 'UniformInt64RangePartitionSchemeDescription' has an allOf list with an empty object schema as a parent, removing it.
 
 WARNING (PreCheck/CheckDuplicateSchemas): Checking for duplicate schemas, this could take a (long) while.  Run with --verbose for more detail.
-[44.18 s] Generation Complete
+[55.45 s] Generation Complete
