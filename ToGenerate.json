@@ -1,0 +1,23 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2021-02-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.RecoveryServices/vaults/backupFabrics/backupProtectionIntent"
+    },
+    {
+      "APIVersion": "2020-10-01",
+      "operations": [],
+      "Resource": "Microsoft.RecoveryServices/vaults/privateEndpointConnections"
+    }
+  ],
+  "resourcelist": "Microsoft.RecoveryServices/vaults/backupFabrics/backupProtectionIntent,Microsoft.RecoveryServices/vaults/privateEndpointConnections",
+  "jsonFilelist": [
+    "/specification/recoveryservicesbackup/resource-manager/Microsoft.RecoveryServices/preview/2021-02-01-preview/bms.json",
+    "/specification/recoveryservicesbackup/resource-manager/Microsoft.RecoveryServices/stable/2020-10-01/bms.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "recoveryservicesbackup",
+  "readmeFile": "/specification/recoveryservicesbackup/resource-manager/readme.md",
+  "target": "terraform"
+}
