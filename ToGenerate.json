@@ -1,0 +1,33 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2018-09-01",
+      "operations": [
+        {
+          "OperationId": "Apps_ListTemplates",
+          "version": "2018-09-01",
+          "jsonFilePath": "/specification/iotcentral/resource-manager/Microsoft.IoTCentral/stable/2018-09-01/iotcentral.json"
+        },
+        {
+          "OperationId": "Apps_CheckNameAvailability",
+          "version": "2018-09-01",
+          "jsonFilePath": "/specification/iotcentral/resource-manager/Microsoft.IoTCentral/stable/2018-09-01/iotcentral.json"
+        },
+        {
+          "OperationId": "Apps_CheckSubdomainAvailability",
+          "version": "2018-09-01",
+          "jsonFilePath": "/specification/iotcentral/resource-manager/Microsoft.IoTCentral/stable/2018-09-01/iotcentral.json"
+        }
+      ],
+      "Resource": "Microsoft.IoTCentral"
+    }
+  ],
+  "resourcelist": "Microsoft.IoTCentral",
+  "jsonFilelist": [
+    "/specification/iotcentral/resource-manager/Microsoft.IoTCentral/stable/2018-09-01/iotcentral.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "iotcentral",
+  "readmeFile": "/specification/iotcentral/resource-manager/readme.md",
+  "target": "clicore"
+}
