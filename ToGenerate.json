@@ -1,0 +1,40 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-04-01",
+      "operations": [
+        {
+          "OperationId": "Communications_CheckNameAvailability",
+          "version": "2020-04-01",
+          "jsonFilePath": "/specification/support/resource-manager/Microsoft.Support/stable/2020-04-01/support.json"
+        }
+      ],
+      "Resource": "Microsoft.Support/supportTickets"
+    },
+    {
+      "APIVersion": "2019-05-01-preview",
+      "operations": [
+        {
+          "OperationId": "Communications_Get",
+          "version": "2019-05-01-preview",
+          "jsonFilePath": "/specification/support/resource-manager/Microsoft.Support/preview/2019-05-01-preview/support.json"
+        },
+        {
+          "OperationId": "Communications_Create",
+          "version": "2019-05-01-preview",
+          "jsonFilePath": "/specification/support/resource-manager/Microsoft.Support/preview/2019-05-01-preview/support.json"
+        }
+      ],
+      "Resource": "Microsoft.Support/supportTickets/communications"
+    }
+  ],
+  "resourcelist": "Microsoft.Support/supportTickets,Microsoft.Support/supportTickets/communications",
+  "jsonFilelist": [
+    "/specification/support/resource-manager/Microsoft.Support/stable/2020-04-01/support.json",
+    "/specification/support/resource-manager/Microsoft.Support/preview/2019-05-01-preview/support.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "support",
+  "readmeFile": "/specification/support/resource-manager/readme.md",
+  "target": "clicore"
+}
