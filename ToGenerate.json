@@ -1,0 +1,17 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2021-01-01",
+      "operations": [],
+      "Resource": "Microsoft.PowerBIDedicated/autoScaleVCores"
+    }
+  ],
+  "resourcelist": "Microsoft.PowerBIDedicated/autoScaleVCores",
+  "jsonFilelist": [
+    "/specification/powerbidedicated/resource-manager/Microsoft.PowerBIdedicated/stable/2021-01-01/autoScaleVCores.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "powerbidedicated",
+  "readmeFile": "/specification/powerbidedicated/resource-manager/readme.md",
+  "target": "terraform"
+}
