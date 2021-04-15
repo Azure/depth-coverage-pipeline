@@ -1,0 +1,75 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2019-06-15-preview",
+      "operations": [],
+      "Resource": "Microsoft.Cdn/CdnWebApplicationFirewallPolicies"
+    },
+    {
+      "APIVersion": "2020-09-01",
+      "operations": [],
+      "Resource": "Microsoft.Cdn/profiles/afdEndpoints"
+    },
+    {
+      "APIVersion": "2020-09-01",
+      "operations": [],
+      "Resource": "Microsoft.Cdn/profiles/afdEndpoints/routes"
+    },
+    {
+      "APIVersion": "2020-09-01",
+      "operations": [],
+      "Resource": "Microsoft.Cdn/profiles/customDomains"
+    },
+    {
+      "APIVersion": "2019-12-31",
+      "operations": [],
+      "Resource": "Microsoft.Cdn/profiles/endpoints/originGroups"
+    },
+    {
+      "APIVersion": "2019-06-15-preview",
+      "operations": [],
+      "Resource": "Microsoft.Cdn/profiles/endpoints/origins"
+    },
+    {
+      "APIVersion": "2020-09-01",
+      "operations": [],
+      "Resource": "Microsoft.Cdn/profiles/originGroups"
+    },
+    {
+      "APIVersion": "2020-09-01",
+      "operations": [],
+      "Resource": "Microsoft.Cdn/profiles/originGroups/origins"
+    },
+    {
+      "APIVersion": "2020-09-01",
+      "operations": [],
+      "Resource": "Microsoft.Cdn/profiles/ruleSets"
+    },
+    {
+      "APIVersion": "2020-09-01",
+      "operations": [],
+      "Resource": "Microsoft.Cdn/profiles/ruleSets/rules"
+    },
+    {
+      "APIVersion": "2020-09-01",
+      "operations": [],
+      "Resource": "Microsoft.Cdn/profiles/secrets"
+    },
+    {
+      "APIVersion": "2020-09-01",
+      "operations": [],
+      "Resource": "Microsoft.Cdn/profiles/securityPolicies"
+    }
+  ],
+  "resourcelist": "Microsoft.Cdn/CdnWebApplicationFirewallPolicies,Microsoft.Cdn/profiles/afdEndpoints,Microsoft.Cdn/profiles/afdEndpoints/routes,Microsoft.Cdn/profiles/customDomains,Microsoft.Cdn/profiles/endpoints/originGroups,Microsoft.Cdn/profiles/endpoints/origins,Microsoft.Cdn/profiles/originGroups,Microsoft.Cdn/profiles/originGroups/origins,Microsoft.Cdn/profiles/ruleSets,Microsoft.Cdn/profiles/ruleSets/rules,Microsoft.Cdn/profiles/secrets,Microsoft.Cdn/profiles/securityPolicies",
+  "jsonFilelist": [
+    "/specification/cdn/resource-manager/Microsoft.Cdn/preview/2019-06-15-preview/cdnwebapplicationfirewall.json",
+    "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json",
+    "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2019-12-31/cdn.json",
+    "/specification/cdn/resource-manager/Microsoft.Cdn/preview/2019-06-15-preview/cdn.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "cdn",
+  "readmeFile": "/specification/cdn/resource-manager/readme.md",
+  "target": "terraform"
+}
