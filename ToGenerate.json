@@ -1,0 +1,56 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2019-06-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.Synapse/workspaces/integrationRuntimes/nodes"
+    },
+    {
+      "APIVersion": "2019-06-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.Synapse/workspaces/keys"
+    },
+    {
+      "APIVersion": "2019-06-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.Synapse/workspaces/privateEndpointConnections"
+    },
+    {
+      "APIVersion": "2019-06-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.Synapse/workspaces/sqlAdministrators"
+    },
+    {
+      "APIVersion": "2019-06-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.Synapse/workspaces/sqlPools/vulnerabilityAssessments"
+    },
+    {
+      "APIVersion": "2019-06-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.Synapse/workspaces/sqlPools/vulnerabilityAssessments/rules/baselines"
+    },
+    {
+      "APIVersion": "2019-06-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.Synapse/workspaces/sqlPools/workloadGroups"
+    },
+    {
+      "APIVersion": "2019-06-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.Synapse/workspaces/sqlPools/workloadGroups/workloadClassifiers"
+    }
+  ],
+  "resourcelist": "Microsoft.Synapse/workspaces/integrationRuntimes/nodes,Microsoft.Synapse/workspaces/keys,Microsoft.Synapse/workspaces/privateEndpointConnections,Microsoft.Synapse/workspaces/sqlAdministrators,Microsoft.Synapse/workspaces/sqlPools/vulnerabilityAssessments,Microsoft.Synapse/workspaces/sqlPools/vulnerabilityAssessments/rules/baselines,Microsoft.Synapse/workspaces/sqlPools/workloadGroups,Microsoft.Synapse/workspaces/sqlPools/workloadGroups/workloadClassifiers",
+  "jsonFilelist": [
+    "/specification/synapse/resource-manager/Microsoft.Synapse/preview/2019-06-01-preview/integrationRuntime.json",
+    "/specification/synapse/resource-manager/Microsoft.Synapse/preview/2019-06-01-preview/keys.json",
+    "/specification/synapse/resource-manager/Microsoft.Synapse/preview/2019-06-01-preview/privateEndpointConnections.json",
+    "/specification/synapse/resource-manager/Microsoft.Synapse/preview/2019-06-01-preview/workspace.json",
+    "/specification/synapse/resource-manager/Microsoft.Synapse/preview/2019-06-01-preview/sqlPool.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "synapse",
+  "readmeFile": "/specification/synapse/resource-manager/readme.md",
+  "target": "terraform"
+}
