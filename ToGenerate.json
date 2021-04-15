@@ -1,0 +1,548 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2019-10-01",
+      "operations": [
+        {
+          "OperationId": "Projects_ListBySubscription",
+          "version": "2019-10-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2019-10-01/migrate.json"
+        },
+        {
+          "OperationId": "Projects_List",
+          "version": "2019-10-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2019-10-01/migrate.json"
+        },
+        {
+          "OperationId": "Projects_Delete",
+          "version": "2019-10-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2019-10-01/migrate.json"
+        },
+        {
+          "OperationId": "Projects_Get",
+          "version": "2019-10-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2019-10-01/migrate.json"
+        },
+        {
+          "OperationId": "Projects_Create",
+          "version": "2019-10-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2019-10-01/migrate.json"
+        }
+      ],
+      "Resource": "Microsoft.Migrate/assessmentProjects"
+    },
+    {
+      "APIVersion": "2018-02-02",
+      "operations": [
+        {
+          "OperationId": "Projects_ListBySubscription",
+          "version": "2018-02-02",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2018-02-02/migrate.json"
+        },
+        {
+          "OperationId": "Projects_ListByResourceGroup",
+          "version": "2018-02-02",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2018-02-02/migrate.json"
+        },
+        {
+          "OperationId": "Projects_Delete",
+          "version": "2018-02-02",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2018-02-02/migrate.json"
+        },
+        {
+          "OperationId": "Projects_Get",
+          "version": "2018-02-02",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2018-02-02/migrate.json"
+        },
+        {
+          "OperationId": "Projects_Create",
+          "version": "2018-02-02",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2018-02-02/migrate.json"
+        },
+        {
+          "OperationId": "Projects_GetKeys",
+          "version": "2018-02-02",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2018-02-02/migrate.json"
+        }
+      ],
+      "Resource": "Microsoft.Migrate/projects"
+    },
+    {
+      "APIVersion": "2019-10-01",
+      "operations": [
+        {
+          "OperationId": "Projects_AssessmentOptions",
+          "version": "2019-10-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2019-10-01/migrate.json"
+        }
+      ],
+      "Resource": "Microsoft.Migrate/assessmentProjects/assessmentOptions"
+    },
+    {
+      "APIVersion": "2019-10-01",
+      "operations": [
+        {
+          "OperationId": "Assessments_ListByProject",
+          "version": "2019-10-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2019-10-01/migrate.json"
+        }
+      ],
+      "Resource": "Microsoft.Migrate/assessmentProjects/assessments"
+    },
+    {
+      "APIVersion": "2019-10-01",
+      "operations": [
+        {
+          "OperationId": "Groups_ListByProject",
+          "version": "2019-10-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2019-10-01/migrate.json"
+        },
+        {
+          "OperationId": "Groups_Delete",
+          "version": "2019-10-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2019-10-01/migrate.json"
+        },
+        {
+          "OperationId": "Groups_Get",
+          "version": "2019-10-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2019-10-01/migrate.json"
+        },
+        {
+          "OperationId": "Groups_Create",
+          "version": "2019-10-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2019-10-01/migrate.json"
+        },
+        {
+          "OperationId": "Groups_UpdateMachines",
+          "version": "2019-10-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2019-10-01/migrate.json"
+        }
+      ],
+      "Resource": "Microsoft.Migrate/assessmentProjects/groups"
+    },
+    {
+      "APIVersion": "2019-10-01",
+      "operations": [
+        {
+          "OperationId": "Assessments_ListByGroup",
+          "version": "2019-10-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2019-10-01/migrate.json"
+        },
+        {
+          "OperationId": "Assessments_Delete",
+          "version": "2019-10-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2019-10-01/migrate.json"
+        },
+        {
+          "OperationId": "Assessments_Get",
+          "version": "2019-10-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2019-10-01/migrate.json"
+        },
+        {
+          "OperationId": "Assessments_Create",
+          "version": "2019-10-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2019-10-01/migrate.json"
+        },
+        {
+          "OperationId": "Assessments_GetReportDownloadUrl",
+          "version": "2019-10-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2019-10-01/migrate.json"
+        }
+      ],
+      "Resource": "Microsoft.Migrate/assessmentProjects/groups/assessments"
+    },
+    {
+      "APIVersion": "2019-10-01",
+      "operations": [
+        {
+          "OperationId": "AssessedMachines_ListByAssessment",
+          "version": "2019-10-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2019-10-01/migrate.json"
+        },
+        {
+          "OperationId": "AssessedMachines_Get",
+          "version": "2019-10-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2019-10-01/migrate.json"
+        }
+      ],
+      "Resource": "Microsoft.Migrate/assessmentProjects/groups/assessments/assessedMachines"
+    },
+    {
+      "APIVersion": "2019-10-01",
+      "operations": [
+        {
+          "OperationId": "HyperVCollectors_ListByProject",
+          "version": "2019-10-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2019-10-01/migrate.json"
+        },
+        {
+          "OperationId": "HyperVCollectors_Get",
+          "version": "2019-10-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2019-10-01/migrate.json"
+        }
+      ],
+      "Resource": "Microsoft.Migrate/assessmentProjects/hypervcollectors"
+    },
+    {
+      "APIVersion": "2019-10-01",
+      "operations": [
+        {
+          "OperationId": "Machines_ListByProject",
+          "version": "2019-10-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2019-10-01/migrate.json"
+        },
+        {
+          "OperationId": "Machines_Get",
+          "version": "2019-10-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2019-10-01/migrate.json"
+        }
+      ],
+      "Resource": "Microsoft.Migrate/assessmentProjects/machines"
+    },
+    {
+      "APIVersion": "2019-10-01",
+      "operations": [
+        {
+          "OperationId": "ServerCollectors_Get",
+          "version": "2019-10-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2019-10-01/migrate.json"
+        }
+      ],
+      "Resource": "Microsoft.Migrate/assessmentProjects/servercollectors"
+    },
+    {
+      "APIVersion": "2019-10-01",
+      "operations": [
+        {
+          "OperationId": "VMwareCollectors_ListByProject",
+          "version": "2019-10-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2019-10-01/migrate.json"
+        },
+        {
+          "OperationId": "VMwareCollectors_Get",
+          "version": "2019-10-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2019-10-01/migrate.json"
+        },
+        {
+          "OperationId": "VMwareCollectors_Create",
+          "version": "2019-10-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2019-10-01/migrate.json"
+        }
+      ],
+      "Resource": "Microsoft.Migrate/assessmentProjects/vmwarecollectors"
+    },
+    {
+      "APIVersion": "2018-02-02",
+      "operations": [
+        {
+          "OperationId": "Assessments_ListByProject",
+          "version": "2018-02-02",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2018-02-02/migrate.json"
+        }
+      ],
+      "Resource": "Microsoft.Migrate/projects/assessments"
+    },
+    {
+      "APIVersion": "2018-02-02",
+      "operations": [
+        {
+          "OperationId": "Groups_ListByProject",
+          "version": "2018-02-02",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2018-02-02/migrate.json"
+        },
+        {
+          "OperationId": "Groups_Delete",
+          "version": "2018-02-02",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2018-02-02/migrate.json"
+        },
+        {
+          "OperationId": "Groups_Get",
+          "version": "2018-02-02",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2018-02-02/migrate.json"
+        },
+        {
+          "OperationId": "Groups_Create",
+          "version": "2018-02-02",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2018-02-02/migrate.json"
+        }
+      ],
+      "Resource": "Microsoft.Migrate/projects/groups"
+    },
+    {
+      "APIVersion": "2018-02-02",
+      "operations": [
+        {
+          "OperationId": "Assessments_ListByGroup",
+          "version": "2018-02-02",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2018-02-02/migrate.json"
+        },
+        {
+          "OperationId": "Assessments_Delete",
+          "version": "2018-02-02",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2018-02-02/migrate.json"
+        },
+        {
+          "OperationId": "Assessments_Get",
+          "version": "2018-02-02",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2018-02-02/migrate.json"
+        },
+        {
+          "OperationId": "Assessments_Create",
+          "version": "2018-02-02",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2018-02-02/migrate.json"
+        },
+        {
+          "OperationId": "Assessments_GetReportDownloadUrl",
+          "version": "2018-02-02",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2018-02-02/migrate.json"
+        }
+      ],
+      "Resource": "Microsoft.Migrate/projects/groups/assessments"
+    },
+    {
+      "APIVersion": "2018-02-02",
+      "operations": [
+        {
+          "OperationId": "AssessedMachines_ListByAssessment",
+          "version": "2018-02-02",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2018-02-02/migrate.json"
+        }
+      ],
+      "Resource": "Microsoft.Migrate/projects/groups/assessments/assessedMachines"
+    },
+    {
+      "APIVersion": "2018-02-02",
+      "operations": [
+        {
+          "OperationId": "Machines_ListByProject",
+          "version": "2018-02-02",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2018-02-02/migrate.json"
+        }
+      ],
+      "Resource": "Microsoft.Migrate/projects/machines"
+    },
+    {
+      "APIVersion": "2020-01-01",
+      "operations": [
+        {
+          "OperationId": "HyperVSites_DeleteSite",
+          "version": "2020-01-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.OffAzure/stable/2020-01-01/migrate.json"
+        },
+        {
+          "OperationId": "HyperVSites_GetSite",
+          "version": "2020-01-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.OffAzure/stable/2020-01-01/migrate.json"
+        },
+        {
+          "OperationId": "HyperVSites_RefreshSite",
+          "version": "2020-01-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.OffAzure/stable/2020-01-01/migrate.json"
+        }
+      ],
+      "Resource": "Microsoft.OffAzure/HyperVSites"
+    },
+    {
+      "APIVersion": "2020-01-01",
+      "operations": [
+        {
+          "OperationId": "HyperVCluster_GetAllClustersInSite",
+          "version": "2020-01-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.OffAzure/stable/2020-01-01/migrate.json"
+        },
+        {
+          "OperationId": "HyperVCluster_GetCluster",
+          "version": "2020-01-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.OffAzure/stable/2020-01-01/migrate.json"
+        },
+        {
+          "OperationId": "HyperVCluster_PutCluster",
+          "version": "2020-01-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.OffAzure/stable/2020-01-01/migrate.json"
+        }
+      ],
+      "Resource": "Microsoft.OffAzure/HyperVSites/clusters"
+    },
+    {
+      "APIVersion": "2020-01-01",
+      "operations": [
+        {
+          "OperationId": "HyperVHost_GetAllHostsInSite",
+          "version": "2020-01-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.OffAzure/stable/2020-01-01/migrate.json"
+        },
+        {
+          "OperationId": "HyperVHost_GetHost",
+          "version": "2020-01-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.OffAzure/stable/2020-01-01/migrate.json"
+        },
+        {
+          "OperationId": "HyperVHost_PutHost",
+          "version": "2020-01-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.OffAzure/stable/2020-01-01/migrate.json"
+        }
+      ],
+      "Resource": "Microsoft.OffAzure/HyperVSites/hosts"
+    },
+    {
+      "APIVersion": "2020-01-01",
+      "operations": [
+        {
+          "OperationId": "HyperVMachines_GetAllMachinesInSite",
+          "version": "2020-01-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.OffAzure/stable/2020-01-01/migrate.json"
+        }
+      ],
+      "Resource": "Microsoft.OffAzure/HyperVSites/machines"
+    },
+    {
+      "APIVersion": "2020-01-01",
+      "operations": [
+        {
+          "OperationId": "HyperVOperationsStatus_GetOperationStatus",
+          "version": "2020-01-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.OffAzure/stable/2020-01-01/migrate.json"
+        }
+      ],
+      "Resource": "Microsoft.OffAzure/HyperVSites/operationsStatus"
+    },
+    {
+      "APIVersion": "2020-01-01",
+      "operations": [
+        {
+          "OperationId": "HyperVRunAsAccounts_GetAllRunAsAccountsInSite",
+          "version": "2020-01-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.OffAzure/stable/2020-01-01/migrate.json"
+        }
+      ],
+      "Resource": "Microsoft.OffAzure/HyperVSites/runAsAccounts"
+    },
+    {
+      "APIVersion": "2020-07-07",
+      "operations": [
+        {
+          "OperationId": "MasterSites_DeleteSite",
+          "version": "2020-07-07",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.OffAzure/stable/2020-07-07/migrate.json"
+        },
+        {
+          "OperationId": "MasterSites_GetSite",
+          "version": "2020-07-07",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.OffAzure/stable/2020-07-07/migrate.json"
+        },
+        {
+          "OperationId": "MasterSites_PutSite",
+          "version": "2020-07-07",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.OffAzure/stable/2020-07-07/migrate.json"
+        }
+      ],
+      "Resource": "Microsoft.OffAzure/MasterSites"
+    },
+    {
+      "APIVersion": "2020-01-01",
+      "operations": [
+        {
+          "OperationId": "Sites_DeleteSite",
+          "version": "2020-01-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.OffAzure/stable/2020-01-01/migrate.json"
+        },
+        {
+          "OperationId": "Sites_GetSite",
+          "version": "2020-01-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.OffAzure/stable/2020-01-01/migrate.json"
+        },
+        {
+          "OperationId": "Sites_PutSite",
+          "version": "2020-01-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.OffAzure/stable/2020-01-01/migrate.json"
+        },
+        {
+          "OperationId": "Sites_GetSiteHealthSummary",
+          "version": "2020-01-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.OffAzure/stable/2020-01-01/migrate.json"
+        },
+        {
+          "OperationId": "Sites_RefreshSite",
+          "version": "2020-01-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.OffAzure/stable/2020-01-01/migrate.json"
+        }
+      ],
+      "Resource": "Microsoft.OffAzure/VMwareSites"
+    },
+    {
+      "APIVersion": "2020-01-01",
+      "operations": [
+        {
+          "OperationId": "Machines_GetAllMachinesInSite",
+          "version": "2020-01-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.OffAzure/stable/2020-01-01/migrate.json"
+        },
+        {
+          "OperationId": "Machines_GetMachine",
+          "version": "2020-01-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.OffAzure/stable/2020-01-01/migrate.json"
+        },
+        {
+          "OperationId": "Machines_StartMachine",
+          "version": "2020-01-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.OffAzure/stable/2020-01-01/migrate.json"
+        }
+      ],
+      "Resource": "Microsoft.OffAzure/VMwareSites/machines"
+    },
+    {
+      "APIVersion": "2020-01-01",
+      "operations": [
+        {
+          "OperationId": "VMwareOperationsStatus_GetOperationStatus",
+          "version": "2020-01-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.OffAzure/stable/2020-01-01/migrate.json"
+        }
+      ],
+      "Resource": "Microsoft.OffAzure/VMwareSites/operationsStatus"
+    },
+    {
+      "APIVersion": "2020-01-01",
+      "operations": [
+        {
+          "OperationId": "RunAsAccounts_GetAllRunAsAccountsInSite",
+          "version": "2020-01-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.OffAzure/stable/2020-01-01/migrate.json"
+        }
+      ],
+      "Resource": "Microsoft.OffAzure/VMwareSites/runAsAccounts"
+    },
+    {
+      "APIVersion": "2020-01-01",
+      "operations": [
+        {
+          "OperationId": "VCenter_GetAllVCentersInSite",
+          "version": "2020-01-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.OffAzure/stable/2020-01-01/migrate.json"
+        },
+        {
+          "OperationId": "VCenter_GetVCenter",
+          "version": "2020-01-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.OffAzure/stable/2020-01-01/migrate.json"
+        },
+        {
+          "OperationId": "VCenter_PutVCenter",
+          "version": "2020-01-01",
+          "jsonFilePath": "/specification/migrate/resource-manager/Microsoft.OffAzure/stable/2020-01-01/migrate.json"
+        }
+      ],
+      "Resource": "Microsoft.OffAzure/VMwareSites/vCenters"
+    }
+  ],
+  "resourcelist": "Microsoft.Migrate/assessmentProjects,Microsoft.Migrate/projects,Microsoft.Migrate/assessmentProjects/assessmentOptions,Microsoft.Migrate/assessmentProjects/assessments,Microsoft.Migrate/assessmentProjects/groups,Microsoft.Migrate/assessmentProjects/groups/assessments,Microsoft.Migrate/assessmentProjects/groups/assessments/assessedMachines,Microsoft.Migrate/assessmentProjects/hypervcollectors,Microsoft.Migrate/assessmentProjects/machines,Microsoft.Migrate/assessmentProjects/servercollectors,Microsoft.Migrate/assessmentProjects/vmwarecollectors,Microsoft.Migrate/projects/assessments,Microsoft.Migrate/projects/groups,Microsoft.Migrate/projects/groups/assessments,Microsoft.Migrate/projects/groups/assessments/assessedMachines,Microsoft.Migrate/projects/machines,Microsoft.OffAzure/HyperVSites,Microsoft.OffAzure/HyperVSites/clusters,Microsoft.OffAzure/HyperVSites/hosts,Microsoft.OffAzure/HyperVSites/machines,Microsoft.OffAzure/HyperVSites/operationsStatus,Microsoft.OffAzure/HyperVSites/runAsAccounts,Microsoft.OffAzure/MasterSites,Microsoft.OffAzure/VMwareSites,Microsoft.OffAzure/VMwareSites/machines,Microsoft.OffAzure/VMwareSites/operationsStatus,Microsoft.OffAzure/VMwareSites/runAsAccounts,Microsoft.OffAzure/VMwareSites/vCenters",
+  "jsonFilelist": [
+    "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2019-10-01/migrate.json",
+    "/specification/migrate/resource-manager/Microsoft.Migrate/stable/2018-02-02/migrate.json",
+    "/specification/migrate/resource-manager/Microsoft.OffAzure/stable/2020-01-01/migrate.json",
+    "/specification/migrate/resource-manager/Microsoft.OffAzure/stable/2020-07-07/migrate.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "migrate",
+  "readmeFile": "/specification/migrate/resource-manager/readme.md",
+  "target": "clicore"
+}
