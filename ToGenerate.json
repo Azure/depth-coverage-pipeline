@@ -1,0 +1,123 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2018-09-01-preview",
+      "operations": [
+        {
+          "OperationId": "MigrateProjects_DeleteMigrateProject",
+          "version": "2018-09-01-preview",
+          "jsonFilePath": "/specification/migrateprojects/resource-manager/Microsoft.Migrate/preview/2018-09-01-preview/migrate.json"
+        },
+        {
+          "OperationId": "MigrateProjects_GetMigrateProject",
+          "version": "2018-09-01-preview",
+          "jsonFilePath": "/specification/migrateprojects/resource-manager/Microsoft.Migrate/preview/2018-09-01-preview/migrate.json"
+        },
+        {
+          "OperationId": "MigrateProjects_PutMigrateProject",
+          "version": "2018-09-01-preview",
+          "jsonFilePath": "/specification/migrateprojects/resource-manager/Microsoft.Migrate/preview/2018-09-01-preview/migrate.json"
+        },
+        {
+          "OperationId": "MigrateProjects_RefreshMigrateProjectSummary",
+          "version": "2018-09-01-preview",
+          "jsonFilePath": "/specification/migrateprojects/resource-manager/Microsoft.Migrate/preview/2018-09-01-preview/migrate.json"
+        }
+      ],
+      "Resource": "Microsoft.Migrate/migrateProjects"
+    },
+    {
+      "APIVersion": "2018-09-01-preview",
+      "operations": [
+        {
+          "OperationId": "DatabaseInstances_EnumerateDatabaseInstances",
+          "version": "2018-09-01-preview",
+          "jsonFilePath": "/specification/migrateprojects/resource-manager/Microsoft.Migrate/preview/2018-09-01-preview/migrate.json"
+        }
+      ],
+      "Resource": "Microsoft.Migrate/migrateProjects/databaseInstances"
+    },
+    {
+      "APIVersion": "2018-09-01-preview",
+      "operations": [
+        {
+          "OperationId": "Databases_EnumerateDatabases",
+          "version": "2018-09-01-preview",
+          "jsonFilePath": "/specification/migrateprojects/resource-manager/Microsoft.Migrate/preview/2018-09-01-preview/migrate.json"
+        },
+        {
+          "OperationId": "Databases_GetDatabase",
+          "version": "2018-09-01-preview",
+          "jsonFilePath": "/specification/migrateprojects/resource-manager/Microsoft.Migrate/preview/2018-09-01-preview/migrate.json"
+        }
+      ],
+      "Resource": "Microsoft.Migrate/migrateProjects/databases"
+    },
+    {
+      "APIVersion": "2018-09-01-preview",
+      "operations": [
+        {
+          "OperationId": "Machines_EnumerateMachines",
+          "version": "2018-09-01-preview",
+          "jsonFilePath": "/specification/migrateprojects/resource-manager/Microsoft.Migrate/preview/2018-09-01-preview/migrate.json"
+        },
+        {
+          "OperationId": "Machines_GetMachine",
+          "version": "2018-09-01-preview",
+          "jsonFilePath": "/specification/migrateprojects/resource-manager/Microsoft.Migrate/preview/2018-09-01-preview/migrate.json"
+        }
+      ],
+      "Resource": "Microsoft.Migrate/migrateProjects/machines"
+    },
+    {
+      "APIVersion": "2018-09-01-preview",
+      "operations": [
+        {
+          "OperationId": "Events_EnumerateEvents",
+          "version": "2018-09-01-preview",
+          "jsonFilePath": "/specification/migrateprojects/resource-manager/Microsoft.Migrate/preview/2018-09-01-preview/migrate.json"
+        }
+      ],
+      "Resource": "Microsoft.Migrate/migrateProjects/migrateEvents"
+    },
+    {
+      "APIVersion": "2018-09-01-preview",
+      "operations": [
+        {
+          "OperationId": "Solutions_EnumerateSolutions",
+          "version": "2018-09-01-preview",
+          "jsonFilePath": "/specification/migrateprojects/resource-manager/Microsoft.Migrate/preview/2018-09-01-preview/migrate.json"
+        },
+        {
+          "OperationId": "Solutions_GetSolution",
+          "version": "2018-09-01-preview",
+          "jsonFilePath": "/specification/migrateprojects/resource-manager/Microsoft.Migrate/preview/2018-09-01-preview/migrate.json"
+        },
+        {
+          "OperationId": "Solutions_PutSolution",
+          "version": "2018-09-01-preview",
+          "jsonFilePath": "/specification/migrateprojects/resource-manager/Microsoft.Migrate/preview/2018-09-01-preview/migrate.json"
+        },
+        {
+          "OperationId": "Solutions_CleanupSolutionData",
+          "version": "2018-09-01-preview",
+          "jsonFilePath": "/specification/migrateprojects/resource-manager/Microsoft.Migrate/preview/2018-09-01-preview/migrate.json"
+        },
+        {
+          "OperationId": "Solutions_GetConfig",
+          "version": "2018-09-01-preview",
+          "jsonFilePath": "/specification/migrateprojects/resource-manager/Microsoft.Migrate/preview/2018-09-01-preview/migrate.json"
+        }
+      ],
+      "Resource": "Microsoft.Migrate/migrateProjects/solutions"
+    }
+  ],
+  "resourcelist": "Microsoft.Migrate/migrateProjects,Microsoft.Migrate/migrateProjects/databaseInstances,Microsoft.Migrate/migrateProjects/databases,Microsoft.Migrate/migrateProjects/machines,Microsoft.Migrate/migrateProjects/migrateEvents,Microsoft.Migrate/migrateProjects/solutions",
+  "jsonFilelist": [
+    "/specification/migrateprojects/resource-manager/Microsoft.Migrate/preview/2018-09-01-preview/migrate.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "migrateprojects",
+  "readmeFile": "/specification/migrateprojects/resource-manager/readme.md",
+  "target": "clicore"
+}
