@@ -1,0 +1,109 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2019-11-01-preview",
+      "operations": [
+        {
+          "OperationId": "ArtifactSources_List",
+          "version": "2019-11-01-preview",
+          "jsonFilePath": "/specification/deploymentmanager/resource-manager/Microsoft.DeploymentManager/preview/2019-11-01-preview/deploymentmanager.json"
+        },
+        {
+          "OperationId": "ArtifactSources_Delete",
+          "version": "2019-11-01-preview",
+          "jsonFilePath": "/specification/deploymentmanager/resource-manager/Microsoft.DeploymentManager/preview/2019-11-01-preview/deploymentmanager.json"
+        }
+      ],
+      "Resource": "Microsoft.DeploymentManager/artifactSources"
+    },
+    {
+      "APIVersion": "2018-09-01-preview",
+      "operations": [
+        {
+          "OperationId": "Rollouts_Delete",
+          "version": "2018-09-01-preview",
+          "jsonFilePath": "/specification/deploymentmanager/resource-manager/Microsoft.DeploymentManager/preview/2018-09-01-preview/deploymentmanager.json"
+        },
+        {
+          "OperationId": "Rollouts_Get",
+          "version": "2018-09-01-preview",
+          "jsonFilePath": "/specification/deploymentmanager/resource-manager/Microsoft.DeploymentManager/preview/2018-09-01-preview/deploymentmanager.json"
+        },
+        {
+          "OperationId": "Rollouts_CreateOrUpdate",
+          "version": "2018-09-01-preview",
+          "jsonFilePath": "/specification/deploymentmanager/resource-manager/Microsoft.DeploymentManager/preview/2018-09-01-preview/deploymentmanager.json"
+        }
+      ],
+      "Resource": "Microsoft.DeploymentManager/rollouts"
+    },
+    {
+      "APIVersion": "2019-11-01-preview",
+      "operations": [
+        {
+          "OperationId": "ServiceTopologies_List",
+          "version": "2019-11-01-preview",
+          "jsonFilePath": "/specification/deploymentmanager/resource-manager/Microsoft.DeploymentManager/preview/2019-11-01-preview/deploymentmanager.json"
+        },
+        {
+          "OperationId": "ServiceTopologies_Delete",
+          "version": "2019-11-01-preview",
+          "jsonFilePath": "/specification/deploymentmanager/resource-manager/Microsoft.DeploymentManager/preview/2019-11-01-preview/deploymentmanager.json"
+        }
+      ],
+      "Resource": "Microsoft.DeploymentManager/serviceTopologies"
+    },
+    {
+      "APIVersion": "2019-11-01-preview",
+      "operations": [
+        {
+          "OperationId": "Services_Delete",
+          "version": "2019-11-01-preview",
+          "jsonFilePath": "/specification/deploymentmanager/resource-manager/Microsoft.DeploymentManager/preview/2019-11-01-preview/deploymentmanager.json"
+        },
+        {
+          "OperationId": "Services_Get",
+          "version": "2019-11-01-preview",
+          "jsonFilePath": "/specification/deploymentmanager/resource-manager/Microsoft.DeploymentManager/preview/2019-11-01-preview/deploymentmanager.json"
+        }
+      ],
+      "Resource": "Microsoft.DeploymentManager/serviceTopologies/services"
+    },
+    {
+      "APIVersion": "2019-11-01-preview",
+      "operations": [
+        {
+          "OperationId": "ServiceUnits_List",
+          "version": "2019-11-01-preview",
+          "jsonFilePath": "/specification/deploymentmanager/resource-manager/Microsoft.DeploymentManager/preview/2019-11-01-preview/deploymentmanager.json"
+        },
+        {
+          "OperationId": "ServiceUnits_Delete",
+          "version": "2019-11-01-preview",
+          "jsonFilePath": "/specification/deploymentmanager/resource-manager/Microsoft.DeploymentManager/preview/2019-11-01-preview/deploymentmanager.json"
+        }
+      ],
+      "Resource": "Microsoft.DeploymentManager/serviceTopologies/services/serviceUnits"
+    },
+    {
+      "APIVersion": "2019-11-01-preview",
+      "operations": [
+        {
+          "OperationId": "Steps_Delete",
+          "version": "2019-11-01-preview",
+          "jsonFilePath": "/specification/deploymentmanager/resource-manager/Microsoft.DeploymentManager/preview/2019-11-01-preview/deploymentmanager.json"
+        }
+      ],
+      "Resource": "Microsoft.DeploymentManager/steps"
+    }
+  ],
+  "resourcelist": "Microsoft.DeploymentManager/artifactSources,Microsoft.DeploymentManager/rollouts,Microsoft.DeploymentManager/serviceTopologies,Microsoft.DeploymentManager/serviceTopologies/services,Microsoft.DeploymentManager/serviceTopologies/services/serviceUnits,Microsoft.DeploymentManager/steps",
+  "jsonFilelist": [
+    "/specification/deploymentmanager/resource-manager/Microsoft.DeploymentManager/preview/2019-11-01-preview/deploymentmanager.json",
+    "/specification/deploymentmanager/resource-manager/Microsoft.DeploymentManager/preview/2018-09-01-preview/deploymentmanager.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "deploymentmanager",
+  "readmeFile": "/specification/deploymentmanager/resource-manager/readme.md",
+  "target": "clicore"
+}
