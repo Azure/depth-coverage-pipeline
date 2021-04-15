@@ -1,0 +1,23 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-03-01",
+      "operations": [],
+      "Resource": "Microsoft.StorageSync/storageSyncServices/privateEndpointConnections"
+    },
+    {
+      "APIVersion": "2017-06-05-preview",
+      "operations": [],
+      "Resource": "Microsoft.StorageSync/storageSyncServices/syncGroups/serverEndpoints"
+    }
+  ],
+  "resourcelist": "Microsoft.StorageSync/storageSyncServices/privateEndpointConnections,Microsoft.StorageSync/storageSyncServices/syncGroups/serverEndpoints",
+  "jsonFilelist": [
+    "/specification/storagesync/resource-manager/Microsoft.StorageSync/stable/2020-03-01/storagesync.json",
+    "/specification/storagesync/resource-manager/Microsoft.StorageSync/preview/2017-06-05-preview/storagesync.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "storagesync",
+  "readmeFile": "/specification/storagesync/resource-manager/readme.md",
+  "target": "terraform"
+}
