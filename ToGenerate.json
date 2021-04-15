@@ -1,0 +1,86 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2019-01-01-preview",
+      "operations": [
+        {
+          "OperationId": "B2CTenants_ListBySubscription",
+          "version": "2019-01-01-preview",
+          "jsonFilePath": "/specification/cpim/resource-manager/Microsoft.AzureActiveDirectory/preview/2019-01-01-preview/cpimTenant.json"
+        },
+        {
+          "OperationId": "B2CTenants_ListByResourceGroup",
+          "version": "2019-01-01-preview",
+          "jsonFilePath": "/specification/cpim/resource-manager/Microsoft.AzureActiveDirectory/preview/2019-01-01-preview/cpimTenant.json"
+        },
+        {
+          "OperationId": "B2CTenants_Delete",
+          "version": "2019-01-01-preview",
+          "jsonFilePath": "/specification/cpim/resource-manager/Microsoft.AzureActiveDirectory/preview/2019-01-01-preview/cpimTenant.json"
+        },
+        {
+          "OperationId": "B2CTenants_Get",
+          "version": "2019-01-01-preview",
+          "jsonFilePath": "/specification/cpim/resource-manager/Microsoft.AzureActiveDirectory/preview/2019-01-01-preview/cpimTenant.json"
+        },
+        {
+          "OperationId": "B2CTenants_Create",
+          "version": "2019-01-01-preview",
+          "jsonFilePath": "/specification/cpim/resource-manager/Microsoft.AzureActiveDirectory/preview/2019-01-01-preview/cpimTenant.json"
+        }
+      ],
+      "Resource": "Microsoft.AzureActiveDirectory/b2cDirectories"
+    },
+    {
+      "APIVersion": "2019-01-01-preview",
+      "operations": [
+        {
+          "OperationId": "B2CTenants_CheckNameAvailability",
+          "version": "2019-01-01-preview",
+          "jsonFilePath": "/specification/cpim/resource-manager/Microsoft.AzureActiveDirectory/preview/2019-01-01-preview/cpimTenant.json"
+        }
+      ],
+      "Resource": "Microsoft.AzureActiveDirectory"
+    },
+    {
+      "APIVersion": "2020-05-01-preview",
+      "operations": [
+        {
+          "OperationId": "GuestUsages_ListBySubscription",
+          "version": "2020-05-01-preview",
+          "jsonFilePath": "/specification/cpim/resource-manager/Microsoft.AzureActiveDirectory/preview/2020-05-01-preview/cpim.json"
+        },
+        {
+          "OperationId": "GuestUsages_ListByResourceGroup",
+          "version": "2020-05-01-preview",
+          "jsonFilePath": "/specification/cpim/resource-manager/Microsoft.AzureActiveDirectory/preview/2020-05-01-preview/cpim.json"
+        },
+        {
+          "OperationId": "GuestUsages_Delete",
+          "version": "2020-05-01-preview",
+          "jsonFilePath": "/specification/cpim/resource-manager/Microsoft.AzureActiveDirectory/preview/2020-05-01-preview/cpim.json"
+        },
+        {
+          "OperationId": "GuestUsages_Get",
+          "version": "2020-05-01-preview",
+          "jsonFilePath": "/specification/cpim/resource-manager/Microsoft.AzureActiveDirectory/preview/2020-05-01-preview/cpim.json"
+        },
+        {
+          "OperationId": "GuestUsages_Create",
+          "version": "2020-05-01-preview",
+          "jsonFilePath": "/specification/cpim/resource-manager/Microsoft.AzureActiveDirectory/preview/2020-05-01-preview/cpim.json"
+        }
+      ],
+      "Resource": "Microsoft.AzureActiveDirectory/guestUsages"
+    }
+  ],
+  "resourcelist": "Microsoft.AzureActiveDirectory/b2cDirectories,Microsoft.AzureActiveDirectory,Microsoft.AzureActiveDirectory/guestUsages",
+  "jsonFilelist": [
+    "/specification/cpim/resource-manager/Microsoft.AzureActiveDirectory/preview/2019-01-01-preview/cpimTenant.json",
+    "/specification/cpim/resource-manager/Microsoft.AzureActiveDirectory/preview/2020-05-01-preview/cpim.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "cpim",
+  "readmeFile": "/specification/cpim/resource-manager/readme.md",
+  "target": "clicore"
+}
