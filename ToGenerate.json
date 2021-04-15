@@ -1,0 +1,219 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2018-06-01-privatepreview",
+      "operations": [
+        {
+          "OperationId": "CreateRecommendedActionSession",
+          "version": "2018-06-01-privatepreview",
+          "jsonFilePath": "/specification/mariadb/resource-manager/Microsoft.DBforMariaDB/preview/2018-06-01-privatepreview/mariadb.json"
+        }
+      ],
+      "Resource": "Microsoft.DBForMariaDB/servers/advisors"
+    },
+    {
+      "APIVersion": "2018-06-01",
+      "operations": [
+        {
+          "OperationId": "CreateRecommendedActionSession",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/mariadb/resource-manager/Microsoft.DBforMariaDB/stable/2018-06-01/PerformanceRecommendations.json"
+        }
+      ],
+      "Resource": "Microsoft.DBforMariaDB/servers/advisors"
+    },
+    {
+      "APIVersion": "2018-06-01-privatepreview",
+      "operations": [
+        {
+          "OperationId": "RecommendedActions_ListByServer",
+          "version": "2018-06-01-privatepreview",
+          "jsonFilePath": "/specification/mariadb/resource-manager/Microsoft.DBforMariaDB/preview/2018-06-01-privatepreview/mariadb.json"
+        }
+      ],
+      "Resource": "Microsoft.DBForMariaDB/servers/advisors/recommendedActions"
+    },
+    {
+      "APIVersion": "2018-06-01",
+      "operations": [
+        {
+          "OperationId": "RecommendedActions_ListByServer",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/mariadb/resource-manager/Microsoft.DBforMariaDB/stable/2018-06-01/PerformanceRecommendations.json"
+        }
+      ],
+      "Resource": "Microsoft.DBforMariaDB/servers/advisors/recommendedActions"
+    },
+    {
+      "APIVersion": "2018-06-01-preview",
+      "operations": [
+        {
+          "OperationId": "ServerBasedPerformanceTier_List",
+          "version": "2018-06-01-preview",
+          "jsonFilePath": "/specification/mariadb/resource-manager/Microsoft.DBforMariaDB/preview/2018-06-01-preview/mariadb.json"
+        }
+      ],
+      "Resource": "Microsoft.DBForMariaDB/servers/performanceTiers"
+    },
+    {
+      "APIVersion": "2018-06-01",
+      "operations": [
+        {
+          "OperationId": "PrivateEndpointConnections_ListByServer",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/mariadb/resource-manager/Microsoft.DBforMariaDB/stable/2018-06-01/PrivateEndpointConnections.json"
+        },
+        {
+          "OperationId": "PrivateEndpointConnections_Delete",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/mariadb/resource-manager/Microsoft.DBforMariaDB/stable/2018-06-01/PrivateEndpointConnections.json"
+        },
+        {
+          "OperationId": "PrivateEndpointConnections_CreateOrUpdate",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/mariadb/resource-manager/Microsoft.DBforMariaDB/stable/2018-06-01/PrivateEndpointConnections.json"
+        }
+      ],
+      "Resource": "Microsoft.DBforMariaDB/servers/privateEndpointConnections"
+    },
+    {
+      "APIVersion": "2018-06-01-privatepreview",
+      "operations": [
+        {
+          "OperationId": "QueryTexts_ListByServer",
+          "version": "2018-06-01-privatepreview",
+          "jsonFilePath": "/specification/mariadb/resource-manager/Microsoft.DBforMariaDB/preview/2018-06-01-privatepreview/mariadb.json"
+        }
+      ],
+      "Resource": "Microsoft.DBForMariaDB/servers/queryTexts"
+    },
+    {
+      "APIVersion": "2018-06-01",
+      "operations": [
+        {
+          "OperationId": "QueryTexts_ListByServer",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/mariadb/resource-manager/Microsoft.DBforMariaDB/stable/2018-06-01/QueryPerformanceInsights.json"
+        }
+      ],
+      "Resource": "Microsoft.DBforMariaDB/servers/queryTexts"
+    },
+    {
+      "APIVersion": "2018-06-01-preview",
+      "operations": [
+        {
+          "OperationId": "RecoverableServers_Get",
+          "version": "2018-06-01-preview",
+          "jsonFilePath": "/specification/mariadb/resource-manager/Microsoft.DBforMariaDB/preview/2018-06-01-preview/mariadb.json"
+        }
+      ],
+      "Resource": "Microsoft.DBForMariaDB/servers/recoverableServers"
+    },
+    {
+      "APIVersion": "2018-06-01",
+      "operations": [
+        {
+          "OperationId": "ServerSecurityAlertPolicies_ListByServer",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/mariadb/resource-manager/Microsoft.DBforMariaDB/stable/2018-06-01/ServerSecurityAlertPolicies.json"
+        },
+        {
+          "OperationId": "ServerSecurityAlertPolicies_Get",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/mariadb/resource-manager/Microsoft.DBforMariaDB/stable/2018-06-01/ServerSecurityAlertPolicies.json"
+        },
+        {
+          "OperationId": "ServerSecurityAlertPolicies_CreateOrUpdate",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/mariadb/resource-manager/Microsoft.DBforMariaDB/stable/2018-06-01/ServerSecurityAlertPolicies.json"
+        }
+      ],
+      "Resource": "Microsoft.DBforMariaDB/servers/securityAlertPolicies"
+    },
+    {
+      "APIVersion": "2018-06-01-privatepreview",
+      "operations": [
+        {
+          "OperationId": "ServerSecurityAlertPolicies_Get",
+          "version": "2018-06-01-privatepreview",
+          "jsonFilePath": "/specification/mariadb/resource-manager/Microsoft.DBforMariaDB/preview/2018-06-01-privatepreview/mariadb.json"
+        },
+        {
+          "OperationId": "ServerSecurityAlertPolicies_CreateOrUpdate",
+          "version": "2018-06-01-privatepreview",
+          "jsonFilePath": "/specification/mariadb/resource-manager/Microsoft.DBforMariaDB/preview/2018-06-01-privatepreview/mariadb.json"
+        }
+      ],
+      "Resource": "Microsoft.DBForMariaDB/servers/securityAlertPolicies"
+    },
+    {
+      "APIVersion": "2018-06-01-privatepreview",
+      "operations": [
+        {
+          "OperationId": "TopQueryStatistics_ListByServer",
+          "version": "2018-06-01-privatepreview",
+          "jsonFilePath": "/specification/mariadb/resource-manager/Microsoft.DBforMariaDB/preview/2018-06-01-privatepreview/mariadb.json"
+        }
+      ],
+      "Resource": "Microsoft.DBForMariaDB/servers/topQueryStatistics"
+    },
+    {
+      "APIVersion": "2018-06-01",
+      "operations": [
+        {
+          "OperationId": "TopQueryStatistics_ListByServer",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/mariadb/resource-manager/Microsoft.DBforMariaDB/stable/2018-06-01/QueryPerformanceInsights.json"
+        }
+      ],
+      "Resource": "Microsoft.DBforMariaDB/servers/topQueryStatistics"
+    },
+    {
+      "APIVersion": "2018-06-01-preview",
+      "operations": [
+        {
+          "OperationId": "ServerParameters_ListUpdateConfigurations",
+          "version": "2018-06-01-preview",
+          "jsonFilePath": "/specification/mariadb/resource-manager/Microsoft.DBforMariaDB/preview/2018-06-01-preview/mariadb.json"
+        }
+      ],
+      "Resource": "Microsoft.DBForMariaDB/servers"
+    },
+    {
+      "APIVersion": "2018-06-01-privatepreview",
+      "operations": [
+        {
+          "OperationId": "WaitStatistics_ListByServer",
+          "version": "2018-06-01-privatepreview",
+          "jsonFilePath": "/specification/mariadb/resource-manager/Microsoft.DBforMariaDB/preview/2018-06-01-privatepreview/mariadb.json"
+        }
+      ],
+      "Resource": "Microsoft.DBForMariaDB/servers/waitStatistics"
+    },
+    {
+      "APIVersion": "2018-06-01",
+      "operations": [
+        {
+          "OperationId": "WaitStatistics_ListByServer",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/mariadb/resource-manager/Microsoft.DBforMariaDB/stable/2018-06-01/QueryPerformanceInsights.json"
+        }
+      ],
+      "Resource": "Microsoft.DBforMariaDB/servers/waitStatistics"
+    }
+  ],
+  "resourcelist": "Microsoft.DBForMariaDB/servers/advisors,Microsoft.DBforMariaDB/servers/advisors,Microsoft.DBForMariaDB/servers/advisors/recommendedActions,Microsoft.DBforMariaDB/servers/advisors/recommendedActions,Microsoft.DBForMariaDB/servers/performanceTiers,Microsoft.DBforMariaDB/servers/privateEndpointConnections,Microsoft.DBForMariaDB/servers/queryTexts,Microsoft.DBforMariaDB/servers/queryTexts,Microsoft.DBForMariaDB/servers/recoverableServers,Microsoft.DBforMariaDB/servers/securityAlertPolicies,Microsoft.DBForMariaDB/servers/securityAlertPolicies,Microsoft.DBForMariaDB/servers/topQueryStatistics,Microsoft.DBforMariaDB/servers/topQueryStatistics,Microsoft.DBForMariaDB/servers,Microsoft.DBForMariaDB/servers/waitStatistics,Microsoft.DBforMariaDB/servers/waitStatistics",
+  "jsonFilelist": [
+    "/specification/mariadb/resource-manager/Microsoft.DBforMariaDB/preview/2018-06-01-privatepreview/mariadb.json",
+    "/specification/mariadb/resource-manager/Microsoft.DBforMariaDB/stable/2018-06-01/PerformanceRecommendations.json",
+    "/specification/mariadb/resource-manager/Microsoft.DBforMariaDB/preview/2018-06-01-preview/mariadb.json",
+    "/specification/mariadb/resource-manager/Microsoft.DBforMariaDB/stable/2018-06-01/PrivateEndpointConnections.json",
+    "/specification/mariadb/resource-manager/Microsoft.DBforMariaDB/preview/2018-06-01-privatepreview/PrivateEndpointConnections.json",
+    "/specification/mariadb/resource-manager/Microsoft.DBforMariaDB/stable/2018-06-01/QueryPerformanceInsights.json",
+    "/specification/mariadb/resource-manager/Microsoft.DBforMariaDB/stable/2018-06-01/ServerSecurityAlertPolicies.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "mariadb",
+  "readmeFile": "/specification/mariadb/resource-manager/readme.md",
+  "target": "clicore"
+}
