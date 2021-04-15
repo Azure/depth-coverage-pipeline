@@ -1,0 +1,38 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2016-10-01",
+      "operations": [
+        {
+          "OperationId": "Vaults_CheckNameAvailability",
+          "version": "2016-10-01",
+          "jsonFilePath": "/specification/keyvault/resource-manager/Microsoft.KeyVault/stable/2016-10-01/keyvault.json"
+        }
+      ],
+      "Resource": "Microsoft.KeyVault"
+    },
+    {
+      "APIVersion": "2019-09-01",
+      "operations": [
+        {
+          "OperationId": "Keys_GetVersion",
+          "version": "2019-09-01",
+          "jsonFilePath": "/specification/keyvault/resource-manager/Microsoft.KeyVault/stable/2019-09-01/keys.json"
+        }
+      ],
+      "Resource": "Microsoft.KeyVault/vaults/keys/versions"
+    }
+  ],
+  "resourcelist": "Microsoft.KeyVault,Microsoft.KeyVault/vaults/keys/versions",
+  "jsonFilelist": [
+    "/specification/keyvault/resource-manager/Microsoft.KeyVault/stable/2016-10-01/keyvault.json",
+    "/specification/keyvault/resource-manager/Microsoft.KeyVault/stable/2018-02-14/keyvault.json",
+    "/specification/keyvault/resource-manager/Microsoft.KeyVault/preview/2018-02-14-preview/keyvault.json",
+    "/specification/keyvault/resource-manager/Microsoft.KeyVault/stable/2019-09-01/keyvault.json",
+    "/specification/keyvault/resource-manager/Microsoft.KeyVault/stable/2019-09-01/keys.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "keyvault",
+  "readmeFile": "/specification/keyvault/resource-manager/readme.md",
+  "target": "clicore"
+}
