@@ -1,0 +1,57 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2019-05-01-preview",
+      "operations": [
+        {
+          "OperationId": "Sku_List",
+          "version": "2019-05-01-preview",
+          "jsonFilePath": "/specification/appplatform/resource-manager/Microsoft.AppPlatform/preview/2019-05-01-preview/appplatform.json"
+        },
+        {
+          "OperationId": "Skus_List",
+          "version": "2020-07-01",
+          "jsonFilePath": "/specification/appplatform/resource-manager/Microsoft.AppPlatform/stable/2020-07-01/appplatform.json"
+        }
+      ],
+      "Resource": "Microsoft.AppPlatform/skus"
+    },
+    {
+      "APIVersion": "2020-07-01",
+      "operations": [
+        {
+          "OperationId": "Bindings_Delete",
+          "version": "2020-07-01",
+          "jsonFilePath": "/specification/appplatform/resource-manager/Microsoft.AppPlatform/stable/2020-07-01/appplatform.json"
+        },
+        {
+          "OperationId": "Bindings_Get",
+          "version": "2019-05-01-preview",
+          "jsonFilePath": "/specification/appplatform/resource-manager/Microsoft.AppPlatform/preview/2019-05-01-preview/appplatform.json"
+        }
+      ],
+      "Resource": "Microsoft.AppPlatform/Spring/apps/bindings"
+    },
+    {
+      "APIVersion": "2020-07-01",
+      "operations": [
+        {
+          "OperationId": "Services_RegenerateTestKey",
+          "version": "2020-07-01",
+          "jsonFilePath": "/specification/appplatform/resource-manager/Microsoft.AppPlatform/stable/2020-07-01/appplatform.json"
+        }
+      ],
+      "Resource": "Microsoft.AppPlatform/Spring"
+    }
+  ],
+  "resourcelist": "Microsoft.AppPlatform/skus,Microsoft.AppPlatform/Spring/apps/bindings,Microsoft.AppPlatform/Spring",
+  "jsonFilelist": [
+    "/specification/appplatform/resource-manager/Microsoft.AppPlatform/preview/2019-05-01-preview/appplatform.json",
+    "/specification/appplatform/resource-manager/Microsoft.AppPlatform/stable/2020-07-01/appplatform.json",
+    "/specification/appplatform/resource-manager/Microsoft.AppPlatform/preview/2020-11-01-preview/appplatform.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "appplatform",
+  "readmeFile": "/specification/appplatform/resource-manager/readme.md",
+  "target": "clicore"
+}
