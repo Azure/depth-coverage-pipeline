@@ -208,4 +208,4 @@ WARNING (PreCheck/EmptyParentSchemaWarning): Schema 'NamedPartitionSchemeDescrip
 WARNING (PreCheck/EmptyParentSchemaWarning): Schema 'UniformInt64RangePartitionSchemeDescription' has an allOf list with an empty object schema as a parent, removing it.
 
 WARNING (PreCheck/CheckDuplicateSchemas): Checking for duplicate schemas, this could take a (long) while.  Run with --verbose for more detail.
-[58.14 s] Generation Complete
+[44.18 s] Generation Complete
