@@ -1,0 +1,122 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-03-01",
+      "operations": [
+        {
+          "OperationId": "PrivateEndpointConnections_ListByStorageSyncService",
+          "version": "2020-03-01",
+          "jsonFilePath": "/specification/storagesync/resource-manager/Microsoft.StorageSync/stable/2020-03-01/storagesync.json"
+        },
+        {
+          "OperationId": "PrivateEndpointConnections_Delete",
+          "version": "2020-03-01",
+          "jsonFilePath": "/specification/storagesync/resource-manager/Microsoft.StorageSync/stable/2020-03-01/storagesync.json"
+        },
+        {
+          "OperationId": "PrivateEndpointConnections_Get",
+          "version": "2020-03-01",
+          "jsonFilePath": "/specification/storagesync/resource-manager/Microsoft.StorageSync/stable/2020-03-01/storagesync.json"
+        },
+        {
+          "OperationId": "PrivateEndpointConnections_Create",
+          "version": "2020-03-01",
+          "jsonFilePath": "/specification/storagesync/resource-manager/Microsoft.StorageSync/stable/2020-03-01/storagesync.json"
+        }
+      ],
+      "Resource": "Microsoft.StorageSync/storageSyncServices/privateEndpointConnections"
+    },
+    {
+      "APIVersion": "2020-03-01",
+      "operations": [
+        {
+          "OperationId": "PrivateLinkResources_ListByStorageSyncService",
+          "version": "2020-03-01",
+          "jsonFilePath": "/specification/storagesync/resource-manager/Microsoft.StorageSync/stable/2020-03-01/storagesync.json"
+        }
+      ],
+      "Resource": "Microsoft.StorageSync/storageSyncServices/privateLinkResources"
+    },
+    {
+      "APIVersion": "2018-10-01",
+      "operations": [
+        {
+          "OperationId": "SyncGroups_Delete",
+          "version": "2018-10-01",
+          "jsonFilePath": "/specification/storagesync/resource-manager/Microsoft.StorageSync/stable/2018-10-01/storagesync.json"
+        }
+      ],
+      "Resource": "Microsoft.StorageSync/storageSyncServices/syncGroups"
+    },
+    {
+      "APIVersion": "2017-06-05-preview",
+      "operations": [
+        {
+          "OperationId": "CloudEndpoints_PostBackup",
+          "version": "2017-06-05-preview",
+          "jsonFilePath": "/specification/storagesync/resource-manager/Microsoft.StorageSync/preview/2017-06-05-preview/storagesync.json"
+        },
+        {
+          "OperationId": "CloudEndpoints_PostRestore",
+          "version": "2017-06-05-preview",
+          "jsonFilePath": "/specification/storagesync/resource-manager/Microsoft.StorageSync/preview/2017-06-05-preview/storagesync.json"
+        },
+        {
+          "OperationId": "CloudEndpoints_PreBackup",
+          "version": "2017-06-05-preview",
+          "jsonFilePath": "/specification/storagesync/resource-manager/Microsoft.StorageSync/preview/2017-06-05-preview/storagesync.json"
+        },
+        {
+          "OperationId": "CloudEndpoints_PreRestore",
+          "version": "2017-06-05-preview",
+          "jsonFilePath": "/specification/storagesync/resource-manager/Microsoft.StorageSync/preview/2017-06-05-preview/storagesync.json"
+        },
+        {
+          "OperationId": "CloudEndpoints_RestoreHeatbeat",
+          "version": "2017-06-05-preview",
+          "jsonFilePath": "/specification/storagesync/resource-manager/Microsoft.StorageSync/preview/2017-06-05-preview/storagesync.json"
+        },
+        {
+          "OperationId": "CloudEndpoints_TriggerChangeDetection",
+          "version": "2019-03-01",
+          "jsonFilePath": "/specification/storagesync/resource-manager/Microsoft.StorageSync/stable/2019-03-01/storagesync.json"
+        }
+      ],
+      "Resource": "Microsoft.StorageSync/storageSyncServices/syncGroups/cloudEndpoints"
+    },
+    {
+      "APIVersion": "2019-03-01",
+      "operations": [
+        {
+          "OperationId": "ServerEndpoints_recallAction",
+          "version": "2019-03-01",
+          "jsonFilePath": "/specification/storagesync/resource-manager/Microsoft.StorageSync/stable/2019-03-01/storagesync.json"
+        }
+      ],
+      "Resource": "Microsoft.StorageSync/storageSyncServices/syncGroups/serverEndpoints"
+    },
+    {
+      "APIVersion": "2020-03-01",
+      "operations": [
+        {
+          "OperationId": "Workflows_Get",
+          "version": "2020-03-01",
+          "jsonFilePath": "/specification/storagesync/resource-manager/Microsoft.StorageSync/stable/2020-03-01/storagesync.json"
+        }
+      ],
+      "Resource": "Microsoft.StorageSync/storageSyncServices/workflows"
+    }
+  ],
+  "resourcelist": "Microsoft.StorageSync/storageSyncServices/privateEndpointConnections,Microsoft.StorageSync/storageSyncServices/privateLinkResources,Microsoft.StorageSync/storageSyncServices/syncGroups,Microsoft.StorageSync/storageSyncServices/syncGroups/cloudEndpoints,Microsoft.StorageSync/storageSyncServices/syncGroups/serverEndpoints,Microsoft.StorageSync/storageSyncServices/workflows",
+  "jsonFilelist": [
+    "/specification/storagesync/resource-manager/Microsoft.StorageSync/stable/2020-03-01/storagesync.json",
+    "/specification/storagesync/resource-manager/Microsoft.StorageSync/stable/2018-10-01/storagesync.json",
+    "/specification/storagesync/resource-manager/Microsoft.StorageSync/stable/2019-03-01/storagesync.json",
+    "/specification/storagesync/resource-manager/Microsoft.StorageSync/stable/2019-06-01/storagesync.json",
+    "/specification/storagesync/resource-manager/Microsoft.StorageSync/preview/2017-06-05-preview/storagesync.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "storagesync",
+  "readmeFile": "/specification/storagesync/resource-manager/readme.md",
+  "target": "clicore"
+}
