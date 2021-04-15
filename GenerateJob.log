@@ -1,4 +1,4 @@
-AutoRest code generation utility [cli version: 3.1.5; node: v14.16.0, max-memory: 2048 MB]
+AutoRest code generation utility [cli version: 3.1.5; node: v14.16.1, max-memory: 2048 MB]
 (C) 2018 Microsoft Corporation.
 https://aka.ms/autorest
    Loading AutoRest core      '/home/vsts/.autorest/@autorest_core@3.0.6219/node_modules/@autorest/core/dist' (3.0.6219)
@@ -43,4 +43,4 @@ WARNING (PreCheck/CheckDuplicateSchemas): Checking for duplicate schemas, this c
 
 WARNING (Modeler/MissingType): The schema 'OperationResultsDescription-properties' has no type or format information whatsoever. Location:
    file:///home/vsts/work/1/s/azure-rest-api-specs/specification/healthcareapis/resource-manager/Microsoft.HealthcareApis/stable/2021-01-11/healthcare-apis.json#/components/schemas/OperationResultsDescription-properties
-[52.45 s] Generation Complete
+[43.21 s] Generation Complete
