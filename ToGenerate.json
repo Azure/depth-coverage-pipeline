@@ -1,0 +1,17 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2018-01-01",
+      "operations": [],
+      "Resource": "Microsoft.DataBox/jobs"
+    }
+  ],
+  "resourcelist": "Microsoft.DataBox/jobs",
+  "jsonFilelist": [
+    "/specification/databox/resource-manager/Microsoft.DataBox/stable/2018-01-01/databox.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "databox",
+  "readmeFile": "/specification/databox/resource-manager/readme.md",
+  "target": "terraform"
+}
