@@ -1,0 +1,17 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2016-11-01",
+      "operations": [],
+      "Resource": "Microsoft.ImportExport/jobs"
+    }
+  ],
+  "resourcelist": "Microsoft.ImportExport/jobs",
+  "jsonFilelist": [
+    "/specification/storageimportexport/resource-manager/Microsoft.ImportExport/stable/2016-11-01/storageimportexport.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "storageimportexport",
+  "readmeFile": "/specification/storageimportexport/resource-manager/readme.md",
+  "target": "terraform"
+}
