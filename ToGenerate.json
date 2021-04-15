@@ -1,0 +1,17 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2018-03-31-preview",
+      "operations": [],
+      "Resource": "Microsoft.DataMigration/services/projects/tasks"
+    }
+  ],
+  "resourcelist": "Microsoft.DataMigration/services/projects/tasks",
+  "jsonFilelist": [
+    "/specification/datamigration/resource-manager/Microsoft.DataMigration/preview/2018-03-31-preview/datamigration.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "datamigration",
+  "readmeFile": "/specification/datamigration/resource-manager/readme.md",
+  "target": "terraform"
+}
