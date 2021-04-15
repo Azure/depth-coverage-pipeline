@@ -1,0 +1,364 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2017-10-12",
+      "operations": [
+        {
+          "OperationId": "CheckNameAvailabilityWithSubscription",
+          "version": "2017-10-12",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2017-10-12/cdn.json"
+        },
+        {
+          "OperationId": "ValidateProbe",
+          "version": "2019-04-15",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2019-04-15/cdn.json"
+        }
+      ],
+      "Resource": "Microsoft.Cdn"
+    },
+    {
+      "APIVersion": "2019-06-15-preview",
+      "operations": [
+        {
+          "OperationId": "Policies_Delete",
+          "version": "2019-06-15-preview",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/preview/2019-06-15-preview/cdnwebapplicationfirewall.json"
+        }
+      ],
+      "Resource": "Microsoft.Cdn/CdnWebApplicationFirewallPolicies"
+    },
+    {
+      "APIVersion": "2020-09-01",
+      "operations": [
+        {
+          "OperationId": "AFDEndpoints_Delete",
+          "version": "2020-09-01",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json"
+        },
+        {
+          "OperationId": "AFDEndpoints_Get",
+          "version": "2020-09-01",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json"
+        },
+        {
+          "OperationId": "AFDEndpoints_Create",
+          "version": "2020-09-01",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json"
+        },
+        {
+          "OperationId": "AFDEndpoints_ListResourceUsage",
+          "version": "2020-09-01",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json"
+        },
+        {
+          "OperationId": "AFDEndpoints_ValidateCustomDomain",
+          "version": "2020-09-01",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json"
+        }
+      ],
+      "Resource": "Microsoft.Cdn/profiles/afdEndpoints"
+    },
+    {
+      "APIVersion": "2020-09-01",
+      "operations": [
+        {
+          "OperationId": "Routes_ListByEndpoint",
+          "version": "2020-09-01",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json"
+        },
+        {
+          "OperationId": "Routes_Delete",
+          "version": "2020-09-01",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json"
+        },
+        {
+          "OperationId": "Routes_Get",
+          "version": "2020-09-01",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json"
+        },
+        {
+          "OperationId": "Routes_Create",
+          "version": "2020-09-01",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json"
+        }
+      ],
+      "Resource": "Microsoft.Cdn/profiles/afdEndpoints/routes"
+    },
+    {
+      "APIVersion": "2020-09-01",
+      "operations": [
+        {
+          "OperationId": "AFDCustomDomains_Delete",
+          "version": "2020-09-01",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json"
+        },
+        {
+          "OperationId": "AFDCustomDomains_Get",
+          "version": "2020-09-01",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json"
+        },
+        {
+          "OperationId": "AFDCustomDomains_Create",
+          "version": "2020-09-01",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json"
+        }
+      ],
+      "Resource": "Microsoft.Cdn/profiles/customDomains"
+    },
+    {
+      "APIVersion": "2016-10-02",
+      "operations": [
+        {
+          "OperationId": "Endpoints_ListResourceUsage",
+          "version": "2016-10-02",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2016-10-02/cdn.json"
+        }
+      ],
+      "Resource": "Microsoft.Cdn/profiles/endpoints"
+    },
+    {
+      "APIVersion": "2020-04-15",
+      "operations": [
+        {
+          "OperationId": "OriginGroups_Delete",
+          "version": "2020-04-15",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-04-15/cdn.json"
+        }
+      ],
+      "Resource": "Microsoft.Cdn/profiles/endpoints/originGroups"
+    },
+    {
+      "APIVersion": "2019-04-15",
+      "operations": [
+        {
+          "OperationId": "Profiles_GenerateSsoUri",
+          "version": "2019-04-15",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2019-04-15/cdn.json"
+        },
+        {
+          "OperationId": "Profiles_ListSupportedOptimizationTypes",
+          "version": "2019-04-15",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2019-04-15/cdn.json"
+        },
+        {
+          "OperationId": "AFDProfiles_ListResourceUsage",
+          "version": "2020-09-01",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json"
+        }
+      ],
+      "Resource": "Microsoft.Cdn/profiles"
+    },
+    {
+      "APIVersion": "2020-09-01",
+      "operations": [
+        {
+          "OperationId": "LogAnalytics_GetLogAnalyticsMetrics",
+          "version": "2020-09-01",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json"
+        }
+      ],
+      "Resource": "Microsoft.Cdn/profiles/getLogAnalyticsMetrics"
+    },
+    {
+      "APIVersion": "2020-09-01",
+      "operations": [
+        {
+          "OperationId": "LogAnalytics_GetLogAnalyticsRankings",
+          "version": "2020-09-01",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json"
+        }
+      ],
+      "Resource": "Microsoft.Cdn/profiles/getLogAnalyticsRankings"
+    },
+    {
+      "APIVersion": "2020-09-01",
+      "operations": [
+        {
+          "OperationId": "LogAnalytics_GetLogAnalyticsResources",
+          "version": "2020-09-01",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json"
+        }
+      ],
+      "Resource": "Microsoft.Cdn/profiles/getLogAnalyticsResources"
+    },
+    {
+      "APIVersion": "2020-09-01",
+      "operations": [
+        {
+          "OperationId": "LogAnalytics_GetWafLogAnalyticsMetrics",
+          "version": "2020-09-01",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json"
+        }
+      ],
+      "Resource": "Microsoft.Cdn/profiles/getWafLogAnalyticsMetrics"
+    },
+    {
+      "APIVersion": "2020-09-01",
+      "operations": [
+        {
+          "OperationId": "LogAnalytics_GetWafLogAnalyticsRankings",
+          "version": "2020-09-01",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json"
+        }
+      ],
+      "Resource": "Microsoft.Cdn/profiles/getWafLogAnalyticsRankings"
+    },
+    {
+      "APIVersion": "2020-09-01",
+      "operations": [
+        {
+          "OperationId": "AFDOriginGroups_Delete",
+          "version": "2020-09-01",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json"
+        },
+        {
+          "OperationId": "AFDOriginGroups_Create",
+          "version": "2020-09-01",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json"
+        },
+        {
+          "OperationId": "AFDOriginGroups_ListResourceUsage",
+          "version": "2020-09-01",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json"
+        }
+      ],
+      "Resource": "Microsoft.Cdn/profiles/originGroups"
+    },
+    {
+      "APIVersion": "2020-09-01",
+      "operations": [
+        {
+          "OperationId": "AFDOrigins_Delete",
+          "version": "2020-09-01",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json"
+        }
+      ],
+      "Resource": "Microsoft.Cdn/profiles/originGroups/origins"
+    },
+    {
+      "APIVersion": "2020-09-01",
+      "operations": [
+        {
+          "OperationId": "RuleSets_ListByProfile",
+          "version": "2020-09-01",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json"
+        },
+        {
+          "OperationId": "RuleSets_Delete",
+          "version": "2020-09-01",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json"
+        },
+        {
+          "OperationId": "RuleSets_Get",
+          "version": "2020-09-01",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json"
+        },
+        {
+          "OperationId": "RuleSets_Create",
+          "version": "2020-09-01",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json"
+        },
+        {
+          "OperationId": "RuleSets_ListResourceUsage",
+          "version": "2020-09-01",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json"
+        }
+      ],
+      "Resource": "Microsoft.Cdn/profiles/ruleSets"
+    },
+    {
+      "APIVersion": "2020-09-01",
+      "operations": [
+        {
+          "OperationId": "Rules_ListByRuleSet",
+          "version": "2020-09-01",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json"
+        },
+        {
+          "OperationId": "Rules_Delete",
+          "version": "2020-09-01",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json"
+        },
+        {
+          "OperationId": "Rules_Get",
+          "version": "2020-09-01",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json"
+        },
+        {
+          "OperationId": "Rules_Create",
+          "version": "2020-09-01",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json"
+        }
+      ],
+      "Resource": "Microsoft.Cdn/profiles/ruleSets/rules"
+    },
+    {
+      "APIVersion": "2020-09-01",
+      "operations": [
+        {
+          "OperationId": "Secrets_ListByProfile",
+          "version": "2020-09-01",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json"
+        },
+        {
+          "OperationId": "Secrets_Delete",
+          "version": "2020-09-01",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json"
+        },
+        {
+          "OperationId": "Secrets_Get",
+          "version": "2020-09-01",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json"
+        },
+        {
+          "OperationId": "Secrets_Create",
+          "version": "2020-09-01",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json"
+        }
+      ],
+      "Resource": "Microsoft.Cdn/profiles/secrets"
+    },
+    {
+      "APIVersion": "2020-09-01",
+      "operations": [
+        {
+          "OperationId": "SecurityPolicies_ListByProfile",
+          "version": "2020-09-01",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json"
+        },
+        {
+          "OperationId": "SecurityPolicies_Delete",
+          "version": "2020-09-01",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json"
+        },
+        {
+          "OperationId": "SecurityPolicies_Get",
+          "version": "2020-09-01",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json"
+        },
+        {
+          "OperationId": "SecurityPolicies_Create",
+          "version": "2020-09-01",
+          "jsonFilePath": "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json"
+        }
+      ],
+      "Resource": "Microsoft.Cdn/profiles/securityPolicies"
+    }
+  ],
+  "resourcelist": "Microsoft.Cdn,Microsoft.Cdn/CdnWebApplicationFirewallPolicies,Microsoft.Cdn/profiles/afdEndpoints,Microsoft.Cdn/profiles/afdEndpoints/routes,Microsoft.Cdn/profiles/customDomains,Microsoft.Cdn/profiles/endpoints,Microsoft.Cdn/profiles/endpoints/originGroups,Microsoft.Cdn/profiles,Microsoft.Cdn/profiles/getLogAnalyticsMetrics,Microsoft.Cdn/profiles/getLogAnalyticsRankings,Microsoft.Cdn/profiles/getLogAnalyticsResources,Microsoft.Cdn/profiles/getWafLogAnalyticsMetrics,Microsoft.Cdn/profiles/getWafLogAnalyticsRankings,Microsoft.Cdn/profiles/originGroups,Microsoft.Cdn/profiles/originGroups/origins,Microsoft.Cdn/profiles/ruleSets,Microsoft.Cdn/profiles/ruleSets/rules,Microsoft.Cdn/profiles/secrets,Microsoft.Cdn/profiles/securityPolicies",
+  "jsonFilelist": [
+    "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2017-10-12/cdn.json",
+    "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2019-04-15/cdn.json",
+    "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2019-12-31/cdn.json",
+    "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-04-15/cdn.json",
+    "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/cdn.json",
+    "/specification/cdn/resource-manager/Microsoft.Cdn/preview/2019-06-15-preview/cdnwebapplicationfirewall.json",
+    "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-04-15/cdnwebapplicationfirewall.json",
+    "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2020-09-01/afdx.json",
+    "/specification/cdn/resource-manager/Microsoft.Cdn/stable/2016-10-02/cdn.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "cdn",
+  "readmeFile": "/specification/cdn/resource-manager/readme.md",
+  "target": "clicore"
+}
