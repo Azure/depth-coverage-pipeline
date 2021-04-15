@@ -1,0 +1,41 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2015-05-01",
+      "operations": [],
+      "Resource": "Microsoft.Insights/components/Annotations"
+    },
+    {
+      "APIVersion": "2015-05-01",
+      "operations": [],
+      "Resource": "Microsoft.Insights/components/exportconfiguration"
+    },
+    {
+      "APIVersion": "2015-05-01",
+      "operations": [],
+      "Resource": "Microsoft.Insights/components/favorites"
+    },
+    {
+      "APIVersion": "2015-05-01",
+      "operations": [],
+      "Resource": "Microsoft.Insights/components/WorkItemConfigs"
+    },
+    {
+      "APIVersion": "2020-10-20",
+      "operations": [],
+      "Resource": "Microsoft.Insights/myWorkbooks"
+    }
+  ],
+  "resourcelist": "Microsoft.Insights/components/Annotations,Microsoft.Insights/components/exportconfiguration,Microsoft.Insights/components/favorites,Microsoft.Insights/components/WorkItemConfigs,Microsoft.Insights/myWorkbooks",
+  "jsonFilelist": [
+    "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2015-05-01/componentAnnotations_API.json",
+    "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2015-05-01/componentContinuousExport_API.json",
+    "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2015-05-01/favorites_API.json",
+    "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2015-05-01/componentWorkItemConfigs_API.json",
+    "/specification/applicationinsights/resource-manager/Microsoft.Insights/stable/2020-10-20/myworkbooks_API.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "applicationinsights",
+  "readmeFile": "/specification/applicationinsights/resource-manager/readme.md",
+  "target": "terraform"
+}
