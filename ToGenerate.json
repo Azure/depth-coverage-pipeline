@@ -1,0 +1,17 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2018-02-16-preview",
+      "operations": [],
+      "Resource": "Microsoft.WindowsIoT/deviceServices"
+    }
+  ],
+  "resourcelist": "Microsoft.WindowsIoT/deviceServices",
+  "jsonFilelist": [
+    "/specification/windowsiot/resource-manager/Microsoft.WindowsIoT/preview/2018-02-16-preview/WindowsIotServices.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "windowsiot",
+  "readmeFile": "/specification/windowsiot/resource-manager/readme.md",
+  "target": "terraform"
+}
