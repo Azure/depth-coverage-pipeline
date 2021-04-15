@@ -1,0 +1,37 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2017-12-01",
+      "operations": [
+        {
+          "OperationId": "Bots_List",
+          "version": "2017-12-01",
+          "jsonFilePath": "/specification/botservice/resource-manager/Microsoft.BotService/preview/2017-12-01/botservice.json"
+        }
+      ],
+      "Resource": "Microsoft.BotService/botServices"
+    },
+    {
+      "APIVersion": "2021-03-01",
+      "operations": [
+        {
+          "OperationId": "HostSettings_Get",
+          "version": "2021-03-01",
+          "jsonFilePath": "/specification/botservice/resource-manager/Microsoft.BotService/stable/2021-03-01/botservice.json"
+        }
+      ],
+      "Resource": "Microsoft.BotService/hostSettings"
+    }
+  ],
+  "resourcelist": "Microsoft.BotService/botServices,Microsoft.BotService/hostSettings",
+  "jsonFilelist": [
+    "/specification/botservice/resource-manager/Microsoft.BotService/preview/2017-12-01/botservice.json",
+    "/specification/botservice/resource-manager/Microsoft.BotService/preview/2018-07-12/botservice.json",
+    "/specification/botservice/resource-manager/Microsoft.BotService/stable/2020-06-02/botservice.json",
+    "/specification/botservice/resource-manager/Microsoft.BotService/stable/2021-03-01/botservice.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "botservice",
+  "readmeFile": "/specification/botservice/resource-manager/readme.md",
+  "target": "clicore"
+}
