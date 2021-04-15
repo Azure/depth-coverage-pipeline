@@ -1,0 +1,28 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-01-01",
+      "operations": [
+        {
+          "OperationId": "PrivateStorePrivateOffers_List",
+          "version": "2020-01-01",
+          "jsonFilePath": "/specification/marketplace/resource-manager/Microsoft.Marketplace/stable/2020-01-01/Marketplace.json"
+        },
+        {
+          "OperationId": "PrivateStorePrivateOffer_CreateOrUpdate",
+          "version": "2020-01-01",
+          "jsonFilePath": "/specification/marketplace/resource-manager/Microsoft.Marketplace/stable/2020-01-01/Marketplace.json"
+        }
+      ],
+      "Resource": "Microsoft.Marketplace/privateStores/offers"
+    }
+  ],
+  "resourcelist": "Microsoft.Marketplace/privateStores/offers",
+  "jsonFilelist": [
+    "/specification/marketplace/resource-manager/Microsoft.Marketplace/stable/2020-01-01/Marketplace.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "marketplace",
+  "readmeFile": "/specification/marketplace/resource-manager/readme.md",
+  "target": "clicore"
+}
