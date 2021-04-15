@@ -1,0 +1,29 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-12-01",
+      "operations": [],
+      "Resource": "Microsoft.ContainerService/managedClusters/maintenanceConfigurations"
+    },
+    {
+      "APIVersion": "2020-06-01",
+      "operations": [],
+      "Resource": "Microsoft.ContainerService/managedClusters/privateEndpointConnections"
+    },
+    {
+      "APIVersion": "2018-09-30-preview",
+      "operations": [],
+      "Resource": "Microsoft.ContainerService/openShiftManagedClusters"
+    }
+  ],
+  "resourcelist": "Microsoft.ContainerService/managedClusters/maintenanceConfigurations,Microsoft.ContainerService/managedClusters/privateEndpointConnections,Microsoft.ContainerService/openShiftManagedClusters",
+  "jsonFilelist": [
+    "/specification/containerservice/resource-manager/Microsoft.ContainerService/stable/2020-12-01/managedClusters.json",
+    "/specification/containerservice/resource-manager/Microsoft.ContainerService/stable/2020-06-01/managedClusters.json",
+    "/specification/containerservice/resource-manager/Microsoft.ContainerService/preview/2018-09-30-preview/openShiftManagedClusters.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "containerservice",
+  "readmeFile": "/specification/containerservice/resource-manager/readme.md",
+  "target": "terraform"
+}
