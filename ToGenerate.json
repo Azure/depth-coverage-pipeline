@@ -1,0 +1,74 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2019-10-01",
+      "operations": [
+        {
+          "OperationId": "Operations_CheckNameAvailability",
+          "version": "2019-10-01",
+          "jsonFilePath": "/specification/appconfiguration/resource-manager/Microsoft.AppConfiguration/stable/2019-10-01/appconfiguration.json"
+        }
+      ],
+      "Resource": "Microsoft.AppConfiguration"
+    },
+    {
+      "APIVersion": "2020-07-01-preview",
+      "operations": [
+        {
+          "OperationId": "KeyValues_ListByConfigurationStore",
+          "version": "2020-07-01-preview",
+          "jsonFilePath": "/specification/appconfiguration/resource-manager/Microsoft.AppConfiguration/preview/2020-07-01-preview/appconfiguration.json"
+        },
+        {
+          "OperationId": "KeyValues_Delete",
+          "version": "2020-07-01-preview",
+          "jsonFilePath": "/specification/appconfiguration/resource-manager/Microsoft.AppConfiguration/preview/2020-07-01-preview/appconfiguration.json"
+        },
+        {
+          "OperationId": "KeyValues_Get",
+          "version": "2020-07-01-preview",
+          "jsonFilePath": "/specification/appconfiguration/resource-manager/Microsoft.AppConfiguration/preview/2020-07-01-preview/appconfiguration.json"
+        },
+        {
+          "OperationId": "KeyValues_CreateOrUpdate",
+          "version": "2020-07-01-preview",
+          "jsonFilePath": "/specification/appconfiguration/resource-manager/Microsoft.AppConfiguration/preview/2020-07-01-preview/appconfiguration.json"
+        }
+      ],
+      "Resource": "Microsoft.AppConfiguration/configurationStores/keyValues"
+    },
+    {
+      "APIVersion": "2019-10-01",
+      "operations": [
+        {
+          "OperationId": "ConfigurationStores_ListKeyValue",
+          "version": "2019-10-01",
+          "jsonFilePath": "/specification/appconfiguration/resource-manager/Microsoft.AppConfiguration/stable/2019-10-01/appconfiguration.json"
+        }
+      ],
+      "Resource": "Microsoft.AppConfiguration/configurationStores"
+    },
+    {
+      "APIVersion": "2020-06-01",
+      "operations": [
+        {
+          "OperationId": "PrivateEndpointConnections_Delete",
+          "version": "2020-06-01",
+          "jsonFilePath": "/specification/appconfiguration/resource-manager/Microsoft.AppConfiguration/stable/2020-06-01/appconfiguration.json"
+        }
+      ],
+      "Resource": "Microsoft.AppConfiguration/configurationStores/privateEndpointConnections"
+    }
+  ],
+  "resourcelist": "Microsoft.AppConfiguration,Microsoft.AppConfiguration/configurationStores/keyValues,Microsoft.AppConfiguration/configurationStores,Microsoft.AppConfiguration/configurationStores/privateEndpointConnections",
+  "jsonFilelist": [
+    "/specification/appconfiguration/resource-manager/Microsoft.AppConfiguration/stable/2019-10-01/appconfiguration.json",
+    "/specification/appconfiguration/resource-manager/Microsoft.AppConfiguration/stable/2020-06-01/appconfiguration.json",
+    "/specification/appconfiguration/resource-manager/Microsoft.AppConfiguration/preview/2020-07-01-preview/appconfiguration.json",
+    "/specification/appconfiguration/resource-manager/Microsoft.AppConfiguration/preview/2019-11-01-preview/appconfiguration.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "appconfiguration",
+  "readmeFile": "/specification/appconfiguration/resource-manager/readme.md",
+  "target": "clicore"
+}
