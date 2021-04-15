@@ -1,0 +1,17 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-06-01",
+      "operations": [],
+      "Resource": "Microsoft.Cache/redis/privateEndpointConnections"
+    }
+  ],
+  "resourcelist": "Microsoft.Cache/redis/privateEndpointConnections",
+  "jsonFilelist": [
+    "/specification/redis/resource-manager/Microsoft.Cache/stable/2020-06-01/redis.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "redis",
+  "readmeFile": "/specification/redis/resource-manager/readme.md",
+  "target": "terraform"
+}
