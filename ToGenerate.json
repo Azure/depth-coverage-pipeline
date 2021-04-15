@@ -1,0 +1,23 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2018-01-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.ServiceBus/namespaces/disasterRecoveryConfigs"
+    },
+    {
+      "APIVersion": "2017-04-01",
+      "operations": [],
+      "Resource": "Microsoft.ServiceBus/namespaces/migrationConfigurations"
+    }
+  ],
+  "resourcelist": "Microsoft.ServiceBus/namespaces/disasterRecoveryConfigs,Microsoft.ServiceBus/namespaces/migrationConfigurations",
+  "jsonFilelist": [
+    "/specification/servicebus/resource-manager/Microsoft.ServiceBus/preview/2018-01-01-preview/DisasterRecoveryConfig.json",
+    "/specification/servicebus/resource-manager/Microsoft.ServiceBus/stable/2017-04-01/migrationconfigs.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "servicebus",
+  "readmeFile": "/specification/servicebus/resource-manager/readme.md",
+  "target": "terraform"
+}
