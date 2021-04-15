@@ -1,0 +1,22 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-09-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.MachineLearningServices/workspaces/connections"
+    },
+    {
+      "APIVersion": "2020-09-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.MachineLearningServices/workspaces/privateEndpointConnections"
+    }
+  ],
+  "resourcelist": "Microsoft.MachineLearningServices/workspaces/connections,Microsoft.MachineLearningServices/workspaces/privateEndpointConnections",
+  "jsonFilelist": [
+    "/specification/machinelearningservices/resource-manager/Microsoft.MachineLearningServices/preview/2020-09-01-preview/machineLearningServices.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "machinelearningservices",
+  "readmeFile": "/specification/machinelearningservices/resource-manager/readme.md",
+  "target": "terraform"
+}
