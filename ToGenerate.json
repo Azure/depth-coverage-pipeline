@@ -1,0 +1,17 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2019-11-01",
+      "operations": [],
+      "Resource": "Microsoft.CostManagement/views"
+    }
+  ],
+  "resourcelist": "Microsoft.CostManagement/views",
+  "jsonFilelist": [
+    "/specification/cost-management/resource-manager/Microsoft.CostManagement/stable/2019-11-01/costmanagement.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "cost-management",
+  "readmeFile": "/specification/cost-management/resource-manager/readme.md",
+  "target": "terraform"
+}
