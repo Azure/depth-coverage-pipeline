@@ -1,0 +1,50 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2018-05-01",
+      "operations": [
+        {
+          "OperationId": "Accounts_Delete",
+          "version": "2018-05-01",
+          "jsonFilePath": "/specification/maps/resource-manager/Microsoft.Maps/stable/2018-05-01/maps-management.json"
+        }
+      ],
+      "Resource": "Microsoft.Maps/accounts"
+    },
+    {
+      "APIVersion": "2020-02-01-preview",
+      "operations": [
+        {
+          "OperationId": "PrivateAtlases_ListByAccount",
+          "version": "2020-02-01-preview",
+          "jsonFilePath": "/specification/maps/resource-manager/Microsoft.Maps/preview/2020-02-01-preview/maps-management.json"
+        },
+        {
+          "OperationId": "PrivateAtlases_Delete",
+          "version": "2020-02-01-preview",
+          "jsonFilePath": "/specification/maps/resource-manager/Microsoft.Maps/preview/2020-02-01-preview/maps-management.json"
+        },
+        {
+          "OperationId": "PrivateAtlases_Get",
+          "version": "2020-02-01-preview",
+          "jsonFilePath": "/specification/maps/resource-manager/Microsoft.Maps/preview/2020-02-01-preview/maps-management.json"
+        },
+        {
+          "OperationId": "PrivateAtlases_CreateOrUpdate",
+          "version": "2020-02-01-preview",
+          "jsonFilePath": "/specification/maps/resource-manager/Microsoft.Maps/preview/2020-02-01-preview/maps-management.json"
+        }
+      ],
+      "Resource": "Microsoft.Maps/accounts/privateAtlases"
+    }
+  ],
+  "resourcelist": "Microsoft.Maps/accounts,Microsoft.Maps/accounts/privateAtlases",
+  "jsonFilelist": [
+    "/specification/maps/resource-manager/Microsoft.Maps/stable/2018-05-01/maps-management.json",
+    "/specification/maps/resource-manager/Microsoft.Maps/preview/2020-02-01-preview/maps-management.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "maps",
+  "readmeFile": "/specification/maps/resource-manager/readme.md",
+  "target": "clicore"
+}
