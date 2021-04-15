@@ -1,0 +1,118 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2016-11-01",
+      "operations": [
+        {
+          "OperationId": "Accounts_Delete",
+          "version": "2016-11-01",
+          "jsonFilePath": "/specification/datalake-analytics/resource-manager/Microsoft.DataLakeAnalytics/stable/2016-11-01/account.json"
+        }
+      ],
+      "Resource": "Microsoft.DataLakeAnalytics/accounts"
+    },
+    {
+      "APIVersion": "2016-11-01",
+      "operations": [
+        {
+          "OperationId": "ComputePolicies_ListByAccount",
+          "version": "2016-11-01",
+          "jsonFilePath": "/specification/datalake-analytics/resource-manager/Microsoft.DataLakeAnalytics/stable/2016-11-01/account.json"
+        },
+        {
+          "OperationId": "ComputePolicies_CreateOrUpdate",
+          "version": "2016-11-01",
+          "jsonFilePath": "/specification/datalake-analytics/resource-manager/Microsoft.DataLakeAnalytics/stable/2016-11-01/account.json"
+        }
+      ],
+      "Resource": "Microsoft.DataLakeAnalytics/accounts/computePolicies"
+    },
+    {
+      "APIVersion": "2016-11-01",
+      "operations": [
+        {
+          "OperationId": "DataLakeStoreAccounts_ListByAccount",
+          "version": "2016-11-01",
+          "jsonFilePath": "/specification/datalake-analytics/resource-manager/Microsoft.DataLakeAnalytics/stable/2016-11-01/account.json"
+        },
+        {
+          "OperationId": "DataLakeStoreAccounts_Delete",
+          "version": "2016-11-01",
+          "jsonFilePath": "/specification/datalake-analytics/resource-manager/Microsoft.DataLakeAnalytics/stable/2016-11-01/account.json"
+        },
+        {
+          "OperationId": "DataLakeStoreAccounts_Get",
+          "version": "2016-11-01",
+          "jsonFilePath": "/specification/datalake-analytics/resource-manager/Microsoft.DataLakeAnalytics/stable/2016-11-01/account.json"
+        },
+        {
+          "OperationId": "DataLakeStoreAccounts_Add",
+          "version": "2016-11-01",
+          "jsonFilePath": "/specification/datalake-analytics/resource-manager/Microsoft.DataLakeAnalytics/stable/2016-11-01/account.json"
+        }
+      ],
+      "Resource": "Microsoft.DataLakeAnalytics/accounts/dataLakeStoreAccounts"
+    },
+    {
+      "APIVersion": "2016-11-01",
+      "operations": [
+        {
+          "OperationId": "FirewallRules_Delete",
+          "version": "2016-11-01",
+          "jsonFilePath": "/specification/datalake-analytics/resource-manager/Microsoft.DataLakeAnalytics/stable/2016-11-01/account.json"
+        },
+        {
+          "OperationId": "FirewallRules_Get",
+          "version": "2016-11-01",
+          "jsonFilePath": "/specification/datalake-analytics/resource-manager/Microsoft.DataLakeAnalytics/stable/2016-11-01/account.json"
+        },
+        {
+          "OperationId": "FirewallRules_CreateOrUpdate",
+          "version": "2016-11-01",
+          "jsonFilePath": "/specification/datalake-analytics/resource-manager/Microsoft.DataLakeAnalytics/stable/2016-11-01/account.json"
+        }
+      ],
+      "Resource": "Microsoft.DataLakeAnalytics/accounts/firewallRules"
+    },
+    {
+      "APIVersion": "2016-11-01",
+      "operations": [
+        {
+          "OperationId": "StorageAccounts_Delete",
+          "version": "2016-11-01",
+          "jsonFilePath": "/specification/datalake-analytics/resource-manager/Microsoft.DataLakeAnalytics/stable/2016-11-01/account.json"
+        },
+        {
+          "OperationId": "StorageAccounts_Get",
+          "version": "2016-11-01",
+          "jsonFilePath": "/specification/datalake-analytics/resource-manager/Microsoft.DataLakeAnalytics/stable/2016-11-01/account.json"
+        }
+      ],
+      "Resource": "Microsoft.DataLakeAnalytics/accounts/storageAccounts"
+    },
+    {
+      "APIVersion": "2016-11-01",
+      "operations": [
+        {
+          "OperationId": "StorageAccounts_ListStorageContainers",
+          "version": "2016-11-01",
+          "jsonFilePath": "/specification/datalake-analytics/resource-manager/Microsoft.DataLakeAnalytics/stable/2016-11-01/account.json"
+        },
+        {
+          "OperationId": "StorageAccounts_ListSasTokens",
+          "version": "2016-11-01",
+          "jsonFilePath": "/specification/datalake-analytics/resource-manager/Microsoft.DataLakeAnalytics/stable/2016-11-01/account.json"
+        }
+      ],
+      "Resource": "Microsoft.DataLakeAnalytics/accounts/storageAccounts/containers"
+    }
+  ],
+  "resourcelist": "Microsoft.DataLakeAnalytics/accounts,Microsoft.DataLakeAnalytics/accounts/computePolicies,Microsoft.DataLakeAnalytics/accounts/dataLakeStoreAccounts,Microsoft.DataLakeAnalytics/accounts/firewallRules,Microsoft.DataLakeAnalytics/accounts/storageAccounts,Microsoft.DataLakeAnalytics/accounts/storageAccounts/containers",
+  "jsonFilelist": [
+    "/specification/datalake-analytics/resource-manager/Microsoft.DataLakeAnalytics/stable/2016-11-01/account.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "datalake-analytics",
+  "readmeFile": "/specification/datalake-analytics/resource-manager/readme.md",
+  "target": "clicore"
+}
