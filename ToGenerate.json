@@ -1,0 +1,17 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2021-04-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.KeyVault/vaults/privateEndpointConnections"
+    }
+  ],
+  "resourcelist": "Microsoft.KeyVault/vaults/privateEndpointConnections",
+  "jsonFilelist": [
+    "/specification/keyvault/resource-manager/Microsoft.KeyVault/preview/2021-04-01-preview/keyvault.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "keyvault",
+  "readmeFile": "/specification/keyvault/resource-manager/readme.md",
+  "target": "terraform"
+}
