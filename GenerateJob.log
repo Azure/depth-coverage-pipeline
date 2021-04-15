@@ -43,4 +43,4 @@ WARNING (PreCheck/CheckDuplicateSchemas): Checking for duplicate schemas, this c
 
 WARNING (Modeler/MissingType): The schema 'OperationResultsDescription-properties' has no type or format information whatsoever. Location:
    file:///home/vsts/work/1/s/azure-rest-api-specs/specification/healthcareapis/resource-manager/Microsoft.HealthcareApis/stable/2021-01-11/healthcare-apis.json#/components/schemas/OperationResultsDescription-properties
-[41.66 s] Generation Complete
+[41.19 s] Generation Complete
