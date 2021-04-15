@@ -89,9 +89,9 @@ WARNING (PreCheck/CheckDuplicateSchemas): Checking for duplicate schemas, this c
 
 <--- Last few GCs --->
 
-[2514:0x63aa020]    72280 ms: Mark-sweep 1945.5 (2067.4) -> 1914.4 (2063.9) MB, 778.7 / 0.0 ms  (average mu = 0.260, current mu = 0.288) allocation failure scavenge might not succeed
-[2514:0x63aa020]    72312 ms: Scavenge 1930.5 (2063.9) -> 1918.4 (2063.9) MB, 4.6 / 0.0 ms  (average mu = 0.260, current mu = 0.288) allocation failure 
-[2514:0x63aa020]    72348 ms: Scavenge 1930.6 (2063.9) -> 1921.5 (2067.7) MB, 9.6 / 0.0 ms  (average mu = 0.260, current mu = 0.288) allocation failure 
+[2287:0x4f1c020]    90222 ms: Mark-sweep 1927.2 (2066.6) -> 1909.9 (2065.4) MB, 860.9 / 0.0 ms  (average mu = 0.200, current mu = 0.154) allocation failure scavenge might not succeed
+[2287:0x4f1c020]    90272 ms: Scavenge 1926.0 (2065.4) -> 1913.8 (2065.4) MB, 23.6 / 0.0 ms  (average mu = 0.200, current mu = 0.154) allocation failure 
+[2287:0x4f1c020]    90332 ms: Scavenge 1926.1 (2065.4) -> 1917.0 (2069.1) MB, 22.6 / 0.0 ms  (average mu = 0.200, current mu = 0.154) allocation failure 
 
 
 <--- JS stacktrace --->
