@@ -32,4 +32,4 @@ WARNING (PreCheck/SchemaMissingType): The schema 'cloudError' with an undefined 
 WARNING (PreCheck/SchemaMissingType): The schema 'cloudErrorBody' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
 
 WARNING (PreCheck/CheckDuplicateSchemas): Checking for duplicate schemas, this could take a (long) while.  Run with --verbose for more detail.
-[54.02 s] Generation Complete
+[52.28 s] Generation Complete
