@@ -1,0 +1,106 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-04-01",
+      "operations": [
+        {
+          "OperationId": "CheckServiceProviderAvailability",
+          "version": "2020-04-01",
+          "jsonFilePath": "/specification/peering/resource-manager/Microsoft.Peering/stable/2020-04-01/peering.json"
+        }
+      ],
+      "Resource": "Microsoft.Peering"
+    },
+    {
+      "APIVersion": "2020-04-01",
+      "operations": [
+        {
+          "OperationId": "LegacyPeerings_List",
+          "version": "2020-04-01",
+          "jsonFilePath": "/specification/peering/resource-manager/Microsoft.Peering/stable/2020-04-01/peering.json"
+        }
+      ],
+      "Resource": "Microsoft.Peering/legacyPeerings"
+    },
+    {
+      "APIVersion": "2020-01-01-preview",
+      "operations": [
+        {
+          "OperationId": "PeerAsns_ListBySubscription",
+          "version": "2020-01-01-preview",
+          "jsonFilePath": "/specification/peering/resource-manager/Microsoft.Peering/preview/2020-01-01-preview/peering.json"
+        },
+        {
+          "OperationId": "PeerAsns_Delete",
+          "version": "2020-04-01",
+          "jsonFilePath": "/specification/peering/resource-manager/Microsoft.Peering/stable/2020-04-01/peering.json"
+        },
+        {
+          "OperationId": "PeerAsns_Get",
+          "version": "2020-01-01-preview",
+          "jsonFilePath": "/specification/peering/resource-manager/Microsoft.Peering/preview/2020-01-01-preview/peering.json"
+        },
+        {
+          "OperationId": "PeerAsns_CreateOrUpdate",
+          "version": "2020-04-01",
+          "jsonFilePath": "/specification/peering/resource-manager/Microsoft.Peering/stable/2020-04-01/peering.json"
+        }
+      ],
+      "Resource": "Microsoft.Peering/peerAsns"
+    },
+    {
+      "APIVersion": "2020-04-01",
+      "operations": [
+        {
+          "OperationId": "PeeringServiceCountries_List",
+          "version": "2020-04-01",
+          "jsonFilePath": "/specification/peering/resource-manager/Microsoft.Peering/stable/2020-04-01/peering.json"
+        }
+      ],
+      "Resource": "Microsoft.Peering/peeringServiceCountries"
+    },
+    {
+      "APIVersion": "2020-01-01-preview",
+      "operations": [
+        {
+          "OperationId": "Peerings_Delete",
+          "version": "2020-01-01-preview",
+          "jsonFilePath": "/specification/peering/resource-manager/Microsoft.Peering/preview/2020-01-01-preview/peering.json"
+        },
+        {
+          "OperationId": "Peerings_CreateOrUpdate",
+          "version": "2020-01-01-preview",
+          "jsonFilePath": "/specification/peering/resource-manager/Microsoft.Peering/preview/2020-01-01-preview/peering.json"
+        }
+      ],
+      "Resource": "Microsoft.Peering/peerings"
+    },
+    {
+      "APIVersion": "2020-04-01",
+      "operations": [
+        {
+          "OperationId": "Prefixes_Delete",
+          "version": "2020-04-01",
+          "jsonFilePath": "/specification/peering/resource-manager/Microsoft.Peering/stable/2020-04-01/peering.json"
+        },
+        {
+          "OperationId": "Prefixes_Get",
+          "version": "2020-04-01",
+          "jsonFilePath": "/specification/peering/resource-manager/Microsoft.Peering/stable/2020-04-01/peering.json"
+        }
+      ],
+      "Resource": "Microsoft.Peering/peeringServices/prefixes"
+    }
+  ],
+  "resourcelist": "Microsoft.Peering,Microsoft.Peering/legacyPeerings,Microsoft.Peering/peerAsns,Microsoft.Peering/peeringServiceCountries,Microsoft.Peering/peerings,Microsoft.Peering/peeringServices/prefixes",
+  "jsonFilelist": [
+    "/specification/peering/resource-manager/Microsoft.Peering/stable/2020-04-01/peering.json",
+    "/specification/peering/resource-manager/Microsoft.Peering/stable/2020-10-01/peering.json",
+    "/specification/peering/resource-manager/Microsoft.Peering/stable/2021-01-01/peering.json",
+    "/specification/peering/resource-manager/Microsoft.Peering/preview/2020-01-01-preview/peering.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "peering",
+  "readmeFile": "/specification/peering/resource-manager/readme.md",
+  "target": "clicore"
+}
