@@ -1,0 +1,17 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2017-09-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.Network/trafficManagerUserMetricsKeys"
+    }
+  ],
+  "resourcelist": "Microsoft.Network/trafficManagerUserMetricsKeys",
+  "jsonFilelist": [
+    "/specification/trafficmanager/resource-manager/Microsoft.Network/preview/2017-09-01-preview/trafficmanageranalytics.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "trafficmanager",
+  "readmeFile": "/specification/trafficmanager/resource-manager/readme.md",
+  "target": "terraform"
+}
