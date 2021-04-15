@@ -1,0 +1,23 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2019-10-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.Search/searchServices/privateEndpointConnections"
+    },
+    {
+      "APIVersion": "2020-08-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.Search/searchServices/sharedPrivateLinkResources"
+    }
+  ],
+  "resourcelist": "Microsoft.Search/searchServices/privateEndpointConnections,Microsoft.Search/searchServices/sharedPrivateLinkResources",
+  "jsonFilelist": [
+    "/specification/search/resource-manager/Microsoft.Search/preview/2019-10-01-preview/search.json",
+    "/specification/search/resource-manager/Microsoft.Search/preview/2020-08-01-preview/search.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "search",
+  "readmeFile": "/specification/search/resource-manager/readme.md",
+  "target": "terraform"
+}
