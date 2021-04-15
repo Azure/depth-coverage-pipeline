@@ -1,0 +1,29 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2014-04-01",
+      "operations": [],
+      "Resource": "Microsoft.Sql/servers/communicationLinks"
+    },
+    {
+      "APIVersion": "2020-08-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.Sql/servers/databases/replicationLinks"
+    },
+    {
+      "APIVersion": "2014-04-01",
+      "operations": [],
+      "Resource": "Microsoft.Sql/servers/disasterRecoveryConfiguration"
+    }
+  ],
+  "resourcelist": "Microsoft.Sql/servers/communicationLinks,Microsoft.Sql/servers/databases/replicationLinks,Microsoft.Sql/servers/disasterRecoveryConfiguration",
+  "jsonFilelist": [
+    "/specification/sql/resource-manager/Microsoft.Sql/stable/2014-04-01/serverCommunicationLinks.json",
+    "/specification/sql/resource-manager/Microsoft.Sql/preview/2020-08-01-preview/ReplicationLinks.json",
+    "/specification/sql/resource-manager/Microsoft.Sql/stable/2014-04-01/disasterRecoveryConfigurations.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "sql",
+  "readmeFile": "/specification/sql/resource-manager/readme.md",
+  "target": "terraform"
+}
