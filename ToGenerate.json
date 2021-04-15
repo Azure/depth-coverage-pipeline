@@ -1,0 +1,17 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-04-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.EventGrid/{parentType}/privateEndpointConnections"
+    }
+  ],
+  "resourcelist": "Microsoft.EventGrid/{parentType}/privateEndpointConnections",
+  "jsonFilelist": [
+    "/specification/eventgrid/resource-manager/Microsoft.EventGrid/preview/2020-04-01-preview/EventGrid.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "eventgrid",
+  "readmeFile": "/specification/eventgrid/resource-manager/readme.md",
+  "target": "terraform"
+}
