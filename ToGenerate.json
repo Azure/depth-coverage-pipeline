@@ -1,0 +1,17 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2018-06-01-privatepreview",
+      "operations": [],
+      "Resource": "Microsoft.DBforMariaDB/servers/privateEndpointConnections"
+    }
+  ],
+  "resourcelist": "Microsoft.DBforMariaDB/servers/privateEndpointConnections",
+  "jsonFilelist": [
+    "/specification/mariadb/resource-manager/Microsoft.DBforMariaDB/preview/2018-06-01-privatepreview/PrivateEndpointConnections.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "mariadb",
+  "readmeFile": "/specification/mariadb/resource-manager/readme.md",
+  "target": "terraform"
+}
