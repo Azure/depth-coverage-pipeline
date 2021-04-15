@@ -1,0 +1,130 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2015-11-01-preview",
+      "operations": [
+        {
+          "OperationId": "ClientGroups_ListMembers",
+          "version": "2015-11-01-preview",
+          "jsonFilePath": "/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json"
+        }
+      ],
+      "Resource": "Microsoft.OperationalInsights/workspaces/features/clientGroups/members"
+    },
+    {
+      "APIVersion": "2015-11-01-preview",
+      "operations": [
+        {
+          "OperationId": "Maps_Generate",
+          "version": "2015-11-01-preview",
+          "jsonFilePath": "/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json"
+        },
+        {
+          "OperationId": "MachineGroups_Create",
+          "version": "2015-11-01-preview",
+          "jsonFilePath": "/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json"
+        }
+      ],
+      "Resource": "Microsoft.OperationalInsights/workspaces/features"
+    },
+    {
+      "APIVersion": "2015-11-01-preview",
+      "operations": [
+        {
+          "OperationId": "MachineGroups_ListByWorkspace",
+          "version": "2015-11-01-preview",
+          "jsonFilePath": "/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json"
+        },
+        {
+          "OperationId": "MachineGroups_Delete",
+          "version": "2015-11-01-preview",
+          "jsonFilePath": "/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json"
+        },
+        {
+          "OperationId": "MachineGroups_Get",
+          "version": "2015-11-01-preview",
+          "jsonFilePath": "/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json"
+        },
+        {
+          "OperationId": "MachineGroups_Update",
+          "version": "2015-11-01-preview",
+          "jsonFilePath": "/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json"
+        }
+      ],
+      "Resource": "Microsoft.OperationalInsights/workspaces/features/machineGroups"
+    },
+    {
+      "APIVersion": "2015-11-01-preview",
+      "operations": [
+        {
+          "OperationId": "Machines_ListByWorkspace",
+          "version": "2015-11-01-preview",
+          "jsonFilePath": "/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json"
+        },
+        {
+          "OperationId": "Machines_Get",
+          "version": "2015-11-01-preview",
+          "jsonFilePath": "/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json"
+        }
+      ],
+      "Resource": "Microsoft.OperationalInsights/workspaces/features/machines"
+    },
+    {
+      "APIVersion": "2015-11-01-preview",
+      "operations": [
+        {
+          "OperationId": "Machines_ListConnections",
+          "version": "2015-11-01-preview",
+          "jsonFilePath": "/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json"
+        }
+      ],
+      "Resource": "Microsoft.OperationalInsights/workspaces/features/machines/connections"
+    },
+    {
+      "APIVersion": "2015-11-01-preview",
+      "operations": [
+        {
+          "OperationId": "Machines_ListPorts",
+          "version": "2015-11-01-preview",
+          "jsonFilePath": "/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json"
+        }
+      ],
+      "Resource": "Microsoft.OperationalInsights/workspaces/features/machines/ports"
+    },
+    {
+      "APIVersion": "2015-11-01-preview",
+      "operations": [
+        {
+          "OperationId": "Machines_ListProcesses",
+          "version": "2015-11-01-preview",
+          "jsonFilePath": "/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json"
+        },
+        {
+          "OperationId": "Processes_Get",
+          "version": "2015-11-01-preview",
+          "jsonFilePath": "/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json"
+        }
+      ],
+      "Resource": "Microsoft.OperationalInsights/workspaces/features/machines/processes"
+    },
+    {
+      "APIVersion": "2015-11-01-preview",
+      "operations": [
+        {
+          "OperationId": "Summaries_GetMachines",
+          "version": "2015-11-01-preview",
+          "jsonFilePath": "/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json"
+        }
+      ],
+      "Resource": "Microsoft.OperationalInsights/workspaces/features/summaries"
+    }
+  ],
+  "resourcelist": "Microsoft.OperationalInsights/workspaces/features/clientGroups/members,Microsoft.OperationalInsights/workspaces/features,Microsoft.OperationalInsights/workspaces/features/machineGroups,Microsoft.OperationalInsights/workspaces/features/machines,Microsoft.OperationalInsights/workspaces/features/machines/connections,Microsoft.OperationalInsights/workspaces/features/machines/ports,Microsoft.OperationalInsights/workspaces/features/machines/processes,Microsoft.OperationalInsights/workspaces/features/summaries",
+  "jsonFilelist": [
+    "/specification/service-map/resource-manager/Microsoft.OperationalInsights/preview/2015-11-01-preview/arm-service-map.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "service-map",
+  "readmeFile": "/specification/service-map/resource-manager/readme.md",
+  "target": "clicore"
+}
