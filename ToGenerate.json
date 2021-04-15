@@ -1,0 +1,23 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2019-03-22-preview",
+      "operations": [],
+      "Resource": "Microsoft.Devices/IotHubs/certificates"
+    },
+    {
+      "APIVersion": "2020-07-10-preview",
+      "operations": [],
+      "Resource": "Microsoft.Devices/iotHubs/privateEndpointConnections"
+    }
+  ],
+  "resourcelist": "Microsoft.Devices/IotHubs/certificates,Microsoft.Devices/iotHubs/privateEndpointConnections",
+  "jsonFilelist": [
+    "/specification/iothub/resource-manager/Microsoft.Devices/preview/2019-03-22-preview/iothub.json",
+    "/specification/iothub/resource-manager/Microsoft.Devices/preview/2020-07-10-preview/iothub.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "iothub",
+  "readmeFile": "/specification/iothub/resource-manager/readme.md",
+  "target": "terraform"
+}
