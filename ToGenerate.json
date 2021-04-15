@@ -1,0 +1,239 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2018-06-01",
+      "operations": [
+        {
+          "OperationId": "DataFlowDebugSession_AddDataFlow",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/datafactory/resource-manager/Microsoft.DataFactory/stable/2018-06-01/datafactory.json"
+        },
+        {
+          "OperationId": "Factories_CancelPipelineRun",
+          "version": "2017-09-01-preview",
+          "jsonFilePath": "/specification/datafactory/resource-manager/Microsoft.DataFactory/preview/2017-09-01-preview/datafactory.json"
+        },
+        {
+          "OperationId": "DataFlowDebugSession_Create",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/datafactory/resource-manager/Microsoft.DataFactory/stable/2018-06-01/datafactory.json"
+        },
+        {
+          "OperationId": "DataFlowDebugSession_Delete",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/datafactory/resource-manager/Microsoft.DataFactory/stable/2018-06-01/datafactory.json"
+        },
+        {
+          "OperationId": "DataFlowDebugSession_ExecuteCommand",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/datafactory/resource-manager/Microsoft.DataFactory/stable/2018-06-01/datafactory.json"
+        },
+        {
+          "OperationId": "Factories_GetDataPlaneAccess",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/datafactory/resource-manager/Microsoft.DataFactory/stable/2018-06-01/datafactory.json"
+        },
+        {
+          "OperationId": "ExposureControl_GetFeatureValueByFactory",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/datafactory/resource-manager/Microsoft.DataFactory/stable/2018-06-01/datafactory.json"
+        },
+        {
+          "OperationId": "Factories_GetGitHubAccessToken",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/datafactory/resource-manager/Microsoft.DataFactory/stable/2018-06-01/datafactory.json"
+        },
+        {
+          "OperationId": "PipelineRuns_QueryByFactory",
+          "version": "2017-09-01-preview",
+          "jsonFilePath": "/specification/datafactory/resource-manager/Microsoft.DataFactory/preview/2017-09-01-preview/datafactory.json"
+        },
+        {
+          "OperationId": "DataFlowDebugSession_QueryByFactory",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/datafactory/resource-manager/Microsoft.DataFactory/stable/2018-06-01/datafactory.json"
+        },
+        {
+          "OperationId": "ExposureControl_QueryFeatureValuesByFactory",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/datafactory/resource-manager/Microsoft.DataFactory/stable/2018-06-01/datafactory.json"
+        }
+      ],
+      "Resource": "Microsoft.DataFactory/factories"
+    },
+    {
+      "APIVersion": "2018-06-01",
+      "operations": [
+        {
+          "OperationId": "DataFlows_ListByFactory",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/datafactory/resource-manager/Microsoft.DataFactory/stable/2018-06-01/datafactory.json"
+        },
+        {
+          "OperationId": "DataFlows_Delete",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/datafactory/resource-manager/Microsoft.DataFactory/stable/2018-06-01/datafactory.json"
+        },
+        {
+          "OperationId": "DataFlows_Get",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/datafactory/resource-manager/Microsoft.DataFactory/stable/2018-06-01/datafactory.json"
+        },
+        {
+          "OperationId": "DataFlows_CreateOrUpdate",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/datafactory/resource-manager/Microsoft.DataFactory/stable/2018-06-01/datafactory.json"
+        }
+      ],
+      "Resource": "Microsoft.DataFactory/factories/dataflows"
+    },
+    {
+      "APIVersion": "2018-06-01",
+      "operations": [
+        {
+          "OperationId": "IntegrationRuntimeObjectMetadata_Get",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/datafactory/resource-manager/Microsoft.DataFactory/stable/2018-06-01/datafactory.json"
+        },
+        {
+          "OperationId": "IntegrationRuntimeObjectMetadata_Refresh",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/datafactory/resource-manager/Microsoft.DataFactory/stable/2018-06-01/datafactory.json"
+        }
+      ],
+      "Resource": "Microsoft.DataFactory/factories/integrationRuntimes"
+    },
+    {
+      "APIVersion": "2018-06-01",
+      "operations": [
+        {
+          "OperationId": "ManagedVirtualNetworks_ListByFactory",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/datafactory/resource-manager/Microsoft.DataFactory/stable/2018-06-01/datafactory.json"
+        },
+        {
+          "OperationId": "ManagedVirtualNetworks_Get",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/datafactory/resource-manager/Microsoft.DataFactory/stable/2018-06-01/datafactory.json"
+        },
+        {
+          "OperationId": "ManagedVirtualNetworks_CreateOrUpdate",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/datafactory/resource-manager/Microsoft.DataFactory/stable/2018-06-01/datafactory.json"
+        }
+      ],
+      "Resource": "Microsoft.DataFactory/factories/managedVirtualNetworks"
+    },
+    {
+      "APIVersion": "2018-06-01",
+      "operations": [
+        {
+          "OperationId": "ManagedPrivateEndpoints_ListByFactory",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/datafactory/resource-manager/Microsoft.DataFactory/stable/2018-06-01/datafactory.json"
+        },
+        {
+          "OperationId": "ManagedPrivateEndpoints_Delete",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/datafactory/resource-manager/Microsoft.DataFactory/stable/2018-06-01/datafactory.json"
+        },
+        {
+          "OperationId": "ManagedPrivateEndpoints_Get",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/datafactory/resource-manager/Microsoft.DataFactory/stable/2018-06-01/datafactory.json"
+        },
+        {
+          "OperationId": "managedPrivateEndpoints_CreateOrUpdate",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/datafactory/resource-manager/Microsoft.DataFactory/stable/2018-06-01/datafactory.json"
+        }
+      ],
+      "Resource": "Microsoft.DataFactory/factories/managedVirtualNetworks/managedPrivateEndpoints"
+    },
+    {
+      "APIVersion": "2017-09-01-preview",
+      "operations": [
+        {
+          "OperationId": "ActivityRuns_ListByPipelineRun",
+          "version": "2017-09-01-preview",
+          "jsonFilePath": "/specification/datafactory/resource-manager/Microsoft.DataFactory/preview/2017-09-01-preview/datafactory.json"
+        }
+      ],
+      "Resource": "Microsoft.DataFactory/factories/pipelineruns/activityruns"
+    },
+    {
+      "APIVersion": "2018-06-01",
+      "operations": [
+        {
+          "OperationId": "privateEndPointConnections_ListByFactory",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/datafactory/resource-manager/Microsoft.DataFactory/stable/2018-06-01/datafactory.json"
+        }
+      ],
+      "Resource": "Microsoft.DataFactory/factories/privateEndPointConnections"
+    },
+    {
+      "APIVersion": "2018-06-01",
+      "operations": [
+        {
+          "OperationId": "PrivateEndpointConnection_Delete",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/datafactory/resource-manager/Microsoft.DataFactory/stable/2018-06-01/datafactory.json"
+        },
+        {
+          "OperationId": "PrivateEndpointConnection_Get",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/datafactory/resource-manager/Microsoft.DataFactory/stable/2018-06-01/datafactory.json"
+        },
+        {
+          "OperationId": "PrivateEndpointConnection_CreateOrUpdate",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/datafactory/resource-manager/Microsoft.DataFactory/stable/2018-06-01/datafactory.json"
+        }
+      ],
+      "Resource": "Microsoft.DataFactory/factories/privateEndpointConnections"
+    },
+    {
+      "APIVersion": "2018-06-01",
+      "operations": [
+        {
+          "OperationId": "privateLinkResources_Get",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/datafactory/resource-manager/Microsoft.DataFactory/stable/2018-06-01/datafactory.json"
+        }
+      ],
+      "Resource": "Microsoft.DataFactory/factories/privateLinkResources"
+    },
+    {
+      "APIVersion": "2017-09-01-preview",
+      "operations": [
+        {
+          "OperationId": "Triggers_ListRuns",
+          "version": "2017-09-01-preview",
+          "jsonFilePath": "/specification/datafactory/resource-manager/Microsoft.DataFactory/preview/2017-09-01-preview/datafactory.json"
+        }
+      ],
+      "Resource": "Microsoft.DataFactory/factories/triggers/triggerruns"
+    },
+    {
+      "APIVersion": "2018-06-01",
+      "operations": [
+        {
+          "OperationId": "TriggerRuns_Rerun",
+          "version": "2018-06-01",
+          "jsonFilePath": "/specification/datafactory/resource-manager/Microsoft.DataFactory/stable/2018-06-01/datafactory.json"
+        }
+      ],
+      "Resource": "Microsoft.DataFactory/factories/triggers/triggerRuns"
+    }
+  ],
+  "resourcelist": "Microsoft.DataFactory/factories,Microsoft.DataFactory/factories/dataflows,Microsoft.DataFactory/factories/integrationRuntimes,Microsoft.DataFactory/factories/managedVirtualNetworks,Microsoft.DataFactory/factories/managedVirtualNetworks/managedPrivateEndpoints,Microsoft.DataFactory/factories/pipelineruns/activityruns,Microsoft.DataFactory/factories/privateEndPointConnections,Microsoft.DataFactory/factories/privateEndpointConnections,Microsoft.DataFactory/factories/privateLinkResources,Microsoft.DataFactory/factories/triggers/triggerruns,Microsoft.DataFactory/factories/triggers/triggerRuns",
+  "jsonFilelist": [
+    "/specification/datafactory/resource-manager/Microsoft.DataFactory/stable/2018-06-01/datafactory.json",
+    "/specification/datafactory/resource-manager/Microsoft.DataFactory/preview/2017-09-01-preview/datafactory.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "datafactory",
+  "readmeFile": "/specification/datafactory/resource-manager/readme.md",
+  "target": "clicore"
+}
