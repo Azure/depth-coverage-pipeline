@@ -1,0 +1,17 @@
+AutoRest code generation utility [cli version: 3.1.5; node: v14.16.1, max-memory: 2048 MB]
+(C) 2018 Microsoft Corporation.
+https://aka.ms/autorest
+   Loading AutoRest core      '/home/vsts/.autorest/@autorest_core@3.0.6219/node_modules/@autorest/core/dist' (3.0.6219)
+   Installing AutoRest extension '@autorest/terraform' (https://terraformcodegen.blob.core.windows.net/terraformcodegen/autorest-terraform-latest.tgz)
+   Installed AutoRest extension '@autorest/terraform' (https://terraformcodegen.blob.core.windows.net/terraformcodegen/autorest-terraform-latest.tgz->2.0.0)
+   Installing AutoRest extension '@autorest/modelerfour' (4.17.1)
+   Installed AutoRest extension '@autorest/modelerfour' (4.17.1->4.17.1)
+ERROR: Schema violation: Additional properties not allowed: x-ms-client-default
+    - file:///home/vsts/work/1/s/azure-rest-api-specs/specification/keyvault/resource-manager/Microsoft.KeyVault/stable/2019-09-01/keyvault.json:1:1
+ERROR: Schema violation: Data does not match any schemas from 'oneOf'
+    - file:///home/vsts/work/1/s/azure-rest-api-specs/specification/keyvault/resource-manager/Microsoft.KeyVault/stable/2019-09-01/keyvault.json:1:1
+ERROR: Schema violation: Additional properties not allowed: x-ms-client-default
+    - file:///home/vsts/work/1/s/azure-rest-api-specs/specification/keyvault/resource-manager/Microsoft.KeyVault/stable/2019-09-01/keyvault.json:1:1
+ERROR: Schema violation: Data does not match any schemas from 'oneOf'
+    - file:///home/vsts/work/1/s/azure-rest-api-specs/specification/keyvault/resource-manager/Microsoft.KeyVault/stable/2019-09-01/keyvault.json:1:1
+Process() cancelled due to failure 
