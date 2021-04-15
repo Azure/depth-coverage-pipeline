@@ -1,0 +1,135 @@
+AutoRest code generation utility [cli version: 3.1.5; node: v14.16.1, max-memory: 2048 MB]
+(C) 2018 Microsoft Corporation.
+https://aka.ms/autorest
+   Loading AutoRest core      '/home/vsts/.autorest/@autorest_core@3.0.6219/node_modules/@autorest/core/dist' (3.0.6219)
+   Installing AutoRest extension '@autorest/terraform' (https://terraformcodegen.blob.core.windows.net/terraformcodegen/autorest-terraform-latest.tgz)
+   Installed AutoRest extension '@autorest/terraform' (https://terraformcodegen.blob.core.windows.net/terraformcodegen/autorest-terraform-latest.tgz->2.0.0)
+   Installing AutoRest extension '@autorest/modelerfour' (4.17.1)
+   Installed AutoRest extension '@autorest/modelerfour' (4.17.1->4.17.1)
+
+WARNING (PreCheck/SchemaMissingType): The schema 'SubResource' with an undefined type and 'allOf'/'anyOf'/'oneOf' is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'ManagedIntegrationRuntimeOperationResult' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'ManagedIntegrationRuntimeNode' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'ManagedIntegrationRuntimeError' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'SelfHostedIntegrationRuntimeNode' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'IntegrationRuntimeResource' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'IntegrationRuntimeStatusResponse' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'LibraryResource' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'SubResource' with an undefined type and 'allOf'/'anyOf'/'oneOf' is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'MetadataSyncConfig-properties' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'GeoBackupPolicyProperties' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'GeoBackupPolicy' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'GeoBackupPolicyListResult' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'TopQueries' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'QueryStatistic' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'QueryInterval' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'QueryMetric' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'TopQueriesListResult' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'ReplicationLinkProperties' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'ReplicationLink' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'ReplicationLinkListResult' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'TransparentDataEncryptionProperties' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'TransparentDataEncryption' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'SqlPoolUsage' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'SqlPoolUsageListResult' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'DataMaskingPolicyProperties' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'DataMaskingPolicy' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'DataMaskingRule' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'DataMaskingRuleProperties' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'DataMaskingRuleListResult' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'ServerUsage' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'ServerUsageListResult' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'ManagedIdentitySqlControlSettingsModel-properties' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'RestorableDroppedSqlPoolProperties' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'RestorableDroppedSqlPool' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'RestorableDroppedSqlPoolListResult' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'Resource' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'AzureEntityResource' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'TrackedResource' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'ProxyResource' with an undefined type and 'allOf'/'anyOf'/'oneOf' is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'ErrorDetail' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'ErrorResponse' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'ErrorAdditionalInfo' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'WorkspaceSubResource' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'Resource' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'AzureEntityResource' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'TrackedResource' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'ProxyResource' with an undefined type and 'allOf'/'anyOf'/'oneOf' is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'PrivateEndpointConnectionForPrivateLinkHubBasic' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/SchemaMissingType): The schema 'PrivateEndpointConnectionForPrivateLinkHub_ResourceCollectionResponse' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
+
+WARNING (PreCheck/CheckDuplicateSchemas): Checking for duplicate schemas, this could take a (long) while.  Run with --verbose for more detail.
+
+WARNING (PreCheck/DuplicateSchema): Duplicate Schema named PrivateEndpointConnectionForPrivateLinkHubBasic -- properties.id.description: "identifier" => <none>,properties.id.readOnly: true => <none>,properties.id.$ref: undefined => "#/components/schemas/schemas:1208",properties.properties.description: "Properties of private endpoint connection for private link hub" => <none>,properties.properties.x-ms-client-flatten: true => <none> 
+
+WARNING (PreCheck/PropertyRedeclarationWarning): Schema 'ReplicationLink' has a property 'type' that is already declared the parent schema 'Resource' but isn't significantly different. The property has been removed from ReplicationLink
+(node:2273) UnhandledPromiseRejectionWarning: Error: ENAMETOOLONG: name too long, open '/tmp/autorest-A1YHY3/mem-361-file-3A-2F-2F-2Fhome-2Fvsts-2Fwork-2F1-2Fs-2Fazure-rest-api-specs-2Fspecification-2Fsynapse-2Fresource-manager-2FMicrosoft.Synapse-2Fstable-2F2021-03-01-2Fexamples-2FCreateOrUpdateSqlPoolVulnerabilityAssessmentWithContainerSasKeyAndMinParameters.json'
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:2273) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 237)
+(node:2273) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+(node:2273) UnhandledPromiseRejectionWarning: Error: ENAMETOOLONG: name too long, open '/tmp/autorest-A1YHY3/mem-402-file-3A-2F-2F-2Fhome-2Fvsts-2Fwork-2F1-2Fs-2Fazure-rest-api-specs-2Fspecification-2Fsynapse-2Fresource-manager-2FMicrosoft.Synapse-2Fstable-2F2021-03-01-2Fexamples-2FCreateWorkspaceManagedSqlServerExetendedBlobAuditingSettingsWithMinParameters.json'
+(node:2273) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 238)
+WARNING: Please add the predefined profile: microsoft.synapse/workspaces/sqlpools/metadatasync.
+WARNING: Please add the predefined profile: microsoft.synapse/workspaces/sqlpools/maintenancewindows.
+WARNING: Please add the predefined profile: microsoft.synapse/workspaces/sqlpools/schemas.
+WARNING: Please add the predefined profile: microsoft.synapse/workspaces/sqlpools/schemas/tables.
+WARNING: Please add the predefined profile: microsoft.synapse/workspaces/sqlpools/schemas/tables/columns.
+WARNING: Please add the predefined profile: microsoft.synapse/workspaces/sqlpools/vulnerabilityassessments/rules.
+WARNING: Please add the predefined profile: microsoft.projectpurview/accounts.
+WARNING: Please add the predefined profile: microsoft.synapse/workspaces/administrators.
+WARNING: Please add the predefined profile: microsoft.synapse/workspaces/sqladministrators.
+WARNING: Please add the predefined profile: microsoft.synapse/workspaces/managedidentitysqlcontrolsettings.
+
+WARNING (PreNamer/DeduplicateName): Deduplicating schema name: 'SecurityAlertPolicyName' -> 'SecurityAlertPolicyNameAutoGenerated'
+
+WARNING (PreNamer/DeduplicateName): Deduplicating schema name: 'PrivateEndpointConnectionForPrivateLinkHubBasic' -> 'PrivateEndpointConnectionForPrivateLinkHubBasicAutoGenerated'
+[84.13 s] Generation Complete
