@@ -1,0 +1,24 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2015-08-31-preview",
+      "operations": [
+        {
+          "OperationId": "SystemAssignedIdentities_GetByScope",
+          "version": "2015-08-31-preview",
+          "jsonFilePath": "/specification/msi/resource-manager/Microsoft.ManagedIdentity/preview/2015-08-31-preview/ManagedIdentity.json"
+        }
+      ],
+      "Resource": "Microsoft.ManagedIdentity/identities"
+    }
+  ],
+  "resourcelist": "Microsoft.ManagedIdentity/identities",
+  "jsonFilelist": [
+    "/specification/msi/resource-manager/Microsoft.ManagedIdentity/preview/2015-08-31-preview/ManagedIdentity.json",
+    "/specification/msi/resource-manager/Microsoft.ManagedIdentity/stable/2018-11-30/ManagedIdentity.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "msi",
+  "readmeFile": "/specification/msi/resource-manager/readme.md",
+  "target": "clicore"
+}
