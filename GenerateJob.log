@@ -8,4 +8,4 @@ https://aka.ms/autorest
    Installed AutoRest extension '@autorest/modelerfour' (4.17.1->4.17.1)
 
 WARNING (PreCheck/CheckDuplicateSchemas): Checking for duplicate schemas, this could take a (long) while.  Run with --verbose for more detail.
-[54.18 s] Generation Complete
+[46.63 s] Generation Complete
