@@ -1,0 +1,17 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2021-01-01",
+      "operations": [],
+      "Resource": "Microsoft.PolicyInsights/attestations"
+    }
+  ],
+  "resourcelist": "Microsoft.PolicyInsights/attestations",
+  "jsonFilelist": [
+    "/specification/policyinsights/resource-manager/Microsoft.PolicyInsights/stable/2021-01-01/attestations.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "policyinsights",
+  "readmeFile": "/specification/policyinsights/resource-manager/readme.md",
+  "target": "terraform"
+}
