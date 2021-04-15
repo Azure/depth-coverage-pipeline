@@ -1,0 +1,17 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2019-11-01",
+      "operations": [],
+      "Resource": "Microsoft.DataShare/accounts/shareSubscriptions"
+    }
+  ],
+  "resourcelist": "Microsoft.DataShare/accounts/shareSubscriptions",
+  "jsonFilelist": [
+    "/specification/datashare/resource-manager/Microsoft.DataShare/stable/2019-11-01/DataShare.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "datashare",
+  "readmeFile": "/specification/datashare/resource-manager/readme.md",
+  "target": "terraform"
+}
