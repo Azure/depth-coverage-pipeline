@@ -1,0 +1,105 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2019-10-01",
+      "operations": [
+        {
+          "OperationId": "ReservationRecommendationDetails_Get",
+          "version": "2019-10-01",
+          "jsonFilePath": "/specification/consumption/resource-manager/Microsoft.Consumption/stable/2019-10-01/consumption.json"
+        }
+      ],
+      "Resource": "Microsoft.Consumption/reservationRecommendationDetails"
+    },
+    {
+      "APIVersion": "2019-01-01",
+      "operations": [
+        {
+          "OperationId": "Budgets_List",
+          "version": "2019-01-01",
+          "jsonFilePath": "/specification/consumption/resource-manager/Microsoft.Consumption/stable/2019-01-01/consumption.json"
+        },
+        {
+          "OperationId": "Budgets_Delete",
+          "version": "2019-01-01",
+          "jsonFilePath": "/specification/consumption/resource-manager/Microsoft.Consumption/stable/2019-01-01/consumption.json"
+        },
+        {
+          "OperationId": "Budgets_Get",
+          "version": "2019-01-01",
+          "jsonFilePath": "/specification/consumption/resource-manager/Microsoft.Consumption/stable/2019-01-01/consumption.json"
+        },
+        {
+          "OperationId": "Budgets_CreateOrUpdate",
+          "version": "2019-01-01",
+          "jsonFilePath": "/specification/consumption/resource-manager/Microsoft.Consumption/stable/2019-01-01/consumption.json"
+        },
+        {
+          "OperationId": "Budgets_DeleteByResourceGroupName",
+          "version": "2018-01-31",
+          "jsonFilePath": "/specification/consumption/resource-manager/Microsoft.Consumption/stable/2018-01-31/consumption.json"
+        }
+      ],
+      "Resource": "Microsoft.Consumption/budgets"
+    },
+    {
+      "APIVersion": "2019-01-01",
+      "operations": [
+        {
+          "OperationId": "Marketplaces_List",
+          "version": "2019-01-01",
+          "jsonFilePath": "/specification/consumption/resource-manager/Microsoft.Consumption/stable/2019-01-01/consumption.json"
+        }
+      ],
+      "Resource": "Microsoft.Consumption/marketplaces"
+    },
+    {
+      "APIVersion": "2019-10-01",
+      "operations": [
+        {
+          "OperationId": "ReservationRecommendations_List",
+          "version": "2019-10-01",
+          "jsonFilePath": "/specification/consumption/resource-manager/Microsoft.Consumption/stable/2019-10-01/consumption.json"
+        }
+      ],
+      "Resource": "Microsoft.Consumption/reservationRecommendations"
+    },
+    {
+      "APIVersion": "2019-10-01",
+      "operations": [
+        {
+          "OperationId": "Tags_Get",
+          "version": "2019-10-01",
+          "jsonFilePath": "/specification/consumption/resource-manager/Microsoft.Consumption/stable/2019-10-01/consumption.json"
+        }
+      ],
+      "Resource": "Microsoft.Consumption/tags"
+    },
+    {
+      "APIVersion": "2018-08-31",
+      "operations": [
+        {
+          "OperationId": "Forecasts_List",
+          "version": "2018-08-31",
+          "jsonFilePath": "/specification/consumption/resource-manager/Microsoft.Consumption/stable/2018-08-31/consumption.json"
+        }
+      ],
+      "Resource": "Microsoft.Consumption/forecasts"
+    }
+  ],
+  "resourcelist": "Microsoft.Consumption/reservationRecommendationDetails,Microsoft.Consumption/budgets,Microsoft.Consumption/marketplaces,Microsoft.Consumption/reservationRecommendations,Microsoft.Consumption/tags,Microsoft.Consumption/forecasts",
+  "jsonFilelist": [
+    "/specification/consumption/resource-manager/Microsoft.Consumption/stable/2019-10-01/consumption.json",
+    "/specification/consumption/resource-manager/Microsoft.Consumption/stable/2019-01-01/consumption.json",
+    "/specification/consumption/resource-manager/Microsoft.Consumption/preview/2019-04-01-preview/consumption.json",
+    "/specification/consumption/resource-manager/Microsoft.Consumption/stable/2019-05-01/consumption.json",
+    "/specification/consumption/resource-manager/Microsoft.Consumption/stable/2019-11-01/consumption.json",
+    "/specification/consumption/resource-manager/Microsoft.Consumption/stable/2018-08-31/consumption.json",
+    "/specification/consumption/resource-manager/Microsoft.Consumption/stable/2018-10-01/consumption.json",
+    "/specification/consumption/resource-manager/Microsoft.Consumption/stable/2018-01-31/consumption.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "consumption",
+  "readmeFile": "/specification/consumption/resource-manager/readme.md",
+  "target": "clicore"
+}
