@@ -1,0 +1,53 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2020-10-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.Compute/cloudServices",
+      "tag": "package-2020-12-01"
+    },
+    {
+      "APIVersion": "2020-10-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.Compute/cloudServices/roleInstances",
+      "tag": "package-2020-12-01"
+    },
+    {
+      "APIVersion": "2020-09-30",
+      "operations": [],
+      "Resource": "Microsoft.Compute/diskAccesses/privateEndpointConnections",
+      "tag": "package-2020-12-01"
+    },
+    {
+      "APIVersion": "2020-06-01",
+      "operations": [],
+      "Resource": "Microsoft.Compute/virtualMachines/runCommands",
+      "tag": "package-2020-12-01"
+    },
+    {
+      "APIVersion": "2019-07-01",
+      "operations": [],
+      "Resource": "Microsoft.Compute/virtualMachineScaleSets/virtualMachines/extensions",
+      "tag": "package-2020-12-01"
+    },
+    {
+      "APIVersion": "2020-12-01",
+      "operations": [],
+      "Resource": "Microsoft.Compute/virtualMachineScaleSets/virtualMachines/runCommands",
+      "tag": "package-2020-12-01"
+    }
+  ],
+  "resourcelist": "Microsoft.Compute/cloudServices,Microsoft.Compute/cloudServices/roleInstances,Microsoft.Compute/diskAccesses/privateEndpointConnections,Microsoft.Compute/virtualMachines/runCommands,Microsoft.Compute/virtualMachineScaleSets/virtualMachines/extensions,Microsoft.Compute/virtualMachineScaleSets/virtualMachines/runCommands",
+  "jsonFilelist": [
+    "/specification/compute/resource-manager/Microsoft.Compute/preview/2020-10-01-preview/cloudService.json",
+    "/specification/compute/resource-manager/Microsoft.Compute/stable/2020-09-30/disk.json",
+    "/specification/compute/resource-manager/Microsoft.Compute/stable/2020-06-01/runCommands.json",
+    "/specification/compute/resource-manager/Microsoft.Compute/stable/2019-07-01/compute.json",
+    "/specification/compute/resource-manager/Microsoft.Compute/stable/2020-12-01/runCommands.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "compute",
+  "readmeFile": "/specification/compute/resource-manager/readme.md",
+  "target": "terraform",
+  "tag": "package-2020-12-01"
+}
