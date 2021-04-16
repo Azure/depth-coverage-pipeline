@@ -30,6 +30,9 @@ steps:
     resources=$(cat $(Pipeline.Workspace)/variables/variables/RESOURCES)
     echo "##vso[task.setvariable variable=RESOURCES]$resources"
 
+    onboardtype=$(cat $(Pipeline.Workspace)/variables/variables/OnboardType)
+    echo "##vso[task.setvariable variable=OnboardType]$onboardtype"
+
     af=$(cat $(Pipeline.Workspace)/variables/variables/Artifact)
     if [ -f "$(Pipeline.Workspace)/sdkvariables/sdkvariables/Artifact" ]; then
       af=$(cat $(Pipeline.Workspace)/sdkvariables/sdkvariables/Artifact)
@@ -47,6 +50,7 @@ steps:
     echo $tag
     echo $af
     echo $package
+    echo $onboardtype
     echo 'end' 
   displayName: 'set variable'
   condition: always()
