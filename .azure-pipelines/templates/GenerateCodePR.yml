@@ -39,24 +39,24 @@ steps:
     base="master"
     sdk="";
     if [ "$sdktarget" == "terraform" ]; then
-        org=$(TF_ORG)
-        repo="terraform-provider-azurerm"
-        sdk="terraform"
-        base="pipeline"
+      org=$(TF_ORG)
+      repo="terraform-provider-azurerm"
+      sdk="terraform"
+      base="pipeline"
     fi
 
     if [ "$sdktarget" == "clicore" ]; then
-        org=$(CLI_ORG)
-        repo="azure-cli"
-        base="dev"
-        sdk="clicore"
+      org=$(CLI_ORG)
+      repo="azure-cli"
+      base="dev"
+      sdk="clicore"
     fi
 
     if [ "$sdktarget" == "cliextension" ]; then
-        org=$(CLI_ORG)
-        repo="azure-cli-extensions"
-        base="master"
-        sdk="cliextension"
+      org=$(CLI_ORG)
+      repo="azure-cli-extensions"
+      base="master"
+      sdk="cliextension"
     fi
     
     codePR=$(curl -X POST -H "Content-Type: application/json" http://$(CodegenApp_Server)/DepthCoverage/generateCodePR -d '{"token":"$(PIPELINE_TOKEN)", "org":"'"$org"'", "repo":"'"$repo"'", "title":"{depth coverage, not merge} pull request of $(ResourceProvider)", "branch":"depth-code-$(TARGET)-$(ResourceProvider)", "base":"'"$base"'"}')
