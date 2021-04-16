@@ -4,8 +4,8 @@ steps:
     echo $pwd
     mkdir generated
     az login --service-principal -u $(SERVICE_PRINCIPE_ID) -p $(SERVICE_PRINCIPE_SECRET) --tenant $(SERVICE_PRINCIPE_TENANT)
-    az storage blob download -c depthcoverage -f $(TARGET)-$(ResourceProvider)-generated.tar.gz -n $(TARGET)/$(TARGET)-$(ResourceProvider)-generated.tar.gz --subscription $(SERVICE_PRINCIPE_SUBSCRIPTION) --account-name=depthcoverage
-    tar -xzvf $(TARGET)-$(ResourceProvider)-generated.tar.gz -C generated/
+    az storage blob download -c depthcoverage -f $(OnboardType)-$(TARGET)-$(ResourceProvider)-generated.tar.gz -n $(OnboardType)-$(TARGET)/$(TARGET)-$(ResourceProvider)-generated.tar.gz --subscription $(SERVICE_PRINCIPE_SUBSCRIPTION) --account-name=depthcoverage
+    tar -xzvf $(OnboardType)-$(TARGET)-$(ResourceProvider)-generated.tar.gz -C generated/
     ls -l generated/
   displayName: 'Before $(TASK_KEY)'
   # env: { 
