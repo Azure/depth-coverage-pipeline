@@ -320,4 +320,4 @@ WARNING: Please add the predefined profile: microsoft.web/staticsites/config.
 WARNING: Please add the predefined profile: microsoft.web/hostingenvironments/multirolepools.
 WARNING: Please add the predefined profile: microsoft.web/serverfarms/virtualnetworkconnections.
 WARNING: Please add the predefined profile: microsoft.web/serverfarms/virtualnetworkconnections.
-[244.78 s] Generation Complete
+[179.98 s] Generation Complete
