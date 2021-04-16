@@ -160,4 +160,4 @@ WARNING: Please add the predefined profile: microsoft.documentdb/databaseaccount
 WARNING: Please add the predefined profile: microsoft.documentdb/databaseaccounts/cassandrakeyspaces/tables/throughputsettings.
 WARNING: Please add the predefined profile: microsoft.documentdb/databaseaccounts/gremlindatabases/throughputsettings.
 WARNING: Please add the predefined profile: microsoft.documentdb/databaseaccounts/gremlindatabases/graphs/throughputsettings.
-[60.85 s] Generation Complete
+[57.09 s] Generation Complete
