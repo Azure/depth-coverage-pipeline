@@ -6,6 +6,10 @@ https://aka.ms/autorest
    Installed AutoRest extension '@autorest/terraform' (https://terraformcodegen.blob.core.windows.net/terraformcodegen/autorest-terraform-latest.tgz->2.0.0)
    Installing AutoRest extension '@autorest/modelerfour' (4.17.1)
    Installed AutoRest extension '@autorest/modelerfour' (4.17.1->4.17.1)
+(node:2578) UnhandledPromiseRejectionWarning: Error: ENAMETOOLONG: name too long, open '/tmp/autorest-d1gDZ9/mem-330-file-3A-2F-2F-2Fhome-2Fvsts-2Fwork-2F1-2Fs-2Fazure-rest-api-specs-2Fspecification-2Fcompute-2Fresource-manager-2FMicrosoft.Compute-2Fstable-2F2020-12-01-2Fexamples-2FCreateAWindowsVmWithPatchSettingModeOfAutomaticByPlatformAndEnableHotPatchingTrue.json'
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:2578) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 270)
+(node:2578) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
 
 WARNING (PreCheck/SchemaMissingType): The schema 'ComputeOperationListResult' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
 
@@ -220,10 +224,6 @@ WARNING (PreCheck/SchemaMissingType): The schema 'VirtualMachineIdentity' with a
 WARNING (PreCheck/SchemaMissingType): The schema 'MaintenanceRedeployStatus' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
 
 WARNING (PreCheck/SchemaMissingType): The schema 'VirtualMachineInstanceView' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
-(node:2608) UnhandledPromiseRejectionWarning: Error: ENAMETOOLONG: name too long, open '/tmp/autorest-yRUsXo/mem-330-file-3A-2F-2F-2Fhome-2Fvsts-2Fwork-2F1-2Fs-2Fazure-rest-api-specs-2Fspecification-2Fcompute-2Fresource-manager-2FMicrosoft.Compute-2Fstable-2F2020-12-01-2Fexamples-2FCreateAWindowsVmWithPatchSettingModeOfAutomaticByPlatformAndEnableHotPatchingTrue.json'
-(Use `node --trace-warnings ...` to show where the warning was created)
-(node:2608) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 270)
-(node:2608) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
 
 WARNING (PreCheck/SchemaMissingType): The schema 'VirtualMachineProperties' with an undefined type and decalared properties is a bit ambigious. This has been auto-corrected to 'type:object'
 
@@ -726,4 +726,4 @@ WARNING: Please add the predefined profile: microsoft.compute/locations/publishe
 WARNING: Please add the predefined profile: microsoft.compute/locations/publishers/artifacttypes/offers/skus.
 WARNING: Please add the predefined profile: microsoft.compute/locations/publishers/artifacttypes/offers/skus/versions.
 WARNING: Please add the predefined profile: microsoft.compute/diskencryptionset.
-[98.33 s] Generation Complete
+[122.49 s] Generation Complete
