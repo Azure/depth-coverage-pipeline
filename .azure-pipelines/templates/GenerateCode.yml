@@ -155,6 +155,7 @@ steps:
     fi
   displayName: 'Generate Example'
 - bash: |
+    set -x
     echo $pwd
     sdktarget=$(TARGET)
     codefolder="";
@@ -165,14 +166,24 @@ steps:
       echo "TAG:$(TAG)"
       echo "resources:$(RESOURCES)"
       tag=$(TAG)
-      schema-file-path=""
+      schemafilepath=""
       if [ -f "$(Pipeline.Workspace)/s/azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/schema.json" ]; then
-        schema-file-path="$(Pipeline.Workspace)/s/azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/schema.json"
+        schemafilepath="$(Pipeline.Workspace)/s/azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/schema.json"
       fi
       if [ "$tag" == "" ]; then
-        autorest --version=3.0.6219 --terraform --use=https://terraformcodegen.blob.core.windows.net/terraformcodegen/autorest-terraform-latest.tgz --schema-file-path="$schema-file-path" --resources=$(RESOURCES) --generate-extra-acctest=true --terraform-output-folder=./generated ./azure-rest-api-specs/$(README_FILE) 1>$(TASK_KEY).log 2>&1
+        if [ "$schemafilepath" == "" ]; then
+          autorest --version=3.0.6219 --terraform --use=https://terraformcodegen.blob.core.windows.net/terraformcodegen/autorest-terraform-latest.tgz --resources=$(RESOURCES) --generate-extra-acctest=true --terraform-output-folder=./generated ./azure-rest-api-specs/$(README_FILE) 1>$(TASK_KEY).log 2>&1
+        else
+          autorest --version=3.0.6219 --terraform --use=https://terraformcodegen.blob.core.windows.net/terraformcodegen/autorest-terraform-latest.tgz --schema-file-path="$schemafilepath" --resources=$(RESOURCES) --generate-extra-acctest=true --terraform-output-folder=./generated ./azure-rest-api-specs/$(README_FILE) 1>$(TASK_KEY).log 2>&1
+        fi
+        # autorest --version=3.0.6219 --terraform --use=https://terraformcodegen.blob.core.windows.net/terraformcodegen/autorest-terraform-latest.tgz --schema-file-path="$schemafilepath" --resources=$(RESOURCES) --generate-extra-acctest=true --terraform-output-folder=./generated ./azure-rest-api-specs/$(README_FILE) 1>$(TASK_KEY).log 2>&1
       else
-        autorest --version=3.0.6219 --terraform --use=https://terraformcodegen.blob.core.windows.net/terraformcodegen/autorest-terraform-latest.tgz --schema-file-path="$schema-file-path" --resources=$(RESOURCES) --tag=$(TAG) --generate-extra-acctest=true --terraform-output-folder=./generated ./azure-rest-api-specs/$(README_FILE) 1>$(TASK_KEY).log 2>&1
+        if [ "$schemafilepath" == "" ]; then
+          autorest --version=3.0.6219 --terraform --use=https://terraformcodegen.blob.core.windows.net/terraformcodegen/autorest-terraform-latest.tgz --resources=$(RESOURCES) --tag=$(TAG) --generate-extra-acctest=true --terraform-output-folder=./generated ./azure-rest-api-specs/$(README_FILE) 1>$(TASK_KEY).log 2>&1
+        else
+          autorest --version=3.0.6219 --terraform --use=https://terraformcodegen.blob.core.windows.net/terraformcodegen/autorest-terraform-latest.tgz --schema-file-path="$schemafilepath" --resources=$(RESOURCES) --tag=$(TAG) --generate-extra-acctest=true --terraform-output-folder=./generated ./azure-rest-api-specs/$(README_FILE) 1>$(TASK_KEY).log 2>&1
+        fi
+        # autorest --version=3.0.6219 --terraform --use=https://terraformcodegen.blob.core.windows.net/terraformcodegen/autorest-terraform-latest.tgz --schema-file-path="$schemafilepath" --resources=$(RESOURCES) --tag=$(TAG) --generate-extra-acctest=true --terraform-output-folder=./generated ./azure-rest-api-specs/$(README_FILE) 1>$(TASK_KEY).log 2>&1
       fi
     fi
 
