@@ -351,6 +351,33 @@ stages:
         cd $(Pipeline.Workspace)/s
         codePR=$(CODE_PULLREQUEST)
 
+        sdktarget=$(TARGET)
+
+        org=""
+        repo=""
+        base="master"
+        sdk="";
+        if [ "$sdktarget" == "terraform" ]; then
+          org=$(TF_ORG)
+          repo="terraform-provider-azurerm"
+          sdk="terraform"
+          base="pipeline"
+        fi
+
+        if [ "$sdktarget" == "clicore" ]; then
+          org=$(CLI_ORG)
+          repo="azure-cli"
+          base="dev"
+          sdk="clicore"
+        fi
+
+        if [ "$sdktarget" == "cliextension" ]; then
+          org=$(CLI_ORG)
+          repo="azure-cli-extensions"
+          base="master"
+          sdk="cliextension"
+        fi
+
         triggerPR="https://github.com/Azure/depth-coverage-pipeline/pull/$(System.PullRequest.PullRequestNumber)"
         submitURL="http://$(CodegenApp_Server)/DepthCoverage/RPs/$(ResourceProvider)/SDKs/$sdk/submit?token=$(PIPELINE_TOKEN)&swaggerorg=$(Swagger_ORG)&org=$org"
         customizeURL="http://$(CodegenApp_Server)/DepthCoverage/RPs/$(ResourceProvider)/SDKs/$sdk/Customize?triggerPR=$triggerPR&token=$(PIPELINE_TOKEN)&codePR=$codePR&org=$org"
