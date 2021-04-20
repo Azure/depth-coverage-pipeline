@@ -96,7 +96,7 @@ steps:
        autorest --version=3.0.6271 --use=autorest-autoconfig@latest --target-mode=core ./azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/readme.md --resource-file=./$(RESOURCE_MAP_FILE)
       else
         # cli-extension
-        autorest --version=3.0.6271 --use=autorest-autoconfig@latest --target-mode=core ./azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/readme.md --resource-file=./$(RESOURCE_MAP_FILE) --package-$(ResourceProvider)
+        autorest --version=3.0.6271 --use=autorest-autoconfig@latest ./azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/readme.md --resource-file=./$(RESOURCE_MAP_FILE) --package-$(ResourceProvider)
       fi
     fi
     

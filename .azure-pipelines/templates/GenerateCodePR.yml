@@ -60,6 +60,6 @@ steps:
     fi
     
     codePR=$(curl -X POST -H "Content-Type: application/json" http://$(CodegenApp_Server)/DepthCoverage/generateCodePR -d '{"token":"$(PIPELINE_TOKEN)", "org":"'"$org"'", "repo":"'"$repo"'", "title":"{$(OnboardType) coverage, not merge} pull request of $(ResourceProvider)", "branch":"$(OnboardType)-code-$(TARGET)-$(ResourceProvider)", "base":"'"$base"'"}')
-    echo $codePR
+    echo "codePR:$codePR"
     echo "##vso[task.setvariable variable=CODE_PULLREQUEST]$codePR"
   displayName: "Generate Code Pull Request"
