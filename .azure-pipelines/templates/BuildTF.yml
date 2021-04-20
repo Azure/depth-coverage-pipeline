@@ -46,18 +46,6 @@ steps:
     fi
   displayName: "build go-sdk"
   condition: eq(variables['TARGET'], 'terraform')
-# - bash: |
-#     DIR=./go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(ResourceProvider)
-#     if [ -d "$DIR" ]; then
-#       echo "$DIR exists."
-#       echo "##vso[task.setvariable variable=srcPackage]$(Package)$(prefix)"
-#       echo "$(srcPackage)"
-#       echo "$(prefix)"
-#     else
-#       echo "##vso[task.setvariable variable=srcPackage]$(Package)"
-#       cp -r ./generated/generated/* ./go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/
-#     fi
-#   displayName: "source package"
 - bash: |
     pwd
     ls -l
@@ -65,50 +53,50 @@ steps:
     sed -i -e 's/\r$//' ./scripts/bash/linter-scripts/*.sh
     cp ./scripts/bash/linter-scripts/*.sh ./go/src/github.com/terraform-providers/terraform-provider-azurerm/scripts/
 
-    echo "$(srcPackage)"
-    echo "$(prefix)"
     DIR=./go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(Package)
+
     if [ -d "$DIR" ]; then
-      echo "$DIR exists."
-      echo "##vso[task.setvariable variable=srcPackage]$(Package)$(prefix)"
-      cp -r ./generated/generated/$(Package) ./go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(Package)$(prefix)
-      bash ./scripts/bash/renameGeneratedCode.sh $(Pipeline.Workspace)/s/go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(Package)$(prefix) $(prefix) $(Pipeline.Workspace)/s/go/src/github.com/terraform-providers/terraform-provider-azurerm
+      rm -rf ./go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(Package)
     else
       echo "$DIR not exists."
-      echo "##vso[task.setvariable variable=srcPackage]$(Package)"
-      cp -r ./generated/generated/$(Package) ./go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/
-      ls -l ./go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(srcPackage)
-
-      cd ./go/src/github.com/terraform-providers/terraform-provider-azurerm
-      echo -e "\e[32m[$(date -u)] LOG:]: Change client.go and service.go."
-
-      CLIENT_IMPORT=`cat azurerm/internal/services/$(srcPackage)/terraform-configuration/configuration_client | sed -n 1p`
-      CLIENT_STRUCT=`cat azurerm/internal/services/$(srcPackage)/terraform-configuration/configuration_client | sed -n 2p`
-      CLIENT_NEW=`cat azurerm/internal/services/$(srcPackage)/terraform-configuration/configuration_client | sed -n 3p`
-      CLIENT_IMPORT_ORI="web \"github.com\/terraform-providers\/terraform-provider-azurerm\/azurerm\/internal\/services\/web\/client\""
-      CLIENT_STRUCT_ORI="*web.Client"
-      CLIENT_NEW_ORI="client.Web = web.NewClient(o)"
-      
-      SERVICE_IMPORT=`cat azurerm/internal/services/$(srcPackage)/terraform-configuration/configuration_services | sed -n 1p`
-      SERVICE_REGISTRATION=`cat azurerm/internal/services/$(srcPackage)/terraform-configuration/configuration_services | sed -n 2p`
-      SERVICE_IMPORT_ORI="\"github.com\/terraform-providers\/terraform-provider-azurerm\/azurerm\/internal\/services\/web\""
-      SERVICE_REGISTRATION_ORI="web.Registration{},"
-
-      cat azurerm/internal/clients/client.go | grep -q "/$(srcPackage)/"|echo $?
-      if cat azurerm/internal/clients/client.go | grep -q "/$(srcPackage)/"; then
-        cat azurerm/internal/clients/client.go | grep "/$(srcPackage)/"
-        PACKAGE_NAME_ORI=`cat azurerm/internal/clients/client.go | grep "/$(srcPackage)/" | awk '{print $1}'`
-        sed -i "s|^.*${PACKAGE_NAME_ORI} \"github.*$|${CLIENT_IMPORT}|" azurerm/internal/clients/client.go
-        sed -i "s/^.*\*${PACKAGE_NAME_ORI}\.Client.*$/${CLIENT_STRUCT}/" azurerm/internal/clients/client.go
-        sed -i "s/^.*${PACKAGE_NAME_ORI}\.NewClient(o).*$/${CLIENT_NEW}/" azurerm/internal/clients/client.go
-      else
-        sed -i "/$CLIENT_IMPORT_ORI/a $CLIENT_IMPORT" azurerm/internal/clients/client.go
-        sed -i "/$CLIENT_STRUCT_ORI/a $CLIENT_STRUCT" azurerm/internal/clients/client.go
-        sed -i "/$CLIENT_NEW_ORI/a $CLIENT_NEW" azurerm/internal/clients/client.go
-        sed -i "/$SERVICE_IMPORT_ORI/a $SERVICE_IMPORT" azurerm/internal/provider/services.go
-        sed -i "/$SERVICE_REGISTRATION_ORI/a $SERVICE_REGISTRATION" azurerm/internal/provider/services.go
-      fi
     fi
+    
+    cp -r ./generated/generated/$(Package) ./go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/
+    ls -l ./go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(Package)
+
+    cd ./go/src/github.com/terraform-providers/terraform-provider-azurerm
+    echo -e "\e[32m[$(date -u)] LOG:]: Change client.go and service.go."
+    # copy mocked client.go and services.go for single compile
+    cp $(Pipeline.Workspace)/s/scripts/TFSingleCompile/client.go azurerm/internal/clients/client.go
+    cp $(Pipeline.Workspace)/s/scripts/TFSingleCompile/services.go azurerm/internal/provider/services.go
+
+    CLIENT_IMPORT=`cat azurerm/internal/services/$(Package)/terraform-configuration/configuration_client | sed -n 1p`
+    CLIENT_STRUCT=`cat azurerm/internal/services/$(Package)/terraform-configuration/configuration_client | sed -n 2p`
+    CLIENT_NEW=`cat azurerm/internal/services/$(Package)/terraform-configuration/configuration_client | sed -n 3p`
+    CLIENT_IMPORT_ORI="resource \"github.com\/terraform-providers\/terraform-provider-azurerm\/azurerm\/internal\/services\/resource\/client\""
+    CLIENT_STRUCT_ORI="*resource.Client"
+    CLIENT_NEW_ORI="client.Resource = resource.NewClient(o)"
+    
+    SERVICE_IMPORT=`cat azurerm/internal/services/$(Package)/terraform-configuration/configuration_services | sed -n 1p`
+    SERVICE_REGISTRATION=`cat azurerm/internal/services/$(Package)/terraform-configuration/configuration_services | sed -n 2p`
+    SERVICE_IMPORT_ORI="\"github.com\/terraform-providers\/terraform-provider-azurerm\/azurerm\/internal\/services\/web\""
+    SERVICE_REGISTRATION_ORI="web.Registration{},"
+
+    cat azurerm/internal/clients/client.go | grep -q "/$(Package)/"|echo $?
+    if cat azurerm/internal/clients/client.go | grep -q "/$(Package)/"; then
+      cat azurerm/internal/clients/client.go | grep "/$(Package)/"
+      PACKAGE_NAME_ORI=`cat azurerm/internal/clients/client.go | grep "/$(Package)/" | awk '{print $1}'`
+      sed -i "s|^.*${PACKAGE_NAME_ORI} \"github.*$|${CLIENT_IMPORT}|" azurerm/internal/clients/client.go
+      sed -i "s/^.*\*${PACKAGE_NAME_ORI}\.Client.*$/${CLIENT_STRUCT}/" azurerm/internal/clients/client.go
+      sed -i "s/^.*${PACKAGE_NAME_ORI}\.NewClient(o).*$/${CLIENT_NEW}/" azurerm/internal/clients/client.go
+    else
+      sed -i "/$CLIENT_IMPORT_ORI/a $CLIENT_IMPORT" azurerm/internal/clients/client.go
+      sed -i "/$CLIENT_STRUCT_ORI/a $CLIENT_STRUCT" azurerm/internal/clients/client.go
+      sed -i "/$CLIENT_NEW_ORI/a $CLIENT_NEW" azurerm/internal/clients/client.go
+      sed -i "/$SERVICE_IMPORT_ORI/a $SERVICE_IMPORT" azurerm/internal/provider/services.go
+        sed -i "s/$SERVICE_REGISTRATION_ORI/$SERVICE_REGISTRATION/g" azurerm/internal/provider/services.go
+    fi
+    
 
     echo -e "\e[32m[$(date -u)] LOG:]: Change client.go and service.go successfully."
   displayName: "config client.go and service.go"
@@ -118,17 +106,17 @@ steps:
     export PATH=$PATH:$GOPATH/bin
     pwd
     # delete generated terraform configuration
-    rm -r ./go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(srcPackage)/terraform-configuration
+    rm -r ./go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(Package)/terraform-configuration
     # move doc
 
-    ls -l /home/vsts/work/1/s/go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(srcPackage)/website/docs/d/
-    mv $(Pipeline.Workspace)/s/go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(srcPackage)/website/docs/d/* $(Pipeline.Workspace)/s/go/src/github.com/terraform-providers/terraform-provider-azurerm/website/docs/d/
-    mv $(Pipeline.Workspace)/s/go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(srcPackage)/website/docs/r/* $(Pipeline.Workspace)/s/go/src/github.com/terraform-providers/terraform-provider-azurerm/website/docs/d/
+    ls -l /home/vsts/work/1/s/go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(Package)/website/docs/d/
+    mv $(Pipeline.Workspace)/s/go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(Package)/website/docs/d/* $(Pipeline.Workspace)/s/go/src/github.com/terraform-providers/terraform-provider-azurerm/website/docs/d/
+    mv $(Pipeline.Workspace)/s/go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(Package)/website/docs/r/* $(Pipeline.Workspace)/s/go/src/github.com/terraform-providers/terraform-provider-azurerm/website/docs/d/
 
     echo -e "\e[32m[$(date -u)] LOG: [$(ResourceProvider)]: Format Test and Document"
     # fmt tests
     cd ./go/src/github.com/terraform-providers/terraform-provider-azurerm
-    find $(Pipeline.Workspace)/s/go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(srcPackage) | sort | while read f; do terrafmt fmt -f $f; done
+    find $(Pipeline.Workspace)/s/go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(Package) | sort | while read f; do terrafmt fmt -f $f; done
 
     # fmt document
     find $(Pipeline.Workspace)/s/go/src/github.com/terraform-providers/terraform-provider-azurerm/website/docs/d/ | egrep "html.markdown" | sort | while read f; do terrafmt fmt -f $f; done

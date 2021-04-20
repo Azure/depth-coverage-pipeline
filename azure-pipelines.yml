@@ -180,8 +180,6 @@ stages:
     variables:
       TASK_KEY: build
       Contactors: "chunyu@microsoft.com;vsccodegen@microsoft.com"
-      srcPackage: $(Package)
-      prefix: forpipeline
     steps:
     - template: .azure-pipelines/templates/BeforeTask.yml
     - template: .azure-pipelines/templates/BuildTF.yml
@@ -232,8 +230,6 @@ stages:
     variables:
       TASK_KEY: TFMockTest
       Contactors: "chunyu@microsoft.com;vsccodegen@microsoft.com"
-      srcPackage: $(ResourceProvider)
-      prefix: forpipeline
     steps:
     - template: .azure-pipelines/templates/BeforeTask.yml
     - script: echo 'TF MockTest'
@@ -288,8 +284,6 @@ stages:
   - job : TFLiveTest
     variables:
       TASK_KEY: TFLiveTest
-      srcPackage: $(ResourceProvider)
-      prefix: forpipeline
     steps:
     - bash: echo 'TF LiveTest'
     - template: .azure-pipelines/templates/BeforeTask.yml

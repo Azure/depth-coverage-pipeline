@@ -1,21 +1,5 @@
 steps:
 - bash: |
-    echo "$(srcPackage)"
-    echo "$(prefix)"
-    DIR=./go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/$(Package)$(prefix)
-    pwd
-    echo "$DIR"
-    if [ -d "$DIR" ]; then
-      echo "$DIR exists."
-      echo "##vso[task.setvariable variable=srcPackage]$(Package)$(prefix)"
-      echo "$(srcPackage)"
-      echo "$(prefix)"
-    else
-      echo "$DIR does not exists."
-      echo "##vso[task.setvariable variable=srcPackage]$(Package)"
-    fi
-  displayName: "source package"
-- bash: |
     set -x
     cd ./go/src/github.com/terraform-providers/terraform-provider-azurerm
     pwd
@@ -31,7 +15,7 @@ steps:
     export ARM_ENVIRONMENT=public
     export TF_ACC=true
 
-    make acctests SERVICE=$(srcPackage) TESTARGS=-run=TestAcc[a-zA-Z]+_ci[a-zA-Z0-9]+ TESTTIMEOUT='60m' 1>$(TASK_KEY).log 2>&1
+    make acctests SERVICE=$(Package) TESTARGS=-run=TestAcc[a-zA-Z]+_ci[a-zA-Z0-9]+ TESTTIMEOUT='60m' 1>$(TASK_KEY).log 2>&1
     if [ "$?" != "0" ]; then
       echo -e "\e[31m[$(date -u)] ERROR: [$(ResourceProvider)]: TF Live Test failed"
       az login --service-principal -u $(SERVICE_PRINCIPE_ID) -p $(SERVICE_PRINCIPE_SECRET) --tenant $(SERVICE_PRINCIPE_TENANT)
