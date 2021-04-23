@@ -1,0 +1,35 @@
+{
+  "resources": [
+    {
+      "APIVersion": "2018-03-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.Storage/storageAccounts/blobServices/containers/immutabilityPolicies"
+    },
+    {
+      "APIVersion": "2020-08-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.Storage/storageAccounts/inventoryPolicies"
+    },
+    {
+      "APIVersion": "2020-08-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.Storage/storageAccounts/queueServices/queues"
+    },
+    {
+      "APIVersion": "2020-08-01-preview",
+      "operations": [],
+      "Resource": "Microsoft.Storage/storageAccounts/tableServices/tables"
+    }
+  ],
+  "resourcelist": "Microsoft.Storage/storageAccounts/blobServices/containers/immutabilityPolicies,Microsoft.Storage/storageAccounts/inventoryPolicies,Microsoft.Storage/storageAccounts/queueServices/queues,Microsoft.Storage/storageAccounts/tableServices/tables",
+  "jsonFilelist": [
+    "/specification/storage/resource-manager/Microsoft.Storage/preview/2018-03-01-preview/blob.json",
+    "/specification/storage/resource-manager/Microsoft.Storage/preview/2020-08-01-preview/storage.json",
+    "/specification/storage/resource-manager/Microsoft.Storage/preview/2020-08-01-preview/queue.json",
+    "/specification/storage/resource-manager/Microsoft.Storage/preview/2020-08-01-preview/table.json"
+  ],
+  "onboardType": "depth",
+  "RPName": "storage",
+  "readmeFile": "/specification/storage/resource-manager/readme.md",
+  "target": "terraform"
+}
