@@ -1,0 +1,1137 @@
+{
+  "VirtualMachineScaleSetVMExtensions": {
+    "schema": {
+      "name": {
+        "id": "VirtualMachineScaleSetVMExtensions-name-2823891852"
+      },
+      "resource_group_name": {
+        "id": "VirtualMachineScaleSetVMExtensions-resourceGroupName-731923833"
+      },
+      "instance_id": {
+        "id": "VirtualMachineScaleSetVMExtensions-instanceId-481308465"
+      },
+      "vm_scale_set_name": {
+        "id": "VirtualMachineScaleSetVMExtensions-vmScaleSetName-2823036582"
+      },
+      "instance_view_fortest": {
+        "id": "VirtualMachineScaleSetVMExtensions-instanceView-435704760",
+        "properties": {
+          "name": {
+            "id": "VirtualMachineScaleSetVMExtensions-name-769021944"
+          },
+          "statuses": {
+            "id": "VirtualMachineScaleSetVMExtensions-statuses-1735300998",
+            "properties": {
+              "code": {
+                "id": "VirtualMachineScaleSetVMExtensions-code-216589448"
+              },
+              "display_status": {
+                "id": "VirtualMachineScaleSetVMExtensions-displayStatus-1339458624"
+              },
+              "level": {
+                "id": "VirtualMachineScaleSetVMExtensions-level-831466466"
+              },
+              "message": {
+                "id": "VirtualMachineScaleSetVMExtensions-message-186909096"
+              },
+              "time": {
+                "id": "VirtualMachineScaleSetVMExtensions-time-1020239608"
+              }
+            }
+          },
+          "substatuses": {
+            "id": "VirtualMachineScaleSetVMExtensions-substatuses-1743763944",
+            "properties": {
+              "code": {
+                "id": "VirtualMachineScaleSetVMExtensions-code-569859498"
+              },
+              "display_status": {
+                "id": "VirtualMachineScaleSetVMExtensions-displayStatus-2081196264"
+              },
+              "level": {
+                "id": "VirtualMachineScaleSetVMExtensions-level-550870344"
+              },
+              "message": {
+                "id": "VirtualMachineScaleSetVMExtensions-message-588594408"
+              },
+              "time": {
+                "id": "VirtualMachineScaleSetVMExtensions-time-262545806"
+              }
+            }
+          },
+          "type": {
+            "id": "VirtualMachineScaleSetVMExtensions-type-2097668632"
+          },
+          "type_handler_version": {
+            "id": "VirtualMachineScaleSetVMExtensions-typeHandlerVersion-2751787386"
+          }
+        }
+      },
+      "auto_upgrade_minor_version": {
+        "id": "VirtualMachineScaleSetVMExtensions-autoUpgradeMinorVersion-76061360"
+      },
+      "enable_automatic_upgrade": {
+        "id": "VirtualMachineScaleSetVMExtensions-enableAutomaticUpgrade-1174854984"
+      },
+      "expand": {
+        "id": "VirtualMachineScaleSetVMExtensions-expand-2519130307"
+      },
+      "force_update_tag": {
+        "id": "VirtualMachineScaleSetVMExtensions-forceUpdateTag-125843608"
+      },
+      "properties_type": {
+        "id": "VirtualMachineScaleSetVMExtensions-type-214719617"
+      },
+      "protected_settings": {
+        "id": "VirtualMachineScaleSetVMExtensions-protectedSettings-2302985160"
+      },
+      "publisher": {
+        "id": "VirtualMachineScaleSetVMExtensions-publisher-2286017022"
+      },
+      "settings": {
+        "id": "VirtualMachineScaleSetVMExtensions-settings-1153443336"
+      },
+      "type_handler_version": {
+        "id": "VirtualMachineScaleSetVMExtensions-typeHandlerVersion-240856072"
+      }
+    },
+    "deleted": {}
+  },
+  "VirtualMachineRunCommands": {
+    "schema": {
+      "name": {
+        "id": "VirtualMachineRunCommands-name-364221838"
+      },
+      "resource_group_name": {
+        "id": "VirtualMachineRunCommands-resourceGroupName-94033555"
+      },
+      "location": {
+        "id": "VirtualMachineRunCommands-location-2443301141"
+      },
+      "vm_name": {
+        "id": "VirtualMachineRunCommands-vmName-476548184"
+      },
+      "async_execution": {
+        "id": "VirtualMachineRunCommands-asyncExecution-95886737"
+      },
+      "error_blob_uri": {
+        "id": "VirtualMachineRunCommands-errorBlobUri-1724553327"
+      },
+      "expand": {
+        "id": "VirtualMachineRunCommands-expand-2188494238"
+      },
+      "output_blob_uri": {
+        "id": "VirtualMachineRunCommands-outputBlobUri-831840275"
+      },
+      "parameters": {
+        "id": "VirtualMachineRunCommands-parameters-2036812527",
+        "properties": {
+          "name": {
+            "id": "VirtualMachineRunCommands-name-2148511453"
+          },
+          "value": {
+            "id": "VirtualMachineRunCommands-value-2990576943"
+          }
+        }
+      },
+      "protected_parameters": {
+        "id": "VirtualMachineRunCommands-protectedParameters-1173891465",
+        "properties": {
+          "name": {
+            "id": "VirtualMachineRunCommands-name-1730218575"
+          },
+          "value": {
+            "id": "VirtualMachineRunCommands-value-1942884103"
+          }
+        }
+      },
+      "run_as_password": {
+        "id": "VirtualMachineRunCommands-runAsPassword-2546526723"
+      },
+      "run_as_user": {
+        "id": "VirtualMachineRunCommands-runAsUser-1487643685"
+      },
+      "source": {
+        "id": "VirtualMachineRunCommands-source-543494895",
+        "properties": {
+          "command_id": {
+            "id": "VirtualMachineRunCommands-commandId-1862162063"
+          },
+          "script": {
+            "id": "VirtualMachineRunCommands-script-424581441"
+          },
+          "script_uri": {
+            "id": "VirtualMachineRunCommands-scriptUri-2998777039"
+          }
+        }
+      },
+      "timeout_in_seconds": {
+        "id": "VirtualMachineRunCommands-timeoutInSeconds-562494865"
+      },
+      "instance_view": {
+        "id": "VirtualMachineRunCommands-instanceView-977580601",
+        "properties": {
+          "end_time": {
+            "id": "VirtualMachineRunCommands-endTime-207973295"
+          },
+          "execution_message": {
+            "id": "VirtualMachineRunCommands-executionMessage-950235891"
+          },
+          "execution_state": {
+            "id": "VirtualMachineRunCommands-executionState-1086134623"
+          },
+          "exit_code": {
+            "id": "VirtualMachineRunCommands-exitCode-1047798073"
+          },
+          "output": {
+            "id": "VirtualMachineRunCommands-output-404003701"
+          },
+          "start_time": {
+            "id": "VirtualMachineRunCommands-startTime-2547123823"
+          },
+          "statuses": {
+            "id": "VirtualMachineRunCommands-statuses-578258373",
+            "properties": {
+              "code": {
+                "id": "VirtualMachineRunCommands-code-1385713007"
+              },
+              "display_status": {
+                "id": "VirtualMachineRunCommands-displayStatus-1025086853"
+              },
+              "level": {
+                "id": "VirtualMachineRunCommands-level-343120487"
+              },
+              "message": {
+                "id": "VirtualMachineRunCommands-message-186951971"
+              },
+              "time": {
+                "id": "VirtualMachineRunCommands-time-427025681"
+              }
+            }
+          }
+        }
+      },
+      "type": {
+        "id": "VirtualMachineRunCommands-type-677788685"
+      },
+      "tags": {
+        "id": "VirtualMachineRunCommands-tags-1185568829"
+      }
+    },
+    "deleted": {}
+  },
+  "VirtualMachineScaleSetVMRunCommands": {
+    "schema": {
+      "name": {
+        "id": "VirtualMachineScaleSetVMRunCommands-name-1383092062"
+      },
+      "resource_group_name": {
+        "id": "VirtualMachineScaleSetVMRunCommands-resourceGroupName-938198756"
+      },
+      "location": {
+        "id": "VirtualMachineScaleSetVMRunCommands-location-1325771571"
+      },
+      "instance_id": {
+        "id": "VirtualMachineScaleSetVMRunCommands-instanceId-969318438"
+      },
+      "vm_scale_set_name": {
+        "id": "VirtualMachineScaleSetVMRunCommands-vmScaleSetName-831967183"
+      },
+      "async_execution": {
+        "id": "VirtualMachineScaleSetVMRunCommands-asyncExecution-1132492657"
+      },
+      "error_blob_uri": {
+        "id": "VirtualMachineScaleSetVMRunCommands-errorBlobUri-2246941263"
+      },
+      "expand": {
+        "id": "VirtualMachineScaleSetVMRunCommands-expand-1162891954"
+      },
+      "output_blob_uri": {
+        "id": "VirtualMachineScaleSetVMRunCommands-outputBlobUri-1958751601"
+      },
+      "parameters": {
+        "id": "VirtualMachineScaleSetVMRunCommands-parameters-525203855",
+        "properties": {
+          "name": {
+            "id": "VirtualMachineScaleSetVMRunCommands-name-2543913659"
+          },
+          "value": {
+            "id": "VirtualMachineScaleSetVMRunCommands-value-2341579279"
+          }
+        }
+      },
+      "protected_parameters": {
+        "id": "VirtualMachineScaleSetVMRunCommands-protectedParameters-774652775",
+        "properties": {
+          "name": {
+            "id": "VirtualMachineScaleSetVMRunCommands-name-755935727"
+          },
+          "value": {
+            "id": "VirtualMachineScaleSetVMRunCommands-value-32145307"
+          }
+        }
+      },
+      "run_as_password": {
+        "id": "VirtualMachineScaleSetVMRunCommands-runAsPassword-945528479"
+      },
+      "run_as_user": {
+        "id": "VirtualMachineScaleSetVMRunCommands-runAsUser-519567555"
+      },
+      "source": {
+        "id": "VirtualMachineScaleSetVMRunCommands-source-621679887",
+        "properties": {
+          "command_id": {
+            "id": "VirtualMachineScaleSetVMRunCommands-commandId-678512303"
+          },
+          "script": {
+            "id": "VirtualMachineScaleSetVMRunCommands-script-1403453597"
+          },
+          "script_uri": {
+            "id": "VirtualMachineScaleSetVMRunCommands-scriptUri-665584529"
+          }
+        }
+      },
+      "timeout_in_seconds": {
+        "id": "VirtualMachineScaleSetVMRunCommands-timeoutInSeconds-2851176655"
+      },
+      "instance_view": {
+        "id": "VirtualMachineScaleSetVMRunCommands-instanceView-321039707",
+        "properties": {
+          "end_time": {
+            "id": "VirtualMachineScaleSetVMRunCommands-endTime-491269617"
+          },
+          "execution_message": {
+            "id": "VirtualMachineScaleSetVMRunCommands-executionMessage-634452561"
+          },
+          "execution_state": {
+            "id": "VirtualMachineScaleSetVMRunCommands-executionState-391095423"
+          },
+          "exit_code": {
+            "id": "VirtualMachineScaleSetVMRunCommands-exitCode-1177490903"
+          },
+          "output": {
+            "id": "VirtualMachineScaleSetVMRunCommands-output-530762025"
+          },
+          "start_time": {
+            "id": "VirtualMachineScaleSetVMRunCommands-startTime-704550287"
+          },
+          "statuses": {
+            "id": "VirtualMachineScaleSetVMRunCommands-statuses-2129566435",
+            "properties": {
+              "code": {
+                "id": "VirtualMachineScaleSetVMRunCommands-code-2971597583"
+              },
+              "display_status": {
+                "id": "VirtualMachineScaleSetVMRunCommands-displayStatus-2242699235"
+              },
+              "level": {
+                "id": "VirtualMachineScaleSetVMRunCommands-level-813883525"
+              },
+              "message": {
+                "id": "VirtualMachineScaleSetVMRunCommands-message-1070198779"
+              },
+              "time": {
+                "id": "VirtualMachineScaleSetVMRunCommands-time-838329457"
+              }
+            }
+          }
+        }
+      },
+      "type": {
+        "id": "VirtualMachineScaleSetVMRunCommands-type-1001494101"
+      },
+      "tags": {
+        "id": "VirtualMachineScaleSetVMRunCommands-tags-974929910"
+      }
+    },
+    "deleted": {}
+  },
+  "DiskAccessesUpdateAPrivateEndpointConnection": {
+    "schema": {
+      "name": {
+        "id": "DiskAccessesUpdateAPrivateEndpointConnection-name-1234669766"
+      },
+      "resource_group_name": {
+        "id": "DiskAccessesUpdateAPrivateEndpointConnection-resourceGroupName-981456743"
+      },
+      "disk_access_name": {
+        "id": "DiskAccessesUpdateAPrivateEndpointConnection-diskAccessName-1109105534"
+      },
+      "private_link_service_connection_state": {
+        "id": "DiskAccessesUpdateAPrivateEndpointConnection-privateLinkServiceConnectionState-758168525",
+        "properties": {
+          "actions_required": {
+            "id": "DiskAccessesUpdateAPrivateEndpointConnection-actionsRequired-2721874801"
+          },
+          "description": {
+            "id": "DiskAccessesUpdateAPrivateEndpointConnection-description-878022861"
+          }
+        }
+      },
+      "type": {
+        "id": "DiskAccessesUpdateAPrivateEndpointConnection-type-844325997"
+      }
+    },
+    "deleted": {}
+  },
+  "definitions": {
+    "VirtualMachineScaleSetVMExtensions-name-2823891852": {
+      "schema_path": "/VirtualMachineScaleSetVMExtensions/name",
+      "ids": [
+        "/VirtualMachineScaleSetVMExtensions//name#1",
+        "/VirtualMachineScaleSetVMExtensions/extensionParameters/name#1",
+        "/VirtualMachineScaleSetVMExtensions/name#3"
+      ]
+    },
+    "VirtualMachineScaleSetVMExtensions-resourceGroupName-731923833": {
+      "schema_path": "/VirtualMachineScaleSetVMExtensions/resourceGroupName",
+      "ids": [
+        "/VirtualMachineScaleSetVMExtensions/resourceGroupName#0"
+      ]
+    },
+    "VirtualMachineScaleSetVMExtensions-instanceId-481308465": {
+      "schema_path": "/VirtualMachineScaleSetVMExtensions/instanceId",
+      "ids": [
+        "/VirtualMachineScaleSetVMExtensions/instanceId#2"
+      ]
+    },
+    "VirtualMachineScaleSetVMExtensions-vmScaleSetName-2823036582": {
+      "schema_path": "/VirtualMachineScaleSetVMExtensions/vmScaleSetName",
+      "ids": [
+        "/VirtualMachineScaleSetVMExtensions/vmScaleSetName#1"
+      ]
+    },
+    "VirtualMachineScaleSetVMExtensions-instanceView-435704760": {
+      "schema_path": "/VirtualMachineScaleSetVMExtensions/instanceView",
+      "ids": [
+        "/VirtualMachineScaleSetVMExtensions//properties/instanceView#9",
+        "/VirtualMachineScaleSetVMExtensions/extensionParameters/properties/instanceView#9"
+      ]
+    },
+    "VirtualMachineScaleSetVMExtensions-name-769021944": {
+      "schema_path": "/VirtualMachineScaleSetVMExtensions/instanceView/name",
+      "ids": [
+        "/VirtualMachineScaleSetVMExtensions//properties/instanceView/name#0",
+        "/VirtualMachineScaleSetVMExtensions/extensionParameters/properties/instanceView/name#0"
+      ]
+    },
+    "VirtualMachineScaleSetVMExtensions-statuses-1735300998": {
+      "schema_path": "/VirtualMachineScaleSetVMExtensions/instanceView/statuses",
+      "ids": [
+        "/VirtualMachineScaleSetVMExtensions//properties/instanceView/statuses#4",
+        "/VirtualMachineScaleSetVMExtensions/extensionParameters/properties/instanceView/statuses#4"
+      ]
+    },
+    "VirtualMachineScaleSetVMExtensions-code-216589448": {
+      "schema_path": "/VirtualMachineScaleSetVMExtensions/instanceView/statuses/code",
+      "ids": [
+        "/VirtualMachineScaleSetVMExtensions//properties/instanceView/statuses/code#0",
+        "/VirtualMachineScaleSetVMExtensions/extensionParameters/properties/instanceView/statuses/code#0"
+      ]
+    },
+    "VirtualMachineScaleSetVMExtensions-displayStatus-1339458624": {
+      "schema_path": "/VirtualMachineScaleSetVMExtensions/instanceView/statuses/displayStatus",
+      "ids": [
+        "/VirtualMachineScaleSetVMExtensions//properties/instanceView/statuses/displayStatus#2",
+        "/VirtualMachineScaleSetVMExtensions/extensionParameters/properties/instanceView/statuses/displayStatus#2"
+      ]
+    },
+    "VirtualMachineScaleSetVMExtensions-level-831466466": {
+      "schema_path": "/VirtualMachineScaleSetVMExtensions/instanceView/statuses/level",
+      "ids": [
+        "/VirtualMachineScaleSetVMExtensions//properties/instanceView/statuses/level#1",
+        "/VirtualMachineScaleSetVMExtensions/extensionParameters/properties/instanceView/statuses/level#1"
+      ]
+    },
+    "VirtualMachineScaleSetVMExtensions-message-186909096": {
+      "schema_path": "/VirtualMachineScaleSetVMExtensions/instanceView/statuses/message",
+      "ids": [
+        "/VirtualMachineScaleSetVMExtensions//properties/instanceView/statuses/message#3",
+        "/VirtualMachineScaleSetVMExtensions/extensionParameters/properties/instanceView/statuses/message#3"
+      ]
+    },
+    "VirtualMachineScaleSetVMExtensions-time-1020239608": {
+      "schema_path": "/VirtualMachineScaleSetVMExtensions/instanceView/statuses/time",
+      "ids": [
+        "/VirtualMachineScaleSetVMExtensions//properties/instanceView/statuses/time#4",
+        "/VirtualMachineScaleSetVMExtensions/extensionParameters/properties/instanceView/statuses/time#4"
+      ]
+    },
+    "VirtualMachineScaleSetVMExtensions-substatuses-1743763944": {
+      "schema_path": "/VirtualMachineScaleSetVMExtensions/instanceView/substatuses",
+      "ids": [
+        "/VirtualMachineScaleSetVMExtensions//properties/instanceView/substatuses#3",
+        "/VirtualMachineScaleSetVMExtensions/extensionParameters/properties/instanceView/substatuses#3"
+      ]
+    },
+    "VirtualMachineScaleSetVMExtensions-code-569859498": {
+      "schema_path": "/VirtualMachineScaleSetVMExtensions/instanceView/substatuses/code",
+      "ids": [
+        "/VirtualMachineScaleSetVMExtensions//properties/instanceView/substatuses/code#0",
+        "/VirtualMachineScaleSetVMExtensions/extensionParameters/properties/instanceView/substatuses/code#0"
+      ]
+    },
+    "VirtualMachineScaleSetVMExtensions-displayStatus-2081196264": {
+      "schema_path": "/VirtualMachineScaleSetVMExtensions/instanceView/substatuses/displayStatus",
+      "ids": [
+        "/VirtualMachineScaleSetVMExtensions//properties/instanceView/substatuses/displayStatus#2",
+        "/VirtualMachineScaleSetVMExtensions/extensionParameters/properties/instanceView/substatuses/displayStatus#2"
+      ]
+    },
+    "VirtualMachineScaleSetVMExtensions-level-550870344": {
+      "schema_path": "/VirtualMachineScaleSetVMExtensions/instanceView/substatuses/level",
+      "ids": [
+        "/VirtualMachineScaleSetVMExtensions//properties/instanceView/substatuses/level#1",
+        "/VirtualMachineScaleSetVMExtensions/extensionParameters/properties/instanceView/substatuses/level#1"
+      ]
+    },
+    "VirtualMachineScaleSetVMExtensions-message-588594408": {
+      "schema_path": "/VirtualMachineScaleSetVMExtensions/instanceView/substatuses/message",
+      "ids": [
+        "/VirtualMachineScaleSetVMExtensions//properties/instanceView/substatuses/message#3",
+        "/VirtualMachineScaleSetVMExtensions/extensionParameters/properties/instanceView/substatuses/message#3"
+      ]
+    },
+    "VirtualMachineScaleSetVMExtensions-time-262545806": {
+      "schema_path": "/VirtualMachineScaleSetVMExtensions/instanceView/substatuses/time",
+      "ids": [
+        "/VirtualMachineScaleSetVMExtensions//properties/instanceView/substatuses/time#4",
+        "/VirtualMachineScaleSetVMExtensions/extensionParameters/properties/instanceView/substatuses/time#4"
+      ]
+    },
+    "VirtualMachineScaleSetVMExtensions-type-2097668632": {
+      "schema_path": "/VirtualMachineScaleSetVMExtensions/instanceView/type",
+      "ids": [
+        "/VirtualMachineScaleSetVMExtensions//properties/instanceView/type#1",
+        "/VirtualMachineScaleSetVMExtensions/extensionParameters/properties/instanceView/type#1"
+      ]
+    },
+    "VirtualMachineScaleSetVMExtensions-typeHandlerVersion-2751787386": {
+      "schema_path": "/VirtualMachineScaleSetVMExtensions/instanceView/typeHandlerVersion",
+      "ids": [
+        "/VirtualMachineScaleSetVMExtensions//properties/instanceView/typeHandlerVersion#2",
+        "/VirtualMachineScaleSetVMExtensions/extensionParameters/properties/instanceView/typeHandlerVersion#2"
+      ]
+    },
+    "VirtualMachineScaleSetVMExtensions-autoUpgradeMinorVersion-76061360": {
+      "schema_path": "/VirtualMachineScaleSetVMExtensions/autoUpgradeMinorVersion",
+      "ids": [
+        "/VirtualMachineScaleSetVMExtensions//properties/autoUpgradeMinorVersion#4",
+        "/VirtualMachineScaleSetVMExtensions/extensionParameters/properties/autoUpgradeMinorVersion#4"
+      ]
+    },
+    "VirtualMachineScaleSetVMExtensions-enableAutomaticUpgrade-1174854984": {
+      "schema_path": "/VirtualMachineScaleSetVMExtensions/enableAutomaticUpgrade",
+      "ids": [
+        "/VirtualMachineScaleSetVMExtensions//properties/enableAutomaticUpgrade#5",
+        "/VirtualMachineScaleSetVMExtensions/extensionParameters/properties/enableAutomaticUpgrade#5"
+      ]
+    },
+    "VirtualMachineScaleSetVMExtensions-expand-2519130307": {
+      "schema_path": "/VirtualMachineScaleSetVMExtensions/expand",
+      "ids": [
+        "/VirtualMachineScaleSetVMExtensions/expand#4"
+      ]
+    },
+    "VirtualMachineScaleSetVMExtensions-forceUpdateTag-125843608": {
+      "schema_path": "/VirtualMachineScaleSetVMExtensions/forceUpdateTag",
+      "ids": [
+        "/VirtualMachineScaleSetVMExtensions//properties/forceUpdateTag#0",
+        "/VirtualMachineScaleSetVMExtensions/extensionParameters/properties/forceUpdateTag#0"
+      ]
+    },
+    "VirtualMachineScaleSetVMExtensions-type-214719617": {
+      "schema_path": "/VirtualMachineScaleSetVMExtensions/type",
+      "ids": [
+        "/VirtualMachineScaleSetVMExtensions//properties/type#2",
+        "/VirtualMachineScaleSetVMExtensions//type#2",
+        "/VirtualMachineScaleSetVMExtensions/extensionParameters/properties/type#2",
+        "/VirtualMachineScaleSetVMExtensions/extensionParameters/type#2"
+      ]
+    },
+    "VirtualMachineScaleSetVMExtensions-protectedSettings-2302985160": {
+      "schema_path": "/VirtualMachineScaleSetVMExtensions/protectedSettings",
+      "ids": [
+        "/VirtualMachineScaleSetVMExtensions//properties/protectedSettings#7",
+        "/VirtualMachineScaleSetVMExtensions/extensionParameters/properties/protectedSettings#7"
+      ]
+    },
+    "VirtualMachineScaleSetVMExtensions-publisher-2286017022": {
+      "schema_path": "/VirtualMachineScaleSetVMExtensions/publisher",
+      "ids": [
+        "/VirtualMachineScaleSetVMExtensions//properties/publisher#1",
+        "/VirtualMachineScaleSetVMExtensions/extensionParameters/properties/publisher#1"
+      ]
+    },
+    "VirtualMachineScaleSetVMExtensions-settings-1153443336": {
+      "schema_path": "/VirtualMachineScaleSetVMExtensions/settings",
+      "ids": [
+        "/VirtualMachineScaleSetVMExtensions//properties/settings#6",
+        "/VirtualMachineScaleSetVMExtensions/extensionParameters/properties/settings#6"
+      ]
+    },
+    "VirtualMachineScaleSetVMExtensions-typeHandlerVersion-240856072": {
+      "schema_path": "/VirtualMachineScaleSetVMExtensions/typeHandlerVersion",
+      "ids": [
+        "/VirtualMachineScaleSetVMExtensions//properties/typeHandlerVersion#3",
+        "/VirtualMachineScaleSetVMExtensions/extensionParameters/properties/typeHandlerVersion#3"
+      ]
+    },
+    "VirtualMachineRunCommands-name-364221838": {
+      "schema_path": "/VirtualMachineRunCommands/name",
+      "ids": [
+        "/VirtualMachineRunCommands//name#1",
+        "/VirtualMachineRunCommands/name#2",
+        "/VirtualMachineRunCommands/runCommand/name#1"
+      ]
+    },
+    "VirtualMachineRunCommands-resourceGroupName-94033555": {
+      "schema_path": "/VirtualMachineRunCommands/resourceGroupName",
+      "ids": [
+        "/VirtualMachineRunCommands/resourceGroupName#0"
+      ]
+    },
+    "VirtualMachineRunCommands-location-2443301141": {
+      "schema_path": "/VirtualMachineRunCommands/location",
+      "ids": [
+        "/VirtualMachineRunCommands//location#3",
+        "/VirtualMachineRunCommands/runCommand/location#3"
+      ]
+    },
+    "VirtualMachineRunCommands-vmName-476548184": {
+      "schema_path": "/VirtualMachineRunCommands/vmName",
+      "ids": [
+        "/VirtualMachineRunCommands/vmName#1"
+      ]
+    },
+    "VirtualMachineRunCommands-asyncExecution-95886737": {
+      "schema_path": "/VirtualMachineRunCommands/asyncExecution",
+      "ids": [
+        "/VirtualMachineRunCommands//properties/asyncExecution#3",
+        "/VirtualMachineRunCommands/runCommand/properties/asyncExecution#3"
+      ]
+    },
+    "VirtualMachineRunCommands-errorBlobUri-1724553327": {
+      "schema_path": "/VirtualMachineRunCommands/errorBlobUri",
+      "ids": [
+        "/VirtualMachineRunCommands//properties/errorBlobUri#8",
+        "/VirtualMachineRunCommands/runCommand/properties/errorBlobUri#8"
+      ]
+    },
+    "VirtualMachineRunCommands-expand-2188494238": {
+      "schema_path": "/VirtualMachineRunCommands/expand",
+      "ids": [
+        "/VirtualMachineRunCommands/expand#3"
+      ]
+    },
+    "VirtualMachineRunCommands-outputBlobUri-831840275": {
+      "schema_path": "/VirtualMachineRunCommands/outputBlobUri",
+      "ids": [
+        "/VirtualMachineRunCommands//properties/outputBlobUri#7",
+        "/VirtualMachineRunCommands/runCommand/properties/outputBlobUri#7"
+      ]
+    },
+    "VirtualMachineRunCommands-parameters-2036812527": {
+      "schema_path": "/VirtualMachineRunCommands/parameters",
+      "ids": [
+        "/VirtualMachineRunCommands//properties/parameters#1",
+        "/VirtualMachineRunCommands/runCommand/properties/parameters#1"
+      ]
+    },
+    "VirtualMachineRunCommands-name-2148511453": {
+      "schema_path": "/VirtualMachineRunCommands/parameters/name",
+      "ids": [
+        "/VirtualMachineRunCommands//properties/parameters/name#0",
+        "/VirtualMachineRunCommands/runCommand/properties/parameters/name#0"
+      ]
+    },
+    "VirtualMachineRunCommands-value-2990576943": {
+      "schema_path": "/VirtualMachineRunCommands/parameters/value",
+      "ids": [
+        "/VirtualMachineRunCommands//properties/parameters/value#1",
+        "/VirtualMachineRunCommands/runCommand/properties/parameters/value#1"
+      ]
+    },
+    "VirtualMachineRunCommands-protectedParameters-1173891465": {
+      "schema_path": "/VirtualMachineRunCommands/protectedParameters",
+      "ids": [
+        "/VirtualMachineRunCommands//properties/protectedParameters#2",
+        "/VirtualMachineRunCommands/runCommand/properties/protectedParameters#2"
+      ]
+    },
+    "VirtualMachineRunCommands-name-1730218575": {
+      "schema_path": "/VirtualMachineRunCommands/protectedParameters/name",
+      "ids": [
+        "/VirtualMachineRunCommands//properties/protectedParameters/name#0",
+        "/VirtualMachineRunCommands/runCommand/properties/protectedParameters/name#0"
+      ]
+    },
+    "VirtualMachineRunCommands-value-1942884103": {
+      "schema_path": "/VirtualMachineRunCommands/protectedParameters/value",
+      "ids": [
+        "/VirtualMachineRunCommands//properties/protectedParameters/value#1",
+        "/VirtualMachineRunCommands/runCommand/properties/protectedParameters/value#1"
+      ]
+    },
+    "VirtualMachineRunCommands-runAsPassword-2546526723": {
+      "schema_path": "/VirtualMachineRunCommands/runAsPassword",
+      "ids": [
+        "/VirtualMachineRunCommands//properties/runAsPassword#5",
+        "/VirtualMachineRunCommands/runCommand/properties/runAsPassword#5"
+      ]
+    },
+    "VirtualMachineRunCommands-runAsUser-1487643685": {
+      "schema_path": "/VirtualMachineRunCommands/runAsUser",
+      "ids": [
+        "/VirtualMachineRunCommands//properties/runAsUser#4",
+        "/VirtualMachineRunCommands/runCommand/properties/runAsUser#4"
+      ]
+    },
+    "VirtualMachineRunCommands-source-543494895": {
+      "schema_path": "/VirtualMachineRunCommands/source",
+      "ids": [
+        "/VirtualMachineRunCommands//properties/source#0",
+        "/VirtualMachineRunCommands/runCommand/properties/source#0"
+      ]
+    },
+    "VirtualMachineRunCommands-commandId-1862162063": {
+      "schema_path": "/VirtualMachineRunCommands/source/commandId",
+      "ids": [
+        "/VirtualMachineRunCommands//properties/source/commandId#2",
+        "/VirtualMachineRunCommands/runCommand/properties/source/commandId#2"
+      ]
+    },
+    "VirtualMachineRunCommands-script-424581441": {
+      "schema_path": "/VirtualMachineRunCommands/source/script",
+      "ids": [
+        "/VirtualMachineRunCommands//properties/source/script#0",
+        "/VirtualMachineRunCommands/runCommand/properties/source/script#0"
+      ]
+    },
+    "VirtualMachineRunCommands-scriptUri-2998777039": {
+      "schema_path": "/VirtualMachineRunCommands/source/scriptUri",
+      "ids": [
+        "/VirtualMachineRunCommands//properties/source/scriptUri#1",
+        "/VirtualMachineRunCommands/runCommand/properties/source/scriptUri#1"
+      ]
+    },
+    "VirtualMachineRunCommands-timeoutInSeconds-562494865": {
+      "schema_path": "/VirtualMachineRunCommands/timeoutInSeconds",
+      "ids": [
+        "/VirtualMachineRunCommands//properties/timeoutInSeconds#6",
+        "/VirtualMachineRunCommands/runCommand/properties/timeoutInSeconds#6"
+      ]
+    },
+    "VirtualMachineRunCommands-instanceView-977580601": {
+      "schema_path": "/VirtualMachineRunCommands/instanceView",
+      "ids": [
+        "/VirtualMachineRunCommands//properties/instanceView#10",
+        "/VirtualMachineRunCommands/runCommand/properties/instanceView#10"
+      ]
+    },
+    "VirtualMachineRunCommands-endTime-207973295": {
+      "schema_path": "/VirtualMachineRunCommands/instanceView/endTime",
+      "ids": [
+        "/VirtualMachineRunCommands//properties/instanceView/endTime#6",
+        "/VirtualMachineRunCommands/runCommand/properties/instanceView/endTime#6"
+      ]
+    },
+    "VirtualMachineRunCommands-executionMessage-950235891": {
+      "schema_path": "/VirtualMachineRunCommands/instanceView/executionMessage",
+      "ids": [
+        "/VirtualMachineRunCommands//properties/instanceView/executionMessage#1",
+        "/VirtualMachineRunCommands/runCommand/properties/instanceView/executionMessage#1"
+      ]
+    },
+    "VirtualMachineRunCommands-executionState-1086134623": {
+      "schema_path": "/VirtualMachineRunCommands/instanceView/executionState",
+      "ids": [
+        "/VirtualMachineRunCommands//properties/instanceView/executionState#0",
+        "/VirtualMachineRunCommands/runCommand/properties/instanceView/executionState#0"
+      ]
+    },
+    "VirtualMachineRunCommands-exitCode-1047798073": {
+      "schema_path": "/VirtualMachineRunCommands/instanceView/exitCode",
+      "ids": [
+        "/VirtualMachineRunCommands//properties/instanceView/exitCode#2",
+        "/VirtualMachineRunCommands/runCommand/properties/instanceView/exitCode#2"
+      ]
+    },
+    "VirtualMachineRunCommands-output-404003701": {
+      "schema_path": "/VirtualMachineRunCommands/instanceView/output",
+      "ids": [
+        "/VirtualMachineRunCommands//properties/instanceView/output#3",
+        "/VirtualMachineRunCommands/runCommand/properties/instanceView/output#3"
+      ]
+    },
+    "VirtualMachineRunCommands-startTime-2547123823": {
+      "schema_path": "/VirtualMachineRunCommands/instanceView/startTime",
+      "ids": [
+        "/VirtualMachineRunCommands//properties/instanceView/startTime#5",
+        "/VirtualMachineRunCommands/runCommand/properties/instanceView/startTime#5"
+      ]
+    },
+    "VirtualMachineRunCommands-statuses-578258373": {
+      "schema_path": "/VirtualMachineRunCommands/instanceView/statuses",
+      "ids": [
+        "/VirtualMachineRunCommands//properties/instanceView/statuses#7",
+        "/VirtualMachineRunCommands/runCommand/properties/instanceView/statuses#7"
+      ]
+    },
+    "VirtualMachineRunCommands-code-1385713007": {
+      "schema_path": "/VirtualMachineRunCommands/instanceView/statuses/code",
+      "ids": [
+        "/VirtualMachineRunCommands//properties/instanceView/statuses/code#0",
+        "/VirtualMachineRunCommands/runCommand/properties/instanceView/statuses/code#0"
+      ]
+    },
+    "VirtualMachineRunCommands-displayStatus-1025086853": {
+      "schema_path": "/VirtualMachineRunCommands/instanceView/statuses/displayStatus",
+      "ids": [
+        "/VirtualMachineRunCommands//properties/instanceView/statuses/displayStatus#2",
+        "/VirtualMachineRunCommands/runCommand/properties/instanceView/statuses/displayStatus#2"
+      ]
+    },
+    "VirtualMachineRunCommands-level-343120487": {
+      "schema_path": "/VirtualMachineRunCommands/instanceView/statuses/level",
+      "ids": [
+        "/VirtualMachineRunCommands//properties/instanceView/statuses/level#1",
+        "/VirtualMachineRunCommands/runCommand/properties/instanceView/statuses/level#1"
+      ]
+    },
+    "VirtualMachineRunCommands-message-186951971": {
+      "schema_path": "/VirtualMachineRunCommands/instanceView/statuses/message",
+      "ids": [
+        "/VirtualMachineRunCommands//properties/instanceView/statuses/message#3",
+        "/VirtualMachineRunCommands/runCommand/properties/instanceView/statuses/message#3"
+      ]
+    },
+    "VirtualMachineRunCommands-time-427025681": {
+      "schema_path": "/VirtualMachineRunCommands/instanceView/statuses/time",
+      "ids": [
+        "/VirtualMachineRunCommands//properties/instanceView/statuses/time#4",
+        "/VirtualMachineRunCommands/runCommand/properties/instanceView/statuses/time#4"
+      ]
+    },
+    "VirtualMachineRunCommands-type-677788685": {
+      "schema_path": "/VirtualMachineRunCommands/type",
+      "ids": [
+        "/VirtualMachineRunCommands//type#2",
+        "/VirtualMachineRunCommands/runCommand/type#2"
+      ]
+    },
+    "VirtualMachineRunCommands-tags-1185568829": {
+      "schema_path": "/VirtualMachineRunCommands/tags",
+      "ids": [
+        "/VirtualMachineRunCommands//tags#4",
+        "/VirtualMachineRunCommands/runCommand/tags#0",
+        "/VirtualMachineRunCommands/runCommand/tags#4"
+      ]
+    },
+    "VirtualMachineScaleSetVMRunCommands-name-1383092062": {
+      "schema_path": "/VirtualMachineScaleSetVMRunCommands/name",
+      "ids": [
+        "/VirtualMachineScaleSetVMRunCommands//name#1",
+        "/VirtualMachineScaleSetVMRunCommands/name#3",
+        "/VirtualMachineScaleSetVMRunCommands/runCommand/name#1"
+      ]
+    },
+    "VirtualMachineScaleSetVMRunCommands-resourceGroupName-938198756": {
+      "schema_path": "/VirtualMachineScaleSetVMRunCommands/resourceGroupName",
+      "ids": [
+        "/VirtualMachineScaleSetVMRunCommands/resourceGroupName#0"
+      ]
+    },
+    "VirtualMachineScaleSetVMRunCommands-location-1325771571": {
+      "schema_path": "/VirtualMachineScaleSetVMRunCommands/location",
+      "ids": [
+        "/VirtualMachineScaleSetVMRunCommands//location#3",
+        "/VirtualMachineScaleSetVMRunCommands/runCommand/location#3"
+      ]
+    },
+    "VirtualMachineScaleSetVMRunCommands-instanceId-969318438": {
+      "schema_path": "/VirtualMachineScaleSetVMRunCommands/instanceId",
+      "ids": [
+        "/VirtualMachineScaleSetVMRunCommands/instanceId#2"
+      ]
+    },
+    "VirtualMachineScaleSetVMRunCommands-vmScaleSetName-831967183": {
+      "schema_path": "/VirtualMachineScaleSetVMRunCommands/vmScaleSetName",
+      "ids": [
+        "/VirtualMachineScaleSetVMRunCommands/vmScaleSetName#1"
+      ]
+    },
+    "VirtualMachineScaleSetVMRunCommands-asyncExecution-1132492657": {
+      "schema_path": "/VirtualMachineScaleSetVMRunCommands/asyncExecution",
+      "ids": [
+        "/VirtualMachineScaleSetVMRunCommands//properties/asyncExecution#3",
+        "/VirtualMachineScaleSetVMRunCommands/runCommand/properties/asyncExecution#3"
+      ]
+    },
+    "VirtualMachineScaleSetVMRunCommands-errorBlobUri-2246941263": {
+      "schema_path": "/VirtualMachineScaleSetVMRunCommands/errorBlobUri",
+      "ids": [
+        "/VirtualMachineScaleSetVMRunCommands//properties/errorBlobUri#8",
+        "/VirtualMachineScaleSetVMRunCommands/runCommand/properties/errorBlobUri#8"
+      ]
+    },
+    "VirtualMachineScaleSetVMRunCommands-expand-1162891954": {
+      "schema_path": "/VirtualMachineScaleSetVMRunCommands/expand",
+      "ids": [
+        "/VirtualMachineScaleSetVMRunCommands/expand#4"
+      ]
+    },
+    "VirtualMachineScaleSetVMRunCommands-outputBlobUri-1958751601": {
+      "schema_path": "/VirtualMachineScaleSetVMRunCommands/outputBlobUri",
+      "ids": [
+        "/VirtualMachineScaleSetVMRunCommands//properties/outputBlobUri#7",
+        "/VirtualMachineScaleSetVMRunCommands/runCommand/properties/outputBlobUri#7"
+      ]
+    },
+    "VirtualMachineScaleSetVMRunCommands-parameters-525203855": {
+      "schema_path": "/VirtualMachineScaleSetVMRunCommands/parameters",
+      "ids": [
+        "/VirtualMachineScaleSetVMRunCommands//properties/parameters#1",
+        "/VirtualMachineScaleSetVMRunCommands/runCommand/properties/parameters#1"
+      ]
+    },
+    "VirtualMachineScaleSetVMRunCommands-name-2543913659": {
+      "schema_path": "/VirtualMachineScaleSetVMRunCommands/parameters/name",
+      "ids": [
+        "/VirtualMachineScaleSetVMRunCommands//properties/parameters/name#0",
+        "/VirtualMachineScaleSetVMRunCommands/runCommand/properties/parameters/name#0"
+      ]
+    },
+    "VirtualMachineScaleSetVMRunCommands-value-2341579279": {
+      "schema_path": "/VirtualMachineScaleSetVMRunCommands/parameters/value",
+      "ids": [
+        "/VirtualMachineScaleSetVMRunCommands//properties/parameters/value#1",
+        "/VirtualMachineScaleSetVMRunCommands/runCommand/properties/parameters/value#1"
+      ]
+    },
+    "VirtualMachineScaleSetVMRunCommands-protectedParameters-774652775": {
+      "schema_path": "/VirtualMachineScaleSetVMRunCommands/protectedParameters",
+      "ids": [
+        "/VirtualMachineScaleSetVMRunCommands//properties/protectedParameters#2",
+        "/VirtualMachineScaleSetVMRunCommands/runCommand/properties/protectedParameters#2"
+      ]
+    },
+    "VirtualMachineScaleSetVMRunCommands-name-755935727": {
+      "schema_path": "/VirtualMachineScaleSetVMRunCommands/protectedParameters/name",
+      "ids": [
+        "/VirtualMachineScaleSetVMRunCommands//properties/protectedParameters/name#0",
+        "/VirtualMachineScaleSetVMRunCommands/runCommand/properties/protectedParameters/name#0"
+      ]
+    },
+    "VirtualMachineScaleSetVMRunCommands-value-32145307": {
+      "schema_path": "/VirtualMachineScaleSetVMRunCommands/protectedParameters/value",
+      "ids": [
+        "/VirtualMachineScaleSetVMRunCommands//properties/protectedParameters/value#1",
+        "/VirtualMachineScaleSetVMRunCommands/runCommand/properties/protectedParameters/value#1"
+      ]
+    },
+    "VirtualMachineScaleSetVMRunCommands-runAsPassword-945528479": {
+      "schema_path": "/VirtualMachineScaleSetVMRunCommands/runAsPassword",
+      "ids": [
+        "/VirtualMachineScaleSetVMRunCommands//properties/runAsPassword#5",
+        "/VirtualMachineScaleSetVMRunCommands/runCommand/properties/runAsPassword#5"
+      ]
+    },
+    "VirtualMachineScaleSetVMRunCommands-runAsUser-519567555": {
+      "schema_path": "/VirtualMachineScaleSetVMRunCommands/runAsUser",
+      "ids": [
+        "/VirtualMachineScaleSetVMRunCommands//properties/runAsUser#4",
+        "/VirtualMachineScaleSetVMRunCommands/runCommand/properties/runAsUser#4"
+      ]
+    },
+    "VirtualMachineScaleSetVMRunCommands-source-621679887": {
+      "schema_path": "/VirtualMachineScaleSetVMRunCommands/source",
+      "ids": [
+        "/VirtualMachineScaleSetVMRunCommands//properties/source#0",
+        "/VirtualMachineScaleSetVMRunCommands/runCommand/properties/source#0"
+      ]
+    },
+    "VirtualMachineScaleSetVMRunCommands-commandId-678512303": {
+      "schema_path": "/VirtualMachineScaleSetVMRunCommands/source/commandId",
+      "ids": [
+        "/VirtualMachineScaleSetVMRunCommands//properties/source/commandId#2",
+        "/VirtualMachineScaleSetVMRunCommands/runCommand/properties/source/commandId#2"
+      ]
+    },
+    "VirtualMachineScaleSetVMRunCommands-script-1403453597": {
+      "schema_path": "/VirtualMachineScaleSetVMRunCommands/source/script",
+      "ids": [
+        "/VirtualMachineScaleSetVMRunCommands//properties/source/script#0",
+        "/VirtualMachineScaleSetVMRunCommands/runCommand/properties/source/script#0"
+      ]
+    },
+    "VirtualMachineScaleSetVMRunCommands-scriptUri-665584529": {
+      "schema_path": "/VirtualMachineScaleSetVMRunCommands/source/scriptUri",
+      "ids": [
+        "/VirtualMachineScaleSetVMRunCommands//properties/source/scriptUri#1",
+        "/VirtualMachineScaleSetVMRunCommands/runCommand/properties/source/scriptUri#1"
+      ]
+    },
+    "VirtualMachineScaleSetVMRunCommands-timeoutInSeconds-2851176655": {
+      "schema_path": "/VirtualMachineScaleSetVMRunCommands/timeoutInSeconds",
+      "ids": [
+        "/VirtualMachineScaleSetVMRunCommands//properties/timeoutInSeconds#6",
+        "/VirtualMachineScaleSetVMRunCommands/runCommand/properties/timeoutInSeconds#6"
+      ]
+    },
+    "VirtualMachineScaleSetVMRunCommands-instanceView-321039707": {
+      "schema_path": "/VirtualMachineScaleSetVMRunCommands/instanceView",
+      "ids": [
+        "/VirtualMachineScaleSetVMRunCommands//properties/instanceView#10",
+        "/VirtualMachineScaleSetVMRunCommands/runCommand/properties/instanceView#10"
+      ]
+    },
+    "VirtualMachineScaleSetVMRunCommands-endTime-491269617": {
+      "schema_path": "/VirtualMachineScaleSetVMRunCommands/instanceView/endTime",
+      "ids": [
+        "/VirtualMachineScaleSetVMRunCommands//properties/instanceView/endTime#6",
+        "/VirtualMachineScaleSetVMRunCommands/runCommand/properties/instanceView/endTime#6"
+      ]
+    },
+    "VirtualMachineScaleSetVMRunCommands-executionMessage-634452561": {
+      "schema_path": "/VirtualMachineScaleSetVMRunCommands/instanceView/executionMessage",
+      "ids": [
+        "/VirtualMachineScaleSetVMRunCommands//properties/instanceView/executionMessage#1",
+        "/VirtualMachineScaleSetVMRunCommands/runCommand/properties/instanceView/executionMessage#1"
+      ]
+    },
+    "VirtualMachineScaleSetVMRunCommands-executionState-391095423": {
+      "schema_path": "/VirtualMachineScaleSetVMRunCommands/instanceView/executionState",
+      "ids": [
+        "/VirtualMachineScaleSetVMRunCommands//properties/instanceView/executionState#0",
+        "/VirtualMachineScaleSetVMRunCommands/runCommand/properties/instanceView/executionState#0"
+      ]
+    },
+    "VirtualMachineScaleSetVMRunCommands-exitCode-1177490903": {
+      "schema_path": "/VirtualMachineScaleSetVMRunCommands/instanceView/exitCode",
+      "ids": [
+        "/VirtualMachineScaleSetVMRunCommands//properties/instanceView/exitCode#2",
+        "/VirtualMachineScaleSetVMRunCommands/runCommand/properties/instanceView/exitCode#2"
+      ]
+    },
+    "VirtualMachineScaleSetVMRunCommands-output-530762025": {
+      "schema_path": "/VirtualMachineScaleSetVMRunCommands/instanceView/output",
+      "ids": [
+        "/VirtualMachineScaleSetVMRunCommands//properties/instanceView/output#3",
+        "/VirtualMachineScaleSetVMRunCommands/runCommand/properties/instanceView/output#3"
+      ]
+    },
+    "VirtualMachineScaleSetVMRunCommands-startTime-704550287": {
+      "schema_path": "/VirtualMachineScaleSetVMRunCommands/instanceView/startTime",
+      "ids": [
+        "/VirtualMachineScaleSetVMRunCommands//properties/instanceView/startTime#5",
+        "/VirtualMachineScaleSetVMRunCommands/runCommand/properties/instanceView/startTime#5"
+      ]
+    },
+    "VirtualMachineScaleSetVMRunCommands-statuses-2129566435": {
+      "schema_path": "/VirtualMachineScaleSetVMRunCommands/instanceView/statuses",
+      "ids": [
+        "/VirtualMachineScaleSetVMRunCommands//properties/instanceView/statuses#7",
+        "/VirtualMachineScaleSetVMRunCommands/runCommand/properties/instanceView/statuses#7"
+      ]
+    },
+    "VirtualMachineScaleSetVMRunCommands-code-2971597583": {
+      "schema_path": "/VirtualMachineScaleSetVMRunCommands/instanceView/statuses/code",
+      "ids": [
+        "/VirtualMachineScaleSetVMRunCommands//properties/instanceView/statuses/code#0",
+        "/VirtualMachineScaleSetVMRunCommands/runCommand/properties/instanceView/statuses/code#0"
+      ]
+    },
+    "VirtualMachineScaleSetVMRunCommands-displayStatus-2242699235": {
+      "schema_path": "/VirtualMachineScaleSetVMRunCommands/instanceView/statuses/displayStatus",
+      "ids": [
+        "/VirtualMachineScaleSetVMRunCommands//properties/instanceView/statuses/displayStatus#2",
+        "/VirtualMachineScaleSetVMRunCommands/runCommand/properties/instanceView/statuses/displayStatus#2"
+      ]
+    },
+    "VirtualMachineScaleSetVMRunCommands-level-813883525": {
+      "schema_path": "/VirtualMachineScaleSetVMRunCommands/instanceView/statuses/level",
+      "ids": [
+        "/VirtualMachineScaleSetVMRunCommands//properties/instanceView/statuses/level#1",
+        "/VirtualMachineScaleSetVMRunCommands/runCommand/properties/instanceView/statuses/level#1"
+      ]
+    },
+    "VirtualMachineScaleSetVMRunCommands-message-1070198779": {
+      "schema_path": "/VirtualMachineScaleSetVMRunCommands/instanceView/statuses/message",
+      "ids": [
+        "/VirtualMachineScaleSetVMRunCommands//properties/instanceView/statuses/message#3",
+        "/VirtualMachineScaleSetVMRunCommands/runCommand/properties/instanceView/statuses/message#3"
+      ]
+    },
+    "VirtualMachineScaleSetVMRunCommands-time-838329457": {
+      "schema_path": "/VirtualMachineScaleSetVMRunCommands/instanceView/statuses/time",
+      "ids": [
+        "/VirtualMachineScaleSetVMRunCommands//properties/instanceView/statuses/time#4",
+        "/VirtualMachineScaleSetVMRunCommands/runCommand/properties/instanceView/statuses/time#4"
+      ]
+    },
+    "VirtualMachineScaleSetVMRunCommands-type-1001494101": {
+      "schema_path": "/VirtualMachineScaleSetVMRunCommands/type",
+      "ids": [
+        "/VirtualMachineScaleSetVMRunCommands//type#2",
+        "/VirtualMachineScaleSetVMRunCommands/runCommand/type#2"
+      ]
+    },
+    "VirtualMachineScaleSetVMRunCommands-tags-974929910": {
+      "schema_path": "/VirtualMachineScaleSetVMRunCommands/tags",
+      "ids": [
+        "/VirtualMachineScaleSetVMRunCommands//tags#4",
+        "/VirtualMachineScaleSetVMRunCommands/runCommand/tags#0",
+        "/VirtualMachineScaleSetVMRunCommands/runCommand/tags#4"
+      ]
+    },
+    "DiskAccessesUpdateAPrivateEndpointConnection-name-1234669766": {
+      "schema_path": "/DiskAccessesUpdateAPrivateEndpointConnection/name",
+      "ids": [
+        "/DiskAccessesUpdateAPrivateEndpointConnection//name#2",
+        "/DiskAccessesUpdateAPrivateEndpointConnection/name#2",
+        "/DiskAccessesUpdateAPrivateEndpointConnection/privateEndpointConnection/name#2"
+      ]
+    },
+    "DiskAccessesUpdateAPrivateEndpointConnection-resourceGroupName-981456743": {
+      "schema_path": "/DiskAccessesUpdateAPrivateEndpointConnection/resourceGroupName",
+      "ids": [
+        "/DiskAccessesUpdateAPrivateEndpointConnection/resourceGroupName#0"
+      ]
+    },
+    "DiskAccessesUpdateAPrivateEndpointConnection-diskAccessName-1109105534": {
+      "schema_path": "/DiskAccessesUpdateAPrivateEndpointConnection/diskAccessName",
+      "ids": [
+        "/DiskAccessesUpdateAPrivateEndpointConnection/diskAccessName#1"
+      ]
+    },
+    "DiskAccessesUpdateAPrivateEndpointConnection-privateLinkServiceConnectionState-758168525": {
+      "schema_path": "/DiskAccessesUpdateAPrivateEndpointConnection/privateLinkServiceConnectionState",
+      "ids": [
+        "/DiskAccessesUpdateAPrivateEndpointConnection//properties/privateLinkServiceConnectionState#1",
+        "/DiskAccessesUpdateAPrivateEndpointConnection/privateEndpointConnection/properties/privateLinkServiceConnectionState#1"
+      ]
+    },
+    "DiskAccessesUpdateAPrivateEndpointConnection-actionsRequired-2721874801": {
+      "schema_path": "/DiskAccessesUpdateAPrivateEndpointConnection/privateLinkServiceConnectionState/actionsRequired",
+      "ids": [
+        "/DiskAccessesUpdateAPrivateEndpointConnection//properties/privateLinkServiceConnectionState/actionsRequired#2",
+        "/DiskAccessesUpdateAPrivateEndpointConnection/privateEndpointConnection/properties/privateLinkServiceConnectionState/actionsRequired#2"
+      ]
+    },
+    "DiskAccessesUpdateAPrivateEndpointConnection-description-878022861": {
+      "schema_path": "/DiskAccessesUpdateAPrivateEndpointConnection/privateLinkServiceConnectionState/description",
+      "ids": [
+        "/DiskAccessesUpdateAPrivateEndpointConnection//properties/privateLinkServiceConnectionState/description#1",
+        "/DiskAccessesUpdateAPrivateEndpointConnection/privateEndpointConnection/properties/privateLinkServiceConnectionState/description#1"
+      ]
+    },
+    "DiskAccessesUpdateAPrivateEndpointConnection-type-844325997": {
+      "schema_path": "/DiskAccessesUpdateAPrivateEndpointConnection/type",
+      "ids": [
+        "/DiskAccessesUpdateAPrivateEndpointConnection//type#3",
+        "/DiskAccessesUpdateAPrivateEndpointConnection/privateEndpointConnection/type#3"
+      ]
+    }
+  }
+}
