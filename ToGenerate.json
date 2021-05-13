@@ -1,0 +1,9 @@
+{
+  "resources": [],
+  "resourcelist": "",
+  "jsonFilelist": [],
+  "onboardType": "dev",
+  "RPName": "appconfiguration",
+  "readmeFile": "",
+  "target": "terraform"
+}
