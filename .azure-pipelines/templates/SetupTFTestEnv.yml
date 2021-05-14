@@ -17,4 +17,6 @@ steps:
     echo $GOPATH
     GO111MODULE=off go get github.com/shopspring/decimal
     make tools
+    git branch
+    ls /home/vsts/work/1/s/go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/appconfiguration
   displayName: 'Setup TF Test env'
