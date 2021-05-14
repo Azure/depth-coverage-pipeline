@@ -12,6 +12,8 @@ steps:
     set -x
     cd ./go/src/github.com/terraform-providers/terraform-provider-azurerm
     pwd
+    ls ./azurerm/internal/services
+    ls /home/vsts/work/1/s/go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/appconfiguration
     # source $(Pipeline.Workspace)/s/scripts/TFEnv
     # echo $ARM_CLIENT_ID
 
