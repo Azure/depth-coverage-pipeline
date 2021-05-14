@@ -12,6 +12,8 @@ steps:
     set -x
     cd ./go/src/github.com/terraform-providers/terraform-provider-azurerm
     pwd
+    ls ./azurerm/internal/services
+    ls /home/vsts/work/1/s/go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/appconfiguration
     # source $(Pipeline.Workspace)/s/scripts/TFEnv
     # echo $ARM_CLIENT_ID
 
@@ -34,7 +36,9 @@ steps:
     ps -eaf |grep node
     netstat -l
     
-    make acctests SERVICE=$(Package)​​​​​​​​​​ TESTARGS=-run=TestAcc[a-zA-Z]+_[a-zA-Z0-9]+_mockserver TESTTIMEOUT='60m' 1>$(TASK_KEY).log 2>&1
+    stat /home/vsts/work/1/s/go/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/services/appconfiguration
+
+    make acctests SERVICE=$(Package) TESTARGS=-run=TestAcc[a-zA-Z]+_[a-zA-Z0-9]+_mockserver TESTTIMEOUT='60m' 1>$(TASK_KEY).log 2>&1
     if [ "$?" != "0" ]; then
       echo -e "\e[31m[$(date -u)] ERROR: [$(ResourceProvider)]: TF Mock Test failed"
       az login --service-principal -u $(SERVICE_PRINCIPE_ID) -p $(SERVICE_PRINCIPE_SECRET) --tenant $(SERVICE_PRINCIPE_TENANT)
