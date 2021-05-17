@@ -38,7 +38,7 @@ steps:
 
     #pull swagger repo
     cd $(Pipeline.Workspace)/s
-    git clone https://$(PIPELINE_USER):$(PIPELINE_TOKEN)@github.com/$(Swagger_ORG)/azure-rest-api-specs.git
+    git clone --branch test-scenario-main https://$(PIPELINE_USER):$(PIPELINE_TOKEN)@github.com/$(Swagger_ORG)/azure-rest-api-specs.git
     ls -l
 
     # upload to azure-rest-api-specs branch
