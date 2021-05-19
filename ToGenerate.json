@@ -1,0 +1,9 @@
+{
+  "resources": [],
+  "resourcelist": "",
+  "jsonFilelist": [],
+  "onboardType": "dev",
+  "RPName": "appconfiguration",
+  "readmeFile": "/specification/appconfiguration/resource-manager/readme.md",
+  "target": "clicore"
+}
