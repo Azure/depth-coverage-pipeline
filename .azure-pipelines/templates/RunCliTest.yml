@@ -9,11 +9,11 @@ steps:
     
     sdktarget=$(TARGET)
     if [ "$sdktarget" == "clicore" ]; then
-      azdev test $(package) --live --discover --no-exitfirst 1>$(TASK_KEY).log 2>&1
+      azdev test $(package) --live --discover --no-exitfirst -a -k "_swagger_scenario" 1>$(TASK_KEY).log 2>&1
     else
       #cli-extension
       extension_name=%(ResourceProvider)
-      azdev test $extension_name --live --discover --no-exitfirst 1>$(TASK_KEY).log 2>&1
+      azdev test $extension_name --live --discover --no-exitfirst -a -k "_swagger_scenario" 1>$(TASK_KEY).log 2>&1
     fi
     
     if [ "$?" != "0" ]; then
