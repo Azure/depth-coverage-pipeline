@@ -5,5 +5,6 @@
   "onboardType": "dev",
   "RPName": "appconfiguration",
   "readmeFile": "/specification/appconfiguration/resource-manager/readme.md",
-  "target": "clicore"
+  "target": "clicore",
+  "excludeStages": "MockTest;LiveTest"
 }
