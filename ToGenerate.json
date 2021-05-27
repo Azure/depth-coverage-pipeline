@@ -1,0 +1,9 @@
+{
+  "resources": [],
+  "resourcelist": "",
+  "onboardType": "dev",
+  "jsonFileList": [],
+  "RPName": "Microsoft.Compute",
+  "readmeFile": "/specification/Microsoft.Compute/resource-manager/readme.md",
+  "target": "terraform"
+}
