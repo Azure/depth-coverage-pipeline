@@ -154,7 +154,7 @@ stages:
       Contactors: "chunyu@microsoft.com;vsccodegen@microsoft.com"
     steps:
     - template: .azure-pipelines/templates/VariableSetTask.yml
-    - template: .azure-pipelines/templates/GenerateCode.yml
+    - template: .azure-pipelines/templates/${{SDK}}/GenerateCode.yml
     - bash: |
         sdktarget=$(TARGET)
         if [ "$sdktarget" == "terraform" ]; then
