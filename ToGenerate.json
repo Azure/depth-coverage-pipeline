@@ -1,0 +1,18 @@
+{
+  "serviceType": "resource-manager",
+  "resources": [],
+  "resourcelist": "",
+  "onboardType": "ad-hoc",
+  "swagger": {
+    "path": "https://github.com/Azure/azure-rest-api-specs",
+    "branch": "master"
+  },
+  "sdkRepo": {
+    "path": "https://github.com/microsoft/terraform-provider-azurerm",
+    "branch": "pipeline"
+  },
+  "jsonFileList": [],
+  "RPName": "compute",
+  "readmeFile": "/specification/compute/resource-manager/readme.md",
+  "target": "terraform"
+}
