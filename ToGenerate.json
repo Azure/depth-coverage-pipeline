@@ -9,7 +9,7 @@
   },
   "sdkRepo": {
     "path": "https://github.com/microsoft/terraform-provider-azurerm",
-    "branch": "pipeline "
+    "branch": "pipeline"
   },
   "codegenRepo": {
     "path": "https://github.com/Azure/depth-coverage-pipeline",
