@@ -1,32 +1,8 @@
-# todo use variable group to better organize...
 variables:
-  # Comma seperated job name list string
-  #   - if empty, all jobs are enabled
-  #   - if filled, only the specified jobs will be enabled
-  ENABLED_JOBS: "[[EnabledJobs]]"
-  PIPELINE_ENV: "[[PipelineEnv]]"
-
-  # to update
-  SOURCE: "[[Source]]" # github | openapi_hub
-  TRIGGER_TYPE: "[[TriggerType]]" # valid: CI, PR; CI is not supported yet
-  ASSOCIATED_PR_NUMBER: "[[AssociatedPrNumber]]"
-  UNIFIED_PIPELINE_BUILD_ID: "[[UnifiedPipelineBuildId]]"
-  SPEC_REPO_OWNER: "[[SpecRepoOwner]]"
-  SPEC_REPO_NAME: "[[SpecRepoName]]"
-  SPEC_REPO_PULL_REQUEST_NUMBER: "[[SpecRepoPullRequestNumber]]"
-  SPEC_REPO_HEAD_SHA: "[[SpecRepoHeadSha]]"
-  SPEC_REPO_REF: "[[SpecRepoRef]]"
-
-  REPO_KEY: $(SPEC_REPO_OWNER)/$(SPEC_REPO_NAME)
-
-  TRAVIS: "true"
-  TRAVIS_BRANCH: "[[SpecRepoTargetBranch]]"
-  TRAVIS_PULL_REQUEST: $(SPEC_REPO_PULL_REQUEST_NUMBER)
-  TRAVIS_REPO_SLUG: $(REPO_KEY)
-  TRAVIS_PULL_REQUEST_SHA: $(SPEC_REPO_HEAD_SHA)
-  TRAVIS_PULL_REQUEST_SLUG: $(REPO_KEY)
-  SYSTEM_PULLREQUEST_TARGETBRANCH: "[[SpecRepoTargetBranch]]"
-
-  UNIVERSAL_PACKAGE_VERSION: "0.20210119.3" # Updated in template-unified-pipeline-package.yaml
-
-  SDK: "[[targetSDK]]"
+  SDK: terraform
+  stages:
+    - Setup
+    - GenerateCode
+    - Build
+    - MockTest
+    - LiveTest
