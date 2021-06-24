@@ -1,4 +1,4 @@
 variables:
-  CodeGenerationName:yccodegen
+  CodeGenerationName: yccodegen
   SDK: terraform
   stages: Setup;GenerateCode;Build;MockTest;LiveTest
