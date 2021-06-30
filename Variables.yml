@@ -2,3 +2,4 @@ variables:
   CodeGenerationName: yccodegen
   SDK: terraform
   stages: Setup;GenerateCode;Build;MockTest;LiveTest;Submit
+  ignore: TestFailure
