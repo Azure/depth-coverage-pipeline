@@ -63,15 +63,15 @@ stages:
         $af=""
         $packagename=""
         if($target -eq "terraform") {
-          # $af="generated/$name ./go/src/github.com/terraform-providers/terraform-provider-azurerm/vendor/github.com/Azure/azure-sdk-for-go/services/$name"
+          # $af="$(Pipeline.Workspace)/s/generated/$name $(Pipeline.Workspace)/s/go/src/github.com/terraform-providers/terraform-provider-azurerm/vendor/github.com/Azure/azure-sdk-for-go/services/$name"
           $af="generated/$name"
           $packagename=$name
         } else {
           if($name -eq "compute") {
-            $af="./azure-cli/src/azure-cli/azure/cli/command_modules/vm ./azure-cli/src/azure-cli/requirements*.txt ./azure-cli/doc/sphinx/azhelpgen/doc_source_map.json ./azure-rest-api-specs/specification/$name/resource-manager/readme.az.md"
+            $af="$(Pipeline.Workspace)/s/azure-cli/src/azure-cli/azure/cli/command_modules/vm $(Pipeline.Workspace)/s/azure-cli/src/azure-cli/requirements*.txt $(Pipeline.Workspace)/s/azure-cli/doc/sphinx/azhelpgen/doc_source_map.json $(Pipeline.Workspace)/s/azure-rest-api-specs/specification/$name/resource-manager/readme.az.md"
             $packagename="vm"
           } else {
-            $af="./azure-cli/src/azure-cli/azure/cli/command_modules/$name ./azure-cli/src/azure-cli/requirements*.txt ./azure-cli/doc/sphinx/azhelpgen/doc_source_map.json ./azure-rest-api-specs/specification/$name/resource-manager/readme.az.md"
+            $af="$(Pipeline.Workspace)/s/azure-cli/src/azure-cli/azure/cli/command_modules/$name $(Pipeline.Workspace)/s/azure-cli/src/azure-cli/requirements*.txt $(Pipeline.Workspace)/s/azure-cli/doc/sphinx/azhelpgen/doc_source_map.json $(Pipeline.Workspace)/s/azure-rest-api-specs/specification/$name/resource-manager/readme.az.md"
             $packagename=$name
           }
         }

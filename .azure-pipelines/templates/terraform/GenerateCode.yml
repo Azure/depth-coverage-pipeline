@@ -79,7 +79,7 @@ steps:
     
     # PACKAGE_NAME=`cat $(Pipeline.Workspace)/s/azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/readme.terraform.md | grep "cli-name"| awk -F':' '{print $2}' | tr -d '[[:space:]]'`
     PACKAGE_NAME=`cat $(Pipeline.Workspace)/s/azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager/readme.terraform.md | grep "terraform-output-folder" | sed 's/output-folder: \$(terraform-output-folder)\///g'`
-    af="generated/$PACKAGE_NAME"
+    af="$(Pipeline.Workspace)/s/generated/$PACKAGE_NAME"
     echo "PACKAGE_NAME:$PACKAGE_NAME"
     echo "##vso[task.setvariable variable=Package]$PACKAGE_NAME"
     echo "$PACKAGE_NAME" > $(Pipeline.Workspace)/sdk/sdkvariables/Package
@@ -118,7 +118,7 @@ steps:
     sdktarget=$(TARGET)
     codefolder="";
     echo "start generate tf code"
-    codefolder="./terraform-provider-azurerm"
+    codefolder="$(Pipeline.Workspace)/s/terraform-provider-azurerm"
     mkdir generated
     echo "TAG:$(TAG)"
     echo "resources:$(RESOURCES)"
@@ -141,10 +141,12 @@ steps:
       set -- "$@" --resources=$(RESOURCES)
     fi
 
-    set -- "$@" --generate-extra-acctest=true --terraform-output-folder=./generated ./azure-rest-api-specs/$(README_FILE) 1>$(TASK_KEY).log 2>&1
+    set -- "$@" --generate-extra-acctest=true --terraform-output-folder=$(Pipeline.Workspace)/s/generated ./azure-rest-api-specs/$(README_FILE) 1>$(TASK_KEY).log 2>&1
 
     "$@" 1>$(TASK_KEY).log 2>&1
 
+    ls -l $(Pipeline.Workspace)/s/generated
+    
     if [ "$?" != "0" ]; then
       echo -e "\e[31m[$(date -u)] ERROR: [$(ResourceProvider)]: Generate code failed"
       # upload error log
