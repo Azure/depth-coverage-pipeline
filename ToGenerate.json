@@ -22,5 +22,6 @@
   "RPName": "compute",
   "readmeFile": "/specification/compute/resource-manager/readme.md",
   "target": "terraform",
-  "excludeStages": "MockTest;LiveTest"
+  "excludeStages": "MockTest;LiveTest",
+  "tag": "package-2020-12-01"
 }
