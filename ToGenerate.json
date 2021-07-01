@@ -16,5 +16,5 @@
   "jsonFileList": [],
   "RPName": "compute",
   "readmeFile": "/specification/compute/resource-manager/readme.md",
-  "target": "cli"
+  "target": "clicore"
 }
