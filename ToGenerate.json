@@ -11,7 +11,7 @@
   "sdkRepo": {
     "type": "github",
     "path": "https://github.com/chunyu3/terraform-provider-azurerm",
-    "branch": "pipeline "
+    "branch": "pipeline"
   },
   "codegenRepo": {
     "type": "github",
