@@ -1,0 +1,20 @@
+{
+  "serviceType": "resource-manager",
+  "resources": [],
+  "resourcelist": "",
+  "onboardType": "ad-hoc",
+  "swaggerRepo": {
+    "type": "github",
+    "path": "https://github.com/chunyu3/azure-rest-api-specs",
+    "branch": "master"
+  },
+  "codegenRepo": {
+    "type": "github",
+    "path": "https://github.com/Azure/depth-coverage-pipeline",
+    "branch": "dev"
+  },
+  "jsonFileList": [],
+  "RPName": "compute",
+  "readmeFile": "/specification/compute/resource-manager/readme.md",
+  "target": "cli"
+}
