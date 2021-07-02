@@ -21,5 +21,6 @@
   "jsonFileList": [],
   "RPName": "compute",
   "readmeFile": "/specification/compute/resource-manager/readme.md",
-  "target": "terraform"
+  "target": "terraform",
+  "excludeStages": "MockTest;LiveTest"
 }
