@@ -14,14 +14,14 @@ steps:
     # echo $GOPATH
     git config credential.helper store ; git config --global user.email "chunyu@microsoft.com";git config --global user.name "chunyu3"
   displayName: 'pull repo'
-- bash:
+- bash: |
     cd $(Pipeline.Workspace)/s/azure-sdk-for-go/sdk/$(ResourceProvider)/arm$(ResourceProvider)
     
     go get github.com/Azure/azure-sdk-for-go/sdk/azidentity@latest && go get github.com/Azure/azure-sdk-for-go/sdk/armcore@latest && go get github.com/Azure/azure-sdk-for-go/sdk/azcore@latest && go get github.com/Azure/azure-sdk-for-go/sdk/to@latest && go mod tidy
     go build 1>>$(TASK_KEY).log 2>&1
     
     if [ "$?" != "0" ]; then
-      echo -e "\e[31m[$(date -u)] ERROR: [$OPERATION : $(ResourceProvider)]: Build go sdk failed"
+      echo -e "\e[31m[$(date -u)] ERROR: [$(ResourceProvider)]: Compile Generated code failed"
       exit 1
     fi
   displayName: 'build go-sdk'
