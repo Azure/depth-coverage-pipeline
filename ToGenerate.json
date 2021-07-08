@@ -6,7 +6,7 @@
   "swaggerRepo": {
     "type": "github",
     "path": "https://github.com/chunyu3/azure-rest-api-specs",
-    "branch": "master"
+    "branch": "master "
   },
   "codegenRepo": {
     "type": "github",
