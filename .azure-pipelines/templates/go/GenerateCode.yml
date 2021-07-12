@@ -1,39 +1,5 @@
 steps:
-- bash: |
-    cd $(Pipeline.Workspace)/s
-    git clone --branch $(Swagger_BRANCH) https://$(PIPELINE_USER):$(PIPELINE_TOKEN)@github.com/$(Swagger_ORG)/azure-rest-api-specs.git
-    git clone --branch main https://$(PIPELINE_USER):$(PIPELINE_TOKEN)@github.com/$(Swagger_ORG)/azure-sdk-for-go
-    echo "https://$(PIPELINE_USER):$(PIPELINE_TOKEN)@github.com" > ~/.git-credentials
-
-    cd $(Pipeline.Workspace)/s/azure-sdk-for-go
-    tf_existed_in_remote=$(git ls-remote --heads origin $(WORKBRANCH))
-    if [[ -z ${tf_existed_in_remote} ]]; then
-      git checkout -b $(WORKBRANCH)
-    else
-      git checkout $(WORKBRANCH)
-      # git reset --hard origin/$(WORKBRANCH)
-      # git reset --hard origin/$base
-    fi
-
-    cd $(Pipeline.Workspace)/s/azure-rest-api-specs
-    spec_existed_in_remote=$(git ls-remote --heads origin $(WORKBRANCH))
-    if [[ -z ${spec_existed_in_remote} ]]; then
-      git checkout -b $(WORKBRANCH)
-    else
-      git checkout $(WORKBRANCH)
-      # git reset --hard origin/master
-    fi
-    git config credential.helper store; git config --global user.email "chunyu@microsoft.com";git config --global user.name "chunyu3"
-    git pull origin $(WORKBRANCH)
-    cd $(Pipeline.Workspace)/s
-
-    export GOPATH=/home/vsts/work/1/s/azure-sdk-for-go
-    echo $GOPATH
-    git config credential.helper store ; git config --global user.email "chunyu@microsoft.com";git config --global user.name "chunyu3"
-  displayName: 'pull repo'
-- bash: |
-    sudo npm install -g autorest@latest && sudo npm install -g typescript
-  displayName: 'install autorest'
+- template: ../PrepareSDKCodeEnv.yml
 - bash: |
     echo "$README_FILE"
     pwd

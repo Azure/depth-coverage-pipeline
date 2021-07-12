@@ -29,4 +29,12 @@ variables:
 
   UNIVERSAL_PACKAGE_VERSION: "0.20210119.3" # Updated in template-unified-pipeline-package.yaml
 
+  CodeGenerationName: "[[CodeGenerationName]]"
   SDK: "[[targetSDK]]"
+  stages: "[[stages]]"
+  SPEC_REPO_TYPE: "[[SPEC_REPO_TYPE]]"
+  SPEC_REPO_URL: "[[SPEC_REPO_URL]]"
+  SPEC_REPO_BASE_BRANCH: "[[SPEC_REPO_BASE_BRANCH]]"
+  SDK_REPO_TYPE: "[[SDK_REPO_TYPE]]"
+  SDK_REPO_URL: "[[SDK_REPO_URL]]"
+  SDK_REPO_BASE_BRANCH: "[[SDK_REPO_BASE_BRANCH]]"
