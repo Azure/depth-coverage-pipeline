@@ -3,10 +3,10 @@ variables:
   SDK: terraform
   stages: Setup;GenerateCode;Build;MockTest;LiveTest
   SwaggerRepo:
-    type: github
-    path: 'https://github.com/chunyu3/azure-rest-api-specs'
-    branch: master
+  - type: github
+  - path: 'https://github.com/chunyu3/azure-rest-api-specs'
+  - branch: master
   SdkRepo:
-    type: github
-    path: 'https://github.com/chunyu3/terraform-provider-azurerm'
-    branch: pipeline
+  - type: github
+  - path: 'https://github.com/chunyu3/terraform-provider-azurerm'
+  - branch: pipeline
