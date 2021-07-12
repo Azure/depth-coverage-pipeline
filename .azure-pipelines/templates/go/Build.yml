@@ -7,7 +7,7 @@ steps:
 - bash: |
     cd $(Pipeline.Workspace)/s
     git clone --branch $(Swagger_BRANCH) https://$(PIPELINE_USER):$(PIPELINE_TOKEN)@github.com/$(Swagger_ORG)/azure-rest-api-specs.git
-    git clone --branch $(WORKBRANCH) https://$(PIPELINE_USER):$(PIPELINE_TOKEN)@github.com/$(TF_ORG)/azure-sdk-for-go
+    git clone --branch $(WORKBRANCH) https://$(PIPELINE_USER):$(PIPELINE_TOKEN)@$(SDK_REPO_URL)
     echo "https://$(PIPELINE_USER):$(PIPELINE_TOKEN)@github.com" > ~/.git-credentials
     cd azure-sdk-for-go
     # export GOPATH=/home/vsts/work/1/s/go

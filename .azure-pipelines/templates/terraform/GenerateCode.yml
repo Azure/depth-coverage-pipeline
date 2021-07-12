@@ -1,46 +1,5 @@
 steps:
-- script: |
-    # pull sdk repo
-    set -x
-    echo "https://$(PIPELINE_USER):$(PIPELINE_TOKEN)@github.com" > ~/.git-credentials
-    repo=""
-    base=""
-    cd $(Pipeline.Workspace)/s
-    git clone --branch $(TF_BRANCH) https://$(PIPELINE_USER):$(PIPELINE_TOKEN)@github.com/$(TF_ORG)/terraform-provider-azurerm.git
-    repo="terraform-provider-azurerm"
-    base="pipeline"
-
-    cd $(Pipeline.Workspace)/s/$repo
-    tf_existed_in_remote=$(git ls-remote --heads origin $(WORKBRANCH))
-    if [[ -z ${tf_existed_in_remote} ]]; then
-      git checkout -b $(WORKBRANCH)
-    else
-      git checkout $(WORKBRANCH)
-      # git reset --hard origin/$(WORKBRANCH)
-      # git reset --hard origin/$base
-    fi
-
-    #pull swagger repo
-    cd $(Pipeline.Workspace)/s
-    git clone --branch $(Swagger_BRANCH) https://$(PIPELINE_USER):$(PIPELINE_TOKEN)@github.com/$(Swagger_ORG)/azure-rest-api-specs.git
-    ls -l
-
-    # upload to azure-rest-api-specs branch
-    cd $(Pipeline.Workspace)/s/azure-rest-api-specs
-    spec_existed_in_remote=$(git ls-remote --heads origin $(WORKBRANCH))
-    if [[ -z ${spec_existed_in_remote} ]]; then
-      git checkout -b $(WORKBRANCH)
-    else
-      git checkout $(WORKBRANCH)
-      # git reset --hard origin/master
-    fi
-    git config credential.helper store; git config --global user.email "chunyu@microsoft.com";git config --global user.name "chunyu3"
-    git pull origin $(WORKBRANCH)
-    cd $(Pipeline.Workspace)/s
-  displayName: 'pull repo'
-- script: |
-    sudo npm install -g autorest@latest && sudo npm install -g typescript
-  displayName: 'install autorest'
+- template: ../PrepareSDKCodeEnv.yml
 - bash: |
     echo "$README_FILE"
     pwd
@@ -121,7 +80,7 @@ steps:
     cd $(Pipeline.Workspace)/s
     pwd
     mkdir generated
-    ls -l
+    ls -l $(Pipeline.Workspace)/s/azure-rest-api-specs/specification/$(ResourceProvider)/resource-manager
     echo "TAG:$(TAG)"
     echo "resources:$(RESOURCES)"
     tag=$(TAG)

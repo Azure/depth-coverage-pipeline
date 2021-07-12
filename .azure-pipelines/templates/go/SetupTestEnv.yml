@@ -5,6 +5,6 @@ steps:
     goPath: '/home/vsts/work/1/s/go'
     goBin: '/home/vsts/work/1/s/go/bin'
 - bash: |
-    git clone --branch $(WORKBRANCH) https://$(PIPELINE_USER):$(PIPELINE_TOKEN)@github.com/$(TF_ORG)/azure-sdk-for-go
-    git clone --branch $(WORKBRANCH) https://$(PIPELINE_USER):$(PIPELINE_TOKEN)@github.com/$(Swagger_ORG)/azure-rest-api-specs.git
+    git clone --branch $(WORKBRANCH) https://$(PIPELINE_USER):$(PIPELINE_TOKEN)@$(SDK_REPO_URL)
+    git clone --branch $(WORKBRANCH) https://$(PIPELINE_USER):$(PIPELINE_TOKEN)@$(SPEC_REPO_URL)
   displayName: 'Setup Test Env'
