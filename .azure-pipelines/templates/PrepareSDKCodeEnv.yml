@@ -13,17 +13,15 @@ steps:
     base=""
     cd $(Pipeline.Workspace)/s
     git clone --branch $(SDK_REPO_BASE_BRANCH) https://$(PIPELINE_USER):$(PIPELINE_TOKEN)@$(SDK_REPO_URL)
-    repo="terraform-provider-azurerm"
-    base="pipeline"
 
-    cd $(Pipeline.Workspace)/s/$repo
+    cd $(Pipeline.Workspace)/s/$repo/$(SDK_REPO_NAME)
     tf_existed_in_remote=$(git ls-remote --heads origin $(WORKBRANCH))
     if [[ -z ${tf_existed_in_remote} ]]; then
       git checkout -b $(WORKBRANCH)
     else
       git checkout $(WORKBRANCH)
       # git reset --hard origin/$(WORKBRANCH)
-      # git reset --hard origin/$base
+      # git reset --hard origin/$(SDK_REPO_BASE_BRANCH)
     fi
 
     #pull swagger repo
@@ -32,13 +30,13 @@ steps:
     ls -l
 
     # upload to azure-rest-api-specs branch
-    cd $(Pipeline.Workspace)/s/azure-rest-api-specs
+    cd $(Pipeline.Workspace)/s/$(SPEC_REPO_NAME)
     spec_existed_in_remote=$(git ls-remote --heads origin $(WORKBRANCH))
     if [[ -z ${spec_existed_in_remote} ]]; then
       git checkout -b $(WORKBRANCH)
     else
       git checkout $(WORKBRANCH)
-      # git reset --hard origin/master
+      # git reset --hard origin/$(SPEC_REPO_BASE_BRANCH)
     fi
     git config credential.helper store ; git config --global user.email "chunyu@microsoft.com";git config --global user.name "chunyu3;"
     git pull origin $(WORKBRANCH)
