@@ -5,6 +5,10 @@ variables:
   SPEC_REPO_TYPE: github
   SPEC_REPO_URL: github.com/chunyu3/azure-rest-api-specs
   SPEC_REPO_BASE_BRANCH: master
+  SPEC_REPO_OWNER: chunyu3
+  SPEC_REPO_NAME: azure-rest-api-specs
   SDK_REPO_TYPE: github
   SDK_REPO_URL: github.com/chunyu3/azure-sdk-for-go
   SDK_REPO_BASE_BRANCH: main
+  SDK_REPO_OWNER: chunyu3
+  SDK_REPO_NAME: azure-sdk-for-go
