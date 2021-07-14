@@ -12,7 +12,7 @@ steps:
     repo=""
     base=""
     cd $(Pipeline.Workspace)/s
-    git clone --branch $(SDK_REPO_BASE_BRANCH) https://$(PIPELINE_USER):$(PIPELINE_TOKEN)$(SDK_REPO_URL)
+    git clone --branch $(SDK_REPO_BASE_BRANCH) https://$(PIPELINE_USER):$(PIPELINE_TOKEN)@$(SDK_REPO_URL)
     repo="terraform-provider-azurerm"
     base="pipeline"
 
@@ -28,7 +28,7 @@ steps:
 
     #pull swagger repo
     cd $(Pipeline.Workspace)/s
-    git clone --branch $(SPEC_REPO_BASE_BRANCH) https://$(PIPELINE_USER):$(PIPELINE_TOKEN)$(SPEC_REPO_URL)
+    git clone --branch $(SPEC_REPO_BASE_BRANCH) https://$(PIPELINE_USER):$(PIPELINE_TOKEN)@$(SPEC_REPO_URL)
     ls -l
 
     # upload to azure-rest-api-specs branch
